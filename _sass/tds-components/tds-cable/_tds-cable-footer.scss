@@ -1,0 +1,21 @@
+.subscribe-text:before {
+    content: "";
+    padding:15px 25px;
+    background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.btn-subscribe {
+  padding: 0 20px;
+  &:after {
+      content: "";
+      padding-right: 0px;
+      margin-left: 0px;
+      background-image: none;
+      background-size: contain;
+      background-position: right center;
+      background-repeat: no-repeat;
+  }
+}
