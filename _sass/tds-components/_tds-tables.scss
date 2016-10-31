@@ -1,0 +1,209 @@
+/* tds-tables.scss
+==========================================*/
+table {
+    width: 100%;
+    padding-top: 0;
+}
+.text.parbase.section {
+  table {
+    @extend .table;
+    border-color: transparent;
+  }
+  // table headers
+  tr > th {
+    border-top-color: transparent !important;
+    border-bottom: 2px solid $tds-lt-blue !important;
+  }
+}
+
+// ===== Table Text ============================================================
+// =============================================================================
+
+table.careers-table {
+  @extend .table;
+  border-color: transparent;
+}
+// table headers
+tr > th {
+  border-top-color: transparent !important;
+  border-bottom: 2px solid $tds-lt-blue !important;
+}
+
+// When correct tds tables are used
+.tds-form-group {
+  th {
+    padding: 16px 8px !important;
+    color: $tds-lt-blue;
+    border-top: 2px solid $tds-lt-blue !important;
+    border-bottom: 3px solid $tds-dk-blue !important;
+    background: inherit;
+  }
+  td {
+    padding-top: 20px !important;
+    border-bottom: 2px solid $tds-dk-blue !important;
+  }
+  // checkboxes in tables
+  td label {
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+}
+tbody.tds-channel-listing-table tr td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $tds-ltr-gray !important;
+}
+@media (max-width: $screen-xs) {
+  .tds-form-group {
+    th {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+// ===== JS datatables overwrites ==============================================
+// javascript table style overwrites, because removing the classes it adds
+// eludes us.
+// TODO || MAKE THIS A MIXIN
+// The tables are going to have new ID names each time they are created.
+// Make a mixin that will quickly fix it when a new table is made.
+// =============================================================================
+// 1. Removing default table styles
+#usersTable th,
+#ticketTable th,
+#historicalUsageTable th {
+  background-color: transparent !important;
+  color: inherit !important;
+  font-weight: $tds-font-medium !important;
+  text-decoration: none;
+  text-align: left;
+}
+#usersTable td,
+#usersTable th,
+#ticketTable td,
+#ticketTable th,
+#historicalUsageTable td,
+#historicalUsageTable th {
+  border: 0px solid transparent;
+}
+
+// Ridiculous overrides for generated tables that add their own styles.
+// =============================================================================
+
+table.dataTable {
+  padding-top: 0px;
+  border: 0px solid transparent;
+}
+// table header text color
+.dataTable thead {
+  color: $tds-lt-blue;
+}
+table.dataTable thead th,
+table.dataTable thead td,
+.table > thead > tr > th,
+.text.parbase.section table > thead > tr > th, .table > thead > tr > td, .text.parbase.section table > thead > tr > td, .table > tbody > tr > th, .text.parbase.section table > tbody > tr > th, .table > tbody > tr > td, .text.parbase.section table > tbody > tr > td, .table > tfoot > tr > th, .text.parbase.section table > tfoot > tr > th, .table > tfoot > tr > td, .text.parbase.section table > tfoot > tr > td {
+  border-color: transparent;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  //made transparent to remove background color when in a gray card
+  //background-color: #fff;
+  background-color: transparent;
+}
+// Bug fix for homepage footer table effected by this ^
+#subscribe-container {
+  td,
+  th {
+    background-color: transparent !important;
+    border-color: transparent;
+  }
+}
+
+// 2. Having to add table styles back now like an idiot, because of this dataTable
+#usersTable.table>thead>tr>th,
+#ticketTable.table>thead>tr>th,
+#historicalUsageTable.table>thead>tr>th {
+  vertical-align: bottom;
+  border-top: 2px solid $tds-lt-blue !important;
+  border-bottom: 3px solid $tds-dk-blue !important;
+}
+#usersTable.table>tbody>tr>td,
+#usersTable.table>tbody>tr>th,
+#usersTable.table>tfoot>tr>td,
+#usersTable.table>tfoot>tr>th,
+#usersTable.table>thead>tr>td,
+#usersTable.table>thead>tr>th,
+#ticketTable.table>tbody>tr>td,
+#ticketTable.table>tbody>tr>th,
+#ticketTable.table>tfoot>tr>td,
+#ticketTable.table>tfoot>tr>th,
+#ticketTable.table>thead>tr>td,
+#ticketTable.table>thead>tr>th,
+#historicalUsageTable.table>tbody>tr>td,
+#historicalUsageTable.table>tbody>tr>th,
+#historicalUsageTable.table>tfoot>tr>td,
+#historicalUsageTable.table>tfoot>tr>th,
+#historicalUsageTable.table>thead>tr>td,
+#historicalUsageTable.table>thead>tr>th,
+.text.parbase.section table>tbody>tr>td {
+  padding: 16px 18px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+}
+#usersTable.table tbody > tr > td,
+#ticketTable.table tbody > tr > td,
+#historicalUsageTable.table tbody > tr > td,
+.text.parbase.section table>tbody>tr>td {
+  border-top: 2px solid #ddd !important;
+}
+// border bottom style
+table.dataTable.no-footer {
+  border-bottom: 2px solid $tds-dk-blue;
+}
+// spacing for gallery-btn in tables for edit/remove users
+td > .gallery-btn {
+  margin: 0px 16px 0px 0px;
+}
+// Since we didn't use responsive tables like we wanted, need to add a scrollbar
+.dataTables_wrapper.no-footer {
+  overflow: auto;
+  padding-bottom: 20px;
+}
+/* MYA MANAGE USERS TABLE imported from refinement.scss*/
+table#usersTable {
+  overflow:  auto;
+  white-space: nowrap;
+}
+.manageusers #users-search input#usersTableSearch {
+  border: none !important;
+  background-color: $tds-ltr-gray !important;
+}
+/* tables in shop sections */
+.text.parbase.section table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-color: transparent;
+    border-bottom: solid 2px $tds-lt-gray;
+}
+.text.parbase.section table>thead>tr>th, .text.parbase.section table>tbody>tr>th, .text.parbase.section table>tfoot>tr>th, .text.parbase.section table>thead>tr>td, .text.parbase.section table>tbody>tr>td, .text.parbase.section table>tfoot>tr>td {
+    padding: 8px 8px 8px 0px;
+    border-top: 2px solid $tds-lt-gray;
+}
+
+.table-search {
+    margin-bottom: 20px;
+}
+
+.table-btn {
+    //margin-top: 12px;
+    text-align: right;
+    @media (max-width: $screen-sm) {
+       //margin-top: 40px;
+       margin-bottom: 38px;
+       text-align: center;
+    }
+}

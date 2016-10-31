@@ -1,0 +1,71 @@
+/* tds-trouble-reporting-form.scss
+==========================================*/
+
+// trouble problem ticket form
+
+// add col-values to headers
+.troubleReporting > .tds-card.tds-card-gray > h3 {
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+// fix for nested card
+.tds-card .tds-card.tds-card-gray > h3 {
+  padding-left: 0px;
+}
+
+// "Or" text between forms
+.tds-or-text {
+  display: block;
+  margin-bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 7px;
+  height: 64px;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.troubleReporting button.gallery-btn {
+  margin: 8px 0 0;
+}
+.troubleReporting > .tds-card.tds-card-gray > h3 {
+  //margin-top: 28px;
+}
+.troubleReporting span.tds-or-text {
+  //text-align: left;
+  padding: 0 0 4px;
+  height: auto;
+}
+.troubleReporting .tds-alert {
+    margin-bottom: 0;
+    margin-top: 24px;
+}
+
+.troubleReporting span.tds-or-text {
+    text-align: center;
+    padding-top: 24px;
+}
+@media (max-width:750px) {
+    .troubleReporting span.tds-or-text {
+        text-align: left;
+        padding-bottom: 16px;
+    }
+}
+.troubleReporting > .tds-card.tds-card-gray > h3 {
+    padding: 0;
+    margin-top: 0;
+}
+.contentcontainer .troubleReporting .tds-card.tds-card-gray {
+    background-color: transparent;
+}
+
+//fix layout issues with alerts
+.troubleReporting .tds-card.tds-card-gray {
+    float: none;
+}
+//add spacing below button
+.navbutton.parbase ~ .parbase.troubleReporting.section {
+    margin-top: 28px;
+}

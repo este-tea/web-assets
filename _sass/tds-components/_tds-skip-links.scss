@@ -1,0 +1,45 @@
+/* tds-skip-links
+==========================================*/
+// skip to nav and skip to content link in the header
+
+#skiptonav a,
+#skiptocontent a {
+    padding: 12px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    background: transparent;
+    -webkit-transition: top .3s ease-out, background .3s linear;
+    transition: top .3s ease-out, background .3s linear;
+    z-index: 100;
+    text-decoration: underline;
+}
+
+#skiptonav a:focus,
+#skiptocontent a:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline: 0;
+    -webkit-transition: top .3s ease-in, background .3s linear;
+    transition: top .3s ease-in, background .3s linear;
+}
+
+#skiptonav a:focus {
+    background: #25acf0;
+}
+#skiptocontent a:focus {
+    background: #19388a;
+}
+
+#skiptonav a:after,
+#skiptocontent a:after {
+    content: '\e804';
+    font-family: "fontello";
+    font-size: 12px;
+    margin-left: 9px;
+    position:relative;
+    top:-1px;
+    display: inline-block;
+}

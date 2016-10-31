@@ -1,0 +1,43 @@
+/* tds-collapsible-archive-component
+==========================================*/
+// also uses similar classes to collapsible list group
+
+.collapsibleArchive .panel-group.tds-collapse .panel-heading h2 {
+    font-size: 21px;
+}
+.collapsibleArchive .panel-group.tds-collapse .panel-body {
+    padding-top: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.collapsibleArchive .panel-group.tds-collapse .panel-heading a.btn-block {
+    color: white;
+    background-color: #25acf0;
+}
+.collapsibleArchive .panel-group.tds-collapse .panel-heading a.btn-block.collapsed {
+    color: #25acf0;
+    background-color: #e3e3e3;
+}
+.collapsibleArchive .panel-group.tds-collapse .panel-heading a.btn-block:hover {
+    background-color: #19388a;
+    color: white;
+}
+.gallery-grid .panel-group.tds-collapse .panel-heading a.gallery-btn .icon-expand,
+.gallery-grid .panel-group.tds-collapse .panel-heading a.lt-blue-button .icon-expand,
+.panel-group.tds-collapse .panel-heading .gallery-grid a.gallery-btn .icon-expand,
+.panel-group.tds-collapse .panel-heading .gallery-grid a.lt-blue-button .icon-expand,
+.panel-group.tds-collapse .panel-heading a.btn-block .icon-expand {
+    width: 20px;
+    height: 20px;
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg");
+    background-size: 14px 14px;
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+}
+.panel-group.tds-collapse .panel-heading a.btn-block .icon-expand {
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_minus-white.svg");
+}
+.parbase.collapsibleArchive.section {
+    display: block;
+    overflow: auto;
+}

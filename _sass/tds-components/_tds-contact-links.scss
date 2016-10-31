@@ -1,0 +1,163 @@
+/* tds-contact links
+==========================================*/
+// found in various areas of the site, typically in the header,
+// mobile form of the footer and in contact cards/bars aroud
+// the tdstelecom site
+
+// #CONTACT LINKS IN THE HEADER
+// --------------------------------
+.contact-links-wrap {
+  margin: 1.75em 0 0 0;
+  float: right;
+  text-align: left;
+  overflow: hidden;
+}
+.contact-links-wrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.contact-links-wrap ul li {
+  margin: 1.75em 0.8em;
+  display: inline-block;
+  vertical-align: top;
+}
+.contact-links-wrap ul li:last-child {
+  margin-right: .125em;
+}
+.contact-links-text {
+  font-size: 14px;
+  line-height: 2em;
+  font-family: $tds-font-family;
+  font-weight: 400;
+  font-style: normal;
+  color: #555;
+  padding-left: .25em;
+  text-align: left;
+  text-decoration: none
+}
+.contact-links-text:before {
+  float: left;
+  width: 2em;
+  height: 2em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #25acf2
+}
+div.contact-links-wrap > ul > li:hover > a,
+div.contact-links-wrap > ul > li:hover > a:hover {
+  color: #19388a;
+  text-decoration: none !important;
+}
+div.contact-links-wrap > ul > li:hover > a:before,
+div.contact-links-wrap > ul > li:hover > a:hover:before {
+  background-color: #19388a;
+}
+@media all and (max-width: $screen-sm-min) {
+  #header-contact-links {
+    display: none;
+  }
+}
+
+// #CONTACT LINKS IN THE FOOTER
+// --------------------------------
+#footer-contact-links {
+  margin: 0;
+  float: none;
+  text-align: center;
+  padding-bottom: 32px;
+  min-width: 265px;
+  border-bottom: solid 2px #25acf2;
+}
+@media all and (min-width: $screen-sm-min) {
+  #footer-contact-links {
+    display: none;
+  }
+}
+div#footer-contact-links .contact-links-wrap {
+  text-align: center;
+}
+div#footer-contact-links a.contact-links-text,
+div#footer-contact-links > ul > li:hover > a,
+div#footer-contact-links > ul > li:hover > a:hover {
+  color: #ffffff;
+}
+
+@media all and (max-width: $screen-sm-min) {
+  .contact-links-wrap ul li {
+    margin: 1.75em 1.5em 0 0;
+  }
+  .contact-contact-links-text {
+    font-size: 1em;
+    line-height: 2.25em;
+  }
+  .contact-contact-links-text {
+      font-size: 1em;
+      line-height: 2.25em
+  }
+  .contact-links-text:before {
+    width: 2.25em;
+    height: 2.25em
+  }
+}
+@media all and (max-width: $screen-xs-min) {
+  .contact-links-text {
+    font-size: 1em;
+    line-height: 2.25em;
+    padding-left: 0.5em;
+  }
+}
+// support section contact wrap
+.contact-links-wrap.contact-links-wrap-full {
+  float: none;
+  h3 {
+    float: left;
+    display: inline;
+  }
+  ul {
+    float: right;
+    display: inline;
+  }
+}
+.tds-panel.tds-contact-panel .contact-links-wrap a {
+  font-size: 1em;
+  margin-right: 14px;
+  color: #000;
+}
+.tds-panel.tds-contact-panel .contact-links-wrap ul li {
+  margin: 0;
+}
+.tds-contact-panel .contact-links-wrap {
+  float: none;
+  text-align: left;
+}
+.tds-contact-panel,
+.tds-support-panel {
+  padding: 0 32px 32px;
+}
+
+.contactsupportmaincontainer {
+  margin-bottom: 20px;
+}
+.parbase.supportcontactbar.section {
+    margin-top: 32px;
+}
+
+//helpsupportcontactbar
+.helpsupportcontactbar h3 {
+  margin: 0;
+}
+.helpsupportcontactbar .tds-card.tds-card-gray {
+  padding: 40px;
+}
+.tds-card.tds-card-gray .contact-links-wrap.contact-links-wrap-full {
+  margin-top: 0;
+  li {
+    margin-top: 0;
+  }
+}
+.helpsupportcontactbar .contact-links-wrap ul li {
+    margin-bottom: 0;
+}

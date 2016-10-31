@@ -1,0 +1,220 @@
+/* tds-biz-footer
+==========================================*/
+.extended-footer .container .homepageFooter div {
+  padding: 0 32px;
+}
+div#tdsbizfooter--navbar {
+    display: inline-block;
+}
+#genericfooter-container {
+  border-top: none;
+}
+#othernav-container-bottom {
+  padding: 36px 0 0;
+}
+#footer-login {
+  display: none;
+}
+// social media icon links
+// ----------------------------------------
+#social-container {
+  border-top: none;
+  padding: 28px 0;
+}
+//social media icons not showing up in ie11 in footer
+.size-40 {
+ height: 40px;
+ padding-bottom: 0;
+}
+// extended/homepage footer
+// ----------------------------------------
+.homepageFooter {
+  .sectionTitle {
+    font-size: 16px;
+    text-align: left;
+    border-bottom: solid 4px #777;
+  }
+  ul.sectionLinks {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+    font-family: $tds-font-family;
+    li {
+      font-family: $tds-font-family;
+    }
+    li a {
+      display: inline-block;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:hover:after {
+      content: "";
+      width: 16px;
+      height: 12px;
+      float: right;
+      background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-caret-gray.svg);
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-size: 6px 10px;
+    }
+  }
+}
+.sectionTitle a {
+  text-decoration: none;
+    color: #BBBBBB;
+display: inline-block;
+  }
+
+  .sectionTitle a:hover {
+  text-decoration: underline;
+    color: #fff;
+  }
+
+ .sectionTitle a:hover:after {
+      content: "";
+  margin-left:10px;
+      width: 6px;
+      height: 20px;
+      float: right;
+      background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-caret-gray.svg);
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 6px 10px;
+    }
+
+// contact us links
+// ----------------------------------------
+#footer-contact-links {
+  border-bottom: none;
+  li {
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 350px) {
+    text-align: left;
+  }
+}
+.container-fluid.footer-contact-wrap {
+  background: #353535;
+  clear: both;
+}
+.contact-links-text:before {
+  background-color: #2a2a2a;
+}
+div.contact-links-wrap > ul > li:hover > a:before,
+div.contact-links-wrap > ul > li:hover > a:hover:before {
+  background-color: #f37d1d;
+}
+.circle-gray:hover, .circle-gray:focus {
+  background-color: #f37d1d;
+}
+
+// subscribe
+// ----------------------------------------
+#subscribe-container {
+  padding: 32px;
+  border-bottom: none;
+  background-color: $tds-lt-blue-80;
+  .subscribe-text {
+    p {
+      color: $tds-white;
+      margin-bottom: 0;
+      max-width: 550px;
+    }
+  }
+  a.btn-subscribe {
+    margin-top: 4px;
+    box-shadow: $box-shadow;
+    &:after {
+      content: none;
+    }
+    &:hover {
+      background-color: $tds-blue-80;
+      box-shadow: none;
+    }
+  }
+  table {
+    max-width: 600px;
+  }
+  @media (max-width:580px) {
+    .subscribe-text {
+      padding: 0;
+    }
+    .container table tbody tr td {
+      display: block;
+    }
+    a.btn-subscribe {
+      margin-top: 28px;
+    }
+    .subscribe-button {
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+  }
+}
+/*icon not showing up in ie 9, remove linear gradient*/
+a.btn-subscribe::before {
+background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg");
+}
+// copyright
+// ----------------------------------------
+div.copyright-text {
+    font-family: $tds-font-family;
+}
+.copyright-text p {
+    color: #cacaca;
+    font-size: 11px;
+    line-height: 21px;
+}
+
+#genericfooter-container .customLargeNavBar.parbase.navbar {
+    text-align: center;
+}
+
+@media (max-width:751px) {
+    #genericfooter-container .customLargeNavBar.parbase.navbar {
+        display:inherit;
+    }
+}
+
+#genericfooter-container .customLargeNavBar .tds-other-nav > ul > li:last-child > a {
+    border-right: none;
+}
+
+@media (max-width:460px) {
+    #genericfooter-container .customLargeNavBar .tds-other-nav > ul {
+        text-align: center;
+    }
+    #genericfooter-container .customLargeNavBar .tds-other-nav > ul ul {
+        text-align: left;
+    }
+    #genericfooter-container .customLargeNavBar .tds-other-nav > ul > li {
+        float: none;
+        display: inline-block;
+        margin-left: -4px;
+        margin-bottom: 12px;
+    }
+    .customLargeNavBar + #social-container {
+        padding-top: 12px;
+    }
+}
+
+@media (max-width:584px) {
+    .tdsbizfooter .copyright-logo {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .tdsbizfooter .copyright-logo #fortune-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .tdsbizfooter .copyright-text {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

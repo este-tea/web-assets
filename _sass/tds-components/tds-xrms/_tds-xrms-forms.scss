@@ -1,0 +1,151 @@
+.has-error {
+  .form-control {
+    background-color: $tds-critical-bg;
+    border-color: $tds-critical-bg;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  label,
+  .help-block {
+    color: $tds-red;
+  }
+}
+.hint-block {
+  color: $tds-dk-gray-40;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.notification-prefs {
+  margin-top: 24px;
+}
+.notification-prefs .form-group.tds-form-group {
+  margin-left: 40px;
+}
+.appt-window,
+.appt-cta {
+  margin-bottom: 24px;
+}
+.tds-date-picker {
+  margin-top: 18px;
+  .tds-form-group.col-sm-6:first-child {
+    padding-left: 0;
+    @media (max-width: $screen-sm) {
+      padding: 0;
+    }
+  }
+  .tds-form-group.col-sm-6:nth-of-type(2) {
+    padding-right: 0;
+    @media (max-width: $screen-sm) {
+      padding: 0;
+    }
+  }
+}
+.notification-prefs .prod-items .form-group.tds-form-group.col-sm-6 {
+  margin-left: 0;
+}
+.notification-prefs .prod-items:nth-of-type(3) > .tds-btn.btn-add {
+    margin-bottom: 8px;
+}
+.mobile-carrier.clearfix {
+  margin-left: 40px;
+}
+.mobile-carrier .form-group.tds-form-group.col-sm-6 {
+  &:first-child {
+    padding-left: 0;
+    @media (max-width: $screen-sm) {
+      padding: 0;
+    }
+  }
+  &:nth-of-type(2) {
+    padding-right: 0;
+    @media (max-width: $screen-sm) {
+      padding: 0;
+    }
+  }
+}
+.appt-window .tds-btn {
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.tds-form-group {
+  input, select {
+    border: solid 2px $tds-lt-gray;
+    box-shadow: none;
+    font-family: $tds-font-family;
+  }
+  input:focus {
+    color: #000;
+    border: solid 2px $tds-blue-100;
+    box-shadow: none;
+  }
+}
+table.daily-appointment-windows {
+  display: inline-block;
+  background-color: $tds-lt-gray;
+  margin: 0 8px 16px;
+  tr td {
+    padding: 0 16px;
+  }
+  @media (max-width: 440px) {
+    width: 100%;
+    display: table;
+  }
+}
+
+.appointment-date-header {
+  text-align: center;
+  font-family: $tds-font-family;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: $tds-dk-gray;
+  padding: 12px;
+}
+.appointment-window {
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: $tds-lt-blue-80;
+  color: white;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+}
+.appointment-window,
+.appointment-window.recommend {
+  &:hover {
+    background-color: $tds-blue-100;
+  }
+  &:click {
+    box-shadow: none;
+  }
+}
+
+.appointment-window.recommend {
+  &:before {
+    content: "recommended";
+    display: block;
+    max-width: 120px;
+    font-variant: small-caps;
+    background-color: $tds-green-100;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: -18px;
+    text-align: center;
+  }
+}
+.appointment-window.selected,
+.appointment-window.selected:hover {
+  //background-color: $tds-dk-gray-40;
+  //cursor: initial;
+  //box-shadow: none;
+  display: none;
+}
+.appt-container {
+  text-align: center;
+}
+.carousel-inner .page-container {
+  text-align: center;
+}
+//adjust margins on "add" buttons in preferences card
+.prod-items > button.tds-btn.tds-btn-gray.btn-add {
+  margin: 0 40px 32px;
+}

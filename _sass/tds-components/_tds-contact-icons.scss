@@ -1,0 +1,75 @@
+/* tds-contact-icons
+==========================================*/
+
+.contact-chat-icon:before,
+.contact-email-icon:before,
+.contact-call-icon:before,
+.contact-form-icon:before {
+  content: "";
+  width: 2em;
+  height: 2em;
+  padding-left: 0;
+  margin-right: .125em
+}
+// fall back for SVGs //
+.contact-call-icon:before {
+  background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-call.png");
+  background-size: 12px;
+}
+
+.contact-chat-icon:before {
+  background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-chat.png");
+  background-size: 14px;
+}
+
+.contact-form-icon:before {
+  background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-form.png");
+  background-size: 12px;
+}
+
+.contact-form-icon:before {
+  background-image: url('/content/dam/tdstelecom/images/ui/contact/icon_contact-form.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.contact-chat-icon:before {
+  background-image: url('/content/dam/tdstelecom/images/ui/contact/icon_contact-chat.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+.contact-email-icon:before {
+  background-image: url('/content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.contact-call-icon:before {
+  background-image: url('/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+
+@media all and (max-width: $screen-sm-min) {
+  .contact-chat-icon:before,
+  .contact-email-icon:before,
+  .contact-call-icon:before
+  .contact-form-icon:before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    padding-left: 0;
+    margin-right: .5em
+  }
+}
+@media all and (max-width: $screen-xs-min) {
+  .contact-chat-icon:before,
+  .contact-email-icon:before,
+  .contact-call-icon:before,
+  .contact-form-icon:before {
+    width: 2.25em;
+    height: 2.25em;
+  }
+}

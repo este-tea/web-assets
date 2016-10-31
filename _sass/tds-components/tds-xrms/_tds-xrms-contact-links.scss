@@ -1,0 +1,141 @@
+// From combined
+/*==================================================
+#CONTACT LINKS
+==================================================*/
+.contact-links-wrap {
+  text-align: left;
+  overflow: hidden;
+}
+.contact-links-wrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.contact-links-wrap ul li {
+  margin: 14px 0 0 0;
+  display: block;
+  vertical-align: top;
+}
+.contact-links-wrap ul li:first-child {
+    margin-top: 8px;
+}
+
+.contact-links-text {
+  font-size: 14px;
+  line-height: 2em;
+  font-family: $tds-font-family;
+  font-weight: 400;
+  font-style: normal;
+  color: #555;
+  padding-left: .25em;
+  text-align: left;
+  text-decoration: none
+}
+.contact-links-text:before {
+  float: left;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #25acf2;
+  box-shadow: 2px 4px 4px -4px rgba(0, 0, 0, 0.45);
+}
+.contact-chat-icon:before,
+.contact-email-icon:before,
+.contact-call-icon:before,
+.contact-form-icon:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  padding-left: 0;
+  margin-right: 6px;
+}
+.contact-form-icon:before {
+  background-image: url('../images/ui/icon_contact-form.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.contact-chat-icon:before {
+  background-image: url('../images/ui/icon_contact-chat.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+.contact-email-icon:before {
+  background-image: url('../images/ui/icon_contact-email.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.contact-call-icon:before {
+  background-image: url('../images/ui/icon_contact-call.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+div.contact-links-wrap > ul > li:hover > a,
+div.contact-links-wrap > ul > li:hover > a:hover {
+  color: #19388a;
+  text-decoration: none !important;
+}
+div.contact-links-wrap > ul > li:hover > a:before,
+div.contact-links-wrap > ul > li:hover > a:hover:before {
+  background-color: #19388a;
+}
+/*
+@media all and (max-width: $screen-sm-min) {
+  .contact-links-wrap ul li {
+    margin: 1.75em 1.5em 0 0;
+  }
+  .contact-chat-icon:before,
+  .contact-email-icon:before,
+  .contact-call-icon:before
+  .contact-form-icon:before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    padding-left: 0;
+    margin-right: .25em
+  }
+  .contact-contact-links-text {
+    font-size: 1em;
+    line-height: 2.25em;
+  }
+  .contact-contact-links-text {
+      font-size: 1em;
+      line-height: 2.25em
+  }
+  .contact-links-text:before {
+    width: 2.25em;
+    height: 2.25em
+  }
+}
+@media all and (max-width: $screen-xs-min) {
+  .contact-links-wrap ul li {
+    margin: 1.75em 0 0;
+  }
+  .contact-links-text {
+    font-size: 1em;
+    line-height: 2.25em;
+    padding-left: 0.5em;
+  }
+  .contact-chat-icon:before,
+  .contact-email-icon:before,
+  .contact-call-icon:before,
+  .contact-form-icon:before {
+    width: 2.25em;
+    height: 2.25em;
+    margin-right: 0.125em;
+  }
+}
+// from tds-refinement
+.tds-panel.tds-contact-panel {
+  .contact-chat-icon:before,
+  .contact-email-icon:before,
+  .contact-call-icon:before,
+  .contact-form-icon:before {
+    margin-right: 0.5em; // This is in here 4 times at different .em's? why?
+  }
+}
+*/

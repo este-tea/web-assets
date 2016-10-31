@@ -1,0 +1,119 @@
+//tds-checkboxes.less
+
+// Building off of the `tds-radio-buttons.less` file
+// *Required* to work.
+
+/* TDS Checkboxes */
+
+// Makes it square
+.prod-items input[type="checkbox"] + label > .check-radio-btn {
+  border-radius: 0px;
+}
+
+
+.prod-items input[type="checkbox"]:checked + label .check-radio-btn:before {
+  position: absolute;
+  @include rotate (-45deg);
+  margin: 5px 3px;
+  height: .7rem;
+  width: 1.2rem;
+  content: "";
+  background: transparent;
+  border: 3px solid $tds-white;
+  border-top-style: none !important;
+  border-right-style: none !important;
+  border-radius: 0px;
+}
+
+// Hides actual checkbox inputs
+.prod-items input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.checkbox-inline {
+  .check-radio-btn, .tds-radio-btn  {
+      margin: -4px 15px 10px 0px;
+  }
+}
+// Duplicate code, yes. Singling out checkboxes for UBB Data Usage Notifications
+.tds-ut.tds-ut-usage-notifications.tds-card {
+  .checkbox-inline {
+    .check-radio-btn, .tds-radio-btn  {
+        margin: -4px 15px 10px 0px;
+    }
+  }
+}
+// makes check-box look disabled when the class is added the value
+// `disabled="disabled"` needs to be put in the input to actually make the
+// check-box disabled
+.checkbox-inline.disabled {
+    opacity: .5;
+}
+
+// Compensates for the negative margin-top added to checkbox when used in a card
+// this makes the padding in the card look equal on both side and top.
+// Negative margin needs to be there to make the label text line up with checkbox
+// which is why it wasn't removed.
+.tds-card .prod-items .checkbox-inline {
+  margin-top: 4px;
+  padding-left: 0px;
+}
+
+// Search filter checkbox designs
+// ==============================
+// extend the prod-items settings for checkboxes
+.tds-newsroom-search {
+  @extend .prod-items;
+  padding: 0px !important;
+  width: 100% !important;
+  .checkbox-inline {
+    color: $tds-dk-gray;
+  }
+  .check-radio-btn {
+    margin: -4px 15px 10px 0px !important;
+  }
+}
+// Add the class `.tds-form-group-search-filters` for cases where `.form-groups` need
+// to be flush to the left in a card, like in the saerch channel filter.
+.tds-form-group-search-filters {
+  padding-left: 0px !important;
+  // when adding inputs inside of the `.tds-form-group-search-filters` class
+  // this keeps the inputs from loosing space value because of the `float:left`
+  .tds-form-group.form-group {
+    float: left;
+  }
+  // help-text fix
+  .help-block {
+    float: left;
+  }
+}
+.col-xs-12,
+.col-sm-8 {
+  .tds-card .tds-form-group.tds-form-group-search-filters {
+    display: inline;
+    .checkbox-inline {
+      @extend  .col-sm-4;
+    }
+  }
+  // when in a form make ful width
+  .tds-card.tds-card-gray .tds-form-group.tds-form-group-search-filters {
+    display: block;
+    .checkbox-inline {
+      @extend  .col-sm-12;
+    }
+    // when a nested select or form group is inside a parent form group
+    .form-group {
+      width: 100%;
+    }
+  }
+}
+// Stacks full-width checkboxes on mobile
+@media (max-width: $screen-xs-min) {
+  .col-xs-12,
+  .col-sm-8 {
+    .tds-card .tds-form-group.tds-form-group-search-filters {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/* tds-page-division.scss
+==========================================*/
+@media (max-width:$screen-sm){
+  .parsys.parsys-sidebar {
+      margin-top: 32px;
+  }
+}
+
+.tds-pagedivider-one-col {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 16px;
+}
+.pagelayout .tds-pagedivider-one-col {
+    padding: 0;
+}
+.tds-pagedivider-four-col,
+.tds-pagedivider-three-col,
+.tds-pagedivider-two-col {
+  margin-left: -15px;
+  margin-right: -15px;
+    div.shift-up {
+        margin-top: -160px;
+        @media (max-width: $screen-sm) {
+            margin-top: 0;
+        }
+    }
+}
+
+.tds-pagedivider-four-col .col-md-3 {
+    padding-left: 15px;
+}
+
+.pagelayout .tds-pagedivider-four-col,
+.pagelayout .tds-pagedivider-one-col,
+.pagelayout .tds-pagedivider-three-col,
+.pagelayout .tds-pagedivider-two-col {
+    padding-top: 32px;
+    padding-bottom: 0;
+    display: block;
+    // display: inline-block;
+    // causing aem parsys to collapse
+}

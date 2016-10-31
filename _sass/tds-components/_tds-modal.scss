@@ -1,0 +1,396 @@
+/* tds-modal
+==========================================*/
+.tds-modal {
+  background: #efefef;
+  border: 0px solid transparent;
+  border-radius: $border-radius-base;
+  @include box-shadow(none);
+  margin-left: 16px; //add spacing between modal and screen size
+  margin-right: 16px;
+}
+// top border
+.modal-body {
+  border-top: 5px solid $tds-lt-blue;
+}
+// close button
+.tds-modal .close {
+  color: $tds-lt-blue;
+  font-size: 30px;
+  text-shadow: none;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+// headings
+.tds-modal h4,
+// modals should be using class .h4 or they
+// will mess up the page outline hierarchy
+.modal-body p.h4  {
+  margin-bottom: 24px;
+  padding: 0px 28px;
+  color: #555;
+  font-size: 18px;
+  font-family: $tds-font-family;
+  font-weight: 500;
+  text-align: center;
+}
+div.tds-msg-box p.h4 {
+  padding: 0px;
+  font-size: 18px;
+  text-align: left;
+  color: $tds-dk-blue;
+}
+
+//info message boxes
+.tds-msg-box {
+  background: #fff;
+  padding: 18px 28px 28px 28px;
+  width: 100%;
+}
+
+// shopper ID modal with login or address button
+// ==========================
+#shopperId {
+  .tds-msg-box .gallery-btn {
+    margin-top: 12px;
+  }
+  @media (min-width: $screen-sm-min) {
+    .row div.col-sm-6:first-child {
+        padding-left: 28px;
+    }
+    .row div.col-sm-6.last {
+        padding-right: 28px;
+    }
+  }
+}
+
+#shopperId {
+  @media (min-width: $screen-sm-min) {
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  #shopperModal #loginBlock.tds-msg-box {
+    margin-bottom: 16px;
+  }
+}
+//had to add .container to shopperId address display
+//this removes the extra padding added by .container
+.shopperid.shopperId {
+    .tds-error-msg {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+// TODO || find these and get rid of the hide js. We arent using it any more.
+// it was for the expand icon in the modal which was removed.
+#loginInfo,
+#addressInfo {
+  display: block !important;
+  width: 100% !important;
+}
+
+// make buttons light blue
+// TODO || Set up an argument to make buttons different colors in the button file
+.tds-modal .gallery-btn {
+  background: $tds-lt-blue-100;
+  border-color: $tds-lt-blue-100;
+}
+.tds-modal .gallery-btn:hover {
+  background: $tds-blue-100;
+  border-color: $tds-blue-100;
+}
+.tds-modal .modal-footer {
+  border-top: none;
+  // Display-block for buttons in the modal-footer
+  .gallery-btn {
+    display: inline-block;
+  }
+}
+
+.modal-dialog {
+  width: 100%; //make width fluid
+  max-width: 920px;
+  margin: 10% auto;
+}
+
+// befor you logout/login modal
+// ==========================
+#loginModal {
+  div#loginInfo {
+    margin-bottom: 28px;
+  }
+  .modal-dialog {
+      max-width: 500px;
+  }
+  #loginModalId .row {
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+  #loginBlock {
+    text-align: center;
+  }
+  #loginBlock {
+    @media (min-width: $screen-xs-min) {
+      .gallery-btn:last-of-type {
+        margin-left: 20px;
+      }
+    }
+    @media (max-width: $screen-xs-min) {
+      .gallery-btn {
+        width: 100%;
+        display: block;
+      }
+      .gallery-btn:after {
+        display:none;
+      }
+    }
+  }
+}
+
+// Loading indicator modal
+// ==========================
+
+// loading js trigger
+body.loading .loadingOverlay.modal {
+  display: block;
+}
+// keeps js that triggers this modal from adding extra scroll bar
+.loadingOverlay.modal {
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+}
+.loadingOverlay.modal .modal-dialog {
+  max-width: 440px;
+}
+.tds-msg-box .tds-msg-box {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (max-width: $screen-xs-min) {
+  .tds-msg-box .tds-msg-box {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+// Loading icon set up liz gave me
+.spinner {
+  height: 50px;
+  width: 50px;
+  margin: 14px auto 34px auto;
+  position: relative;
+  -webkit-animation: rotation 1.25s infinite linear;
+  -moz-animation: rotation 1.25s infinite linear;
+  -o-animation: rotation 1.25s infinite linear;
+  animation: rotation 1.25s infinite linear;
+  border-left: 10px solid rgba(37, 172, 242, 0.25);
+  border-right: 10px solid rgba(37, 172, 242, 0.25);
+  border-bottom: 10px solid rgba(37, 172, 242, 0.25);
+  border-top: 10px solid rgba(37, 172, 242, 0.8);
+  border-radius: 100%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+h2#loadingOverlayTitle,
+div#loadingOverlayParagraph {
+  text-align: center;
+}
+// needed to remove height for p tags specificly for loading modal
+
+// ===== video modal ===========================================================
+// Video modal written with modal header for close button since they have no
+// titles. Because of this the styles need to be switched around a bit here.
+// Would like to think about writing all the modals this way later on. ~tom
+// =============================================================================
+.videomodal {
+  // blue border above modal-header
+  .modal-header {
+    padding-bottom: 0px;
+    border-bottom: transparent;
+    border-top: 5px solid $tds-lt-blue;
+    .close {
+      top: 0px;
+    }
+  }
+  .modal-body {
+    border-top: 0px solid transparent;
+  }
+}
+
+// close ticket modal from MYA trouble report ticket table
+// ==========================
+#closeTicketModal {
+  .tds-ticket-modal {
+      max-width: 500px;
+  }
+}
+
+form#closeTicket {
+  // Center buttons
+  text-align: center;
+  // TODO || Would rather go into component and change to `.btn-plain`
+  // than hide this
+  .gallery-btn:after {
+    display: none;
+  }
+  .gallery-btn {
+    margin: 0 0 14px 0;
+  }
+  @media (min-width: $screen-xs-min) {
+    //for some reason buttons are using different markup in this
+    //one is <button> and one is <a>
+    a.gallery-btn {
+      margin-left: 20px;
+    }
+  }
+  @media (max-width: $screen-xs-min) {
+    // if 2+ buttons, should be full width in xs screen and stacked
+    .gallery-btn {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+// remove user modal from MYA manage users table
+// ==========================
+div#removeUserModal {
+  .modal-dialog {
+    max-width: 490px;
+  }
+  .modal-body {
+    height: auto;
+    padding: 32px 32px 0px 32px;
+  }
+  .tds-modal .close {
+    display: none;
+  }
+  .modal-footer {
+    text-align: center;
+    padding: 20px 20px 32px 20px;
+  }
+  .tds-modal p {
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+  }
+  .gallery-btn:after {
+    display: none;
+  }
+  @media (min-width: $screen-xs-min) {
+    .gallery-btn:last-of-type {
+        margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  div#removeUserModal {
+    .modal-body {
+      padding: 20px 20px 0px 20px;
+    }
+    .modal-footer {
+      padding: 4px 20px 24px 20px;
+    }
+    .gallery-btn {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+//modal from forgot password link from login component in Agent Portal
+// ==========================
+div#forgotPasswordModal {
+  .modal-dialog {
+    max-width: 490px;
+  }
+  .modal-body {
+    height: auto;
+    padding: 32px;
+    @media (max-width: $screen-xs-min) {
+      padding: 20px;
+    }
+    .h4 {
+      margin-top: 0px;
+    }
+  }
+  .modal-content.tds-modal {
+    background: white;
+  }
+}
+//loading message margins in #forgotPasswordModal
+div#resetPwdLoadingBlock {
+    margin-bottom: 4px;
+    margin-top: 24px;
+    float: none;
+}
+//add left margin to forgot password cancel button
+button#resetPwdCancelCta {
+    margin-left: 20px;
+}
+
+//button margins in #forgotPasswordModal
+div#resetPwdMainBlock .gallery-btn {
+  margin-top: 20px;
+  @media (max-width: 460px) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+#resetPwdMainBlock, #resetPwdSuccessBlock {
+  .modal-footer {
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+div#resetPwdHelpBlock .tds-alert {
+    margin-bottom: 0px;
+}
+// END forgotPasswordModal styles
+// ==========================
+
+// This is currently only an example set up
+.tds-chat-modal {
+  max-width: 615px;
+  .tds-modal {
+
+  }
+}

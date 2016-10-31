@@ -1,0 +1,202 @@
+// tds-panels.less
+
+$panel-border-radius: 0px;
+$panel-default-border: #ccc;
+
+$border-radius-base: 0px;
+
+// bootstrap panel changes
+.tds-panel {
+  @extend .panel;
+  @extend .panel-default;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: none;
+  .panel-heading {
+    background-color: transparent;
+  }
+}
+
+// ===== Shopping cart/checkout panels =========================================
+
+// h3 Line Items titles
+.tds-panel>.line-item-title {
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 26px;
+  padding-left: 0px;
+  font-family: $tds-font-family;
+  color: $tds-dk-blue;
+}
+// h2 line items `.panel-header` color
+.tds-panel>.line-item-title h2 {
+  color: $tds-lt-blue;
+}
+// h3 line items header color
+.tds-panel>.line-item-title h3 {
+  margin-top: 0px;
+  color: $tds-dk-blue;
+  font-family: $tds-font-family;
+}
+// border wanted to float on the top one for some reason
+.bundle-lineitems.tds-panel {
+  overflow: hidden;
+}
+
+// ===== contact support panels ================================================
+
+/* This gives component value in author mode in cms */
+.contactsupportmaincontainer {
+  overflow: hidden;
+  float: left;
+  display: inline;
+  width: 100%;
+  // hide on mobile || **TODO** Need to update html classes instead of this.
+  > .col-xs-6 {
+    //.hidden-xs;
+  }
+  // keep visible
+  > .col-sm-6.last {
+      @extend .visible-xs;
+      @extend .visible-sm;
+      @extend .visible-md;
+      @extend .visible-lg;
+  }
+}
+// Hacky-McHckins Mobile fix TODO || rewrite all the mobile set ups
+@media (min-width: $screen-sm-min) {
+  .contactsupportmaincontainer>.col-sm-6 {
+    display: block !important;
+  }
+}
+
+.tds-contact-panel,
+.tds-support-panel {
+  padding: 10px 32px 32px;
+  //height: 175px !important;
+  //can use matchHeight for this
+  width: 100%;
+  font-family: $tds-font-family;
+  font-weight: 200;
+  background: $tds-ltr-gray;
+  border-color: transparent;
+}
+// hide on mobile
+.tds-contact-panel {
+  // .visible-sm;
+  // .visible-md;
+  // .visible-lg;
+}
+// expland on mobile
+.tds-support-panel {
+  //.make-md-column(6) !important;
+  //.make-sm-column(6) !important;
+  //.make-xs-column(12);
+}
+.tds-contact-panel h3,
+.tds-support-panel h3 {
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: $tds-lt-blue;
+  border-bottom: 2px solid $tds-dk-blue;
+}
+// support icons fix
+
+// text links in supportcontactbar component
+.tds-panel.tds-contact-panel a,
+.tds-panel.tds-support-panel a {
+  display: inline-block;
+  text-decoration: underline;
+  //changed to text in the panel so no longer need this styling
+  color: $tds-blue-100;
+  //font-family: $tds-font-family;
+  //font-size: 0.875em;
+  //margin-right: 24px;
+  &:hover {
+    text-decoration: none;
+    color: $tds-lt-blue-100;
+  }
+}
+/* contact bar in support section */
+@media (max-width: $screen-sm-min) {
+  .parbase.helpsupportcontactbar {
+    display: none;
+  }
+}
+.helpsupportcontactbar .tds-card.tds-card-gray {
+  margin-bottom: 32px;
+}
+// phone no. icon fix
+.phone-number,
+.phoneNumberDisplay,
+.phoneNumberDisplay div {
+  display: inline;
+}
+
+// remote pc support: prevent weird breaking for numbers*/
+.remote-customer > span {
+    display: inline-block;
+}
+// remote pc support: remove underline from phone links*/
+span.phone-link > a {
+    font-weight: 500;
+    text-decoration: none!important;
+}
+.parbase.newsSearch.section {
+    padding: 0 15px;
+}
+
+/* ===== Prod-items =======================================
+ * TDS Styles begin here
+ * ======================================================== */
+
+
+// ** NOTE **
+// Move these to the prod items page, not object panels really.
+// more design elements now I think.
+.prod-items {
+  border-color: transparent !important;
+}
+.prod-subitems {
+  //.panel-footer;
+  border-color: transparent !important;
+  // moves description of subitems to make way for checkboxes
+  .prod-contents {
+    margin-left: 35px;
+  }
+}
+
+.prod-items > .prod-contents,
+.prod-items.tds-plus-packs .prod-contents {
+  float: right;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 90%;
+  border: 3px solid #ccc !important;
+  &.prod-highlight {
+    background: $tds-lt-gray;
+  }
+}
+// Panel components wrap
+// the `.prod-items > .prod-contents` settings above are for multiple sections
+// on a page like in the bundles page.
+// this is for wrapping them when they just have one section.
+// TODO || Should go back and make them all do this
+.tds-panel-items {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+}
+
+// Hack panel set up for TV Locations info on `tv.html`.
+// This was writen by hand in a text editor component and this fixes the default
+// width on that component when next to the `.tdstvcomponent` class.
+// TO DO || get a component built for this and remove this hacky hack.
+.tdstvcomponent + .text.parbase.section {
+  width: 100%;
+}

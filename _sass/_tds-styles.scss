@@ -1,0 +1,105 @@
+/* START jquery-ui */
+@import "../etc/designs/tds-foundation/tds-styles/bower_components/jquery-ui/themes/base/jquery-ui.min";
+/* END jquery-ui */
+
+@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss";
+
+@import "tds-components/_tds-variables";
+@import "tds-components/_tds-mixins";
+
+/* START font awesome*/
+@import "../etc/designs/tds-foundation/tds-styles/bower_components/font-awesome/scss/font-awesome";
+/* END font awesome */
+
+/* START fontello */
+//@import "/etc/designs/tds-foundation/fontello/css/animation.css";
+//@import "../etc/designs/tds-foundation/fontello/css/fontello-codes.css";
+//@import "../etc/designs/tds-foundation/fontello/css/fontello-embedded.css";
+//@import "../etc/designs/tds-foundation/fontello/css/fontello.css";
+/* END fontello */
+
+/* START bs sprockets */
+@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+/* END bs sprockets */
+
+/* START bootstrap */
+@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+/* END bootstrap */
+
+@import "tds-components/_tds-grid";
+@import "tds-components/_tds-layout";
+
+@import "tds-components/_tds-fonts";
+@import "tds-components/_tds-type";
+
+@import "tds-components/_tds-forms";
+@import "tds-components/_tds-radio-buttons";
+@import "tds-components/_tds-checkboxes";
+
+@import "tds-components/_tds-tables";
+@import "tds-components/_tds-tables-responsive";
+@import "tds-components/_tds-buttons";
+@import "tds-components/_tds-button-icons";
+@import "tds-components/_tds-labels";
+@import "tds-components/_tds-images";
+
+@import "tds-components/_tds-panels";
+@import "tds-components/_tds-lines-rules";
+@import "tds-components/_tds-pagination";
+
+//NAVIGATION
+@import "tds-components/_tds-navs2";
+@import "tds-components/_tds-nav-main-sub";
+@import "tds-components/_tds-nav-header-footer-links";
+@import "tds-components/_tds-nav-mobile-header";
+@import "tds-components/_tds-stepped-nav";
+@import "tds-components/_tds-skip-links";
+@import "tds-components/_tds-header-careers";
+@import "tds-components/_tds-header-captive-portal";
+@import "tds-components/_tds-breadcrumbs";
+
+@import "tds-components/_tds-outdated-browser";
+@import "tds-components/_tds-errors-alerts";
+@import "tds-components/_tds-lists";
+@import "tds-components/_tds-contact-links";
+@import "tds-components/_tds-contact-icons";
+@import "tds-components/_tds-search-bars";
+@import "tds-components/_tds-site-map";
+
+//COMPONENTS
+@import "tds-components/_tds-landing-page";
+@import "tds-components/_tds-bundle-builder";
+@import "tds-components/_tds-cart-checkout";
+@import "tds-components/_tds-pull-quote";
+@import "tds-components/_tds-callouts";
+@import "tds-components/_tds-helpsupport-category";
+@import "tds-components/_tds-account-info";
+@import "tds-components/_tds-usage-summary";
+@import "tds-components/_tds-search-results";
+@import "tds-components/_tds-carousel";
+@import "tds-components/_tds-page-banner";
+@import "tds-components/_tds-color-blocks";
+@import "tds-components/_tds-page-division";
+@import "tds-components/_tds-gallery";
+@import "tds-components/_tds-cards";
+@import "tds-components/_tds-card-gallery-component";
+@import "tds-components/_tds-content-container-gallery";
+@import "tds-components/_tds-responsive-embed-iframe";
+@import "tds-components/_tds-video";
+@import "tds-components/_tds-modal";
+@import "tds-components/_tds-styled-bullet-headings";
+@import "tds-components/_tds-collapsible-list-component";
+@import "tds-components/_tds-collapsible-archive-component";
+@import "tds-components/_tds-dropdown-select-menus";
+@import "tds-components/_tds-testimonial";
+@import "tds-components/_tds-trouble-reporting-form";
+@import "tds-components/_tds-news-feed-articles";
+
+//FOOTER
+@import "tds-components/_tds-footer";
+@import "tds-components/_tds-footer-subscribe";
+@import "tds-components/_tds-footer-social-icons";
+@import "tds-components/_tds-footer-careers";
+
+//STYLES FROM DAM THAT NEED TO BE MERGED
+@import "tds-components/_tds-dam-styles";

@@ -1,0 +1,11 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+// Note: moved file here based on path method for local & live environments.
+// ref @mdo blog post **Using Sass with Jekyll** - http://goo.gl/8RbHrW
+/* ===== START TDS FOUNDATION STYLES ===============================================
+====================================================================================*/
+@import "tds-styles";
+/*===================================================================================
+ ===== END TDS FOUNDATION STYLES ==================================================== */

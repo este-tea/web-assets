@@ -1,0 +1,243 @@
+/* tds-search-bars.scss
+==========================================*/
+
+// ==================================================
+// #SITE SEARCH BAR IN HEADER
+// ==================================================
+.tds-search-container {
+  padding: 0;
+  position: relative;
+  border: none;
+}
+#tds-searchbar {
+  float: right;
+}
+.tds-searchbar-input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0 none;
+  outline: none;
+  color: $tds-dk-gray;
+  background: $tds-ltr-gray;
+  font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
+  height: 40px\9;
+  height: 40px;
+  width: 280px;
+  margin-right: 44px;
+  padding: 0 14px;
+  float: left;
+}
+ ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: $tds-dk-gray;
+}
+ :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $tds-dk-gray;
+}
+ ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $tds-dk-gray;
+}
+ :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: $tds-dk-gray;
+}
+.tds-searchbar-input:focus {
+  background: $tds-lt-gray;
+}
+.tds-searchbar-button {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0 none;
+  background-color: $tds-blue-100;
+  width: 44px;
+  float: left;
+  padding: 0;
+  text-align: center;
+  height: 44px;
+  cursor: pointer;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_search-white.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/icon_search-white.svg);
+  background-size: 18px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-indent: -9999em;
+}
+.tds-searchbar-button:hover {
+  background-color: $tds-lt-blue-80;
+}
+@media all and (max-width: $screen-sm-min) {
+  /*#tds-searchbar {
+	display: none;
+	}*/
+}
+// ==================================================
+// #SEARCH BAR IN MOBILE FORMAT
+// ==================================================
+#mobile-searchbar {
+  display: none;
+  margin-top: 18px;
+}
+#mobile-searchbar .tds-searchbar-button {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0 none;
+  background-color: $tds-blue-100;
+  width: 44px;
+  float: left;
+  padding: 0;
+  text-align: center;
+  height: 44px;
+  cursor: pointer;
+  background-image: none;
+  font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  text-indent: 0;
+}
+#mobile-searchbar .tds-searchbar-input {
+  line-height: 44px;
+  height: 44px\9;
+  height: 44px;
+  width: 100%;
+}
+
+// ===== tds-search-bar component set up =======================================
+// A simpiler way to do the search form moving forward.
+// Utilizes the existing html for design more than creating specific
+// search set up.
+// -----------------------------------------------------------------------------
+// * `.input-group.tds-search-input`
+// * `.gallery-btn.btn-plain`
+// 		- `span.fa.fa-search`
+// =============================================================================
+// make bg field gray
+.input-group.tds-search-input input {
+  background: $tds-ltr-gray;
+  border: 0 solid transparent;
+  &:focus {
+    @include box-shadow(none);
+  }
+}
+// remove default display for div search text
+.input-group.tds-search-input .tds-btn-search-text {
+  // display: inline;
+  // Asked to remove the search text re: HYDRA-1689
+  // link: https://jira.tds.net/browse/HYDRA-1689?focusedCommentId=167033
+  display: none !important;
+}
+// Hide search btn text on $screen-sm-min
+@media (max-width: $screen-sm-min) {
+  .input-group.tds-search-input .tds-btn-search-text {
+    display: none;
+  }
+}
+.input-group.tds-search-input .tds-btn-search-text {
+  display: none !important;
+}
+// search bars in support section */
+.parbase.searchSiteSectionBar.section input.form-control,
+.searchsitesectionbar.parbase.searchSiteSectionBar input.form-control {
+  border: none !important;
+  background-color: $tds-ltr-gray !important;
+}
+// Search forms with only an indicator icon, no search button
+.tds-search-input.tds-search-input-indicator {
+  // Make form full width
+  width: 100%;
+  .tds-icon-search {
+    height: 100%;
+    line-height: 45px;
+    color: $tds-lt-blue;
+  }
+}
+.searchsitesectionbar.parbase.searchSiteSectionBar {
+    margin-top: 20px;
+}
+
+.searchsitesectionbar .tds-card {
+    margin-top: 24px;
+}
+// keep input search-icon visible on focus
+.form-control-feedback {
+  z-index: 3;
+}
+// Searchbar for dataTable
+// -----------------------
+//  in a card has different padding and margin in the design
+div#users-search.tds-card {
+    padding: 40px;
+    margin-bottom: 50px;
+}
+.searchsitesectionbar .tds-card,
+.parbase.searchSiteSectionBar.section .tds-card {
+  padding: 40px;
+  margin-bottom: 32px;
+}
+
+.searchSiteSectionBar button.gallery-btn {
+    box-shadow: none;
+}
+// Search box header
+// It was requested that an h2 be a different size here than the rest of the
+// site RE: HYDRA-1689
+// Link https://jira.tds.net/browse/HYDRA-1689?focusedCommentId=167033
+.newsSearchBar h2 {
+  font-size: 24px;
+}
+.newsSearchBar .checkbox-inline label {
+    margin-bottom: 0px;
+}
+.newsSearchBar .tds-card .tds-newsroom-search .tds-form-group {
+    margin-bottom: 8px;
+}
+.newsSearchBar .tds-card .tds-newsroom-search .tds-form-group:last-child {
+    margin-bottom: -8px;
+}
+.newsSearchBar .tds-card .tds-newsroom-search p {
+    color: black;
+    margin-bottom: 16px;
+}
+
+.newsSearchBar .tds-search-input button.gallery-btn.btn-plain {
+    box-shadow: none;
+}
+
+.tds-form-group-search-filters:nth-child(4) {
+  margin-bottom: 0;
+}
+
+//add bottom margin to search field in mobile menu*/
+.topSearch.mobile-search {
+    margin-bottom: 16px;
+}
+#mobile-searchbar {
+    margin-top: 0;
+}
+
+//news results page*/
+.parbase.section.newsSearchBar {
+    padding: 0 15px;
+}
+.parsys-sidebar > .parbase.section.newsSearchBar {
+    padding: 0;
+}
+@media (max-width: 583px) {
+.newsSearch>.tds-news-feed-group, .tds-news-feed-group {
+    padding-right: 0;
+}
+}
+.newsSearch > .search-results-pagination.pagination {
+    padding-bottom: 27px;
+}

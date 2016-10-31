@@ -1,0 +1,119 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $tds-font-family;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+h1, .h1 {
+  font-size: 36px;
+  color: $tds-dk-blue;
+  @media (max-width: $screen-xs) {
+    font-size: 30px;
+    margin: 14px;
+  }
+}
+h2, .h2 {
+  font-size: 26px;
+  color: $tds-dk-blue;
+  margin-bottom: 14px;
+  @media (max-width: $screen-xs) {
+    font-size: 22px;
+  }
+}
+h3, .h3 {
+  font-size: 23px;
+  color: $tds-lt-blue;
+  margin-bottom: 10px;
+  @media (max-width: $screen-xs) {
+    font-size: 18px;
+  }
+}
+h4, .h4 {
+  font-size: 21px;
+  color: $tds-dk-blue;
+  @media (max-width: $screen-xs) {
+    font-size: 16px;
+  }
+}
+h5, .h5 {
+  font-size: 18px;
+  color: $tds-lt-blue;
+  @media (max-width: $screen-xs) {
+    font-size: 16px;
+  }
+}
+h6, .h6 {
+  font-size: 16px;
+  color: #000;
+}
+
+// p or li or main body copy
+p { margin: 0; }
+p { line-height: 1.65em; color: $tds-dk-gray; }
+a {
+  color: $tds-lt-blue-100;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: $tds-blue-100;
+}
+a strong {
+  color: inherit;
+}
+
+// page banner and content padding that changes based on screen size
+// found in content - container and content - rich text component
+
+  .tds-richtext-padboth {
+    padding-left: $tds-padding-lg;
+    padding-right: $tds-padding-lg;
+  }
+  .tds-richtext-padleft {
+    padding-left: $tds-padding-lg;
+  }
+  .tds-richtext-padright {
+    padding-right: $tds-padding-lg;
+  }
+
+@media (max-width: $screen-sm-min) {
+
+    .tds-richtext-padboth,
+    .tds-richtext-padleft,
+    .tds-richtext-padright {
+      padding-left: $tds-padding-md;
+      padding-right: $tds-padding-md;
+    }
+
+}
+@media (max-width: $screen-xs-min) {
+
+  .tds-richtext-padboth,
+  .tds-richtext-padleft,
+  .tds-richtext-padright {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+// Note messaging
+.tds-note {
+  font-size: 11px;
+  font-style: italic;
+}
+
+.customer-information {
+  p {
+    margin-top: 10px;
+  }
+}
+
+.notification-prefs span.h3 {
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.appt-info > p > span {
+    display: inline-block;
+}

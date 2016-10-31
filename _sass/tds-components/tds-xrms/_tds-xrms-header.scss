@@ -1,0 +1,48 @@
+/* #HEADER
+================================================== */
+.page-header {
+  display: table;
+  width: 100%;
+  padding: 28px 0;
+  margin: 28px 0;
+  border-bottom: solid 4px $tds-lt-blue-100;
+  @media (max-width: $screen-xs) {
+    padding: 0;
+  }
+}
+.tds-logo {
+  width: 98px;
+  height: 40px;
+  background-image: url('../images/ui/tds-logo.png');
+  background-image: url('../images/ui/tds-logo.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (max-width: $screen-xs) {
+    margin: 0 auto;
+    width: 74px;
+    height: 30px;
+  }
+}
+.logo-container {
+  text-align: left;
+}
+
+.heading-container {
+  text-align: right;
+	@media (max-width: $screen-xs) {
+    margin-top: 1.5em;
+  }
+}
+
+.logo-container, .heading-container {
+  display: table-cell;
+  vertical-align: middle;
+	padding: 0;
+  @media (max-width: $screen-xs) {
+    display: block;
+		float: none;
+		text-align: center;
+		margin: auto;
+  }
+}

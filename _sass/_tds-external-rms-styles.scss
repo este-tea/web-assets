@@ -1,0 +1,26 @@
+@import "tds-components/tds-variables";
+
+@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "tds-components/tds-grid";
+
+@import "tds-components/tds-fonts";
+@import "tds-components/tds-mixins";
+
+.container {
+    width: 100%!important;
+    max-width: 1200px;
+}
+
+@import "tds-components/tds-xrms/tds-xrms-type";
+@import "tds-components/tds-xrms/tds-xrms-header";
+@import "tds-components/tds-xrms/tds-xrms-footer";
+@import "tds-components/tds-xrms/tds-xrms-cards";
+@import "tds-components/tds-xrms/tds-xrms-contact-links";
+@import "tds-components/tds-radio-buttons";
+@import "tds-components/tds-checkboxes";
+@import "tds-components/tds-xrms/tds-xrms-forms";
+@import "tds-components/tds-xrms/tds-xrms-buttons";
+@import "tds-components/tds-xrms/tds-xrms-alerts";
+@import "tds-components/tds-xrms/tds-xrms-carousel";
+@import "tds-components/tds-xrms/tds-xrms-modal";

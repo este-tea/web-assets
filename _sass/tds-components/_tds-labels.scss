@@ -1,0 +1,36 @@
+/* tds-labels
+==========================================*/
+// tds labels
+// design div to wrap around labels in the tv-lineup legend
+.tds-labels {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 14px;
+}
+@media (max-width: $screen-xs) {
+  .tds-labels {
+    display: block;
+  }
+}
+// basic label set up
+.tds-label {
+  @extend .label;
+  margin-right: 5px;
+  @include border-top-radius(0);
+  @include border-right-radius(0);
+  @include border-bottom-radius(0);
+  @include border-left-radius(0);
+}
+// colors by Ice-T
+.label-tds-blue {
+  background-color: $tds-dk-blue;
+}
+.label-tds-lt-blue {
+  background-color: $tds-lt-blue;
+}
+.label-tds-orange {
+  background-color: $tds-orange;
+}
+.label-dk-gray {
+  background-color: $tds-dk-gray;
+}

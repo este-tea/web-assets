@@ -1,0 +1,254 @@
+/* tds-styled-bullet-headings.scss
+==========================================*/
+
+div.styledBulletHeadings {
+  ul {
+    list-style: none;
+    margin-top: 20px;
+    &.ul-gray-star {
+      padding-left: 20px;
+      > li {
+        margin-left: 28px;
+        margin-bottom: 14px;
+        > h2, > h3, > h4 {
+          margin-bottom: 4px;
+          &:before {
+            font-family: 'fontello';
+            content: '\e827';
+            color: $tds-dk-gray-80;
+            margin-top: -.05em;
+            font-size: 1em;
+            position: absolute;
+          }
+        }
+        > h2:before {
+          margin-left: -28px;
+        }
+        > h3:before {
+          margin-left: -24px;
+        }
+        > h4:before {
+          margin-left: -20px;
+        }
+      }
+    }
+    &.ul-gray-check {
+      padding-left: 20px;
+      > li {
+        margin-left: 28px;
+        margin-bottom: 14px;
+        > h2, > h3, > h4 {
+          margin-bottom: 4px;
+          &:before {
+            font-family: 'fontello';
+            content: '\e820';
+            color: $tds-dk-gray-80;
+            margin-top: .25em;
+            font-size: .65em;
+            position: absolute;
+          }
+        }
+        > h2:before {
+          margin-left: -28px;
+        }
+        > h3:before {
+          margin-left: -24px;
+        }
+        > h4:before {
+          margin-left: -20px;
+        }
+      }
+    }
+    &.ul-lt-blue-squares {
+      padding-left: 20px;
+      > li {
+        margin-left: 28px;
+        margin-bottom: 14px;
+        > h2, > h3, > h4 {
+          margin-bottom: 4px;
+          &:before {
+            font-family: 'fontello';
+            content: '\e80c';
+            color: $tds-lt-blue-80;
+            margin-top: .6em;
+            font-size: .5em;
+            position: absolute;
+          }
+        }
+        > h2:before {
+          margin-left: -22px;
+        }
+        > h3:before {
+          margin-left: -18px;
+        }
+        > h4:before {
+          margin-left: -14px;
+        }
+      }
+    }
+    &.ul-tds-blue-squares {
+      padding-left: 20px;
+      > li {
+        margin-left: 28px;
+        margin-bottom: 14px;
+        > h2, > h3, > h4 {
+          margin-bottom: 4px;
+          &:before {
+            font-family: 'fontello';
+            content: '\e80c';
+            color: $tds-blue-100;
+            margin-top: .6em;
+            font-size: .5em;
+            position: absolute;
+          }
+        }
+        > h2:before {
+          margin-left: -22px;
+        }
+        > h3:before {
+          margin-left: -18px;
+        }
+        > h4:before {
+          margin-left: -14px;
+        }
+      }
+    }
+    ol {
+      > li {
+        display: block;
+        padding: 0 .4em .2em 1em;
+        margin: .15em 0;
+        color: #555;
+        text-decoration: none;
+        position: relative;
+        &:before {
+          content: counter(li);
+          counter-increment: li;
+          position: absolute;
+          left: -0.70em;
+          background: #19388a;
+          height: 1.25em;
+          width: 1.25em;
+          line-height: 1.2em;
+          text-align: center;
+          font-weight: bold;
+          border-radius: 2em;
+          color: white;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+ol.ol-circle {
+   counter-reset:li; /* Initiate a counter */
+   margin-left:0; /* Remove the default left margin */
+   padding-left:0; /* Remove the default left padding */
+}
+ol.ol-circle > li {
+   position:relative; /* Create a positioning context */
+   margin:-10px 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+   padding:0 8px 10px 8px; /* Add some spacing around the content */
+   list-style:none; /* Disable the normal item numbering */
+}
+ol.ol-gray > li:before {
+   content:counter(li); /* Use the counter as content */
+   counter-increment:li; /* Increment the counter by 1 */
+   /* Position and style the number */
+   position:absolute;
+   top:-1px;
+   left:-2em;
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   width:2em;
+   /* Some space between the number and the content in browsers that support
+      generated content but not positioning it (Camino 2 is one example) */
+   margin-right:8px;
+   padding:4px;
+   border-top:2px solid #00000;
+   color:#fff;
+   background:#666;
+   border-radius: 50px;
+   font-weight:bold;
+   font-family:"Helvetica Neue", Arial, sans-serif;
+   text-align:center;
+}
+
+ol.ol-gray > li:before {
+   content:counter(li); /* Use the counter as content */
+   counter-increment:li; /* Increment the counter by 1 */
+   /* Position and style the number */
+   position:absolute;
+   top:-1px;
+   left:-2em;
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   width:2em;
+   /* Some space between the number and the content in browsers that support
+      generated content but not positioning it (Camino 2 is one example) */
+   margin-right:8px;
+   padding:4px;
+   border-top:2px solid #00000;
+   color:#fff;
+   background:#666;
+   border-radius: 50px;
+   font-weight:bold;
+   font-family:"Helvetica Neue", Arial, sans-serif;
+   text-align:center;
+}
+
+ol.ol-lt-blue > li:before {
+   content:counter(li); /* Use the counter as content */
+   counter-increment:li; /* Increment the counter by 1 */
+   /* Position and style the number */
+   position:absolute;
+   top:-1px;
+   left:-2em;
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   width:2em;
+   /* Some space between the number and the content in browsers that support
+      generated content but not positioning it (Camino 2 is one example) */
+   margin-right:8px;
+   padding:4px;
+   border-top:2px solid #00000;
+   color:#fff;
+   background:#0b8fcf;
+   border-radius: 50px;
+   font-weight:bold;
+   font-family:"Helvetica Neue", Arial, sans-serif;
+   text-align:center;
+}
+
+ol.ol-tds-blue > li:before {
+   content:counter(li); /* Use the counter as content */
+   counter-increment:li; /* Increment the counter by 1 */
+   /* Position and style the number */
+   position:absolute;
+   top:-1px;
+   left:-2em;
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   width:2em;
+   /* Some space between the number and the content in browsers that support
+      generated content but not positioning it (Camino 2 is one example) */
+   margin-right:8px;
+   padding:4px;
+   border-top:2px solid #00000;
+   color:#fff;
+   background:#19398a;
+   border-radius: 50px;
+   font-weight:bold;
+   font-family:"Helvetica Neue", Arial, sans-serif;
+   text-align:center;
+}
+
+
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;
+}

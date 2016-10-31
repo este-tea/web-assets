@@ -1,0 +1,276 @@
+.cartoverview,
+.checkoutquestions {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 990px;
+}
+@media(min-width:$screen-sm) {
+    .cartoverview,
+    .checkoutquestions {
+        width: 750px;
+    }
+}
+@media(min-width:$screen-md) {
+    .cartoverview,
+    .checkoutquestions {
+        width: 1030px;
+    }
+}
+@media(min-width:$screen-lg) {
+    .cartoverview,
+    .checkoutquestions {
+        width: 1170px;
+    }
+}
+.cartoverview .prod-section-wrap {
+    border-color: transparent;
+}
+/* CHECKOUT QUESTIONS CHECKBOX FIX */
+#checkoutForm label {
+    width: 100%;
+}
+span.tds-radio-btn.check-radio-btn {
+    border-radius: 0;
+}
+.label-text {
+    margin-left: 44px;
+    margin-top: 4px;
+}
+.checkoutQuestionError,
+.text-danger {
+    color: #CB1D1D!important;
+}
+input:checked + .tds-radio-btn:before {
+    border: 3px solid white;
+}
+span#openOverlay {
+    color: #0C8FD0;
+    text-decoration: underline;
+}
+span#openOverlay:hover {
+    color: #19388a;
+    text-decoration: none;
+}
+
+/*shopping cart confirm order*/
+/*===== Shopping Cart =====*/
+#cartDisplay > .tds-panel {
+    padding: 28px;
+    border-width: 2px;
+    margin-bottom: 18px;
+}
+#cartDisplay .line-item-title.panel-heading {
+    padding: 0;
+}
+.cartoverview.section {
+    max-width: 960px;
+}
+.cartoverview.section .prod-section-wrap {
+    padding-top: 0;
+}
+#cartDisplay .line-item-actions.col-xs-3 {
+    padding: 0;
+}
+
+@media (min-width: 751px) {
+    .cartoverview, .checkoutquestions {
+        width: 100%;
+    }
+}
+
+/*bundle panel product category headings*/
+#cartDisplay div {
+    color: #19388a;
+    font-family: "Neue Helvetica W01",Helvetica Neue,Helvetica,Arial;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+/*bundle product line items*/
+#cartDisplay div + table.table {
+    color: #555555;
+    font-family: "Neue Helvetica W01",Helvetica Neue,Helvetica,Arial;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+/*estimated taxes and fees heading*/
+#cartDisplay div.taxes-and-fees {
+    color: #555;
+    font-family: "Neue Helvetica W01",Helvetica Neue,Helvetica,Arial;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* margin-bottom: 8px; */
+}
+
+#cartDisplay table.table tbody>tr:last-child>td {
+    border-bottom: none!important;
+}
+
+/*bundle heading*/
+.bundle-lineitems.tds-panel>.line-item-title h3 {
+    color: #0c8fd0;
+}
+.bundle-lineitems h3.line-item-title.col-xs-9 {
+    padding: 0;
+}
+/**/
+#cartDisplay div.order-totals {
+    color: #555;
+    font-family: "Neue Helvetica W01",Helvetica Neue,Helvetica,Arial;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 32px;
+}
+
+
+
+#cartDisplay .table > tbody > tr > td {
+    padding-left: 28px;
+    height: 40px;
+    vertical-align: top;
+    width: 33.333333%;
+}
+#cartDisplay .table > tbody > tr > td.col-xs-8 {
+    width: 66.666667%;
+}
+td.h4.tds-cart-price {
+    padding: 0;
+    vertical-align: top;
+}
+/*price length and terms*/
+td.tds-cart-price span:nth-child(2),
+td.tds-cart-price span:nth-child(3),
+.taxes-and-fees .table > tbody > tr > td.tds-cart-price > span {
+    font-size: 70%;
+    text-transform: uppercase;
+    color: #6b9c22;
+    display: inline-block;
+}
+
+td.h4.tds-cart-price {
+    width: 33.333333%;
+}
+@media (max-width: 583px) {
+    #cartDisplay .table > tbody > tr > td.col-xs-8 {
+    }
+    td.h4.tds-cart-price {
+        padding-left: 0!important;
+    }
+}
+
+@media (max-width: 400px) {
+    #cartDisplay .table > tbody > tr > td.col-xs-8 {
+        width: 100%;
+        height: inherit;
+        padding: 0;
+        padding-left: 16px;
+    }
+    td.h4.tds-cart-price {
+        width: 100%;
+        padding-left: 16px!important;
+    }
+    #cartDisplay .table > tbody > tr > td {
+        display: block;
+        padding-left: 16px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 583px) {
+    #cartDisplay .tds-panel {
+        padding: 20px;
+    }
+
+}
+@media (max-width: 750px) {
+    h3.line-item-title.col-xs-9 {
+        display: block;
+        float: none;
+    }
+    #cartDisplay .line-item-actions.col-xs-3 {
+        float: left;
+        width: 100%;
+    }
+    #cartDisplay .line-item-actions.col-xs-3 > .form-group.pull-right {
+        float: left!important;
+    }
+}
+
+#cartDisplay .btn.tds-btn-gray,
+.cart-overview-actions.form-inline button.btn.tds-btn-gray {
+    text-decoration: none;
+    font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#cartDisplay .line-item-actions .form-group a.btn.tds-btn-gray:first-child {
+    margin-right: 16px;
+}
+/*taxes and fees heading*/
+.taxes-and-fees h3.line-item-title {
+    font-size: 18px;
+}
+/*order total Heading*/
+.order-totals h2.line-item-title {
+    color: #0c8fd0;
+}
+
+
+/*print button*/
+button#printButton {
+    margin-right: 16px;
+    float: left!important;
+    display: inline-block!important;
+    padding: 12px 16px!important;
+}
+/*empty cart button*/
+.cart-overview-actions.form-inline > .form-group > button.btn.tds-btn-gray {
+    float: left!important;
+    display: inline-block!important;
+    padding: 12px 16px!important;
+}
+
+button#beginCheckout {margin-top:0}
+
+@media (max-width: 400px) {
+    #cartDisplay .table > tbody > tr > td {
+        width: 100%;
+        height: inherit;
+        padding-left: 16px;
+    }
+    td.h4.tds-cart-price {
+        width: 100%;
+    }
+    #cartDisplay .table > tbody > tr > td {
+        display: block;
+        padding-left: 16px;
+        margin-top: 0;
+    }
+}
+
+td.h4.tds-cost-price {
+    padding: 0;
+}
+
+@media (max-width: 583px){
+    h3.line-item-title.col-xs-9 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+}
+/**/
+
+.icon_social-pinterest {
+    background-image: url("/content/dam/tdstelecom/images/ui/social/icon_social-pinterest.png");
+    background-image: linear-gradient(transparent,transparent),url("/content/dam/tdstelecom/images/ui/social/icon_social-pinterest.svg");
+}

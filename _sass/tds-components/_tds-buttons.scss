@@ -1,0 +1,397 @@
+/* tds-buttons
+==========================================*/
+
+// Main TDS button
+// ------------------
+.gallery-btn {
+  //display: table; // this gives the button size value without having to float.
+  margin-top: 20px;
+  padding: 12px 16px !important;
+  @include button-variant($tds-white, $tds-dk-blue, transparent);
+  font-family: $tds-font-family;
+  text-align: left;
+  border: none;
+  box-shadow: $box-shadow;
+  a {
+    color: #fff !important;
+    text-decoration: none;
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: $tds-lt-blue-100;
+    cursor: pointer;
+    box-shadow: none;
+  }
+}
+//added this because couldn't figure out how to add it above and make it work
+a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
+
+// arrows for gallery buttons
+/*
+// change arrow so that it isn't using font awesome
+.gallery-btn:after {
+  display: inline-block;
+  margin-left: 15px;
+  font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+  content: "\f054";
+}*/
+
+//new btn after so it isn't using font awesome
+.gallery-btn:after {
+  content: "";
+  width: 24px;
+  height: 16px;
+  float: right;
+  background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 9px 14px;
+}
+// spacing for buttons with left icon
+.fa.pull-left {
+  margin-right: 14px !important;
+  line-height: 1.5;
+}
+
+// ===== Button block ==========================================================
+// When used in cards full-width buttons
+// =============================================================================
+
+.gallery-grid .gallery-btn {
+  @extend .btn-block;
+}
+// repositioned arrows for block buttons
+.gallery-grid .gallery-btn,
+.home-grid .gallery-btn {
+  &:after {
+    position: absolute;
+    right: 45px;
+  }
+}
+// // **Three cards position**
+// .gallery-grid .gallery-btn:after {
+// }
+// // **Four cards position**
+.home-grid .gallery-btn:after {
+  right: 30px;
+}
+
+// ===== .btn-block Arrows =====================================================
+// New method for arrows on button btn-block set up.
+// Now using btn-block class on .gallery-btn so we don't have to alter it
+// based on location every time.
+// **TODO** || integrate method above into this.
+// =============================================================================
+.gallery-btn.btn-block:after {
+  // position: absolute; // holy hell! may not need this here after cleaning up
+  // right: 40px; // it may have been something in all those styles causing it.
+  float: right;
+  display: inline;
+  margin-top: 3px; // this aligns the carat to center
+  height: 14px;
+}
+
+
+// ===== Green button ==========================================================
+// You know, the green one.
+// added `#addtocart` ID for those that need to be green we missed.
+// =============================================================================
+.gallery-btn.btn-green,
+.tds-btn-green,
+button#addtocart {
+  @extend .btn-success;
+}
+
+// ===== Gray button ===========================================================
+// gray button, blue text
+// =============================================================================
+.tds-btn-gray {
+  color: $tds-lt-blue !important;
+  background: $tds-ltr-gray;
+  &:hover {
+    background: $tds-lt-blue !important;
+    color: $tds-white !important;
+  }
+}
+// gray close button
+td .line-item-actions .tds-btn-gray {
+  border-radius: 15px;
+  padding: 0px 9px 3px 8px;
+}
+
+// ===== Orange button =========================================================
+// orange button, white text
+// =============================================================================
+.tds-btn-orange {
+  color: $tds-white !important;
+  background: $tds-orange-80;
+  &:hover {
+    background: $tds-orange-100 !important;
+  }
+}
+
+// ===== Light blue button =========================================================
+// light blue button, white text
+// =============================================================================
+.tds-btn-lt-blue {
+  background: $tds-lt-blue-100;
+  &:hover {
+    background: darken($tds-lt-blue, 5%) !important;
+    color: $tds-white !important;
+  }
+}
+
+// button link style
+// when it's a gallery button but by design shows as text
+.gallery-btn-link,
+.gallery-btn.gallery-btn-link {
+  @extend .btn;
+  @extend .btn-link;
+  font-family: 'ITC Avant Garde Gothic W01';
+  color: $tds-green-100 !important;
+  &:hover {
+    color: $tds-green-80;
+  }
+}
+// arrow icon (default setting)
+.gallery-btn-link:after {
+  @extend .fa;
+  content: "\f054";
+  margin-top: 3px;
+  margin-left: 14px;
+}
+// No arrow icon `tds-btn-plain`
+// when this class is applied it removes the default button
+.gallery-btn.tds-btn-plain:after {
+  display: none;
+}
+
+// When button is an `input` submit element
+// - *Note* || Working on changing this. All `<input>` divs should be changed
+//   to `<button>` divs.
+.gallery-btn input {
+  padding-top: 2px;
+  background: transparent;
+  border: transparent;
+}
+
+// Back & Next buttons
+// Mainly used for walkthrough pages like the bundle picker
+.btn-right {
+  float: right;
+  // next arrow
+  .next-arrow:after {
+    content: "\f054";
+    margin-left: 15px;
+    //.fa;
+  }
+}
+// removes extra space from default gallery-btn
+.btn-right {
+  padding-right: 0px !important;
+}
+.btn-left,
+.btn-back {
+  float: left;
+  // back arrow
+  .back-arrow:before,
+  .tds-icon-chevron-left:before {
+    content: "\f053";
+    margin-right: 15px;
+  }
+  .back-arrow:after,
+  .tds-icon-chevron-left:after {
+    display: none;
+  }
+}
+
+// Updated  back-arrow button method
+.back-arrow:before {
+  content: "\f053";
+  margin-right: 15px;
+  @extend .fa;
+}
+.back-arrow:after {
+  display: none;
+}
+
+// different states of the left/right buttons
+.btn-right,
+.btn-left {
+  // default blue
+  a {
+    @extend .btn;
+    @extend .btn-primary;
+    color: #fff !important;
+  }
+  // green success
+  .btn-green {
+    @extend .btn-success;
+  }
+}
+
+// Plus/minus
+
+// On disclaimers || old method
+a#readMoreLink {
+    background: url(/content/dam/tdstelecom/images/ui/icon_plus-tdsblue.svg) right 5px no-repeat;
+    background-size: 7px 10px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+a#readMoreLink.read-less {
+    background: url(/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg) right 5px no-repeat!important;
+    background-size: 7px 10px!important;
+}
+
+// other places
+.read-more {
+  &.plus + .read-more-text:before,
+  &.minus + .read-more-text:before {
+    @extend .fa;
+    position: relative;
+    top: 3px;
+    float: right;
+    margin-left: 5px;
+  }
+  &.plus + .read-more-text:before {
+    @extend .fa-plus;
+  }
+  &.minus + .read-more-text:before {
+    @extend .fa-minus;
+  }
+}
+.read-more-text {
+  text-transform: capitalize;
+}
+
+// Search button
+input + span.input-group-btn .gallery-btn {
+  margin-top: 0px;
+  .tds-icon {
+    @extend .fa;
+  }
+  .tds-icon-search {
+    @extend .fa-search;
+  }
+  &:after {
+    display: none;
+  }
+}
+
+// ===== Crazy stuff ===========================================================
+// Crazy stuff that needs to be included still because we didn't know any better
+// at the time they were written.
+// =============================================================================
+
+// Business button on homepage
+// ---------------------------
+// **this is only for the lt-blue button on the homepage.**
+// Center button on home footer
+.btn-center {
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 130px;
+  text-align: center;
+  display: table;
+}
+// **ONLY FOR BUTTON ON HOMEPAGE!!**
+// ---------------------------------
+// This was before we had a light blue button set up. This class is not used
+// anywhere else.
+// **NOTE** || actual light blue button set up is in `.tds-btn-lt-blue` above.
+.lt-blue-button {
+  @extend .gallery-btn;
+  @extend .tds-btn-lt-blue;
+  float: left;
+  padding: 16px;
+  white-space: nowrap;
+  // building icon left
+  .layout-icon {
+    @extend .pull-left;
+  }
+  // button text center
+  .layout-text {
+    float: left;
+    padding: 0 15px;
+  }
+  // arrow icon right
+  .layout-arrow {
+    @extend .pull-right;
+  }
+}
+
+// Input button
+.input-group-btn {
+  font-size: 13px;
+}
+
+// button dropdown rollover fix - border-bottom bumps things down
+.tds-select-btn {
+  display: block;
+  min-height: 40px;
+}
+// dropdown button menu fix for channel pages
+.tds-card {
+  button.dropdown-toggle .caret {
+    position: relative;
+    right: -135px;
+  }
+  .open > {
+    .dropdown-menu {
+      display: block;
+      padding-left: 0px;
+      width: 100%;
+    }
+    button.dropdown-toggle {
+      color: #fff;
+      background-color: $tds-lt-blue;
+    }
+  }
+}
+
+
+// This is needed for the `#provideAddressButton` & `#loginButton` in the
+// address modal otherwise it ignores the `gallery-btn` margin and the boxes
+// size correctly.
+#provideAddressButton,
+#loginButton {
+  overflow: hidden;
+  height: 60px;
+  .gallery-btn {
+    float: left;
+    display: inline;
+    margin-top: 0px
+  }
+}
+
+
+// Remove text on the print button in the TV listings on mobile devices.
+// Because people print from their phones so often
+@media (max-width: $screen-xs) {
+  .tds-tv-channel-lineup .print-btn {
+    display: none;
+  }
+}
+
+// for the link text in mya edit user
+#generateNameLink .caret {
+  margin-right: 5px;
+  transform: rotate(-90deg);
+}
+
+// mya remove user buttons added design
+button#resetPassword, #resetSecQuestions {
+  margin-top: 15px;
+}
+
+//product user guides component
+button#callingFeaturesButton, button#voiceMailButton {
+    margin: 8px 0 24px 0;
+}

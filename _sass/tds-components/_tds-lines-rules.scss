@@ -1,0 +1,39 @@
+/* tds-lines-rules
+==========================================*/
+//this is used in divider line component
+.tds-divider-line {
+  width: inherit;
+  background: #19388a;
+  height: 2px; /*needs a default height*/
+  // light blue
+  &.bgcolor-lt-blue {
+    background: $tds-lt-blue !important;
+  }
+  // Gray
+  &.bgcolor-gray {
+    background: $tds-lt-gray !important;
+  }
+  &.dotted-gray {
+    background: url("/content/dam/tdstelecom/images/ui/gray-dotted-line.svg");
+  }
+}
+
+//this is used in footer
+hr.thinblueline {
+  height: 2px;
+  border-color: #555555;
+  color: #25ACF2;
+  background-color: #25ACF2;
+  margin: 0 auto;
+  width: 100%;
+}
+
+//registration divider line
+.navlogin + .dividerline {
+  margin-top: 40px;
+}
+//makes the line end at the same point as the rest of the page content
+.page_content > .dividerline.parbase.section {
+    margin-left: 15px;
+    margin-right: 15px;
+}

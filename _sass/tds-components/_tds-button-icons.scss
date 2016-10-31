@@ -1,0 +1,165 @@
+/* tds-button-icons
+==========================================*/
+//  icons for butttons
+
+// tds-icon/font-awesome extension
+// `.tds-icons` == `.fa` class for font-awesome
+.tds-icon {
+  @extend .fa;
+}
+
+// ===== spacing mixins ========================================================
+// FOR RE-USE WHEN NEEDED!!!! :)
+// Additional variables sometimes needed for icon styles
+// use as `@extend` where needed below.
+// Example `@extend .tds-icon-padding-right` to add padding-right to icons
+// =============================================================================
+
+// padding-right for `:before` icons
+.tds-icon-padding-right {
+  &:before {
+    padding-right: 10px;
+  }
+}
+// padding-left for `:after` icons
+.tds-icon-padding-left {
+  &:after {
+    padding-right: 10px;
+  }
+}
+
+// icon on left of button using img.
+.gallery-btn > img {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  width: 14px;
+  margin: -4px 5px 0px 0px;
+  border-radius: 0px;
+}
+
+// back button
+button.gallery-btn.btn-back:after {
+  content: "" !important;
+}
+// forward button
+button.gallery-btn.btn-next:after {
+  content: "" !important;
+}
+// Pencil icon
+.tds-icon-pencil {
+  @extend .fa-pencil;
+  @extend .tds-icon-padding-right;
+}
+.fa-pencil:before, .tds-icon-pencil:before {
+    content: "\e805";
+    font-family: "fontello";
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}
+// Remove icon
+.tds-icon-times {
+  @extend .fa-times;
+  @extend .tds-icon-padding-right;
+}
+// Search Icon
+.tds-icon-search {
+  @extend .fa-search;
+}
+// Plus cart
+.tds-icon-cart-plus {
+  @extend .fa-cart-plus;
+}
+// Print icon
+.tds-icon-print {
+  @extend .fa-print;
+}
+// Key icon
+.tds-icon-key {
+  @extend .fa-key;
+  @extend .tds-icon-padding-right;
+}
+// trash icon
+.tds-icon-trash {
+  @extend .fa-trash;
+  @extend .tds-icon-padding-right;
+}
+// trash icon
+.tds-icon-circle-question {
+  @extend .fa-question-circle;
+  @extend .tds-icon-padding-right;
+}
+// update icon on navlogin button
+#loginButton .gallery-btn.login > .fa.fa-user {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
+  background-size: 16px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  width: 14px;
+  height: 20px;
+  padding-left: 0;
+  margin-right: 8px;
+  &:before {
+    content: "";
+  }
+}
+// styling for cancel type buttons
+.btn-x {
+  background-color: $tds-dk-gray-80!important;
+  &:hover {
+    background-color: $tds-blue-100!important;
+  }
+  @media (max-width: 360px){
+    display: block;
+    width: 100%;
+    margin-left: 0!important;
+  }
+}
+
+// icon for cancel buttons
+.btn-x:after {
+  content: "";
+  width: 24px;
+  height: 16px;
+  float: right;
+  background-image: url("/content/dam/tdstelecom/images/ui/icon_x-white.svg");
+  background-position: right 3px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+.gallery-btn.btn-x:after {
+    content: '\e819';
+    font-family: 'fontello';
+    color: #fff;
+    font-size: 12px;
+    margin-top: 1px;
+    background-image: none;
+    margin-left: 12px;
+    width: 12px;
+}
+
+.gallery-btn.btn-download:after {
+    content: "\e828";
+    font-family: 'fontello';
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
+    width: 14px;
+    height: auto;
+    float: none;
+    background-image: none;
+}
+
+// for some reason adding extra arrow in the captive
+// portal section, this should remove the extra
+button.btn-back.lt-blue-button:after,
+button.gallery-btn.btn-back:after {
+    content: none!important;
+}
+
+// remove font awesome code reference in bundle gallery*/
+.gallery-btn.next-arrow:after {
+    content: "";
+}

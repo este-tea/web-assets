@@ -1,0 +1,144 @@
+/* tds-biz-forms
+==========================================*/
+label {
+    font-weight: 500;
+}
+.form-control:focus,
+form.elq-form .form-design-field input:focus,
+form.elq-form .form-design-field select:focus,
+form.elq-form .form-design-field textarea:focus {
+    border: solid 2px #25acf0;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.tds-form-group input,
+.tds-form-group select {
+    border: none;
+    background: #e3e3e3;
+    color: #19388a;
+    font-weight: 500;
+}
+.form-group.tds-form-group .radio-inline > label {
+    margin-top: 9px;
+    line-height: 24px;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+//--------------------
+.loginForm .tds-card {
+    border: solid 3px #F37D1D;
+    background-color: white;
+}
+.loginForm .tds-form-group input,
+.tds-form-group select {
+    border: none;
+    background-color: #e3e3e3;
+}
+.loginForm .tds-card #loginForm button.gallery-btn {
+    background-color: #F37D1D;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.loginForm .tds-card #loginForm button.gallery-btn:after {
+    content: none;
+}
+//--------------------
+.contactcard .tds-card.contact-card-form {
+    border: solid 3px #F37D1D;
+    background-color: white;
+}
+.contactcard .contact-card-form .contact-form-code form .field-wrapper input,
+.contactcard .contact-card-form .contact-form-code form .field-wrapper select {
+    border: none;
+    background-color: #e3e3e3;
+}
+.contactcard .contact-card-form .contact-form-code form .field-wrapper label {
+    color: #555;
+    font-weight: 500;
+}
+.contactcard .contact-card-form .contact-form-code form .field-wrapper input[type="submit"] {
+    background-color: #F37D1D;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: -14px;
+}
+.contactcard .contact-card-form .contact-form-code form .field-wrapper input[type="submit"]:hover {
+    background-color: #19388a;
+}
+.contactcard .contact-card-form .contact-form-code form .field-wrapper input[type="submit"]:focus {
+    background-color: #19388a;
+    border: solid 2px #25acf0;
+}
+//--------------------
+.resetPasswordForm #resetPwdInstructions p {
+    margin-bottom: 16px;
+}
+div#forgotPasswordModal .modal-body .h4 {
+    margin-bottom: 16px;
+}
+#resetPwdSuccessBlock .tds-alert.tds-alert-success {
+    margin-bottom: 0;
+}
+#setPasswordDiv .tds-form-group input,
+.tds-form-group select {
+    border: none;
+    background: white;
+}
+#setPasswordDiv .tds-form-group input:focus,
+.tds-form-group select {
+    border: solid 2px #25acf0;
+}
+.password-requirements {
+    background-color: transparent;
+    padding: 0;
+}
+div#setPasswordResults.tds-alert {
+    margin-bottom: 0;
+}
+//--------------------
+.leadSubmitForm {
+    margin-bottom: 40px;
+}
+.leadSubmitForm > div {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+
+/*--HYDRA-2139 Agent Portal - Styling - Temp password--*/
+#createAccountForm .tds-card .tds-form-group input {
+background: #ffffff;
+}
+
+
+#createAccountForm  .tds-card .tds-form-group select {
+background: #ffffff;
+}
+
+.LV_validation_message.LV_invalid {
+color:#cd1d1d;
+}
+
+.LV_validation_message.LV_valid {
+ display:none;
+ color:#6b9c22;
+}
+
+//---------------------
+/*
+//check styles on https://fdevp.tdsbusiness.com/my-account/support-tickets.html
+//might not need this section anymore
+.parbase.troubleReporting.section {
+    margin-top: 28px;
+}
+@media (max-width:751px) {
+  .parbase.troubleReporting.section {
+      margin-top: 20px;
+      margin-bottom: -8px;
+  }
+}
+*/

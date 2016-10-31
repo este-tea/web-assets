@@ -1,0 +1,211 @@
+/* tds-tables-responsive.scss
+==========================================*/
+
+.tds-responsive-table {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 751px) {
+  .tds-responsive-table {
+    font-size: 1em;
+  }
+}
+.tds-responsive-table thead {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+@media (min-width: 584px) {
+  .tds-responsive-table thead {
+    position: relative;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+}
+.tds-responsive-table thead th {
+  font-weight: normal;
+  text-align: center;
+}
+.tds-responsive-table thead th:first-of-type {
+  text-align: left;
+}
+.tds-responsive-table tbody,
+.tds-responsive-table tr,
+.tds-responsive-table th,
+.tds-responsive-table td {
+  display: block;
+  padding: 0;
+  text-align: left;
+  white-space: normal;
+}
+@media (min-width: 584px) {
+  .tds-responsive-table tr {
+    display: table-row;
+  }
+}
+.tds-responsive-table th,
+.tds-responsive-table td {
+  padding: .5em;
+  vertical-align: middle;
+}
+@media (min-width: 584px) {
+  .tds-responsive-table th,
+  .tds-responsive-table td {
+    padding: .75em .5em;
+  }
+}
+@media (min-width: 584px) {
+  .tds-responsive-table th,
+  .tds-responsive-table td {
+    display: table-cell;
+    padding: .5em;
+  }
+}
+@media (min-width: 751px) {
+  .tds-responsive-table th,
+  .tds-responsive-table td {
+    padding: .75em .5em;
+  }
+}
+@media (min-width: 960px) {
+  .tds-responsive-table th,
+  .tds-responsive-table td {
+    padding: .75em;
+  }
+}
+.tds-responsive-table caption {
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 751px) {
+  .tds-responsive-table caption {
+    font-size: 1.5em;
+  }
+}
+.tds-responsive-table tfoot {
+  font-size: .8em;
+  font-style: italic;
+}
+@media (min-width: 751px) {
+  .tds-responsive-table tfoot {
+    font-size: .9em;
+  }
+}
+@media (min-width: 584px) {
+  .tds-responsive-table tbody {
+    display: table-row-group;
+  }
+}
+.tds-responsive-table tbody tr {
+  margin-bottom: 1em;
+}
+@media (max-width: 584px) {
+  .tds-responsive-table tbody tr {
+    border: 3px solid #e3e3e3;
+  }
+}
+@media (min-width: 584px) {
+  .tds-responsive-table tbody tr {
+    display: table-row;
+    border-width: 1px;
+  }
+}
+.tds-responsive-table tbody tr:last-of-type {
+  margin-bottom: 0;
+}
+.tds-responsive-table tbody tr th:first-child {
+  vertical-align: middle;
+  border-bottom: solid 2px #e3e3e3 !important;
+}
+@media (max-width: 584px) {
+  .tds-responsive-table tbody tr th:first-child {
+    border-bottom: solid 3px #25ACF2 !important;
+  }
+}
+.tds-responsive-table tbody th[scope="row"] {
+  color: #19388A;
+}
+@media (min-width: 584px) {
+  .tds-responsive-table tbody th[scope="row"] {
+    text-align: left;
+  }
+}
+.tds-responsive-table tbody td {
+  text-align: right;
+}
+@media (min-width: 584px) {
+  .tds-responsive-table tbody td {
+    border-bottom: 1px solid red;
+  }
+}
+@media (min-width: 584px) {
+  .tds-responsive-table tbody td {
+    text-align: center;
+  }
+}
+.tds-responsive-table tbody td[data-type=currency] {
+  text-align: right;
+}
+.tds-responsive-table tbody td[data-title]:before {
+  content: attr(data-title);
+  float: left;
+  font-size: .85em;
+  color: #999;
+}
+@media (min-width: 584px) {
+  .tds-responsive-table tbody td[data-title]:before {
+    font-size: .9em;
+  }
+}
+@media (min-width: 584px) {
+  .tds-responsive-table tbody td[data-title]:before {
+    content: none;
+  }
+}
+
+/*START payment locations*/
+.tds-responsive-table thead th {
+  font-weight: normal;
+  text-align: center;
+}
+
+@media (max-width: 583px) {
+  tbody.tds-channel-listing-table tr td {
+    padding-top: 6px;
+    padding-bottom: 0;
+    border-bottom: none !important;
+    text-align: left;
+  }
+
+  tbody.tds-channel-listing-table tr td:last-child {
+    padding-bottom: 6px;
+  }
+}
+.tds-responsive-table tbody.tds-channel-listing-table tr:last-child th:first-child,
+table.table tbody.tds-channel-listing-table > tr:last-child > td {
+  border-bottom: none !important;
+}
+
+.paymentLocations table.tds-responsive-table.dataTable.no-footer {
+  border-bottom: solid #19388a;
+}
+
+@media (max-width: 584px) {
+  .tds-responsive-table tbody.tds-channel-listing-table tr:last-child th:first-child {
+    border-bottom: solid 3px #25acf0 !important;
+  }
+
+  .paymentLocations table.tds-responsive-table.dataTable.no-footer {
+    border-bottom: none;
+  }
+}

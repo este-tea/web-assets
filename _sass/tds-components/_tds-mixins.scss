@@ -1,0 +1,66 @@
+// Media Queries
+@mixin phones {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin desktops {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// EXAMPLE USAGE
+// .container {
+//   background: $tds-dk-blue;
+//   @include phones {
+//     background: red;
+//   }
+//   @include tablets {
+//     background: green;
+//   }
+//   @include desktops {
+//     background: orange;
+//   }
+// }
+
+//Legacy Media Queries - Needs to be obsoleted. doh!
+$tablet-width: 750px;
+$desktop-width: 1024px;
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// Vendor Prefixes
+// HOW TO USE:
+// @include prefix(transition, all 2s ease);
+// OUTPUTS:
+// -webkit-transition: all 2s ease;
+// -moz-transition: all 2s ease;
+// -ms-transition: all 2s ease;
+// -o-transition: all 2s ease;
+// transition: all 2s ease;
+@mixin prefix($property, $value, $vendors: (webkit moz ms o)) {
+  @each $vendor in $vendors {
+    #{'-' + $vendor + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}

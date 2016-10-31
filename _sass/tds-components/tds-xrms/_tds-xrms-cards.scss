@@ -1,0 +1,36 @@
+.tds-card {
+  margin-bottom: 28px;
+  padding: 28px;
+  border: solid 3px $tds-lt-gray;
+  @media (max-width:$screen-xs) {
+    padding: 16px;
+  }
+}
+// if card set up is needed without border add
+// `tds-card-plain`
+.tds-card-plain {
+  border: none;
+}
+
+// Easily add a gray background to your {{.tds-card}} with {{.tds-card-gray}}.
+.tds-card-gray {
+  background-color: $tds-ltr-gray;
+  border: none;
+}
+
+.tds-card-info {
+  background: #EDF8FF;
+  border: none;
+}
+
+.tds-card.appt-upcoming .tds-card:last-child {
+    margin-bottom: 0;
+}
+
+.visible-xs-block .tds-card {
+    margin-top: 60px;
+}
+
+.tds-card-gray p {
+    color: #000;
+}

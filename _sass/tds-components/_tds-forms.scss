@@ -1,0 +1,314 @@
+/* tds-forms
+==========================================*/
+// form elements
+input {
+  padding-left: 12px;
+}
+// Remove BS rounded borders globally
+.tds-form-group {
+  input, select {
+    height: 44px;
+    border: solid 2px $tds-gray;
+    border-radius: $input-border-radius;
+  }
+}
+.form-control {
+  border-width: 2px !important;
+  border-radius: $input-border-radius;
+  @include box-shadow(none);
+}
+// need to define direct height to input for eloqua forms
+input.form-control,
+select.form-control {
+  height: 44px;
+}
+// textarea.form-control {
+// height: auto;
+// }
+// MYA Account information text and label set up
+// from dizzy riffy
+.mya-content-addresses .form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+  label {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  p.form-control-static {
+    padding-left: 6px;
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media (max-width: $screen-sm-min) {
+    label {
+      margin: 6px 0 0;
+    }
+    p.form-control-static {
+      padding-top: 15px;
+    }
+  }
+}
+// bottom margin was too large
+.mya-content-addresses .form-group {
+  margin-bottom: 4px;
+}
+// fix from HYDRA-1735
+.mya-content-addresses .col-sm-2,
+.mya-content-addresses .col-sm-10 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  float: left;
+  display: inline-block;
+}
+// static form text needed padding for mya-content-addresses
+p.form-control-static {
+  padding-left: 3px;
+}
+.mya-content-addresses .col-sm-2 {
+  width: auto;
+  line-height: 20px;
+  padding-top: 8px;
+  white-space: nowrap;
+}
+.mya-content-addresses .col-sm-10 {
+  width: 70%;
+}
+
+// Error form-group
+.form-group.tds-form-group.has-error {
+  color: $tds-red;
+  input,
+  select,
+  textarea {
+    background: $tds-critical-bg;
+    border-color: $tds-critical-bg !important;
+  }
+  // error icon on span text under form
+  span {
+    margin-top: 10px;
+    color: $tds-red;
+    &:before {
+      @extend .fa;
+      @extend .fa-exclamation-circle;
+      margin-right: 5px;
+    }
+  }
+}
+// special case where the has-error text is for the entire card outside of the
+// `form-control` div.
+// This set up by ID{name}, if it needs to be done again add unique ID's below
+#preferred-contact-error {
+  margin-top: 10px;
+  color: $tds-red;
+  &:before {
+    @extend .fa;
+    @extend .fa-exclamation-circle;
+    margin-right: 5px;
+  }
+}
+// ticket status for lable font change. Not enough room
+form#searchTicketForm .control-label {
+  font-size: 10px;
+}
+// This fixes the fact that someone keeps rolling back the input form markup.
+form#searchTicketForm .tds-form-group input {
+  width: 100%;
+  height: 40px;
+}
+// help-block text
+#users-search.tds-card p.help-block {
+  margin-bottom: 0;
+}
+.tds-form-group .help-block {
+    font-size: 11px;
+    color: #777;
+}
+label:hover .tds-radio-btn {
+    border: solid 3px #25acf0;
+}
+label:hover .tds-radio-btn:before {
+    top: 3px;
+    left: 23px;
+}
+label input:focus ~ .tds-radio-btn {
+    border: solid 3px #25acf0;
+}
+// ===== Eloqua Forms set up ===================================================
+// Makes these forms look like design by default
+// =============================================================================
+form.elq-form {
+  .form-design-field {
+    @extend .form-group;
+    input,
+    select,
+    textarea {
+      @extend .form-control;
+    }
+  }
+  input.submit-button {
+    @extend .gallery-btn;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+.form-group.tds-form-group select.form-control.tds-gray-select {
+  border: none;
+  background: #e9e9e9;
+  -webkit-appearance: none;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/down-caret-ltblue.svg);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+table.table tr.tds-form-group th {
+  font-weight: 500;
+  font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+}
+.tds-form-group th {
+  padding: 12px 8px !important;
+  background: inherit;
+}
+//need this for instances where there are only single from groups
+.form-group.tds-form-group.no-bottom {
+  margin-bottom: 0 !important;
+}
+//added this to label so that inline radio buttons would not be in the same line as the label
+.label-block {
+  display: block;
+}
+.form-group.tds-form-group .radio-inline > label {
+  margin-top: 14px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+//to handle content that goes below form submit button.tds-below-form {	margin-top: 24px;}
+
+//forms with read-only fields
+.form-group.read-only {
+  margin-bottom: 6px;
+  .controls {
+    display: inline-block;
+  }
+}
+
+/*ADDRESS ENTRY FORM*/
+@media (min-width: 751px){
+    .locationPicker .col-sm-4.tds-richtext-padright {
+    top: 22px;
+  }
+}
+.has-error .form-control,
+.has-error form.elq-form .form-design-field input,
+.has-error form.elq-form .form-design-field select,
+.has-error form.elq-form .form-design-field textarea,
+form.elq-form .form-design-field .has-error input,
+form.elq-form .form-design-field .has-error select,
+form.elq-form .form-design-field .has-error textarea {
+    box-shadow: none;
+}
+.tds-card-gray .tds-form-group input {
+    background: white;
+}
+
+.parbase.section.accountSignUpForm .col-md-6 {
+  padding: 0;
+}
+
+/*locationpicker.jsp aka address entry page*/
+.tds-address > p {
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.tds-address {
+    margin-bottom: 20px;
+}
+
+div#suggestedAddresses {
+    border-bottom: solid 3px #19388a;
+}
+
+form#SuggestedAddressForm h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.content.container .page_content .tds-pagedivider-one-col .contentcontainer .tds-richtext-padleft .parsys {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 24px;
+}
+
+.parbase.locationPicker.section:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+form#SuggestedAddressForm input:checked + .tds-radio-btn:before {
+    top: 4px;
+    left: 23px;
+}
+
+p.entered-address {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0c8fd0;
+    margin-bottom: 0;
+}
+
+.entered-address a {
+cursor: pointer;
+}
+
+.tds-address {
+    font-weight: 600;
+    color: black;
+}
+
+.label-text > span {
+    display: block;
+}
+
+#suggestedAddresses label:hover .label-text {
+    color: #0c8fd0;
+}
+
+#suggestedAddresses label .label-text {
+    margin-top: 0;
+}
+
+button#continue:after {
+    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
+    background-position: right 3px;
+}
+
+/* HYDRA-2201: float is causing contact form to disappear in smaller sizes*/
+.parbase.contactform.section .col-xs-12 {
+    float: none;
+}
+/*remove padding so that form content aligns with page banner content*/
+.parbase.contactform.section > .col-xs-12 > .tds-richtext-padboth > .col-sm-8 {
+    padding: 0;
+}
+/*add so that there is spacing between continue button and support bar*/
+.parbase.contactform.section {
+    margin-bottom: 40px;
+}
+/*remove extra top margin that is added when in medium form*/
+@media (max-width:750px) {
+    .parbase.contactform.section {
+   margin-top: -20px;
+    }
+}
+/*fix contact links alignment in footer in smallest form*/
+a.contact-links-text.contact-chat-icon {
+    padding-left: 0;
+}
+a.contact-links-text.contact-chat-icon:before {
+    margin-right: 8px;
+}

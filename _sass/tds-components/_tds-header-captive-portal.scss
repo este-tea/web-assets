@@ -1,0 +1,39 @@
+/* tds-header-captive-portal.scss
+==========================================*/
+//add spacing to top of page
+.cp-top-links,
+.cp-top-phone {
+  text-align: right;
+  margin: 32px 0;
+}
+//add spacing to top of page
+.cp-top-logo {
+  margin: 26px 0;
+}
+.cp-top-phone a.contact-links-text.contact-call-icon {
+  float: left;
+}
+.cp-top-phone a.contact-links-text:hover {
+  text-decoration: none;
+}
+.cp-top-phone {
+  float: right;
+}
+//center align logo and links
+@media (max-width: $screen-sm-min) {
+  .cp-top-logo img.pull-left.img-responsive {
+    float: none!important;
+    margin: 0 auto;
+  }
+  .cp-top-links {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+// get rid of extra padding in captive portal steps pages
+#main.page-main .container,
+#main .tds-page-banner.col-xs-12 {
+  //padding-left: 0;
+  //padding-right: 0;
+}

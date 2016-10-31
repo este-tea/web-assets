@@ -1,0 +1,67 @@
+/* tds-stepped-nav.scss
+==========================================*/
+// the steps indicator in the captive portal section
+.tds-li-steps {
+  ul > li:before {
+    display: none !important;
+  }
+  ul {
+    text-align: center;
+    margin-left: auto;
+    left: -64px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    @include tablet {
+      left: -24px;
+    }
+  }
+  li {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    list-style: none;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 32px !important;
+    margin-bottom: 0px !important;
+    @include prefix(border-radius, 50%);
+    font-family: $tds-font-family;
+    font-weight: $tds-font-medium;
+    font-size: 18px;
+    background: #e9e9e9;
+    color: #a9a9a9;
+    @include tablet {
+      margin: 0 1%;
+    }
+    &.current-step {
+      background: $tds-lt-blue;
+      color: $tds-white !important;
+    }
+  }
+  span {
+    padding: 0 2%;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #e9e9e9;
+    @include tablet {
+      padding: 0 1%;
+      font-size: 20px;
+    }
+    &.steps-txt {
+      color: $tds-lt-blue;
+      font-family: $tds-font-family;
+      font-weight: $tds-font-normal;
+      @include tablet {
+        display: block;
+        padding: 0 0 16px 0;
+      }
+    }
+  }
+}
+.tds-li-steps {
+    margin-bottom: 32px;
+}

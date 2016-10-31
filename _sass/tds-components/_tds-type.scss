@@ -1,0 +1,125 @@
+/* tds-type.scss
+==========================================*/
+body {
+  /*added reference to web font*/
+  font-family: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+// ===== Headings ==============================================================
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: $tds-font-family;
+  margin-bottom: 20px;
+}
+h1, .h1 {
+  font-size: 36px;
+  color: $tds-dk-blue;
+}
+h2, .h2 {
+  font-size: 28px;
+  color: $tds-dk-blue;
+}
+.tds-content-rich > h2:first-child {
+  margin-top: 0;
+}
+@media (max-width: 584px) {
+  h2 {
+      font-size: 24px;
+  }
+}
+.tds-card form h2:first-child {
+  margin-top: 0;
+}
+.tds-tv-channel-lineup h2 {
+  margin-left: -15px;
+}
+// Remove top margin from headers
+#users-search h2,
+.searchsitesectionbar h2,
+.searchSiteSectionBar.section h2 {
+  margin-top: 0;
+}
+// added bottom margin for users header
+.manageusers > h2 {
+    margin-bottom: 28px;
+}
+h3, .h3 {
+  font-size: 24px;
+  color: $tds-lt-blue;
+}
+// shop cards
+/* product gallery card */
+h3.tds-price {
+    text-align: center;
+}
+h4, .h4 {
+  color: $tds-dk-blue;
+  margin-bottom: 20px;
+}
+h5, .h5 {
+  color: $tds-lt-blue;
+  margin-bottom: 20px;
+}
+h6, .h6 {
+  color: #000;
+  margin-bottom: 20px;
+}
+@media (max-width: 584px) {
+    h2 {
+        font-size: 21px;
+        margin-bottom: 8px;
+    }
+    h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
+// p or li or main body copy
+p { margin: 0 0 10px; }
+p { margin-top: 0; margin-bottom: 1rem; }
+p { line-height: 1.65em; color: $tds-dk-gray; }
+a {
+  color: $tds-lt-blue-100;
+}
+// p > a:hover, li > a:hover,
+// .tds-panel.tds-support-panel > a:hover,
+.tds-panel.tds-support-panel > a:hover,
+.tds-error-critical > a:hover,
+.bundle-error > a:hover {
+    text-decoration: none;
+    color: $tds-blue-100;
+}
+
+a {
+  color: $tds-lt-blue-100;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: $tds-blue-100;
+}
+a strong {
+  color: inherit;
+}
+
+// Note messaging
+.tds-note {
+  font-size: 11px;
+  font-style: italic;
+}
+.tds-emphasize {
+    font-size: 18px;
+    font-weight: 500;
+}
+// user name
+#loginNameText {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+// username/generate link spacing
+#changeNameLinkDiv {
+  padding-top: 20px;
+}

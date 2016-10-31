@@ -1,0 +1,19 @@
+// carousel updates
+
+// Need to find these sections and fix them. They are over writing eachout 3 times
+
+// **Delete section** || Already made these changes in original sass file.
+// Careers page title & role text
+.carouselbodytext .careers-job-title {
+  text-transform: uppercase;
+  color: $tds-dk-gray;
+}
+
+.carouselbodytext .careers-other-role {
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 1.75em;
+  color: $tds-green;
+}
+
+// **end Delete section**

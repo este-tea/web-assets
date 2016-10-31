@@ -1,0 +1,140 @@
+/* tds-biz-tables
+==========================================*/
+
+.dataTables_wrapper .dataTables_paginate {
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+table.table tbody > tr:last-child > td, .text.parbase.section table tbody > tr:last-child > td, table.careers-table tbody > tr:last-child > td {
+    border-bottom: none!important;
+}
+table.dataTable.no-footer {
+    border-bottom: 2px solid #25acf0;
+}
+
+@media (max-width:583px) {
+    table.dataTable.no-footer {
+        border-bottom: none;
+    }
+}
+@media (max-width: 751px){
+    .table-btn {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+}
+
+.tds-responsive-table tr td {
+    min-height: 20px;
+}
+@media (max-width:583px) {
+    .tds-responsive-table tbody td[data-title]:before {
+        content: attr(data-title);
+        float: left;
+        font-size: 12px;
+        color: #19388a;
+        display: block;
+        margin-top: 2px;
+    }
+}
+
+thead {
+    background-color: #25acf0;
+}
+
+table.table tr.tds-form-group th, .text.parbase.section table tr.tds-form-group th, table.careers-table tr.tds-form-group th {
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.tds-form-group th {
+    padding: 12px !important;
+    border-top: none!important;
+    border-bottom: none!important;
+}
+
+
+.tds-responsive-table tr.even {
+    background: #e3e3e3!important;
+}
+
+.table > thead:first-child > tr:first-child > th {
+    border-left: solid 1px rgba(255,255,255,.7);
+}
+.table > thead:first-child > tr:first-child > th:first-child {
+    border-left: none;
+}
+
+.tds-responsive-table thead th {
+    font-weight: normal!important;
+    text-align: left;
+    vertical-align: middle!important;
+}
+
+.tds-responsive-table tbody td {
+    text-align: left;
+}
+@media (max-width:583px) {
+    .tds-responsive-table tbody td {
+        text-align: right;
+    }
+}
+#usersTable.table > thead > tr > th, .text.parbase.section table#usersTable > thead > tr > th, table#usersTable.careers-table > thead > tr > th, #ticketTable.table > thead > tr > th, .text.parbase.section table#ticketTable > thead > tr > th, table#ticketTable.careers-table > thead > tr > th, #historicalUsageTable.table > thead > tr > th, .text.parbase.section table#historicalUsageTable > thead > tr > th, table#historicalUsageTable.careers-table > thead > tr > th {
+    vertical-align: middle;
+    border-top: none!important;
+    border-bottom: none!important;
+}
+
+#usersTable th, #ticketTable th, #historicalUsageTable th {
+    background-color: #25acf0!important;
+    color: #fff!important;
+    font-weight: 400 !important;
+    text-decoration: none;
+    text-align: left;
+    font-size: 14px!important;
+}
+
+#usersTable.table tbody > tr > td, .text.parbase.section table#usersTable tbody > tr > td, table#usersTable.careers-table tbody > tr > td, #ticketTable.table tbody > tr > td, .text.parbase.section table#ticketTable tbody > tr > td, table#ticketTable.careers-table tbody > tr > td, #historicalUsageTable.table tbody > tr > td, .text.parbase.section table#historicalUsageTable tbody > tr > td, table#historicalUsageTable.careers-table tbody > tr > td, .text.parbase.section table > tbody > tr > td {
+    border-top: none!important;
+}
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+    background-color: inherit;
+}
+#usersTable.table tbody tr.even {
+    background-color: #e3e3e3;
+}
+
+.table.dataTable button.gallery-btn.tds-btn-gray.tds-btn-plain {
+    background-color: #19388a!important;
+    color: white!important;
+}
+
+.table.dataTable button.gallery-btn.tds-btn-gray.tds-btn-plain:hover {
+    background-color: #0c8fd0!important;
+}
+
+#usersTable.table > tbody > tr > td, .text.parbase.section table#usersTable > tbody > tr > td, table#usersTable.careers-table > tbody > tr > td, #usersTable.table > tbody > tr > th, .text.parbase.section table#usersTable > tbody > tr > th, table#usersTable.careers-table > tbody > tr > th, #usersTable.table > tfoot > tr > td, .text.parbase.section table#usersTable > tfoot > tr > td, table#usersTable.careers-table > tfoot > tr > td, #usersTable.table > tfoot > tr > th, .text.parbase.section table#usersTable > tfoot > tr > th, table#usersTable.careers-table > tfoot > tr > th, #usersTable.table > thead > tr > td, .text.parbase.section table#usersTable > thead > tr > td, table#usersTable.careers-table > thead > tr > td, #usersTable.table > thead > tr > th, .text.parbase.section table#usersTable > thead > tr > th, table#usersTable.careers-table > thead > tr > th, #ticketTable.table > tbody > tr > td, .text.parbase.section table#ticketTable > tbody > tr > td, table#ticketTable.careers-table > tbody > tr > td, #ticketTable.table > tbody > tr > th, .text.parbase.section table#ticketTable > tbody > tr > th, table#ticketTable.careers-table > tbody > tr > th, #ticketTable.table > tfoot > tr > td, .text.parbase.section table#ticketTable > tfoot > tr > td, table#ticketTable.careers-table > tfoot > tr > td, #ticketTable.table > tfoot > tr > th, .text.parbase.section table#ticketTable > tfoot > tr > th, table#ticketTable.careers-table > tfoot > tr > th, #ticketTable.table > thead > tr > td, .text.parbase.section table#ticketTable > thead > tr > td, table#ticketTable.careers-table > thead > tr > td, #ticketTable.table > thead > tr > th, .text.parbase.section table#ticketTable > thead > tr > th, table#ticketTable.careers-table > thead > tr > th, #historicalUsageTable.table > tbody > tr > td, .text.parbase.section table#historicalUsageTable > tbody > tr > td, table#historicalUsageTable.careers-table > tbody > tr > td, #historicalUsageTable.table > tbody > tr > th, .text.parbase.section table#historicalUsageTable > tbody > tr > th, table#historicalUsageTable.careers-table > tbody > tr > th, #historicalUsageTable.table > tfoot > tr > td, .text.parbase.section table#historicalUsageTable > tfoot > tr > td, table#historicalUsageTable.careers-table > tfoot > tr > td, #historicalUsageTable.table > tfoot > tr > th, .text.parbase.section table#historicalUsageTable > tfoot > tr > th, table#historicalUsageTable.careers-table > tfoot > tr > th, #historicalUsageTable.table > thead > tr > td, .text.parbase.section table#historicalUsageTable > thead > tr > td, table#historicalUsageTable.careers-table > thead > tr > td, #historicalUsageTable.table > thead > tr > th, .text.parbase.section table#historicalUsageTable > thead > tr > th, table#historicalUsageTable.careers-table > thead > tr > th, .text.parbase.section table > tbody > tr > td {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+@media (max-width: 583px) {
+    #usersTable.table.dataTable.no-footer {
+        border-bottom: solid 2px #25acf0;
+    }
+}
+.richTextComponent + .opportunitiesAndLeadsViews.parbase.section {
+    margin-top: 32px;
+}
+.opportunitiesAndLeadsViews div#DataTables_Table_0_wrapper {
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+a#opp-lead-export-csv {
+    display: inline-block;
+    margin-top: 0;
+}

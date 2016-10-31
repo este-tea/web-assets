@@ -1,0 +1,555 @@
+/* tds-footer
+==========================================*/
+.footer-block {
+  display: block;
+}
+#genericfooter-container {
+  background-color: #555555;
+  width: 100%;
+  display: table;
+  border-top: solid 4px #353535;
+}
+
+//centers the large nav bar menu component in the footer
+#genericfooter-container .customLargeNavBar.parbase.navbar {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 28px;
+}
+.extended-footer {
+  background: #555;
+  padding: 0;
+  .container {
+      padding: 0;
+  }
+}
+
+#homepagefooter-container {
+  background-color: #555;
+  border-top: solid 4px #353535;
+  position: relative;
+  top: 4px;
+}
+
+//===== footer copyright =======================================================
+//==============================================================================
+#copyright-container {
+  background-color: $tds-dkr-gray;
+  width: 100%;
+}
+div.copyright-logo,
+div.copyright-text {
+  display: table-cell;
+  vertical-align: top;
+}
+div.copyright-text {
+  margin: 0;
+  padding: 30px;
+  font-family: $tds-font-body;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: #cacaca;
+}
+.copyright-text > p {
+  margin: 0;
+}
+.copyright-text p span {
+  display: inline-block;
+}
+.copyright-text p {
+  color: #cacaca;
+}
+.reg-mark {
+  font-size: 7px;
+  vertical-align: 4px;
+}
+@media (max-width: $screen-sm-min) {
+  div.copyright-text {
+    //padding: 18px 40px 30px 10px;
+  }
+}
+@media all and (max-width: $screen-xs-min) {
+  div#copyright-long-text {
+    display: none;
+  }
+  div.copyright-text {
+    padding: 30px;
+    display: block;
+    text-align: center;
+  }
+}
+div.copyright-text {
+    padding-left: 12px;
+}
+
+@media (max-width: 750px) {
+    div.copyright-logo {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 32px;
+    }
+    div.copyright-text {
+        text-align: center;
+        padding-top: 0;
+    }
+}
+@media (max-width: 584px) {
+    div.copyright-logo {
+        display: none;
+    }
+    div.copyright-text {
+        padding: 24px;
+    }
+}
+
+/*==================================================
+#FOOTER LOG IN BUTTON
+==================================================*/
+div#footer-login {
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media all and (min-width: $screen-sm-min) {
+  div#footer-login {
+    display: none;
+  }
+}
+.btn-login {
+  font-family: $tds-font-family;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 12px 0;
+  color: #ffffff;
+  padding-left: 1em;
+  background-color: #19388a;
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: left;
+}
+.btn-login:hover {
+  background-color: #0c8fd0;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn-right-arrow-white {
+  display: inline-block;
+  height: 18px;
+  width: 9px;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg);
+  background-size: 9px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1em;
+}
+// ===== Homepage/Extended footer ==============================================
+// Set up for footer on the homepage
+// TODO need to clean up this section, lots of duplicates
+// =============================================================================
+.homepageFooter .sectionTitle {
+  color: #FFFFFF;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 13px;
+  padding-top: 32px;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  font-weight: 400;
+  font-family: $tds-font-family;
+}
+div.footerjustifier {
+  margin-right: 4.25%;
+}
+div.homepageFooter {
+  background-color: #555555;
+  text-align: center;
+}
+div.col-group {
+  display: inline-block;
+  width: 100%;
+  max-width: 960px;
+  text-align: left;
+  margin: 0;
+}
+@media screen and (max-width: $screen-xs-min) {
+  div.col-group {
+    display: none;
+  }
+  div.subscribe {
+    display: none;
+  }
+}
+@media screen and (min-width: $screen-sm-min) {
+  .col-group {
+    overflow: hidden;
+  }
+  .col-group > div {
+    float: left;
+    width: 30.2%;
+  }
+}
+/* This is used to hide the child links under the titles. */
+ul.sectionLinks {
+  font-family: $tds-font-body;
+  list-style: none;
+  padding-top: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+.sectionLinks li {
+  font-family: $tds-font-body;
+  padding-bottom: 22px;
+  margin-right: 24px;
+  font-weight: normal;
+  line-height: 14px;
+  font-size: 12px;
+}
+.sectionLinks li a {
+  display: inline;
+}
+.sectionLinks a {
+  text-decoration: none;
+  color: #BBBBBB;
+}
+.sectionLinks a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  /*font-weight: bold;*/
+}
+#accountSupport,
+#phoneSupport,
+#internetSupport,
+#digitalSupport {
+  font-family: $tds-font-body;
+  list-style: none;
+  display: none;
+  margin-left: 13px;
+}
+#accountSymbol,
+#phoneSymbol,
+#internetSymbol,
+#digitalSymbol {
+  float: right;
+  display: inline;
+}
+/* Displays the grey plus sign in the Help & Support section*/
+.symbol {
+  margin-left: 24px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/headerfootersprites.png) -40px -100px;
+  position: relative;
+  top: 0;
+}
+/* Displays the green plus sign in the Help & Support section*/
+.symbol:hover {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/headerfootersprites.png) -60px -100px;
+}
+/* Displays the grey minus sign in the Help & Support section*/
+.symbolMinus {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/headerfootersprites.png) -80px -100px;
+}
+/* Displays the green minus sign in the Help & Support section*/
+.symbolMinus:hover {
+  width: 20px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/headerfootersprites.png) -100px -100px;
+}
+.homepageFooter .hoverStyle:hover a,
+.homepageFooter .clickStyle a {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.footer-columns,
+.footer-columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-columns>li {
+  width: 28.47%;
+  float: left;
+  margin-left: 7.29%;
+  margin-top: 32px;
+  text-align: left;
+}
+.footer-columns li:first-child {
+  margin-left: 0;
+}
+.footer-columns ul ul {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+.footer-columns ul>li {
+  padding: 0.75em 0 0;
+}
+.footer-block {
+  display: block;
+}
+#account-plus,
+#phone-plus,
+#internet-plus,
+#tv-plus {
+  cursor: pointer;
+}
+#account-support,
+#phone-support,
+#internet-support,
+#tv-support {
+  display: none;
+  width: 70%;
+}
+.link-plus {
+  height: 22px;
+  width: 30px;
+  float: right;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-gray.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_plus-gray.svg');
+  background-size: 11px 11px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+li:hover>a#account-plus>.link-plus,
+li:hover>a#phone-plus>.link-plus,
+li:hover>a#internet-plus>.link-plus,
+li:hover>a#tv-plus>.link-plus {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-ltblue.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_plus-ltblue.svg');
+}
+.link-minus {
+  height: 21px;
+  width: 30px;
+  float: right;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-gray.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_minus-gray.svg');
+  background-size: 11px 11px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+li:hover>a#account-plus>.link-minus,
+li:hover>a#phone-plus>.link-minus,
+li:hover>a#internet-plus>.link-minus,
+li:hover>a#tv-plus>.link-minus {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-ltblue.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_minus-ltblue.svg');
+}
+.footer-gray {
+  color: #cacaca;
+}
+.footer-white {
+  color: #fff!important;
+  font-weight: 500!important;
+}
+// added copy & paste from footer double check
+.homepageFooter .hoverStyle:hover a,
+.homepageFooter .clickStyle a {
+  font-weight: bold;
+  color: #fff;
+}
+.footer-block {
+  display: block;
+}
+#genericfooter-container {
+  background-color: #555;
+  width: 100%;
+  display: table;
+  border-top: solid 4px #353535;
+}
+//move contact links stuff to _tds-contact-icons.scss
+div#footer-login {
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media all and (min-width: $screen-sm-min) {
+  div#footer-login {
+    display: none;
+  }
+}
+.btn-login {
+  font-family: $tds-font-family;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 12px 0;
+  color: #fff;
+  padding-left: 1em;
+  background-color: #19388a;
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: left;
+}
+.btn-login:hover {
+  background-color: #0c8fd0;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-right-arrow-white {
+  display: inline-block;
+  height: 18px;
+  width: 9px;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg');
+  background-size: 9px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1em;
+}
+div.homepageFooter {
+  background-color: transparent!important;
+}
+.homepageFooter-container {
+  background-color: #555;
+  width: 100%;
+  display: table;
+  border-top: solid 4px #353535;
+  position: relative;
+  top: 4px;
+}
+@media all and (max-width: $screen-sm-min) {
+  #home-only-footer {
+    display: none;
+  }
+}
+li.column-heading>a {
+  font-family: $tds-font-family;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125em;
+  color: #fff;
+  margin: 0 0 0.5em;
+  border-bottom: solid 2px #25acf2;
+  text-decoration: none!important;
+  display: block;
+}
+li.column-heading>a:hover:after {
+  padding-right: 1em;
+  margin-left: 0.125em;
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg');
+  background-size: 10px 20px;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.column-body a {
+  font-family: $tds-font-body;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875em;
+  line-height: 1.7em;
+  color: #cacaca;
+  text-decoration: none;
+}
+.column-body a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer-columns,
+.footer-columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-columns>li {
+  width: 28.47%;
+  float: left;
+  margin-left: 7.29%;
+  margin-top: 32px;
+  text-align: left;
+}
+.footer-columns li:first-child {
+  margin-left: 0;
+}
+.footer-columns ul ul {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+.footer-columns ul>li {
+  padding: 0.75em 0 0;
+}
+.footer-block {
+  display: block;
+}
+#account-plus,
+#phone-plus,
+#internet-plus,
+#tv-plus {
+  cursor: pointer;
+}
+#account-support,
+#phone-support,
+#internet-support,
+#tv-support {
+  display: none;
+  width: 70%;
+}
+.link-plus {
+  height: 22px;
+  width: 30px;
+  float: right;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-gray.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_plus-gray.svg');
+  background-size: 11px 11px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+li:hover>a#account-plus>.link-plus,
+li:hover>a#phone-plus>.link-plus,
+li:hover>a#internet-plus>.link-plus,
+li:hover>a#tv-plus>.link-plus {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-ltblue.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_plus-ltblue.svg');
+}
+.link-minus {
+  height: 21px;
+  width: 30px;
+  float: right;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-gray.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_minus-gray.svg');
+  background-size: 11px 11px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+li:hover>a#account-plus>.link-minus,
+li:hover>a#phone-plus>.link-minus,
+li:hover>a#internet-plus>.link-minus,
+li:hover>a#tv-plus>.link-minus {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-ltblue.png);
+  background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_minus-ltblue.svg');
+}
+.footer-gray {
+  color: #cacaca;
+}
+.footer-white {
+  color: #fff!important;
+  font-weight: 500!important;
+}

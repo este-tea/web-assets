@@ -1,0 +1,20 @@
+/* tds-account-info
+==========================================*/
+
+//registration section accountcredentials component
+.accountcredentials h2:first-child {
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+.accountcredentials .tds-alert.tds-alert-warning {
+  margin-bottom: 28px;
+}
+.accountcredentials .tds-alert.tds-alert-warning {
+  margin-bottom: 28px;
+}
+
+//HYDRA-2185 fix checkmark hover//
+.parbase.myaadduser.section label:hover input:checked + .tds-radio-btn:before {
+    top: inherit;
+    left: inherit;
+}

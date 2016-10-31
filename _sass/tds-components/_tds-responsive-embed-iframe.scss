@@ -1,0 +1,13 @@
+.embed-responsive.tds-embed-responsive-iframe {
+  @extend .embed-responsive-4by3;
+}
+// for chat window modal
+.embed-responsive.tds-embed-responsive-iframe-chat {
+  padding-bottom: 100%;
+}
+// height change on chat modal for mobile-only
+@media (min-width: $screen-sm-min) {
+  .embed-responsive.tds-embed-responsive-iframe-chat {
+    padding-bottom: 88%;
+  }
+}
