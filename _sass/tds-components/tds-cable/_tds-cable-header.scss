@@ -1,0 +1,464 @@
+@import "tds-components/_tds-variables.scss";
+
+$cable-dk-blue: #0A7AAA;
+$cable-orange: #f47e1d;
+
+/* ===== tds cable header === */
+
+//Layout
+.container-header {
+  padding: 0;
+  margin: 0 auto;
+  clear: both;
+}
+
+.row-header {
+  clear: both;
+}
+
+.top-bar {
+  font-family: $tds-font-family;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  color: $tds-white;
+  background-color: $tds-dk-gray;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+
+      &:after {
+      content:" ";
+      display:table;
+      clear:both;
+      }
+}
+
+//UI
+.ui-mobile-menu {
+    display: none;
+    position: relative;
+    padding-left: 1.25em;
+    span {display: none}
+    cursor: pointer;
+
+    &:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    width: 40px;
+    height: 22px;
+    background-size: contain;
+    background: url("/content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
+  }
+
+    @media only screen and (max-width: 568px) {
+    display: block;
+    top: 0;
+    }
+}
+
+
+// Top level of Nav
+.nav-top-bar {
+    ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    position: relative;
+    /*--Set relative positioning on the unordered list itself - not on the list item--*/
+    z-index: 100;
+    }
+
+    ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    a {
+    padding: 15px 10px;
+    display: block;
+    color: $tds-white;
+    text-decoration: none;
+    }
+
+    &:hover {
+    background: $cable-dk-blue;
+    }
+
+    &:hover ul {
+      display: block;
+      background: $cable-dk-blue;
+      }
+
+  }
+  // drop down state of Top Nav
+    ul li ul {
+    list-type: none;
+    float: left;
+    position: absolute;
+    left: 0;
+    display: none;
+
+    /*--Hide by default--*/
+    width: 100%;
+    color: #fff;
+    &:hover {
+      background: $cable-dk-blue;
+      }
+    }
+
+    ul li ul li {
+    color: #555;
+    padding:0 10px;
+    font-size: 14px;
+    min-width: 200px;
+    background: $cable-dk-blue;
+        &:hover, a:hover {
+          background: $tds-lt-blue-100;
+        }
+    }
+
+//Horzointal rule between dropdown menu items
+    ul ul li + li a {
+        border-top: 2px solid $tds-white;
+    }
+
+
+    @media screen and (max-width: 568px) {
+      display: none;
+    }
+
+}
+
+//Residenttial and Business Tabs
+.nav-tds-external-sites {
+  float: right;
+    .res {
+        border-top: 5px solid $cable-dk-blue;
+        background: #fff;
+        color: #353535;
+        &:hover {
+          color:$cable-dk-blue;
+        }
+    }
+
+    .bus {
+        border-top: 5px solid $cable-orange;
+        background: #353535;
+        color: #fff;
+        &:hover {
+          color:$cable-orange;
+        }
+    }
+
+  ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  /*--Set relative positioning on the unordered list itself - not on the list item--*/
+  z-index: 100;
+  }
+
+  ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+
+      a {
+      padding: 11px 30px 14px 30px;
+      width: 135px;
+      display: block;
+      text-decoration: none;
+          @media screen and (max-width: 360px) {
+            width: 120px;
+          }
+      }
+
+  }
+}
+
+/////////////////////////
+/////////Main Nav
+////////////////////////
+.nav-main {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin:0 18%;
+    font-size: 20px;
+    font-weight: 300;
+
+    @media screen and (max-width: 1200px) {
+      margin:0 0 0 18%;
+    }
+
+    @media screen and (max-width: 568px) {
+      display: none;
+      margin: 20px auto;
+      width: 85%;
+    }
+
+
+
+a.active {
+  color: $tds-white;
+  background: $cable-dk-blue;
+}
+
+    a {
+    padding: 15px 12px;
+    display: block;
+    color: $tds-dk-blue;
+    text-decoration: none;
+    }
+
+    ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    position: relative;
+    /*--Set relative positioning on the unordered list itself - not on the list item--*/
+    z-index: 100;
+        @media screen and (max-width: 568px) {
+        width: 100%;
+      }
+    }
+
+    ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+      @media screen and (max-width: 568px) {
+      float: none;
+    }
+    li:hover {
+    color: $tds-white;
+    }
+
+    &:hover {
+    background: $cable-dk-blue;
+    color:#ffffff;
+    a {color:$tds-white};
+    }
+
+    &:hover ul {
+    display: block;
+    background: $tds-dk-gray;
+    color: $tds-white;
+        @media screen and (max-width: 568px) {
+          display: none;
+      }
+    }
+
+    @media screen and (max-width: 568px) {
+      border-top: 1px solid $tds-lt-blue-100;
+    }
+
+  }
+
+    // drop down state of Main Nav
+  ul li ul {
+    list-type: none;
+    float: left;
+    position: absolute;
+    left: 0;
+    display: none;
+
+    /*--Hide by default--*/
+    width: 100%;
+    color: #fff;
+    &:hover {
+    background: $cable-dk-blue;
+    }
+  }
+
+  ul li ul li {
+    color: #555;
+    padding:0 10px;
+    font-size: 16px;
+    min-width: 225px;
+    background: $tds-dkr-gray;
+    &:hover, a:hover {
+    background: $tds-dk-gray;
+    }
+  }
+
+    //Horzointal rule between dropdown menu items
+  ul ul li + li a {
+    border-top: 2px solid $tds-lt-blue-100;
+
+  }
+
+}
+
+
+
+
+
+//////////////////////////
+///Contact, Cart and account Menu
+//////////////////////////
+.contact-links-wrap {
+  margin: 15px 0;
+  overflow: visible;
+
+  ul li {
+  margin: 8px 0 0 16px;
+  display: inline-block;
+  vertical-align: top;
+    &:last-child.button {
+       margin-right: -15px;
+    }
+
+    &:last-child {
+      margin-right: 15px;
+      @media screen and (max-width: 360px) {
+        margin-right:0;
+      }
+  }
+
+    @media screen and (max-width: 680px) {
+        margin: 8px 8px 0 0;
+      }
+
+
+    @media screen and (max-width: 360px) {
+      margin: 8px 10px 0 0;
+    }
+  }
+
+  .button {
+  margin: 12px 0 0 16px;
+  }
+
+  @media screen and (max-width: 680px) {
+  text-align: left;
+    .button {
+    margin: 24px 0 0 12px;
+    float: right;
+    }
+  }
+}
+
+#header-contact-links {
+
+.contact-links-text {
+  font-size: 16px;
+  font-weight: 300;
+  color:$cable-dk-blue;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: .9em;
+  }
+}
+
+.contact-chat-icon:before, .contact-email-icon:before, .contact-call-icon:before, .contact-form-icon:before,
+.contact-account-icon:before, .contact-cart-icon:before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  position: relative;
+  top: -2px;
+
+@media screen and (max-width: 751px) {
+  margin-right: 4px;
+  width: 30px;
+  height: 30px;
+    top: 0px;
+}
+
+@media screen and (max-width: 360px) {
+  margin-right: 4px;
+  width: 25px;
+  height: 25px;
+}
+
+}
+
+.contact-call-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45px;
+      @media screen and (max-width: 480px) {
+        background-size: 35px;
+    }
+}
+
+.contact-account-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+      @media screen and (max-width: 480px) {
+        background-size: 12px;
+    }
+}
+
+.contact-cart-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+      @media screen and (max-width: 480px) {
+        background-size: 12px;
+    }
+}
+
+@media screen and (max-width: 751px)  {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+
+}
+
+
+/////Theme
+
+  /*Header logo */
+  .container-logo {
+    #tds-logo {
+      float: left;
+      width: 204px;
+      height: 83px;
+      margin: 0 10% 30px 30px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      width: 33%;
+    }
+
+    @media only screen and (max-width: 568px) {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      #tds-logo {
+        float: none;
+        width: 204px;
+        height: 83px;
+        margin: 0;
+    }
+  }
+}
