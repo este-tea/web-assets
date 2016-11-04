@@ -14,6 +14,8 @@
     
   </title>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/cable-styles.css">
@@ -31,20 +33,120 @@
   <body>
 
 
-    
-<div class="container-fluid" style="background-color:#555">
+    <header class="container-header">
 
-<div class="row">
-<div class="tds-width-container container">
-<p style="color:#ffffff">Header</p>
+<nav class="top-bar">
+				<a href="#" class="ui-mobile-menu"><span>Menu</span></a>
+				<div class="nav-top-bar">
+				<ul>
+					<li>
+						<a href="/about">About Us</a>
+						<ul>
+							<li><a href="/about">Company Profile</a></li>
+							<li><a href="https://external-telecom-teldta.icims.com/" target="_blank">Careers</a></li>
+						</ul>
+					</li>
+					<li><a href="http://myaccount.beyondbb.com/" target="_blank">Email Access</a></li>
+					<li><a href="https://elemt.convergentcare.com/elemt/goToLogin.action?subClientId=3402" target="_blank">Online Bill Pay</a></li>
+					<li><a href="/contact">Contact Us</a></li>
+				</ul>
+			</div>
+
+			<div class="nav-tds-external-sites">
+			<ul class="menu-type">
+				<li><a href="/" class="res">Residential</a></li>
+				<li><a href="/business" class="bus">Business</a></li>
+			</ul>
+			</div>
+		</nav>
+
+<div class="row-header">
+
+	<div class="contact-links-wrap" id="header-contact-links">
+		<ul>
+
+
+			<li>
+				<a class="contact-links-text contact-account-icon" href="/login.html">Log In</a>
+			</li>
+
+			<li>
+				<a class="contact-links-text contact-cart-icon" href="/cart.html">View Cart</a>
+			</li>
+
+			<li>
+				<a class="contact-links-text contact-call-icon" href="tel:8556963868"><span class="header_phone_num parbase phoneNumberDisplay"><span>855-696-8368</span></span></a>
+			</li>
+<!---Optinal CTA
+			<li class="button">
+				<a class="gallery-btn tds-btn-orange gallery-btn tds-btn-orange" href="/get-quote.html">Optinal CTA</a>
+			</li>---->
+		</ul>
+	</div>
 </div>
+
+<div class="row-header">
+
+<div class="container-logo">
+				<a href="/" id="tds-logo"></a>
 </div>
 
+		<nav>
+			<div class="nav-main">
+		    <ul class="menu">
+		    		<li><a href="#">Bundles</a></li>
+		        <li><a href="/bestdeals">Best Deals</a></li>
+		        <li><a href="/internet">Internet</a></li>
+		        <li class="deeper parent">
+		            <a href="/tv">TV</a>
+		            <ul>
+		                <li><a href="/tv/channel-lineups">Channel Lineups</a></li>
+		                <!--<li><a href="/tv/pay-per-view">Pay-Per-View</a></li>
+		                <li><a href="/tv/premium-channels">Premium Channels</a></li>-->
+		                <li><a href="/tv/specialty-tiers">Specialty Tiers</a></li>
+		                <li><a href="/catch-tv">CatchTV</a></li>
+		                <li><a href="/tv/tv-everywhere">TV Everywhere</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="/catch-tv">CatchTV</a></li>
+		        <li><a href="/phone">Phone</a></li>
+		        <li><a href="http://blog.hellotds.com/">News</a></li>
+		        <li class="deeper parent">
+		            <a href="/support">Support</a>
+		            <ul>
+		                <li><a href="/support/cable-tv">Cable TV Support</a></li>
+		                <li><a href="/support/internet">Internet Support</a></li>
+		                <li><a href="/support/digital-phone">Digital Phone Support</a></li>
+		                <li><a href="/support/payment-options">Payment Options</a></li>
+		                <li><a href="/support/faqs">FAQs</a></li>
+		                <li><a href="/support/rate-cards">TDS Rate Cards</a></li>
+		                <li><a href="/support/remote-pc-support">Remote PC Support</a></li>
+		            </ul>
+		        </li>
+		    </ul>
+			</div>
+		</nav>
 </div>
 
+</header>
+
+<script>
+$(document).ready(function(){
+		$(".ui-mobile-menu").click(function(){
+				$(".nav-main").slideToggle( 'fast', 'swing');
+		});
+});
+
+$(".nav-main [href]").each(function() {
+		if (this.href == window.location.href) {
+				$(this).addClass("active");
+				}
+		});
+</script>
 
 
-    <div class="page-content">
+
+    <div class="page-content" style="clear:both">
       <div class="wrapper">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -84,10 +186,7 @@
       <table>
         <tbody>
           <tr>
-            <td class="subscribe-text">
-              <!--  -->
-This is the message that will make people lose there minds!
-            </td>
+            <td class="subscribe-text"><!--  -->This is the message that will make people lose there minds!</td>
             <td class=""><a href="" class="btn-subscribe"><!---->Sign Up</a></td>
           </tr>
         </tbody>

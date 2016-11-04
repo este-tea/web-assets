@@ -1,5 +1,432 @@
 /* ===== Start tds cable style overrides ======================================
 /* ========================================================================== */
+/* ===== tds cable header === */
+.container-header {
+  padding: 0;
+  margin: 0 auto;
+  clear: both;
+}
+
+.row-header {
+  clear: both;
+}
+
+.top-bar {
+  font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  color: #FFF;
+  background-color: #555;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+}
+.top-bar:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.ui-mobile-menu {
+  display: none;
+  position: relative;
+  padding-left: 1.25em;
+  cursor: pointer;
+}
+.ui-mobile-menu span {
+  display: none;
+}
+.ui-mobile-menu:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  width: 40px;
+  height: 22px;
+  background-size: contain;
+  background: url("/content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
+}
+@media only screen and (max-width: 568px) {
+  .ui-mobile-menu {
+    display: block;
+    top: 0;
+  }
+}
+
+.nav-top-bar ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  position: relative;
+  /*--Set relative positioning on the unordered list itself - not on the list item--*/
+  z-index: 100;
+}
+.nav-top-bar ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.nav-top-bar ul li a {
+  padding: 15px 10px;
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+}
+.nav-top-bar ul li:hover {
+  background: #0A7AAA;
+}
+.nav-top-bar ul li:hover ul {
+  display: block;
+  background: #0A7AAA;
+}
+.nav-top-bar ul li ul {
+  list-type: none;
+  float: left;
+  position: absolute;
+  left: 0;
+  display: none;
+  /*--Hide by default--*/
+  width: 100%;
+  color: #fff;
+}
+.nav-top-bar ul li ul:hover {
+  background: #0A7AAA;
+}
+.nav-top-bar ul li ul li {
+  color: #555;
+  padding: 0 10px;
+  font-size: 14px;
+  min-width: 200px;
+  background: #0A7AAA;
+}
+.nav-top-bar ul li ul li:hover, .nav-top-bar ul li ul li a:hover {
+  background: #0C8FD0;
+}
+.nav-top-bar ul ul li + li a {
+  border-top: 2px solid #FFF;
+}
+@media screen and (max-width: 568px) {
+  .nav-top-bar {
+    display: none;
+  }
+}
+
+.nav-tds-external-sites {
+  float: right;
+}
+.nav-tds-external-sites .res {
+  border-top: 5px solid #0A7AAA;
+  background: #fff;
+  color: #353535;
+}
+.nav-tds-external-sites .res:hover {
+  color: #0A7AAA;
+}
+.nav-tds-external-sites .bus {
+  border-top: 5px solid #f47e1d;
+  background: #353535;
+  color: #fff;
+}
+.nav-tds-external-sites .bus:hover {
+  color: #f47e1d;
+}
+.nav-tds-external-sites ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  /*--Set relative positioning on the unordered list itself - not on the list item--*/
+  z-index: 100;
+}
+.nav-tds-external-sites ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+}
+.nav-tds-external-sites ul li a {
+  padding: 11px 30px 14px 30px;
+  width: 135px;
+  display: block;
+  text-decoration: none;
+}
+@media screen and (max-width: 360px) {
+  .nav-tds-external-sites ul li a {
+    width: 120px;
+  }
+}
+
+.nav-main {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 18%;
+  font-size: 20px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1200px) {
+  .nav-main {
+    margin: 0 0 0 18%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .nav-main {
+    display: none;
+    margin: 20px auto;
+    width: 85%;
+  }
+}
+.nav-main a.active {
+  color: #FFF;
+  background: #0A7AAA;
+}
+.nav-main a {
+  padding: 15px 12px;
+  display: block;
+  color: #19388A;
+  text-decoration: none;
+}
+.nav-main ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  position: relative;
+  /*--Set relative positioning on the unordered list itself - not on the list item--*/
+  z-index: 100;
+}
+@media screen and (max-width: 568px) {
+  .nav-main ul {
+    width: 100%;
+  }
+}
+.nav-main ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+@media screen and (max-width: 568px) {
+  .nav-main ul li {
+    float: none;
+  }
+}
+.nav-main ul li li:hover {
+  color: #FFF;
+}
+.nav-main ul li:hover {
+  background: #0A7AAA;
+  color: #ffffff;
+}
+.nav-main ul li:hover a {
+  color: #FFF;
+}
+.nav-main ul li:hover ul {
+  display: block;
+  background: #555;
+  color: #FFF;
+}
+@media screen and (max-width: 568px) {
+  .nav-main ul li:hover ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 568px) {
+  .nav-main ul li {
+    border-top: 1px solid #0C8FD0;
+  }
+}
+.nav-main ul li ul {
+  list-type: none;
+  float: left;
+  position: absolute;
+  left: 0;
+  display: none;
+  /*--Hide by default--*/
+  width: 100%;
+  color: #fff;
+}
+.nav-main ul li ul:hover {
+  background: #0A7AAA;
+}
+.nav-main ul li ul li {
+  color: #555;
+  padding: 0 10px;
+  font-size: 16px;
+  min-width: 225px;
+  background: #353535;
+}
+.nav-main ul li ul li:hover, .nav-main ul li ul li a:hover {
+  background: #555;
+}
+.nav-main ul ul li + li a {
+  border-top: 2px solid #0C8FD0;
+}
+
+.contact-links-wrap {
+  margin: 15px 0;
+  overflow: visible;
+}
+.contact-links-wrap ul li {
+  margin: 8px 0 0 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+.contact-links-wrap ul li:last-child.button {
+  margin-right: -15px;
+}
+.contact-links-wrap ul li:last-child {
+  margin-right: 15px;
+}
+@media screen and (max-width: 360px) {
+  .contact-links-wrap ul li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .contact-links-wrap ul li {
+    margin: 8px 8px 0 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contact-links-wrap ul li {
+    margin: 8px 10px 0 0;
+  }
+}
+.contact-links-wrap .button {
+  margin: 12px 0 0 16px;
+}
+@media screen and (max-width: 680px) {
+  .contact-links-wrap {
+    text-align: left;
+  }
+  .contact-links-wrap .button {
+    margin: 24px 0 0 12px;
+    float: right;
+  }
+}
+
+#header-contact-links .contact-links-text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #0A7AAA;
+}
+@media screen and (max-width: 480px) {
+  #header-contact-links .contact-links-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #header-contact-links .contact-links-text {
+    font-size: .9em;
+  }
+}
+#header-contact-links .contact-chat-icon:before, #header-contact-links .contact-email-icon:before, #header-contact-links .contact-call-icon:before, #header-contact-links .contact-form-icon:before,
+#header-contact-links .contact-account-icon:before, #header-contact-links .contact-cart-icon:before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  position: relative;
+  top: -2px;
+}
+@media screen and (max-width: 751px) {
+  #header-contact-links .contact-chat-icon:before, #header-contact-links .contact-email-icon:before, #header-contact-links .contact-call-icon:before, #header-contact-links .contact-form-icon:before,
+  #header-contact-links .contact-account-icon:before, #header-contact-links .contact-cart-icon:before {
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #header-contact-links .contact-chat-icon:before, #header-contact-links .contact-email-icon:before, #header-contact-links .contact-call-icon:before, #header-contact-links .contact-form-icon:before,
+  #header-contact-links .contact-account-icon:before, #header-contact-links .contact-cart-icon:before {
+    margin-right: 4px;
+    width: 25px;
+    height: 25px;
+  }
+}
+#header-contact-links .contact-call-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45px;
+}
+@media screen and (max-width: 480px) {
+  #header-contact-links .contact-call-icon:before {
+    background-size: 35px;
+  }
+}
+#header-contact-links .contact-account-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  #header-contact-links .contact-account-icon:before {
+    background-size: 12px;
+  }
+}
+#header-contact-links .contact-cart-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+}
+@media screen and (max-width: 480px) {
+  #header-contact-links .contact-cart-icon:before {
+    background-size: 12px;
+  }
+}
+@media screen and (max-width: 751px) {
+  #header-contact-links {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+}
+
+/*Header logo */
+.container-logo #tds-logo {
+  float: left;
+  width: 204px;
+  height: 83px;
+  margin: 0 10% 30px 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 992px) {
+  .container-logo #tds-logo {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container-logo {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .container-logo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container-logo #tds-logo {
+    float: none;
+    width: 204px;
+    height: 83px;
+    margin: 0;
+  }
+}
+
 .subscribe-text:before {
   content: "";
   padding: 15px 25px;
@@ -10,12 +437,23 @@
 }
 
 .btn-subscribe {
-  padding: 0 20px;
+  padding: 0 10px;
+  display: block;
 }
 .btn-subscribe:after {
   content: "";
   padding-right: 0px;
   margin-left: 0px;
+  background-image: none;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+a.btn-subscribe::before {
+  content: "";
+  padding-left: 0;
+  margin-right: 0;
   background-image: none;
   background-size: contain;
   background-position: right center;

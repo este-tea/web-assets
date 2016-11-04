@@ -8,7 +8,8 @@
 }
 
 .btn-subscribe {
-  padding: 0 20px;
+  padding: 0 10px;
+  display: block;
   &:after {
       content: "";
       padding-right: 0px;
@@ -19,3 +20,13 @@
       background-repeat: no-repeat;
   }
 }
+
+a.btn-subscribe::before {
+    content: "";
+    padding-left: 0;
+    margin-right: 0;
+    background-image: none;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
