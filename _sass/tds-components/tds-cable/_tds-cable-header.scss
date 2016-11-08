@@ -86,11 +86,11 @@ $cable-orange: #f47e1d;
     text-decoration: none;
     }
 
-    &:hover {
+    &:hover,:focus {
     background: $cable-dk-blue;
     }
 
-    &:hover ul {
+    &:hover ul, :focus {
       display: block;
       background: $cable-dk-blue;
       }
@@ -107,7 +107,7 @@ $cable-orange: #f47e1d;
     /*--Hide by default--*/
     width: 100%;
     color: #fff;
-    &:hover {
+    &:hover, :focus {
       background: $cable-dk-blue;
       }
     }
@@ -118,7 +118,7 @@ $cable-orange: #f47e1d;
     font-size: 14px;
     min-width: 200px;
     background: $cable-dk-blue;
-        &:hover, a:hover {
+        &:hover, a:hover, :focus {
           background: $tds-lt-blue-100;
         }
     }
@@ -142,7 +142,7 @@ $cable-orange: #f47e1d;
         border-top: 5px solid $cable-dk-blue;
         background: #fff;
         color: #353535;
-        &:hover {
+        &:hover, :focus {
           color:$cable-dk-blue;
         }
     }
@@ -151,7 +151,7 @@ $cable-orange: #f47e1d;
         border-top: 5px solid $cable-orange;
         background: #353535;
         color: #fff;
-        &:hover {
+        &:hover, :focus {
           color:$cable-orange;
         }
     }
@@ -241,17 +241,17 @@ a.active {
       @media screen and (max-width: 568px) {
       float: none;
     }
-    li:hover {
+    li:hover, :focus {
     color: $tds-white;
     }
 
-    &:hover {
+    &:hover, :focus {
     background: $cable-dk-blue;
     color:#ffffff;
     a {color:$tds-white};
     }
 
-    &:hover ul {
+    &:hover ul, :focus {
     display: block;
     background: $tds-dk-gray;
     color: $tds-white;
@@ -277,7 +277,7 @@ a.active {
     /*--Hide by default--*/
     width: 100%;
     color: #fff;
-    &:hover {
+    &:hover, :focus {
     background: $cable-dk-blue;
     }
   }
@@ -288,7 +288,7 @@ a.active {
     font-size: 16px;
     min-width: 225px;
     background: $tds-dkr-gray;
-    &:hover, a:hover {
+    &:hover, a:hover, :focus {
     background: $tds-dk-gray;
     }
   }
@@ -312,34 +312,41 @@ a.active {
   margin: 15px 0;
   overflow: visible;
 
+  @media screen and (max-width: 360px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   ul li {
   margin: 8px 0 0 16px;
   display: inline-block;
   vertical-align: top;
-    &:last-child.button {
-       margin-right: -15px;
+
+    .button {
+    margin: 12px 0 0 16px;
     }
 
     &:last-child {
       margin-right: 15px;
-      @media screen and (max-width: 360px) {
-        margin-right:0;
+
+      @media screen and (max-width: 680px) {
+          margin: 8px 8px 8px 0;
+      }
+      @media screen and (max-width: 480px) {
+        margin: 8px 0px;
+      }
+
+      &:last-child.button {
+        margin: 15px -15px 8px 8px;
+        @media screen and (max-width: 480px) {
+        margin: 18px -15px 8px 8px;
+      }
       }
   }
-
-    @media screen and (max-width: 680px) {
-        margin: 8px 8px 0 0;
-      }
-
-
-    @media screen and (max-width: 360px) {
-      margin: 8px 10px 0 0;
-    }
   }
 
-  .button {
-  margin: 12px 0 0 16px;
-  }
 
   @media screen and (max-width: 680px) {
   text-align: left;
