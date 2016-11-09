@@ -1,0 +1,10 @@
+@import "tds-components/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+/* ===== tds cable layouts === */
+
+.row {
+  width: 100%;
+  max-width: 1156px;
+  margin: 0 auto;
+}
