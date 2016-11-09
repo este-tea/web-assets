@@ -6,8 +6,8 @@
   width: 98px;
   height: 40px;
   margin: 40px 0;
-  background-image: url(/content/dam/tdstelecom/images/logos/TDS_Logo.png); // IE 9 hack fallback
-  background-image: url(/content/dam/tdstelecom/images/logos/tds-logo.svg);
+  background-image: url(../content/dam/tdstelecom/images/logos/TDS_Logo.png); // IE 9 hack fallback
+  background-image: url(../content/dam/tdstelecom/images/logos/tds-logo.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
   display: inline-block;
   width: 80px;
   height: 100px;
-  background-image: url(/content/dam/tdstelecom/images/logos/2015-fortune-1000.gif);
+  background-image: url(../content/dam/tdstelecom/images/logos/2015-fortune-1000.gif);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
