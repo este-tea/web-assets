@@ -1,5 +1,13 @@
+//Layout
+@import "tds-components/tds-cable/_tds-cable-layout";
+
 //Header navbar
 @import "tds-components/tds-cable/_tds-cable-header";
 
 //Footer
 @import "tds-components/tds-cable/_tds-cable-footer";
+
+//Theme
+@import "tds-components/tds-cable/_tds-cable-errors-alerts-warnings";
+@import "tds-components/tds-cable/_tds-cable-forms";
+@import "tds-components/tds-cable/_tds-cable-typography";

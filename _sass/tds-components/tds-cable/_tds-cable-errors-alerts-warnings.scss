@@ -1,0 +1,43 @@
+@import "tds-components/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+/* ===== tds cable warrnings and error messages === */
+
+.container.title-user-address, .container.warning-cartEmpty, .container.alert-critical {
+  max-width: 100%;
+  padding: 15px 15px 5px 15px;
+  p {
+    line-height: 1.5em;
+    font-size: 14px;
+  }
+  a {
+    color: $tds-dk-gray;
+    &:hover, :focus {
+      color: $cable-dk-blue;
+    }
+  }
+}
+
+.container.title-user-address {
+  background-color:$tds-lt-bluegray;
+}
+
+.container.warning-cartEmpty {
+  background-color: $state-warning-bg;
+}
+
+.container.alert-critical {
+  background-color: $tds-critical-bg;
+  a {
+    color: $tds-red;
+    &:hover, :focus {
+      color: #991419;
+    }
+  }
+}
+
+
+//Data picker
+.datepicker-switch {
+  color:red;
+}

@@ -1,10 +1,20 @@
 /* ===== Start tds cable style overrides ======================================
 /* ========================================================================== */
+/* ===== tds cable layouts === */
+.row {
+  width: 100%;
+  max-width: 1156px;
+  margin: 0 auto;
+}
+
 /* ===== tds cable header === */
 .container-header {
-  padding: 0;
+  padding: 0 0 40px 0;
   margin: 0 auto;
   clear: both;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid #0A7AAA;
 }
 
 .row-header {
@@ -214,6 +224,7 @@
 @media screen and (max-width: 568px) {
   .nav-main ul li {
     float: none;
+    clear: both;
   }
 }
 .nav-main ul li li:hover, .nav-main ul li :focus {
@@ -284,7 +295,7 @@
   display: inline-block;
   vertical-align: top;
 }
-.contact-links-wrap ul li .button {
+.contact-links-wrap ul li .gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
   margin: 12px 0 0 16px;
 }
 .contact-links-wrap ul li:last-child {
@@ -300,11 +311,11 @@
     margin: 8px 0px;
   }
 }
-.contact-links-wrap ul li:last-child:last-child.button {
+.contact-links-wrap ul li:last-child:last-child.gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
   margin: 15px -15px 8px 8px;
 }
 @media screen and (max-width: 480px) {
-  .contact-links-wrap ul li:last-child:last-child.button {
+  .contact-links-wrap ul li:last-child:last-child.gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
     margin: 18px -15px 8px 8px;
   }
 }
@@ -312,7 +323,7 @@
   .contact-links-wrap {
     text-align: left;
   }
-  .contact-links-wrap .button {
+  .contact-links-wrap .gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
     margin: 24px 0 0 12px;
     float: right;
   }
@@ -405,7 +416,7 @@
   float: left;
   width: 204px;
   height: 83px;
-  margin: 0 10% 30px 30px;
+  margin: -15px 10% 0px 30px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -465,6 +476,65 @@ a.btn-subscribe::before {
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
+}
+
+/* ===== tds cable warrnings and error messages === */
+.container.title-user-address, .container.warning-cartEmpty, .container.alert-critical {
+  max-width: 100%;
+  padding: 15px 15px 5px 15px;
+}
+.container.title-user-address p, .container.warning-cartEmpty p, .container.alert-critical p {
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.container.title-user-address a, .container.warning-cartEmpty a, .container.alert-critical a {
+  color: #555;
+}
+.container.title-user-address a:hover, .container.title-user-address a :focus, .container.warning-cartEmpty a:hover, .container.warning-cartEmpty a :focus, .container.alert-critical a:hover, .container.alert-critical a :focus {
+  color: #0A7AAA;
+}
+
+.container.title-user-address {
+  background-color: #E8EBF3;
+}
+
+.container.warning-cartEmpty {
+  background-color: #FFF8D8;
+}
+
+.container.alert-critical {
+  background-color: #ffecec;
+}
+.container.alert-critical a {
+  color: #CB1D1D;
+}
+.container.alert-critical a:hover, .container.alert-critical a :focus {
+  color: #991419;
+}
+
+.datepicker-switch {
+  color: red;
+}
+
+/* ===== tds cable  form styles === */
+.datepicker-switch {
+  color: red;
+}
+
+/* ===== tds cable Typography === */
+/*==form styles==*/
+.hr-after-text {
+  overflow: hidden;
+}
+.hr-after-text:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid #BBB;
 }
 
 /* ===== END tds cable style overrides ========================================

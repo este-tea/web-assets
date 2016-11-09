@@ -6,9 +6,76 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Nov 2016 10:21:22 -0600</pubDate>
-    <lastBuildDate>Tue, 08 Nov 2016 10:21:22 -0600</lastBuildDate>
+    <pubDate>Wed, 09 Nov 2016 11:05:52 -0600</pubDate>
+    <lastBuildDate>Wed, 09 Nov 2016 11:05:52 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>CWS-Checkout questions</title>
+        <description>&lt;!--user name or address bar--&gt;
+&lt;div class=&quot;container title-user-address&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;p&gt;Address: &lt;strong&gt;811 North Edge Trl, Verona, WI&lt;/strong&gt; &lt;a href=&quot;#&quot;&gt;change&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--user name or address bar end--&gt;
+
+&lt;!--Warring bar--&gt;
+&lt;div class=&quot;container warning-cartEmpty&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;p&gt;Your shopping cart is empty. &lt;a href=&quot;#&quot;&gt;Shop our site to find product pricing and availability information.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Warring bar end--&gt;
+
+&lt;!--Error bar--&gt;
+&lt;div class=&quot;container alert-critical&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;p&gt;Please fix errors before submitting. &lt;a href=&quot;#&quot;&gt;(Calls out invalid fields)&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Error bar end--&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;h2 class=&quot;hr-after-text&quot;&gt;Customer Information&lt;/h2&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+          &lt;label for=&quot;&quot;&gt;First Name: &lt;/label&gt;
+          &lt;input class=&quot;form-control&quot; name=&quot;customerFirstName&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+          &lt;div id=&quot;customerFirstNameError&quot; class=&quot;initiallyHidden text-danger&quot;&gt;Please
+            tell us your First Name&lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;input-group date&quot; style=&quot;margin-bottom:100px&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;installData&quot; /&gt;&lt;span class=&quot;input-group-addon&quot;&gt;icon&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+$(&#39;.input-group.date&#39;).datepicker({
+    startDate: &quot;+4d&quot;,
+    daysOfWeekDisabled: &quot;0,6&quot;,
+    datesDisabled: [&#39;11/24/2016, 12/25/2016&#39;],
+    orientation: &quot;bottom left&quot;,
+});
+&lt;/script&gt;
+
+</description>
+        <pubDate>Tue, 08 Nov 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/11/08/cws-checkoutquestions/</link>
+        <guid isPermaLink="true">/cws/2016/11/08/cws-checkoutquestions/</guid>
+        
+        
+        <category>CWS</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>

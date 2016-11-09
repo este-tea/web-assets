@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      CWS-Checkout questions &middot; Your awesome title
+    
+  </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/cable-styles.css">
+
+  <link rel="stylesheet" href="/etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-datepicker/css/bootstrap-datepicker.css">
+
+
+
+  <!-- Icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">-->
+  <link rel="shortcut icon" href="/tds-logo.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Your awesome title" href="/atom.xml">
+</head>
+
+
+  <body>
+
+
+    <header class="container-header">
+
+<!--top bar left Navigation-->
+<nav class="top-bar">
+				<a href="#" class="ui-mobile-menu"><span>Menu</span></a>
+				<div class="nav-top-bar">
+				<ul>
+					<li>
+						<a href="/about">About Us</a>
+						<ul>
+							<li><a href="/about">Company Profile</a></li>
+							<li><a href="https://external-telecom-teldta.icims.com/" target="_blank">Careers</a></li>
+						</ul>
+					</li>
+					<li><a href="http://myaccount.beyondbb.com/" target="_blank">Email Access</a></li>
+					<li><a href="https://elemt.convergentcare.com/elemt/goToLogin.action?subClientId=3402" target="_blank">Online Bill Pay</a></li>
+					<li><a href="/contact">Contact Us</a></li>
+				</ul>
+			</div>
+<!--top bar left Navigation end-->
+
+
+<!--top bar right Navigation Residential and Business links-->
+			<div class="nav-tds-external-sites">
+			<ul class="menu-type">
+				<li><a href="/" class="res">Residential</a></li>
+				<li><a href="/business" class="bus">Business</a></li>
+			</ul>
+			</div>
+		</nav>
+<!--top bar right Navigation Residential and Business links end-->
+
+
+
+<!--Navigation CWS account, view cart, contact, ect links-->
+<div class="row-header">
+	<div class="contact-links-wrap" id="header-contact-links">
+		<ul>
+
+
+			<li>
+				<a class="contact-links-text contact-account-icon" href="/login.html">Log In</a>
+			</li>
+
+			<li>
+				<a class="contact-links-text contact-cart-icon" href="/cart.html">View Cart</a>
+			</li>
+
+			<li>
+				<a class="contact-links-text contact-call-icon" href="tel:8556963868"><span class="header_phone_num parbase phoneNumberDisplay"><span>855-696-8368</span></span></a>
+			</li>
+
+<!---Optinal CTA Button-->
+			<li>
+				<a class="gallery-btn tds-btn-orange gallery-btn tds-btn-orange" href="/get-quote.html">Optinal CTA</a>
+			</li>
+<!---Optinal CTA Button end-->
+
+		</ul>
+	</div>
+</div>
+<!--Navigation CWS account, view cart, contact, ect links end-->
+
+
+<!--Logo and Main Site Navigation-->
+<div class="row-header">
+
+<!--Logo-->
+<div class="container-logo">
+				<a href="/" id="tds-logo"></a>
+</div>
+<!--Logo end-->
+
+
+
+<!--Main Site Navigation-->
+		<nav>
+			<div class="nav-main">
+		    <ul class="menu">
+		    		<li><a href="#">Bundles</a></li>
+		        <li><a href="/bestdeals">Best Deals</a></li>
+		        <li><a href="/internet">Internet</a></li>
+		        <li class="deeper parent">
+		            <a href="/tv">TV</a>
+		            <ul>
+		                <li><a href="/tv/channel-lineups">Channel Lineups</a></li>
+		                <li><a href="/tv/specialty-tiers">Specialty Tiers</a></li>
+		                <li><a href="/catch-tv">CatchTV</a></li>
+		                <li><a href="/tv/tv-everywhere">TV Everywhere</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="/catch-tv">CatchTV</a></li>
+		        <li><a href="/phone">Phone</a></li>
+		        <li><a href="http://blog.hellotds.com/">News</a></li>
+		        <li class="deeper parent">
+		            <a href="/support">Support</a>
+		            <ul>
+		                <li><a href="/support/cable-tv">Cable TV Support</a></li>
+		                <li><a href="/support/internet">Internet Support</a></li>
+		                <li><a href="/support/digital-phone">Digital Phone Support</a></li>
+		                <li><a href="/support/payment-options">Payment Options</a></li>
+		                <li><a href="/support/faqs">FAQs</a></li>
+		                <li><a href="/support/rate-cards">TDS Rate Cards</a></li>
+		                <li><a href="/support/remote-pc-support">Remote PC Support</a></li>
+		            </ul>
+		        </li>
+		    </ul>
+			</div>
+		</nav>
+<!--Main Site Navigation end-->
+
+</div>
+</header>
+
+<!--Scripts for mobile menu toggle and page highlight for main nav-->
+<script>
+$(document).ready(function(){
+		$(".ui-mobile-menu").click(function(){
+				$(".nav-main").slideToggle( 'fast', 'swing');
+		});
+});
+
+$(".nav-main [href]").each(function() {
+		if (this.href == window.location.href) {
+				$(this).addClass("active");
+				}
+		});
+</script>
+
+<div style="clearfix"></div>
+
+        <!--user name or address bar-->
+<div class="container title-user-address">
+  <div class="row">
+    <p>Address: <strong>811 North Edge Trl, Verona, WI</strong> <a href="#">change</a></p>
+  </div>
+</div>
+<!--user name or address bar end-->
+
+<!--Warring bar-->
+<div class="container warning-cartEmpty">
+  <div class="row">
+    <p>Your shopping cart is empty. <a href="#">Shop our site to find product pricing and availability information.</a></p>
+  </div>
+</div>
+<!--Warring bar end-->
+
+<!--Error bar-->
+<div class="container alert-critical">
+  <div class="row">
+    <p>Please fix errors before submitting. <a href="#">(Calls out invalid fields)</a></p>
+  </div>
+</div>
+<!--Error bar end-->
+
+<div class="container">
+    <div class="row">
+        <h2 class="hr-after-text">Customer Information</h2>
+
+        <div class="form-group">
+          <label for="">First Name: </label>
+          <input class="form-control" name="customerFirstName" type="text" value="" />
+          <div id="customerFirstNameError" class="initiallyHidden text-danger">Please
+            tell us your First Name</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="input-group date" style="margin-bottom:100px">
+            <input type="text" class="form-control" id="installData" /><span class="input-group-addon">icon</span>
+        </div>
+    </div>
+</div>
+
+<script>
+$('.input-group.date').datepicker({
+    startDate: "+4d",
+    daysOfWeekDisabled: "0,6",
+    datesDisabled: ['11/24/2016, 12/25/2016'],
+    orientation: "bottom left",
+});
+</script>
+
+
+
+<div style="clearfix"></div>
+    <div id="genericfooter-container">
+
+  <!-- START subscribe box -->
+  <div id="subscribe-container" class="container-fluid">
+    <div class="container">
+      <table>
+        <tbody>
+          <tr>
+            <td class="subscribe-text"><!--  -->This is the message that will make people lose there minds!</td>
+            <td class=""><a href="" class="btn-subscribe"><!---->Sign Up</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- END subscribe box -->
+
+  <div class="container">
+
+    <!-- START text links nav bar -->
+      <!-- INSERT a large nav bar component, we need a a way to create an ID but otherwise it should work for this spot -->
+    <!-- END text links nav bar -->
+
+    <!-- START social media icon links -->
+    <div id="social-container">
+      <ul id="social-media-links">
+        <li>
+          <a href="" class="circle-gray size-40"><img src="" alt=""></a>
+        </li>
+      </ul>
+    </div>
+    <!--END social media icon links-->
+
+  </div>
+
+</div>
+<!--genericfooter-container-->
+
+<!--fortune logo and copyright-->
+<div id="copyright-container">
+  <div class="container">
+    <div class="copyright-logo">
+      <img src="" id="fortune-logo" alt="">
+    </div>
+    <div class="copyright-text">
+      <div id="copyright-long-text">
+        $copyRightLongText
+      </div>
+      $copyRightShortText
+    </div>
+  </div>
+</div>
+<!--END fortune logo and copyright-->
+
+
+  </body>
+
+</html>
