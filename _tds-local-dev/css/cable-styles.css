@@ -56,7 +56,7 @@
   width: 40px;
   height: 22px;
   background-size: contain;
-  background: url("/content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
+  background: url("../content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
 }
 @media only screen and (max-width: 568px) {
   .ui-mobile-menu {
@@ -371,7 +371,7 @@
   }
 }
 #header-contact-links .contact-call-icon:before {
-  background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
+  background-image: url(../content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 45px;
@@ -382,7 +382,7 @@
   }
 }
 #header-contact-links .contact-account-icon:before {
-  background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
+  background-image: url(../content/dam/tdstelecom/images/ui/icon_account-white.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
@@ -393,7 +393,7 @@
   }
 }
 #header-contact-links .contact-cart-icon:before {
-  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
+  background-image: url(../content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 17px;
@@ -448,7 +448,7 @@
 .subscribe-text:before {
   content: "";
   padding: 15px 25px;
-  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg);
+  background-image: linear-gradient(transparent, transparent), url(../content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg);
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
