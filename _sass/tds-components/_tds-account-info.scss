@@ -15,6 +15,6 @@
 
 //HYDRA-2185 fix checkmark hover//
 .parbase.myaadduser.section label:hover input:checked + .tds-radio-btn:before {
-    top: inherit;
+    //top: inherit;
     left: inherit;
 }

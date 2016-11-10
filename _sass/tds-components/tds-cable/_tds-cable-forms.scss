@@ -2,9 +2,30 @@
 @import "_tds-cable-variables.scss";
 
 /* ===== tds cable  form styles === */
+#subscribeToEmail + label {
+      margin-top: 10px;
+    }
 
+
+.checkbox .tds-radio-btn {
+    border-radius: 0;
+}
+
+label:hover input:checked + .tds-radio-btn:before {
+    top: inherit;
+    left: inherit;
+}
 
 //Data picker
 .datepicker-switch {
   color:red;
+}
+//////////////////
+/// Layout
+/////////////////
+
+
+
+.form-address {
+  display: inline-block;
 }

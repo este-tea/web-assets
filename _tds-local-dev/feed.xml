@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Nov 2016 12:13:14 -0600</pubDate>
-    <lastBuildDate>Wed, 09 Nov 2016 12:13:14 -0600</lastBuildDate>
+    <pubDate>Thu, 10 Nov 2016 12:33:26 -0600</pubDate>
+    <lastBuildDate>Thu, 10 Nov 2016 12:33:26 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -37,18 +37,116 @@
 &lt;!--Error bar end--&gt;
 
 &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
         &lt;h2 class=&quot;hr-after-text&quot;&gt;Customer Information&lt;/h2&gt;
 
-        &lt;div class=&quot;form-group&quot;&gt;
-          &lt;label for=&quot;&quot;&gt;First Name: &lt;/label&gt;
-          &lt;input class=&quot;form-control&quot; name=&quot;customerFirstName&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
-          &lt;div id=&quot;customerFirstNameError&quot; class=&quot;initiallyHidden text-danger&quot;&gt;Please
-            tell us your First Name&lt;/div&gt;
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+            &lt;label for=&quot;firstName&quot;&gt;First Name&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;firstName&quot; id=&quot;firstName&quot; /&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;firstName-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
 
-    &lt;/div&gt;
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+            &lt;label&gt;Last Name&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;lastName&quot; id=&quot;lastName&quot; /&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;lastName-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+            &lt;label for=&quot;contactTel&quot;&gt;Contact Tel. No.&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;contactTel&quot; id=&quot;contactTel&quot; /&gt;
+            &lt;span class=&quot;help-block&quot;&gt;Format:&amp;nbsp;##########&lt;/span&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;contactTel-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+          &lt;label for=&quot;contactTime&quot;&gt;Best time of day to reach you?&lt;/label&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; value=&quot;no&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;Morning&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; value=&quot;new&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;Afternoon&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; value=&quot;yes&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;All day&lt;/div&gt;
+              &lt;/label&gt;
+              &lt;span class=&quot;help-block&quot; id=&quot;contactTime-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;contactEmail&quot;&gt;Contact Email Address&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;contactEmail&quot; id=&quot;contactEmail&quot; /&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;contactEmail-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+
+            &lt;div class=&quot;checkbox&quot;&gt;
+              &lt;label&gt;
+                &lt;input name=&quot;subscribeToEmail&quot; type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;I would like to receive occasional updates from TDS via email with information about new product
+                features and special offers. Visit our &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                  Email Subscriptions page&lt;/a&gt;&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+  &lt;/div&gt;
 &lt;/div&gt;
+
+
+
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+        &lt;h2 class=&quot;hr-after-text&quot;&gt;Address Information&lt;/h2&gt;
+
+&lt;div id=&quot;serviceAddressBlock&quot;&gt;
+        &lt;h3 class=&quot;subsectionTitle&quot;&gt;Service Address&lt;/h3&gt;
+
+
+        &lt;label for=&quot;customerServiceAddressLineInput&quot;&gt;Address:&lt;/label&gt;
+          &lt;div id=&quot;customerServiceAddressLine&quot; class=&quot;form-address&quot;&gt;
+            104 S MAIN ST
+          &lt;/div&gt;
+
+          &lt;input id=&quot;customerServiceAddressLineInput&quot; name=&quot;customerServiceAddressLine&quot; type=&quot;hidden&quot; value=&quot;104 S MAIN ST&quot; /&gt;
+
+&lt;div&gt;
+        &lt;label for=&quot;customerServiceCityInput&quot;&gt;City:&lt;/label&gt;
+          &lt;div id=&quot;customerServiceCity&quot; class=&quot;form-address&quot;&gt;
+            VERONA
+          &lt;/div&gt;
+          &lt;input id=&quot;customerServiceCityInput&quot; name=&quot;customerServiceCity&quot; type=&quot;hidden&quot; value=&quot;VERONA&quot; /&gt;
+&lt;/div&gt;
+        &lt;label for=&quot;customerServiceStateInput&quot;&gt;State:&lt;/label&gt;
+          &lt;div id=&quot;customerServiceState&quot; class=&quot;form-address&quot;&gt;
+            WI
+          &lt;/div&gt;
+          &lt;input id=&quot;customerServiceStateInput&quot; name=&quot;customerServiceState&quot; type=&quot;hidden&quot; value=&quot;WI&quot; /&gt;
+
+&lt;div&gt;
+        &lt;label for=&quot;customerServiceZipInput&quot;&gt;Zip Code:&lt;/label&gt;
+          &lt;div id=&quot;customerServiceZip&quot; class=&quot;form-address&quot;&gt;
+            53593
+          &lt;/div&gt;
+          &lt;input id=&quot;customerServiceZipInput&quot; name=&quot;customerServiceZip&quot; type=&quot;hidden&quot; value=&quot;53593&quot; /&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
 
 &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -58,6 +156,9 @@
     &lt;/div&gt;
 &lt;/div&gt;
 
+
+
+
 &lt;script&gt;
 $(&#39;.input-group.date&#39;).datepicker({
     startDate: &quot;+4d&quot;,
@@ -66,7 +167,7 @@ $(&#39;.input-group.date&#39;).datepicker({
     orientation: &quot;bottom left&quot;,
 });
 &lt;/script&gt;
-
+&lt;/div&gt;
 </description>
         <pubDate>Tue, 08 Nov 2016 00:00:00 -0600</pubDate>
         <link>/cws/2016/11/08/cws-checkoutquestions/</link>

@@ -517,8 +517,25 @@ a.btn-subscribe::before {
 }
 
 /* ===== tds cable  form styles === */
+#subscribeToEmail + label {
+  margin-top: 10px;
+}
+
+.checkbox .tds-radio-btn {
+  border-radius: 0;
+}
+
+label:hover input:checked + .tds-radio-btn:before {
+  top: inherit;
+  left: inherit;
+}
+
 .datepicker-switch {
   color: red;
+}
+
+.form-address {
+  display: inline-block;
 }
 
 /* ===== tds cable Typography === */
