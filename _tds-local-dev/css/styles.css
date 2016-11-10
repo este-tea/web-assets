@@ -20473,7 +20473,6 @@ td.h4.tds-cost-price {
 }
 
 .parbase.myaadduser.section label:hover input:checked + .tds-radio-btn:before {
-  top: inherit;
   left: inherit;
 }
 

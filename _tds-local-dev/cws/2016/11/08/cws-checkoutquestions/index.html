@@ -193,18 +193,116 @@ $(".nav-main [href]").each(function() {
 <!--Error bar end-->
 
 <div class="container">
-    <div class="row">
+  <div class="row">
         <h2 class="hr-after-text">Customer Information</h2>
 
-        <div class="form-group">
-          <label for="">First Name: </label>
-          <input class="form-control" name="customerFirstName" type="text" value="" />
-          <div id="customerFirstNameError" class="initiallyHidden text-danger">Please
-            tell us your First Name</div>
+        <div class="form-group tds-form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="firstName" />
+            <span class="help-block" id="firstName-error" style="display: none;"></span>
         </div>
 
-    </div>
+        <div class="form-group tds-form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lastName" id="lastName" />
+            <span class="help-block" id="lastName-error" style="display: none;"></span>
+        </div>
+
+        <div class="form-group tds-form-group">
+            <label for="contactTel">Contact Tel. No.</label>
+            <input type="text" class="form-control" name="contactTel" id="contactTel" />
+            <span class="help-block">Format:&nbsp;##########</span>
+            <span class="help-block" id="contactTel-error" style="display: none;"></span>
+        </div>
+
+
+        <div class="form-group tds-form-group">
+          <label for="contactTime">Best time of day to reach you?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="contactTime" value="no" />
+                <span class="tds-radio-btn"></span>
+                <div class="label-text">Morning</div>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="contactTime" value="new" />
+                <span class="tds-radio-btn"></span>
+                <div class="label-text">Afternoon</div>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="contactTime" value="yes" />
+                <span class="tds-radio-btn"></span>
+                <div class="label-text">All day</div>
+              </label>
+              <span class="help-block" id="contactTime-error" style="display: none;"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="contactEmail">Contact Email Address</label>
+            <input type="text" class="form-control" name="contactEmail" id="contactEmail" />
+            <span class="help-block" id="contactEmail-error" style="display: none;"></span>
+
+
+            <div class="checkbox">
+              <label>
+                <input name="subscribeToEmail" type="checkbox" checked="checked" />
+                <span class="tds-radio-btn"></span>
+                <div class="label-text">I would like to receive occasional updates from TDS via email with information about new product
+                features and special offers. Visit our <a href="#" target="_blank">
+                  Email Subscriptions page</a></div>
+              </label>
+            </div>
+        </div>
+
+  </div>
 </div>
+
+
+
+<div class="container">
+  <div class="row">
+        <h2 class="hr-after-text">Address Information</h2>
+
+<div id="serviceAddressBlock">
+        <h3 class="subsectionTitle">Service Address</h3>
+
+
+        <label for="customerServiceAddressLineInput">Address:</label>
+          <div id="customerServiceAddressLine" class="form-address">
+            104 S MAIN ST
+          </div>
+
+          <input id="customerServiceAddressLineInput" name="customerServiceAddressLine" type="hidden" value="104 S MAIN ST" />
+
+<div>
+        <label for="customerServiceCityInput">City:</label>
+          <div id="customerServiceCity" class="form-address">
+            VERONA
+          </div>
+          <input id="customerServiceCityInput" name="customerServiceCity" type="hidden" value="VERONA" />
+</div>
+        <label for="customerServiceStateInput">State:</label>
+          <div id="customerServiceState" class="form-address">
+            WI
+          </div>
+          <input id="customerServiceStateInput" name="customerServiceState" type="hidden" value="WI" />
+
+<div>
+        <label for="customerServiceZipInput">Zip Code:</label>
+          <div id="customerServiceZip" class="form-address">
+            53593
+          </div>
+          <input id="customerServiceZipInput" name="customerServiceZip" type="hidden" value="53593" />
+</div>
+
+  </div>
+</div>
+</div>
+
 
 <div class="container">
     <div class="row">
@@ -214,6 +312,9 @@ $(".nav-main [href]").each(function() {
     </div>
 </div>
 
+
+
+
 <script>
 $('.input-group.date').datepicker({
     startDate: "+4d",
@@ -222,7 +323,7 @@ $('.input-group.date').datepicker({
     orientation: "bottom left",
 });
 </script>
-
+</div>
 
 
 <div style="clearfix"></div>
