@@ -3,7 +3,7 @@
 
 /* ===== tds cable warrnings and error messages === */
 
-.container.title-user-address, .container.warning-cartEmpty, .container.alert-critical {
+.container.shopperId, .container.warning-cartEmpty, .container.tds-alert.tds-alert-critical {
   max-width: 100%;
   padding: 15px 15px 5px 15px;
   p {
@@ -18,7 +18,7 @@
   }
 }
 
-.container.title-user-address {
+.container.shopperId {
   background-color:$tds-lt-bluegray;
 }
 
@@ -26,7 +26,7 @@
   background-color: $state-warning-bg;
 }
 
-.container.alert-critical {
+.container.tds-alert.tds-alert-critical {
   background-color: $tds-critical-bg;
   a {
     color: $tds-red;
