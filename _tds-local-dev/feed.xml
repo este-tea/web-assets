@@ -6,16 +6,16 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Nov 2016 12:33:26 -0600</pubDate>
-    <lastBuildDate>Thu, 10 Nov 2016 12:33:26 -0600</lastBuildDate>
+    <pubDate>Fri, 11 Nov 2016 10:53:22 -0600</pubDate>
+    <lastBuildDate>Fri, 11 Nov 2016 10:53:22 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>CWS-Checkout questions</title>
         <description>&lt;!--user name or address bar--&gt;
-&lt;div class=&quot;container title-user-address&quot;&gt;
+&lt;div class=&quot;container shopperId&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
-    &lt;p&gt;Address: &lt;strong&gt;811 North Edge Trl, Verona, WI&lt;/strong&gt; &lt;a href=&quot;#&quot;&gt;change&lt;/a&gt;&lt;/p&gt;
+    &lt;div&gt;Address: &lt;strong&gt;811 North Edge Trl, Verona, WI&lt;/strong&gt; &lt;a href=&quot;#&quot;&gt;change&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;!--user name or address bar end--&gt;
@@ -23,19 +23,20 @@
 &lt;!--Warring bar--&gt;
 &lt;div class=&quot;container warning-cartEmpty&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
-    &lt;p&gt;Your shopping cart is empty. &lt;a href=&quot;#&quot;&gt;Shop our site to find product pricing and availability information.&lt;/a&gt;&lt;/p&gt;
+    &lt;div&gt;Your shopping cart is empty. &lt;a href=&quot;#&quot;&gt;Shop our site to find product pricing and availability information.&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;!--Warring bar end--&gt;
 
 &lt;!--Error bar--&gt;
-&lt;div class=&quot;container alert-critical&quot;&gt;
+&lt;div class=&quot;container tds-alert tds-alert-critical&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
-    &lt;p&gt;Please fix errors before submitting. &lt;a href=&quot;#&quot;&gt;(Calls out invalid fields)&lt;/a&gt;&lt;/p&gt;
+    &lt;div&gt;Please fix errors before submitting. &lt;a href=&quot;#&quot;&gt;(Calls out invalid fields)&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;!--Error bar end--&gt;
 
+&lt;!--Customer Information Section--&gt;
 &lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
         &lt;h2 class=&quot;hr-after-text&quot;&gt;Customer Information&lt;/h2&gt;
@@ -84,12 +85,15 @@
               &lt;/label&gt;
               &lt;span class=&quot;help-block&quot; id=&quot;contactTime-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
+      &lt;/div&gt;
+
 
         &lt;div class=&quot;form-group&quot;&gt;
             &lt;label for=&quot;contactEmail&quot;&gt;Contact Email Address&lt;/label&gt;
+
+&lt;!---prospects only: Show email input and check box for prospects--&gt;
             &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;contactEmail&quot; id=&quot;contactEmail&quot; /&gt;
             &lt;span class=&quot;help-block&quot; id=&quot;contactEmail-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
-
 
             &lt;div class=&quot;checkbox&quot;&gt;
               &lt;label&gt;
@@ -100,74 +104,464 @@
                   Email Subscriptions page&lt;/a&gt;&lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
-        &lt;/div&gt;
+&lt;!---prospects only end--&gt;
+
+
+&lt;!---current customers only: email read only--&gt;
+                &lt;div id=&quot;contactEmail&quot; class=&quot;readOnly&quot;&gt;
+                  Contact@EmailAddress
+                &lt;/div&gt;
+                &lt;br /&gt;
+                &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Visit accountURL.com to update contact email.&lt;/a&gt;
+&lt;!---current customers only: email read only end--&gt;
+
+&lt;/div&gt;&lt;!--closing tag for contactEmail form-group--&gt;
+
+&lt;!---current customers only: Cable Account Number read only--&gt;
+              &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;tdsAccountNumber&quot;&gt;TDS Cable Account Number:&lt;/label&gt;
+                  &lt;div id=&quot;tdsAccountNumber&quot; class=&quot;readOnly&quot;&gt;
+                    ##############
+                  &lt;/div&gt;
+                &lt;/div&gt;
+&lt;!---current customers only: Cable Account Number read only end--&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
+&lt;!--Customer Information Section end--&gt;
 
-
+&lt;!--Address Information Section--&gt;
 
 &lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
         &lt;h2 class=&quot;hr-after-text&quot;&gt;Address Information&lt;/h2&gt;
 
+&lt;!--Service Address Section--&gt;
 &lt;div id=&quot;serviceAddressBlock&quot;&gt;
         &lt;h3 class=&quot;subsectionTitle&quot;&gt;Service Address&lt;/h3&gt;
-
-
         &lt;label for=&quot;customerServiceAddressLineInput&quot;&gt;Address:&lt;/label&gt;
-          &lt;div id=&quot;customerServiceAddressLine&quot; class=&quot;form-address&quot;&gt;
+          &lt;div id=&quot;customerServiceAddressLine&quot; class=&quot;readOnly&quot;&gt;
             104 S MAIN ST
           &lt;/div&gt;
 
           &lt;input id=&quot;customerServiceAddressLineInput&quot; name=&quot;customerServiceAddressLine&quot; type=&quot;hidden&quot; value=&quot;104 S MAIN ST&quot; /&gt;
 
-&lt;div&gt;
+      &lt;div&gt;
         &lt;label for=&quot;customerServiceCityInput&quot;&gt;City:&lt;/label&gt;
-          &lt;div id=&quot;customerServiceCity&quot; class=&quot;form-address&quot;&gt;
+          &lt;div id=&quot;customerServiceCity&quot; class=&quot;readOnly&quot;&gt;
             VERONA
           &lt;/div&gt;
           &lt;input id=&quot;customerServiceCityInput&quot; name=&quot;customerServiceCity&quot; type=&quot;hidden&quot; value=&quot;VERONA&quot; /&gt;
-&lt;/div&gt;
+      &lt;/div&gt;
+
         &lt;label for=&quot;customerServiceStateInput&quot;&gt;State:&lt;/label&gt;
-          &lt;div id=&quot;customerServiceState&quot; class=&quot;form-address&quot;&gt;
+          &lt;div id=&quot;customerServiceState&quot; class=&quot;readOnly&quot;&gt;
             WI
           &lt;/div&gt;
           &lt;input id=&quot;customerServiceStateInput&quot; name=&quot;customerServiceState&quot; type=&quot;hidden&quot; value=&quot;WI&quot; /&gt;
 
-&lt;div&gt;
+      &lt;div&gt;
         &lt;label for=&quot;customerServiceZipInput&quot;&gt;Zip Code:&lt;/label&gt;
-          &lt;div id=&quot;customerServiceZip&quot; class=&quot;form-address&quot;&gt;
+          &lt;div id=&quot;customerServiceZip&quot; class=&quot;readOnly&quot;&gt;
             53593
           &lt;/div&gt;
           &lt;input id=&quot;customerServiceZipInput&quot; name=&quot;customerServiceZip&quot; type=&quot;hidden&quot; value=&quot;53593&quot; /&gt;
+      &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;!--Service Address Section end--&gt;
+
+
+&lt;!--Billing Address Section--&gt;
+      &lt;div id=&quot;billingAddressBlock&quot;&gt;
+          &lt;h3 class=&quot;subsectionTitle&quot;&gt;Billing Address&lt;/h3&gt;
+          &lt;div&gt;You won’t need to provide payment information now. When you receive your first monthly TDS bill, look for information on the many convenient ways to pay, including secure online payment through TDS.&lt;/div&gt;
+
+          &lt;div class=&quot;checkbox&quot;&gt;
+            &lt;label&gt;
+              &lt;input name=&quot;subscribeToEmail&quot; type=&quot;checkbox&quot; /&gt;
+              &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+              &lt;div class=&quot;label-text&quot;&gt;Same as Service Address&lt;/div&gt;
+            &lt;/label&gt;
+          &lt;/div&gt;
+
+      &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label for=&quot;&quot;&gt;Address: &lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; name=&quot;billingAddressLine&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+        &lt;span class=&quot;help-block&quot; id=&quot;billingAddressLineError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label for=&quot;&quot;&gt;Address (optional): &lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; name=&quot;billingAddressLineOptional&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+        &lt;span class=&quot;help-block&quot; id=&quot;billingAddressLineOptionalError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label for=&quot;&quot;&gt;City/Town: &lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; name=&quot;billingCity&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+        &lt;span class=&quot;help-block&quot; id=&quot;cityError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;form-group&quot;&gt;
+
+        &lt;label for=&quot;&quot;&gt;State: &lt;/label&gt;
+        &lt;select class=&quot;form-control&quot; name=&quot;billingState&quot;&gt;
+            &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot;&gt;Select&lt;/option&gt;
+
+            &lt;option value=&quot;AK&quot;&gt;AK&lt;/option&gt;
+
+            &lt;option value=&quot;AL&quot;&gt;AL&lt;/option&gt;
+
+            &lt;option value=&quot;AR&quot;&gt;AR&lt;/option&gt;
+
+            &lt;option value=&quot;AZ&quot;&gt;AZ&lt;/option&gt;
+
+            &lt;option value=&quot;CA&quot;&gt;CA&lt;/option&gt;
+
+            &lt;option value=&quot;CO&quot;&gt;CO&lt;/option&gt;
+
+            &lt;option value=&quot;CT&quot;&gt;CT&lt;/option&gt;
+
+            &lt;option value=&quot;DC&quot;&gt;DC&lt;/option&gt;
+
+            &lt;option value=&quot;DE&quot;&gt;DE&lt;/option&gt;
+
+            &lt;option value=&quot;FL&quot;&gt;FL&lt;/option&gt;
+
+            &lt;option value=&quot;GA&quot;&gt;GA&lt;/option&gt;
+
+            &lt;option value=&quot;HI&quot;&gt;HI&lt;/option&gt;
+
+            &lt;option value=&quot;IA&quot;&gt;IA&lt;/option&gt;
+
+            &lt;option value=&quot;ID&quot;&gt;ID&lt;/option&gt;
+
+            &lt;option value=&quot;IL&quot;&gt;IL&lt;/option&gt;
+
+            &lt;option value=&quot;IN&quot;&gt;IN&lt;/option&gt;
+
+            &lt;option value=&quot;KS&quot;&gt;KS&lt;/option&gt;
+
+            &lt;option value=&quot;KY&quot;&gt;KY&lt;/option&gt;
+
+            &lt;option value=&quot;LA&quot;&gt;LA&lt;/option&gt;
+
+            &lt;option value=&quot;MA&quot;&gt;MA&lt;/option&gt;
+
+            &lt;option value=&quot;MD&quot;&gt;MD&lt;/option&gt;
+
+            &lt;option value=&quot;ME&quot;&gt;ME&lt;/option&gt;
+
+            &lt;option value=&quot;MI&quot;&gt;MI&lt;/option&gt;
+
+            &lt;option value=&quot;MN&quot;&gt;MN&lt;/option&gt;
+
+            &lt;option value=&quot;MO&quot;&gt;MO&lt;/option&gt;
+
+            &lt;option value=&quot;MS&quot;&gt;MS&lt;/option&gt;
+
+            &lt;option value=&quot;MT&quot;&gt;MT&lt;/option&gt;
+
+            &lt;option value=&quot;NC&quot;&gt;NC&lt;/option&gt;
+
+            &lt;option value=&quot;ND&quot;&gt;ND&lt;/option&gt;
+
+            &lt;option value=&quot;NE&quot;&gt;NE&lt;/option&gt;
+
+            &lt;option value=&quot;NH&quot;&gt;NH&lt;/option&gt;
+
+            &lt;option value=&quot;NJ&quot;&gt;NJ&lt;/option&gt;
+
+            &lt;option value=&quot;NM&quot;&gt;NM&lt;/option&gt;
+
+            &lt;option value=&quot;NV&quot;&gt;NV&lt;/option&gt;
+
+            &lt;option value=&quot;NY&quot;&gt;NY&lt;/option&gt;
+
+            &lt;option value=&quot;OH&quot;&gt;OH&lt;/option&gt;
+
+            &lt;option value=&quot;OK&quot;&gt;OK&lt;/option&gt;
+
+            &lt;option value=&quot;OR&quot;&gt;OR&lt;/option&gt;
+
+            &lt;option value=&quot;PA&quot;&gt;PA&lt;/option&gt;
+
+            &lt;option value=&quot;RI&quot;&gt;RI&lt;/option&gt;
+
+            &lt;option value=&quot;SC&quot;&gt;SC&lt;/option&gt;
+
+            &lt;option value=&quot;SD&quot;&gt;SD&lt;/option&gt;
+
+            &lt;option value=&quot;TN&quot;&gt;TN&lt;/option&gt;
+
+            &lt;option value=&quot;TX&quot;&gt;TX&lt;/option&gt;
+
+            &lt;option value=&quot;UT&quot;&gt;UT&lt;/option&gt;
+
+            &lt;option value=&quot;VA&quot;&gt;VA&lt;/option&gt;
+
+            &lt;option value=&quot;VT&quot;&gt;VT&lt;/option&gt;
+
+            &lt;option value=&quot;WA&quot;&gt;WA&lt;/option&gt;
+
+            &lt;option value=&quot;WI&quot;&gt;WI&lt;/option&gt;
+
+            &lt;option value=&quot;WV&quot;&gt;WV&lt;/option&gt;
+
+            &lt;option value=&quot;WY&quot;&gt;WY&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;span class=&quot;help-block&quot; id=&quot;billingStateError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;&quot;&gt;Zip: &lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; name=&quot;billingZip&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+        &lt;span class=&quot;help-block&quot; id=&quot;billingZipError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Address Information Section end--&gt;
+
+&lt;!--prospects only: Account Security Section --&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+        &lt;h2 class=&quot;hr-after-text&quot;&gt;Account Security&lt;/h2&gt;
+
+        &lt;div&gt;
+          Create an Account PIN: To protect your privacy, you will need to create a personal identification number (PIN) for your TDS account. When calling to speak with a TDS representative, you will be asked for this PIN to verify your identity before discussing personal or sensitive account information. We recommend you select a PIN that cannot be easily guessed by others.
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            PIN Requirements:
+            &lt;ul&gt;
+              &lt;li&gt;Must have 4 numbers&lt;/li&gt;
+              &lt;li&gt;Cannot be a numeric sequence (e.g. 1234)&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+            &lt;label for=&quot;pinNumber&quot;&gt;Please create your 4-digit numeric PIN&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;pinNumber&quot; id=&quot;pinNumber&quot; /&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;pinNumber-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;!--prospects only: Account Security Section end--&gt;
 
+&lt;!--Installation Section--&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+        &lt;h2 class=&quot;hr-after-text&quot;&gt;Installation&lt;/h2&gt;
+
+        &lt;label for=&quot;&quot;&gt;Please select your preferred installation date.&lt;/label&gt;
+
+        &lt;div&gt;We will do our best to accommodate your request and a TDS Representative will follow up to confirm your date and time.&lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;input-group date&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;installData&quot; /&gt;&lt;span class=&quot;input-group-addon&quot;&gt;icon&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;cable-formDisclaimer&quot;&gt;Greyed out dates are unavailable&lt;/div&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;installData-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label for=&quot;&quot;&gt;Please let us know about any specific scheduling considerations you’d like us to be aware of (optional):&lt;/label&gt;
+            &lt;textarea class=&quot;form-control&quot; rows=&quot;10&quot; id=&quot;comments&quot;&gt;&lt;/textarea&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;comments-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+          &lt;label for=&quot;homeNewConstruction&quot;&gt;Is the house newly constructed?&lt;/label&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; value=&quot;no&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;No&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; value=&quot;new&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;Yes&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; value=&quot;yes&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;I don&#39;t know&lt;/div&gt;
+              &lt;/label&gt;
+              &lt;span class=&quot;help-block&quot; id=&quot;homeNewConstruction-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Installation Section end--&gt;
+
+&lt;!--Service Authorization&lt; Section--&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+        &lt;h2 class=&quot;hr-after-text&quot;&gt;Service Authorization&lt;/h2&gt;
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+          &lt;label for=&quot;existingPhoneLine&quot;&gt;Is there a phone line installed at your Service Address?&lt;/label&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; value=&quot;no&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;No&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; value=&quot;yes&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;Yes&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; value=&quot;dont know&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;I don&#39;t know&lt;/div&gt;
+              &lt;/label&gt;
+              &lt;span class=&quot;help-block&quot; id=&quot;existingPhoneLine-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+&lt;!--Display if name=&quot;existingPhoneLine&quot; is value=&quot;yes&quot;--&gt;
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+            &lt;label for=&quot;desiredPhoneNumber&quot;&gt;Phone Number to Port&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;desiredPhoneNumber&quot; id=&quot;desiredPhoneNumber&quot; /&gt;
+            &lt;span class=&quot;help-block&quot;&gt;Format:&amp;nbsp;##########&lt;/span&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;desiredPhoneNumber-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+            &lt;label for=&quot;localPhoneProviderName&quot;&gt;Who is your current local phone service provider?&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;localPhoneProviderName&quot; id=&quot;localPhoneProviderName&quot; /&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;localPhoneProviderName-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+            &lt;label for=&quot;longDistancePhoneProviderName&quot;&gt;Who is your current long distance provider?&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;longDistancePhoneProviderName&quot; id=&quot;longDistancePhoneProviderName&quot; /&gt;
+            &lt;span class=&quot;help-block&quot; id=&quot;longDistancePhoneProviderName-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+        &lt;div class=&quot;checkbox&quot;&gt;
+          &lt;label&gt;
+            &lt;input name=&quot;localPhoneServiceAgree&quot; type=&quot;checkbox&quot; /&gt;
+            &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+            &lt;div class=&quot;label-text&quot;&gt;I agree to have TDS as my local phone service provider.&lt;/div&gt;
+          &lt;/label&gt;
+          &lt;span class=&quot;help-block&quot; id=&quot;localPhoneServiceAgree-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;checkbox&quot;&gt;
+          &lt;label&gt;
+            &lt;input name=&quot;longDistancePhoneServiceAgree&quot; type=&quot;checkbox&quot; /&gt;
+            &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+            &lt;div class=&quot;label-text&quot;&gt;I agree to have TDS as my long distance (in-state, state-to-state, and international) service provider&lt;/div&gt;
+          &lt;/label&gt;
+          &lt;span class=&quot;help-block&quot; id=&quot;longDistancePhoneServiceAgree-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;checkbox&quot;&gt;
+          &lt;label&gt;
+            &lt;input name=&quot;certifyReadAuthorizationAgreement&quot; type=&quot;checkbox&quot; /&gt;
+            &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+            &lt;div class=&quot;label-text&quot;&gt;I certify that I have read and understand the &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;authorization agreement&lt;/a&gt; and that I agree to the terms and conditions contained therein.&lt;/div&gt;
+          &lt;/label&gt;
+          &lt;span class=&quot;help-block&quot; id=&quot;certifyReadAuthorizationAgreement-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+        &lt;div class=&quot;form-group tds-form-group&quot;&gt;
+          &lt;label for=&quot;homeNewConstruction&quot;&gt;Verification of Agreement&lt;/label&gt;
+          &lt;div&gt;Please provide either your date of birth or your mother&#39;s maiden name.&lt;/div&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;verificationType&quot; value=&quot;birthDate&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;Date of Birth&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;verificationType&quot; value=&quot;mothersMaidenName&quot; /&gt;
+                &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;label-text&quot;&gt;Mother&#39;s Maiden Name&lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+              &lt;span class=&quot;help-block&quot; id=&quot;verificationType-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+                    &lt;!--Display if name=&quot;verificationType&quot; is value=&quot;birthDate&quot;--&gt;
+                    &lt;div id=&quot;birthDateInput&quot; class=&quot;initiallyHidden&quot; style=&quot;display: block;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                          &lt;label for=&quot;&quot;&gt;Date of Birth&lt;/label&gt;
+                          &lt;input class=&quot;form-control&quot; name=&quot;birthDate&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+                            &lt;span class=&quot;help-block&quot;&gt;Format: MM/DD/YYYY&lt;/span&gt;
+                          &lt;div&gt;Your birth date will be used only to validate the person who authorizes this service
+                            request.&lt;/div&gt;
+                          &lt;span class=&quot;help-block&quot; id=&quot;birthDate-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+
+                      &lt;!--Display if name=&quot;verificationType&quot; is value=&quot;mothersMaidenName&quot;--&gt;
+                      &lt;div id=&quot;maidenNameInput&quot; class=&quot;initiallyHidden&quot; style=&quot;display: block;&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                          &lt;label for=&quot;&quot;&gt;Mother&#39;s Maiden Name&lt;/label&gt;
+                          &lt;input class=&quot;form-control&quot; name=&quot;mothersMaidenName&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+                          &lt;div&gt;Your mother&#39;s maiden name will be used only to validate the person who authorizes this service request.&lt;/div&gt;
+                          &lt;span class=&quot;help-block&quot; id=&quot;mothersMaidenName-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;!--Display if name=&quot;existingPhoneLine&quot; is value=&quot;yes&quot; END--&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Service Authorization Section end--&gt;
 
 &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;input-group date&quot; style=&quot;margin-bottom:100px&quot;&gt;
-            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;installData&quot; /&gt;&lt;span class=&quot;input-group-addon&quot;&gt;icon&lt;/span&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+      &lt;button class=&quot;gallery-btn btn-green pull-right&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;Review Your Order&lt;/button&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-
-
-
+&lt;!--script for bootstrap date picker--&gt;
 &lt;script&gt;
 $(&#39;.input-group.date&#39;).datepicker({
     startDate: &quot;+4d&quot;,
     daysOfWeekDisabled: &quot;0,6&quot;,
-    datesDisabled: [&#39;11/24/2016, 12/25/2016&#39;],
+    datesDisabled: [&#39;11/24/2016&#39;, &#39;12/25/2016&#39;, &#39;01/01/2016&#39;],
     orientation: &quot;bottom left&quot;,
 });
 &lt;/script&gt;
-&lt;/div&gt;
+
+&lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 08 Nov 2016 00:00:00 -0600</pubDate>
         <link>/cws/2016/11/08/cws-checkoutquestions/</link>

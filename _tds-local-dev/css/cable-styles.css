@@ -479,22 +479,22 @@ a.btn-subscribe::before {
 }
 
 /* ===== tds cable warrnings and error messages === */
-.container.title-user-address, .container.warning-cartEmpty, .container.alert-critical {
+.container.shopperId, .container.warning-cartEmpty, .container.tds-alert.tds-alert-critical {
   max-width: 100%;
   padding: 15px 15px 5px 15px;
 }
-.container.title-user-address p, .container.warning-cartEmpty p, .container.alert-critical p {
+.container.shopperId p, .container.warning-cartEmpty p, .container.tds-alert.tds-alert-critical p {
   line-height: 1.5em;
   font-size: 14px;
 }
-.container.title-user-address a, .container.warning-cartEmpty a, .container.alert-critical a {
+.container.shopperId a, .container.warning-cartEmpty a, .container.tds-alert.tds-alert-critical a {
   color: #555;
 }
-.container.title-user-address a:hover, .container.title-user-address a :focus, .container.warning-cartEmpty a:hover, .container.warning-cartEmpty a :focus, .container.alert-critical a:hover, .container.alert-critical a :focus {
+.container.shopperId a:hover, .container.shopperId a :focus, .container.warning-cartEmpty a:hover, .container.warning-cartEmpty a :focus, .container.tds-alert.tds-alert-critical a:hover, .container.tds-alert.tds-alert-critical a :focus {
   color: #0A7AAA;
 }
 
-.container.title-user-address {
+.container.shopperId {
   background-color: #E8EBF3;
 }
 
@@ -502,13 +502,13 @@ a.btn-subscribe::before {
   background-color: #FFF8D8;
 }
 
-.container.alert-critical {
+.container.tds-alert.tds-alert-critical {
   background-color: #ffecec;
 }
-.container.alert-critical a {
+.container.tds-alert.tds-alert-critical a {
   color: #CB1D1D;
 }
-.container.alert-critical a:hover, .container.alert-critical a :focus {
+.container.tds-alert.tds-alert-critical a:hover, .container.tds-alert.tds-alert-critical a :focus {
   color: #991419;
 }
 
@@ -534,7 +534,7 @@ label:hover input:checked + .tds-radio-btn:before {
   color: red;
 }
 
-.form-address {
+.readOnly {
   display: inline-block;
 }
 
