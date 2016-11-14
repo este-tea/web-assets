@@ -3,6 +3,60 @@
 
 /* ===== tds cable header === */
 
+/*////overrides/////*/
+.cable-top-bar div.customLargeNavBar {
+    @media (min-width: 568px) {
+    display: inline;
+    }
+  }
+
+.cable-nav-main div.customLargeNavBar {
+  @media (min-width: 1px) {
+  display: block;
+  }
+}
+
+.cable-top-bar .tds-clearfix:after,
+.cable-nav-main .tds-clearfix:after {
+      visibility: hidden;
+      display: none;
+      font-size: 0;
+      content: none;
+      clear: none;
+      height: 0;
+    }
+
+ .cable-top-bar .navbar:before, .cable-top-bar .navbar:after,
+  .cable-nav-main .navbar:before, .cable-nav-main .navbar:after  {
+    content: " ";
+    display: none;
+    clear: none;
+}
+
+ .cable-top-bar .container:before, .cable-top-bar .container:after,
+  .cable-nav-main .container:before, .cable-nav-main .container:after {
+     content: none;
+     display: none;
+   }
+/*////overrides end////*/
+
+#skiptonav {
+  z-index: 100;
+  >a {
+    padding: 15px 12px;
+  }
+}
+
+#skiptocontent {
+  z-index: 100;
+  >a {
+    padding: 15px 12px;
+  }
+}
+
+
+
+
 //Layout
 .container-header {
   padding: 0 0 40px 0;
@@ -17,7 +71,7 @@
   clear: both;
 }
 
-.top-bar {
+.cable-top-bar {
   font-family: $tds-font-family;
   font-weight: 200;
   font-style: normal;
@@ -63,7 +117,11 @@
 
 
 // Top level of Nav
-.nav-top-bar {
+.cable-nav-top-bar {
+
+  >.container {
+    max-width: 100%;
+  }
     ul {
     margin: 0;
     padding: 0;
@@ -71,7 +129,7 @@
     list-style: none;
     position: relative;
     /*--Set relative positioning on the unordered list itself - not on the list item--*/
-    z-index: 100;
+    z-index: 50;
     }
 
     ul li {
@@ -189,7 +247,7 @@
 /////////////////////////
 /////////Main Nav
 ////////////////////////
-.nav-main {
+.cable-nav-main {
     display: flex;
     justify-content: left;
     align-items: center;

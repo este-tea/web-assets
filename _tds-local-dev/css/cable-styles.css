@@ -8,6 +8,57 @@
 }
 
 /* ===== tds cable header === */
+/*////overrides/////*/
+@media (min-width: 568px) {
+  .cable-top-bar div.customLargeNavBar {
+    display: inline;
+  }
+}
+
+@media (min-width: 1px) {
+  .cable-nav-main div.customLargeNavBar {
+    display: block;
+  }
+}
+
+.cable-top-bar .tds-clearfix:after,
+.cable-nav-main .tds-clearfix:after {
+  visibility: hidden;
+  display: none;
+  font-size: 0;
+  content: none;
+  clear: none;
+  height: 0;
+}
+
+.cable-top-bar .navbar:before, .cable-top-bar .navbar:after,
+.cable-nav-main .navbar:before, .cable-nav-main .navbar:after {
+  content: " ";
+  display: none;
+  clear: none;
+}
+
+.cable-top-bar .container:before, .cable-top-bar .container:after,
+.cable-nav-main .container:before, .cable-nav-main .container:after {
+  content: none;
+  display: none;
+}
+
+/*////overrides end////*/
+#skiptonav {
+  z-index: 100;
+}
+#skiptonav > a {
+  padding: 15px 12px;
+}
+
+#skiptocontent {
+  z-index: 100;
+}
+#skiptocontent > a {
+  padding: 15px 12px;
+}
+
 .container-header {
   padding: 0 0 40px 0;
   margin: 0 auto;
@@ -21,7 +72,7 @@
   clear: both;
 }
 
-.top-bar {
+.cable-top-bar {
   font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
   font-weight: 200;
   font-style: normal;
@@ -33,7 +84,7 @@
   box-sizing: border-box;
   display: block;
 }
-.top-bar:after {
+.cable-top-bar:after {
   content: " ";
   display: table;
   clear: both;
@@ -65,35 +116,38 @@
   }
 }
 
-.nav-top-bar ul {
+.cable-nav-top-bar > .container {
+  max-width: 100%;
+}
+.cable-nav-top-bar ul {
   margin: 0;
   padding: 0;
   float: left;
   list-style: none;
   position: relative;
   /*--Set relative positioning on the unordered list itself - not on the list item--*/
-  z-index: 100;
+  z-index: 50;
 }
-.nav-top-bar ul li {
+.cable-nav-top-bar ul li {
   float: left;
   margin: 0;
   padding: 0;
   position: relative;
 }
-.nav-top-bar ul li a {
+.cable-nav-top-bar ul li a {
   padding: 15px 10px;
   display: block;
   color: #FFF;
   text-decoration: none;
 }
-.nav-top-bar ul li:hover, .nav-top-bar ul li :focus {
+.cable-nav-top-bar ul li:hover, .cable-nav-top-bar ul li :focus {
   background: #0A7AAA;
 }
-.nav-top-bar ul li:hover ul, .nav-top-bar ul li :focus {
+.cable-nav-top-bar ul li:hover ul, .cable-nav-top-bar ul li :focus {
   display: block;
   background: #0A7AAA;
 }
-.nav-top-bar ul li ul {
+.cable-nav-top-bar ul li ul {
   list-type: none;
   float: left;
   position: absolute;
@@ -103,24 +157,24 @@
   width: 100%;
   color: #fff;
 }
-.nav-top-bar ul li ul:hover, .nav-top-bar ul li ul :focus {
+.cable-nav-top-bar ul li ul:hover, .cable-nav-top-bar ul li ul :focus {
   background: #0A7AAA;
 }
-.nav-top-bar ul li ul li {
+.cable-nav-top-bar ul li ul li {
   color: #555;
   padding: 0 10px;
   font-size: 14px;
   min-width: 200px;
   background: #0A7AAA;
 }
-.nav-top-bar ul li ul li:hover, .nav-top-bar ul li ul li a:hover, .nav-top-bar ul li ul li :focus {
+.cable-nav-top-bar ul li ul li:hover, .cable-nav-top-bar ul li ul li a:hover, .cable-nav-top-bar ul li ul li :focus {
   background: #0C8FD0;
 }
-.nav-top-bar ul ul li + li a {
+.cable-nav-top-bar ul ul li + li a {
   border-top: 2px solid #FFF;
 }
 @media screen and (max-width: 568px) {
-  .nav-top-bar {
+  .cable-nav-top-bar {
     display: none;
   }
 }
@@ -171,7 +225,7 @@
   }
 }
 
-.nav-main {
+.cable-nav-main {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -180,28 +234,28 @@
   font-weight: 300;
 }
 @media screen and (max-width: 1200px) {
-  .nav-main {
+  .cable-nav-main {
     margin: 0 0 0 18%;
   }
 }
 @media screen and (max-width: 568px) {
-  .nav-main {
+  .cable-nav-main {
     display: none;
     margin: 20px auto;
     width: 85%;
   }
 }
-.nav-main a.active {
+.cable-nav-main a.active {
   color: #FFF;
   background: #0A7AAA;
 }
-.nav-main a {
+.cable-nav-main a {
   padding: 15px 12px;
   display: block;
   color: #19388A;
   text-decoration: none;
 }
-.nav-main ul {
+.cable-nav-main ul {
   margin: 0;
   padding: 0;
   float: left;
@@ -211,48 +265,48 @@
   z-index: 100;
 }
 @media screen and (max-width: 568px) {
-  .nav-main ul {
+  .cable-nav-main ul {
     width: 100%;
   }
 }
-.nav-main ul li {
+.cable-nav-main ul li {
   float: left;
   margin: 0;
   padding: 0;
   position: relative;
 }
 @media screen and (max-width: 568px) {
-  .nav-main ul li {
+  .cable-nav-main ul li {
     float: none;
     clear: both;
   }
 }
-.nav-main ul li li:hover, .nav-main ul li :focus {
+.cable-nav-main ul li li:hover, .cable-nav-main ul li :focus {
   color: #FFF;
 }
-.nav-main ul li:hover, .nav-main ul li :focus {
+.cable-nav-main ul li:hover, .cable-nav-main ul li :focus {
   background: #0A7AAA;
   color: #ffffff;
 }
-.nav-main ul li:hover a, .nav-main ul li :focus a {
+.cable-nav-main ul li:hover a, .cable-nav-main ul li :focus a {
   color: #FFF;
 }
-.nav-main ul li:hover ul, .nav-main ul li :focus {
+.cable-nav-main ul li:hover ul, .cable-nav-main ul li :focus {
   display: block;
   background: #555;
   color: #FFF;
 }
 @media screen and (max-width: 568px) {
-  .nav-main ul li:hover ul, .nav-main ul li :focus {
+  .cable-nav-main ul li:hover ul, .cable-nav-main ul li :focus {
     display: none;
   }
 }
 @media screen and (max-width: 568px) {
-  .nav-main ul li {
+  .cable-nav-main ul li {
     border-top: 1px solid #0C8FD0;
   }
 }
-.nav-main ul li ul {
+.cable-nav-main ul li ul {
   list-type: none;
   float: left;
   position: absolute;
@@ -262,20 +316,20 @@
   width: 100%;
   color: #fff;
 }
-.nav-main ul li ul:hover, .nav-main ul li ul :focus {
+.cable-nav-main ul li ul:hover, .cable-nav-main ul li ul :focus {
   background: #0A7AAA;
 }
-.nav-main ul li ul li {
+.cable-nav-main ul li ul li {
   color: #555;
   padding: 0 10px;
   font-size: 16px;
   min-width: 225px;
   background: #353535;
 }
-.nav-main ul li ul li:hover, .nav-main ul li ul li a:hover, .nav-main ul li ul li :focus {
+.cable-nav-main ul li ul li:hover, .cable-nav-main ul li ul li a:hover, .cable-nav-main ul li ul li :focus {
   background: #555;
 }
-.nav-main ul ul li + li a {
+.cable-nav-main ul ul li + li a {
   border-top: 2px solid #0C8FD0;
 }
 

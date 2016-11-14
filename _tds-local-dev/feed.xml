@@ -6,18 +6,20 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Nov 2016 10:53:22 -0600</pubDate>
-    <lastBuildDate>Fri, 11 Nov 2016 10:53:22 -0600</lastBuildDate>
+    <pubDate>Mon, 14 Nov 2016 12:05:15 -0600</pubDate>
+    <lastBuildDate>Mon, 14 Nov 2016 12:05:15 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>CWS-Checkout questions</title>
-        <description>&lt;!--user name or address bar--&gt;
+        <description>&lt;!--user name or address bar --&gt;
+&lt;!--Not part of the componet --&gt;
 &lt;div class=&quot;container shopperId&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
     &lt;div&gt;Address: &lt;strong&gt;811 North Edge Trl, Verona, WI&lt;/strong&gt; &lt;a href=&quot;#&quot;&gt;change&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+&lt;!--Not part of the componet --&gt;
 &lt;!--user name or address bar end--&gt;
 
 &lt;!--Warring bar--&gt;
@@ -48,7 +50,7 @@
         &lt;/div&gt;
 
         &lt;div class=&quot;form-group tds-form-group&quot;&gt;
-            &lt;label&gt;Last Name&lt;/label&gt;
+            &lt;label for=&quot;lastName&quot;&gt;Last Name&lt;/label&gt;
             &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;lastName&quot; id=&quot;lastName&quot; /&gt;
             &lt;span class=&quot;help-block&quot; id=&quot;lastName-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
@@ -64,27 +66,27 @@
         &lt;div class=&quot;form-group tds-form-group&quot;&gt;
           &lt;label for=&quot;contactTime&quot;&gt;Best time of day to reach you?&lt;/label&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; value=&quot;no&quot; /&gt;
+              &lt;label for=&quot;contactTime-am&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; id=&quot;contactTime-am&quot; value=&quot;am&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;Morning&lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; value=&quot;new&quot; /&gt;
+              &lt;label for=&quot;contactTime-pm&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; id=&quot;contactTime-pm&quot; value=&quot;pm&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;Afternoon&lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; value=&quot;yes&quot; /&gt;
+              &lt;label for=&quot;contactTime-anytime&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;contactTime&quot; id=&quot;contactTime-anytime&quot; value=&quot;anytime&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;All day&lt;/div&gt;
               &lt;/label&gt;
-              &lt;span class=&quot;help-block&quot; id=&quot;contactTime-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
+        &lt;span class=&quot;help-block&quot; id=&quot;contactTime-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
       &lt;/div&gt;
 
 
@@ -96,8 +98,8 @@
             &lt;span class=&quot;help-block&quot; id=&quot;contactEmail-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
 
             &lt;div class=&quot;checkbox&quot;&gt;
-              &lt;label&gt;
-                &lt;input name=&quot;subscribeToEmail&quot; type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
+              &lt;label for=&quot;subscribeToEmail&quot;&gt;
+                &lt;input name=&quot;subscribeToEmail&quot; id=&quot;subscribeToEmail&quot; type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;I would like to receive occasional updates from TDS via email with information about new product
                 features and special offers. Visit our &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
@@ -178,8 +180,8 @@
           &lt;div&gt;You won’t need to provide payment information now. When you receive your first monthly TDS bill, look for information on the many convenient ways to pay, including secure online payment through TDS.&lt;/div&gt;
 
           &lt;div class=&quot;checkbox&quot;&gt;
-            &lt;label&gt;
-              &lt;input name=&quot;subscribeToEmail&quot; type=&quot;checkbox&quot; /&gt;
+            &lt;label for=&quot;useServiceAddressForBilling&quot;&gt;
+              &lt;input name=&quot;useServiceAddressForBilling&quot; id=&quot;useServiceAddressForBilling&quot; type=&quot;checkbox&quot; /&gt;
               &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
               &lt;div class=&quot;label-text&quot;&gt;Same as Service Address&lt;/div&gt;
             &lt;/label&gt;
@@ -187,32 +189,32 @@
 
       &lt;div class=&quot;form-group&quot;&gt;
 
-        &lt;label for=&quot;&quot;&gt;Address: &lt;/label&gt;
-        &lt;input class=&quot;form-control&quot; name=&quot;billingAddressLine&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+        &lt;label for=&quot;billingAddressLine&quot;&gt;Address: &lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; name=&quot;billingAddressLine&quot; id=&quot;billingAddressLine&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
         &lt;span class=&quot;help-block&quot; id=&quot;billingAddressLineError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
 
       &lt;/div&gt;
 
       &lt;div class=&quot;form-group&quot;&gt;
 
-        &lt;label for=&quot;&quot;&gt;Address (optional): &lt;/label&gt;
-        &lt;input class=&quot;form-control&quot; name=&quot;billingAddressLineOptional&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+        &lt;label for=&quot;billingAddressLineOptional&quot;&gt;Address (optional): &lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; name=&quot;billingAddressLineOptional&quot; id=&quot;billingAddressLineOptional&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
         &lt;span class=&quot;help-block&quot; id=&quot;billingAddressLineOptionalError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
 
       &lt;/div&gt;
 
       &lt;div class=&quot;form-group&quot;&gt;
 
-        &lt;label for=&quot;&quot;&gt;City/Town: &lt;/label&gt;
-        &lt;input class=&quot;form-control&quot; name=&quot;billingCity&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+        &lt;label for=&quot;billingCity&quot;&gt;City/Town: &lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; name=&quot;billingCity&quot; id=&quot;billingCity&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
         &lt;span class=&quot;help-block&quot; id=&quot;cityError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
 
       &lt;/div&gt;
 
       &lt;div class=&quot;form-group&quot;&gt;
 
-        &lt;label for=&quot;&quot;&gt;State: &lt;/label&gt;
-        &lt;select class=&quot;form-control&quot; name=&quot;billingState&quot;&gt;
+        &lt;label for=&quot;billingState&quot;&gt;State: &lt;/label&gt;
+        &lt;select class=&quot;form-control&quot; name=&quot;billingState&quot; id=&quot;billingState&quot;&gt;
             &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot;&gt;Select&lt;/option&gt;
 
             &lt;option value=&quot;AK&quot;&gt;AK&lt;/option&gt;
@@ -322,8 +324,8 @@
       &lt;/div&gt;
 
       &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label for=&quot;&quot;&gt;Zip: &lt;/label&gt;
-        &lt;input class=&quot;form-control&quot; name=&quot;billingZip&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+        &lt;label for=&quot;billingZip&quot;&gt;Zip: &lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; name=&quot;billingZip&quot; id=&quot;billingZip&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
         &lt;span class=&quot;help-block&quot; id=&quot;billingZipError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
       &lt;/div&gt;
   &lt;/div&gt;
@@ -364,21 +366,21 @@
   &lt;div class=&quot;row&quot;&gt;
         &lt;h2 class=&quot;hr-after-text&quot;&gt;Installation&lt;/h2&gt;
 
-        &lt;label for=&quot;&quot;&gt;Please select your preferred installation date.&lt;/label&gt;
+        &lt;label for=&quot;installData&quot;&gt;Please select your preferred installation date.&lt;/label&gt;
 
         &lt;div&gt;We will do our best to accommodate your request and a TDS Representative will follow up to confirm your date and time.&lt;/div&gt;
 
         &lt;div class=&quot;form-group&quot;&gt;
             &lt;div class=&quot;input-group date&quot;&gt;
-                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;installData&quot; /&gt;&lt;span class=&quot;input-group-addon&quot;&gt;icon&lt;/span&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;installData&quot; id=&quot;installData&quot; /&gt;&lt;span class=&quot;input-group-addon&quot;&gt;&lt;/span&gt;
             &lt;/div&gt;
             &lt;div class=&quot;cable-formDisclaimer&quot;&gt;Greyed out dates are unavailable&lt;/div&gt;
             &lt;span class=&quot;help-block&quot; id=&quot;installData-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
 
         &lt;div class=&quot;form-group&quot;&gt;
-            &lt;label for=&quot;&quot;&gt;Please let us know about any specific scheduling considerations you’d like us to be aware of (optional):&lt;/label&gt;
-            &lt;textarea class=&quot;form-control&quot; rows=&quot;10&quot; id=&quot;comments&quot;&gt;&lt;/textarea&gt;
+            &lt;label for=&quot;comments&quot;&gt;Please let us know about any specific scheduling considerations you’d like us to be aware of (optional):&lt;/label&gt;
+            &lt;textarea class=&quot;form-control&quot; rows=&quot;10&quot; name=&quot;comments&quot; id=&quot;comments&quot;&gt;&lt;/textarea&gt;
             &lt;span class=&quot;help-block&quot; id=&quot;comments-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
 
         &lt;/div&gt;
@@ -387,27 +389,27 @@
         &lt;div class=&quot;form-group tds-form-group&quot;&gt;
           &lt;label for=&quot;homeNewConstruction&quot;&gt;Is the house newly constructed?&lt;/label&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; value=&quot;no&quot; /&gt;
+              &lt;label for=&quot;homeNewConstruction-no&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; id=&quot;homeNewConstruction-no&quot; value=&quot;no&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;No&lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; value=&quot;new&quot; /&gt;
+              &lt;label for=&quot;homeNewConstruction-yes&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; id=&quot;homeNewConstruction-yes&quot; value=&quot;yes&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;Yes&lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; value=&quot;yes&quot; /&gt;
+              &lt;label for=&quot;homeNewConstruction-unknown&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;homeNewConstruction&quot; id=&quot;homeNewConstruction-unknown&quot; value=&quot;unknown&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;I don&#39;t know&lt;/div&gt;
               &lt;/label&gt;
-              &lt;span class=&quot;help-block&quot; id=&quot;homeNewConstruction-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
           &lt;/div&gt;
+          &lt;span class=&quot;help-block&quot; id=&quot;homeNewConstruction-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -421,27 +423,28 @@
         &lt;div class=&quot;form-group tds-form-group&quot;&gt;
           &lt;label for=&quot;existingPhoneLine&quot;&gt;Is there a phone line installed at your Service Address?&lt;/label&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; value=&quot;no&quot; /&gt;
+              &lt;label for=&quot;existingPhoneLine-no&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; id=&quot;existingPhoneLine-no&quot; value=&quot;no&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;No&lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; value=&quot;yes&quot; /&gt;
+              &lt;label for=&quot;existingPhoneLine-yes&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; id=&quot;existingPhoneLine-yes&quot; value=&quot;yes&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;Yes&lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; value=&quot;dont know&quot; /&gt;
+              &lt;label for=&quot;existingPhoneLine-unknown&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;existingPhoneLine&quot; id=&quot;existingPhoneLine-unknown&quot; value=&quot;unknown&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;I don&#39;t know&lt;/div&gt;
               &lt;/label&gt;
-              &lt;span class=&quot;help-block&quot; id=&quot;existingPhoneLine-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;span class=&quot;help-block&quot; id=&quot;existingPhoneLine-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
       &lt;/div&gt;
 
 
@@ -467,8 +470,8 @@
 
         &lt;div class=&quot;form-group tds-form-group&quot;&gt;
         &lt;div class=&quot;checkbox&quot;&gt;
-          &lt;label&gt;
-            &lt;input name=&quot;localPhoneServiceAgree&quot; type=&quot;checkbox&quot; /&gt;
+          &lt;label for=&quot;localPhoneServiceAgree&quot;&gt;
+            &lt;input name=&quot;localPhoneServiceAgree&quot; id=&quot;localPhoneServiceAgree&quot; type=&quot;checkbox&quot; /&gt;
             &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
             &lt;div class=&quot;label-text&quot;&gt;I agree to have TDS as my local phone service provider.&lt;/div&gt;
           &lt;/label&gt;
@@ -477,8 +480,8 @@
         &lt;/div&gt;
 
         &lt;div class=&quot;checkbox&quot;&gt;
-          &lt;label&gt;
-            &lt;input name=&quot;longDistancePhoneServiceAgree&quot; type=&quot;checkbox&quot; /&gt;
+          &lt;label for=&quot;longDistancePhoneServiceAgree&quot;&gt;
+            &lt;input name=&quot;longDistancePhoneServiceAgree&quot; id=&quot;longDistancePhoneServiceAgree&quot; type=&quot;checkbox&quot; /&gt;
             &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
             &lt;div class=&quot;label-text&quot;&gt;I agree to have TDS as my long distance (in-state, state-to-state, and international) service provider&lt;/div&gt;
           &lt;/label&gt;
@@ -487,8 +490,8 @@
         &lt;/div&gt;
 
         &lt;div class=&quot;checkbox&quot;&gt;
-          &lt;label&gt;
-            &lt;input name=&quot;certifyReadAuthorizationAgreement&quot; type=&quot;checkbox&quot; /&gt;
+          &lt;label for=&quot;certifyReadAuthorizationAgreement&quot;&gt;
+            &lt;input name=&quot;certifyReadAuthorizationAgreement&quot; id=&quot;certifyReadAuthorizationAgreement&quot; type=&quot;checkbox&quot; /&gt;
             &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
             &lt;div class=&quot;label-text&quot;&gt;I certify that I have read and understand the &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;authorization agreement&lt;/a&gt; and that I agree to the terms and conditions contained therein.&lt;/div&gt;
           &lt;/label&gt;
@@ -497,18 +500,18 @@
       &lt;/div&gt;
 
         &lt;div class=&quot;form-group tds-form-group&quot;&gt;
-          &lt;label for=&quot;homeNewConstruction&quot;&gt;Verification of Agreement&lt;/label&gt;
+          &lt;label for=&quot;verificationType&quot;&gt;Verification of Agreement&lt;/label&gt;
           &lt;div&gt;Please provide either your date of birth or your mother&#39;s maiden name.&lt;/div&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;verificationType&quot; value=&quot;birthDate&quot; /&gt;
+              &lt;label for=&quot;verificationType-birthDate&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;verificationType&quot; id=&quot;verificationType-birthDate&quot; value=&quot;birthDate&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;Date of Birth&lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
             &lt;div class=&quot;radio&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;radio&quot; name=&quot;verificationType&quot; value=&quot;mothersMaidenName&quot; /&gt;
+              &lt;label for=&quot;verificationType-mothersMaidenName&quot;&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;verificationType&quot; id=&quot;verificationType-mothersMaidenName&quot; value=&quot;mothersMaidenName&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;Mother&#39;s Maiden Name&lt;/div&gt;
               &lt;/label&gt;
@@ -516,10 +519,10 @@
               &lt;span class=&quot;help-block&quot; id=&quot;verificationType-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
 
                     &lt;!--Display if name=&quot;verificationType&quot; is value=&quot;birthDate&quot;--&gt;
-                    &lt;div id=&quot;birthDateInput&quot; class=&quot;initiallyHidden&quot; style=&quot;display: block;&quot;&gt;
+                    &lt;div id=&quot;birthDateInput&quot; class=&quot;initiallyHidden&quot;&gt;
                         &lt;div class=&quot;form-group&quot;&gt;
-                          &lt;label for=&quot;&quot;&gt;Date of Birth&lt;/label&gt;
-                          &lt;input class=&quot;form-control&quot; name=&quot;birthDate&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+                          &lt;label for=&quot;birthDate&quot;&gt;Date of Birth&lt;/label&gt;
+                          &lt;input class=&quot;form-control&quot; name=&quot;birthDate&quot; id=&quot;birthDate&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
                             &lt;span class=&quot;help-block&quot;&gt;Format: MM/DD/YYYY&lt;/span&gt;
                           &lt;div&gt;Your birth date will be used only to validate the person who authorizes this service
                             request.&lt;/div&gt;
@@ -529,10 +532,10 @@
                       &lt;/div&gt;
 
                       &lt;!--Display if name=&quot;verificationType&quot; is value=&quot;mothersMaidenName&quot;--&gt;
-                      &lt;div id=&quot;maidenNameInput&quot; class=&quot;initiallyHidden&quot; style=&quot;display: block;&quot;&gt;
+                      &lt;div id=&quot;maidenNameInput&quot; class=&quot;initiallyHidden&quot;&gt;
                         &lt;div class=&quot;form-group&quot;&gt;
-                          &lt;label for=&quot;&quot;&gt;Mother&#39;s Maiden Name&lt;/label&gt;
-                          &lt;input class=&quot;form-control&quot; name=&quot;mothersMaidenName&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+                          &lt;label for=&quot;mothersMaidenName&quot;&gt;Mother&#39;s Maiden Name&lt;/label&gt;
+                          &lt;input class=&quot;form-control&quot; name=&quot;mothersMaidenName&quot; id=&quot;mothersMaidenName&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
                           &lt;div&gt;Your mother&#39;s maiden name will be used only to validate the person who authorizes this service request.&lt;/div&gt;
                           &lt;span class=&quot;help-block&quot; id=&quot;mothersMaidenName-error&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
                         &lt;/div&gt;
