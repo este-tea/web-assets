@@ -174,12 +174,14 @@ $(document).ready(function(){
 
 <div style="clearfix"></div>
 
-        <!--user name or address bar-->
+        <!--user name or address bar -->
+<!--Not part of the componet -->
 <div class="container shopperId">
   <div class="row">
     <div>Address: <strong>811 North Edge Trl, Verona, WI</strong> <a href="#">change</a></div>
   </div>
 </div>
+<!--Not part of the componet -->
 <!--user name or address bar end-->
 
 <!--Warring bar-->
@@ -210,7 +212,7 @@ $(document).ready(function(){
         </div>
 
         <div class="form-group tds-form-group">
-            <label>Last Name</label>
+            <label for="lastName">Last Name</label>
             <input type="text" class="form-control" name="lastName" id="lastName" />
             <span class="help-block" id="lastName-error" style="display: none;"></span>
         </div>
@@ -226,27 +228,27 @@ $(document).ready(function(){
         <div class="form-group tds-form-group">
           <label for="contactTime">Best time of day to reach you?</label>
             <div class="radio">
-              <label>
-                <input type="radio" name="contactTime" value="no" />
+              <label for="contactTime-am">
+                <input type="radio" name="contactTime" id="contactTime-am" value="am" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">Morning</div>
               </label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="contactTime" value="new" />
+              <label for="contactTime-pm">
+                <input type="radio" name="contactTime" id="contactTime-pm" value="pm" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">Afternoon</div>
               </label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="contactTime" value="yes" />
+              <label for="contactTime-anytime">
+                <input type="radio" name="contactTime" id="contactTime-anytime" value="anytime" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">All day</div>
               </label>
-              <span class="help-block" id="contactTime-error" style="display: none;"></span>
         </div>
+        <span class="help-block" id="contactTime-error" style="display: none;"></span>
       </div>
 
 
@@ -258,8 +260,8 @@ $(document).ready(function(){
             <span class="help-block" id="contactEmail-error" style="display: none;"></span>
 
             <div class="checkbox">
-              <label>
-                <input name="subscribeToEmail" type="checkbox" checked="checked" />
+              <label for="subscribeToEmail">
+                <input name="subscribeToEmail" id="subscribeToEmail" type="checkbox" checked="checked" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">I would like to receive occasional updates from TDS via email with information about new product
                 features and special offers. Visit our <a href="#" target="_blank">
@@ -340,8 +342,8 @@ $(document).ready(function(){
           <div>You won’t need to provide payment information now. When you receive your first monthly TDS bill, look for information on the many convenient ways to pay, including secure online payment through TDS.</div>
 
           <div class="checkbox">
-            <label>
-              <input name="subscribeToEmail" type="checkbox" />
+            <label for="useServiceAddressForBilling">
+              <input name="useServiceAddressForBilling" id="useServiceAddressForBilling" type="checkbox" />
               <span class="tds-radio-btn"></span>
               <div class="label-text">Same as Service Address</div>
             </label>
@@ -349,32 +351,32 @@ $(document).ready(function(){
 
       <div class="form-group">
 
-        <label for="">Address: </label>
-        <input class="form-control" name="billingAddressLine" type="text" value="" />
+        <label for="billingAddressLine">Address: </label>
+        <input class="form-control" name="billingAddressLine" id="billingAddressLine" type="text" value="" />
         <span class="help-block" id="billingAddressLineError" style="display: none;"></span>
 
       </div>
 
       <div class="form-group">
 
-        <label for="">Address (optional): </label>
-        <input class="form-control" name="billingAddressLineOptional" type="text" value="" />
+        <label for="billingAddressLineOptional">Address (optional): </label>
+        <input class="form-control" name="billingAddressLineOptional" id="billingAddressLineOptional" type="text" value="" />
         <span class="help-block" id="billingAddressLineOptionalError" style="display: none;"></span>
 
       </div>
 
       <div class="form-group">
 
-        <label for="">City/Town: </label>
-        <input class="form-control" name="billingCity" type="text" value="" />
+        <label for="billingCity">City/Town: </label>
+        <input class="form-control" name="billingCity" id="billingCity" type="text" value="" />
         <span class="help-block" id="cityError" style="display: none;"></span>
 
       </div>
 
       <div class="form-group">
 
-        <label for="">State: </label>
-        <select class="form-control" name="billingState">
+        <label for="billingState">State: </label>
+        <select class="form-control" name="billingState" id="billingState">
             <option value="" disabled="" selected="">Select</option>
 
             <option value="AK">AK</option>
@@ -484,8 +486,8 @@ $(document).ready(function(){
       </div>
 
       <div class="form-group">
-        <label for="">Zip: </label>
-        <input class="form-control" name="billingZip" type="text" value="" />
+        <label for="billingZip">Zip: </label>
+        <input class="form-control" name="billingZip" id="billingZip" type="text" value="" />
         <span class="help-block" id="billingZipError" style="display: none;"></span>
       </div>
   </div>
@@ -526,21 +528,21 @@ $(document).ready(function(){
   <div class="row">
         <h2 class="hr-after-text">Installation</h2>
 
-        <label for="">Please select your preferred installation date.</label>
+        <label for="installData">Please select your preferred installation date.</label>
 
         <div>We will do our best to accommodate your request and a TDS Representative will follow up to confirm your date and time.</div>
 
         <div class="form-group">
             <div class="input-group date">
-                <input type="text" class="form-control" id="installData" /><span class="input-group-addon">icon</span>
+                <input type="text" class="form-control" name="installData" id="installData" /><span class="input-group-addon"></span>
             </div>
             <div class="cable-formDisclaimer">Greyed out dates are unavailable</div>
             <span class="help-block" id="installData-error" style="display: none;"></span>
         </div>
 
         <div class="form-group">
-            <label for="">Please let us know about any specific scheduling considerations you’d like us to be aware of (optional):</label>
-            <textarea class="form-control" rows="10" id="comments"></textarea>
+            <label for="comments">Please let us know about any specific scheduling considerations you’d like us to be aware of (optional):</label>
+            <textarea class="form-control" rows="10" name="comments" id="comments"></textarea>
             <span class="help-block" id="comments-error" style="display: none;"></span>
 
         </div>
@@ -549,27 +551,27 @@ $(document).ready(function(){
         <div class="form-group tds-form-group">
           <label for="homeNewConstruction">Is the house newly constructed?</label>
             <div class="radio">
-              <label>
-                <input type="radio" name="homeNewConstruction" value="no" />
+              <label for="homeNewConstruction-no">
+                <input type="radio" name="homeNewConstruction" id="homeNewConstruction-no" value="no" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">No</div>
               </label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="homeNewConstruction" value="new" />
+              <label for="homeNewConstruction-yes">
+                <input type="radio" name="homeNewConstruction" id="homeNewConstruction-yes" value="yes" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">Yes</div>
               </label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="homeNewConstruction" value="yes" />
+              <label for="homeNewConstruction-unknown">
+                <input type="radio" name="homeNewConstruction" id="homeNewConstruction-unknown" value="unknown" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">I don't know</div>
               </label>
-              <span class="help-block" id="homeNewConstruction-error" style="display: none;"></span>
           </div>
+          <span class="help-block" id="homeNewConstruction-error" style="display: none;"></span>
         </div>
   </div>
 </div>
@@ -583,27 +585,28 @@ $(document).ready(function(){
         <div class="form-group tds-form-group">
           <label for="existingPhoneLine">Is there a phone line installed at your Service Address?</label>
             <div class="radio">
-              <label>
-                <input type="radio" name="existingPhoneLine" value="no" />
+              <label for="existingPhoneLine-no">
+                <input type="radio" name="existingPhoneLine" id="existingPhoneLine-no" value="no" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">No</div>
               </label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="existingPhoneLine" value="yes" />
+              <label for="existingPhoneLine-yes">
+                <input type="radio" name="existingPhoneLine" id="existingPhoneLine-yes" value="yes" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">Yes</div>
               </label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="existingPhoneLine" value="dont know" />
+              <label for="existingPhoneLine-unknown">
+                <input type="radio" name="existingPhoneLine" id="existingPhoneLine-unknown" value="unknown" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">I don't know</div>
               </label>
-              <span class="help-block" id="existingPhoneLine-error" style="display: none;"></span>
-        </div>
+            </div>
+        <span class="help-block" id="existingPhoneLine-error" style="display: none;"></span>
+
       </div>
 
 
@@ -629,8 +632,8 @@ $(document).ready(function(){
 
         <div class="form-group tds-form-group">
         <div class="checkbox">
-          <label>
-            <input name="localPhoneServiceAgree" type="checkbox" />
+          <label for="localPhoneServiceAgree">
+            <input name="localPhoneServiceAgree" id="localPhoneServiceAgree" type="checkbox" />
             <span class="tds-radio-btn"></span>
             <div class="label-text">I agree to have TDS as my local phone service provider.</div>
           </label>
@@ -639,8 +642,8 @@ $(document).ready(function(){
         </div>
 
         <div class="checkbox">
-          <label>
-            <input name="longDistancePhoneServiceAgree" type="checkbox" />
+          <label for="longDistancePhoneServiceAgree">
+            <input name="longDistancePhoneServiceAgree" id="longDistancePhoneServiceAgree" type="checkbox" />
             <span class="tds-radio-btn"></span>
             <div class="label-text">I agree to have TDS as my long distance (in-state, state-to-state, and international) service provider</div>
           </label>
@@ -649,8 +652,8 @@ $(document).ready(function(){
         </div>
 
         <div class="checkbox">
-          <label>
-            <input name="certifyReadAuthorizationAgreement" type="checkbox" />
+          <label for="certifyReadAuthorizationAgreement">
+            <input name="certifyReadAuthorizationAgreement" id="certifyReadAuthorizationAgreement" type="checkbox" />
             <span class="tds-radio-btn"></span>
             <div class="label-text">I certify that I have read and understand the <a href="#" target="_blank">authorization agreement</a> and that I agree to the terms and conditions contained therein.</div>
           </label>
@@ -659,18 +662,18 @@ $(document).ready(function(){
       </div>
 
         <div class="form-group tds-form-group">
-          <label for="homeNewConstruction">Verification of Agreement</label>
+          <label for="verificationType">Verification of Agreement</label>
           <div>Please provide either your date of birth or your mother's maiden name.</div>
             <div class="radio">
-              <label>
-                <input type="radio" name="verificationType" value="birthDate" />
+              <label for="verificationType-birthDate">
+                <input type="radio" name="verificationType" id="verificationType-birthDate" value="birthDate" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">Date of Birth</div>
               </label>
             </div>
             <div class="radio">
-              <label>
-                <input type="radio" name="verificationType" value="mothersMaidenName" />
+              <label for="verificationType-mothersMaidenName">
+                <input type="radio" name="verificationType" id="verificationType-mothersMaidenName" value="mothersMaidenName" />
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">Mother's Maiden Name</div>
               </label>
@@ -678,10 +681,10 @@ $(document).ready(function(){
               <span class="help-block" id="verificationType-error" style="display: none;"></span>
 
                     <!--Display if name="verificationType" is value="birthDate"-->
-                    <div id="birthDateInput" class="initiallyHidden" style="display: block;">
+                    <div id="birthDateInput" class="initiallyHidden">
                         <div class="form-group">
-                          <label for="">Date of Birth</label>
-                          <input class="form-control" name="birthDate" type="text" value="" />
+                          <label for="birthDate">Date of Birth</label>
+                          <input class="form-control" name="birthDate" id="birthDate" type="text" value="" />
                             <span class="help-block">Format: MM/DD/YYYY</span>
                           <div>Your birth date will be used only to validate the person who authorizes this service
                             request.</div>
@@ -691,10 +694,10 @@ $(document).ready(function(){
                       </div>
 
                       <!--Display if name="verificationType" is value="mothersMaidenName"-->
-                      <div id="maidenNameInput" class="initiallyHidden" style="display: block;">
+                      <div id="maidenNameInput" class="initiallyHidden">
                         <div class="form-group">
-                          <label for="">Mother's Maiden Name</label>
-                          <input class="form-control" name="mothersMaidenName" type="text" value="" />
+                          <label for="mothersMaidenName">Mother's Maiden Name</label>
+                          <input class="form-control" name="mothersMaidenName" id="mothersMaidenName" type="text" value="" />
                           <div>Your mother's maiden name will be used only to validate the person who authorizes this service request.</div>
                           <span class="help-block" id="mothersMaidenName-error" style="display: none;"></span>
                         </div>
