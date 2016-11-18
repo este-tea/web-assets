@@ -7,6 +7,7 @@
   margin: 0 auto;
 }
 
+/*/// Package Compairison  ///*/
 /* ===== tds cable header === */
 /*////overrides/////*/
 @media (min-width: 568px) {
@@ -530,6 +531,247 @@ a.btn-subscribe::before {
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
+}
+
+/*/// Package Compairison  ///*/
+.cws-packages section {
+  margin: 5px 0;
+  padding: 20px 0;
+}
+.cws-packages section .col-lg-2.col-md-1 {
+  padding: 0;
+}
+.cws-packages section a {
+  text-decoration: none !important;
+}
+.cws-packages section a:hover, .cws-packages section a:focus {
+  text-decoration: underline;
+  color: #19388A;
+}
+.cws-packages section:hover, .cws-packages section:focus {
+  background-color: #ebf6fc;
+  border-radius: 5px;
+  border: 0px;
+}
+
+@media (max-width: 959px) {
+  h3.hr-after-text {
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.75em;
+  }
+  h3.hr-after-text:after {
+    content: "";
+    display: none;
+  }
+}
+
+.cws-container-packageDetails .col-md-3 {
+  padding-left: 0;
+}
+.cws-container-packageDetails .col-md-9 {
+  padding-left: 0;
+}
+
+.cws-icon-packageCompairison {
+  max-width: 150px;
+  float: right;
+  display: block;
+}
+@media (max-width: 991px) {
+  .cws-icon-packageCompairison {
+    margin: 0 auto;
+    float: none;
+  }
+}
+.cws-icon-packageCompairison:hover, .cws-icon-packageCompairison:focus {
+  border-radius: 0;
+  border: 0;
+}
+
+.cws-container-productDescription {
+  float: left;
+  padding-right: 15px;
+  width: 33%;
+}
+.cws-container-productDescription + div {
+  border-left: 1px #777 solid;
+  padding-left: 15px;
+}
+.cws-container-productDescription + div:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  margin-left: -28px;
+  background: #0C8FD0;
+  border-radius: 20px;
+  z-index: 50;
+  position: absolute;
+  top: 50px;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+@media (max-width: 958px) {
+  .cws-container-productDescription + div:before {
+    top: auto;
+    margin: -34px 37%;
+  }
+}
+@media (max-width: 958px) {
+  .cws-container-productDescription + div {
+    border-left: 0;
+  }
+}
+@media (max-width: 959px) {
+  .cws-container-productDescription {
+    width: 100%;
+    border-top: 1px #777 solid;
+    padding: 20px 0;
+  }
+}
+
+.linkOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 25;
+}
+
+a.cws-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px 16px;
+  clear: both;
+  color: #FFFFFF !important;
+  background-color: #6B9C22;
+  border-color: #6B9C22;
+  text-align: left;
+  border: 1px;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+  text-decoration: none !important;
+  z-index: 100;
+}
+a.cws-btn:after {
+  content: "";
+  width: 24px;
+  height: 16px;
+  float: right;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 9px 14px;
+}
+a.cws-btn:before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+a.cws-btn:hover, a.cws-btn:focus {
+  text-decoration: none;
+  background-color: #618e34 !important;
+  cursor: pointer;
+  box-shadow: none;
+  text-decoration: none !important;
+  color: #FFF;
+  border-radius: 0;
+  border: 0;
+  z-index: 100;
+}
+
+@media (max-width: 959px) {
+  a.cws-btn.desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 958px) {
+  a.cws-btn.mobile {
+    display: none;
+  }
+}
+
+.cws-container-priceDetails {
+  text-align: center;
+}
+.cws-container-priceDetails h4, .cws-container-priceDetails p, .cws-container-priceDetails ul, .cws-container-priceDetails .cws-packagePrice {
+  color: #0C8FD0;
+}
+.cws-container-priceDetails h4:hover, .cws-container-priceDetails h4:focus, .cws-container-priceDetails p:hover, .cws-container-priceDetails p:focus, .cws-container-priceDetails ul:hover, .cws-container-priceDetails ul:focus, .cws-container-priceDetails .cws-packagePrice:hover, .cws-container-priceDetails .cws-packagePrice:focus {
+  color: #19388A;
+}
+.cws-container-priceDetails .cws-packagePrice {
+  color: #0C8FD0;
+  font-size: 42px;
+  line-height: 18px;
+}
+.cws-container-priceDetails .cws-packagePrice .cws-sub-text {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.lessThenThree {
+  width: 50%;
+}
+@media (max-width: 959px) {
+  .lessThenThree {
+    width: 100%;
+  }
+}
+
+.cws-packages section.vertical h3.hr-after-text {
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.75em;
+}
+.cws-packages section.vertical h3.hr-after-text:after {
+  content: "";
+  display: none;
+}
+
+.cws-packages section.vertical .cws-icon-packageCompairison {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+.cws-packages section.vertical .cws-icon-packageCompairison:hover, .cws-packages section.vertical .cws-icon-packageCompairison:focus {
+  border-radius: 0;
+  border: 0;
+}
+
+.cws-packages section.vertical .packageOfferings {
+  padding: 0 15px;
+}
+
+.cws-packages section.vertical .cws-container-productDescription {
+  float: left;
+  padding: 20px 0;
+  width: 100%;
+  border-top: 1px #777 solid;
+}
+.cws-packages section.vertical .cws-container-productDescription + div {
+  border-left: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+.cws-packages section.vertical .cws-container-productDescription + div:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #0C8FD0;
+  border-radius: 20px;
+  z-index: 50;
+  position: absolute;
+  top: auto;
+  margin: -34px 40%;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
 }
 
 /* ===== tds cable warrnings and error messages === */

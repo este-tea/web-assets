@@ -6,9 +6,1133 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Nov 2016 12:05:15 -0600</pubDate>
-    <lastBuildDate>Mon, 14 Nov 2016 12:05:15 -0600</lastBuildDate>
+    <pubDate>Fri, 18 Nov 2016 10:21:32 -0600</pubDate>
+    <lastBuildDate>Fri, 18 Nov 2016 10:21:32 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>CWS-Package Comparison Vertical</title>
+        <description>&lt;!--user name or address bar --&gt;
+&lt;!--Not part of the componet --&gt;
+&lt;div class=&quot;container shopperId&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div&gt;Address: &lt;strong&gt;811 North Edge Trl, Verona, WI&lt;/strong&gt; &lt;a href=&quot;#&quot;&gt;change&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Not part of the componet --&gt;
+&lt;!--user name or address bar end--&gt;
+
+&lt;div class=&quot;cws-packages container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+
+&lt;!--CWS Vertical Package ---&gt;
+
+&lt;!--Remove col-md-12 col-lg-12, add col-md-4 col-lg-3 vertical--&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-3 vertical&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;http://hellotds.com/&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+  &lt;!--Remove col-lg-2 col-md-1, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+    &lt;!--Remove col-lg-10 col-md-10, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet, TV &amp;amp; Phone&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix---&gt;
+        &lt;div class=&quot;cws-container-price clearfix&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Remove from vertical-
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+             --&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details FOR VERT: remove col-md-9  col-md-pull-3--&gt;
+        &lt;div class=&quot;packageOfferings clearfix&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+            &lt;li&gt;24/7 tech support&lt;/li&gt;
+            &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+          &lt;!--Product and details---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Expanded TV&lt;/h4&gt;
+            &lt;ul&gt;
+              &lt;li&gt;125+ channels&lt;/li&gt;
+              &lt;li&gt;TV Everywhere&lt;/li&gt;
+              &lt;li&gt;Interactive On Screen Guide&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+            &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Unlimited Phone&lt;/h4&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Unlimited local and long distance calls&lt;/li&gt;
+              &lt;li&gt;Caller ID&lt;/li&gt;
+              &lt;li&gt;Call Waiting&lt;/li&gt;
+              &lt;li&gt;Keep your current number&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag--&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Vertical Package end ---&gt;
+
+
+
+
+
+
+
+&lt;!--CWS Vertical Package ---&gt;
+&lt;!--Remove col-md-12 col-lg-12, add col-md-4 col-lg-3  --&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-3 vertical&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;http://hellotds.com/&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+  &lt;!--Remove col-lg-2 col-md-1, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+    &lt;!--Remove col-lg-10 col-md-10, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet, TV &amp;amp; Phone&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix---&gt;
+        &lt;div class=&quot;cws-container-price clearfix&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Remove from vertical-
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+             --&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details FOR VERT: remove col-md-9  col-md-pull-3--&gt;
+        &lt;div class=&quot;packageOfferings clearfix&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+            &lt;li&gt;24/7 tech support&lt;/li&gt;
+            &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+          &lt;!--Product and details---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Expanded TV&lt;/h4&gt;
+            &lt;ul&gt;
+              &lt;li&gt;125+ channels&lt;/li&gt;
+              &lt;li&gt;TV Everywhere&lt;/li&gt;
+              &lt;li&gt;Interactive On Screen Guide&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+            &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Unlimited Phone&lt;/h4&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Unlimited local and long distance calls&lt;/li&gt;
+              &lt;li&gt;Caller ID&lt;/li&gt;
+              &lt;li&gt;Call Waiting&lt;/li&gt;
+              &lt;li&gt;Keep your current number&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag--&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Vertical Package end ---&gt;
+
+
+&lt;!--Rule: Place this after every 2 sections --&gt;
+&lt;div class=&quot;clearfix visible-sm-block&quot;&gt;&lt;/div&gt;
+&lt;!--Rule: Place this after every 2 sections end--&gt;
+
+
+
+&lt;!--CWS Vertical Package ---&gt;
+&lt;!--Remove col-md-12 col-lg-12, add col-md-4 col-lg-3 vertical--&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-3 vertical&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;http://hellotds.com/&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+  &lt;!--Remove col-lg-2 col-md-1, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+    &lt;!--Remove col-lg-10 col-md-10, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet &amp;amp; TV&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix---&gt;
+        &lt;div class=&quot;cws-container-price clearfix&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Remove from vertical-
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+             --&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details FOR VERT: remove col-md-9  col-md-pull-3--&gt;
+        &lt;div class=&quot;packageOfferings clearfix&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+            &lt;li&gt;24/7 tech support&lt;/li&gt;
+            &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+          &lt;!--Product and details---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Expanded TV&lt;/h4&gt;
+            &lt;ul&gt;
+              &lt;li&gt;125+ channels&lt;/li&gt;
+              &lt;li&gt;TV Everywhere&lt;/li&gt;
+              &lt;li&gt;Interactive On Screen Guide&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag--&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Vertical Package end ---&gt;
+
+
+
+
+
+&lt;!--Vertical Rule: Place this after every 3 sections--&gt;
+&lt;div class=&quot;clearfix visible-md-block&quot;&gt;&lt;/div&gt;
+&lt;!--Vertical Rule: Place this after every 3 sections end--&gt;
+
+
+
+
+
+&lt;!--CWS Vertical Package ---&gt;
+&lt;!--Remove col-md-12 col-lg-12, add col-md-4 col-lg-3 vertical--&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-3 vertical&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;http://hellotds.com/&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+  &lt;!--Remove col-lg-2 col-md-1, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+    &lt;!--Remove col-lg-10 col-md-10, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet Only&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix---&gt;
+        &lt;div class=&quot;cws-container-price clearfix&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Remove from vertical-
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+             --&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details FOR VERT: remove col-md-9  col-md-pull-3--&gt;
+        &lt;div class=&quot;packageOfferings clearfix&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+            &lt;li&gt;24/7 tech support&lt;/li&gt;
+            &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag--&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Vertical Package end ---&gt;
+
+
+
+&lt;!--Rule: Place this after every 2 sections --&gt;
+&lt;div class=&quot;clearfix visible-sm-block&quot;&gt;&lt;/div&gt;
+&lt;!--Rule: Place this after every 2 sections end--&gt;
+
+
+&lt;!--Vertical Rule: Place this after every 4 sections--&gt;
+&lt;div class=&quot;clearfix visible-lg-block&quot;&gt;&lt;/div&gt;
+&lt;!--Vertical Rule: Place this after every 4 sections end--&gt;
+
+
+
+
+
+
+&lt;!--CWS Vertical Package ---&gt;
+&lt;!--Remove col-md-12 col-lg-12, add col-md-4 col-lg-3 vertical--&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-3 vertical&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;http://hellotds.com/&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+  &lt;!--Remove col-lg-2 col-md-1, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+    &lt;!--Remove col-lg-10 col-md-10, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet Only&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix---&gt;
+        &lt;div class=&quot;cws-container-price clearfix&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Remove from vertical-
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+             --&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details FOR VERT: remove col-md-9  col-md-pull-3--&gt;
+        &lt;div class=&quot;packageOfferings clearfix&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+            &lt;li&gt;24/7 tech support&lt;/li&gt;
+            &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag--&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Vertical Package end ---&gt;
+
+
+&lt;/div&gt;
+&lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 17 Nov 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/11/17/cws-package-comparison-vertical/</link>
+        <guid isPermaLink="true">/cws/2016/11/17/cws-package-comparison-vertical/</guid>
+        
+        
+        <category>CWS</category>
+        
+      </item>
+    
+      <item>
+        <title>CWS-Package Comparison Vertical</title>
+        <description>&lt;div class=&quot;cws-packages container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+
+&lt;!--CWS Vertical Package ---&gt;
+&lt;!--Removed from Horziontal col-md-12 col-lg-12, add col-md-4 col-lg-3 vertical--&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-4 col-lg-3 vertical&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;#childpage&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+  &lt;!--Removed from Horziontal col-lg-2 col-md-1, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+    &lt;!--Removed from Horziontal col-lg-10 col-md-10, add clearfix--&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet, TV &amp;amp; Phone&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details. FOR VERT: Removed from Horziontal col-md-3 col-md-push-9, add clearfix---&gt;
+        &lt;div class=&quot;cws-container-price clearfix&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;!--Editable by author--&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Editable by author end--&gt;
+
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Removed from Horziontal for vertical-
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;#childpage&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+             --&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details FOR VERT: Removed from Horziontal col-md-9  col-md-pull-3--&gt;
+        &lt;div class=&quot;packageOfferings clearfix&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+            &lt;li&gt;24/7 tech support&lt;/li&gt;
+            &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+          &lt;!--Product and details---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Expanded TV&lt;/h4&gt;
+            &lt;ul&gt;
+              &lt;li&gt;125+ channels&lt;/li&gt;
+              &lt;li&gt;TV Everywhere&lt;/li&gt;
+              &lt;li&gt;Interactive On Screen Guide&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+            &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Unlimited Phone&lt;/h4&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Unlimited local and long distance calls&lt;/li&gt;
+              &lt;li&gt;Caller ID&lt;/li&gt;
+              &lt;li&gt;Call Waiting&lt;/li&gt;
+              &lt;li&gt;Keep your current number&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block&quot; href=&quot;#childpage&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag--&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Vertical Package end ---&gt;
+
+
+
+
+
+&lt;!--Rule: Place this after every 2 sections --&gt;
+&lt;div class=&quot;clearfix visible-sm-block&quot;&gt;&lt;/div&gt;
+&lt;!--Rule: Place this after every 2 sections end--&gt;
+
+
+
+&lt;!--Vertical Rule: Place this after every 3 sections--&gt;
+&lt;div class=&quot;clearfix visible-md-block&quot;&gt;&lt;/div&gt;
+&lt;!--Vertical Rule: Place this after every 3 sections end--&gt;
+
+
+&lt;!--Vertical Rule: Place this after every 4 sections--&gt;
+&lt;div class=&quot;clearfix visible-lg-block&quot;&gt;&lt;/div&gt;
+&lt;!--Vertical Rule: Place this after every 4 sections end--&gt;
+
+
+
+
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 17 Nov 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/11/17/cws-package-comparison-vertical-wikimarkup/</link>
+        <guid isPermaLink="true">/cws/2016/11/17/cws-package-comparison-vertical-wikimarkup/</guid>
+        
+        
+        <category>CWS</category>
+        
+      </item>
+    
+      <item>
+        <title>CWS-Package Comparison Horzontial</title>
+        <description>&lt;!--user name or address bar --&gt;
+&lt;!--Not part of the componet --&gt;
+&lt;div class=&quot;container shopperId&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div&gt;Address: &lt;strong&gt;811 North Edge Trl, Verona, WI&lt;/strong&gt; &lt;a href=&quot;#&quot;&gt;change&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Not part of the componet --&gt;
+&lt;!--user name or address bar end--&gt;
+
+&lt;!--container for package sections--&gt;
+&lt;div class=&quot;cws-packages container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+
+&lt;!--CWS Horzontial Package ---&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-12 col-lg-12&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;http://hellotds.com/&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+    &lt;div class=&quot;col-lg-2 col-md-1&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-lg-10 col-md-10&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet, TV &amp;amp; Phone&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details---&gt;
+        &lt;div class=&quot;col-md-3 col-md-push-9 cws-container-price&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Editable by author--&gt;
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details ---&gt;
+        &lt;div class=&quot;col-md-9 col-md-pull-3 packageOfferings&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+            &lt;li&gt;24/7 tech support&lt;/li&gt;
+            &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+          &lt;!--Product and details---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Expanded TV&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;125+ channels&lt;/li&gt;
+            &lt;li&gt;TV Everywhere&lt;/li&gt;
+            &lt;li&gt;Interactive On Screen Guide&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+            &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Unlimited Phone&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;Unlimited local and long distance calls&lt;/li&gt;
+            &lt;li&gt;Caller ID&lt;/li&gt;
+            &lt;li&gt;Call Waiting&lt;/li&gt;
+            &lt;li&gt;Keep your current number&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block mobile&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag---&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Horzontial Package end ---&gt;
+
+
+&lt;!--CWS Horzontial Package ---&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-12 col-lg-12&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;http://hellotds.com/&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-2 col-md-1&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-lg-10 col-md-10&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet, TV &amp;amp; Phone&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details---&gt;
+        &lt;div class=&quot;col-md-3 col-md-push-9 cws-container-price&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Editable by author--&gt;
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details ---&gt;
+        &lt;div class=&quot;col-md-9 col-md-pull-3 packageOfferings&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+            &lt;li&gt;24/7 tech support&lt;/li&gt;
+            &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+          &lt;!--Product and details---&gt;
+            &lt;div class=&quot;cws-container-productDescription lessThenThree&quot;&gt;
+            &lt;!--rich text componet--&gt;
+            &lt;h4&gt;Expanded TV&lt;/h4&gt;
+            &lt;ul&gt;
+            &lt;li&gt;125+ channels&lt;/li&gt;
+            &lt;li&gt;TV Everywhere&lt;/li&gt;
+            &lt;li&gt;Interactive On Screen Guide&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block mobile&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag---&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Horzontial Package end ---&gt;
+
+
+
+
+&lt;!--Rule: Place this after every 2 sections --&gt;
+&lt;div class=&quot;clearfix visible-sm-block&quot;&gt;&lt;/div&gt;
+&lt;!--Rule: Place this after every 2 sections end--&gt;
+
+
+
+
+&lt;!--CWS Horzontial Package ---&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-12 col-lg-12&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;http://hellotds.com/&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-2 col-md-1&quot;&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-lg-10 col-md-10&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet, TV &amp;amp; Phone&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details---&gt;
+        &lt;div class=&quot;col-md-3 col-md-push-9 cws-container-price&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Editable by author--&gt;
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details ---&gt;
+        &lt;div class=&quot;col-md-9 col-md-pull-3 packageOfferings&quot;&gt;
+
+          &lt;!--Product and details---&gt;
+          &lt;!--Rule: Package offerings is less then three, add class lessThenThree to cws-container-productDescription--&gt;
+              &lt;div class=&quot;cws-container-productDescription lessThenThree&quot;&gt;
+              &lt;!--rich text componet--&gt;
+              &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+              &lt;ul&gt;
+              &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+              &lt;li&gt;24/7 tech support&lt;/li&gt;
+              &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;!--rich text componet end--&gt;
+              &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block mobile&quot; href=&quot;http://hellotds.com/&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag---&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Horzontial Package end ---&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--container for package sections end--&gt;
+
+&lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 15 Nov 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/11/15/cws-package-comparison-horizontal/</link>
+        <guid isPermaLink="true">/cws/2016/11/15/cws-package-comparison-horizontal/</guid>
+        
+        
+        <category>CWS</category>
+        
+      </item>
+    
+      <item>
+        <title>CWS-Package Comparison Horzontial wikimarkup</title>
+        <description>&lt;!--container for package sections--&gt;
+&lt;div class=&quot;cws-packages container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+
+
+&lt;!--CWS Horzontial Package ---&gt;
+&lt;section class=&quot;col-xs-12 col-sm-6 col-md-12 col-lg-12&quot;&gt;
+
+&lt;!--If you want the whole section to link opening tag  ---&gt;
+&lt;a href=&quot;#childpage&quot;&gt;&lt;span class=&quot;linkOverlay&quot;&gt;&lt;/span&gt;
+  &lt;!--If you want the whole section to link opening tag end---&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+    &lt;div class=&quot;col-lg-2 col-md-1&quot;&gt;
+      &lt;!--author can update source url for image--&gt;
+    &lt;img class=&quot;cws-icon-packageCompairison&quot; src=&quot;http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg&quot; alt=&quot;Icon&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-lg-10 col-md-10&quot;&gt;
+  &lt;!--Package name---&gt;
+    &lt;h3 class=&quot;hr-after-text&quot;&gt;Internet, TV &amp;amp; Phone&lt;/h3&gt;
+  &lt;!--Package name end---&gt;
+
+    &lt;div class=&quot;cws-container-packageDetails&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+
+      &lt;!--Price and other details---&gt;
+        &lt;div class=&quot;col-md-3 col-md-push-9 cws-container-price&quot;&gt;
+            &lt;div class=&quot;cws-container-priceDetails&quot;&gt;
+            &lt;!--Editable by author--&gt;
+            &lt;h4&gt;INTRODUCTORY OFFER&lt;/h4&gt;
+            &lt;!--Editable by author end--&gt;
+
+            &lt;!--Price is pulled in dynamicly--&gt;
+            &lt;div class=&quot;cws-packagePrice&quot;&gt;$&lt;span class=&quot;dollars&quot;&gt;##&lt;/span&gt; &lt;div class=&quot;cws-sub-text&quot;&gt;&lt;span class=&quot;cents&quot;&gt;##&lt;/span&gt;&lt;br /&gt;/mo&lt;/div&gt;&lt;/div&gt;
+
+            &lt;!--rich text componet--&gt;
+            &lt;p style=&quot;text-align:center&quot;&gt;Two-Year Price Guarantee&lt;br /&gt;
+            $### savings over 24 months&lt;/p&gt;
+            &lt;!--rich text componet end--&gt;
+
+            &lt;!--Editable by author--&gt;
+            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;#childpage&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;!--Price and other details end---&gt;
+
+      &lt;!--Package offerings and details ---&gt;
+        &lt;div class=&quot;col-md-9 col-md-pull-3 packageOfferings&quot;&gt;
+
+          &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+                &lt;!--rich text componet--&gt;
+                &lt;h4&gt;Ultra 60 Internet&lt;/h4&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;High-Speed Internet up to 60Mbps&lt;/li&gt;
+                  &lt;li&gt;24/7 tech support&lt;/li&gt;
+                  &lt;li&gt;Email with 15GB storage&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+          &lt;!--Product and details end---&gt;
+
+          &lt;!--Product and details---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+                &lt;!--rich text componet--&gt;
+                &lt;h4&gt;Expanded TV&lt;/h4&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;125+ channels&lt;/li&gt;
+                  &lt;li&gt;TV Everywhere&lt;/li&gt;
+                  &lt;li&gt;Interactive On Screen Guide&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+            &lt;!--Product and details ---&gt;
+            &lt;div class=&quot;cws-container-productDescription&quot;&gt;
+                &lt;!--rich text componet--&gt;
+                &lt;h4&gt;Unlimited Phone&lt;/h4&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;Unlimited local and long distance calls&lt;/li&gt;
+                  &lt;li&gt;Caller ID&lt;/li&gt;
+                  &lt;li&gt;Call Waiting&lt;/li&gt;
+                  &lt;li&gt;Keep your current number&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!--rich text componet end--&gt;
+            &lt;/div&gt;
+            &lt;!--Product and details end---&gt;
+
+
+            &lt;!--Editable by author --&gt;
+            &lt;a class=&quot;cws-btn btn-block mobile&quot; href=&quot;#childpage&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
+            &lt;!--Editable by author end--&gt;
+
+        &lt;/div&gt;
+      &lt;!--Package offerings and details end---&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--If you want the whole section to link closing tag---&gt;
+&lt;/a&gt;
+&lt;!--If you want the whole section to link closing tag end---&gt;
+&lt;/section&gt;
+&lt;!--CWS Horzontial Package end ---&gt;
+
+
+&lt;!--Rule: Place this after every 2 sections --&gt;
+&lt;div class=&quot;clearfix visible-sm-block&quot;&gt;&lt;/div&gt;
+&lt;!--Rule: Place this after every 2 sections end--&gt;
+
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--container for package sections end--&gt;
+</description>
+        <pubDate>Tue, 15 Nov 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/11/15/cws-package-comparison-horizontal-wikimarkup/</link>
+        <guid isPermaLink="true">/cws/2016/11/15/cws-package-comparison-horizontal-wikimarkup/</guid>
+        
+        
+        <category>CWS</category>
+        
+      </item>
     
       <item>
         <title>CWS-Checkout questions</title>
@@ -102,8 +1226,8 @@
                 &lt;input name=&quot;subscribeToEmail&quot; id=&quot;subscribeToEmail&quot; type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
                 &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;label-text&quot;&gt;I would like to receive occasional updates from TDS via email with information about new product
-                features and special offers. Visit our &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
-                  Email Subscriptions page&lt;/a&gt;&lt;/div&gt;
+                features and special offers. Visit our &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt; Email Subscriptions page&lt;/a&gt;
+                &lt;/div&gt;
               &lt;/label&gt;
             &lt;/div&gt;
 &lt;!---prospects only end--&gt;
@@ -559,7 +1683,7 @@
 $(&#39;.input-group.date&#39;).datepicker({
     startDate: &quot;+4d&quot;,
     daysOfWeekDisabled: &quot;0,6&quot;,
-    datesDisabled: [&#39;11/24/2016&#39;, &#39;12/25/2016&#39;, &#39;01/01/2016&#39;],
+    datesDisabled: [&#39;11/24/2016&#39;, &#39;12/25/2016&#39;, &#39;01/01/2017&#39;],
     orientation: &quot;bottom left&quot;,
 });
 &lt;/script&gt;

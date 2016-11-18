@@ -99,8 +99,8 @@ categories: CWS
                 <input name="subscribeToEmail" id="subscribeToEmail" type="checkbox" checked="checked">
                 <span class="tds-radio-btn"></span>
                 <div class="label-text">I would like to receive occasional updates from TDS via email with information about new product
-                features and special offers. Visit our <a href="#" target="_blank">
-                  Email Subscriptions page</a></div>
+                features and special offers. Visit our <a href="#" target="_blank"> Email Subscriptions page</a>
+                </div>
               </label>
             </div>
 <!---prospects only end-->
@@ -560,7 +560,7 @@ categories: CWS
 $('.input-group.date').datepicker({
     startDate: "+4d",
     daysOfWeekDisabled: "0,6",
-    datesDisabled: ['11/24/2016', '12/25/2016', '01/01/2016'],
+    datesDisabled: ['11/24/2016', '12/25/2016', '01/01/2017'],
     orientation: "bottom left",
 });
 </script>

@@ -1,0 +1,276 @@
+@import "tds-components/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+/*/// Package Compairison  ///*/
+
+
+.cws-packages section {
+  //Clearing Bootstrap paddings
+  .col-lg-2.col-md-1 {
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none !important;
+    &:hover, &:focus {
+      text-decoration: underline;
+      color: $tds-dkr-blue;
+    }
+  }
+
+  margin: 5px 0;
+  padding: 20px 0;
+    &:hover, &:focus {
+      background-color: #ebf6fc;
+      border-radius: 5px;
+      border: 0px;
+    }
+  }
+
+
+////Package Title////
+h3.hr-after-text {
+  @media(max-width: 959px) {
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.75em;
+    &:after {
+      content:"";
+      display: none;
+    }
+  }
+}
+
+
+////Package Details Section////
+.cws-container-packageDetails {
+  //Clearing Bootstrap paddings
+  .col-md-3 {
+    padding-left: 0;
+  }
+  .col-md-9 {
+    padding-left: 0;
+  }
+}
+
+////Package Icon////
+.cws-icon-packageCompairison {
+  max-width: 150px;
+  float: right;
+  display: block;
+
+  @media(max-width: 991px) {
+    margin: 0 auto;
+    float: none;
+  }
+  &:hover, &:focus {
+    border-radius: 0;
+    border: 0;
+  }
+}
+
+////Package Descriptions////
+.cws-container-productDescription {
+  float: left;
+  padding-right: 15px;
+  width: 33%;
+
+  ////// Product spacer border/////
+  +div {
+    border-left: 1px $tds-dk-gray-80 solid;
+    padding-left: 15px;
+
+    //////Icon over border/////
+    &:before {
+      content: "";
+      width: 25px;
+      height: 25px;
+      margin-left: -28px;
+      background: $tds-lt-blue;
+      border-radius: 20px;
+      z-index: 50;
+      position: absolute;
+      top: 50px;
+      background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 15px;
+      @media(max-width: 958px) {
+        top: auto;
+        margin: -34px 37%;
+      }
+    }
+
+    @media(max-width: 958px) {
+      border-left: 0;
+    }
+  }
+
+  @media(max-width: 959px) {
+    width: 100%;
+    border-top: 1px $tds-dk-gray-80 solid;
+    padding: 20px 0;
+  }
+}
+
+
+////Package Button and links////
+.linkOverlay {
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 25;
+}
+
+a.cws-btn {
+width: 100%;
+margin-top: 20px;
+padding: 12px 16px;
+clear: both;
+color: #FFFFFF!important;
+background-color: $tds-green;
+border-color: $tds-green;
+text-align: left;
+border: 1px;
+box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+text-decoration: none !important;
+z-index: 100;
+
+  &:after {
+    content: "";
+    width: 24px;
+    height: 16px;
+    float: right;
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 9px 14px;
+  }
+
+  &:before {
+    content:" ";
+    display:table;
+    clear:both;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: $tds-dkr-green !important;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: none !important;
+    color: $tds-white;
+    border-radius: 0;
+    border: 0;
+    z-index: 100;
+  }
+}
+
+
+a.cws-btn.desktop {
+  @media(max-width: 959px) {
+    display: none;
+  }
+}
+
+a.cws-btn.mobile {
+  @media(min-width: 958px) {
+    display: none;
+  }
+}
+
+
+///Price Typography styling////
+.cws-container-priceDetails {
+  text-align: center;
+
+  h4, p, ul, .cws-packagePrice {
+    color: $tds-lt-blue;
+    &:hover, &:focus {
+      color: $tds-dkr-blue;
+    }
+  }
+
+  .cws-packagePrice {
+    color: $tds-lt-blue;
+    font-size:42px;
+    line-height:18px;
+      .cws-sub-text {
+        display: inline-block;
+        font-size: 14px;
+        }
+  }
+}
+
+.lessThenThree {
+  width: 50%;
+  @media(max-width: 959px) {
+    width: 100%;
+}
+}
+
+////////////////////////////////////
+///////Vertical Layout/////////
+///////////////////////////////////
+
+////Package Title////
+.cws-packages section.vertical h3.hr-after-text {
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.75em;
+    &:after {
+      content:"";
+      display: none;
+    }
+  }
+
+  ////Package Icon////
+.cws-packages section.vertical .cws-icon-packageCompairison {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    &:hover, &:focus {
+      border-radius: 0;
+      border: 0;
+    }
+  }
+
+.cws-packages section.vertical .packageOfferings {
+  padding: 0 15px
+}
+
+
+////Package Descriptions////
+.cws-packages section.vertical .cws-container-productDescription {
+  float: left;
+  padding: 20px 0;
+  width: 100%;
+  border-top: 1px $tds-dk-gray-80 solid;
+
+  ////// Product spacer border/////
+  +div {
+    //////Icon over border/////
+    &:before {
+      content: "";
+      width: 25px;
+      height: 25px;
+      background: $tds-lt-blue;
+      border-radius: 20px;
+      z-index: 50;
+      position: absolute;
+      top: auto;
+      margin: -34px 40%;
+      background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 15px;
+
+    }
+    border-left: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+}
