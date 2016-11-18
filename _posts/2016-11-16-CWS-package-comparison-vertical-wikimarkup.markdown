@@ -47,15 +47,15 @@ categories: CWS
             $### savings over 24 months</p>
             <!--rich text componet end-->
 
-            <!--Removed from Horziontal for vertical-
-            <a class="cws-btn btn-block desktop" href="#childpage"><span>Add to Cart</span></a>
-             -->
+            <!--Removed from Horziontal for vertical-->
+            <!--<a class="cws-btn btn-block desktop" href="#childpage"><span>Add to Cart</span></a>-->
 
             </div>
         </div>
       <!--Price and other details end--->
 
-      <!--Package offerings and details FOR VERT: Removed from Horziontal col-md-9  col-md-pull-3-->
+      <!--Package offerings and details
+      FOR VERT: Removed from Horziontal col-md-9  col-md-pull-3, added clearfix -->
         <div class="packageOfferings clearfix">
 
           <!--Product and details --->
@@ -119,12 +119,9 @@ categories: CWS
 
 
 
-
-
 <!--Rule: Place this after every 2 sections -->
 <div class="clearfix visible-sm-block"></div>
 <!--Rule: Place this after every 2 sections end-->
-
 
 
 <!--Vertical Rule: Place this after every 3 sections-->
