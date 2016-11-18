@@ -15,7 +15,7 @@ categories: CWS
 <!--Not part of the componet -->
 <!--user name or address bar end-->
 
-
+<!--container for package sections-->
 <div class="cws-packages container">
 <div class="row">
 
@@ -298,6 +298,9 @@ categories: CWS
 </section>
 <!--CWS Horzontial Package end --->
 
+</div>
+</div>
+<!--container for package sections end-->
 
 
 
