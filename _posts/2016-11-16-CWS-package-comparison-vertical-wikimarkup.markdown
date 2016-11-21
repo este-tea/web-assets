@@ -1,6 +1,6 @@
 ---
 layout: default-cable
-title:  "CWS-Package Comparison Vertical"
+title:  "CWS-Package Comparison Vertical wikimarkup"
 date:   2016-11-17
 categories: CWS
 ---
