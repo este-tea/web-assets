@@ -775,23 +775,19 @@ a.cws-btn:hover, a.cws-btn:focus {
 }
 
 /* ===== tds cable warrnings and error messages === */
-.container.shopperId, .container.warning-cartEmpty, .container.tds-alert.tds-alert-critical {
+.container.warning-cartEmpty, .container.tds-alert.tds-alert-critical {
   max-width: 100%;
   padding: 15px 15px 5px 15px;
 }
-.container.shopperId p, .container.warning-cartEmpty p, .container.tds-alert.tds-alert-critical p {
+.container.warning-cartEmpty p, .container.tds-alert.tds-alert-critical p {
   line-height: 1.5em;
   font-size: 14px;
 }
-.container.shopperId a, .container.warning-cartEmpty a, .container.tds-alert.tds-alert-critical a {
+.container.warning-cartEmpty a, .container.tds-alert.tds-alert-critical a {
   color: #555;
 }
-.container.shopperId a:hover, .container.shopperId a :focus, .container.warning-cartEmpty a:hover, .container.warning-cartEmpty a :focus, .container.tds-alert.tds-alert-critical a:hover, .container.tds-alert.tds-alert-critical a :focus {
+.container.warning-cartEmpty a:hover, .container.warning-cartEmpty a :focus, .container.tds-alert.tds-alert-critical a:hover, .container.tds-alert.tds-alert-critical a :focus {
   color: #0A7AAA;
-}
-
-.container.shopperId {
-  background-color: #E8EBF3;
 }
 
 .container.warning-cartEmpty {
@@ -806,6 +802,27 @@ a.cws-btn:hover, a.cws-btn:focus {
 }
 .container.tds-alert.tds-alert-critical a:hover, .container.tds-alert.tds-alert-critical a :focus {
   color: #991419;
+}
+
+.tds-alert.tds-alert-warning {
+  background-image: none !important;
+  border-left: 0px !important;
+  padding-left: 0px;
+}
+
+.tds-alert.tds-alert-warning .container p:before {
+  content: "";
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg) !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin-right: 15px;
 }
 
 .datepicker-switch {

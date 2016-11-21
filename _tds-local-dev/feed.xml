@@ -6,9 +6,52 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Nov 2016 10:55:43 -0600</pubDate>
-    <lastBuildDate>Fri, 18 Nov 2016 10:55:43 -0600</lastBuildDate>
+    <pubDate>Mon, 21 Nov 2016 17:15:32 -0600</pubDate>
+    <lastBuildDate>Mon, 21 Nov 2016 17:15:32 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>CWS-User Greeting</title>
+        <description>&lt;!--User with address for TDS Cable --&gt;
+&lt;div class=&quot;tds-error-msg tds-error-info&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;p&gt;Address: &lt;span class=&quot;userGreeting-address&quot;&gt;&lt;span class=&quot;has-titleCase&quot;&gt;${ADDRESS 1} ${ADDRESS 2}, ${CITY}&lt;/span&gt;, &lt;span class=&quot;has-allCaps&quot;&gt;${STATE}&lt;/span&gt;&lt;/span&gt;. &lt;a href=&quot;/visitor/address-entry.html?redirectDestination=%2Fshop.html&quot;&gt;Edit address&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--User with address for Bend Broadband--&gt;
+&lt;div class=&quot;tds-alert tds-alert-warning&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+
+      &lt;p&gt;The address you entered is in the BendBroadband serving territory. Please visit &lt;a href=&quot;https://www.bendbroadband.com&quot;&gt;https://www.bendbroadband.com&lt;/a&gt; to find available products and services.&lt;/p&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;!--User with address for TDS Telecom--&gt;
+&lt;div class=&quot;tds-alert tds-alert-warning&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+
+        &lt;p&gt;The address you entered is in the TDS Telecom serving territory. Please visit &lt;a href=&quot;https://www.tdstelecom.com/shop.html&quot;&gt;https://www.tdstelecom.com&lt;/a&gt; to find available products and services.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;!--User has logged in for Shopping--&gt;
+&lt;div class=&quot;tds-error-msg tds-error-info&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+       &lt;p&gt;You&#39;re logged in as ${USERNAME}. &lt;a href=&quot;${LOGOUT LINK}&quot;&gt;Log Out&lt;/a&gt;.&lt;/p&gt;
+       &lt;/div&gt;
+   &lt;/div&gt;
+
+&lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 21 Nov 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/11/21/cws-user-greeting/</link>
+        <guid isPermaLink="true">/cws/2016/11/21/cws-user-greeting/</guid>
+        
+        
+        <category>CWS</category>
+        
+      </item>
     
       <item>
         <title>CWS-Package Comparison Vertical</title>
@@ -541,7 +584,7 @@
       </item>
     
       <item>
-        <title>CWS-Package Comparison Vertical</title>
+        <title>CWS-Package Comparison Vertical wikimarkup</title>
         <description>&lt;div class=&quot;cws-packages container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 
@@ -583,15 +626,15 @@
             $### savings over 24 months&lt;/p&gt;
             &lt;!--rich text componet end--&gt;
 
-            &lt;!--Removed from Horziontal for vertical-
-            &lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;#childpage&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;
-             --&gt;
+            &lt;!--Removed from Horziontal for vertical--&gt;
+            &lt;!--&lt;a class=&quot;cws-btn btn-block desktop&quot; href=&quot;#childpage&quot;&gt;&lt;span&gt;Add to Cart&lt;/span&gt;&lt;/a&gt;--&gt;
 
             &lt;/div&gt;
         &lt;/div&gt;
       &lt;!--Price and other details end---&gt;
 
-      &lt;!--Package offerings and details FOR VERT: Removed from Horziontal col-md-9  col-md-pull-3--&gt;
+      &lt;!--Package offerings and details
+      FOR VERT: Removed from Horziontal col-md-9  col-md-pull-3, added clearfix --&gt;
         &lt;div class=&quot;packageOfferings clearfix&quot;&gt;
 
           &lt;!--Product and details ---&gt;
@@ -655,12 +698,9 @@
 
 
 
-
-
 &lt;!--Rule: Place this after every 2 sections --&gt;
 &lt;div class=&quot;clearfix visible-sm-block&quot;&gt;&lt;/div&gt;
 &lt;!--Rule: Place this after every 2 sections end--&gt;
-
 
 
 &lt;!--Vertical Rule: Place this after every 3 sections--&gt;
