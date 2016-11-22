@@ -573,18 +573,18 @@ a.btn-subscribe::before {
   padding-left: 0;
 }
 
-.cws-icon-packageCompairison {
+.cws-icon-packageComparison {
   max-width: 150px;
   float: right;
   display: block;
 }
 @media (max-width: 991px) {
-  .cws-icon-packageCompairison {
+  .cws-icon-packageComparison {
     margin: 0 auto;
     float: none;
   }
 }
-.cws-icon-packageCompairison:hover, .cws-icon-packageCompairison:focus {
+.cws-icon-packageComparison:hover, .cws-icon-packageComparison:focus {
   border-radius: 0;
   border: 0;
 }
@@ -641,10 +641,10 @@ a.btn-subscribe::before {
   z-index: 25;
 }
 
-a.cws-btn {
+div.cws-btn, a.cws-btn {
   width: 100%;
   margin-top: 20px;
-  padding: 12px 16px;
+  padding: 12px 16px !important;
   clear: both;
   color: #FFFFFF !important;
   background-color: #6B9C22;
@@ -655,7 +655,7 @@ a.cws-btn {
   text-decoration: none !important;
   z-index: 100;
 }
-a.cws-btn:after {
+div.cws-btn:after, a.cws-btn:after {
   content: "";
   width: 24px;
   height: 16px;
@@ -665,12 +665,16 @@ a.cws-btn:after {
   background-repeat: no-repeat;
   background-size: 9px 14px;
 }
-a.cws-btn:before {
+div.cws-btn:before, a.cws-btn:before {
   content: " ";
   display: table;
   clear: both;
+  width: 0 !important;
+  height: 0 !important;
+  background: none !important;
+  background-image: none !important;
 }
-a.cws-btn:hover, a.cws-btn:focus {
+div.cws-btn:hover, div.cws-btn:focus, a.cws-btn:hover, a.cws-btn:focus {
   text-decoration: none;
   background-color: #618e34 !important;
   cursor: pointer;
@@ -683,13 +687,13 @@ a.cws-btn:hover, a.cws-btn:focus {
 }
 
 @media (max-width: 959px) {
-  a.cws-btn.desktop {
+  div.cws-btn.desktop, a.cws-btn.desktop {
     display: none;
   }
 }
 
 @media (min-width: 958px) {
-  a.cws-btn.mobile {
+  div.cws-btn.mobile, a.cws-btn.mobile {
     display: none;
   }
 }
@@ -699,9 +703,6 @@ a.cws-btn:hover, a.cws-btn:focus {
 }
 .cws-container-priceDetails h4, .cws-container-priceDetails p, .cws-container-priceDetails ul, .cws-container-priceDetails .cws-packagePrice {
   color: #0C8FD0;
-}
-.cws-container-priceDetails h4:hover, .cws-container-priceDetails h4:focus, .cws-container-priceDetails p:hover, .cws-container-priceDetails p:focus, .cws-container-priceDetails ul:hover, .cws-container-priceDetails ul:focus, .cws-container-priceDetails .cws-packagePrice:hover, .cws-container-priceDetails .cws-packagePrice:focus {
-  color: #19388A;
 }
 .cws-container-priceDetails .cws-packagePrice {
   color: #0C8FD0;
@@ -732,13 +733,13 @@ a.cws-btn:hover, a.cws-btn:focus {
   display: none;
 }
 
-.cws-packages section.vertical .cws-icon-packageCompairison {
+.cws-packages section.vertical .cws-icon-packageComparison {
   max-width: 150px;
   display: block;
   margin: 0 auto;
   float: none;
 }
-.cws-packages section.vertical .cws-icon-packageCompairison:hover, .cws-packages section.vertical .cws-icon-packageCompairison:focus {
+.cws-packages section.vertical .cws-icon-packageComparison:hover, .cws-packages section.vertical .cws-icon-packageComparison:focus {
   border-radius: 0;
   border: 0;
 }

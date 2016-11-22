@@ -29,7 +29,7 @@ categories: CWS
 <div class="row">
 
     <div class="col-lg-2 col-md-1">
-    <img class="cws-icon-packageCompairison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
+    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
     </div>
 
     <div class="col-lg-10 col-md-10">
@@ -53,7 +53,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Editable by author-->
-            <a class="cws-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <div class="cws-btn btn-block desktop"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
             </div>
@@ -105,7 +105,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <a class="cws-btn btn-block mobile" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <div class="cws-btn btn-block mobile"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
@@ -132,7 +132,7 @@ categories: CWS
 
 <div class="row">
     <div class="col-lg-2 col-md-1">
-    <img class="cws-icon-packageCompairison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
+    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
     </div>
 
     <div class="col-lg-10 col-md-10">
@@ -156,7 +156,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Editable by author-->
-            <a class="cws-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <div class="cws-btn btn-block desktop"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
             </div>
@@ -195,7 +195,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <a class="cws-btn btn-block mobile" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <div class="cws-btn btn-block mobile"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
@@ -231,7 +231,7 @@ categories: CWS
 
 <div class="row">
     <div class="col-lg-2 col-md-1">
-    <img class="cws-icon-packageCompairison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
+    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
     </div>
 
     <div class="col-lg-10 col-md-10">
@@ -255,7 +255,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Editable by author-->
-            <a class="cws-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <div class="cws-btn btn-block desktop"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
             </div>
@@ -281,7 +281,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <a class="cws-btn btn-block mobile" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <div class="cws-btn btn-block mobile"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
