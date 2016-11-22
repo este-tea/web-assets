@@ -54,7 +54,7 @@ h3.hr-after-text {
 }
 
 ////Package Icon////
-.cws-icon-packageCompairison {
+.cws-icon-packageComparison {
   max-width: 150px;
   float: right;
   display: block;
@@ -124,10 +124,10 @@ h3.hr-after-text {
   z-index: 25;
 }
 
-a.cws-btn {
+div.cws-btn, a.cws-btn {
 width: 100%;
 margin-top: 20px;
-padding: 12px 16px;
+padding: 12px 16px !important;
 clear: both;
 color: #FFFFFF!important;
 background-color: $tds-green;
@@ -153,6 +153,11 @@ z-index: 100;
     content:" ";
     display:table;
     clear:both;
+    ////// Clear Icon over border/////
+    width: 0 !important;
+    height: 0 !important;
+    background: none !important;
+    background-image: none !important;
   }
 
   &:hover, &:focus {
@@ -169,13 +174,13 @@ z-index: 100;
 }
 
 
-a.cws-btn.desktop {
+div.cws-btn.desktop, a.cws-btn.desktop  {
   @media(max-width: 959px) {
     display: none;
   }
 }
 
-a.cws-btn.mobile {
+div.cws-btn.mobile, a.cws-btn.mobile {
   @media(min-width: 958px) {
     display: none;
   }
@@ -188,9 +193,6 @@ a.cws-btn.mobile {
 
   h4, p, ul, .cws-packagePrice {
     color: $tds-lt-blue;
-    &:hover, &:focus {
-      color: $tds-dkr-blue;
-    }
   }
 
   .cws-packagePrice {
@@ -227,7 +229,7 @@ a.cws-btn.mobile {
   }
 
   ////Package Icon////
-.cws-packages section.vertical .cws-icon-packageCompairison {
+.cws-packages section.vertical .cws-icon-packageComparison {
     max-width: 150px;
     display: block;
     margin: 0 auto;
