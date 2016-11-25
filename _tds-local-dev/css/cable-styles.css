@@ -868,5 +868,36 @@ label:hover input:checked + .tds-radio-btn:before {
   border-top: 1px solid #BBB;
 }
 
+/*==Self-ID page styles==*/
+.cable-content-intro {
+  font-size: 18px;
+  color: #353535;
+  font-weight: normal;
+}
+
+/*/// Shopper ID  ///*/
+#shopperId .cable-content-intro {
+  padding: 20px 0;
+}
+
+.tds-msg-box {
+  border: solid 3px #e3e3e3;
+  min-height: 236px;
+  max-height: auto;
+}
+.tds-msg-box h2 {
+  font-weight: 400;
+  font-size: 21px;
+}
+@media (max-width: 750px) {
+  .tds-msg-box {
+    margin: 0 0 30px 0;
+  }
+}
+
+.col-sm-12 .tds-msg-box {
+  margin: 0 0 30px 0;
+}
+
 /* ===== END tds cable style overrides ========================================
 /* ========================================================================== */
