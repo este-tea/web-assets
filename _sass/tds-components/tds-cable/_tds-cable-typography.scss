@@ -3,6 +3,15 @@
 
 /* ===== tds cable Typography === */
 
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+h1.page-header {
+  border-bottom: 2px solid $tds-gray;
+  padding-bottom: 15px;
+  margin: 40px 0 20px;
+}
 
 /*==form styles==*/
 
@@ -16,7 +25,7 @@
     width: 100%;
     margin-right: -100%;
     margin-left: 10px;
-    border-top: 1px solid $tds-dk-gray-40;
+    border-top: 1px solid $tds-gray;
 }
 }
 

@@ -160,6 +160,7 @@ td .line-item-actions .tds-btn-gray {
 // =============================================================================
 .tds-btn-lt-blue {
   background: $tds-lt-blue-100;
+  color: $tds-white !important;
   &:hover {
     background: darken($tds-lt-blue, 5%) !important;
     color: $tds-white !important;

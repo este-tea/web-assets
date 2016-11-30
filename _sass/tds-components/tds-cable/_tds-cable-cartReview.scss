@@ -1,0 +1,188 @@
+@import "tds-components/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+
+
+/////Table styles///////
+table.table {
+//Overrideing Styles.css
+tbody > tr:last-child > td {
+border-bottom: none !important;
+}
+//Overrideing Styles.css end
+
+  font-size: 18px;
+  tbody > tr > td {
+    padding:  8px 0px 8px 20px;
+  }
+}
+
+section .table > tbody > tr > td {
+  @media (max-width: 480px) {
+    display: block;
+    padding: 0px 0px 0px 20px;
+      &:nth-child(odd) {
+      border-top: 20px solid transparent;
+    }
+  }
+}
+
+
+
+////Alert Message in table/////
+table.table tr.tds-alert.tds-alert-critical {
+  display: table-row;
+  td {
+    padding: 15px 0 15px 20px;
+    @media (max-width: 480px) {
+      display: block;
+      padding: 0px 0px 0px 20px;
+      &:nth-child(odd) {
+      padding-top: 15px
+      }
+      &:nth-child(even) {
+      padding-bottom: 15px
+      }
+    }
+  }
+}
+
+
+///Package Boxes/////
+.tds-panel {
+  border: 2px solid $tds-gray;
+  h2 {
+    color: $tds-lt-blue;
+    margin: 0;
+    @media (max-width: 480px) {
+    margin-bottom: 20px;
+    }
+  }
+  h3.line-item-title {
+    font-size: 21px;
+  color: $tds-dkr-blue;
+  margin: 0;
+    @media (max-width: 480px) {
+    margin-bottom: 20px;
+    }
+    &:nth-child(odd) {
+    padding-top: 15px;
+    }
+    + table + h3 {
+      padding-top: 20px;
+      border-top: 2px solid $tds-gray;
+    }
+    + table {
+      @media (max-width: 480px) {
+      margin-bottom: 15px;
+      }
+    }
+  }
+
+  td.single-product {
+    padding: 0px;
+    h3.line-item-title {
+      padding: 0;
+      @media (max-width: 480px) {
+      margin-bottom: 0px;
+      }
+    }
+    +td {
+      @media (max-width: 480px) {
+      padding: 0;
+      }
+    }
+  }
+
+}
+
+.panel-heading {
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 26px;
+  padding: 10px 0;
+  border-bottom: 2px solid $tds-gray !important;
+  .col-md-9.col-sm-12 {
+    padding: 0;
+  }
+  .col-md-3.col-sm-12 {
+    padding: 0;
+    .form-group {
+      float: right;
+      @media (max-width: 960px) {
+        float: left;
+        margin-top: 20px;
+      }
+    }
+  }
+  h2 {
+    margin: 10px 0 0 0;
+  }
+  .line-item-actions {
+    .btn {
+      padding: 12px 16px !important;
+      margin-right: 16px;
+      &:last-child {
+      margin-right: 0px;
+      }
+    }
+    a.btn {
+      text-decoration: none;
+    }
+  }
+}
+
+.tds-cost-price {
+  width: 25%;
+  @media (max-width: 940px) {
+    width: 33%;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+
+////Buttons////
+
+#emptyCartButton {
+  &:before {
+    content: "";
+    width: 30px;
+    height: 22px;
+    margin: -5px 0 0 -10px;
+    float: left;
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.cart-overview-actions form.pull-right.form-group {
+  margin-bottom: 20px;
+  @media (max-width: 480px) {
+    float: none!important;
+  }
+}
+
+button#beginCheckout {
+  @media (max-width: 480px) {
+    margin-top: 28px;
+    width: 100%!important;
+    display: inline-block;
+  }
+}
+
+///Tyopgraphy//
+.tds-cost-price {
+  color: $tds-green;
+  text-transform:uppercase;
+  span {
+    font-size: .65em;
+  }
+}
+
+.tds-cost-price.cost-one-time {
+  color: $tds-dkr-blue;
+}
