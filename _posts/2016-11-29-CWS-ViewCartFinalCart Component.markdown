@@ -7,13 +7,13 @@ categories: CWS
 
 <div class="container">
   <div class="row">
-    <h1 class="page-header">Final Cart Review</h1>
+    <h1 class="page-header">View Cart/Final Cart Review</h1>
   </div>
 </div>
 
 
-<div class="tds-alert tds-alert-critical">
-  <div class="container" >
+<div class="container" >
+  <div class="tds-alert tds-alert-critical">
       <p>In order to proceed, please fix the following item(s):</p>
       <ul>
         <li>Error message one</li>
@@ -25,7 +25,7 @@ categories: CWS
 
 <div class="container">
 
-<!--Only on final review page: Cart submition top button-->
+<!--Only on final review page: Cart submission top button-->
 <div class="row">
     <div class="cart-overview-actions form-inline">
     <form class="pull-right form-group" name="checkout" action="?" method="POST">
@@ -35,14 +35,14 @@ categories: CWS
         <button id="beginCheckout" class="gallery-btn btn-green" type="submit" value="BEGIN CHECKOUT">Begin Checkout</button>
     </form>
   </div>
-</div><!--Only on final review page: Cart submition top button end-->
+</div><!--Only on final review page: Cart submission top button end-->
 
 <!--Big Package-->
   <div class="row">
-    <section class="bundle-lineitems tds-panel">
+    <section class="bundle-lineitems cart-review-container">
 
       <!--Package Header-->
-            <div class="panel-heading">
+            <div class="cart-review-header">
               <h2 class="package-title col-md-9 col-sm-12">Package Name</h2>
 
               <!--<div class="line-item-actions col-md-3 col-sm-12"> and containing content is removed in final cart page -->
@@ -62,11 +62,11 @@ categories: CWS
             <!--Package Product-->
             <h3 class="line-item-title">Internet Services</h3>
             <table class="table">
-                <tbody>
-                  <tr>
-                    <td>1 Gig Fiber Internet</td>
-                    <td class="tds-cost-price">$xx.xx<span>/mo for xx months</span></td>
-                  </tr>
+              <tbody>
+                <tr>
+                  <td>1 Gig Fiber Internet</td>
+                  <td class="tds-cost-price">$xx.xx<span>/mo for xx months</span></td>
+                </tr>
 
                 <tr>
                     <td>4-port Wireless V1000H Gateway Modem</td>
@@ -82,7 +82,7 @@ categories: CWS
                     <td>TDS Internet Security</td>
                     <td class="tds-cost-price">FREE <span>for 30 Days</span></td>
                 </tr>
-            </tbody>
+              </tbody>
           </table><!--Package Product end-->
 
 
@@ -95,34 +95,34 @@ categories: CWS
                   <td class="tds-cost-price">$xx.xx<span>/mo for xx months</span></td>
                 </tr>
 
-              <tr>
-                  <td>High Definition Upgrade</td>
-                  <td class="tds-cost-price">$XX.XX<span>/mo</span></td>
-              </tr>
+                <tr>
+                    <td>High Definition Upgrade</td>
+                    <td class="tds-cost-price">$XX.XX<span>/mo</span></td>
+                </tr>
 
-              <tr>
-                  <td>Connected Home DVR</td>
-                  <td class="tds-cost-price">$4.95<span>/mo</span></td>
-              </tr>
+                <tr>
+                    <td>Connected Home DVR</td>
+                    <td class="tds-cost-price">$4.95<span>/mo</span></td>
+                </tr>
 
-              <tr>
-                  <td>Wireless Set Top Box (Qty: 2)</td>
-                  <td class="tds-cost-price">$XX.XX<span>/mo</span></td>
-              </tr>
+                <tr>
+                    <td>Wireless Set Top Box (Qty: 2)</td>
+                    <td class="tds-cost-price">$XX.XX<span>/mo</span></td>
+                </tr>
 
-              <tr>
-                  <td>HBO</td>
-                  <td class="tds-cost-price">FREE <span>for 30 Days</span></td>
-              </tr>
+                <tr>
+                    <td>HBO</td>
+                    <td class="tds-cost-price">FREE <span>for 30 Days</span></td>
+                </tr>
 
-              <tr>
-                  <td>Professional Installation</td>
-                  <td class="tds-cost-price">$XX.XX <span>one-time fee</span></td>
-              </tr>
-          </tbody>
-          </table>
+                <tr>
+                    <td>Professional Installation</td>
+                    <td class="tds-cost-price">$XX.XX <span>one-time fee</span></td>
+                </tr>
+            </tbody>
+          </table><!--Package Product end-->
 
-
+          <!--Package Product-->
           <h3 class="line-item-title">Phone Services</h3>
           <table class="table">
               <tbody>
@@ -131,24 +131,22 @@ categories: CWS
                   <td class="tds-cost-price">$xx.xx<span>/mo for xx months</span></td>
                 </tr>
 
-              <tr>
-                  <td>4-port Wireless V1000H Gateway Modem</td>
-                  <td class="tds-cost-price">$4.95<span>/mo</span></td>
-              </tr>
+                <tr>
+                    <td>4-port Wireless V1000H Gateway Modem</td>
+                    <td class="tds-cost-price">$4.95<span>/mo</span></td>
+                </tr>
 
-              <tr>
-                  <td>Remote PC Support</td>
-                  <td class="tds-cost-price">$0.00<span>/mo</span></td>
-              </tr>
+                <tr>
+                    <td>Remote PC Support</td>
+                    <td class="tds-cost-price">$0.00<span>/mo</span></td>
+                </tr>
 
-              <tr>
-                  <td>TDS Internet Security</td>
-                  <td class="tds-cost-price">FREE <span>for 30 Days</span></td>
-              </tr>
-          </tbody>
-          </table>
-
-
+                <tr>
+                    <td>TDS Internet Security</td>
+                    <td class="tds-cost-price">FREE <span>for 30 Days</span></td>
+                </tr>
+            </tbody>
+          </table><!--Package Product end-->
 
     </section>
   </div><!--Big Package End-->
@@ -158,10 +156,10 @@ categories: CWS
 
   <!--Addon Product Package-->
     <div class="row">
-      <section class="bundle-lineitems tds-panel">
+      <section class="bundle-lineitems cart-review-container ">
 
         <!--Package Header-->
-              <div class="panel-heading">
+              <div class="cart-review-header">
                 <h2 class="package-title col-md-9 col-sm-12">Package Name</h2>
 
                 <!--<div class="line-item-actions col-md-3 col-sm-12"> and containing content is removed in final cart page -->
@@ -175,25 +173,24 @@ categories: CWS
                     </form>
                 </div>
 
-
               </div><!--Package Header end-->
 
               <!--Package Product-->
               <table class="table">
-                  <tbody>
-                    <tr>
-                      <td class="single-product">
-                        <h3 class="line-item-title">TDS Internet Security: Add On</h3>
-                      </td>
-                      <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
-                    </tr>
+                <tbody>
+                  <tr>
+                    <td class="single-product">
+                      <h3 class="line-item-title">TDS Internet Security: Add On</h3>
+                    </td>
+                    <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
+                  </tr>
 
-                    <tr>
-                      <td class="single-product">
-                        <h3 class="line-item-title">Remote PC Support: Add On</h3>
-                      </td>
-                      <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
-                    </tr>
+                  <tr>
+                    <td class="single-product">
+                      <h3 class="line-item-title">Remote PC Support: Add On</h3>
+                    </td>
+                    <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
+                  </tr>
 
               </tbody>
             </table><!--Package Product end-->
@@ -206,10 +203,10 @@ categories: CWS
 
       <!--Addon Single Line items-->
         <div class="row">
-          <section class="bundle-lineitems tds-panel">
+          <section class="bundle-lineitems cart-review-container ">
 
             <!--Package Header-->
-                  <div class="panel-heading">
+                  <div class="cart-review-header">
                     <h2 class="package-title col-md-9 col-sm-12">Package Name</h2>
 
                     <!--<div class="line-item-actions col-md-3 col-sm-12"> and containing content is removed in final cart page -->
@@ -223,22 +220,20 @@ categories: CWS
                         </form>
                     </div>
 
-
                   </div><!--Package Header end-->
 
                   <!--Package Product-->
                   <table class="table">
-                      <tbody>
-                        <tr>
-                          <td>3 Star Voice Package: Add On</td>
-                          <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
-                        </tr>
+                    <tbody>
+                      <tr>
+                        <td>3 Star Voice Package: Add On</td>
+                        <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
+                      </tr>
 
-                        <tr>
-                          <td>Local Service: Additional Features</td>
-                          <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
-                        </tr>
-
+                      <tr>
+                        <td>Local Service: Additional Features</td>
+                        <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
+                      </tr>
                   </tbody>
                 </table><!--Package Product end-->
 
@@ -250,19 +245,19 @@ categories: CWS
 
   <!--Taxes and Fees-->
   <div class="row">
-    <section class="tds-panel">
+    <section class="cart-review-container ">
             <h3 class="line-item-title">Estimated Taxes &amp; Fees</h3>
             <table class="table">
-                <tbody>
-                  <tr>
-                    <td>3-Star Taxes and Fees</td>
-                    <td class="tds-cost-price">$8.86<span>/mo</span></td>
-                  </tr>
-
+              <tbody>
                 <tr>
-                    <td>Professional Installation Fee</td>
-                    <td class="tds-cost-price">$49.95 <span>one-time fee</span></td>
+                  <td>3-Star Taxes and Fees</td>
+                  <td class="tds-cost-price">$8.86<span>/mo</span></td>
                 </tr>
+
+              <tr>
+                  <td>Professional Installation Fee</td>
+                  <td class="tds-cost-price">$49.95 <span>one-time fee</span></td>
+              </tr>
             </tbody>
           </table>
     </section>
@@ -271,24 +266,24 @@ categories: CWS
 
 <!--Order Totals-->
   <div class="row">
-    <section class="order-totals tds-panel">
+    <section class="order-totals cart-review-container ">
             <h2>Order Total</h2>
             <table class="table">
-                <tbody>
-                  <tr>
-                    <td>One-time costs</td>
-                    <td class="tds-cost-price cost-one-time">$49.95</td>
-                  </tr>
-
+              <tbody>
                 <tr>
-                    <td>One-time credits</td>
-                    <td class="tds-cost-price cost-one-time">($49.95)</td>
+                  <td>One-time costs</td>
+                  <td class="tds-cost-price cost-one-time">$49.95</td>
                 </tr>
 
-                <tr>
-                    <td><strong>MONTHLY CHARGES</strong></td>
-                    <td class="tds-cart-price"><strong>$176.07</strong></td>
-                </tr>
+              <tr>
+                  <td>One-time credits</td>
+                  <td class="tds-cost-price cost-one-time">($49.95)</td>
+              </tr>
+
+              <tr>
+                  <td><strong>MONTHLY CHARGES</strong></td>
+                  <td class="tds-cart-price"><strong>$176.07</strong></td>
+              </tr>
             </tbody>
           </table>
     </section>

@@ -32,12 +32,14 @@ section .table > tbody > tr > td {
 ////Alert Message in table/////
 table.table tr.tds-alert.tds-alert-critical {
   display: table-row;
+  border-top: 0;
   td {
     padding: 15px 0 15px 20px;
     @media (max-width: 480px) {
       display: block;
       padding: 0px 0px 0px 20px;
       &:nth-child(odd) {
+      border-top: 20px solid $tds-white;
       padding-top: 15px
       }
       &:nth-child(even) {
@@ -49,33 +51,36 @@ table.table tr.tds-alert.tds-alert-critical {
 
 
 ///Package Boxes/////
-.tds-panel {
+.cart-review-container{
   border: 2px solid $tds-gray;
+  padding: 24px;
+  margin: 0 0 30px 0;
   h2 {
     color: $tds-lt-blue;
     margin: 0;
-    @media (max-width: 480px) {
-    margin-bottom: 20px;
-    }
   }
   h3.line-item-title {
     font-size: 21px;
-  color: $tds-dkr-blue;
-  margin: 0;
-    @media (max-width: 480px) {
-    margin-bottom: 20px;
-    }
+    color: $tds-dkr-blue;
+    margin: 0;
+    padding-top: 20px;
+
     &:nth-child(odd) {
     padding-top: 15px;
     }
     + table + h3 {
-      padding-top: 20px;
       border-top: 2px solid $tds-gray;
     }
     + table {
       @media (max-width: 480px) {
       margin-bottom: 15px;
       }
+    }
+  }
+
+  table {
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -96,11 +101,11 @@ table.table tr.tds-alert.tds-alert-critical {
 
 }
 
-.panel-heading {
+.cart-review-header {
   overflow: hidden;
-  margin-top: 5px;
-  margin-bottom: 26px;
-  padding: 10px 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
   border-bottom: 2px solid $tds-gray !important;
   .col-md-9.col-sm-12 {
     padding: 0;
@@ -130,6 +135,9 @@ table.table tr.tds-alert.tds-alert-critical {
       text-decoration: none;
     }
   }
+  @media (max-width: 480px) {
+      margin-bottom: 0px;
+  }
 }
 
 .tds-cost-price {
@@ -142,6 +150,13 @@ table.table tr.tds-alert.tds-alert-critical {
   }
 }
 
+
+.cart-review-header + table {
+  margin-top: 20px;
+  @media (max-width: 480px) {
+  margin-top: 0px;
+  }
+}
 
 ////Buttons////
 
