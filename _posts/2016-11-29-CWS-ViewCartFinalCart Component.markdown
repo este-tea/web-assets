@@ -1,6 +1,6 @@
 ---
 layout: default-cable
-title:  "CWS-Final Cart Review Component"
+title:  "CWS-ViewCart FinalCart Review Component"
 date:   2016-11-30
 categories: CWS
 ---
@@ -45,7 +45,17 @@ categories: CWS
             <div class="panel-heading">
               <h2 class="package-title col-md-9 col-sm-12">Package Name</h2>
 
-              <!--<div class="line-item-actions col-md-3 col-sm-12"> are removed in final cart page -->
+              <!--<div class="line-item-actions col-md-3 col-sm-12"> and containing content is removed in final cart page -->
+              <div class="line-item-actions col-md-3 col-sm-12">
+                  <form class="form-group" action="?" method="POST">
+                      <a class="btn tds-btn-gray tds-icon-pencil" href="#">Edit</a>
+                      <input type="hidden" name="currentRevisionNumber" value="?">
+                      <input type="hidden" name="removeItems" value="removeLineItem">
+                      <input type="hidden" name="lineItemId" value="?">
+                      <button class="btn tds-btn-gray tds-icon-times" type="submit">Remove</button>
+                  </form>
+              </div>
+
 
             </div><!--Package Header end-->
 
@@ -154,7 +164,16 @@ categories: CWS
               <div class="panel-heading">
                 <h2 class="package-title col-md-9 col-sm-12">Package Name</h2>
 
-                <!--<div class="line-item-actions col-md-3 col-sm-12"> are removed in final cart page -->
+                <!--<div class="line-item-actions col-md-3 col-sm-12"> and containing content is removed in final cart page -->
+                <div class="line-item-actions col-md-3 col-sm-12">
+                    <form class="form-group" action="?" method="POST">
+                        <a class="btn tds-btn-gray tds-icon-pencil" href="#">Edit</a>
+                        <input type="hidden" name="currentRevisionNumber" value="?">
+                        <input type="hidden" name="removeItems" value="removeLineItem">
+                        <input type="hidden" name="lineItemId" value="?">
+                        <button class="btn tds-btn-gray tds-icon-times" type="submit">Remove</button>
+                    </form>
+                </div>
 
 
               </div><!--Package Header end-->
@@ -163,12 +182,16 @@ categories: CWS
               <table class="table">
                   <tbody>
                     <tr>
-                      <td class="single-product"><h3 class="line-item-title">TDS Internet Security: Add On</h3></td>
+                      <td class="single-product">
+                        <h3 class="line-item-title">TDS Internet Security: Add On</h3>
+                      </td>
                       <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
                     </tr>
 
                     <tr>
-                      <td class="single-product"><h3 class="line-item-title">Remote PC Support: Add On</h3></td>
+                      <td class="single-product">
+                        <h3 class="line-item-title">Remote PC Support: Add On</h3>
+                      </td>
                       <td class="tds-cost-price">$xx.xx<span>/mo</span></td>
                     </tr>
 
@@ -189,7 +212,16 @@ categories: CWS
                   <div class="panel-heading">
                     <h2 class="package-title col-md-9 col-sm-12">Package Name</h2>
 
-                    <!--<div class="line-item-actions col-md-3 col-sm-12"> are removed in final cart page -->
+                    <!--<div class="line-item-actions col-md-3 col-sm-12"> and containing content is removed in final cart page -->
+                    <div class="line-item-actions col-md-3 col-sm-12">
+                        <form class="form-group" action="?" method="POST">
+                            <a class="btn tds-btn-gray tds-icon-pencil" href="#">Edit</a>
+                            <input type="hidden" name="currentRevisionNumber" value="?">
+                            <input type="hidden" name="removeItems" value="removeLineItem">
+                            <input type="hidden" name="lineItemId" value="?">
+                            <button class="btn tds-btn-gray tds-icon-times" type="submit">Remove</button>
+                        </form>
+                    </div>
 
 
                   </div><!--Package Header end-->
@@ -263,7 +295,7 @@ categories: CWS
   </div><!--Order Totals end-->
 
 
-<!--Cart overview action and submition-->
+<!--Cart overview action and submission-->
 <div class="row">
   <div class="cart-overview-actions form-inline">
       <button id="printButton" class="btn tds-btn-gray form-group"><i class="fa fa-print"></i> Print</button>
@@ -280,7 +312,7 @@ categories: CWS
           <button id="beginCheckout" class="gallery-btn btn-green" type="submit" value="BEGIN CHECKOUT">Begin Checkout</button>
       </form>
   </div>
-</div><!--Cart overview action and submition end-->
+</div><!--Cart overview action and submission end-->
 
 
 </div><!--contain closing-->
