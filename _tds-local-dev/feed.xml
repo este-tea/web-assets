@@ -6,9 +6,545 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Nov 2016 14:13:47 -0600</pubDate>
-    <lastBuildDate>Wed, 23 Nov 2016 14:13:47 -0600</lastBuildDate>
+    <pubDate>Thu, 01 Dec 2016 08:49:36 -0600</pubDate>
+    <lastBuildDate>Thu, 01 Dec 2016 08:49:36 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>CWS-ViewCart FinalCart Review Component</title>
+        <description>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;h1 class=&quot;page-header&quot;&gt;Final Cart Review&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tds-alert tds-alert-critical&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+      &lt;p&gt;In order to proceed, please fix the following item(s):&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Error message one&lt;/li&gt;
+        &lt;li&gt;Error message two&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;!--Only on final review page: Cart submition top button--&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;cart-overview-actions form-inline&quot;&gt;
+    &lt;form class=&quot;pull-right form-group&quot; name=&quot;checkout&quot; action=&quot;?&quot; method=&quot;POST&quot;&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;currentRevisionNumber&quot; value=&quot;?&quot; /&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;beginCheckout&quot; value=&quot;true&quot; /&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;pageId&quot; value=&quot;?&quot; /&gt;
+        &lt;button id=&quot;beginCheckout&quot; class=&quot;gallery-btn btn-green&quot; type=&quot;submit&quot; value=&quot;BEGIN CHECKOUT&quot;&gt;Begin Checkout&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;!--Only on final review page: Cart submition top button end--&gt;
+
+&lt;!--Big Package--&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;section class=&quot;bundle-lineitems tds-panel&quot;&gt;
+
+      &lt;!--Package Header--&gt;
+            &lt;div class=&quot;panel-heading&quot;&gt;
+              &lt;h2 class=&quot;package-title col-md-9 col-sm-12&quot;&gt;Package Name&lt;/h2&gt;
+
+              &lt;!--&lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt; and containing content is removed in final cart page --&gt;
+              &lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt;
+                  &lt;form class=&quot;form-group&quot; action=&quot;?&quot; method=&quot;POST&quot;&gt;
+                      &lt;a class=&quot;btn tds-btn-gray tds-icon-pencil&quot; href=&quot;#&quot;&gt;Edit&lt;/a&gt;
+                      &lt;input type=&quot;hidden&quot; name=&quot;currentRevisionNumber&quot; value=&quot;?&quot; /&gt;
+                      &lt;input type=&quot;hidden&quot; name=&quot;removeItems&quot; value=&quot;removeLineItem&quot; /&gt;
+                      &lt;input type=&quot;hidden&quot; name=&quot;lineItemId&quot; value=&quot;?&quot; /&gt;
+                      &lt;button class=&quot;btn tds-btn-gray tds-icon-times&quot; type=&quot;submit&quot;&gt;Remove&lt;/button&gt;
+                  &lt;/form&gt;
+              &lt;/div&gt;
+
+
+            &lt;/div&gt;&lt;!--Package Header end--&gt;
+
+            &lt;!--Package Product--&gt;
+            &lt;h3 class=&quot;line-item-title&quot;&gt;Internet Services&lt;/h3&gt;
+            &lt;table class=&quot;table&quot;&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;1 Gig Fiber Internet&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo for xx months&lt;/span&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td&gt;4-port Wireless V1000H Gateway Modem&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$4.95&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr class=&quot;tds-alert tds-alert-critical&quot;&gt;
+                    &lt;td&gt;Remote PC Support&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$0.00&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td&gt;TDS Internet Security&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;FREE &lt;span&gt;for 30 Days&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;!--Package Product end--&gt;
+
+
+          &lt;!--Package Product--&gt;
+          &lt;h3 class=&quot;line-item-title&quot;&gt;TV Services&lt;/h3&gt;
+          &lt;table class=&quot;table&quot;&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Basic&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo for xx months&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;High Definition Upgrade&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;Connected Home DVR&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$4.95&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;Wireless Set Top Box (Qty: 2)&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;HBO&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;FREE &lt;span&gt;for 30 Days&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;Professional Installation&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX &lt;span&gt;one-time fee&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+          &lt;/tbody&gt;
+          &lt;/table&gt;
+
+
+          &lt;h3 class=&quot;line-item-title&quot;&gt;Phone Services&lt;/h3&gt;
+          &lt;table class=&quot;table&quot;&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;1 Gig Fiber Internet&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo for xx months&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;4-port Wireless V1000H Gateway Modem&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$4.95&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;Remote PC Support&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$0.00&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;TDS Internet Security&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;FREE &lt;span&gt;for 30 Days&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+          &lt;/tbody&gt;
+          &lt;/table&gt;
+
+
+
+    &lt;/section&gt;
+  &lt;/div&gt;&lt;!--Big Package End--&gt;
+
+
+
+
+  &lt;!--Addon Product Package--&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;section class=&quot;bundle-lineitems tds-panel&quot;&gt;
+
+        &lt;!--Package Header--&gt;
+              &lt;div class=&quot;panel-heading&quot;&gt;
+                &lt;h2 class=&quot;package-title col-md-9 col-sm-12&quot;&gt;Package Name&lt;/h2&gt;
+
+                &lt;!--&lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt; and containing content is removed in final cart page --&gt;
+                &lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt;
+                    &lt;form class=&quot;form-group&quot; action=&quot;?&quot; method=&quot;POST&quot;&gt;
+                        &lt;a class=&quot;btn tds-btn-gray tds-icon-pencil&quot; href=&quot;#&quot;&gt;Edit&lt;/a&gt;
+                        &lt;input type=&quot;hidden&quot; name=&quot;currentRevisionNumber&quot; value=&quot;?&quot; /&gt;
+                        &lt;input type=&quot;hidden&quot; name=&quot;removeItems&quot; value=&quot;removeLineItem&quot; /&gt;
+                        &lt;input type=&quot;hidden&quot; name=&quot;lineItemId&quot; value=&quot;?&quot; /&gt;
+                        &lt;button class=&quot;btn tds-btn-gray tds-icon-times&quot; type=&quot;submit&quot;&gt;Remove&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+
+
+              &lt;/div&gt;&lt;!--Package Header end--&gt;
+
+              &lt;!--Package Product--&gt;
+              &lt;table class=&quot;table&quot;&gt;
+                  &lt;tbody&gt;
+                    &lt;tr&gt;
+                      &lt;td class=&quot;single-product&quot;&gt;
+                        &lt;h3 class=&quot;line-item-title&quot;&gt;TDS Internet Security: Add On&lt;/h3&gt;
+                      &lt;/td&gt;
+                      &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr&gt;
+                      &lt;td class=&quot;single-product&quot;&gt;
+                        &lt;h3 class=&quot;line-item-title&quot;&gt;Remote PC Support: Add On&lt;/h3&gt;
+                      &lt;/td&gt;
+                      &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+
+              &lt;/tbody&gt;
+            &lt;/table&gt;&lt;!--Package Product end--&gt;
+
+        &lt;/section&gt;
+      &lt;/div&gt;&lt;!--Addon Product Package--&gt;
+
+
+
+
+      &lt;!--Addon Single Line items--&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;section class=&quot;bundle-lineitems tds-panel&quot;&gt;
+
+            &lt;!--Package Header--&gt;
+                  &lt;div class=&quot;panel-heading&quot;&gt;
+                    &lt;h2 class=&quot;package-title col-md-9 col-sm-12&quot;&gt;Package Name&lt;/h2&gt;
+
+                    &lt;!--&lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt; and containing content is removed in final cart page --&gt;
+                    &lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt;
+                        &lt;form class=&quot;form-group&quot; action=&quot;?&quot; method=&quot;POST&quot;&gt;
+                            &lt;a class=&quot;btn tds-btn-gray tds-icon-pencil&quot; href=&quot;#&quot;&gt;Edit&lt;/a&gt;
+                            &lt;input type=&quot;hidden&quot; name=&quot;currentRevisionNumber&quot; value=&quot;?&quot; /&gt;
+                            &lt;input type=&quot;hidden&quot; name=&quot;removeItems&quot; value=&quot;removeLineItem&quot; /&gt;
+                            &lt;input type=&quot;hidden&quot; name=&quot;lineItemId&quot; value=&quot;?&quot; /&gt;
+                            &lt;button class=&quot;btn tds-btn-gray tds-icon-times&quot; type=&quot;submit&quot;&gt;Remove&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+
+
+                  &lt;/div&gt;&lt;!--Package Header end--&gt;
+
+                  &lt;!--Package Product--&gt;
+                  &lt;table class=&quot;table&quot;&gt;
+                      &lt;tbody&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;3 Star Voice Package: Add On&lt;/td&gt;
+                          &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+
+                        &lt;tr&gt;
+                          &lt;td&gt;Local Service: Additional Features&lt;/td&gt;
+                          &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+
+                  &lt;/tbody&gt;
+                &lt;/table&gt;&lt;!--Package Product end--&gt;
+
+            &lt;/section&gt;
+          &lt;/div&gt;&lt;!--Addon Single Line items end--&gt;
+
+
+
+
+  &lt;!--Taxes and Fees--&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;section class=&quot;tds-panel&quot;&gt;
+            &lt;h3 class=&quot;line-item-title&quot;&gt;Estimated Taxes &amp;amp; Fees&lt;/h3&gt;
+            &lt;table class=&quot;table&quot;&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;3-Star Taxes and Fees&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$8.86&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td&gt;Professional Installation Fee&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$49.95 &lt;span&gt;one-time fee&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;&lt;!--Taxes and Fees end--&gt;
+
+
+&lt;!--Order Totals--&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;section class=&quot;order-totals tds-panel&quot;&gt;
+            &lt;h2&gt;Order Total&lt;/h2&gt;
+            &lt;table class=&quot;table&quot;&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;One-time costs&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price cost-one-time&quot;&gt;$49.95&lt;/td&gt;
+                  &lt;/tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td&gt;One-time credits&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price cost-one-time&quot;&gt;($49.95)&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;strong&gt;MONTHLY CHARGES&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td class=&quot;tds-cart-price&quot;&gt;&lt;strong&gt;$176.07&lt;/strong&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;&lt;!--Order Totals end--&gt;
+
+
+&lt;!--Cart overview action and submission--&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;cart-overview-actions form-inline&quot;&gt;
+      &lt;button id=&quot;printButton&quot; class=&quot;btn tds-btn-gray form-group&quot;&gt;&lt;i class=&quot;fa fa-print&quot;&gt;&lt;/i&gt; Print&lt;/button&gt;
+      &lt;form class=&quot;form-group&quot; name=&quot;empty&quot; action=&quot;/bin/cart/cart&quot; method=&quot;POST&quot;&gt;
+          &lt;input type=&quot;hidden&quot; name=&quot;currentRevisionNumber&quot; value=&quot;4&quot; /&gt;
+          &lt;input type=&quot;hidden&quot; name=&quot;removeItems&quot; value=&quot;removeOrder&quot; /&gt;
+          &lt;button id=&quot;emptyCartButton&quot; class=&quot;btn tds-btn-lt-blue&quot; type=&quot;submit&quot;&gt;Empty Cart&lt;/button&gt;
+      &lt;/form&gt;
+
+      &lt;form class=&quot;pull-right form-group&quot; name=&quot;checkout&quot; action=&quot;?&quot; method=&quot;POST&quot;&gt;
+          &lt;input type=&quot;hidden&quot; name=&quot;currentRevisionNumber&quot; value=&quot;?&quot; /&gt;
+          &lt;input type=&quot;hidden&quot; name=&quot;beginCheckout&quot; value=&quot;true&quot; /&gt;
+          &lt;input type=&quot;hidden&quot; name=&quot;pageId&quot; value=&quot;?&quot; /&gt;
+          &lt;button id=&quot;beginCheckout&quot; class=&quot;gallery-btn btn-green&quot; type=&quot;submit&quot; value=&quot;BEGIN CHECKOUT&quot;&gt;Begin Checkout&lt;/button&gt;
+      &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;!--Cart overview action and submission end--&gt;
+
+
+&lt;/div&gt;
+&lt;!--contain closing--&gt;
+&lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 30 Nov 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/11/30/cws-viewcartfinalcart-component/</link>
+        <guid isPermaLink="true">/cws/2016/11/30/cws-viewcartfinalcart-component/</guid>
+        
+        
+        <category>CWS</category>
+        
+      </item>
+    
+      <item>
+        <title>CWS-Customer-Self-ID wikimarkup</title>
+        <description>&lt;script&gt;
+
+ $(function() {
+     $(&#39;.tds-msg-box&#39;).matchHeight();
+ });
+
+&lt;/script&gt;
+
+&lt;h3&gt;Horiziontal Version Example&lt;/h3&gt;
+&lt;!-- Horiziontal Version--&gt;
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div id=&quot;shopperId&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-12&quot;&gt;
+      &lt;p class=&quot;cable-content-intro&quot;&gt;For accurate pricing and availability, we&#39;ll need to know a little more about you.&lt;/p&gt;
+    &lt;/div&gt;
+
+
+&lt;!--Login Section--&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+      &lt;div class=&quot;tds-msg-box&quot; id=&quot;loginBlock&quot;&gt;
+        &lt;h2&gt;Already a TDS Customer?&lt;/h2&gt;
+        &lt;div id=&quot;loginInfo&quot;&gt;
+          &lt;p&gt;For accurate pricing and availability, we&#39;ll need to know a little more about you.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;loginButton&quot;&gt;
+          &lt;!-- div.parbase.login and its inner html is generated by the following cq:include:
+          &lt;cq:include path=&quot;login&quot; resourceType=&quot;/apps/tds-foundation/components/login&quot; /&gt;
+          --&gt;
+
+          &lt;div class=&quot;parbase login&quot;&gt;
+            &lt;fieldset id=&quot;loginFieldset&quot;&gt;
+              &lt;a class=&quot;gallery-btn login&quot; href=&quot;https://sso.tds.net/idp/startSSO.ping?PartnerSpId=aem:sp&amp;amp;TargetResource=http%3A%2F%2Ftdstelecom.com%2Fvisitor%2FLoginRedirect.html%3FreturnPage%3D%2Fshop%2Fbundles%2Finternet-tv-and-phone-bundles.html&quot;&gt;&lt;i class=&quot;fa fa-user pull-left&quot;&gt;&lt;/i&gt;Login&lt;/a&gt;
+            &lt;/fieldset&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!--Login Section End--&gt;
+
+
+&lt;!--Address Section--&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+      &lt;div class=&quot;tds-msg-box&quot; id=&quot;provideAddressBlock&quot;&gt;
+        &lt;h2&gt;Interested in becoming a TDS Customer?&lt;/h2&gt;
+        &lt;div id=&quot;addressInfo&quot;&gt;
+          &lt;p&gt;By providing your address, you&#39;ll be able to view special offers and promotions available in your area.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;provideAddressButton&quot;&gt;
+          &lt;a class=&quot;gallery-btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-map-marker pull-left&quot;&gt;&lt;/i&gt; Provide Your Address&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!--Address Section End--&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- Horiziontal Version end--&gt;
+
+&lt;h3&gt;Vertical Version Example&lt;/h3&gt;
+
+&lt;!--For Vertical Verisons: Replace col-sm-6 with col-sm-12.--&gt;
+
+&lt;!--Vertical Version--&gt;
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div id=&quot;shopperId&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-12&quot;&gt;
+      &lt;p class=&quot;cable-content-intro&quot;&gt;For accurate pricing and availability, we&#39;ll need to know a little more about you.&lt;/p&gt;
+    &lt;/div&gt;
+
+
+&lt;!--Login Section--&gt;
+    &lt;div class=&quot;col-sm-12&quot;&gt;
+      &lt;div class=&quot;tds-msg-box&quot; id=&quot;loginBlock&quot;&gt;
+        &lt;h2&gt;Already a TDS Customer?&lt;/h2&gt;
+        &lt;div id=&quot;loginInfo&quot;&gt;
+          &lt;p&gt;For accurate pricing and availability, we&#39;ll need to know a little more about you.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;loginButton&quot;&gt;
+          &lt;!-- div.parbase.login and its inner html is generated by the following cq:include:
+          &lt;cq:include path=&quot;login&quot; resourceType=&quot;/apps/tds-foundation/components/login&quot; /&gt;
+          --&gt;
+          &lt;div class=&quot;parbase login&quot;&gt;
+            &lt;fieldset id=&quot;loginFieldset&quot;&gt;
+              &lt;a class=&quot;gallery-btn login&quot; href=&quot;https://sso.tds.net/idp/startSSO.ping?PartnerSpId=aem:sp&amp;amp;TargetResource=http%3A%2F%2Ftdstelecom.com%2Fvisitor%2FLoginRedirect.html%3FreturnPage%3D%2Fshop%2Fbundles%2Finternet-tv-and-phone-bundles.html&quot;&gt;&lt;i class=&quot;fa fa-user pull-left&quot;&gt;&lt;/i&gt;Login&lt;/a&gt;
+            &lt;/fieldset&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!--Login Section End--&gt;
+
+
+&lt;!--Address Section--&gt;
+    &lt;div class=&quot;col-sm-12&quot;&gt;
+      &lt;div class=&quot;tds-msg-box&quot; id=&quot;provideAddressBlock&quot;&gt;
+        &lt;h2&gt;Interested in becoming a TDS Customer?&lt;/h2&gt;
+        &lt;div id=&quot;addressInfo&quot;&gt;
+          &lt;p&gt;By providing your address, you&#39;ll be able to view special offers and promotions available in your area.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;provideAddressButton&quot;&gt;
+          &lt;a class=&quot;gallery-btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-map-marker pull-left&quot;&gt;&lt;/i&gt; Provide Your Address&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!--Address Section End--&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- Vertical Version end--&gt;
+
+&lt;h3&gt;Login First Example&lt;/h3&gt;
+&lt;!--Login Section--&gt;
+
+&lt;!--For Vertical Verisons: Replace col-sm-6 with col-sm-12. --&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+  &lt;div class=&quot;tds-msg-box&quot; id=&quot;loginBlock&quot;&gt;
+    &lt;h2&gt;Already a TDS Customer?&lt;/h2&gt;
+    &lt;div id=&quot;loginInfo&quot;&gt;
+      &lt;p&gt;For accurate pricing and availability, we&#39;ll need to know a little more about you.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;loginButton&quot;&gt;
+      &lt;!-- div.parbase.login and its inner html is generated by the following cq:include:
+      &lt;cq:include path=&quot;login&quot; resourceType=&quot;/apps/tds-foundation/components/login&quot; /&gt;
+      --&gt;
+      &lt;div class=&quot;parbase login&quot;&gt;
+        &lt;fieldset id=&quot;loginFieldset&quot;&gt;
+          &lt;a class=&quot;gallery-btn login&quot; href=&quot;https://sso.tds.net/idp/startSSO.ping?PartnerSpId=aem:sp&amp;amp;TargetResource=http%3A%2F%2Ftdstelecom.com%2Fvisitor%2FLoginRedirect.html%3FreturnPage%3D%2Fshop%2Fbundles%2Finternet-tv-and-phone-bundles.html&quot;&gt;&lt;i class=&quot;fa fa-user pull-left&quot;&gt;&lt;/i&gt;Login&lt;/a&gt;
+        &lt;/fieldset&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Login Section End--&gt;
+
+&lt;!--Address Section--&gt;
+
+&lt;!--For Vertical Verisons: Replace col-sm-6 with col-sm-12. --&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+  &lt;div class=&quot;tds-msg-box&quot; id=&quot;provideAddressBlock&quot;&gt;
+    &lt;h2&gt;Interested in becoming a TDS Customer?&lt;/h2&gt;
+    &lt;div id=&quot;addressInfo&quot;&gt;
+      &lt;p&gt;By providing your address, you&#39;ll be able to view special offers and promotions available in your area.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;provideAddressButton&quot;&gt;
+      &lt;a class=&quot;gallery-btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-map-marker pull-left&quot;&gt;&lt;/i&gt; Provide Your Address&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Address Section End--&gt;
+
+&lt;h3&gt;Address First Example&lt;/h3&gt;
+&lt;!--Address Section--&gt;
+
+&lt;!--For Vertical Verisons: Replace col-sm-6 with col-sm-12. --&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+  &lt;div class=&quot;tds-msg-box&quot; id=&quot;provideAddressBlock&quot;&gt;
+    &lt;h2&gt;Interested in becoming a TDS Customer?&lt;/h2&gt;
+    &lt;div id=&quot;addressInfo&quot;&gt;
+      &lt;p&gt;By providing your address, you&#39;ll be able to view special offers and promotions available in your area.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;provideAddressButton&quot;&gt;
+      &lt;a class=&quot;gallery-btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-map-marker pull-left&quot;&gt;&lt;/i&gt; Provide Your Address&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Address Section End--&gt;
+
+&lt;!--Login Section--&gt;
+
+&lt;!--For Vertical Verisons: Replace col-sm-6 with col-sm-12. --&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+  &lt;div class=&quot;tds-msg-box&quot; id=&quot;loginBlock&quot;&gt;
+    &lt;h2&gt;Already a TDS Customer?&lt;/h2&gt;
+    &lt;div id=&quot;loginInfo&quot;&gt;
+      &lt;p&gt;For accurate pricing and availability, we&#39;ll need to know a little more about you.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;loginButton&quot;&gt;
+      &lt;!-- div.parbase.login and its inner html is generated by the following cq:include:
+      &lt;cq:include path=&quot;login&quot; resourceType=&quot;/apps/tds-foundation/components/login&quot; /&gt;
+      --&gt;
+      &lt;div class=&quot;parbase login&quot;&gt;
+        &lt;fieldset id=&quot;loginFieldset&quot;&gt;
+          &lt;a class=&quot;gallery-btn login&quot; href=&quot;https://sso.tds.net/idp/startSSO.ping?PartnerSpId=aem:sp&amp;amp;TargetResource=http%3A%2F%2Ftdstelecom.com%2Fvisitor%2FLoginRedirect.html%3FreturnPage%3D%2Fshop%2Fbundles%2Finternet-tv-and-phone-bundles.html&quot;&gt;&lt;i class=&quot;fa fa-user pull-left&quot;&gt;&lt;/i&gt;Login&lt;/a&gt;
+        &lt;/fieldset&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--Login Section End--&gt;
+
+&lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 29 Nov 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/11/29/cws-customer-self-id-wiki/</link>
+        <guid isPermaLink="true">/cws/2016/11/29/cws-customer-self-id-wiki/</guid>
+        
+        
+        <category>CWS</category>
+        
+      </item>
     
       <item>
         <title>CWS-Customer-Self-ID</title>

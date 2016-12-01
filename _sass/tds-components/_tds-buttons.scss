@@ -139,6 +139,7 @@ td .line-item-actions .tds-btn-gray {
 // light blue button, white text
 // =============================================================================
 .tds-btn-lt-blue {
+  color: $tds-white !important;
   background: $tds-lt-blue-100;
   &:hover {
     background: darken($tds-lt-blue, 5%) !important;

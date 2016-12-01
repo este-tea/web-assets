@@ -795,17 +795,58 @@ div.cws-btn:hover, div.cws-btn:focus, a.cws-btn:hover, a.cws-btn:focus {
   background-color: #FFF8D8;
 }
 
-.container.tds-alert.tds-alert-critical {
+.tds-alert.tds-alert-critical {
+  border-top: 2px solid #CB1D1D;
+}
+.tds-alert.tds-alert-critical .container {
   background-color: #ffecec;
 }
-.container.tds-alert.tds-alert-critical a {
+.tds-alert.tds-alert-critical .container a {
   color: #CB1D1D;
 }
-.container.tds-alert.tds-alert-critical a:hover, .container.tds-alert.tds-alert-critical a :focus {
+.tds-alert.tds-alert-critical .container a:hover, .tds-alert.tds-alert-critical .container a :focus {
   color: #991419;
 }
+.tds-alert.tds-alert-critical .container p:before {
+  content: "";
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin-right: 15px;
+}
+.tds-alert.tds-alert-critical .container ul li {
+  list-style-type: square;
+  display: list-item;
+}
 
-.tds-alert.tds-alert-warning {
+tr.tds-alert.tds-alert-critical {
+  border-top: none;
+  font-size: inherit;
+  font-weight: normal;
+}
+tr.tds-alert.tds-alert-critical td:first-child:before {
+  content: "";
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin-right: 15px;
+}
+
+.tds-alert.tds-alert-warning, .tds-alert.tds-alert-critical {
   background-image: none !important;
   border-left: 0px !important;
   padding-left: 0px;
@@ -853,6 +894,16 @@ label:hover input:checked + .tds-radio-btn:before {
 }
 
 /* ===== tds cable Typography === */
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+h1.page-header {
+  border-bottom: 2px solid #CCC;
+  padding-bottom: 15px;
+  margin: 40px 0 20px;
+}
+
 /*==form styles==*/
 .hr-after-text {
   overflow: hidden;
@@ -865,7 +916,7 @@ label:hover input:checked + .tds-radio-btn:before {
   width: 100%;
   margin-right: -100%;
   margin-left: 10px;
-  border-top: 1px solid #BBB;
+  border-top: 1px solid #CCC;
 }
 
 /*==Self-ID page styles==*/
@@ -897,6 +948,187 @@ label:hover input:checked + .tds-radio-btn:before {
 
 .col-sm-12 .tds-msg-box {
   margin: 0 0 30px 0;
+}
+
+table.table {
+  font-size: 18px;
+}
+table.table tbody > tr:last-child > td {
+  border-bottom: none !important;
+}
+table.table tbody > tr > td {
+  padding: 8px 0px 8px 20px;
+}
+
+@media (max-width: 480px) {
+  section .table > tbody > tr > td {
+    display: block;
+    padding: 0px 0px 0px 20px;
+  }
+  section .table > tbody > tr > td:nth-child(odd) {
+    border-top: 20px solid transparent;
+  }
+}
+
+table.table tr.tds-alert.tds-alert-critical {
+  display: table-row;
+}
+table.table tr.tds-alert.tds-alert-critical td {
+  padding: 15px 0 15px 20px;
+}
+@media (max-width: 480px) {
+  table.table tr.tds-alert.tds-alert-critical td {
+    display: block;
+    padding: 0px 0px 0px 20px;
+  }
+  table.table tr.tds-alert.tds-alert-critical td:nth-child(odd) {
+    padding-top: 15px;
+  }
+  table.table tr.tds-alert.tds-alert-critical td:nth-child(even) {
+    padding-bottom: 15px;
+  }
+}
+
+.tds-panel {
+  border: 2px solid #CCC;
+}
+.tds-panel h2 {
+  color: #0C8FD0;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .tds-panel h2 {
+    margin-bottom: 20px;
+  }
+}
+.tds-panel h3.line-item-title {
+  font-size: 21px;
+  color: #19388A;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .tds-panel h3.line-item-title {
+    margin-bottom: 20px;
+  }
+}
+.tds-panel h3.line-item-title:nth-child(odd) {
+  padding-top: 15px;
+}
+.tds-panel h3.line-item-title + table + h3 {
+  padding-top: 20px;
+  border-top: 2px solid #CCC;
+}
+@media (max-width: 480px) {
+  .tds-panel h3.line-item-title + table {
+    margin-bottom: 15px;
+  }
+}
+.tds-panel td.single-product {
+  padding: 0px;
+}
+.tds-panel td.single-product h3.line-item-title {
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .tds-panel td.single-product h3.line-item-title {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .tds-panel td.single-product + td {
+    padding: 0;
+  }
+}
+
+.panel-heading {
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 26px;
+  padding: 10px 0;
+  border-bottom: 2px solid #CCC !important;
+}
+.panel-heading .col-md-9.col-sm-12 {
+  padding: 0;
+}
+.panel-heading .col-md-3.col-sm-12 {
+  padding: 0;
+}
+.panel-heading .col-md-3.col-sm-12 .form-group {
+  float: right;
+}
+@media (max-width: 960px) {
+  .panel-heading .col-md-3.col-sm-12 .form-group {
+    float: left;
+    margin-top: 20px;
+  }
+}
+.panel-heading h2 {
+  margin: 10px 0 0 0;
+}
+.panel-heading .line-item-actions .btn {
+  padding: 12px 16px !important;
+  margin-right: 16px;
+}
+.panel-heading .line-item-actions .btn:last-child {
+  margin-right: 0px;
+}
+.panel-heading .line-item-actions a.btn {
+  text-decoration: none;
+}
+
+.tds-cost-price {
+  width: 25%;
+}
+@media (max-width: 940px) {
+  .tds-cost-price {
+    width: 33%;
+  }
+}
+@media (max-width: 480px) {
+  .tds-cost-price {
+    width: 100%;
+  }
+}
+
+#emptyCartButton:before {
+  content: "";
+  width: 30px;
+  height: 22px;
+  margin: -5px 0 0 -10px;
+  float: left;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cart-overview-actions form.pull-right.form-group {
+  margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .cart-overview-actions form.pull-right.form-group {
+    float: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  button#beginCheckout {
+    margin-top: 28px;
+    width: 100% !important;
+    display: inline-block;
+  }
+}
+
+.tds-cost-price {
+  color: #6B9C22;
+  text-transform: uppercase;
+}
+.tds-cost-price span {
+  font-size: .65em;
+}
+
+.tds-cost-price.cost-one-time {
+  color: #19388A;
 }
 
 /* ===== END tds cable style overrides ========================================

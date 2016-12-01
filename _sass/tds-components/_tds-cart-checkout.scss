@@ -240,6 +240,14 @@ button#printButton {
     padding: 12px 16px!important;
 }
 
+/*empty cart button for Cable*/
+button#emptyCartButton{
+float: left!important;
+display: inline-block!important;
+padding: 12px 16px!important;
+}
+
+
 button#beginCheckout {margin-top:0}
 
 @media (max-width: 400px) {

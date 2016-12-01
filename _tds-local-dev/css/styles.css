@@ -15526,6 +15526,7 @@ td .line-item-actions .tds-btn-gray, td .line-item-actions .panel-group.tds-tari
 }
 
 .tds-btn-lt-blue, .lt-blue-button {
+  color: #FFF !important;
   background: #0C8FD0;
 }
 .tds-btn-lt-blue:hover, .lt-blue-button:hover {
@@ -20322,6 +20323,13 @@ button#printButton {
 
 /*empty cart button*/
 .cart-overview-actions.form-inline > .form-group > button.btn.tds-btn-gray, form.elq-form .cart-overview-actions.form-inline > .form-design-field > button.btn.tds-btn-gray, .cart-overview-actions.form-inline > .form-group > button.tds-btn-gray.gallery-btn-link, form.elq-form .cart-overview-actions.form-inline > .form-design-field > button.tds-btn-gray.gallery-btn-link {
+  float: left !important;
+  display: inline-block !important;
+  padding: 12px 16px !important;
+}
+
+/*empty cart button for Cable*/
+button#emptyCartButton {
   float: left !important;
   display: inline-block !important;
   padding: 12px 16px !important;
