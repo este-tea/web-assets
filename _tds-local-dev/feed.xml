@@ -6,20 +6,20 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Dec 2016 12:46:34 -0600</pubDate>
-    <lastBuildDate>Thu, 01 Dec 2016 12:46:34 -0600</lastBuildDate>
+    <pubDate>Thu, 01 Dec 2016 12:46:48 -0600</pubDate>
+    <lastBuildDate>Thu, 01 Dec 2016 12:46:48 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>CWS-ViewCart FinalCart Review Component</title>
         <description>&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
-    &lt;h1 class=&quot;page-header&quot;&gt;Final Cart Review&lt;/h1&gt;
+    &lt;h1 class=&quot;page-header&quot;&gt;View Cart/Final Cart Review&lt;/h1&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;tds-alert tds-alert-critical&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;tds-alert tds-alert-critical&quot;&gt;
       &lt;p&gt;In order to proceed, please fix the following item(s):&lt;/p&gt;
       &lt;ul&gt;
         &lt;li&gt;Error message one&lt;/li&gt;
@@ -30,7 +30,7 @@
 
 &lt;div class=&quot;container&quot;&gt;
 
-&lt;!--Only on final review page: Cart submition top button--&gt;
+&lt;!--Only on final review page: Cart submission top button--&gt;
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;cart-overview-actions form-inline&quot;&gt;
     &lt;form class=&quot;pull-right form-group&quot; name=&quot;checkout&quot; action=&quot;?&quot; method=&quot;POST&quot;&gt;
@@ -40,14 +40,14 @@
         &lt;button id=&quot;beginCheckout&quot; class=&quot;gallery-btn btn-green&quot; type=&quot;submit&quot; value=&quot;BEGIN CHECKOUT&quot;&gt;Begin Checkout&lt;/button&gt;
     &lt;/form&gt;
   &lt;/div&gt;
-&lt;/div&gt;&lt;!--Only on final review page: Cart submition top button end--&gt;
+&lt;/div&gt;&lt;!--Only on final review page: Cart submission top button end--&gt;
 
 &lt;!--Big Package--&gt;
   &lt;div class=&quot;row&quot;&gt;
-    &lt;section class=&quot;bundle-lineitems tds-panel&quot;&gt;
+    &lt;section class=&quot;bundle-lineitems cart-review-container&quot;&gt;
 
       &lt;!--Package Header--&gt;
-            &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;div class=&quot;cart-review-header&quot;&gt;
               &lt;h2 class=&quot;package-title col-md-9 col-sm-12&quot;&gt;Package Name&lt;/h2&gt;
 
               &lt;!--&lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt; and containing content is removed in final cart page --&gt;
@@ -67,11 +67,11 @@
             &lt;!--Package Product--&gt;
             &lt;h3 class=&quot;line-item-title&quot;&gt;Internet Services&lt;/h3&gt;
             &lt;table class=&quot;table&quot;&gt;
-                &lt;tbody&gt;
-                  &lt;tr&gt;
-                    &lt;td&gt;1 Gig Fiber Internet&lt;/td&gt;
-                    &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo for xx months&lt;/span&gt;&lt;/td&gt;
-                  &lt;/tr&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;1 Gig Fiber Internet&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo for xx months&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
 
                 &lt;tr&gt;
                     &lt;td&gt;4-port Wireless V1000H Gateway Modem&lt;/td&gt;
@@ -87,7 +87,7 @@
                     &lt;td&gt;TDS Internet Security&lt;/td&gt;
                     &lt;td class=&quot;tds-cost-price&quot;&gt;FREE &lt;span&gt;for 30 Days&lt;/span&gt;&lt;/td&gt;
                 &lt;/tr&gt;
-            &lt;/tbody&gt;
+              &lt;/tbody&gt;
           &lt;/table&gt;&lt;!--Package Product end--&gt;
 
 
@@ -100,34 +100,34 @@
                   &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo for xx months&lt;/span&gt;&lt;/td&gt;
                 &lt;/tr&gt;
 
-              &lt;tr&gt;
-                  &lt;td&gt;High Definition Upgrade&lt;/td&gt;
-                  &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-              &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;High Definition Upgrade&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
 
-              &lt;tr&gt;
-                  &lt;td&gt;Connected Home DVR&lt;/td&gt;
-                  &lt;td class=&quot;tds-cost-price&quot;&gt;$4.95&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-              &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Connected Home DVR&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$4.95&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
 
-              &lt;tr&gt;
-                  &lt;td&gt;Wireless Set Top Box (Qty: 2)&lt;/td&gt;
-                  &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-              &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Wireless Set Top Box (Qty: 2)&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
 
-              &lt;tr&gt;
-                  &lt;td&gt;HBO&lt;/td&gt;
-                  &lt;td class=&quot;tds-cost-price&quot;&gt;FREE &lt;span&gt;for 30 Days&lt;/span&gt;&lt;/td&gt;
-              &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;HBO&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;FREE &lt;span&gt;for 30 Days&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
 
-              &lt;tr&gt;
-                  &lt;td&gt;Professional Installation&lt;/td&gt;
-                  &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX &lt;span&gt;one-time fee&lt;/span&gt;&lt;/td&gt;
-              &lt;/tr&gt;
-          &lt;/tbody&gt;
-          &lt;/table&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Professional Installation&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$XX.XX &lt;span&gt;one-time fee&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;!--Package Product end--&gt;
 
-
+          &lt;!--Package Product--&gt;
           &lt;h3 class=&quot;line-item-title&quot;&gt;Phone Services&lt;/h3&gt;
           &lt;table class=&quot;table&quot;&gt;
               &lt;tbody&gt;
@@ -136,24 +136,22 @@
                   &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo for xx months&lt;/span&gt;&lt;/td&gt;
                 &lt;/tr&gt;
 
-              &lt;tr&gt;
-                  &lt;td&gt;4-port Wireless V1000H Gateway Modem&lt;/td&gt;
-                  &lt;td class=&quot;tds-cost-price&quot;&gt;$4.95&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-              &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;4-port Wireless V1000H Gateway Modem&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$4.95&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
 
-              &lt;tr&gt;
-                  &lt;td&gt;Remote PC Support&lt;/td&gt;
-                  &lt;td class=&quot;tds-cost-price&quot;&gt;$0.00&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-              &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Remote PC Support&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$0.00&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
 
-              &lt;tr&gt;
-                  &lt;td&gt;TDS Internet Security&lt;/td&gt;
-                  &lt;td class=&quot;tds-cost-price&quot;&gt;FREE &lt;span&gt;for 30 Days&lt;/span&gt;&lt;/td&gt;
-              &lt;/tr&gt;
-          &lt;/tbody&gt;
-          &lt;/table&gt;
-
-
+                &lt;tr&gt;
+                    &lt;td&gt;TDS Internet Security&lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;FREE &lt;span&gt;for 30 Days&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;&lt;!--Package Product end--&gt;
 
     &lt;/section&gt;
   &lt;/div&gt;&lt;!--Big Package End--&gt;
@@ -163,10 +161,10 @@
 
   &lt;!--Addon Product Package--&gt;
     &lt;div class=&quot;row&quot;&gt;
-      &lt;section class=&quot;bundle-lineitems tds-panel&quot;&gt;
+      &lt;section class=&quot;bundle-lineitems cart-review-container &quot;&gt;
 
         &lt;!--Package Header--&gt;
-              &lt;div class=&quot;panel-heading&quot;&gt;
+              &lt;div class=&quot;cart-review-header&quot;&gt;
                 &lt;h2 class=&quot;package-title col-md-9 col-sm-12&quot;&gt;Package Name&lt;/h2&gt;
 
                 &lt;!--&lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt; and containing content is removed in final cart page --&gt;
@@ -180,25 +178,24 @@
                     &lt;/form&gt;
                 &lt;/div&gt;
 
-
               &lt;/div&gt;&lt;!--Package Header end--&gt;
 
               &lt;!--Package Product--&gt;
               &lt;table class=&quot;table&quot;&gt;
-                  &lt;tbody&gt;
-                    &lt;tr&gt;
-                      &lt;td class=&quot;single-product&quot;&gt;
-                        &lt;h3 class=&quot;line-item-title&quot;&gt;TDS Internet Security: Add On&lt;/h3&gt;
-                      &lt;/td&gt;
-                      &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;td class=&quot;single-product&quot;&gt;
+                      &lt;h3 class=&quot;line-item-title&quot;&gt;TDS Internet Security: Add On&lt;/h3&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
 
-                    &lt;tr&gt;
-                      &lt;td class=&quot;single-product&quot;&gt;
-                        &lt;h3 class=&quot;line-item-title&quot;&gt;Remote PC Support: Add On&lt;/h3&gt;
-                      &lt;/td&gt;
-                      &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-                    &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td class=&quot;single-product&quot;&gt;
+                      &lt;h3 class=&quot;line-item-title&quot;&gt;Remote PC Support: Add On&lt;/h3&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
 
               &lt;/tbody&gt;
             &lt;/table&gt;&lt;!--Package Product end--&gt;
@@ -211,10 +208,10 @@
 
       &lt;!--Addon Single Line items--&gt;
         &lt;div class=&quot;row&quot;&gt;
-          &lt;section class=&quot;bundle-lineitems tds-panel&quot;&gt;
+          &lt;section class=&quot;bundle-lineitems cart-review-container &quot;&gt;
 
             &lt;!--Package Header--&gt;
-                  &lt;div class=&quot;panel-heading&quot;&gt;
+                  &lt;div class=&quot;cart-review-header&quot;&gt;
                     &lt;h2 class=&quot;package-title col-md-9 col-sm-12&quot;&gt;Package Name&lt;/h2&gt;
 
                     &lt;!--&lt;div class=&quot;line-item-actions col-md-3 col-sm-12&quot;&gt; and containing content is removed in final cart page --&gt;
@@ -228,22 +225,20 @@
                         &lt;/form&gt;
                     &lt;/div&gt;
 
-
                   &lt;/div&gt;&lt;!--Package Header end--&gt;
 
                   &lt;!--Package Product--&gt;
                   &lt;table class=&quot;table&quot;&gt;
-                      &lt;tbody&gt;
-                        &lt;tr&gt;
-                          &lt;td&gt;3 Star Voice Package: Add On&lt;/td&gt;
-                          &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-                        &lt;/tr&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;3 Star Voice Package: Add On&lt;/td&gt;
+                        &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
 
-                        &lt;tr&gt;
-                          &lt;td&gt;Local Service: Additional Features&lt;/td&gt;
-                          &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-                        &lt;/tr&gt;
-
+                      &lt;tr&gt;
+                        &lt;td&gt;Local Service: Additional Features&lt;/td&gt;
+                        &lt;td class=&quot;tds-cost-price&quot;&gt;$xx.xx&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
                   &lt;/tbody&gt;
                 &lt;/table&gt;&lt;!--Package Product end--&gt;
 
@@ -255,19 +250,19 @@
 
   &lt;!--Taxes and Fees--&gt;
   &lt;div class=&quot;row&quot;&gt;
-    &lt;section class=&quot;tds-panel&quot;&gt;
+    &lt;section class=&quot;cart-review-container &quot;&gt;
             &lt;h3 class=&quot;line-item-title&quot;&gt;Estimated Taxes &amp;amp; Fees&lt;/h3&gt;
             &lt;table class=&quot;table&quot;&gt;
-                &lt;tbody&gt;
-                  &lt;tr&gt;
-                    &lt;td&gt;3-Star Taxes and Fees&lt;/td&gt;
-                    &lt;td class=&quot;tds-cost-price&quot;&gt;$8.86&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
-                  &lt;/tr&gt;
-
+              &lt;tbody&gt;
                 &lt;tr&gt;
-                    &lt;td&gt;Professional Installation Fee&lt;/td&gt;
-                    &lt;td class=&quot;tds-cost-price&quot;&gt;$49.95 &lt;span&gt;one-time fee&lt;/span&gt;&lt;/td&gt;
+                  &lt;td&gt;3-Star Taxes and Fees&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$8.86&lt;span&gt;/mo&lt;/span&gt;&lt;/td&gt;
                 &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;Professional Installation Fee&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price&quot;&gt;$49.95 &lt;span&gt;one-time fee&lt;/span&gt;&lt;/td&gt;
+              &lt;/tr&gt;
             &lt;/tbody&gt;
           &lt;/table&gt;
     &lt;/section&gt;
@@ -276,24 +271,24 @@
 
 &lt;!--Order Totals--&gt;
   &lt;div class=&quot;row&quot;&gt;
-    &lt;section class=&quot;order-totals tds-panel&quot;&gt;
+    &lt;section class=&quot;order-totals cart-review-container &quot;&gt;
             &lt;h2&gt;Order Total&lt;/h2&gt;
             &lt;table class=&quot;table&quot;&gt;
-                &lt;tbody&gt;
-                  &lt;tr&gt;
-                    &lt;td&gt;One-time costs&lt;/td&gt;
-                    &lt;td class=&quot;tds-cost-price cost-one-time&quot;&gt;$49.95&lt;/td&gt;
-                  &lt;/tr&gt;
-
+              &lt;tbody&gt;
                 &lt;tr&gt;
-                    &lt;td&gt;One-time credits&lt;/td&gt;
-                    &lt;td class=&quot;tds-cost-price cost-one-time&quot;&gt;($49.95)&lt;/td&gt;
+                  &lt;td&gt;One-time costs&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price cost-one-time&quot;&gt;$49.95&lt;/td&gt;
                 &lt;/tr&gt;
 
-                &lt;tr&gt;
-                    &lt;td&gt;&lt;strong&gt;MONTHLY CHARGES&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td class=&quot;tds-cart-price&quot;&gt;&lt;strong&gt;$176.07&lt;/strong&gt;&lt;/td&gt;
-                &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;One-time credits&lt;/td&gt;
+                  &lt;td class=&quot;tds-cost-price cost-one-time&quot;&gt;($49.95)&lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                  &lt;td&gt;&lt;strong&gt;MONTHLY CHARGES&lt;/strong&gt;&lt;/td&gt;
+                  &lt;td class=&quot;tds-cart-price&quot;&gt;&lt;strong&gt;$176.07&lt;/strong&gt;&lt;/td&gt;
+              &lt;/tr&gt;
             &lt;/tbody&gt;
           &lt;/table&gt;
     &lt;/section&gt;
