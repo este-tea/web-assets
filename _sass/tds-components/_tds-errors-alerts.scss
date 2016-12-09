@@ -299,3 +299,8 @@
 .tdsheader ~ .shopperid.shopperId > .container {
     padding: 0;
 }
+
+/* IMT-49 Plus Pack Page doesn't work in small form Fix*/
+#errorMessage {
+    clear:both;
+}
