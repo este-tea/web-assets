@@ -18206,6 +18206,11 @@ input + span.input-group-btn .lt-blue-button .tds-alert-success .tds-icon,
   padding: 0;
 }
 
+/* IMT-49 Plus Pack Page doesn't work in small form Fix*/
+#errorMessage {
+  clear: both;
+}
+
 /* tds-lists
 ==========================================*/
 .landingpagetext ul,
