@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Dec 2016 07:54:00 -0600</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 07:54:00 -0600</lastBuildDate>
+    <pubDate>Thu, 15 Dec 2016 08:28:42 -0600</pubDate>
+    <lastBuildDate>Thu, 15 Dec 2016 08:28:42 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -37,7 +37,7 @@
         &lt;input type=&quot;hidden&quot; name=&quot;currentRevisionNumber&quot; value=&quot;?&quot; /&gt;
         &lt;input type=&quot;hidden&quot; name=&quot;beginCheckout&quot; value=&quot;true&quot; /&gt;
         &lt;input type=&quot;hidden&quot; name=&quot;pageId&quot; value=&quot;?&quot; /&gt;
-        &lt;button id=&quot;beginCheckout&quot; class=&quot;gallery-btn btn-green&quot; type=&quot;submit&quot; value=&quot;BEGIN CHECKOUT&quot;&gt;Begin Checkout&lt;/button&gt;
+        &lt;button id=&quot;beginCheckout&quot; class=&quot;gallery-btn btn-green&quot; type=&quot;submit&quot; value=&quot;$buttonCTA&quot;&gt;$buttonCTA&lt;/button&gt;
     &lt;/form&gt;
   &lt;/div&gt;
 &lt;/div&gt;&lt;!--Only on final review page: Cart submission top button end--&gt;
@@ -309,7 +309,7 @@
           &lt;input type=&quot;hidden&quot; name=&quot;currentRevisionNumber&quot; value=&quot;?&quot; /&gt;
           &lt;input type=&quot;hidden&quot; name=&quot;beginCheckout&quot; value=&quot;true&quot; /&gt;
           &lt;input type=&quot;hidden&quot; name=&quot;pageId&quot; value=&quot;?&quot; /&gt;
-          &lt;button id=&quot;beginCheckout&quot; class=&quot;gallery-btn btn-green&quot; type=&quot;submit&quot; value=&quot;BEGIN CHECKOUT&quot;&gt;Begin Checkout&lt;/button&gt;
+          &lt;button id=&quot;beginCheckout&quot; class=&quot;gallery-btn btn-green&quot; type=&quot;submit&quot; value=&quot;$buttonCTA&quot;&gt;$buttonCTA&lt;/button&gt;
       &lt;/form&gt;
   &lt;/div&gt;
 &lt;/div&gt;&lt;!--Cart overview action and submission end--&gt;
