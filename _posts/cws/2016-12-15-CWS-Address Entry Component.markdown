@@ -342,11 +342,11 @@ Warning message appears above prefilled form with option to Log In-->
 
 
 
-<script src="/etc/designs/tds-foundation/tds-styles/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/etc/designs/tds-foundation/tds-styles/bower_components/jquery/dist/jquery.min.js"></script>
 
-<script src="/etc/designs/tds-foundation/tds-styles/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{ site.baseurl }}/etc/designs/tds-foundation/tds-styles/bower_components/jquery-ui/jquery-ui.min.js"></script>
 
-<script src="/etc/designs/tds-foundation/tds-styles/bower_components/selectToAutocomplete/jquery.select-to-autocomplete.js"></script>
+<script src="{{ site.baseurl }}/etc/designs/tds-foundation/tds-styles/bower_components/selectToAutocomplete/jquery.select-to-autocomplete.js"></script>
 
 <script>
   (function($){
