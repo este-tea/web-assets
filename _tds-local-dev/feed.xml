@@ -6,9 +6,368 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Dec 2016 08:28:42 -0600</pubDate>
-    <lastBuildDate>Thu, 15 Dec 2016 08:28:42 -0600</lastBuildDate>
+    <pubDate>Thu, 15 Dec 2016 14:25:14 -0600</pubDate>
+    <lastBuildDate>Thu, 15 Dec 2016 14:25:14 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>CWS-Address Entry Component</title>
+        <description>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;h1 class=&quot;page-header&quot;&gt;Address Entry&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--User who has items in cart and is not logged in:
+Warning message appears above prefilled form with option to Log In--&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;tds-alert tds-alert-critical&quot; role=&quot;alert&quot;&gt;
+      &lt;p&gt;It looks like you have items in your shopping cart. Changing your address will empty the cart since availability and prices can vary by location.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--User who has items in cart and is not logged in:
+Warning message appears above prefilled form with option to Log In--&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;tds-alert tds-alert-warning&quot; role=&quot;alert&quot;&gt;
+      &lt;p&gt;Please &lt;a href=&quot;#&quot;&gt;log out&lt;/a&gt; if you’d like to shop for products and services at a different address.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container address-entry&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;h2&gt;To see available products, pricing, and special offers, please provide your address&lt;/h2&gt;
+  &lt;/div&gt;
+
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-8 col-xs-12&quot;&gt;
+      &lt;form&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+
+          &lt;label for=&quot;billingAddressLineOptional&quot;&gt;Address: &lt;/label&gt;
+          &lt;input class=&quot;form-control&quot; name=&quot;billingAddressLineOptional&quot; id=&quot;billingAddressLineOptional&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+          &lt;span class=&quot;help-block&quot;&gt;Please remove any punctuation (Example: St not St.)&lt;/span&gt;
+          &lt;span class=&quot;help-block&quot; id=&quot;billingAddressLineOptionalError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+
+          &lt;label for=&quot;billingCity&quot;&gt;City/Town: &lt;/label&gt;
+          &lt;input class=&quot;form-control&quot; name=&quot;billingCity&quot; id=&quot;billingCity&quot; type=&quot;text&quot; value=&quot;&quot; /&gt;
+          &lt;span class=&quot;help-block&quot;&gt;Please remove any punctuation (Example: St Marys not St. Marys)&lt;/span&gt;
+          &lt;span class=&quot;help-block&quot; id=&quot;cityError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+
+          &lt;label for=&quot;billingState&quot;&gt;State: &lt;/label&gt;
+          &lt;select class=&quot;form-control&quot; name=&quot;billingState&quot; id=&quot;billingState&quot; autofocus=&quot;autofocus&quot; autocorrect=&quot;off&quot; autocomplete=&quot;off&quot;&gt;
+              &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;selected&quot;&gt;Select State&lt;/option&gt;
+
+              &lt;option value=&quot;AK&quot;&gt;AK&lt;/option&gt;
+
+              &lt;option value=&quot;AL&quot;&gt;AL&lt;/option&gt;
+
+              &lt;option value=&quot;AR&quot;&gt;AR&lt;/option&gt;
+
+              &lt;option value=&quot;AZ&quot;&gt;AZ&lt;/option&gt;
+
+              &lt;option value=&quot;CA&quot;&gt;CA&lt;/option&gt;
+
+              &lt;option value=&quot;CO&quot;&gt;CO&lt;/option&gt;
+
+              &lt;option value=&quot;CT&quot;&gt;CT&lt;/option&gt;
+
+              &lt;option value=&quot;DC&quot;&gt;DC&lt;/option&gt;
+
+              &lt;option value=&quot;DE&quot;&gt;DE&lt;/option&gt;
+
+              &lt;option value=&quot;FL&quot;&gt;FL&lt;/option&gt;
+
+              &lt;option value=&quot;GA&quot;&gt;GA&lt;/option&gt;
+
+              &lt;option value=&quot;HI&quot;&gt;HI&lt;/option&gt;
+
+              &lt;option value=&quot;IA&quot;&gt;IA&lt;/option&gt;
+
+              &lt;option value=&quot;ID&quot;&gt;ID&lt;/option&gt;
+
+              &lt;option value=&quot;IL&quot;&gt;IL&lt;/option&gt;
+
+              &lt;option value=&quot;IN&quot;&gt;IN&lt;/option&gt;
+
+              &lt;option value=&quot;KS&quot;&gt;KS&lt;/option&gt;
+
+              &lt;option value=&quot;KY&quot;&gt;KY&lt;/option&gt;
+
+              &lt;option value=&quot;LA&quot;&gt;LA&lt;/option&gt;
+
+              &lt;option value=&quot;MA&quot;&gt;MA&lt;/option&gt;
+
+              &lt;option value=&quot;MD&quot;&gt;MD&lt;/option&gt;
+
+              &lt;option value=&quot;ME&quot;&gt;ME&lt;/option&gt;
+
+              &lt;option value=&quot;MI&quot;&gt;MI&lt;/option&gt;
+
+              &lt;option value=&quot;MN&quot;&gt;MN&lt;/option&gt;
+
+              &lt;option value=&quot;MO&quot;&gt;MO&lt;/option&gt;
+
+              &lt;option value=&quot;MS&quot;&gt;MS&lt;/option&gt;
+
+              &lt;option value=&quot;MT&quot;&gt;MT&lt;/option&gt;
+
+              &lt;option value=&quot;NC&quot;&gt;NC&lt;/option&gt;
+
+              &lt;option value=&quot;ND&quot;&gt;ND&lt;/option&gt;
+
+              &lt;option value=&quot;NE&quot;&gt;NE&lt;/option&gt;
+
+              &lt;option value=&quot;NH&quot;&gt;NH&lt;/option&gt;
+
+              &lt;option value=&quot;NJ&quot;&gt;NJ&lt;/option&gt;
+
+              &lt;option value=&quot;NM&quot;&gt;NM&lt;/option&gt;
+
+              &lt;option value=&quot;NV&quot;&gt;NV&lt;/option&gt;
+
+              &lt;option value=&quot;NY&quot;&gt;NY&lt;/option&gt;
+
+              &lt;option value=&quot;OH&quot;&gt;OH&lt;/option&gt;
+
+              &lt;option value=&quot;OK&quot;&gt;OK&lt;/option&gt;
+
+              &lt;option value=&quot;OR&quot;&gt;OR&lt;/option&gt;
+
+              &lt;option value=&quot;PA&quot;&gt;PA&lt;/option&gt;
+
+              &lt;option value=&quot;RI&quot;&gt;RI&lt;/option&gt;
+
+              &lt;option value=&quot;SC&quot;&gt;SC&lt;/option&gt;
+
+              &lt;option value=&quot;SD&quot;&gt;SD&lt;/option&gt;
+
+              &lt;option value=&quot;TN&quot;&gt;TN&lt;/option&gt;
+
+              &lt;option value=&quot;TX&quot;&gt;TX&lt;/option&gt;
+
+              &lt;option value=&quot;UT&quot;&gt;UT&lt;/option&gt;
+
+              &lt;option value=&quot;VA&quot;&gt;VA&lt;/option&gt;
+
+              &lt;option value=&quot;VT&quot;&gt;VT&lt;/option&gt;
+
+              &lt;option value=&quot;WA&quot;&gt;WA&lt;/option&gt;
+
+              &lt;option value=&quot;WI&quot;&gt;WI&lt;/option&gt;
+
+              &lt;option value=&quot;WV&quot;&gt;WV&lt;/option&gt;
+
+              &lt;option value=&quot;WY&quot;&gt;WY&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;span class=&quot;help-block&quot; id=&quot;billingStateError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
+
+        &lt;/div&gt;
+
+          &lt;button class=&quot;gallery-btn pull-left&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;$buttonCTA&lt;/button&gt;
+
+      &lt;/form&gt;
+    &lt;/div&gt;&lt;!--Form Colume end--&gt;
+
+    &lt;div class=&quot;col-sm-4 col-xs-12&quot;&gt;
+          &lt;div class=&quot;tds-alert tds-alert-info&quot;&gt;Looking for Business Services? &lt;span class=&quot;inline-block&quot;&gt;Visit &lt;a href=&quot;#&quot;&gt;www.tdsbusiness.com&lt;/a&gt;.&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!--row end--&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;p&gt;We respect your privacy. The information you provide will only be used to retrieve the products and services at your address.&lt;/p&gt;
+  &lt;p&gt;Already a TDS Customer? &lt;a href=&quot;#&quot;&gt;Log In&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;!--address-entry end--&gt;
+
+&lt;hr /&gt;
+
+&lt;!--verify address--&gt;
+&lt;div class=&quot;container address-entry&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;h2&gt;Verify Address&lt;/h2&gt;
+
+    &lt;p class=&quot;entered-address&quot;&gt;Address &lt;a onclick=&quot;editAddress()&quot;&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+    &lt;div class=&quot;tds-address&quot;&gt;
+        &lt;p&gt;109 MAIN ST&lt;/p&gt;
+        &lt;p&gt;VERONA, WI&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;Are you sure that&#39;s the right address? We couldn&#39;t find a
+    match but did find similar addresses. Tell us which address you&#39;d
+    like us to use:&lt;/p&gt;
+
+    &lt;form&gt;
+        &lt;div id=&quot;suggestedAddresses&quot;&gt;
+
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                  &lt;input class=&quot;addressRadio&quot; type=&quot;radio&quot; name=&quot;suggestedAddress&quot; value=&quot;109 S MAIN ST,VERONA,WI,53593-1419&quot; /&gt;
+                  &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                  &lt;input id=&quot;MS109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;MS109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;input id=&quot;MT109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;MT109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;input id=&quot;EX109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;EX109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;div class=&quot;label-text&quot;&gt;
+                    &lt;span class=&quot;label-address&quot;&gt;109 S MAIN ST&lt;/span&gt;
+                    &lt;span class=&quot;label-city-state&quot;&gt;VERONA, WI&lt;/span&gt;
+                  &lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                  &lt;input class=&quot;addressRadio&quot; type=&quot;radio&quot; name=&quot;suggestedAddress&quot; value=&quot;109 S MAIN ST,VERONA,WI,53593-1419&quot; /&gt;
+                  &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                  &lt;input id=&quot;MS109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;MS109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;input id=&quot;MT109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;MT109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;input id=&quot;EX109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;EX109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;div class=&quot;label-text&quot;&gt;
+                    &lt;span class=&quot;label-address&quot;&gt;109 S MAIN ST&lt;/span&gt;
+                    &lt;span class=&quot;label-city-state&quot;&gt;VERONA, WI&lt;/span&gt;
+                  &lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;radio&quot;&gt;
+              &lt;label&gt;
+                  &lt;input class=&quot;addressRadio&quot; type=&quot;radio&quot; name=&quot;suggestedAddress&quot; value=&quot;109 S MAIN ST,VERONA,WI,53593-1419&quot; /&gt;
+                  &lt;span class=&quot;tds-radio-btn&quot;&gt;&lt;/span&gt;
+                  &lt;input id=&quot;MS109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;MS109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;input id=&quot;MT109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;MT109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;input id=&quot;EX109SMAINST&quot; class=&quot;&quot; type=&quot;hidden&quot; name=&quot;EX109SMAINST&quot; value=&quot;?&quot; /&gt;
+                  &lt;div class=&quot;label-text&quot;&gt;
+                    &lt;span class=&quot;label-address&quot;&gt;109 S MAIN ST&lt;/span&gt;
+                    &lt;span class=&quot;label-city-state&quot;&gt;VERONA, WI&lt;/span&gt;
+                  &lt;/div&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+
+
+            &lt;button class=&quot;gallery-btn pull-left&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;$buttonCTA&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/form&gt;
+  &lt;/div&gt;&lt;!--row end--&gt;
+&lt;/div&gt;
+&lt;!--verify address end--&gt;
+
+&lt;hr /&gt;
+
+&lt;!--Existing Service address --&gt;
+&lt;div class=&quot;container address-entry&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;h2&gt;Existing Service at this Address&lt;/h2&gt;
+
+    &lt;p class=&quot;entered-address&quot;&gt;Address &lt;a onclick=&quot;editAddress()&quot;&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+    &lt;div class=&quot;tds-address&quot;&gt;
+        &lt;p&gt;109 MAIN ST&lt;/p&gt;
+        &lt;p&gt;VERONA, WI&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;!--Login Section--&gt;
+        &lt;div class=&quot;col-sm-6&quot;&gt;
+          &lt;div class=&quot;tds-msg-box&quot; id=&quot;loginBlock&quot;&gt;
+            &lt;h3&gt;I am already a TDS Customer&lt;/h3&gt;
+
+            &lt;div id=&quot;loginButton&quot;&gt;
+              &lt;div class=&quot;parbase login&quot;&gt;
+                &lt;fieldset id=&quot;loginFieldset&quot;&gt;
+                  &lt;a class=&quot;gallery-btn login&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-user pull-left&quot;&gt;&lt;/i&gt;Log In&lt;/a&gt;
+                &lt;/fieldset&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;!--Login Section End--&gt;
+
+
+    &lt;!--Address Section--&gt;
+        &lt;div class=&quot;col-sm-6&quot;&gt;
+          &lt;div class=&quot;tds-msg-box&quot; id=&quot;provideAddressBlock&quot;&gt;
+            &lt;h3&gt;I am moving to this address&lt;/h3&gt;
+
+            &lt;div id=&quot;provideAddressButton&quot;&gt;
+              &lt;a class=&quot;gallery-btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-map-marker pull-left&quot;&gt;&lt;/i&gt; $buttonCTA&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;!--Address Section End--&gt;
+
+
+  &lt;/div&gt;&lt;!--row end--&gt;
+&lt;/div&gt;
+&lt;!--Existing Service address end--&gt;
+
+&lt;hr /&gt;
+
+&lt;!--address not found--&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;tds-alert tds-alert-warning&quot; role=&quot;alert&quot;&gt;
+    &lt;p&gt;We&#39;re sorry, but your address was not found in our systems. We cannot offer you any products at this time. If you have
+    questions about TDS service, please call.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container address-entry&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;h2&gt;Address not Found&lt;/h2&gt;
+
+    &lt;p class=&quot;h4&quot;&gt;You entered:&lt;/p&gt;
+    &lt;div class=&quot;tds-address&quot;&gt;
+        &lt;p&gt;109 MAIN ST&lt;/p&gt;
+        &lt;p&gt;VERONA, WI&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;
+      &lt;a onclick=&quot;editAddress()&quot;&gt;Edit this address&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--address not found end--&gt;
+
+&lt;script src=&quot;/etc/designs/tds-foundation/tds-styles/bower_components/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/etc/designs/tds-foundation/tds-styles/bower_components/jquery-ui/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/etc/designs/tds-foundation/tds-styles/bower_components/selectToAutocomplete/jquery.select-to-autocomplete.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  (function($){
+    $(function(){
+      $(&#39;select&#39;).selectToAutocomplete();
+      $(&#39;form&#39;).submit(function(){
+        alert( $(this).serialize() );
+        return false;
+      });
+    });
+  })(jQuery);
+&lt;/script&gt;
+
+&lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 15 Dec 2016 00:00:00 -0600</pubDate>
+        <link>/cws/2016/12/15/cws-address-entry-component/</link>
+        <guid isPermaLink="true">/cws/2016/12/15/cws-address-entry-component/</guid>
+        
+        
+        <category>cws</category>
+        
+        <category>CWS</category>
+        
+      </item>
     
       <item>
         <title>CWS-ViewCart FinalCart Review Component</title>
@@ -2162,25 +2521,25 @@
         <title>CWS-Checkout questions</title>
         <description>&lt;!--user name or address bar --&gt;
 &lt;!--Not part of the componet --&gt;
-&lt;div class=&quot;container shopperId&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div&gt;Address: &lt;strong&gt;811 North Edge Trl, Verona, WI&lt;/strong&gt; &lt;a href=&quot;#&quot;&gt;change&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;tds-error-msg tds-error-info&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+  &lt;p&gt;Address: &lt;span class=&quot;userGreeting-address&quot;&gt;&lt;span class=&quot;has-titleCase&quot;&gt;${ADDRESS 1} ${ADDRESS 2}, ${CITY}&lt;/span&gt;, &lt;span class=&quot;has-allCaps&quot;&gt;${STATE}&lt;/span&gt;&lt;/span&gt;. &lt;a href=&quot;/visitor/address-entry.html?redirectDestination=%2Fshop.html&quot;&gt;Edit address&lt;/a&gt;&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;!--Not part of the componet --&gt;
 &lt;!--user name or address bar end--&gt;
 
 &lt;!--Warring bar--&gt;
-&lt;div class=&quot;container warning-cartEmpty&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot; tds-alert tds-alert-warning&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
     &lt;div&gt;Your shopping cart is empty. &lt;a href=&quot;#&quot;&gt;Shop our site to find product pricing and availability information.&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;!--Warring bar end--&gt;
 
 &lt;!--Error bar--&gt;
-&lt;div class=&quot;container tds-alert tds-alert-critical&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;tds-alert tds-alert-critical&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
     &lt;div&gt;Please fix errors before submitting. &lt;a href=&quot;#&quot;&gt;(Calls out invalid fields)&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -2722,34 +3081,6 @@ $(&#39;.input-group.date&#39;).datepicker({
         <category>cws</category>
         
         <category>CWS</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 31 Oct 2016 09:24:53 -0500</pubDate>
-        <link>/jekyll/update/2016/10/31/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">/jekyll/update/2016/10/31/welcome-to-jekyll/</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     
