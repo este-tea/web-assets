@@ -7,9 +7,9 @@ categories: CWS
 
 <!--user name or address bar -->
 <!--Not part of the componet -->
-<div class="container shopperId">
-  <div class="row" >
-    <div>Address: <strong>811 North Edge Trl, Verona, WI</strong> <a href="#">change</a></div>
+<div class="tds-error-msg tds-error-info">
+  <div class="container" >
+  <p>Address: <span class="userGreeting-address"><span class="has-titleCase">${ADDRESS 1} ${ADDRESS 2}, ${CITY}</span>, <span class="has-allCaps">${STATE}</span></span>. <a href="/visitor/address-entry.html?redirectDestination=%2Fshop.html">Edit address</a></p>
   </div>
 </div>
 <!--Not part of the componet -->
@@ -19,16 +19,16 @@ categories: CWS
 
 
 <!--Warring bar-->
-<div class="container warning-cartEmpty">
-  <div class="row" >
+<div class=" tds-alert tds-alert-warning">
+  <div class="container" >
     <div>Your shopping cart is empty. <a href="#">Shop our site to find product pricing and availability information.</a></div>
   </div>
 </div>
 <!--Warring bar end-->
 
 <!--Error bar-->
-<div class="container tds-alert tds-alert-critical">
-  <div class="row" >
+<div class="tds-alert tds-alert-critical">
+  <div class="container" >
     <div>Please fix errors before submitting. <a href="#">(Calls out invalid fields)</a></div>
   </div>
 </div>
