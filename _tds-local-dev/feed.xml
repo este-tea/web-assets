@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Dec 2016 12:27:44 -0600</pubDate>
-    <lastBuildDate>Tue, 20 Dec 2016 12:27:44 -0600</lastBuildDate>
+    <pubDate>Tue, 20 Dec 2016 13:00:06 -0600</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2016 13:00:06 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -26,7 +26,7 @@ Warning message appears above prefilled form with option to Log In--&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!--User who has items in cart and is not logged in:
+&lt;!--User is logged in:
 Warning message appears above prefilled form with option to Log In--&gt;
 &lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;tds-alert tds-alert-warning&quot; role=&quot;alert&quot;&gt;
