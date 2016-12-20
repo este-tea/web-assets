@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Dec 2016 14:33:25 -0600</pubDate>
-    <lastBuildDate>Thu, 15 Dec 2016 14:33:25 -0600</lastBuildDate>
+    <pubDate>Tue, 20 Dec 2016 12:27:44 -0600</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2016 12:27:44 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -67,107 +67,107 @@ Warning message appears above prefilled form with option to Log In--&gt;
           &lt;select class=&quot;form-control&quot; name=&quot;billingState&quot; id=&quot;billingState&quot; autofocus=&quot;autofocus&quot; autocorrect=&quot;off&quot; autocomplete=&quot;off&quot;&gt;
               &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;selected&quot;&gt;Select State&lt;/option&gt;
 
-              &lt;option value=&quot;AK&quot;&gt;AK&lt;/option&gt;
+              &lt;option value=&quot;AK&quot; data-alternative-spellings=&quot;Alaska&quot;&gt;AK&lt;/option&gt;
 
-              &lt;option value=&quot;AL&quot;&gt;AL&lt;/option&gt;
+              &lt;option value=&quot;AL&quot; data-alternative-spellings=&quot;Alabama&quot;&gt;AL&lt;/option&gt;
 
-              &lt;option value=&quot;AR&quot;&gt;AR&lt;/option&gt;
+              &lt;option value=&quot;AR&quot; data-alternative-spellings=&quot;Arkansas&quot;&gt;AR&lt;/option&gt;
 
-              &lt;option value=&quot;AZ&quot;&gt;AZ&lt;/option&gt;
+              &lt;option value=&quot;AZ&quot; data-alternative-spellings=&quot;Arizona&quot;&gt;AZ&lt;/option&gt;
 
-              &lt;option value=&quot;CA&quot;&gt;CA&lt;/option&gt;
+              &lt;option value=&quot;CA&quot; data-alternative-spellings=&quot;California&quot;&gt;CA&lt;/option&gt;
 
-              &lt;option value=&quot;CO&quot;&gt;CO&lt;/option&gt;
+              &lt;option value=&quot;CO&quot; data-alternative-spellings=&quot;Colorado&quot;&gt;CO&lt;/option&gt;
 
-              &lt;option value=&quot;CT&quot;&gt;CT&lt;/option&gt;
+              &lt;option value=&quot;CT&quot; data-alternative-spellings=&quot;Connecticut&quot;&gt;CT&lt;/option&gt;
 
-              &lt;option value=&quot;DC&quot;&gt;DC&lt;/option&gt;
+              &lt;option value=&quot;DC&quot; data-alternative-spellings=&quot;Washington, D.C.&quot;&gt;DC&lt;/option&gt;
 
-              &lt;option value=&quot;DE&quot;&gt;DE&lt;/option&gt;
+              &lt;option value=&quot;DE&quot; data-alternative-spellings=&quot;Delaware&quot;&gt;DE&lt;/option&gt;
 
-              &lt;option value=&quot;FL&quot;&gt;FL&lt;/option&gt;
+              &lt;option value=&quot;FL&quot; data-alternative-spellings=&quot;Florida&quot;&gt;FL&lt;/option&gt;
 
-              &lt;option value=&quot;GA&quot;&gt;GA&lt;/option&gt;
+              &lt;option value=&quot;GA&quot; data-alternative-spellings=&quot;Georgia&quot;&gt;GA&lt;/option&gt;
 
-              &lt;option value=&quot;HI&quot;&gt;HI&lt;/option&gt;
+              &lt;option value=&quot;HI&quot; data-alternative-spellings=&quot;Hawaii&quot;&gt;HI&lt;/option&gt;
 
-              &lt;option value=&quot;IA&quot;&gt;IA&lt;/option&gt;
+              &lt;option value=&quot;IA&quot; data-alternative-spellings=&quot;Iowa&quot;&gt;IA&lt;/option&gt;
 
-              &lt;option value=&quot;ID&quot;&gt;ID&lt;/option&gt;
+              &lt;option value=&quot;ID&quot; data-alternative-spellings=&quot;Idaho&quot;&gt;ID&lt;/option&gt;
 
-              &lt;option value=&quot;IL&quot;&gt;IL&lt;/option&gt;
+              &lt;option value=&quot;IL&quot; data-alternative-spellings=&quot;Illinois&quot;&gt;IL&lt;/option&gt;
 
-              &lt;option value=&quot;IN&quot;&gt;IN&lt;/option&gt;
+              &lt;option value=&quot;IN&quot; data-alternative-spellings=&quot;Indiana&quot;&gt;IN&lt;/option&gt;
 
-              &lt;option value=&quot;KS&quot;&gt;KS&lt;/option&gt;
+              &lt;option value=&quot;KS&quot; data-alternative-spellings=&quot;Kansas&quot;&gt;KS&lt;/option&gt;
 
-              &lt;option value=&quot;KY&quot;&gt;KY&lt;/option&gt;
+              &lt;option value=&quot;KY&quot; data-alternative-spellings=&quot;Kentucky&quot;&gt;KY&lt;/option&gt;
 
-              &lt;option value=&quot;LA&quot;&gt;LA&lt;/option&gt;
+              &lt;option value=&quot;LA&quot; data-alternative-spellings=&quot;Louisiana&quot;&gt;LA&lt;/option&gt;
 
-              &lt;option value=&quot;MA&quot;&gt;MA&lt;/option&gt;
+              &lt;option value=&quot;MA&quot; data-alternative-spellings=&quot;Massachusetts&quot;&gt;MA&lt;/option&gt;
 
-              &lt;option value=&quot;MD&quot;&gt;MD&lt;/option&gt;
+              &lt;option value=&quot;MD&quot; data-alternative-spellings=&quot;Maryland&quot;&gt;MD&lt;/option&gt;
 
-              &lt;option value=&quot;ME&quot;&gt;ME&lt;/option&gt;
+              &lt;option value=&quot;ME&quot; data-alternative-spellings=&quot;Maine&quot;&gt;ME&lt;/option&gt;
 
-              &lt;option value=&quot;MI&quot;&gt;MI&lt;/option&gt;
+              &lt;option value=&quot;MI&quot; data-alternative-spellings=&quot;Michigan&quot;&gt;MI&lt;/option&gt;
 
-              &lt;option value=&quot;MN&quot;&gt;MN&lt;/option&gt;
+              &lt;option value=&quot;MN&quot; data-alternative-spellings=&quot;Minnesota&quot;&gt;MN&lt;/option&gt;
 
-              &lt;option value=&quot;MO&quot;&gt;MO&lt;/option&gt;
+              &lt;option value=&quot;MO&quot; data-alternative-spellings=&quot;Missouri&quot;&gt;MO&lt;/option&gt;
 
-              &lt;option value=&quot;MS&quot;&gt;MS&lt;/option&gt;
+              &lt;option value=&quot;MS&quot; data-alternative-spellings=&quot;Mississippi&quot;&gt;MS&lt;/option&gt;
 
-              &lt;option value=&quot;MT&quot;&gt;MT&lt;/option&gt;
+              &lt;option value=&quot;MT&quot; data-alternative-spellings=&quot;Montana&quot;&gt;MT&lt;/option&gt;
 
-              &lt;option value=&quot;NC&quot;&gt;NC&lt;/option&gt;
+              &lt;option value=&quot;NC&quot; data-alternative-spellings=&quot;North Carolina&quot;&gt;NC&lt;/option&gt;
 
-              &lt;option value=&quot;ND&quot;&gt;ND&lt;/option&gt;
+              &lt;option value=&quot;ND&quot; data-alternative-spellings=&quot;North Dakota&quot;&gt;ND&lt;/option&gt;
 
-              &lt;option value=&quot;NE&quot;&gt;NE&lt;/option&gt;
+              &lt;option value=&quot;NE&quot; data-alternative-spellings=&quot;Nebraska&quot;&gt;NE&lt;/option&gt;
 
-              &lt;option value=&quot;NH&quot;&gt;NH&lt;/option&gt;
+              &lt;option value=&quot;NH&quot; data-alternative-spellings=&quot;New Hampshire&quot;&gt;NH&lt;/option&gt;
 
-              &lt;option value=&quot;NJ&quot;&gt;NJ&lt;/option&gt;
+              &lt;option value=&quot;NJ&quot; data-alternative-spellings=&quot;New Jersey&quot;&gt;NJ&lt;/option&gt;
 
-              &lt;option value=&quot;NM&quot;&gt;NM&lt;/option&gt;
+              &lt;option value=&quot;NM&quot; data-alternative-spellings=&quot;New Mexico&quot;&gt;NM&lt;/option&gt;
 
-              &lt;option value=&quot;NV&quot;&gt;NV&lt;/option&gt;
+              &lt;option value=&quot;NV&quot; data-alternative-spellings=&quot;Nevada&quot;&gt;NV&lt;/option&gt;
 
-              &lt;option value=&quot;NY&quot;&gt;NY&lt;/option&gt;
+              &lt;option value=&quot;NY&quot; data-alternative-spellings=&quot;New York&quot;&gt;NY&lt;/option&gt;
 
-              &lt;option value=&quot;OH&quot;&gt;OH&lt;/option&gt;
+              &lt;option value=&quot;OH&quot; data-alternative-spellings=&quot;Ohio&quot;&gt;OH&lt;/option&gt;
 
-              &lt;option value=&quot;OK&quot;&gt;OK&lt;/option&gt;
+              &lt;option value=&quot;OK&quot; data-alternative-spellings=&quot;Oklahoma&quot;&gt;OK&lt;/option&gt;
 
-              &lt;option value=&quot;OR&quot;&gt;OR&lt;/option&gt;
+              &lt;option value=&quot;OR&quot; data-alternative-spellings=&quot;Oregon&quot;&gt;OR&lt;/option&gt;
 
-              &lt;option value=&quot;PA&quot;&gt;PA&lt;/option&gt;
+              &lt;option value=&quot;PA&quot; data-alternative-spellings=&quot;Pennsylvania&quot;&gt;PA&lt;/option&gt;
 
-              &lt;option value=&quot;RI&quot;&gt;RI&lt;/option&gt;
+              &lt;option value=&quot;RI&quot; data-alternative-spellings=&quot;Rhode Island&quot;&gt;RI&lt;/option&gt;
 
-              &lt;option value=&quot;SC&quot;&gt;SC&lt;/option&gt;
+              &lt;option value=&quot;SC&quot; data-alternative-spellings=&quot;South Carolina&quot;&gt;SC&lt;/option&gt;
 
-              &lt;option value=&quot;SD&quot;&gt;SD&lt;/option&gt;
+              &lt;option value=&quot;SD&quot; data-alternative-spellings=&quot;South Dakota&quot;&gt;SD&lt;/option&gt;
 
-              &lt;option value=&quot;TN&quot;&gt;TN&lt;/option&gt;
+              &lt;option value=&quot;TN&quot; data-alternative-spellings=&quot;Tennessee&quot;&gt;TN&lt;/option&gt;
 
-              &lt;option value=&quot;TX&quot;&gt;TX&lt;/option&gt;
+              &lt;option value=&quot;TX&quot; data-alternative-spellings=&quot;Texas&quot;&gt;TX&lt;/option&gt;
 
-              &lt;option value=&quot;UT&quot;&gt;UT&lt;/option&gt;
+              &lt;option value=&quot;UT&quot; data-alternative-spellings=&quot;Utah&quot;&gt;UT&lt;/option&gt;
 
-              &lt;option value=&quot;VA&quot;&gt;VA&lt;/option&gt;
+              &lt;option value=&quot;VA&quot; data-alternative-spellings=&quot;Virginia&quot;&gt;VA&lt;/option&gt;
 
-              &lt;option value=&quot;VT&quot;&gt;VT&lt;/option&gt;
+              &lt;option value=&quot;VT&quot; data-alternative-spellings=&quot;Vermont&quot;&gt;VT&lt;/option&gt;
 
-              &lt;option value=&quot;WA&quot;&gt;WA&lt;/option&gt;
+              &lt;option value=&quot;WA&quot; data-alternative-spellings=&quot;Washington&quot;&gt;WA&lt;/option&gt;
 
-              &lt;option value=&quot;WI&quot;&gt;WI&lt;/option&gt;
+              &lt;option value=&quot;WI&quot; data-alternative-spellings=&quot;Wisconsin&quot;&gt;WI&lt;/option&gt;
 
-              &lt;option value=&quot;WV&quot;&gt;WV&lt;/option&gt;
+              &lt;option value=&quot;WV&quot; data-alternative-spellings=&quot;West Virginia&quot;&gt;WV&lt;/option&gt;
 
-              &lt;option value=&quot;WY&quot;&gt;WY&lt;/option&gt;
+              &lt;option value=&quot;WY&quot; data-alternative-spellings=&quot;Wyoming&quot;&gt;WY&lt;/option&gt;
           &lt;/select&gt;
           &lt;span class=&quot;help-block&quot; id=&quot;billingStateError&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;
 
@@ -179,7 +179,7 @@ Warning message appears above prefilled form with option to Log In--&gt;
     &lt;/div&gt;&lt;!--Form Colume end--&gt;
 
     &lt;div class=&quot;col-sm-4 col-xs-12&quot;&gt;
-          &lt;div class=&quot;tds-alert tds-alert-info&quot;&gt;Looking for Business Services? &lt;span class=&quot;inline-block&quot;&gt;Visit &lt;a href=&quot;#&quot;&gt;www.tdsbusiness.com&lt;/a&gt;.&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;tds-alert tds-alert-info&quot;&gt;Looking for Business Services? &lt;span class=&quot;inline-block&quot;&gt;Visit &lt;a href=&quot;https://tdsbusiness.com/&quot;&gt;www.tdsbusiness.com&lt;/a&gt;.&lt;/span&gt;&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;&lt;!--row end--&gt;
 
@@ -210,6 +210,7 @@ Warning message appears above prefilled form with option to Log In--&gt;
     like us to use:&lt;/p&gt;
 
     &lt;form&gt;
+      &lt;!--lists suggested address--&gt;
         &lt;div id=&quot;suggestedAddresses&quot;&gt;
 
             &lt;div class=&quot;radio&quot;&gt;
