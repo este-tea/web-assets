@@ -23,7 +23,7 @@ Warning message appears above prefilled form with option to Log In-->
 </div>
 
 
-<!--User who has items in cart and is not logged in:
+<!--User is logged in:
 Warning message appears above prefilled form with option to Log In-->
 <div class="container" >
   <div class="tds-alert tds-alert-warning" role="alert">
