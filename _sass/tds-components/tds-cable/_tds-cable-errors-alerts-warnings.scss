@@ -3,7 +3,8 @@
 
 /* ===== tds cable warrnings and error messages === */
 
- .container.warning-cartEmpty, .container.tds-alert.tds-alert-critical {
+ .container.warning-cartEmpty,
+ .container.tds-alert.tds-alert-critical {
   max-width: 100%;
   padding: 15px 15px 5px 15px;
   p {
@@ -22,32 +23,56 @@
   background-color: $state-warning-bg;
 }
 
+.tds-alert.tds-alert-warning,
 .tds-alert.tds-alert-critical {
-  border-top: 2px solid $tds-red;
+  background-image: none ;
+  border-left: 0px;
+  padding-left: 0px;
+  .col-md-9.col-sm-7.col-xs-12, .col-md-3.col-sm-5.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  a {
+      color: #0C8FD0;
+    }
+
+  a.gallery-btn.pull-right {
+    margin-top: 0;
+    color: $tds-white;
+    text-decoration: none;
+
+    @media (max-width: 750px) {
+      float: left!important;
+      margin-top: 10px;
+    }
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0
+  }
+}
+
+
+.tds-alert.tds-alert-critical {
+  border-top: 3px solid $tds-red;
+
   .container {
     background-color: $tds-critical-bg;
+    background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+    background-size: 22px 22px;
+    background-position: 16px 0px;
+    background-repeat: no-repeat;
+    padding-left: 52px;
     a {
       color: $tds-red;
       &:hover, :focus {
         color: #991419;
       }
     }
-    p {
-      &:before {
-      content: "";
-      position: relative;
-      left: 0px;
-      top: 0px;
-      width: 50px;
-      height: 50px;
-      background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) !important;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding-left: 20px;
-      margin-right: 15px
-      }
-    }
+
     ul li {
       list-style-type: square;
       display: list-item;
@@ -57,31 +82,22 @@
 
 
 .container .tds-alert.tds-alert-critical {
-  border-top: 2px solid $tds-red;
-    background-color: $tds-critical-bg;
-    padding-left: 20px;
+  border-left: 3px solid $tds-red;
+  border-top: 0px;
+  background-color: $tds-critical-bg;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+  background-size: 22px 22px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+
     a {
       color: $tds-red;
       &:hover, :focus {
         color: #991419;
       }
     }
-    p {
-      &:before {
-      content: "";
-      position: relative;
-      left: 0px;
-      top: 0px;
-      width: 50px;
-      height: 50px;
-      background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) !important;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding-left: 20px;
-      margin-right: 15px
-      }
-    }
+
     ul li {
       list-style-type: square;
       display: list-item;
@@ -89,12 +105,12 @@
   }
 
 
-
-
-tr.tds-alert.tds-alert-critical {
+.container tr.tds-alert.tds-alert-critical {
   border-top: none;
   font-size: inherit;
   font-weight: normal;
+  background-image: none ;
+
   td:first-child:before  {
   content: "";
   position: relative;
@@ -102,7 +118,7 @@ tr.tds-alert.tds-alert-critical {
   top: 0px;
   width: 50px;
   height: 50px;
-  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) !important;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) ;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,34 +127,18 @@ tr.tds-alert.tds-alert-critical {
   }
 }
 
-.tds-alert.tds-alert-warning, .tds-alert.tds-alert-critical {
-    background-image: none !important;
-    border-left: 0px!important;
-    padding-left: 0px;
-  }
-
-
   .tds-alert.tds-alert-warning {
-    border-top: 2px solid #FFCE00;
+    border-top: 3px solid #FFCE00;
+
     .container {
       background-color: $state-warning-bg;
-      p {
-        &:before {
-        content: "";
-        position: relative;
-        left: 0px;
-        top: 0px;
-        width: 50px;
-        height: 50px;
-        background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg) !important;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding-left: 20px;
-        margin-right: 15px
-        }
-      }
-      ul li {
+      background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg);
+      background-size: 22px 22px;
+      background-position: 16px 0px;
+      background-repeat: no-repeat;
+      padding-left: 52px;
+
+        ul li {
         list-style-type: square;
         display: list-item;
       }
@@ -147,24 +147,14 @@ tr.tds-alert.tds-alert-critical {
 
 
 .container .tds-alert.tds-alert-warning  {
-  border-top: 2px solid #FFCE00;
-  padding-left: 20px;
-  p {
-    &:before {
-    content: "";
-    position: relative;
-    left: 0px;
-    top: 0px;
-    width: 50px;
-    height: 50px;
-    background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg) !important;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    margin-right: 15px
-    }
-  }
+  border-left: 3px solid #FFCE00;
+  border-top: 0px;
+  background-color: $state-warning-bg;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg);
+  background-size: 22px 22px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
 }
 
 

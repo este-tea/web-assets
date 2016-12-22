@@ -17952,12 +17952,12 @@ input + span.input-group-btn .lt-blue-button .tds-alert > .tds-icon,
 
 .tds-error-critical, .bundle-error,
 .tds-alert-critical {
-  border-left: 3px solid #CB1D1D !important;
+  border-left: 3px solid #CB1D1D;
 }
 .tds-error-critical.tds-top-border, .tds-top-border.bundle-error,
 .tds-alert-critical.tds-top-border {
-  border-top: 3px solid #CB1D1D !important;
-  border-left: 0px !important;
+  border-top: 3px solid #CB1D1D;
+  border-left: 0px;
 }
 .tds-error-critical .fa, .bundle-error .fa, .tds-error-critical .form-group.tds-form-group.has-error span:before, .form-group.tds-form-group.has-error .tds-error-critical span:before, .bundle-error .form-group.tds-form-group.has-error span:before, .form-group.tds-form-group.has-error .bundle-error span:before, .tds-error-critical form.elq-form .tds-form-group.has-error.form-design-field span:before, form.elq-form .tds-form-group.has-error.form-design-field .tds-error-critical span:before, .bundle-error form.elq-form .tds-form-group.has-error.form-design-field span:before, form.elq-form .tds-form-group.has-error.form-design-field .bundle-error span:before, .tds-error-critical #preferred-contact-error:before, .bundle-error #preferred-contact-error:before, .tds-error-critical .gallery-btn-link:after, .bundle-error .gallery-btn-link:after, .tds-error-critical .back-arrow:before, .bundle-error .back-arrow:before, .tds-error-critical .read-more.plus + .read-more-text:before, .bundle-error .read-more.plus + .read-more-text:before, .tds-error-critical .read-more.minus + .read-more-text:before, .bundle-error .read-more.minus + .read-more-text:before, .tds-error-critical input + span.input-group-btn .gallery-btn .tds-icon, input + span.input-group-btn .gallery-btn .tds-error-critical .tds-icon, .bundle-error input + span.input-group-btn .gallery-btn .tds-icon, input + span.input-group-btn .gallery-btn .bundle-error .tds-icon, .tds-error-critical input + span.input-group-btn form.elq-form input.submit-button .tds-icon, input + span.input-group-btn form.elq-form input.submit-button .tds-error-critical .tds-icon, .bundle-error input + span.input-group-btn form.elq-form input.submit-button .tds-icon, input + span.input-group-btn form.elq-form input.submit-button .bundle-error .tds-icon, .tds-error-critical form.elq-form input + span.input-group-btn input.submit-button .tds-icon, form.elq-form input + span.input-group-btn input.submit-button .tds-error-critical .tds-icon, .bundle-error form.elq-form input + span.input-group-btn input.submit-button .tds-icon, form.elq-form input + span.input-group-btn input.submit-button .bundle-error .tds-icon, .tds-error-critical input + span.input-group-btn .lt-blue-button .tds-icon, input + span.input-group-btn .lt-blue-button .tds-error-critical .tds-icon, .bundle-error input + span.input-group-btn .lt-blue-button .tds-icon, input + span.input-group-btn .lt-blue-button .bundle-error .tds-icon, .tds-error-critical .tds-icon, .bundle-error .tds-icon, .tds-error-critical .bundle-error:before, .bundle-error .bundle-error:before, .tds-error-critical .tds-input-error:before, .bundle-error .tds-input-error:before, .tds-error-critical .tds-usage-tool.btn span, .tds-usage-tool.btn .tds-error-critical span, .bundle-error .tds-usage-tool.btn span, .tds-usage-tool.btn .bundle-error span, .tds-error-critical .tds-usage-tool.gallery-btn-link span, .tds-usage-tool.gallery-btn-link .tds-error-critical span, .bundle-error .tds-usage-tool.gallery-btn-link span, .tds-usage-tool.gallery-btn-link .bundle-error span, .tds-error-critical .btn-right a.tds-usage-tool span, .btn-right a.tds-usage-tool .tds-error-critical span, .bundle-error .btn-right a.tds-usage-tool span, .btn-right a.tds-usage-tool .bundle-error span,
 .tds-error-critical .btn-left a.tds-usage-tool span,
@@ -17999,17 +17999,17 @@ input + span.input-group-btn .lt-blue-button .tds-alert-critical .tds-icon,
 
 .tds-error-critical-input,
 .tds-alert-critical-input {
-  border: 2px solid #CB1D1D !important;
+  border: 2px solid #CB1D1D;
 }
 
 .tds-error-warning,
 .tds-alert-warning {
-  border-left: 3px solid #FFCE00 !important;
+  border-left: 3px solid #FFCE00;
 }
 .tds-error-warning.tds-top-border,
 .tds-alert-warning.tds-top-border {
-  border-top: 3px solid #FFCE00 !important;
-  border-left: 0px !important;
+  border-top: 3px solid #FFCE00;
+  border-left: 0px;
 }
 .tds-error-warning .fa, .tds-error-warning .form-group.tds-form-group.has-error span:before, .form-group.tds-form-group.has-error .tds-error-warning span:before, .tds-error-warning form.elq-form .tds-form-group.has-error.form-design-field span:before, form.elq-form .tds-form-group.has-error.form-design-field .tds-error-warning span:before, .tds-error-warning #preferred-contact-error:before, .tds-error-warning .gallery-btn-link:after, .tds-error-warning .back-arrow:before, .tds-error-warning .read-more.plus + .read-more-text:before, .tds-error-warning .read-more.minus + .read-more-text:before, .tds-error-warning input + span.input-group-btn .gallery-btn .tds-icon, input + span.input-group-btn .gallery-btn .tds-error-warning .tds-icon, .tds-error-warning input + span.input-group-btn form.elq-form input.submit-button .tds-icon, input + span.input-group-btn form.elq-form input.submit-button .tds-error-warning .tds-icon, .tds-error-warning form.elq-form input + span.input-group-btn input.submit-button .tds-icon, form.elq-form input + span.input-group-btn input.submit-button .tds-error-warning .tds-icon, .tds-error-warning input + span.input-group-btn .lt-blue-button .tds-icon, input + span.input-group-btn .lt-blue-button .tds-error-warning .tds-icon, .tds-error-warning .tds-icon, .tds-error-warning .bundle-error:before, .tds-error-warning .tds-input-error:before, .tds-error-warning .tds-usage-tool.btn span, .tds-usage-tool.btn .tds-error-warning span, .tds-error-warning .tds-usage-tool.gallery-btn-link span, .tds-usage-tool.gallery-btn-link .tds-error-warning span, .tds-error-warning .btn-right a.tds-usage-tool span, .btn-right a.tds-usage-tool .tds-error-warning span,
 .tds-error-warning .btn-left a.tds-usage-tool span,
@@ -18049,12 +18049,12 @@ input + span.input-group-btn .lt-blue-button .tds-alert-warning .tds-icon,
 
 .tds-error-success,
 .tds-alert-success {
-  border-left: 3px solid #6B9C22 !important;
+  border-left: 3px solid #6B9C22;
 }
 .tds-error-success.tds-top-border,
 .tds-alert-success.tds-top-border {
-  border-top: 3px solid #6B9C22 !important;
-  border-left: 0px !important;
+  border-top: 3px solid #6B9C22;
+  border-left: 0px;
 }
 .tds-error-success .fa, .tds-error-success .form-group.tds-form-group.has-error span:before, .form-group.tds-form-group.has-error .tds-error-success span:before, .tds-error-success form.elq-form .tds-form-group.has-error.form-design-field span:before, form.elq-form .tds-form-group.has-error.form-design-field .tds-error-success span:before, .tds-error-success #preferred-contact-error:before, .tds-error-success .gallery-btn-link:after, .tds-error-success .back-arrow:before, .tds-error-success .read-more.plus + .read-more-text:before, .tds-error-success .read-more.minus + .read-more-text:before, .tds-error-success input + span.input-group-btn .gallery-btn .tds-icon, input + span.input-group-btn .gallery-btn .tds-error-success .tds-icon, .tds-error-success input + span.input-group-btn form.elq-form input.submit-button .tds-icon, input + span.input-group-btn form.elq-form input.submit-button .tds-error-success .tds-icon, .tds-error-success form.elq-form input + span.input-group-btn input.submit-button .tds-icon, form.elq-form input + span.input-group-btn input.submit-button .tds-error-success .tds-icon, .tds-error-success input + span.input-group-btn .lt-blue-button .tds-icon, input + span.input-group-btn .lt-blue-button .tds-error-success .tds-icon, .tds-error-success .tds-icon, .tds-error-success .bundle-error:before, .tds-error-success .tds-input-error:before, .tds-error-success .tds-usage-tool.btn span, .tds-usage-tool.btn .tds-error-success span, .tds-error-success .tds-usage-tool.gallery-btn-link span, .tds-usage-tool.gallery-btn-link .tds-error-success span, .tds-error-success .btn-right a.tds-usage-tool span, .btn-right a.tds-usage-tool .tds-error-success span,
 .tds-error-success .btn-left a.tds-usage-tool span,
@@ -18127,7 +18127,7 @@ input + span.input-group-btn .lt-blue-button .tds-alert-success .tds-icon,
 }
 
 .tds-alert.tds-alert-warning {
-  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg") !important;
+  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg");
   background-size: 22px 22px;
   background-position: 16px 11px;
   background-repeat: no-repeat;
@@ -18135,7 +18135,7 @@ input + span.input-group-btn .lt-blue-button .tds-alert-success .tds-icon,
 }
 
 .tds-alert.tds-alert-critical {
-  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg") !important;
+  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg");
   background-size: 20px 20px;
   background-position: 16px 14px;
   background-repeat: no-repeat;
@@ -18143,7 +18143,7 @@ input + span.input-group-btn .lt-blue-button .tds-alert-success .tds-icon,
 }
 
 .tds-alert.tds-alert-success {
-  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-success.svg") !important;
+  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-success.svg");
   background-size: 22px 22px;
   background-position: 16px 11px;
   background-repeat: no-repeat;
@@ -18151,7 +18151,7 @@ input + span.input-group-btn .lt-blue-button .tds-alert-success .tds-icon,
 }
 
 .tds-alert.tds-alert-info, .tds-alert.tds-alert-status {
-  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-information.svg") !important;
+  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-information.svg");
   background-size: 22px 22px;
   background-position: 16px 11px;
   background-repeat: no-repeat;
@@ -18160,7 +18160,7 @@ input + span.input-group-btn .lt-blue-button .tds-alert-success .tds-icon,
 
 .tds-alert.tds-alert-loading {
   padding-left: 52px;
-  background-image: url("/content/dam/tdstelecom/images/ui/tds-spinner-icon.gif") !important;
+  background-image: url("/content/dam/tdstelecom/images/ui/tds-spinner-icon.gif");
   background-size: 22px 22px;
   background-position: 16px 11px;
   background-repeat: no-repeat;

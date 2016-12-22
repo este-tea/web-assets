@@ -776,18 +776,23 @@ div.cws-btn:hover, div.cws-btn:focus, a.cws-btn:hover, a.cws-btn:focus {
 }
 
 /* ===== tds cable warrnings and error messages === */
-.container.warning-cartEmpty, .container.tds-alert.tds-alert-critical {
+.container.warning-cartEmpty,
+.container.tds-alert.tds-alert-critical {
   max-width: 100%;
   padding: 15px 15px 5px 15px;
 }
-.container.warning-cartEmpty p, .container.tds-alert.tds-alert-critical p {
+.container.warning-cartEmpty p,
+.container.tds-alert.tds-alert-critical p {
   line-height: 1.5em;
   font-size: 14px;
 }
-.container.warning-cartEmpty a, .container.tds-alert.tds-alert-critical a {
+.container.warning-cartEmpty a,
+.container.tds-alert.tds-alert-critical a {
   color: #555;
 }
-.container.warning-cartEmpty a:hover, .container.warning-cartEmpty a :focus, .container.tds-alert.tds-alert-critical a:hover, .container.tds-alert.tds-alert-critical a :focus {
+.container.warning-cartEmpty a:hover, .container.warning-cartEmpty a :focus,
+.container.tds-alert.tds-alert-critical a:hover,
+.container.tds-alert.tds-alert-critical a :focus {
   color: #0A7AAA;
 }
 
@@ -795,11 +800,56 @@ div.cws-btn:hover, div.cws-btn:focus, a.cws-btn:hover, a.cws-btn:focus {
   background-color: #FFF8D8;
 }
 
+.tds-alert.tds-alert-warning,
 .tds-alert.tds-alert-critical {
-  border-top: 2px solid #CB1D1D;
+  background-image: none;
+  border-left: 0px;
+  padding-left: 0px;
+}
+.tds-alert.tds-alert-warning .col-md-9.col-sm-7.col-xs-12, .tds-alert.tds-alert-warning .col-md-3.col-sm-5.col-xs-12,
+.tds-alert.tds-alert-critical .col-md-9.col-sm-7.col-xs-12,
+.tds-alert.tds-alert-critical .col-md-3.col-sm-5.col-xs-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.tds-alert.tds-alert-warning a,
+.tds-alert.tds-alert-critical a {
+  color: #0C8FD0;
+}
+.tds-alert.tds-alert-warning a.gallery-btn.pull-right,
+.tds-alert.tds-alert-critical a.gallery-btn.pull-right {
+  margin-top: 0;
+  color: #FFF;
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+  .tds-alert.tds-alert-warning a.gallery-btn.pull-right,
+  .tds-alert.tds-alert-critical a.gallery-btn.pull-right {
+    float: left !important;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .tds-alert.tds-alert-warning a.gallery-btn.pull-right,
+  .tds-alert.tds-alert-critical a.gallery-btn.pull-right {
+    width: 100%;
+  }
+}
+.tds-alert.tds-alert-warning p:last-child,
+.tds-alert.tds-alert-critical p:last-child {
+  margin-bottom: 0;
+}
+
+.tds-alert.tds-alert-critical {
+  border-top: 3px solid #CB1D1D;
 }
 .tds-alert.tds-alert-critical .container {
   background-color: #ffecec;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+  background-size: 22px 22px;
+  background-position: 16px 0px;
+  background-repeat: no-repeat;
+  padding-left: 52px;
 }
 .tds-alert.tds-alert-critical .container a {
   color: #CB1D1D;
@@ -807,29 +857,20 @@ div.cws-btn:hover, div.cws-btn:focus, a.cws-btn:hover, a.cws-btn:focus {
 .tds-alert.tds-alert-critical .container a:hover, .tds-alert.tds-alert-critical .container a :focus {
   color: #991419;
 }
-.tds-alert.tds-alert-critical .container p:before {
-  content: "";
-  position: relative;
-  left: 0px;
-  top: 0px;
-  width: 50px;
-  height: 50px;
-  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) !important;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  margin-right: 15px;
-}
 .tds-alert.tds-alert-critical .container ul li {
   list-style-type: square;
   display: list-item;
 }
 
 .container .tds-alert.tds-alert-critical {
-  border-top: 2px solid #CB1D1D;
+  border-left: 3px solid #CB1D1D;
+  border-top: 0px;
   background-color: #ffecec;
-  padding-left: 20px;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+  background-size: 22px 22px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
 }
 .container .tds-alert.tds-alert-critical a {
   color: #CB1D1D;
@@ -837,70 +878,42 @@ div.cws-btn:hover, div.cws-btn:focus, a.cws-btn:hover, a.cws-btn:focus {
 .container .tds-alert.tds-alert-critical a:hover, .container .tds-alert.tds-alert-critical a :focus {
   color: #991419;
 }
-.container .tds-alert.tds-alert-critical p:before {
-  content: "";
-  position: relative;
-  left: 0px;
-  top: 0px;
-  width: 50px;
-  height: 50px;
-  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) !important;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  margin-right: 15px;
-}
 .container .tds-alert.tds-alert-critical ul li {
   list-style-type: square;
   display: list-item;
 }
 
-tr.tds-alert.tds-alert-critical {
+.container tr.tds-alert.tds-alert-critical {
   border-top: none;
   font-size: inherit;
   font-weight: normal;
+  background-image: none;
 }
-tr.tds-alert.tds-alert-critical td:first-child:before {
+.container tr.tds-alert.tds-alert-critical td:first-child:before {
   content: "";
   position: relative;
   left: 0px;
   top: 0px;
   width: 50px;
   height: 50px;
-  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg) !important;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   padding-left: 20px;
   margin-right: 15px;
-}
-
-.tds-alert.tds-alert-warning, .tds-alert.tds-alert-critical {
-  background-image: none !important;
-  border-left: 0px !important;
-  padding-left: 0px;
 }
 
 .tds-alert.tds-alert-warning {
-  border-top: 2px solid #FFCE00;
+  border-top: 3px solid #FFCE00;
 }
 .tds-alert.tds-alert-warning .container {
   background-color: #FFF8D8;
-}
-.tds-alert.tds-alert-warning .container p:before {
-  content: "";
-  position: relative;
-  left: 0px;
-  top: 0px;
-  width: 50px;
-  height: 50px;
-  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg) !important;
-  background-size: contain;
-  background-position: center;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg);
+  background-size: 22px 22px;
+  background-position: 16px 0px;
   background-repeat: no-repeat;
-  padding-left: 20px;
-  margin-right: 15px;
+  padding-left: 52px;
 }
 .tds-alert.tds-alert-warning .container ul li {
   list-style-type: square;
@@ -908,22 +921,14 @@ tr.tds-alert.tds-alert-critical td:first-child:before {
 }
 
 .container .tds-alert.tds-alert-warning {
-  border-top: 2px solid #FFCE00;
-  padding-left: 20px;
-}
-.container .tds-alert.tds-alert-warning p:before {
-  content: "";
-  position: relative;
-  left: 0px;
-  top: 0px;
-  width: 50px;
-  height: 50px;
-  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg) !important;
-  background-size: contain;
-  background-position: center;
+  border-left: 3px solid #FFCE00;
+  border-top: 0px;
+  background-color: #FFF8D8;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg);
+  background-size: 22px 22px;
+  background-position: 16px 11px;
   background-repeat: no-repeat;
-  padding-left: 20px;
-  margin-right: 15px;
+  padding-left: 50px;
 }
 
 .datepicker-switch {
@@ -1033,6 +1038,10 @@ h1.page-header {
 /*==Text Formating==*/
 .inline-block {
   display: inline-block;
+}
+
+.userGreeting-address {
+  font-weight: bold;
 }
 
 /*/// Shopper ID  ///*/
