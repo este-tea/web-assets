@@ -10,7 +10,7 @@
 
   <title>
     
-      CWS &middot; Your awesome title
+      CWS-Intercept Page Component &middot; Your awesome title
     
   </title>
 
@@ -173,113 +173,89 @@ $(document).ready(function(){
 <div style="clearfix"></div>
 
 
-        <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Dec 22, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/12/22/cws-intercept-page-component/">CWS-Intercept Page Component</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 15, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/12/15/cws-address-entry-component/">CWS-Address Entry Component</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 30, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/30/cws-viewcartfinalcart-component/">CWS-ViewCart FinalCart Review Component</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 29, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/29/cws-customer-self-id-wiki/">CWS-Customer-Self-ID wikimarkup</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 23, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/23/cws-customer-self-id/">CWS-Customer-Self-ID</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 21, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/21/cws-user-greeting/">CWS-User Greeting</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 17, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/17/cws-package-comparison-vertical/">CWS-Package Comparison Vertical</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 17, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/17/cws-package-comparison-vertical-wikimarkup/">CWS-Package Comparison Vertical wikimarkup</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 15, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/15/cws-package-comparison-horizontal/">CWS-Package Comparison Horzontial</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 15, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/15/cws-package-comparison-horizontal-wikimarkup/">CWS-Package Comparison Horzontial wikimarkup</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 8, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/cws/2016/11/08/cws-checkoutquestions/">CWS-Checkout questions</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 31, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2016/10/31/welcome-to-jekyll/">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
+        <div class="container">
+  <div class="row">
+    <h1 class="page-header">Serving Territory Intercept Page</h1>
+  </div>
 </div>
+
+<!--Intercept page TDS Telecom prospect--->
+<div class="container">
+  <div class="tds-alert tds-alert-warning" role="alert">
+    <div class="row">
+      <div class="col-md-9 col-sm-7 col-xs-12">
+          <p>Your address:
+            <span class="userGreeting-address">
+            <span class="has-titleCase">${ADDRESS 1} ${ADDRESS 2}, ${CITY}</span>,
+            <span class="has-allCaps">${STATE}</span>
+            </span> is in another TDS service area.</p>
+          <p>Please visit <a href="${Telecom address entry link}">TDSTelecom.com<span class="sr-only"> $screenReaderTextOption</span></a> to shop for products and services.</p>
+          <p><a href="${Edit Address link}">Edit Address</a> to continue shopping for TDS Cable products and services.</p>
+      </div>
+      <div class="col-md-3 col-sm-5 col-xs-12">
+          <a href="${Telecom address entry link}" role="button" class="gallery-btn pull-right">$btnCTA <span class="sr-only"> $screenReaderTextOption</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Intercept page TDS Telecom prospect end--->
+
+<!--Intercept page current TDS Telecom Customer--->
+<div class="container">
+  <div class="tds-alert tds-alert-warning" role="alert">
+    <div class="row">
+      <div class="col-md-9 col-sm-7 col-xs-12">
+          <p>You are currently a TDS Telecom customer.</p>
+          <p>Please visit <a href="${SSO LINK}">TDSTelecom.com<span class="sr-only"> $screenReaderTextOption</span></a> to shop for products and services.</p>
+          <p><a href="${LOGOUT LINK}">Log out</a> to continue shopping for TDS Cable products and services.</p>
+      </div>
+      <div class="col-md-3 col-sm-5 col-xs-12">
+          <a href="${SSO LINK}" role="button" class="gallery-btn pull-right">$btnCTA <span class="sr-only"> $screenReaderTextOption</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Intercept page current TDS Telecom Customer--->
+
+<!--Intercept page Bend prospect--->
+<div class="container">
+  <div class="tds-alert tds-alert-warning" role="alert">
+    <div class="row">
+      <div class="col-md-9 col-sm-7 col-xs-12">
+          <p>Your address:
+            <span class="userGreeting-address">
+            <span class="has-titleCase">${ADDRESS 1} ${ADDRESS 2}, ${CITY}</span>,
+            <span class="has-allCaps">${STATE}</span>
+            </span> is in another TDS service area.</p>
+          <p>Please visit <a href="${bendbroadband.com shop link}">bendbroadband.com<span class="sr-only"> $screenReaderTextOption</span></a> to shop for products and services.</p>
+          <p><a href="${Edit Address link}">Edit Address</a> to continue shopping for TDS Cable products and services.</p>
+      </div>
+      <div class="col-md-3 col-sm-5 col-xs-12">
+          <a href="${bendbroadband.com shop link}" role="button" class="gallery-btn pull-right">$btnCTA <span class="sr-only"> $screenReaderTextOption</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Intercept page Bend prospect end--->
+
+<!--Intercept page current Bend Customer--->
+<div class="container">
+  <div class="tds-alert tds-alert-warning" role="alert">
+    <div class="row">
+      <div class="col-md-9 col-sm-7 col-xs-12">
+          <p>You are currently a BendBroadband customer.</p>
+          <p>Please visit <a href="${bendbroadband.com shop link}">bendbroadband.com<span class="sr-only"> $screenReaderTextOption</span></a> to shop for products and services.</p>
+          <p><a href="${LOGOUT LINK}">Log out</a> to continue shopping for TDS Cable products and services.</p>
+      </div>
+      <div class="col-md-3 col-sm-5 col-xs-12">
+          <a href="${SSO LINK}" role="button" class="gallery-btn pull-right">$btnCTA <span class="sr-only"> $screenReaderTextOption</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Intercept page current Bend Customer--->
+
+<div style="height:50px"></div>
 
 
 
