@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      CWS-Address Entry Component &middot; Your awesome title
+    
+  </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="/etc/designs/tds-foundation/tds-styles/bower_components/matchHeight/jquery.matchHeight.js"></script>
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/cable-styles.css">
+
+  <link rel="stylesheet" href="/etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-datepicker/css/bootstrap-datepicker.css">
+
+
+
+  <!-- Icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">-->
+  <link rel="shortcut icon" href="/tds-logo.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Your awesome title" href="/atom.xml">
+</head>
+
+
+  <body>
+
+
+    <header class="container-header">
+
+
+<!--top bar left Navigation-->
+<nav class="cable-top-bar">
+	<div id="skiptonav">
+				<a href="#main-navbar">Skip to main nav</a>
+			</div>
+			<div id="skiptocontent">
+				<a href="#maincontent">Skip to main content</a>
+			</div>
+
+				<a href="#" class="ui-mobile-menu" role="navigation" aria-label="Main menu"><span>Menu</span></a>
+
+		<div class="cable-nav-top-bar">
+		<div class="container">
+	  <div class="customLargeNavBar parbase navbar">
+	    <div class="tds-nav-lg" id="tdsbizfooter--navbar" role="navigation" aria-label="Navigation menu">
+	      <ul role="menubar">
+	          <li class="active" role="menuitem"><a tabindex="0" href="/" target="_self"><span>Home</span></a></li>
+	          <li role="menuitem"><a tabindex="-1" href="#" target="_blank"><span>Terms of Service</span></a></li>
+	          <li aria-haspopup="true" role="menuitem"><a tabindex="-1" class="navbar-has-dropdown" href="#" target="_blank"><span>Policies</span></a>
+	              <ul aria-hidden="true" data-test="true" role="menu">
+	                  <li role="menuitem"><a tabindex="-1" href="#" target="_blank"><span>Privacy</span></a></li>
+	                  <li role="menuitem"><a tabindex="-1" href="#" target="_blank"><span>Acceptable Use</span></a></li>
+	              </ul>
+	          </li>
+	      </ul>
+	    <div class="tds-clearfix"></div>
+	  </div>
+	</div>
+	</div>
+	</div>
+<!--top bar left Navigation end-->
+
+
+<!--top bar right Navigation Residential and Business links-->
+			<div class="nav-tds-external-sites">
+			<ul>
+				<li><a href="/" class="res">Residential</a></li>
+				<li><a href="/business" class="bus">Business</a></li>
+			</ul>
+			</div>
+
+		</nav>
+<!--top bar right Navigation Residential and Business links end-->
+
+
+
+<!--Navigation cable account, view cart, contact, ect links-->
+<div class="row-header">
+	<div class="contact-links-wrap" id="header-contact-links">
+		<ul role="menubar">
+
+
+			<li>
+				<a class="contact-links-text contact-account-icon" href="/login.html">Log In</a>
+			</li>
+
+			<li>
+				<a class="contact-links-text contact-cart-icon" href="/cart.html">View Cart</a>
+			</li>
+
+			<li>
+				<a class="contact-links-text contact-call-icon" href="tel:8556963868"><span class="header_phone_num parbase phoneNumberDisplay"><span>855-696-8368</span></span></a>
+			</li>
+
+<!---Optinal CTA Button-->
+			<li>
+				<a class="gallery-btn tds-btn-orange gallery-btn tds-btn-orange" href="/get-quote.html">Optinal CTA</a>
+			</li>
+<!---Optinal CTA Button end-->
+
+		</ul>
+	</div>
+</div>
+<!--Navigation cable account, view cart, contact, ect links end-->
+
+
+<!--Logo and Main Site Navigation-->
+<div class="row-header">
+
+<!--Logo-->
+<div class="container-logo">
+				<a href="/" id="tds-logo" alt="TDS Logo"></a>
+</div>
+<!--Logo end-->
+
+
+
+<!--Main Site Navigation-->
+		<nav>
+			<div class="cable-nav-main">
+
+
+
+				<div class="container">
+  <div class="customLargeNavBar parbase navbar">
+    <div class="tds-nav-lg" id="tdsbizfooter--navbar" role="navigation" aria-label="Navigation menu">
+      <ul role="menubar">
+          <li class="active" role="menuitem"><a tabindex="0" href="/" target="_self"><span>Home</span></a></li>
+          <li role="menuitem"><a tabindex="-1" href="http://tdstelecom.com/policies/terms-of-service.html" target="_blank"><span>Best Deals</span></a></li>
+          <li aria-haspopup="true" role="menuitem"><a tabindex="-1" class="navbar-has-dropdown" href="http://tdstelecom.com/policies.html" target="_blank"><span>TV</span></a>
+              <ul aria-hidden="true" data-test="true" role="menu">
+                  <li role="menuitem"><a tabindex="-1" href="#" target="_blank"><span>Dropdown 1</span></a></li>
+                  <li role="menuitem"><a tabindex="-1" href="http://tdstelecom.com/policies/acceptable-use-policy.html" target="_blank"><span>Dropdown 2</span></a></li>
+              </ul>
+          </li>
+      </ul>
+    <div class="tds-clearfix"></div>
+  </div>
+
+</div>
+
+
+			</div>
+		</nav>
+<!--Main Site Navigation end-->
+
+</div>
+</header>
+
+<!--Scripts for mobile menu toggle and page highlight for main nav-->
+<script>
+$(document).ready(function(){
+		$(".ui-mobile-menu").click(function(){
+				$(".cable-nav-main").slideToggle( 'fast', 'swing');
+		});
+});
+</script>
+
+<div style="clearfix"></div>
+
+
+        <div class="container">
+  <div class="row">
+    <h1 class="page-header">Address Entry</h1>
+  </div>
+</div>
+
+<!--User who has items in cart and is not logged in:
+Warning message appears above prefilled form with option to Log In-->
+<div class="container">
+  <div class="tds-alert tds-alert-critical" role="alert">
+      <p>It looks like you have items in your shopping cart. Changing your address will empty the cart since availability and prices can vary by location.</p>
+  </div>
+</div>
+
+<!--User is logged in:
+Warning message appears above prefilled form with option to Log In-->
+<div class="container">
+  <div class="tds-alert tds-alert-warning" role="alert">
+      <p>Please <a href="#">log out</a> if you’d like to shop for products and services at a different address.</p>
+  </div>
+</div>
+
+<div class="container address-entry">
+  <div class="row">
+    <h2>To see available products, pricing, and special offers, please provide your address</h2>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-8 col-xs-12">
+      <form>
+        <div class="form-group">
+
+          <label for="billingAddressLineOptional">Address: </label>
+          <input class="form-control" name="billingAddressLineOptional" id="billingAddressLineOptional" type="text" value="" />
+          <span class="help-block">Please remove any punctuation (Example: St not St.)</span>
+          <span class="help-block" id="billingAddressLineOptionalError" style="display: none;"></span>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="billingCity">City/Town: </label>
+          <input class="form-control" name="billingCity" id="billingCity" type="text" value="" />
+          <span class="help-block">Please remove any punctuation (Example: St Marys not St. Marys)</span>
+          <span class="help-block" id="cityError" style="display: none;"></span>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="billingState">State: </label>
+          <select class="form-control" name="billingState" id="billingState" autofocus="autofocus" autocorrect="off" autocomplete="off">
+              <option value="" disabled="" selected="selected">Select State</option>
+
+              <option value="AK" data-alternative-spellings="Alaska">AK</option>
+
+              <option value="AL" data-alternative-spellings="Alabama">AL</option>
+
+              <option value="AR" data-alternative-spellings="Arkansas">AR</option>
+
+              <option value="AZ" data-alternative-spellings="Arizona">AZ</option>
+
+              <option value="CA" data-alternative-spellings="California">CA</option>
+
+              <option value="CO" data-alternative-spellings="Colorado">CO</option>
+
+              <option value="CT" data-alternative-spellings="Connecticut">CT</option>
+
+              <option value="DC" data-alternative-spellings="Washington, D.C.">DC</option>
+
+              <option value="DE" data-alternative-spellings="Delaware">DE</option>
+
+              <option value="FL" data-alternative-spellings="Florida">FL</option>
+
+              <option value="GA" data-alternative-spellings="Georgia">GA</option>
+
+              <option value="HI" data-alternative-spellings="Hawaii">HI</option>
+
+              <option value="IA" data-alternative-spellings="Iowa">IA</option>
+
+              <option value="ID" data-alternative-spellings="Idaho">ID</option>
+
+              <option value="IL" data-alternative-spellings="Illinois">IL</option>
+
+              <option value="IN" data-alternative-spellings="Indiana">IN</option>
+
+              <option value="KS" data-alternative-spellings="Kansas">KS</option>
+
+              <option value="KY" data-alternative-spellings="Kentucky">KY</option>
+
+              <option value="LA" data-alternative-spellings="Louisiana">LA</option>
+
+              <option value="MA" data-alternative-spellings="Massachusetts">MA</option>
+
+              <option value="MD" data-alternative-spellings="Maryland">MD</option>
+
+              <option value="ME" data-alternative-spellings="Maine">ME</option>
+
+              <option value="MI" data-alternative-spellings="Michigan">MI</option>
+
+              <option value="MN" data-alternative-spellings="Minnesota">MN</option>
+
+              <option value="MO" data-alternative-spellings="Missouri">MO</option>
+
+              <option value="MS" data-alternative-spellings="Mississippi">MS</option>
+
+              <option value="MT" data-alternative-spellings="Montana">MT</option>
+
+              <option value="NC" data-alternative-spellings="North Carolina">NC</option>
+
+              <option value="ND" data-alternative-spellings="North Dakota">ND</option>
+
+              <option value="NE" data-alternative-spellings="Nebraska">NE</option>
+
+              <option value="NH" data-alternative-spellings="New Hampshire">NH</option>
+
+              <option value="NJ" data-alternative-spellings="New Jersey">NJ</option>
+
+              <option value="NM" data-alternative-spellings="New Mexico">NM</option>
+
+              <option value="NV" data-alternative-spellings="Nevada">NV</option>
+
+              <option value="NY" data-alternative-spellings="New York">NY</option>
+
+              <option value="OH" data-alternative-spellings="Ohio">OH</option>
+
+              <option value="OK" data-alternative-spellings="Oklahoma">OK</option>
+
+              <option value="OR" data-alternative-spellings="Oregon">OR</option>
+
+              <option value="PA" data-alternative-spellings="Pennsylvania">PA</option>
+
+              <option value="RI" data-alternative-spellings="Rhode Island">RI</option>
+
+              <option value="SC" data-alternative-spellings="South Carolina">SC</option>
+
+              <option value="SD" data-alternative-spellings="South Dakota">SD</option>
+
+              <option value="TN" data-alternative-spellings="Tennessee">TN</option>
+
+              <option value="TX" data-alternative-spellings="Texas">TX</option>
+
+              <option value="UT" data-alternative-spellings="Utah">UT</option>
+
+              <option value="VA" data-alternative-spellings="Virginia">VA</option>
+
+              <option value="VT" data-alternative-spellings="Vermont">VT</option>
+
+              <option value="WA" data-alternative-spellings="Washington">WA</option>
+
+              <option value="WI" data-alternative-spellings="Wisconsin">WI</option>
+
+              <option value="WV" data-alternative-spellings="West Virginia">WV</option>
+
+              <option value="WY" data-alternative-spellings="Wyoming">WY</option>
+          </select>
+          <span class="help-block" id="billingStateError" style="display: none;"></span>
+
+        </div>
+
+          <button class="gallery-btn pull-left" type="submit" value="Submit">$buttonCTA</button>
+
+      </form>
+    </div><!--Form Colume end-->
+
+    <div class="col-sm-4 col-xs-12">
+          <div class="tds-alert tds-alert-info">Looking for Business Services? <span class="inline-block">Visit <a href="https://tdsbusiness.com/">www.tdsbusiness.com</a>.</span></div>
+    </div>
+  </div><!--row end-->
+
+<div class="row">
+  <p>We respect your privacy. The information you provide will only be used to retrieve the products and services at your address.</p>
+  <p>Already a TDS Customer? <a href="#">Log In</a></p>
+</div>
+
+
+</div>
+<!--address-entry end-->
+
+<hr />
+
+<!--verify address-->
+<div class="container address-entry">
+  <div class="row">
+    <h2>Verify Address</h2>
+
+    <p class="entered-address">Address <a onclick="editAddress()">(edit)</a></p>
+    <div class="tds-address">
+        <p>109 MAIN ST</p>
+        <p>VERONA, WI</p>
+    </div>
+
+    <p>Are you sure that's the right address? We couldn't find a
+    match but did find similar addresses. Tell us which address you'd
+    like us to use:</p>
+
+    <form>
+      <!--lists suggested address-->
+        <div id="suggestedAddresses">
+
+            <div class="radio">
+              <label>
+                  <input class="addressRadio" type="radio" name="suggestedAddress" value="109 S MAIN ST,VERONA,WI,53593-1419" />
+                  <span class="tds-radio-btn"></span>
+                  <input id="MS109SMAINST" class="" type="hidden" name="MS109SMAINST" value="?" />
+                  <input id="MT109SMAINST" class="" type="hidden" name="MT109SMAINST" value="?" />
+                  <input id="EX109SMAINST" class="" type="hidden" name="EX109SMAINST" value="?" />
+                  <div class="label-text">
+                    <span class="label-address">109 S MAIN ST</span>
+                    <span class="label-city-state">VERONA, WI</span>
+                  </div>
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                  <input class="addressRadio" type="radio" name="suggestedAddress" value="109 S MAIN ST,VERONA,WI,53593-1419" />
+                  <span class="tds-radio-btn"></span>
+                  <input id="MS109SMAINST" class="" type="hidden" name="MS109SMAINST" value="?" />
+                  <input id="MT109SMAINST" class="" type="hidden" name="MT109SMAINST" value="?" />
+                  <input id="EX109SMAINST" class="" type="hidden" name="EX109SMAINST" value="?" />
+                  <div class="label-text">
+                    <span class="label-address">109 S MAIN ST</span>
+                    <span class="label-city-state">VERONA, WI</span>
+                  </div>
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                  <input class="addressRadio" type="radio" name="suggestedAddress" value="109 S MAIN ST,VERONA,WI,53593-1419" />
+                  <span class="tds-radio-btn"></span>
+                  <input id="MS109SMAINST" class="" type="hidden" name="MS109SMAINST" value="?" />
+                  <input id="MT109SMAINST" class="" type="hidden" name="MT109SMAINST" value="?" />
+                  <input id="EX109SMAINST" class="" type="hidden" name="EX109SMAINST" value="?" />
+                  <div class="label-text">
+                    <span class="label-address">109 S MAIN ST</span>
+                    <span class="label-city-state">VERONA, WI</span>
+                  </div>
+              </label>
+            </div>
+
+
+            <button class="gallery-btn pull-left" type="submit" value="Submit">$buttonCTA</button>
+        </div>
+
+    </form>
+  </div><!--row end-->
+</div>
+<!--verify address end-->
+
+<hr />
+
+<!--Existing Service address -->
+<div class="container address-entry">
+  <div class="row">
+    <h2>Existing Service at this Address</h2>
+
+    <p class="entered-address">Address <a onclick="editAddress()">(edit)</a></p>
+    <div class="tds-address">
+        <p>109 MAIN ST</p>
+        <p>VERONA, WI</p>
+    </div>
+
+    <!--Login Section-->
+        <div class="col-sm-6">
+          <div class="tds-msg-box" id="loginBlock">
+            <h3>I am already a TDS Customer</h3>
+
+            <div id="loginButton">
+              <div class="parbase login">
+                <fieldset id="loginFieldset">
+                  <a class="gallery-btn login" href="#"><i class="fa fa-user pull-left"></i>Log In</a>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--Login Section End-->
+
+
+    <!--Address Section-->
+        <div class="col-sm-6">
+          <div class="tds-msg-box" id="provideAddressBlock">
+            <h3>I am moving to this address</h3>
+
+            <div id="provideAddressButton">
+              <a class="gallery-btn" href="#"><i class="fa fa-map-marker pull-left"></i> $buttonCTA</a>
+            </div>
+          </div>
+        </div>
+    <!--Address Section End-->
+
+
+  </div><!--row end-->
+</div>
+<!--Existing Service address end-->
+
+<hr />
+
+<!--address not found-->
+<div class="container">
+    <div class="tds-alert tds-alert-warning" role="alert">
+    <p>We're sorry, but your address was not found in our systems. We cannot offer you any products at this time. If you have
+    questions about TDS service, please call.</p>
+    </div>
+</div>
+
+<div class="container address-entry">
+  <div class="row">
+    <h2>Address not Found</h2>
+
+    <p class="h4">You entered:</p>
+    <div class="tds-address">
+        <p>109 MAIN ST</p>
+        <p>VERONA, WI</p>
+    </div>
+
+    <p>
+      <a onclick="editAddress()">Edit this address</a>
+    </p>
+  </div>
+</div>
+
+<!--address not found end-->
+
+<script src="/etc/designs/tds-foundation/tds-styles/bower_components/jquery/dist/jquery.min.js"></script>
+
+<script src="/etc/designs/tds-foundation/tds-styles/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+<script src="/etc/designs/tds-foundation/tds-styles/bower_components/selectToAutocomplete/jquery.select-to-autocomplete.js"></script>
+
+<script>
+  (function($){
+    $(function(){
+      $('select').selectToAutocomplete();
+      $('form').submit(function(){
+        alert( $(this).serialize() );
+        return false;
+      });
+    });
+  })(jQuery);
+</script>
+
+<div style="height:50px"></div>
+
+
+
+<div style="clearfix"></div>
+    <div id="genericfooter-container">
+
+  <!-- START subscribe box -->
+  <div id="subscribe-container" class="container-fluid">
+    <div class="container">
+      <table>
+        <tbody>
+          <tr>
+            <td class="subscribe-text"><!--  -->This is the message that will make people lose there minds!</td>
+            <td class=""><a href="" class="btn-subscribe"><!---->Sign Up</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- END subscribe box -->
+
+  <div class="container">
+
+    <!-- START text links nav bar -->
+      <!-- INSERT a large nav bar component, we need a a way to create an ID but otherwise it should work for this spot -->
+    <!-- END text links nav bar -->
+
+    <!-- START social media icon links -->
+    <div id="social-container">
+      <ul id="social-media-links">
+        <li>
+          <a href="" class="circle-gray size-40"><img src="" alt=""></a>
+        </li>
+      </ul>
+    </div>
+    <!--END social media icon links-->
+
+  </div>
+
+</div>
+<!--genericfooter-container-->
+
+<!--fortune logo and copyright-->
+<div id="copyright-container">
+  <div class="container">
+    <div class="copyright-logo">
+      <img src="" id="fortune-logo" alt="">
+    </div>
+    <div class="copyright-text">
+      <div id="copyright-long-text">
+        $copyRightLongText
+      </div>
+      $copyRightShortText
+    </div>
+  </div>
+</div>
+<!--END fortune logo and copyright-->
+
+
+
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <script src="/etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/etc/designs/tds-foundation/tds-styles/bower_components/matchHeight/jquery.matchHeight.js"></script>
+  </body>
+
+</html>

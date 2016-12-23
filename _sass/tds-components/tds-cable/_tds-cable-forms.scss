@@ -20,9 +20,50 @@ label:hover input:checked + .tds-radio-btn:before {
 .datepicker-switch {
   color:red;
 }
-//////////////////
-/// Layout
-/////////////////
+
+
+/* Address Enrty Page */
+.address-entry {
+  .col-sm-8 {
+    padding-left: 0;
+  }
+  .col-sm-4 {
+    padding-right: 0;
+  }
+  .col-sm-6 {
+    padding-left: 0;
+    @media (max-width: 750px) {
+      padding-right: 0;
+    }
+    &:nth-child(odd) {
+      padding-left: 15px;
+      padding-right: 0;
+      @media (max-width: 750px) {
+        padding-left: 0;
+      }
+    }
+  }
+  .col-xs-12 {
+    @media (max-width: 750px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .gallery-btn {
+    margin: 0 0 20px 0;
+  }
+
+  .tds-msg-box {
+    min-height: 0;
+  }
+  h4, .h4 {
+    margin: 0 0 5px 0;
+  }
+}
+//Overwrite for foundations//
+div#suggestedAddresses {
+    border-bottom: 0;
+}
 
 
 
