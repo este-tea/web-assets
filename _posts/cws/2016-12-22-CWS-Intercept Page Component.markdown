@@ -15,7 +15,7 @@ categories: CWS
 </div>
 
 
-<!--Intercept page TDS Telecom prospect--->
+<!--User enters address in Telecom territory-->
 <div class="container" >
   <div class="tds-alert tds-alert-warning" role="alert">
     <div class="row">
@@ -34,9 +34,9 @@ categories: CWS
     </div>
   </div>
 </div>
-<!--Intercept page TDS Telecom prospect end--->
+<!--User enters address in Telecom territory end-->
 
-<!--Intercept page current TDS Telecom Customer--->
+<!--User logs in as a current customer in Telecom territory-->
 <div class="container" >
   <div class="tds-alert tds-alert-warning" role="alert">
     <div class="row">
@@ -51,9 +51,9 @@ categories: CWS
     </div>
   </div>
 </div>
-<!--Intercept page current TDS Telecom Customer--->
+<!--User logs in as a current customer in Telecom territory end-->
 
-<!--Intercept page Bend prospect--->
+<!--User enters address in Bend territory-->
 <div class="container" >
   <div class="tds-alert tds-alert-warning" role="alert">
     <div class="row">
@@ -72,9 +72,9 @@ categories: CWS
     </div>
   </div>
 </div>
-<!--Intercept page Bend prospect end--->
+<!--User enters address in Bend territory end-->
 
-<!--Intercept page current Bend Customer--->
+<!--User logs in as current customer in Bend territory-->
 <div class="container" >
   <div class="tds-alert tds-alert-warning" role="alert">
     <div class="row">
@@ -89,6 +89,6 @@ categories: CWS
     </div>
   </div>
 </div>
-<!--Intercept page current Bend Customer--->
+<!--User logs in as current customer in Bend territory end-->
 
 <div style="height:50px"></div>

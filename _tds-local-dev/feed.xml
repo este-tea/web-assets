@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>web assets</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Dec 2016 11:05:04 -0600</pubDate>
-    <lastBuildDate>Fri, 23 Dec 2016 11:05:04 -0600</lastBuildDate>
+    <pubDate>Thu, 29 Dec 2016 13:18:03 -0600</pubDate>
+    <lastBuildDate>Thu, 29 Dec 2016 13:18:03 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -18,7 +18,7 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!--Intercept page TDS Telecom prospect---&gt;
+&lt;!--User enters address in Telecom territory--&gt;
 &lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;tds-alert tds-alert-warning&quot; role=&quot;alert&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -37,9 +37,9 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;!--Intercept page TDS Telecom prospect end---&gt;
+&lt;!--User enters address in Telecom territory end--&gt;
 
-&lt;!--Intercept page current TDS Telecom Customer---&gt;
+&lt;!--User logs in as a current customer in Telecom territory--&gt;
 &lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;tds-alert tds-alert-warning&quot; role=&quot;alert&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -54,9 +54,9 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;!--Intercept page current TDS Telecom Customer---&gt;
+&lt;!--User logs in as a current customer in Telecom territory end--&gt;
 
-&lt;!--Intercept page Bend prospect---&gt;
+&lt;!--User enters address in Bend territory--&gt;
 &lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;tds-alert tds-alert-warning&quot; role=&quot;alert&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -75,9 +75,9 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;!--Intercept page Bend prospect end---&gt;
+&lt;!--User enters address in Bend territory end--&gt;
 
-&lt;!--Intercept page current Bend Customer---&gt;
+&lt;!--User logs in as current customer in Bend territory--&gt;
 &lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;tds-alert tds-alert-warning&quot; role=&quot;alert&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -92,7 +92,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;!--Intercept page current Bend Customer---&gt;
+&lt;!--User logs in as current customer in Bend territory end--&gt;
 
 &lt;div style=&quot;height:50px&quot;&gt;&lt;/div&gt;
 </description>
