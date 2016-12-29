@@ -69,8 +69,21 @@ button.gallery-btn.btn-next:after {
 }
 // Plus cart
 .tds-icon-cart-plus {
-  @extend .fa-cart-plus;
+	background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-addon.svg");
+	height: 20px;
+	width: 25px;
+	position: relative;
+	background-repeat:
+	no-repeat;
+	top: 5px;
 }
+
+//HYDRA-1752 TV Channel Lineup Styling Issues
+.fa-cart-plus:before, .tds-icon-cart-plus:before {
+    content: "";
+}
+//HYDRA-1752 TV Channel Lineup Styling Issues End
+
 // Print icon
 .tds-icon-print {
   @extend .fa-print;
