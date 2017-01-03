@@ -80,7 +80,7 @@ Warning message appears above prefilled form with option to Log In-->
 
               <option value="CT" data-alternative-spellings="Connecticut">CT</option>
 
-              <option value="DC" data-alternative-spellings="Washington, D.C.">DC</option>
+              <option value="DC" data-alternative-spellings="District of Columbia Washington, D.C.">DC</option>
 
               <option value="DE" data-alternative-spellings="Delaware">DE</option>
 

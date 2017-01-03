@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Dec 2016 13:18:03 -0600</pubDate>
-    <lastBuildDate>Thu, 29 Dec 2016 13:18:03 -0600</lastBuildDate>
+    <pubDate>Tue, 03 Jan 2017 13:28:06 -0600</pubDate>
+    <lastBuildDate>Tue, 03 Jan 2017 13:28:06 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -178,7 +178,7 @@ Warning message appears above prefilled form with option to Log In--&gt;
 
               &lt;option value=&quot;CT&quot; data-alternative-spellings=&quot;Connecticut&quot;&gt;CT&lt;/option&gt;
 
-              &lt;option value=&quot;DC&quot; data-alternative-spellings=&quot;Washington, D.C.&quot;&gt;DC&lt;/option&gt;
+              &lt;option value=&quot;DC&quot; data-alternative-spellings=&quot;District of Columbia Washington, D.C.&quot;&gt;DC&lt;/option&gt;
 
               &lt;option value=&quot;DE&quot; data-alternative-spellings=&quot;Delaware&quot;&gt;DE&lt;/option&gt;
 

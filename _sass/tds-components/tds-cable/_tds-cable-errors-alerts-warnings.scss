@@ -3,6 +3,10 @@
 
 /* ===== tds cable warrnings and error messages === */
 
+.tds-alert {
+  padding: 15px;
+}
+
  .container.warning-cartEmpty,
  .container.tds-alert.tds-alert-critical {
   max-width: 100%;
