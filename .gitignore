@@ -19,6 +19,8 @@ Gemfile.lock
 *.zip
 *.vi
 *~
+*.scssc
+*.DS_Store
 
 # OS or Editor folders
 .DS_Store
