@@ -55,6 +55,16 @@ label:hover input:checked + .tds-radio-btn:before {
 
   .tds-msg-box {
     min-height: 0;
+    padding: 28px;
+    h3:first-child {
+      margin-top: 0;
+    }
+    #loginButton, #provideAddressButton {
+      height: auto;
+    }
+    .gallery-btn {
+      margin-bottom: 0
+    }
   }
   h4, .h4 {
     margin: 0 0 5px 0;
@@ -62,7 +72,9 @@ label:hover input:checked + .tds-radio-btn:before {
 }
 //Overwrite for foundations//
 div#suggestedAddresses {
-    border-bottom: 0;
+  button.gallery-btn.pull-left {
+    margin-top: 25px;
+  }
 }
 
 

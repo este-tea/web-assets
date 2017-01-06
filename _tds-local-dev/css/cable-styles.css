@@ -776,6 +776,10 @@ div.cws-btn:hover, div.cws-btn:focus, a.cws-btn:hover, a.cws-btn:focus {
 }
 
 /* ===== tds cable warrnings and error messages === */
+.tds-alert {
+  padding: 15px;
+}
+
 .container.warning-cartEmpty,
 .container.tds-alert.tds-alert-critical {
   max-width: 100%;
@@ -988,13 +992,23 @@ label:hover input:checked + .tds-radio-btn:before {
 }
 .address-entry .tds-msg-box {
   min-height: 0;
+  padding: 28px;
+}
+.address-entry .tds-msg-box h3:first-child {
+  margin-top: 0;
+}
+.address-entry .tds-msg-box #loginButton, .address-entry .tds-msg-box #provideAddressButton {
+  height: auto;
+}
+.address-entry .tds-msg-box .gallery-btn {
+  margin-bottom: 0;
 }
 .address-entry h4, .address-entry .h4 {
   margin: 0 0 5px 0;
 }
 
-div#suggestedAddresses {
-  border-bottom: 0;
+div#suggestedAddresses button.gallery-btn.pull-left {
+  margin-top: 25px;
 }
 
 .readOnly {
