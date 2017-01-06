@@ -55,7 +55,7 @@ Warning message appears above prefilled form with option to Log In-->
 
           <label for="billingCity">City/Town: </label>
           <input class="form-control" name="billingCity" id="billingCity" type="text" value="">
-          <span class="help-block">Please remove any punctuation (Example: St Marys not St. Marys)</span>
+          <span class="help-block">Please remove any punctuation (Example: St George not St. George)</span>
           <span class="help-block" id="cityError" style="display: none;"></span>
 
         </div>
@@ -197,7 +197,7 @@ Warning message appears above prefilled form with option to Log In-->
   <div class="row">
     <h2>Verify Address</h2>
 
-    <p class="entered-address">Address <a onclick="editAddress()">(edit)</a></p>
+    <p class="entered-address">Address <a onclick="editAddress()" tabindex="0">(edit)</a></p>
     <div class="tds-address">
         <p>109 MAIN ST</p>
         <p>VERONA, WI</p>
@@ -269,7 +269,7 @@ Warning message appears above prefilled form with option to Log In-->
   <div class="row">
     <h2>Existing Service at this Address</h2>
 
-    <p class="entered-address">Address <a onclick="editAddress()">(edit)</a></p>
+    <p class="entered-address">Address <a onclick="editAddress()" tabindex="0">(edit)</a></p>
     <div class="tds-address">
         <p>109 MAIN ST</p>
         <p>VERONA, WI</p>
@@ -330,7 +330,7 @@ Warning message appears above prefilled form with option to Log In-->
     </div>
 
     <p>
-      <a onclick="editAddress()">Edit this address</a>
+      <a onclick="editAddress()" tabindex="0">Edit this address</a>
     </p>
   </div>
 </div>
