@@ -207,3 +207,18 @@ table#usersTable {
        text-align: center;
     }
 }
+//IMT-65 data usage summary table refinements
+#historicalUsageTable thead {
+    font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+    font-size: 14px;
+}
+
+#historicalUsageTable.table.dataTable  tbody>tr>td {
+    font-size: 14px;
+    padding: 12px 14px;
+}
+
+#historicalUsageTable.table.dataTable  tbody>tr:first-child>td {
+    border-top: none!important;
+}
+// end IMT-185
