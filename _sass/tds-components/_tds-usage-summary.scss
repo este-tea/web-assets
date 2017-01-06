@@ -286,3 +286,16 @@ table.table tbody > tr:last-child > td {
 button#saveUsageNotificationPrefs {
     margin-top: 0;
 }
+.estimated-usage-desc span:first-child {
+    font-size: .875em;
+    font-weight:400;
+}
+
+.estimated-usage-desc span:last-child {
+    color: #0c8fd0;
+}
+
+.tds-usage-tool.btn span {
+    font-size: 1em;
+    line-height: 1.75em;
+}
