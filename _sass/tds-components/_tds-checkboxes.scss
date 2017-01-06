@@ -50,7 +50,10 @@
 .checkbox-inline.disabled {
     opacity: .5;
 }
-
+.disabled .check-radio-btn {
+    background: #777!important;
+    border: solid 3px #777!important;
+}
 // Compensates for the negative margin-top added to checkbox when used in a card
 // this makes the padding in the card look equal on both side and top.
 // Negative margin needs to be there to make the label text line up with checkbox

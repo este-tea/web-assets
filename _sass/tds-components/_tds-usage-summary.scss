@@ -108,6 +108,9 @@ h2.usage-section-desc {
 .tds-usage-tool.btn.collapsed span {
   @extend .fa-plus;
 }
+.tds-ut .fa.fa-plus {
+    margin-right: 12px;
+}
 .tds-usage-tool.btn span {
   @extend .fa-minus;
 }
@@ -270,4 +273,16 @@ table.table tbody > tr:last-child > td {
 
 .tds-history-section h2 {
     margin-bottom: 4px;
+}
+
+#usageNotificationPrefsForm .tds-ut .gallery-btn.tds-btn-gray {
+    margin-top: 0;
+}
+
+.tds-ut.tds-ut-usage-notifications .prod-items {
+    padding: 0;
+}
+
+button#saveUsageNotificationPrefs {
+    margin-top: 0;
 }
