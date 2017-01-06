@@ -1,0 +1,186 @@
+/* tds-package-builder
+==========================================*/
+// NOTE: cable site uses the package builder component which
+// will hopefully replace the old bundle builder component
+// this component uses bootstrap's toggleable/dynamic tabs
+// instead of jquery ui tabs (because there is less css to override)
+
+.pkg-builder-form.section-layout h2 {
+}
+
+.pkg-builder-tab-hr {
+    background-color: #19388a;
+    height: 2px;
+}
+
+.pkg-builder-nav-tabs {
+    max-width: 100%;
+    margin: 20px auto;
+    display: table;
+    border: none;
+}
+.pkg-builder-container .pkg-builder-nav-tabs li {
+    opacity: 1;
+    padding: 0;
+    display: block;
+    width: auto;
+    margin-left: 0px;
+    min-height: 0;
+    margin-bottom: 0!important;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li > a,
+.pkg-builder-container .pkg-builder-nav-tabs > li > a:link,
+.pkg-builder-container .pkg-builder-nav-tabs > li > a:visited {
+    color: #aaa;
+    height: 55px;
+    font-family: 'ITC Avant Garde Gothic W01';
+    font-size: 22px;
+    background: none;
+    position: relative;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li.active > a,
+.pkg-builder-container .pkg-builder-nav-tabs > li.active > a:hover {
+    color: #19388a;
+    border-color: transparent;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li.active > a:before {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li > a:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    color: #0c8fd0;
+    border-color: transparent;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li:focus > a {
+    color: #0c8fd0;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li:focus > a:before {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+// adds padding to allow for icons and arrows
+.pkg-builder-container .pkg-builder-nav-tabs > li > a.pkg-builder-internet-tab,
+.pkg-builder-container .pkg-builder-nav-tabs > li > a.pkg-builder-phone-tab,
+.pkg-builder-container .pkg-builder-nav-tabs > li > a.pkg-builder-tv-tab {
+    padding: 0 50px 0 60px;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li > a.pkg-builder-extra-tab {
+    padding: 0;
+}
+//product icons before categories
+.pkg-builder-internet-tab:before,
+.pkg-builder-phone-tab:before,
+.pkg-builder-tv-tab:before {
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    margin-top: 0;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+}
+.pkg-builder-internet-tab:before {
+    background-image: url("/content/dam/tdstelecom/images/products/internet/icon-product-internet.svg");
+}
+.pkg-builder-phone-tab:before {
+    background-image: url("/content/dam/tdstelecom/images/products/phone/icon-product-phone.svg");
+}
+.pkg-builder-tv-tab:before {
+    background-image: url("/content/dam/tdstelecom/images/products/tv/icon-product-tv.svg");
+}
+.pkg-builder-extra-tab:after {
+    content: none;
+}
+.pkg-builder-internet-tab:focus:before,
+.pkg-builder-internet-tab:hover:before,
+.pkg-builder-phone-tab:focus:before,
+.pkg-builder-phone-tab:hover:before,
+.pkg-builder-tv-tab:focus:before,
+.pkg-builder-tv-tab:hover:before {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+// arrow icons after categories
+.pkg-builder-container .pkg-builder-nav-tabs li a:after {
+    content: "";
+    width: 40px;
+    height: 50px;
+    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-gray.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 0;
+}
+// removes arrow icon from last item in tabs
+.pkg-builder-container .pkg-builder-nav-tabs li:last-child a:after {
+    content: none;
+}
+@media (max-width:625px) {
+    .pkg-builder-internet-tab,
+    .pkg-builder-phone-tab,
+    .pkg-builder-tv-tab {
+        padding: 0 50px 0 46px;
+    }
+    .pkg-builder-internet-tab:before,
+    .pkg-builder-phone-tab:before,
+    .pkg-builder-tv-tab:before {
+        width: 40px;
+        background-size: 34px;
+    }
+    .pkg-builder-container .pkg-builder-nav-tabs li:after {
+        width: 36px;
+        height: 40px;
+        background-size: 30px 30px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+}
+@media (max-width:560px) {
+    .pkg-builder-internet-tab:before,
+    .pkg-builder-phone-tab:before,
+    .pkg-builder-tv-tab:before {
+        content: none;
+    }
+    .pkg-builder-internet-tab,
+    .pkg-builder-phone-tab,
+    .pkg-builder-tv-tab {
+        padding: 0 50px 0 0;
+    }
+}
+@media (max-width:445px) {
+    .pkg-builder-container .pkg-builder-nav-tabs li {
+        margin-left: 0;
+        min-height: 0;
+        margin-bottom: 0;
+    }
+}
+@media (max-width:340px) {
+    .pkg-builder-container .pkg-builder-nav-tabs li {
+        float: none;
+    }
+    .pkg-builder-internet-tab,
+    .pkg-builder-phone-tab,
+    .pkg-builder-tv-tab {
+        padding: 0 50px;
+    }
+    .pkg-builder-internet-tab:before,
+    .pkg-builder-phone-tab:before,
+    .pkg-builder-tv-tab:before {
+        content: "";
+    }
+}
