@@ -210,7 +210,9 @@ h2.gallery-title-4c {
 .gallery-description p b {
   margin-left: 0px !important;
   padding-left: 0px !important;
-  line-height: 1.5em;
+  line-height: 1.65em;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: $screen-xs) {
@@ -221,4 +223,33 @@ h2.gallery-title-4c {
   .gallery-grid li>div {
     padding: 1em;
   }
+}
+//---hover/focus on cards with one cta---
+.bundlegallery ul.bundle-gallery > li.bundle-cards > div:hover,
+ul.gallery-of-bundle-galleries > li > div:hover,
+ul.home-grid > li > div.four-panel-card:hover,
+.galleryofgalleries .gallery-grid > li > div:hover,
+.galleryofgalleries .card-component-container:hover,
+.bundlegallery ul.bundle-gallery > li.bundle-cards > div:focus,
+ul.gallery-of-bundle-galleries > li > div:focus,
+ul.home-grid > li > div.four-panel-card:focus,
+.galleryofgalleries .gallery-grid > li > div:focus,
+.galleryofgalleries .card-component-container:focus {
+    background-color: #e3e3e3;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+.bundlegallery ul.bundle-gallery > li.bundle-cards > div .gallery-btn,
+ul.gallery-of-bundle-galleries > li > div:hover .gallery-btn,
+ul.home-grid > li > div.four-panel-card:hover  .gallery-btn,
+.galleryofgalleries .gallery-grid > li > div:hover .gallery-btn,
+.galleryofgalleries .card-component-container:hover .gallery-btn,
+ul.gallery-of-bundle-galleries > li > div:focus .gallery-btn,
+ul.home-grid > li > div.four-panel-card:focus  .gallery-btn,
+.galleryofgalleries .gallery-grid > li > div:focus .gallery-btn,
+.galleryofgalleries .card-component-container:focus .gallery-btn {
+    text-decoration: none;
+    background-color: #0c8fd0;
+    cursor: pointer;
+    box-shadow: none;
 }

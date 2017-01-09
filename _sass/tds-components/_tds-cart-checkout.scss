@@ -53,7 +53,13 @@ span#openOverlay:hover {
     color: #19388a;
     text-decoration: none;
 }
-
+.checkbox .tds-radio-btn {
+    border-radius: 0;
+}
+#checkoutForm label:hover input:checked+.tds-radio-btn:before {
+    top: 3px;
+    left: 23px;
+}
 /*shopping cart confirm order*/
 /*===== Shopping Cart =====*/
 #cartDisplay > .tds-panel {
@@ -65,7 +71,7 @@ span#openOverlay:hover {
     padding: 0;
 }
 .cartoverview.section {
-    max-width: 960px;
+    max-width: 100%;
 }
 .cartoverview.section .prod-section-wrap {
     padding-top: 0;

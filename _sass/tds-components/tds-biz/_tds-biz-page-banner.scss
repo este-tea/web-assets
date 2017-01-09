@@ -90,7 +90,11 @@ h1.banner-title {
 }
 @media (max-width:583px) {
     .tds-page-banner.long-content div#page-banner {
-        margin-top: 5%;
+        margin-top: 0;
+    }
+    .tds-page-banner.long-content .banner-content {
+        margin-top: 20%;
+        margin-bottom: 8%;
     }
 }
 //404 or error page
