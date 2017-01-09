@@ -159,6 +159,13 @@ td .line-item-actions .tds-btn-gray {
     color: $tds-green-80;
   }
 }
+//---hover on cards with one cta---
+button.gallery-btn-link:hover,
+button.gallery-btn-link:focus {
+    background-color: #7bb227;
+    color: white!important;
+    text-decoration: none;
+}
 // arrow icon (default setting)
 .gallery-btn-link:after {
   @extend .fa;
