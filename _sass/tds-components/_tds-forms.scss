@@ -346,3 +346,15 @@ button#changePassword {
 button#changeSecQuestions {
     width: 100%;
 }
+
+// MYA Add User
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+    background-color: transparent;
+}
+#userNameDiv .tds-divider-line.dotted-gray {
+    margin-bottom: 24px;
+    margin-top: 28px;
+}
+#nameRecommendation > .radio:last-child {
+    margin-bottom: 0;
+}
