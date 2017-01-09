@@ -403,3 +403,10 @@ button#resetPassword, #resetSecQuestions {
 button#callingFeaturesButton, button#voiceMailButton {
     margin: 8px 0 24px 0;
 }
+/*
+http://tdstelecom.com/contactus/chat-not-available.html
+remove extra spacing when gallery btn within navbutton
+*/
+.parbase.richTextComponent.section+.navbutton.parbase.section > button.gallery-btn.btn-next-arrow {
+    margin-top: 0;
+}
