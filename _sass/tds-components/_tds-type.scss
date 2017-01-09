@@ -78,9 +78,12 @@ h6, .h6 {
     }
 }
 // p or li or main body copy
-p { margin: 0 0 10px; }
-p { margin-top: 0; margin-bottom: 1rem; }
-p { line-height: 1.65em; color: $tds-dk-gray; }
+p {
+  line-height: 1.65em;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: $tds-dk-gray;
+}
 a {
   color: $tds-lt-blue-100;
 }
