@@ -126,3 +126,13 @@ a strong {
 #changeNameLinkDiv {
   padding-top: 20px;
 }
+//---add padding to more details link in gallery cards---
+.gallery-grid .gallery-description p:last-child > a {
+    display: inline-block;
+    padding: 5px 12px;
+}
+.gallery-grid .gallery-description p:last-child > a:hover,
+.gallery-grid .gallery-description p:last-child > a:focus  {
+    background-color: #0c8fd0;
+    color: white;
+}
