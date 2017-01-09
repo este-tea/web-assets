@@ -21,6 +21,10 @@
   p {
     font-family: $tds-font-family;
   }
+  p.h4 {
+      color: #000;
+      margin-top: 2px;
+  }
   // When alert text isn't put in a p tag. This wraps long text if links are used
   #ticketEntryNumberErrorBlock span {
     word-wrap: break-word;
