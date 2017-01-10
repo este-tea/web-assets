@@ -29,6 +29,7 @@ div#tdsbizfooter--navbar {
 // extended/homepage footer
 // ----------------------------------------
 .homepageFooter {
+  border-top: none;
   .sectionTitle {
     font-size: 16px;
     text-align: left;
@@ -38,6 +39,7 @@ div#tdsbizfooter--navbar {
     margin-left: 0;
     padding-left: 0;
     margin-bottom: 20px;
+    margin-top: 20px;
     font-family: $tds-font-family;
     li {
       font-family: $tds-font-family;
