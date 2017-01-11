@@ -46,6 +46,5 @@ validation-report.json
 
 # Folders to ignore
 node_modules
-_tds-local-dev
 
 *._t_
