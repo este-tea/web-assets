@@ -1,6 +1,0 @@
-#base=css
-
-animation.css
-fontello-codes.css
-fontello-embedded.css
-fontello.css
