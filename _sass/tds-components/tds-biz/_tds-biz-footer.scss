@@ -38,8 +38,6 @@ div#tdsbizfooter--navbar {
   ul.sectionLinks {
     margin-left: 0;
     padding-left: 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
     font-family: $tds-font-family;
     li {
       font-family: $tds-font-family;
@@ -89,6 +87,7 @@ display: inline-block;
 // ----------------------------------------
 #footer-contact-links {
   border-bottom: none;
+  padding-bottom: 24px;
   li {
     margin-right: 16px;
     &:last-child {
@@ -140,21 +139,6 @@ div.contact-links-wrap > ul > li:hover > a:hover:before {
   }
   table {
     max-width: 600px;
-  }
-  @media (max-width:580px) {
-    .subscribe-text {
-      padding: 0;
-    }
-    .container table tbody tr td {
-      display: block;
-    }
-    a.btn-subscribe {
-      margin-top: 28px;
-    }
-    .subscribe-button {
-      margin-top: 32px;
-      margin-bottom: 16px;
-    }
   }
 }
 /*icon not showing up in ie 9, remove linear gradient*/
