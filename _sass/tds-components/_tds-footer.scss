@@ -169,6 +169,10 @@ div#footer-login {
   font-weight: 400;
   font-family: $tds-font-family;
 }
+p.sectionTitle > a {
+    color: white;
+    text-decoration: none;
+}
 div.footerjustifier {
   margin-right: 4.25%;
 }
@@ -228,6 +232,8 @@ ul.sectionLinks {
   color: #FFFFFF;
   /*font-weight: bold;*/
 }
+
+
 #accountSupport,
 #phoneSupport,
 #internetSupport,
@@ -552,4 +558,54 @@ li:hover>a#tv-plus>.link-minus {
 .footer-white {
   color: #fff!important;
   font-weight: 500!important;
+}
+
+// IWP-3247 resi extended footer formatting 
+p.sectionTitle {
+    font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+    font-size: 18px;
+    margin: 32px 0 24px 0;
+    border-bottom: solid 2px #25acf2;
+    text-align: left;
+    padding-bottom: 6px;
+}
+p.sectionTitle > a {
+    color: white;
+    text-decoration: none;
+}
+
+p.sectionTitle > a:hover:after {
+    padding-right: 1em;
+    margin-left: .125em;
+    content: "";
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png);
+    background-size: 11px 16px;
+    background-position: right 3px;
+    background-repeat: no-repeat;
+}
+
+.homepageFooter .sectionLinks {
+    margin: 0;
+    padding: 0;
+}
+
+.homepageFooter {
+    border-top: solid 4px #353535;
+}
+
+.homepageFooter:after {
+    clear: both;
+}
+.homepageFooter:after {
+    content: " ";
+    display: table;
+}
+
+.extendedfooter ~ .genericfooter > #genericfooter-container {
+    border-top: 0;
+}
+
+td.subscribe-text p {
+    color: white;
+    margin: 0;
 }

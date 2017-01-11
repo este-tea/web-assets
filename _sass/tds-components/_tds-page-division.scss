@@ -41,3 +41,14 @@
     // display: inline-block;
     // causing aem parsys to collapse
 }
+
+/*remove padding so content lines up with banner when content
+is in a page div one col comp*/
+.content.container .pagedivision .tds-pagedivider-one-col {
+    padding: 0;
+}
+/*http://tdstelecom.com/contactus/chat-not-available.html
+remove 32px padding gap from one col page layout*/
+.content.container .page_content .pagelayout .tds-pagedivider-one-col {
+    padding-top: 0;
+}

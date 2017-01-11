@@ -88,6 +88,68 @@ tbody.tds-channel-listing-table tr td {
 #historicalUsageTable th {
   border: 0px solid transparent;
 }
+// table styling refinements https://tdstelecom.com/my-account/manage-users.html
+
+#usersTable.table tbody>tr:first-child>td {
+    border-top: none!important;
+}
+
+table.table tbody>tr:last-child>td {
+    border-bottom: solid 2px #19388a!important;
+}
+
+.parbase.manageusers.section #usersTable.table.dataTable.no-footer {
+    border-bottom: none;
+}
+
+#usersTable.table>thead>tr>th {
+    border-bottom: 2px solid #19388a!important;
+}
+#usersTable.table>tbody>tr>td {
+    font-size: 14px;
+}
+@media (max-width: 700px) {
+    #usersTable td {
+        display: block;
+    }
+
+    #usersTable > tbody > tr {
+        border: solid 3px #ccc;
+        display: block;
+        width: 100%!important;
+        margin-top: 20px;
+    }
+    #usersTable > tbody > tr:first-child {
+        margin-top: 0px;
+    }
+
+    #usersTable thead {
+        display: none;
+    }
+
+    #usersTable > tbody > tr > td:first-child {
+        border-top: none!important;
+    }
+    #usersTable > tbody > tr > td:first-child:before {
+        content: "Full Name:";
+        color: #0c8fd0;
+        font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+        font-size: 14px;
+    }
+    #usersTable > tbody > tr > td:nth-child(2):before {
+        content: "User Name:";
+        color: #0c8fd0;
+        font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+    }
+
+    #usersTable.table.table tbody>tr:last-child>td {
+        border-bottom: none!important;
+    }
+
+    #usersTable.table.dataTable.no-footer {
+        border-bottom: none;
+    }
+}
 
 // Ridiculous overrides for generated tables that add their own styles.
 // =============================================================================
@@ -207,3 +269,18 @@ table#usersTable {
        text-align: center;
     }
 }
+//IMT-65 data usage summary table refinements
+#historicalUsageTable thead {
+    font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+    font-size: 14px;
+}
+
+#historicalUsageTable.table.dataTable  tbody>tr>td {
+    font-size: 14px;
+    padding: 12px 14px;
+}
+
+#historicalUsageTable.table.dataTable  tbody>tr:first-child>td {
+    border-top: none!important;
+}
+// end IMT-185
