@@ -309,10 +309,15 @@ img.down-caret-green-lg {
 .site-navigation ul {
   font-family: 'ITC Avant Garde Gothic W01';
 }
-//moved to breadcrumbs
+
 .bundle_container h2 {
   text-align: center;
   font-family: 'ITC Avant Garde Gothic W01';
+  color: $tds-lt-blue-80;
+  font-weight: 300;
+}
+.bundle_container #bundleMessages ~ div > h2 {
+  text-transform: uppercase;
 }
 #bundle-products {
   margin-left: -15px;
@@ -686,11 +691,6 @@ input:checked+.tds-radio-btn:before {
   float: left;
 }
 
-.bundle_container h2 {
-  text-transform: uppercase;
-  color: $tds-lt-blue-80;
-  font-weight: 300;
-}
 .bundleSubheader h2 {
   margin-top: 0;
   margin-bottom: 45px;
