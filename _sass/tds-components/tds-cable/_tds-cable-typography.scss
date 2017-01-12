@@ -5,6 +5,7 @@
 
 h1, h2, h3 {
   font-weight: 300;
+  line-height: 1.25;
 }
 
 h1.page-header {
@@ -35,4 +36,13 @@ h1.page-header {
   font-size: 18px;
   color: $tds-dkr-gray;
   font-weight: normal;
+}
+
+/*==Text Formating==*/
+.inline-block {
+  display: inline-block;
+}
+
+.userGreeting-address {
+  font-weight: bold;
 }

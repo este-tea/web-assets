@@ -31,7 +31,8 @@ form.elq-form .form-design-field textarea:focus {
     background-color: white;
 }
 .loginForm .tds-form-group input,
-.tds-form-group select {
+.tds-form-group select,
+.loginForm .tds-card .tds-form-group input.form-control {
     border: none;
     background-color: #e3e3e3;
 }
