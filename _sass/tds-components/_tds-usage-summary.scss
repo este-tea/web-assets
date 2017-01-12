@@ -108,7 +108,8 @@ h2.usage-section-desc {
 .tds-usage-tool.btn.collapsed span {
   @extend .fa-plus;
 }
-#usageNotificationPrefsForm .tds-ut-email-notifications button > span > i {
+#usageNotificationPrefsForm .tds-ut-email-notifications button > span > i,
+#usageNotificationPrefsForm .tds-ut-text-notifications button > span > i {
     margin-right: 12px;
 }
 .tds-usage-tool.btn span {
