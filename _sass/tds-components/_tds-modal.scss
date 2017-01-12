@@ -230,6 +230,9 @@ h2#loadingOverlayTitle,
 div#loadingOverlayParagraph {
   text-align: center;
 }
+h2#loadingOverlayTitle {
+  text-transform: inherit;
+}
 // needed to remove height for p tags specificly for loading modal
 
 // ===== video modal ===========================================================
