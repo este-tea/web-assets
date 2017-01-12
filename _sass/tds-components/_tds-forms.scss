@@ -358,3 +358,28 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 #nameRecommendation > .radio:last-child {
     margin-bottom: 0;
 }
+//contact form radio button fix
+#contactform .label-text {
+    margin-left: 40px;
+}
+#contactform span.tds-radio-btn {
+    position: relative;
+}
+#contactform label:hover input:checked + .tds-radio-btn:before {
+    top: 0px;
+    left: 0px;
+}
+#contactform .tds-form-group label:hover .label-text {
+    color: #0c8fd0;
+}
+
+#contactform .tds-form-group.has-error span.tds-radio-btn:before {
+    content: "";
+}
+
+#contactform .tds-form-group.has-error span.tds-radio-btn {
+    margin-top: 0;
+}
+#contactform .tds-form-group.has-error .label-text {
+    color: #555;
+}
