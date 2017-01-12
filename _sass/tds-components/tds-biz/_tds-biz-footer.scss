@@ -15,6 +15,7 @@ div#tdsbizfooter--navbar {
 #footer-login {
   display: none;
 }
+
 // social media icon links
 // ----------------------------------------
 #social-container {
@@ -30,6 +31,9 @@ div#tdsbizfooter--navbar {
 // ----------------------------------------
 .homepageFooter {
   border-top: none;
+  @media (max-width: 750px) {
+      display: initial;
+  }
   .sectionTitle {
     font-size: 16px;
     text-align: left;

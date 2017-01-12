@@ -26,6 +26,10 @@
 .footer-contact-wrap .container {
     padding: 0;
 }
+//removes the top border on children pages
+.footerContactInfo + .genericfooter > #genericfooter-container {
+    border-top: none;
+}
 //===== footer copyright =======================================================
 //==============================================================================
 #copyright-container {
