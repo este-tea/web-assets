@@ -174,14 +174,14 @@ li:hover > a#tv-plus > .link-minus {
     font-weight: 400;
     font-family: $tds-font-family;
     font-size: 18px;
-    margin: 32px 0 24px;
+    margin: 0 0 24px 0;
     border-bottom: solid 2px #25acf2;
     text-align: left;
     padding-bottom: 6px;
     > a {
         color: white;
         text-decoration: none;
-        :hover:after {
+        &:hover:after {
             padding-right: 1em;
             margin-left: 0.125em;
             content: "";
@@ -210,7 +210,7 @@ li:hover > a#tv-plus > .link-minus {
             display: inline;
             text-decoration: none;
             color: #BBBBBB;
-            :hover {
+            &:hover {
                 text-decoration: none;
                 color: #FFFFFF;
             }

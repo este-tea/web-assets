@@ -11,8 +11,9 @@
 // ===== spacing mixins ========================================================
 // FOR RE-USE WHEN NEEDED!!!! :)
 // Additional variables sometimes needed for icon styles
-// use as `@extend` where needed below.
-// Example `@extend .tds-icon-padding-right` to add padding-right to icons
+// NEVER USE @EXTEND!!!
+// https://www.sitepoint.com/sass-extend-nobody-told-you/
+// TODO replace ALL @extends with @mixins
 // =============================================================================
 
 // padding-right for `:before` icons
