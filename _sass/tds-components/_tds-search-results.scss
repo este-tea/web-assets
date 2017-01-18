@@ -112,3 +112,27 @@ span.search-current-page {
         padding: 0px;
     }
 }
+.noResultsFound ul {
+    display: table;
+    list-style-type: none;
+}
+
+.noResultsFound ul li:before {
+    content: "\f04d";
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+    margin-left: -22px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 8px;
+    color: #0c8fd0;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0,0);
+}
+
+.noResultsFound > div {
+    padding-left: 40px;
+    padding-right: 40px;
+}

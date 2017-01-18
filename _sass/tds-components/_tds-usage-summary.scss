@@ -108,8 +108,13 @@ h2.usage-section-desc {
 .tds-usage-tool.btn.collapsed span {
   @extend .fa-plus;
 }
+#usageNotificationPrefsForm .tds-ut-email-notifications button > span > i,
+#usageNotificationPrefsForm .tds-ut-text-notifications button > span > i {
+    margin-right: 12px;
+}
 .tds-usage-tool.btn span {
-  @extend .fa-minus;
+  //removed because causing the longest selector EVER!!
+  //@extend .fa-minus;
 }
 // estimated-usage meter
 // this removes padding in the card for the meter
@@ -121,7 +126,6 @@ h2.usage-section-desc {
   @extend .tds-card;
   .prod-items {
     float: left !important;
-    //padding-left: 0px;
     width: 100%;
   }
 }
@@ -216,15 +220,12 @@ div#customerDataUsage {
 .tds-summary-bar {
     position: relative;
     clear: both;
-    /* margin-top: 24px; */
 }
 
 p.tds-status-title {
     font-size: 24px;
     font-weight: 600;
     color: #000;
-    /* margin: 0; */
-    /* line-height: 1.6em; */
 }
 
 .tds-alert.tds-alert-success.tds-top-border {
@@ -270,4 +271,29 @@ table.table tbody > tr:last-child > td {
 
 .tds-history-section h2 {
     margin-bottom: 4px;
+}
+
+#usageNotificationPrefsForm .tds-ut .gallery-btn.tds-btn-gray {
+    margin-top: 0;
+}
+
+.tds-ut.tds-ut-usage-notifications .prod-items {
+    padding: 0;
+}
+
+button#saveUsageNotificationPrefs {
+    margin-top: 0;
+}
+.estimated-usage-desc span:first-child {
+    font-size: .875em;
+    font-weight:400;
+}
+
+.estimated-usage-desc span:last-child {
+    color: #0c8fd0;
+}
+
+.tds-usage-tool.btn span {
+    font-size: 1em;
+    line-height: 1.75em;
 }

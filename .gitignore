@@ -21,6 +21,10 @@ Gemfile.lock
 *.vi
 *~
 *.scssc
+<<<<<<< HEAD
+=======
+*.DS_Store
+>>>>>>> master
 
 # OS or Editor folders
 .DS_Store

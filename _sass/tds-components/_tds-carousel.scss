@@ -22,26 +22,19 @@
   top: 0;
   z-index: -5;
   width: 100%;
-  height: 278px;
+  height: 100%;
   background-size: cover !important;
     background-position: right top;
     background-repeat: no-repeat;
 }
+.carouselcontainer #maincarousel .carousel-inner .item .content-block {
+    min-height: 300px;
+}
 // slide overlay on resi site
 // ----------------------------------------
 #slide-overlay {
-  position: absolute;
-  z-index: -4;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  border-top-color: transparent;
-  border-bottom: solid 2px $tds-lt-blue-80;
-  background: url(/content/dam/tdstelecom/images/carousel/carousel-overlay.png) left top no-repeat;
-  background-size: 100%;
-  @media (max-width:$screen-xs-min) {
-    background: transparent !important;
-  }
+  // remove slide overlay
+  display: none;
 }
 // main slide content, includes :
 // carouseltitletext, carouselbodytext, gallery-btn
@@ -82,12 +75,27 @@
     }
   }
 }
+// remove vignette and replace with box
+@media (min-width: 585px) {
+.content.container .carouselslide {
+    background-color: white;
+    background-color: rgba(255,255,255,0.75);
+    width: auto;
+    float: left;
+    margin: 28px;
+    padding: 28px;
+}
+}
 .carouseltitletext {
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
   margin: 0;
   color: $tds-blue-100;
+  sup {
+      font-size: 50%;
+      vertical-align: 4px!important;
+  }
   @media (max-width: $screen-xs-min) {
     font-size: 24px;
     line-height: 30px;
@@ -107,7 +115,7 @@
     color: $tds-green;
   }
   > p {
-    line-height: 20px;
+    line-height: 24px;
   }
 }
 @media (max-width:$screen-xs-min) {
@@ -208,6 +216,15 @@
   }
   @media (max-width: $screen-xs-min) {
     bottom: 324px;
+  }
+}
+@media (max-width: 584px){
+  .carouselslide {
+      bottom: 0px;
+  }
+  .carousel-indicators {
+    width: 100%;
+    margin-left: -50%;
   }
 }
 // ===== Careers carousel ======================================================

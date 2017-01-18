@@ -69,3 +69,30 @@
 .navbutton.parbase ~ .parbase.troubleReporting.section {
     margin-top: 28px;
 }
+//---support tickets page https://tdstelecom.com/my-account/support-tickets.html
+
+.troubleReporting .horizontal button#ticketButton {
+    width: auto;
+    margin-top: 0;
+}
+
+.troubleReporting .horizontal button#serviceButton {
+    margin-top: 0;
+}
+//--- my account page https://tdstelecom.com/my-account.html
+
+.troubleReporting .tds-card.vertical span.tds-or-text {
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    color: #000;
+}
+
+.col-sm-4 button#ticketButton {
+    width: auto;
+    margin-top: 0;
+}
+
+.col-sm-4 button#serviceButton {
+    margin-top: 0;
+}

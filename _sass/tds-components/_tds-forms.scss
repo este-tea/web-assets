@@ -236,7 +236,21 @@ form#SuggestedAddressForm h3 {
     font-size: 18px;
     margin-bottom: 8px;
 }
+#SuggestedAddressForm .tds-address + p {
+    max-width: 600px;
+}
 
+div#suggestedAddresses {
+    margin-top: 24px;
+}
+
+div#suggestedAddresses .radio:last-child {
+    margin-bottom: 24px;
+}
+
+#SuggestedAddressForm button#continue {
+    margin-top: 24px;
+}
 .content.container .page_content .tds-pagedivider-one-col .contentcontainer .tds-richtext-padleft .parsys {
     margin-left: -15px;
     margin-right: -15px;
@@ -311,4 +325,61 @@ a.contact-links-text.contact-chat-icon {
 }
 a.contact-links-text.contact-chat-icon:before {
     margin-right: 8px;
+}
+// https://tdstelecom.com/my-account/manage-users/edit-users.html
+// make row bg transparent instead of white when in colored block
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+    background-color: transparent;
+}
+// remove extra space from new email message alert*/
+div#newEmailMessage {
+    margin-bottom: 0;
+}
+// add spacing between check avail btn and auto gen link/alerts*/
+#userNameDiv form#userNameForm {
+    margin-bottom: 20px;
+}
+button#changePassword {
+    margin-top: 4px;
+    width: 100%;
+}
+button#changeSecQuestions {
+    width: 100%;
+}
+
+// MYA Add User
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+    background-color: transparent;
+}
+#userNameDiv .tds-divider-line.dotted-gray {
+    margin-bottom: 24px;
+    margin-top: 28px;
+}
+#nameRecommendation > .radio:last-child {
+    margin-bottom: 0;
+}
+//contact form radio button fix
+#contactform .label-text {
+    margin-left: 40px;
+}
+#contactform span.tds-radio-btn {
+    position: relative;
+}
+#contactform label:hover input:checked + .tds-radio-btn:before {
+    top: 0px;
+    left: 0px;
+}
+#contactform .tds-form-group label:hover .label-text {
+    color: #0c8fd0;
+}
+
+#contactform .tds-form-group.has-error span.tds-radio-btn:before {
+    content: "";
+}
+
+#contactform .tds-form-group.has-error span.tds-radio-btn {
+    margin-top: 0;
+}
+#contactform .tds-form-group.has-error .label-text {
+    color: #555;
 }

@@ -1,0 +1,83 @@
+/* tds-bundle-gallery.scss
+==========================================*/
+// this is used in the shop bundle gallery section
+
+// Full width cards on bundle gallery pages
+//-------------------------------
+.cards-full-width {
+    width: 100% !important;
+    // need to add this class to wrap contnets
+    .cards-full-width-content {
+        overflow: hidden;
+        text-align: left;
+        // Headers
+        .gallery-title {
+            display: block;
+            overflow: hidden;
+            margin-bottom: 36px;
+            border-bottom: 1px solid $tds-lt-gray;
+        }
+        // main header & sub header
+        h2.card-main-title,
+        h3.card-sub-title {
+            float: left;
+            display: inline;
+            margin: 0 10px 0 0;
+            padding-bottom: 10px;
+        }
+        // Aligns `.card-sub-title` text with `.card-main-title`
+        h3.card-sub-title {
+            line-height: 34px;
+            p {
+                @extend .h3;
+                margin: 0;
+                line-height: 34px;
+            }
+        }
+        // min-height not needed on full width cards
+        .gallery-description {
+            margin-top: 0;
+            height: auto;
+        }
+        // ul li product lists in the gallery
+        ul.gallery-prods li {
+            width: 100%;
+        }
+        ul.gallery-prods li div {
+            top: -8px;
+            padding: 0;
+            text-align: left;
+            border: none;
+        }
+        // stops th li from only being 33% || TO DO findo out why that is.
+        ul li {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
+//IMT-99 Style refinement
+.bundle-cards.cards-full-width .cards-full-width-content .gallery-title + .col-sm-8 {
+    padding-left: 0;
+}
+
+.bundle-cards.cards-full-width .cards-full-width-content .col-sm-4 {
+    padding-right: 0;
+}
+
+.bundle-cards.cards-full-width .cards-full-width-content .gallery-title + .col-sm-4 {
+    padding-left: 0;
+}
+
+.bundle-cards.cards-full-width .cards-full-width-content .gallery-btn {
+    box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.5)!important;
+    margin-top: 0;
+}
+
+.bundle-cards.cards-full-width .cards-full-width-content .gallery-btn:after {
+    right: 14px;
+}
+
+.bundle-cards.cards-full-width .cards-full-width-content .gallery-title {
+    margin-bottom: 24px;
+}

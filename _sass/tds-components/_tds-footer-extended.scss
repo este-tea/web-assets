@@ -1,0 +1,222 @@
+/* tds-footer-extended.scss
+==========================================*/
+// styles for extended footer on homepage
+// OLD homepage footer styles
+//----------------------------------------
+#homepagefooter-container {
+    background-color: #555;
+    border-top: solid 4px #353535;
+    position: relative;
+    top: 4px;
+}
+@media all and (max-width: $screen-sm-min) {
+    #home-only-footer {
+        display: none;
+    }
+}
+.footer-columns,
+.footer-columns ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-columns > li {
+    width: 28.47%;
+    float: left;
+    margin-left: 7.29%;
+    margin-top: 32px;
+    text-align: left;
+}
+.footer-columns li:first-child {
+    margin-left: 0;
+}
+.footer-columns ul ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+.footer-columns ul > li {
+    padding: 0.75em 0 0;
+}
+.footer-block {
+    display: block;
+}
+li.column-heading > a {
+    font-family: $tds-font-family;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.125em;
+    color: #fff;
+    margin: 0 0 0.5em;
+    border-bottom: solid 2px #25acf2;
+    text-decoration: none!important;
+    display: block;
+}
+li.column-heading > a:hover:after {
+    padding-right: 1em;
+    margin-left: 0.125em;
+    content: "";
+    width: 10px;
+    height: 20px;
+    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
+    background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg');
+    background-size: 10px 20px;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.column-body a {
+    font-family: $tds-font-body;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.875em;
+    line-height: 1.7em;
+    color: #cacaca;
+    text-decoration: none;
+}
+.column-body a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+//categories and list items under support section
+#accountSupport,
+#digitalSupport,
+#internetSupport,
+#phoneSupport {
+    font-family: $tds-font-body;
+    list-style: none;
+    display: none;
+    margin-left: 13px;
+    width: 70%;
+}
+#account-plus,
+#internet-plus,
+#phone-plus,
+#tv-plus {
+    cursor: pointer;
+}
+//plus and minus icons under support section
+.link-plus {
+    height: 22px;
+    width: 30px;
+    float: right;
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_plus-gray.png");
+    background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_plus-gray.svg');
+    background-size: 11px 11px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+li:hover > a#account-plus > .link-plus,
+li:hover > a#internet-plus > .link-plus,
+li:hover > a#phone-plus > .link-plus,
+li:hover > a#tv-plus > .link-plus {
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_plus-ltblue.png");
+    background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_plus-ltblue.svg');
+}
+.link-minus {
+    height: 21px;
+    width: 30px;
+    float: right;
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_minus-gray.png");
+    background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_minus-gray.svg');
+    background-size: 11px 11px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+li:hover > a#account-plus > .link-minus,
+li:hover > a#internet-plus > .link-minus,
+li:hover > a#phone-plus > .link-minus,
+li:hover > a#tv-plus > .link-minus {
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_minus-ltblue.png");
+    background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_minus-ltblue.svg');
+}
+.footer-gray {
+    color: #cacaca;
+}
+.footer-white {
+    color: #fff!important;
+    font-weight: 500!important;
+}
+.footer-block {
+    display: block;
+}
+// NEW extended footer component styles
+//----------------------------------------
+.homepageFooter {
+    border-top: solid 4px #353535;
+    background-color: #555555;
+    text-align: center;
+}
+.homepageFooter:after {
+    clear: both;
+}
+.homepageFooter:after {
+    content: " ";
+    display: table;
+}
+//removes top border on genericfooter because the extendedfooter has one
+.extendedfooter ~ .genericfooter > #genericfooter-container {
+    border-top: 0;
+}
+@media (max-width: 750px) {
+    .homepageFooter {
+        /* border-top: none; */
+        display: none;
+    }
+    .container-fluid.footer-contact-wrap {
+        background: #555;
+        border-top: solid 4px #353535;
+        clear: both;
+    }
+}
+.homepageFooter .sectionTitle {
+    color: #FFFFFF;
+    padding-top: 32px;
+    line-height: 1.25em;
+    font-weight: 400;
+    font-family: $tds-font-family;
+    font-size: 18px;
+    margin: 0 0 24px 0;
+    border-bottom: solid 2px #25acf2;
+    text-align: left;
+    padding-bottom: 6px;
+    > a {
+        color: white;
+        text-decoration: none;
+        &:hover:after {
+            padding-right: 1em;
+            margin-left: 0.125em;
+            content: "";
+            background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
+            background-size: 11px 16px;
+            background-position: right 3px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+.homepageFooter .sectionLinks {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-family: $tds-font-body;
+    list-style: none;
+    text-align: left;
+    li {
+        font-family: $tds-font-body;
+        padding-bottom: 22px;
+        margin-right: 24px;
+        font-weight: normal;
+        line-height: 14px;
+        font-size: 12px;
+        a {
+            display: inline;
+            text-decoration: none;
+            color: #BBBBBB;
+            &:hover {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .col-sm-4:last-child .sectionLinks {
+        margin-bottom: 20px;
+    }
+}

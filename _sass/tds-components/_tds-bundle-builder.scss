@@ -309,10 +309,15 @@ img.down-caret-green-lg {
 .site-navigation ul {
   font-family: 'ITC Avant Garde Gothic W01';
 }
-//moved to breadcrumbs
+
 .bundle_container h2 {
   text-align: center;
   font-family: 'ITC Avant Garde Gothic W01';
+  color: $tds-lt-blue-80;
+  font-weight: 300;
+}
+.bundle_container #bundleMessages ~ div > h2 {
+  text-transform: uppercase;
 }
 #bundle-products {
   margin-left: -15px;
@@ -686,11 +691,6 @@ input:checked+.tds-radio-btn:before {
   float: left;
 }
 
-.bundle_container h2 {
-  text-transform: uppercase;
-  color: $tds-lt-blue-80;
-  font-weight: 300;
-}
 .bundleSubheader h2 {
   margin-top: 0;
   margin-bottom: 45px;
@@ -789,4 +789,311 @@ h6.disclaimer-heading {
     left: -25px;
     position: relative;
   }
+}
+/*---IMT-46 bundle builder refinements---*/
+#bundle-products .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #0c8fd0;
+    text-decoration: none;
+}
+.ui-tabs .ui-tabs-panel {
+    max-width: 100%;
+    margin: 15px;
+    padding: 0;
+}
+
+.bundle_container .tds-page-banner {
+    max-width: 1120px;
+}
+
+.parbase.bundle_container.section {
+    padding: 0 15px;
+}
+
+.container.tds-page-banner.tds-sub-banner {
+    padding: 0;
+}
+
+p.term-text {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #7BB227;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'ITC Avant Garde Gothic W01';
+}
+
+p.price-text.price-override {
+    display: inline-block;
+}
+
+.costoverview.parbase.section {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sel-summary .summ-header-text {
+    margin-top: 4px;
+}
+
+#bundle-products .prod-section-wrap .prod-items {
+    padding: 0;
+}
+
+.prod-summary {
+    padding-left: 0;
+    padding-right: 24px;
+}
+@media (max-width: 750px) {
+.prod-summary {
+    padding-left: 0px;
+}
+}
+@media (max-width: 583px) {
+.prod-summary {
+    padding-left: 0px;
+}
+}
+
+.prod-summary .prod-title {
+    margin-top: 0;
+}
+
+p.price-text.price-base {
+    margin: 0;
+}
+
+p.price-text.price-override {
+    margin-bottom: 0px;
+    margin-right: 8px;
+}
+
+.prod-contents .price-text.price-base {
+    font-size: 21px;
+}
+
+.prod-contents .prod-name {
+    font-size: 20px;
+}
+
+.prod-section-wrap {
+    padding-top: 8px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.prod-summary p:last-child {
+    margin-bottom: 28px;
+}
+
+.prod-items > .prod-contents {
+    margin-bottom: 28px;
+}
+
+#dish_movie_pack .term-text.term-base {
+    color: #555;
+}
+
+.prod-items input:checked + label .check-radio-btn:before, .tds-newsroom-search input:checked + label .check-radio-btn:before {
+    border-color: white!important;
+}
+
+.prod-items > .prod-contents {
+    width: 92%;
+}
+
+@media (max-width: 584px) {
+    .prod-items > .prod-contents {
+        padding: 17px 20px 20px 50px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        left: 0px;
+        position: relative;
+    }
+}
+@media (max-width: 584px) {
+    .prod-items > label, .tds-newsroom-search > label {
+        top: 14px;
+        left: 16px
+    }
+    .prod-summary p:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.bundle_container ul.ui-tabs-nav li {
+    width: auto;
+    margin-left: 0px;
+    min-height: 0;
+    margin-bottom: 0!important;
+}
+@media (max-width: 750px) {
+.bundleSubheader {
+    padding: 16px;
+}
+}
+@media (max-width: 583px) {
+.bundleSubheader {
+    padding: 0;
+}
+}
+
+.prod-items input[type="checkbox"] {
+    position: absolute;
+}
+/*---IMT-46 bundle builder select services tabs---*/
+.bundle_container ul.ui-tabs-nav li:after {
+    content: none;
+}
+.bundle_container ul.ui-tabs-nav li a:after {
+    content: "";
+    width: 40px;
+    height: 50px;
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-gray.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    opacity: .4;
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 0;
+}
+.bundle_container ul.ui-tabs-nav li:last-child:after {
+    content: none;
+}
+a#internet-tab, a#phone-tab, a#tv-tab {
+    padding: 0px 50px 0px 60px;
+}
+a#internet-tab, a#phone-tab, a#tv-tab, a#extra-tab {
+    background: none!important;
+    position: relative;
+    line-height: 50px;
+}
+a#extra-tab {
+    padding:0;
+}
+
+a#internet-tab:before, a#phone-tab:before, a#tv-tab:before {
+    content: "";
+    width: 60px!important;
+    height: 50px!important;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    margin-top: 0px;
+    filter: grayscale(100%);
+    opacity: .5;
+    position: absolute;
+    left: 0;
+}
+@media (max-width:625px){
+    a#internet-tab, a#phone-tab, a#tv-tab {
+        padding: 0px 50px 0px 46px;
+    }
+    a#internet-tab:before, a#phone-tab:before, a#tv-tab:before {
+        width: 40px!important;
+        background-size: 34px;
+    }
+    .bundle_container ul.ui-tabs-nav li:after {
+        width: 36px;
+        height: 40px;
+        background-size: 30px 30px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+}
+@media (max-width:560px){
+    a#internet-tab:before, a#phone-tab:before, a#tv-tab:before {
+        content: none;
+    }
+    a#internet-tab, a#phone-tab, a#tv-tab {
+        padding: 0px 50px 0px 0px;
+    }
+}
+@media (max-width:445px){
+    .bundle_container ul.ui-tabs-nav li {
+        margin-left: 0px;
+        min-height: 0;
+        margin-bottom: 0!important;
+    }
+}
+@media (max-width:340px){
+    .bundle_container ul.ui-tabs-nav li {
+        float: none;
+    }
+    a#internet-tab, a#phone-tab, a#tv-tab {
+        padding: 0px 50px 0px 50px;
+    }
+    a#internet-tab:before, a#phone-tab:before, a#tv-tab:before {
+        content: "";
+    }
+}
+.bundle_container ul.ui-tabs-nav li.progress-highlight a {
+    color:#19388a!important;
+}
+.bundle_container ul.ui-tabs-nav li.progress-highlight a:before {
+    filter: grayscale(0%)!important;
+    opacity: 1!important;
+}
+a#internet-tab:before {
+    background-image: url(/content/dam/tdstelecom/images/products/internet/icon-product-internet.svg);
+}
+
+a#phone-tab:before {
+    background-image: url(/content/dam/tdstelecom/images/products/phone/icon-product-phone.svg);
+}
+
+a#tv-tab:before {
+    background-image: url(/content/dam/tdstelecom/images/products/tv/icon-product-tv.svg);
+}
+a#extra-tab:after {
+    content: none;
+}
+
+a#internet-tab:hover:before, a#phone-tab:hover:before, a#tv-tab:hover:before,
+a#internet-tab:focus:before, a#phone-tab:focus:before, a#tv-tab:focus:before {
+    filter: grayscale(0%)!important;
+    opacity: 1!important;
+}
+a#internet-tab:hover, a#phone-tab:hover, a#tv-tab:hover, a#extra-tab:hover  {
+    filter: grayscale(0%)!important;
+    opacity: 1!important;
+    color: #0c8fd0!important;
+}
+.bundle_container ul.ui-tabs-nav .ui-state-default {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.bundle_container ul.ui-tabs-nav .ui-state-default a,
+.bundle_container ul.ui-tabs-nav .ui-state-default a:link,
+.bundle_container ul.ui-tabs-nav .ui-state-default a:visited {
+    color: #aaa;
+    text-decoration: none;
+}
+.bundle_container ul.ui-tabs-nav li:focus a.ui-tabs-anchor {
+    color: #0c8fd0!important;
+}
+.bundle_container ul.ui-tabs-nav li:focus a.ui-tabs-anchor:before {
+    filter: grayscale(0%)!important;
+    opacity: 1!important;
+}
+.bundle_container ul.ui-tabs-nav {
+    padding: 0 24px;
+}
+.bundle_container ul.ui-tabs-nav li.ui-state-default.ui-corner-top {
+    padding: 0;
+    display: block!important;
+}
+/*---IMT-46 begin checkout button bundle builder---*/
+@media (max-width:435px) {
+.cart-overview-actions form.pull-right.form-group {
+    float: none!important;
+}
+button#beginCheckout {
+    margin-top: 28px;
+    width: 100%!important;
+    display: inline-block;
+}
 }
