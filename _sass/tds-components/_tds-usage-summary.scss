@@ -196,40 +196,6 @@ a.ui-slider-handle.ui-state-default.ui-corner-all {
         font-size: 20px;
     }
 }
-/*re-style expand-collapse button on usage estimator*/
-.usageestimator .tds-usage-tool.tds-card > button > span {
-    display: none;
-}
-
-button.btn.tds-usage-tool.tds-card-btn {
-    background: none;
-}
-button.btn.tds-usage-tool.tds-card-btn:before {
-    content: "";
-    width: 24px;
-    height: 24px;
-    display: block;
-    background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-white.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    border-radius: 50%;
-    background-color: #0c8fd0;
-    margin-top: -4px;
-}
-button.btn.tds-usage-tool.tds-card-btn.collapsed:before {
-    background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
-}
-@media (max-width:400px) {
-    button.btn.tds-usage-tool.tds-card-btn:before {
-        width: 20px;
-        height: 20px;
-        background-size: 12px 12px;
-        margin-top: 0px;
-    }
-}
-
-
 //usage summary history page
 .estimated-usage-desc {
   @extend .h2;
@@ -330,17 +296,4 @@ button#saveUsageNotificationPrefs {
 .tds-usage-tool.btn span {
     font-size: 1em;
     line-height: 1.75em;
-}
-/*fix checkbox spacing on data usage notif form*/
-#usageNotificationPrefsForm .checkbox-inline + .checkbox-inline {
-    margin-left: 0px;
-}
-
-#usageNotificationPrefsForm .tds-ut.tds-ut-usage-notifications.tds-card .checkbox-inline .check-radio-btn {
-    margin: -2px 8px 0px 0px;
-}
-
-#usageNotificationPrefsForm .tds-ut.tds-ut-usage-notifications.tds-card .checkbox-inline {
-    margin-right: 24px;
-    margin-top: 16px;
 }
