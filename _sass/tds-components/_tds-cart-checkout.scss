@@ -353,3 +353,27 @@ td.h4.tds-cost-price {
 #cartDisplay .single-order-lineitems .table > tbody > tr > td:last-child {
     width: 1%;
 }
+
+/*-- cart error styling refinements --*/
+
+#cartDisplay .table tbody .hasError .col-xs-8 {
+    color: black;
+}
+/*bundle error first line styling*/
+#cartErrors > .tds-error-description p:first-child {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*make sure price lines up with product display name*/
+@media (max-width: 400px){
+    #cartDisplay .table tbody .hasError td.h4.tds-cart-price {
+        padding-left: 32px!important;
+        margin-bottom: 0px;
+    }
+}
+@media (min-width: 400px) and (max-width: 583px){
+    #cartDisplay .table > tbody > tr > td.h4.tds-cost-price {
+         padding-left: 0;
+    }
+}
