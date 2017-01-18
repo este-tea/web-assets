@@ -64,3 +64,32 @@ $desktop-width: 1024px;
     -moz-box-shadow: $value;
     box-shadow: $value;
 }
+
+@mixin tds_card {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  //float causing display issues but there are so many dependencies we have to leave as is
+  width: 100%;
+  margin-bottom: 28px;
+  padding: 24px;
+  background-color: $tds-white;
+  border: 3px solid $tds-lt-gray;
+  h2,
+  h3 {
+      margin-top: 0;
+  }
+  h3 {
+      font-size: 1.5em;
+  }
+  .card-content {
+      margin-top: 20px;
+  }
+  ul {
+      padding-left: 20px;
+      li {
+          color: $tds-dk-gray;
+          margin-bottom: 6px;
+      }
+  }
+}
