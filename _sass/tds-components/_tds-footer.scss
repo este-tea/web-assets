@@ -162,6 +162,14 @@ div#footer-login {
   position: absolute;
   right: 1em;
 }
+
+
+//IWP-3247 Component Update: Author Configurable Homepage Footer and Generic Footer for Resi
+#genericfooter--navbar {
+  display: inline-block;
+  padding: 0 0 40px 0;
+}
+
 // ===== Homepage/Extended footer ==============================================
 //moved to _tds-footer-extended.scss
 // =============================================================================
