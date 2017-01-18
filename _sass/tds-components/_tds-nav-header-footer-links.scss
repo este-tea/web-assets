@@ -94,6 +94,9 @@ div.hr-darkgray {
   border-right: solid 1px $tds-dk-gray-60;
   margin-bottom: -1px;
 }
+#genericfooter--navbar.tds-other-nav > ul > li > a {
+  padding: 6px 12px;
+}
 #othernav-container-top {
   .tds-other-nav > ul > li:first-child > a {
     border-left: solid 1px $tds-dk-gray-60;
@@ -102,7 +105,8 @@ div.hr-darkgray {
 #othernav-container-topright .tds-other-nav > ul > li > a {
   border-right: none;
 }
-#othernav-container-bottom .tds-other-nav > ul > li:last-child > a {
+#othernav-container-bottom .tds-other-nav > ul > li:last-child > a,
+#genericfooter--navbar.tds-other-nav > ul > li:last-child > a {
   border-right: none!important;
 }
 #othernav-container-bottom .tds-other-nav > ul > li > a {
@@ -189,6 +193,18 @@ div.hr-darkgray {
 .tds-other-nav-border {
   border-bottom: solid 2px $tds-lt-blue-100;
   max-width: $screen-md-min;
+}
+@media (max-width: $screen-sm) {
+    #genericfooter--navbar.tds-other-nav ul {
+        text-align: center;
+    }
+    #genericfooter--navbar.tds-other-nav > ul > li {
+        float: none;
+        display: inline-block;
+        margin-bottom: 20px;
+        /*gets rid of weird gap between links*/
+        margin-left: -4px;
+    }
 }
 @media all and (max-width: $screen-sm-min) {
   #othernav-container-bottom .tds-other-nav ul {

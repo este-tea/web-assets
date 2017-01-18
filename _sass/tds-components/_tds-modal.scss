@@ -233,6 +233,9 @@ div#loadingOverlayParagraph {
 h2#loadingOverlayTitle {
   text-transform: inherit;
 }
+#bundleLoadingOverlay #loadingOverlayTitle {
+  color: $tds-blue-100;
+}
 // needed to remove height for p tags specificly for loading modal
 
 // ===== video modal ===========================================================
