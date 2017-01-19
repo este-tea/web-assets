@@ -147,6 +147,28 @@
   top: 18px;
   text-align: center;
 }
+
+/*replace icon with correct one and make styling match tds-alert-critical*/
+.bundle-error {
+    background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+    background-size: 20px 20px;
+    background-position: 16px 14px;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 12px 16px;
+    padding-left: 52px;
+    width: 100%;
+    line-height: 24px;
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    font-size: 14px;
+    color: #000;
+    border: 0px solid transparent;
+}
+
+.bundle-error:before {
+    content: none;
+}
+
 //moved to page-layout.scss
 //moved to grid.scss
 //moved to type.scss
@@ -1096,4 +1118,9 @@ button#beginCheckout {
     width: 100%!important;
     display: inline-block;
 }
+}
+/*fix button font on bundle builder*/
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: 'ITC Avant Garde Gothic W01',Century Gothic,sans-serif;
+    font-size: 14px;
 }

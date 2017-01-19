@@ -1,68 +1,12 @@
 /* tds-usage-summary.scss
 ==========================================*/
+//tdstelecom.com/my-account/data-usage-summary.html
 
-// Styles to override jQuery UI for usage estimator tool
-.tds-usage-tool {
-  h2, button {
-    display: inline;
-  }
-  .usage-section {
-    margin: 20px 0 36px 0;
-  }
-  .usage-slider {
-    border-color: #eee;
-    background: #eee;
-    border-radius: 0px;
-    width: 85% !important;
-    &::before,
-    &::after {
-      display: block;
-      position: absolute;
-      top: 24px;
-    }
-    &::before {
-      content: "0";
-    }
-    &::after {
-      content: attr(data-max)"";
-      right: 0;
-    }
-  }
-  .usage-slider .ui-slider-range {
-    background: $tds-lt-blue !important;
-    border-radius: 0px;
-  }
-  .usage-slider .ui-slider-handle {
-    border: 1px solid transparent;
-    border-radius: 0px;
-    box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
-    background: $tds-dk-blue !important;
-    opacity: 1;
-  }
-  .ui-widget-header {
-    background: $tds-green;
-  }
-  .ui-progressbar .ui-progressbar-value {
-    border: 1px solid $tds-green;
-    margin: 0px;
-  }
-  .usage-unit {
-    display: inline;
-    float: right;
-    margin-top: -28px;
-    width: 11%;
-    font-weight: bold;
-    font-size: 28px;
-    text-align: left;
-    white-space: normal;
-    color: $tds-dk-blue;
-    span {
-      display: block;
-      font-size: 14px;
-      line-height: 0.5em;
-      color: $tds-dk-gray;
-    }
-  }
+//Usage Summary section
+//------------------------
+.tds-summary-section h2 {
+    margin: 0;
+    margin-bottom: 6px;
 }
 .tds-error-msg.tds-top-border {
   padding-left: 55px;
@@ -77,135 +21,28 @@
   }
 }
 
-.tds-usage-info {
-  padding: 12px 0;
-  margin: 24px 0;
-  border-top: 1px solid $tds-lt-gray;
-  border-bottom: 1px solid $tds-lt-gray;
+.tds-alert.tds-alert-success.tds-top-border {
+    background-position: 20px 20px;
+    padding-left: 62px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 24px;
 }
-// card titles, padding for collapse buttons
-h2.usage-section-desc {
-  padding-right: 10px;
+p.tds-status-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
 }
-.tds-usage-tool.btn {
-  margin-bottom: 10px;
-  height: 28px;
-  width: 28px;
-  vertical-align: middle;
-  line-height: 16px;
-  text-align: center;
-  background: $tds-lt-blue;
-  border-radius: 50% !important;
-  span {
-    margin-left: -4px;
-  }
-}
-// Expand contract buttons
-.tds-usage-tool.btn span {
-  @extend .fa;
-  color: #fff;
-}
-.tds-usage-tool.btn.collapsed span {
-  @extend .fa-plus;
-}
-#usageNotificationPrefsForm .tds-ut-email-notifications button > span > i,
-#usageNotificationPrefsForm .tds-ut-text-notifications button > span > i {
-    margin-right: 12px;
-}
-.tds-usage-tool.btn span {
-  //removed because causing the longest selector EVER!!
-  //@extend .fa-minus;
-}
-// estimated-usage meter
-// this removes padding in the card for the meter
-.tds-card-plain .tds-usage-tool {
-  margin-left: -20px;
-  margin-right: -20px;
-}
-.tds-ut-usage-notifications {
-  @extend .tds-card;
-  .prod-items {
-    float: left !important;
-    width: 100%;
-  }
-}
-button.btn.tds-usage-tool.tds-card-btn,
-button.btn.tds-usage-tool.tds-card-btn.collapsed {
-    padding: 0;
-    border: none;
-    height: 20px;
-    width: 20px;
-    line-height: initial;
-    padding-left: 3px;
-    font-size: 13px;
-}
-button.btn.tds-usage-tool.tds-card-btn {
-    padding-left: 4px;
-}
-.tds-usage-tool .usage-slider:before {
-    content: "0";
+span.current-usage {
+    font-size: 18px;
+    color: #000;
     font-weight: 500;
-    font-style: normal;
-    font-family: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #555;
-}
-a.ui-slider-handle.ui-state-default.ui-corner-all {
-    margin-left: 0px;
-}
-@media (max-width: 584px) {
-    button.btn.tds-usage-tool.tds-card-btn,
-    button.btn.tds-usage-tool.tds-card-btn.collapsed {
-        padding: 0;
-        border: none;
-        height: 18px;
-        width: 18px;
-        line-height: initial;
-        padding-left: 4px;
-        font-size: 10px;
-    }
-    button.btn.tds-usage-tool.tds-card-btn {
-        padding-left: 3px;
-    }
-}
-@media (max-width: 584px) {
-    .tds-usage-tool .usage-slider {
-        width: 85%!important;
-    }
-    .tds-usage-tool .usage-unit {
-        font-size: 18px;
-        width: 10%;
-        margin-top: -18px;
-    }
-    .tds-usage-tool .usage-unit span {
-        font-size: 12px;
-    }
-}
-@media (max-width: 400px) {
-    .tds-usage-tool .usage-slider {
-        width: 79%!important;
-    }
-    .tds-usage-tool .usage-unit {
-        font-size: 18px;
-        width: 13%;
-        margin-top: -18px;
-    }
-    .tds-usage-tool .usage-unit span {
-        font-size: 12px;
-    }
-    .usageestimator h2.usage-section-desc {
-        font-size: 20px;
-    }
-}
-//usage summary history page
-.estimated-usage-desc {
-  @extend .h2;
-  margin: 0px 0px 20px 0px;
-  color: $tds-dkr-gray;
-}
-div#customerDataUsage {
-    clear: both;
 }
 
+span.limit-usage {
+    font-weight: 500;
+    color: #000;
+}
 .usagePercentage {
     position: absolute;
     top: 221px;
@@ -217,83 +54,30 @@ div#customerDataUsage {
     color: #000;
 }
 
-.tds-summary-bar {
-    position: relative;
+div#customerDataUsage {
     clear: both;
 }
 
-p.tds-status-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #000;
-}
-
-.tds-alert.tds-alert-success.tds-top-border {
-    background-position: 20px 20px;
-    padding-left: 62px;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    margin-bottom: 24px;
-}
-
-span.current-usage {
-    font-size: 18px;
-    color: #000;
-    font-weight: 500;
-}
-
-span.limit-usage {
-    font-weight: 500;
-    color: #000;
-}
-
-.tds-summary-section h2 {
-    margin: 0;
-    margin-bottom: 6px;
-}
-
-.tds-history-section, .tds-summary-table {
-    margin-top: 60px;
-}
-
-table.table tbody > tr:last-child > td {
-    border-bottom: solid 3px #19388a!important;
-}
-
 .tds-usage-info {
-    margin: 20px 0 12px 0;
+  padding: 12px 0;
+  margin: 20px 0 12px 0;
+  border-top: 1px solid $tds-lt-gray;
+  border-bottom: 1px solid $tds-lt-gray;
 }
 
 .tds-usage-info p {
     line-height: 2em;
     margin: 0;
 }
-
+//Data Usage History section
+//------------------------
 .tds-history-section h2 {
     margin-bottom: 4px;
 }
 
-#usageNotificationPrefsForm .tds-ut .gallery-btn.tds-btn-gray {
-    margin-top: 0;
+.tds-history-section, .tds-summary-table {
+    margin-top: 60px;
 }
 
-.tds-ut.tds-ut-usage-notifications .prod-items {
-    padding: 0;
-}
-
-button#saveUsageNotificationPrefs {
-    margin-top: 0;
-}
-.estimated-usage-desc span:first-child {
-    font-size: .875em;
-    font-weight:400;
-}
-
-.estimated-usage-desc span:last-child {
-    color: #0c8fd0;
-}
-
-.tds-usage-tool.btn span {
-    font-size: 1em;
-    line-height: 1.75em;
-}
+//Usage Detail section
+//------------------------

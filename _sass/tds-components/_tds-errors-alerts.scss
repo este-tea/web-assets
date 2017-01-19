@@ -96,7 +96,10 @@
   font-weight: 300;
   font-size: 14px;
 }
-
+/*text in light colored boxes should be black*/
+.tds-error-msg p, .bundle-error p, .tds-alert p {
+    color: black;
+}
 // Product callout messages design
 .prod-callout {
   @extend .tds-error-msg;
