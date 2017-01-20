@@ -1,13 +1,13 @@
 ---
 layout: default-cable
-title:  "CWS-Package Comparison Horzontial wikimarkup"
+title:  "tds-Package Comparison Horzontial wikimarkup"
 date:   2016-11-15
 categories: CWS
 ---
 
 
 <!--container for package sections-->
-<div class="cws-packages container">
+<div class="tds-packages container">
 <div class="row">
 
 
@@ -22,7 +22,7 @@ categories: CWS
 
     <div class="col-lg-2 col-md-1">
       <!--author can update source url for image-->
-    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
+    <img class="tds-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
     </div>
 
     <div class="col-lg-10 col-md-10">
@@ -30,18 +30,18 @@ categories: CWS
     <h3 class="hr-after-text">Internet, TV &amp; Phone</h3>
   <!--Package name end--->
 
-    <div class="cws-container-packageDetails">
+    <div class="tds-container-packageDetails">
       <div class="row">
 
       <!--Price and other details--->
-        <div class="col-md-3 col-md-push-9 cws-container-price">
-            <div class="cws-container-priceDetails">
+        <div class="col-md-3 col-md-push-9 tds-container-price">
+            <div class="tds-container-priceDetails">
             <!--Editable by author-->
             <h4>INTRODUCTORY OFFER</h4>
             <!--Editable by author end-->
 
             <!--Price is pulled in dynamicly-->
-            <div class="cws-packagePrice">$<span class="dollars">##</span> <div class="cws-sub-text"><span class="cents">##</span><br>/mo</div></div>
+            <div class="tds-packagePrice">$<span class="dollars">##</span> <div class="tds-sub-text"><span class="cents">##</span><br>/mo</div></div>
 
             <!--rich text componet-->
             <p style="text-align:center">Two-Year Price Guarantee<br>
@@ -49,7 +49,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Editable by author-->
-            <div class="cws-btn btn-block desktop"><span>Add to Cart</span></div>
+            <div class="tds-btn btn-block desktop"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
             </div>
@@ -60,7 +60,7 @@ categories: CWS
         <div class="col-md-9 col-md-pull-3 packageOfferings">
 
           <!--Product and details --->
-            <div class="cws-container-productDescription">
+            <div class="tds-container-productDescription">
                 <!--rich text componet-->
                 <h4>Ultra 60 Internet</h4>
                 <ul>
@@ -73,7 +73,7 @@ categories: CWS
           <!--Product and details end--->
 
           <!--Product and details--->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
                 <!--rich text componet-->
                 <h4>Expanded TV</h4>
                 <ul>
@@ -86,7 +86,7 @@ categories: CWS
             <!--Product and details end--->
 
             <!--Product and details --->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
                 <!--rich text componet-->
                 <h4>Unlimited Phone</h4>
                 <ul>
@@ -101,7 +101,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <div class="cws-btn btn-block mobile"><span>Add to Cart</span></div>
+            <div class="tds-btn btn-block mobile"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
@@ -132,7 +132,7 @@ categories: CWS
     <div class="col-lg-2 col-md-1">
       <!--author can update source url for image-->
       <a href="links-to-childpage" aria-label="{{URL ARIA Label}}">
-        <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
+        <img class="tds-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon" >
       </a>
     </div>
 
@@ -141,18 +141,18 @@ categories: CWS
     <h3 class="hr-after-text">Internet, TV &amp; Phone</h3>
   <!--Package name end--->
 
-    <div class="cws-container-packageDetails">
+    <div class="tds-container-packageDetails">
       <div class="row">
 
       <!--Price and other details--->
-        <div class="col-md-3 col-md-push-9 cws-container-price">
-            <div class="cws-container-priceDetails">
+        <div class="col-md-3 col-md-push-9 tds-container-price">
+            <div class="tds-container-priceDetails">
             <!--Editable by author-->
             <h4>INTRODUCTORY OFFER</h4>
             <!--Editable by author end-->
 
             <!--Price is pulled in dynamicly-->
-            <div class="cws-packagePrice">$<span class="dollars">##</span> <div class="cws-sub-text"><span class="cents">##</span><br>/mo</div></div>
+            <div class="tds-packagePrice">$<span class="dollars">##</span> <div class="tds-sub-text"><span class="cents">##</span><br>/mo</div></div>
 
             <!--rich text componet-->
             <p style="text-align:center">Two-Year Price Guarantee<br>
@@ -160,7 +160,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Editable by author-->
-            <a href="links-to-childpage" aria-label="{{URL ARIA Label}}" class="cws-btn btn-block desktop"><span>Add to Cart</span></a>
+            <a href="links-to-childpage" aria-label="{{URL ARIA Label}}" class="tds-btn btn-block desktop"><span>Add to Cart</span></a>
             <!--Editable by author end-->
 
             </div>
@@ -171,7 +171,7 @@ categories: CWS
         <div class="col-md-9 col-md-pull-3 packageOfferings">
 
           <!--Product and details --->
-            <div class="cws-container-productDescription">
+            <div class="tds-container-productDescription">
                 <!--rich text componet-->
                 <h4>Ultra 60 Internet</h4>
                 <ul>
@@ -184,7 +184,7 @@ categories: CWS
           <!--Product and details end--->
 
           <!--Product and details--->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
                 <!--rich text componet-->
                 <h4>Expanded TV</h4>
                 <ul>
@@ -197,7 +197,7 @@ categories: CWS
             <!--Product and details end--->
 
             <!--Product and details --->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
                 <!--rich text componet-->
                 <h4>Unlimited Phone</h4>
                 <ul>
@@ -212,7 +212,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <a href="links-to-childpage" aria-label="{{URL ARIA Label}}" class="cws-btn btn-block mobile"><span>Add to Cart</span></a>
+            <a href="links-to-childpage" aria-label="{{URL ARIA Label}}" class="tds-btn btn-block mobile"><span>Add to Cart</span></a>
             <!--Editable by author end-->
 
         </div>

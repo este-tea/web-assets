@@ -1,10 +1,9 @@
 @import "tds-components/_tds-variables.scss";
-@import "_tds-cable-variables.scss";
 
 /*/// Package Compairison  ///*/
 
 
-.cws-packages section {
+.tds-packages section {
   //Clearing Bootstrap paddings
   .col-lg-2.col-md-1 {
     padding: 0;
@@ -43,7 +42,7 @@ h3.hr-after-text {
 
 
 ////Package Details Section////
-.cws-container-packageDetails {
+.tds-container-packageDetails {
   //Clearing Bootstrap paddings
   .col-md-3 {
     padding-left: 0;
@@ -54,7 +53,7 @@ h3.hr-after-text {
 }
 
 ////Package Icon////
-.cws-icon-packageComparison {
+.tds-icon-packageComparison {
   max-width: 150px;
   float: right;
   display: block;
@@ -70,7 +69,7 @@ h3.hr-after-text {
 }
 
 ////Package Descriptions////
-.cws-container-productDescription {
+.tds-container-productDescription {
   float: left;
   padding-right: 15px;
   width: 33%;
@@ -124,7 +123,7 @@ h3.hr-after-text {
   z-index: 25;
 }
 
-div.cws-btn, a.cws-btn {
+div.tds-btn, a.tds-btn {
 width: 100%;
 margin-top: 20px;
 padding: 12px 16px !important;
@@ -174,13 +173,13 @@ z-index: 100;
 }
 
 
-div.cws-btn.desktop, a.cws-btn.desktop  {
+div.tds-btn.desktop, a.tds-btn.desktop  {
   @media(max-width: 959px) {
     display: none;
   }
 }
 
-div.cws-btn.mobile, a.cws-btn.mobile {
+div.tds-btn.mobile, a.tds-btn.mobile {
   @media(min-width: 958px) {
     display: none;
   }
@@ -188,18 +187,18 @@ div.cws-btn.mobile, a.cws-btn.mobile {
 
 
 ///Price Typography styling////
-.cws-container-priceDetails {
+.tds-container-priceDetails {
   text-align: center;
 
-  h4, p, ul, .cws-packagePrice {
+  h4, p, ul, .tds-packagePrice {
     color: $tds-lt-blue;
   }
 
-  .cws-packagePrice {
+  .tds-packagePrice {
     color: $tds-lt-blue;
     font-size:42px;
     line-height:18px;
-      .cws-sub-text {
+      .tds-sub-text {
         display: inline-block;
         font-size: 14px;
         }
@@ -218,7 +217,7 @@ div.cws-btn.mobile, a.cws-btn.mobile {
 ///////////////////////////////////
 
 ////Package Title////
-.cws-packages section.vertical h3.hr-after-text {
+.tds-packages section.vertical h3.hr-after-text {
   text-align: center;
   overflow: hidden;
   font-size: 1.75em;
@@ -229,7 +228,7 @@ div.cws-btn.mobile, a.cws-btn.mobile {
   }
 
   ////Package Icon////
-.cws-packages section.vertical .cws-icon-packageComparison {
+.tds-packages section.vertical .tds-icon-packageComparison {
     max-width: 150px;
     display: block;
     margin: 0 auto;
@@ -240,13 +239,13 @@ div.cws-btn.mobile, a.cws-btn.mobile {
     }
   }
 
-.cws-packages section.vertical .packageOfferings {
+.tds-packages section.vertical .packageOfferings {
   padding: 0 15px
 }
 
 
 ////Package Descriptions////
-.cws-packages section.vertical .cws-container-productDescription {
+.tds-packages section.vertical .tds-container-productDescription {
   float: left;
   padding: 20px 0;
   width: 100%;
