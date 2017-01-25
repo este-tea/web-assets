@@ -1,8 +1,8 @@
 ---
 layout: default-cable
 title:  "CWS-Customer-Self-ID wikimarkup"
-date:   2016-11-29
-categories: CWS
+date:   2017-1-25
+categories: Foundations
 ---
 
 <script>
