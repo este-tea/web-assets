@@ -2,7 +2,7 @@
 layout: default-cable
 title:  "tds-Package Comparison Horzontial wikimarkup"
 date:   2016-11-15
-categories: CWS
+categories: Foundations
 ---
 
 

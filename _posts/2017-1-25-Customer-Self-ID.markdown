@@ -1,8 +1,8 @@
 ---
 layout: default-cable
 title:  "CWS-Customer-Self-ID"
-date:   2016-11-23
-categories: CWS
+date:   2017-1-25
+categories: Foundations
 ---
 
 <script>
