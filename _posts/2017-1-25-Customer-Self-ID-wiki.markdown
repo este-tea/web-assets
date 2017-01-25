@@ -21,7 +21,7 @@ categories: Foundations
 <div id="shopperId">
   <div class="row">
     <div class="col-sm-12">
-      <p class="cable-content-intro">For accurate pricing and availability, we'll need to know a little more about you.</p>
+      <p class="content-intro">For accurate pricing and availability, we'll need to know a little more about you.</p>
     </div>
 
 
@@ -81,7 +81,7 @@ categories: Foundations
 <div id="shopperId">
   <div class="row">
     <div class="col-sm-12">
-      <p class="cable-content-intro">For accurate pricing and availability, we'll need to know a little more about you.</p>
+      <p class="content-intro">For accurate pricing and availability, we'll need to know a little more about you.</p>
     </div>
 
 
