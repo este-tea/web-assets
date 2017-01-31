@@ -184,3 +184,57 @@
         content: "";
     }
 }
+
+//inspector code
+//-------------------------
+.form-group.pkg-product-card {
+    border: solid 2px #d9d9d9;
+    padding: 20px;
+}
+
+.pkg-builder-radio-wrap span.tds-radio-btn {
+    margin-left: -64px;
+    margin-top: -4px;
+}
+
+.radio.pkg-builder-radio-wrap {
+    margin: 0;
+}
+
+.pkg-product-card label.pkg-builder-label {
+    padding: 0;
+}
+
+.pkg-product-card h4.prod-name {
+    margin-top: 0;
+}
+
+.pkg-builder-check-wrap span.tds-radio-btn {
+    margin-left: -42px;
+}
+
+.pkg-builder-check-wrap label {
+    padding-left: 44px;
+}
+
+.tab-content.pkg-builder-tab-content {
+    margin-top: 24px;
+}
+
+.pkg-product-card.is-selected {
+    background-color: #d9d9d9;
+}
+
+
+input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] input[type="radio"], label + input[type="checkbox"][disabled], input[type="checkbox"].disabled, fieldset[disabled] input[type="checkbox"] {
+    cursor: not-allowed!important;
+}
+
+.col-sm-4.pkg-prod-summary {
+    padding-left: 0;
+}
+
+.col-sm-8.pkg-prod-options {
+    padding-right: 0;
+    padding-left: 48px;
+}
