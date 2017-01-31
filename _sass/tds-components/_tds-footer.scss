@@ -10,10 +10,18 @@
   border-top: solid 4px #353535;
 }
 //centers the large nav bar menu component in the footer
-#genericfooter-container .customLargeNavBar.parbase.navbar {
+#genericfooter-container .customLargeNavBar {
     margin: 0 auto;
     text-align: center;
     padding-top: 28px;
+}
+@media (max-width: 751px) {
+    #genericfooter-container .customLargeNavBar {
+        display: block;
+    }
+    #genericfooter--navbar {
+        padding-bottom: 10px;
+    }
 }
 .extended-footer {
   background: #555;
@@ -59,6 +67,7 @@ div.copyright-text {
 }
 .copyright-text p {
   color: #cacaca;
+  font-size: 12px;
 }
 .reg-mark {
   font-size: 7px;
@@ -153,6 +162,14 @@ div#footer-login {
   position: absolute;
   right: 1em;
 }
+
+
+//IWP-3247 Component Update: Author Configurable Homepage Footer and Generic Footer for Resi
+#genericfooter--navbar {
+  display: inline-block;
+  padding: 0 0 40px 0;
+}
+
 // ===== Homepage/Extended footer ==============================================
 //moved to _tds-footer-extended.scss
 // =============================================================================

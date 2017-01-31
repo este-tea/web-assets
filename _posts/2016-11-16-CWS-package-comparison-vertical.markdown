@@ -1,12 +1,12 @@
 ---
 layout: default-cable
-title:  "CWS-Package Comparison Vertical"
+title:  "tds-Package Comparison Vertical"
 date:   2016-11-17
-categories: CWS
+categories: Foundations
 ---
 
 
-<div class="cws-packages container">
+<div class="tds-packages container">
 <div class="row">
 
 <!--CWS Vertical Package --->
@@ -22,7 +22,7 @@ categories: CWS
 
   <!--Remove col-lg-2 col-md-1, add clearfix-->
     <div class="clearfix">
-    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
+    <img class="tds-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
     </div>
     <!--Remove col-lg-10 col-md-10, add clearfix-->
     <div class="clearfix">
@@ -30,15 +30,15 @@ categories: CWS
     <h3 class="hr-after-text">Internet, TV &amp; Phone</h3>
   <!--Package name end--->
 
-    <div class="cws-container-packageDetails">
+    <div class="tds-container-packageDetails">
       <div class="row">
 
       <!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix--->
-        <div class="cws-container-price clearfix">
-            <div class="cws-container-priceDetails">
+        <div class="tds-container-price clearfix">
+            <div class="tds-container-priceDetails">
             <h4>INTRODUCTORY OFFER</h4>
             <!--Price is pulled in dynamicly-->
-            <div class="cws-packagePrice">$<span class="dollars">##</span> <div class="cws-sub-text"><span class="cents">##</span><br>/mo</div></div>
+            <div class="tds-packagePrice">$<span class="dollars">##</span> <div class="tds-sub-text"><span class="cents">##</span><br>/mo</div></div>
 
             <!--rich text componet-->
             <p style="text-align:center">Two-Year Price Guarantee<br>
@@ -46,7 +46,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Remove from vertical-
-            <a class="cws-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <a class="tds-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
              -->
 
             </div>
@@ -57,7 +57,7 @@ categories: CWS
         <div class="packageOfferings clearfix">
 
           <!--Product and details --->
-            <div class="cws-container-productDescription">
+            <div class="tds-container-productDescription">
             <!--rich text componet-->
             <h4>Ultra 60 Internet</h4>
             <ul>
@@ -70,7 +70,7 @@ categories: CWS
           <!--Product and details end--->
 
           <!--Product and details--->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
             <!--rich text componet-->
             <h4>Expanded TV</h4>
             <ul>
@@ -83,7 +83,7 @@ categories: CWS
             <!--Product and details end--->
 
             <!--Product and details --->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
             <!--rich text componet-->
             <h4>Unlimited Phone</h4>
             <ul>
@@ -98,7 +98,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <div class="cws-btn btn-block"><span>Add to Cart</span></div>
+            <div class="tds-btn btn-block"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
@@ -133,7 +133,7 @@ categories: CWS
 
   <!--Remove col-lg-2 col-md-1, add clearfix-->
     <div class="clearfix">
-    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
+    <img class="tds-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
     </div>
     <!--Remove col-lg-10 col-md-10, add clearfix-->
     <div class="clearfix">
@@ -141,15 +141,15 @@ categories: CWS
     <h3 class="hr-after-text">Internet, TV &amp; Phone</h3>
   <!--Package name end--->
 
-    <div class="cws-container-packageDetails">
+    <div class="tds-container-packageDetails">
       <div class="row">
 
       <!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix--->
-        <div class="cws-container-price clearfix">
-            <div class="cws-container-priceDetails">
+        <div class="tds-container-price clearfix">
+            <div class="tds-container-priceDetails">
             <h4>INTRODUCTORY OFFER</h4>
             <!--Price is pulled in dynamicly-->
-            <div class="cws-packagePrice">$<span class="dollars">##</span> <div class="cws-sub-text"><span class="cents">##</span><br>/mo</div></div>
+            <div class="tds-packagePrice">$<span class="dollars">##</span> <div class="tds-sub-text"><span class="cents">##</span><br>/mo</div></div>
 
             <!--rich text componet-->
             <p style="text-align:center">Two-Year Price Guarantee<br>
@@ -157,7 +157,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Remove from vertical-
-            <a class="cws-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <a class="tds-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
              -->
 
             </div>
@@ -168,7 +168,7 @@ categories: CWS
         <div class="packageOfferings clearfix">
 
           <!--Product and details --->
-            <div class="cws-container-productDescription">
+            <div class="tds-container-productDescription">
             <!--rich text componet-->
             <h4>Ultra 60 Internet</h4>
             <ul>
@@ -181,7 +181,7 @@ categories: CWS
           <!--Product and details end--->
 
           <!--Product and details--->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
             <!--rich text componet-->
             <h4>Expanded TV</h4>
             <ul>
@@ -194,7 +194,7 @@ categories: CWS
             <!--Product and details end--->
 
             <!--Product and details --->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
             <!--rich text componet-->
             <h4>Unlimited Phone</h4>
             <ul>
@@ -209,7 +209,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <div class="cws-btn btn-block"><span>Add to Cart</span></div>
+            <div class="tds-btn btn-block"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
@@ -245,7 +245,7 @@ categories: CWS
 
   <!--Remove col-lg-2 col-md-1, add clearfix-->
     <div class="clearfix">
-    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
+    <img class="tds-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
     </div>
     <!--Remove col-lg-10 col-md-10, add clearfix-->
     <div class="clearfix">
@@ -253,15 +253,15 @@ categories: CWS
     <h3 class="hr-after-text">Internet &amp; TV</h3>
   <!--Package name end--->
 
-    <div class="cws-container-packageDetails">
+    <div class="tds-container-packageDetails">
       <div class="row">
 
       <!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix--->
-        <div class="cws-container-price clearfix">
-            <div class="cws-container-priceDetails">
+        <div class="tds-container-price clearfix">
+            <div class="tds-container-priceDetails">
             <h4>INTRODUCTORY OFFER</h4>
             <!--Price is pulled in dynamicly-->
-            <div class="cws-packagePrice">$<span class="dollars">##</span> <div class="cws-sub-text"><span class="cents">##</span><br>/mo</div></div>
+            <div class="tds-packagePrice">$<span class="dollars">##</span> <div class="tds-sub-text"><span class="cents">##</span><br>/mo</div></div>
 
             <!--rich text componet-->
             <p style="text-align:center">Two-Year Price Guarantee<br>
@@ -269,7 +269,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Remove from vertical-
-            <a class="cws-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <a class="tds-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
              -->
 
             </div>
@@ -280,7 +280,7 @@ categories: CWS
         <div class="packageOfferings clearfix">
 
           <!--Product and details --->
-            <div class="cws-container-productDescription">
+            <div class="tds-container-productDescription">
             <!--rich text componet-->
             <h4>Ultra 60 Internet</h4>
             <ul>
@@ -293,7 +293,7 @@ categories: CWS
           <!--Product and details end--->
 
           <!--Product and details--->
-            <div class="cws-container-productDescription" >
+            <div class="tds-container-productDescription" >
             <!--rich text componet-->
             <h4>Expanded TV</h4>
             <ul>
@@ -307,7 +307,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <div class="cws-btn btn-block"><span>Add to Cart</span></div>
+            <div class="tds-btn btn-block"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
@@ -348,7 +348,7 @@ categories: CWS
 
   <!--Remove col-lg-2 col-md-1, add clearfix-->
     <div class="clearfix">
-    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
+    <img class="tds-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
     </div>
     <!--Remove col-lg-10 col-md-10, add clearfix-->
     <div class="clearfix">
@@ -356,15 +356,15 @@ categories: CWS
     <h3 class="hr-after-text">Internet Only</h3>
   <!--Package name end--->
 
-    <div class="cws-container-packageDetails">
+    <div class="tds-container-packageDetails">
       <div class="row">
 
       <!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix--->
-        <div class="cws-container-price clearfix">
-            <div class="cws-container-priceDetails">
+        <div class="tds-container-price clearfix">
+            <div class="tds-container-priceDetails">
             <h4>INTRODUCTORY OFFER</h4>
             <!--Price is pulled in dynamicly-->
-            <div class="cws-packagePrice">$<span class="dollars">##</span> <div class="cws-sub-text"><span class="cents">##</span><br>/mo</div></div>
+            <div class="tds-packagePrice">$<span class="dollars">##</span> <div class="tds-sub-text"><span class="cents">##</span><br>/mo</div></div>
 
             <!--rich text componet-->
             <p style="text-align:center">Two-Year Price Guarantee<br>
@@ -372,7 +372,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Remove from vertical-
-            <a class="cws-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <a class="tds-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
              -->
 
             </div>
@@ -383,7 +383,7 @@ categories: CWS
         <div class="packageOfferings clearfix">
 
           <!--Product and details --->
-            <div class="cws-container-productDescription">
+            <div class="tds-container-productDescription">
             <!--rich text componet-->
             <h4>Ultra 60 Internet</h4>
             <ul>
@@ -398,7 +398,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <div class="cws-btn btn-block"><span>Add to Cart</span></div>
+            <div class="tds-btn btn-block"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
@@ -443,7 +443,7 @@ categories: CWS
 
   <!--Remove col-lg-2 col-md-1, add clearfix-->
     <div class="clearfix">
-    <img class="cws-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
+    <img class="tds-icon-packageComparison" src="http://tdstelecom.com/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg" alt="Icon">
     </div>
     <!--Remove col-lg-10 col-md-10, add clearfix-->
     <div class="clearfix">
@@ -451,15 +451,15 @@ categories: CWS
     <h3 class="hr-after-text">Internet Only</h3>
   <!--Package name end--->
 
-    <div class="cws-container-packageDetails">
+    <div class="tds-container-packageDetails">
       <div class="row">
 
       <!--Price and other details. FOR VERT: remove col-md-3 col-md-push-9, add clearfix--->
-        <div class="cws-container-price clearfix">
-            <div class="cws-container-priceDetails">
+        <div class="tds-container-price clearfix">
+            <div class="tds-container-priceDetails">
             <h4>INTRODUCTORY OFFER</h4>
             <!--Price is pulled in dynamicly-->
-            <div class="cws-packagePrice">$<span class="dollars">##</span> <div class="cws-sub-text"><span class="cents">##</span><br>/mo</div></div>
+            <div class="tds-packagePrice">$<span class="dollars">##</span> <div class="tds-sub-text"><span class="cents">##</span><br>/mo</div></div>
 
             <!--rich text componet-->
             <p style="text-align:center">Two-Year Price Guarantee<br>
@@ -467,7 +467,7 @@ categories: CWS
             <!--rich text componet end-->
 
             <!--Remove from vertical-
-            <a class="cws-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
+            <a class="tds-btn btn-block desktop" href="http://hellotds.com/"><span>Add to Cart</span></a>
              -->
 
             </div>
@@ -478,7 +478,7 @@ categories: CWS
         <div class="packageOfferings clearfix">
 
           <!--Product and details --->
-            <div class="cws-container-productDescription">
+            <div class="tds-container-productDescription">
             <!--rich text componet-->
             <h4>Ultra 60 Internet</h4>
             <ul>
@@ -493,7 +493,7 @@ categories: CWS
 
 
             <!--Editable by author -->
-            <div class="cws-btn btn-block"><span>Add to Cart</span></div>
+            <div class="tds-btn btn-block"><span>Add to Cart</span></div>
             <!--Editable by author end-->
 
         </div>
