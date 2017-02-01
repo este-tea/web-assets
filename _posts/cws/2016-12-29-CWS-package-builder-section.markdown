@@ -31,43 +31,45 @@ categories: CWS
 			<!-- START Category 1 Content -->
 			<div id="category1" class="tab-pane fade in active">
 				<!-- START Product Type 1 Content -->
-				<div class="col-sm-4 pkg-prod-summary">
+				<div class="col-sm-4 pkg-prod-list-summary">
 					<div class="row">
-						<div>
-							<h3 class="prod-title">High-Speed Internet</h3>
+						<div class="prod-listitem-content">
+							<h3>High-Speed Internet</h3>
 							<p>Please select a High-Speed Internet Plan.</p>
 							<p>Upon your selection, a TDS wireless gateway/modem will be added for $4.95/mo.</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-8 pkg-prod-options">
+				<div class="col-sm-8 pkg-prod-list-options">
 					<div class="row">
 						<!-- START Product Type 1 Options -->
-						<div id="pkg-product1">
+						<div id="{{pkg-product-#}}" class="product-list-items">
 							<!-- START Product Type Option 1 Card -->
 							<div class="form-group pkg-product-card">
 								<div class="radio pkg-builder-radio-wrap">
 									<label class="pkg-builder-label" for="pkg-product-item1">
 										<input id="pkg-product-item1" class="pkg-builder-radio" type="radio" name="pkg-product1" value="">
 										<span class="tds-radio-btn"></span>
-										<div class="prod-item-content">
+										<div class="product-content">
 											<h4 class="prod-name">1Gig Fiber Internet</h4>
-											<p class="prod-description">Max Download: 1Gbps; Max Upload: 400Mbps.  Includes free unlimited Remote PC Support. <a href="/shop/internet-services/high-speed-internet-plans/1-gig-1gbps-fiber-internet.html" target="_blank">More Details.</a></p>
-											<p class="price-text price-base" data-price="$99.95/mo.">$4.95/mo.</p>
+											<p class="prod-description">Max Download: 1Gbps; Max Upload: 400Mbps. Includes free unlimited Remote PC Support. <a href="/shop/internet-services/high-speed-internet-plans/1-gig-1gbps-fiber-internet.html" target="_blank">More Details.</a></p>
+											<p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 										</div>
 									</label>
 								</div>
-							  <div class="checkbox pkg-builder-check-wrap">
-									<hr class="prod-subdivider">
-							    <label>
-							      <input name="subscribeToEmail" type="checkbox" checked disabled>
-							      <span class="tds-radio-btn"></span>
-							      <div class="prod-subitem-content">
-											<h5 class="prod-subitem-heading">Required Internet Equipment</h5>
-											<p class="prod-name">T2200H IPTV Wireless Gateway</p>
-											<p class="price-text price-base" data-price="$99.95/mo.">$99.95/mo.</p>
-										</div>
-							    </label>
+							  <div class="checkbox pkg-builder-check-wrap" style="display:none;">
+									<div class="tds-divider-line dotted-dk-gray"></div>
+									<div class="product-subitem">
+										<h5 class="prod-subitem-heading">Required Internet Equipment</h5>
+								    <label class="prod-subitem-label">
+								      <input name="subscribeToEmail" type="checkbox" checked disabled>
+								      <span class="tds-radio-btn"></span>
+								      <div class="prod-subitem-content">
+												<p class="prod-subitem-name">T2200H IPTV Wireless Gateway</p>
+												<p class="price-text price-base" data-price="">$X.XX/mo.</p>
+											</div>
+								    </label>
+									</div>
 							  </div>
 							</div>
 							<!-- END Product Type Option 1 Card -->
@@ -77,13 +79,27 @@ categories: CWS
 									<label class="pkg-builder-label" for="pkg-product-item2">
 										<input id="pkg-product-item2" class="pkg-builder-radio" type="radio" name="pkg-product1" value="">
 										<span class="tds-radio-btn"></span>
-										<div class="pkg-builder-radio-content">
+										<div class="product-content">
 											<h4 class="prod-name">Extreme300 Fiber Internet</h4>
 											<p class="prod-description">Max Download: 300Mbps; Max Upload: 120Mbps.  Includes free unlimited Remote PC Support. <a href="/shop/internet-services/high-speed-internet-plans/extreme-300mbps-fiber-internet.html" target="_blank">More Details.</a></p>
 											<p class="price-text price-base" data-price="$75.00/mo.">$75.00/mo.</p>
 										</div>
 									</label>
 								</div>
+								<div class="checkbox pkg-builder-check-wrap" style="display:none;">
+									<div class="tds-divider-line dotted-dk-gray"></div>
+									<div class="product-subitem">
+										<h5 class="prod-subitem-heading">Required Internet Equipment</h5>
+								    <label>
+								      <input name="subscribeToEmail" type="checkbox" checked disabled>
+								      <span class="tds-radio-btn"></span>
+								      <div class="prod-subitem-content">
+												<p class="prod-subitem-name">Modem Name</p>
+												<p class="price-text price-base" data-price="$99.95/mo.">$4.95/mo.</p>
+											</div>
+								    </label>
+									</div>
+							  </div>
 							</div>
 							<!-- END Product Type Option 2 Card -->
 							<!-- START Product Type Option 3 Card -->
@@ -92,13 +108,27 @@ categories: CWS
 									<label class="pkg-builder-label" for="pkg-product-item3">
 										<input id="pkg-product-item3" class="pkg-builder-radio" type="radio" name="pkg-product1" value="">
 										<span class="tds-radio-btn"></span>
-										<div class="pkg-builder-radio-content">
+										<div class="product-content">
 											<h4 class="prod-name">Extreme100 Fiber Internet</h4>
 											<p class="prod-description">Max Download: 300Mbps; Max Upload: 120Mbps.  Includes free unlimited Remote PC Support. <a href="/shop/internet-services/high-speed-internet-plans/extreme-300mbps-fiber-internet.html" target="_blank">More Details.</a></p>
 											<p class="price-text price-base" data-price="$75.00/mo.">$65.00/mo.</p>
 										</div>
 									</label>
 								</div>
+								<div class="checkbox pkg-builder-check-wrap" style="display:none;">
+									<div class="tds-divider-line dotted-dk-gray"></div>
+									<div class="product-subitem">
+										<h5 class="prod-subitem-heading">Required Internet Equipment</h5>
+								    <label>
+								      <input name="subscribeToEmail" type="checkbox" checked disabled>
+								      <span class="tds-radio-btn"></span>
+								      <div class="prod-subitem-content">
+												<p class="prod-subitem-name">Modem Name</p>
+												<p class="price-text price-base" data-price="$99.95/mo.">$4.95/mo.</p>
+											</div>
+								    </label>
+									</div>
+							  </div>
 							</div>
 						</div>
 						<!-- END Product Type Option 3 Card -->
@@ -107,11 +137,9 @@ categories: CWS
 				<!-- END Product Type 1 Options -->
 
 				<div class="bottom-buttons">
-					<div class="btn-left">
-						<a class="gallery-btn back-arrow" href="#internet-tab">Back</a>
-					</div>
+					<div class="tds-divider-line thin-lt-gray"></div>
 					<div class="btn-right">
-						<a class="gallery-btn next-arrow" href="#phone-tab">Continue</a>
+						<a class="gallery-btn next-arrow" data-toggle="tab" href="#category2">Continue</a>
 					</div>
 				</div>
 			</div>
@@ -120,21 +148,77 @@ categories: CWS
 			<div id="category2" class="tab-pane fade">
 				<h3>TV Services</h3>
 				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="bottom-buttons">
+					<div class="tds-divider-line thin-lt-gray"></div>
+					<div class="btn-left">
+						<a class="gallery-btn back-arrow" href="#category1" data-toggle="tab">Back</a>
+					</div>
+					<div class="btn-right">
+						<a class="gallery-btn next-arrow" href="#category3" data-toggle="tab">Continue</a>
+					</div>
+				</div>
 			</div>
 			<!-- END Category 2 Content -->
 			<!-- START Category 3 Content -->
 			<div id="category3" class="tab-pane fade">
 				<h3>Phone Services</h3>
 				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				<div class="bottom-buttons">
+					<div class="tds-divider-line thin-lt-gray"></div>
+					<div class="btn-left">
+						<a class="gallery-btn back-arrow" href="#category2" data-toggle="tab">Back</a>
+					</div>
+					<div class="btn-right">
+						<a class="gallery-btn next-arrow" href="#category4" data-toggle="tab">Continue</a>
+					</div>
+				</div>
 			</div>
 			<!-- END Category 3 Content -->
 			<!-- START Category 4 Content -->
 			<div id="category4" class="tab-pane fade">
 				<h3>Service/Terms/Promo</h3>
 				<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<div class="bottom-buttons">
+					<div class="tds-divider-line thin-lt-gray"></div>
+					<div class="btn-left">
+						<a class="gallery-btn back-arrow" href="#category3" data-toggle="tab">Back</a>
+					</div>
+					<div class="btn-right">
+						<a class="gallery-btn btn-green next-arrow" href="">Add to Cart</a>
+					</div>
+				</div>
 			</div>
 			<!-- END Category 4 Content -->
 		</div>
 		<!-- END Section Content -->
 	</form>
 </div>
+<div id="" class="loadingOverlay modal pkg-builder-modal">
+  <div class="modal-dialog">
+    <div class="modal-content tds-modal">
+      <div class="modal-body tds-msg-box">
+        <div class="row">
+          <div class="tds-msg-box">
+            <div class="spinner"></div>
+            <h2>One moment, please.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include pkg-builder-subtotal.html %}
+<script language="javascript">
+	$(document).ready(function() {
+		var $productCard = $('.pkg-product-card');
+		var $productAddOn = $('.pkg-builder-check-wrap');
+
+		$("input.pkg-builder-radio").change(function() {
+			$(this).closest($productCard).siblings().removeClass('is-selected');
+			$(this).closest($productCard).addClass('is-selected', this.checked);
+
+			$(this).closest($productCard).siblings().find($productAddOn).hide();
+			$(this).closest($productCard).children($productAddOn).show();
+		});
+	});
+</script>
