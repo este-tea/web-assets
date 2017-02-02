@@ -383,3 +383,59 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 #contactform .tds-form-group.has-error .label-text {
     color: #555;
 }
+
+// Number Touchspin Plugin
+// ----------------
+.bootstrap-touchspin input {
+    text-align: center;
+    height: 40px;
+    max-width: 44px;
+    margin: 0 12px;
+    font-weight:500;
+    font-size: 16px;
+    color:#0c8fd0;
+    font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+    padding: 0;
+    float: left;
+}
+
+.bootstrap-touchspin > .input-group-btn > .btn-default {
+    background-color: #19388a;
+    border: solid 1px transparent;
+    height: 40px;
+    width: 40px;
+    color: white;
+}
+
+.pkg-builder-addon-wrap .form-group input.form-control {
+    border-color: white;
+}
+
+button.btn.btn-default.bootstrap-touchspin-down,
+button.btn.btn-default.bootstrap-touchspin-up {
+    color: #19388a;
+}
+button.btn.btn-default.bootstrap-touchspin-down:before,
+button.btn.btn-default.bootstrap-touchspin-up:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: -1px;
+    left: -1px;
+    position: absolute;
+}
+button.btn.btn-default.bootstrap-touchspin-down:before {
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-white.svg);
+}
+
+button.btn.btn-default.bootstrap-touchspin-up:before {
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+}
+
+.bootstrap-touchspin {
+    margin-bottom: 16px;
+    margin-top: 10px;
+    max-width: 146px;
+}
