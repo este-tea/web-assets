@@ -232,8 +232,7 @@
     color: #19388a;
     font-weight: 500;
     font-size: 18px;
-    margin-top: 4px;
-    margin-bottom: 14px;
+    line-height: 26px;
 }
 
 
@@ -264,16 +263,21 @@
 .pkg-product-card.is-selected {
   background-color: #d9d9d9;
 }
-
+.product-content {
+    padding: 0 20px 20px 20px;
+}
+.prod-subitem-content {
+    padding: 8px 20px 0 44px;
+}
 // Package product list item radio styling
-.product-list-items .pkg-product-card:last-child {
+.pkg-product-card:last-child {
     margin-bottom: 4px;
 }
 .pkg-product-card .pkg-builder-listoption-wrap {
     margin: 0;
 }
 .pkg-product-card .pkg-builder-label {
-    padding: 20px;
+    padding: 20px 20px 8px 20px;
 }
 .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
     margin-left: -64px;
@@ -283,6 +287,12 @@
     opacity: initial;
     background-color: #999;
     border-color: #999;
+}
+.pkg-builder-listoption-wrap .form-sub-group {
+    padding: 0 0 20px 20px;
+}
+.pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+    margin-top:0;
 }
 // Package product subitem/addon
 // ----------------
