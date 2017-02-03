@@ -1,3 +1,4 @@
+
 # Ignore docs files
 _gh_pages
 _site/
@@ -20,7 +21,10 @@ Gemfile.lock
 *.vi
 *~
 *.scssc
+<<<<<<< HEAD
+=======
 *.DS_Store
+>>>>>>> master
 
 # OS or Editor folders
 .DS_Store

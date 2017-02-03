@@ -410,3 +410,11 @@ remove extra spacing when gallery btn within navbutton
 .parbase.richTextComponent.section+.navbutton.parbase.section > button.gallery-btn.btn-next-arrow {
     margin-top: 0;
 }
+
+.btn-success, .gallery-btn.btn-green, form.elq-form input.btn-green.submit-button, .btn-green.lt-blue-button, .panel-group.tds-tariff-select-menu a.btn-green.gallery-btn, .tds-btn-green, button#addtocart, .btn-right .btn-green, .btn-left .btn-green {
+    border-color: #6b9c22;
+}
+
+.btn-primary, .btn-right a, .btn-left a {
+    border-color: #19388a;
+}
