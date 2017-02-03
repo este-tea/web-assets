@@ -1,6 +1,6 @@
 ---
 layout: default-cable
-title: "CWS-Package Builder Section"
+title: "CWS-Package Builder Section Layout"
 date: 2016-12-29
 categories: CWS
 ---
