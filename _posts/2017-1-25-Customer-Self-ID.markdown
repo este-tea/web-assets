@@ -1,8 +1,8 @@
 ---
 layout: default-cable
 title:  "CWS-Customer-Self-ID"
-date:   2016-11-23
-categories: CWS
+date:   2017-1-25
+categories: Foundations
 ---
 
 <script>
@@ -20,7 +20,7 @@ categories: CWS
 <div id="shopperId">
   <div class="row">
     <div class="col-sm-12">
-      <p class="cable-content-intro">For accurate pricing and availability, we'll need to know a little more about you.</p>
+      <p class="content-intro">For accurate pricing and availability, we'll need to know a little more about you.</p>
     </div>
 
 
@@ -72,7 +72,7 @@ categories: CWS
 <div id="shopperId">
   <div class="row">
     <div class="col-sm-12">
-      <p class="cable-content-intro">For accurate pricing and availability, we'll need to know a little more about you.</p>
+      <p class="content-intro">For accurate pricing and availability, we'll need to know a little more about you.</p>
     </div>
 
 <!--Login Section-->
