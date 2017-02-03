@@ -19,11 +19,12 @@ categories: CWS
 		<!-- START Section Navigation -->
 		<h2>Select Your Services</h2>
 		<div class="pkg-builder-tab-hr"></div>
-		<ul class="nav nav-tabs pkg-builder-nav-tabs">
-			<li class="active"><a class="pkg-builder-internet-tab" data-toggle="tab" href="#category1">Internet</a></li>
-			<li><a class="pkg-builder-tv-tab" data-toggle="tab" href="#category2">TV</a></li>
-			<li><a class="pkg-builder-phone-tab" data-toggle="tab" href="#category3">Phone</a></li>
-			<li><a class="pkg-builder-extra-tab" data-toggle="tab" href="#category4">Terms</a></li>
+		<!-- remove has numbers class to show icons-->
+		<ul class="nav nav-tabs pkg-builder-nav-tabs has-numbers">
+			<li class="active"><a data-toggle="tab" href="#category1"><img class="pkg-category-img" style="background-image: url(/content/dam/tdstelecom/images/products/internet/icon-product-internet.svg);" />Internet</a></li>
+			<li><a data-toggle="tab" href="#category2"><img class="pkg-category-img" style="background-image: url(/content/dam/tdstelecom/images/products/tv/icon-product-tv.svg);" />TV</a></li>
+			<li><a data-toggle="tab" href="#category3"><img class="pkg-category-img" style="background-image: url(/content/dam/tdstelecom/images/products/phone/icon-product-phone.svg);" />Phone</a></li>
+			<li><a data-toggle="tab" href="#category4">Terms</a></li>
 		</ul>
 		<div class="pkg-builder-tab-hr"></div>
 		<!-- END Section Navigation -->
