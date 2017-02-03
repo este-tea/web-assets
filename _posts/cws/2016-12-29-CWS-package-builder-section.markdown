@@ -68,6 +68,7 @@ categories: CWS
 				        <div class="tds-divider-line thin-lt-blue"></div>
 				        <div class="product-subitem">
 				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
+									<!-- START Product List Addon Item -->
 				          <div class="form-group">
 				            <label class="prod-subitem-label" for="cat1-prodlist1-item1-addon">
 				              <input type="checkbox" id="cat1-prodlist1-item1-addon" name="cat1-prodlist1-addon" value="" checked disabled>
@@ -78,7 +79,9 @@ categories: CWS
 				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
 				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				            </div>
-				          </div>
+										<div class="tds-divider-line dotted-dk-gray"></div>
+	                </div>
+	                <!-- END Product List Addon Item -->
 				        </div>
 				      </div>
 				      <!-- END Product List Addons -->
@@ -102,6 +105,7 @@ categories: CWS
 				        <div class="tds-divider-line thin-lt-blue"></div>
 				        <div class="product-subitem">
 				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
+									<!-- START Product List Addon Item -->
 				          <div class="form-group">
 				            <label class="prod-subitem-label" for="cat1-prodlist1-item2-addon">
 				              <input type="checkbox" id="cat1-prodlist1-item2-addon" name="cat1-prodlist-addon" value="" checked disabled>
@@ -112,7 +116,9 @@ categories: CWS
 				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
 				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				            </div>
-				          </div>
+										<div class="tds-divider-line dotted-dk-gray"></div>
+	                </div>
+	                <!-- END Product List Addon Item -->
 				        </div>
 				      </div>
 				      <!-- END Product List Addons -->
@@ -137,6 +143,128 @@ categories: CWS
 			<div id="category2" class="tab-pane fade">
 				<h3>TV Product List Heading</h3>
 				<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<!-- START Product List 1 Content -->
+				<div class="row product-list-contents">
+				  <!-- START Product List 1 Description -->
+				  <div class="col-sm-4 pkg-prod-list-summary">
+				    <div class="prod-listitem-content">
+				      <h3>Product List Item Heading <span>(optional)</span></h3>
+				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				    </div>
+				  </div>
+				  <!-- END Product List 1 Description -->
+				  <!-- START Product List 1 Options -->
+				  <div class="col-sm-8 pkg-prod-list-options">
+				    <div id="" class="tds-alert tds-alert-critical">
+				      Error message: A selection from this product list is required.
+				    </div>
+				    <!-- START Product List 1 Option 1 Card -->
+				    <div class="form-group pkg-product-card">
+				      <div class="radio pkg-builder-listoption-wrap">
+				        <label class="pkg-builder-label" for="cat2-prodlist1-item1">
+				          <input id="cat2-prodlist1-item1" class="pkg-builder-radio" type="radio" name="cat2-prodlist1" value="">
+				          <span class="tds-radio-btn"></span>
+				          <span class="h4 prod-name">Product 1 Display Name</span>
+				        </label>
+				        <div class="product-content">
+				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				        </div>
+				      </div>
+				      <!-- START Product List Addons -->
+				      <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
+				        <div class="tds-divider-line thin-lt-blue"></div>
+				        <div class="product-subitem">
+				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
+									<!-- START Product List Addon Item -->
+				          <div class="form-group">
+				            <label class="prod-subitem-label" for="cat2-prodlist1-item2-addon">
+				              <input type="checkbox" id="cat2-prodlist1-item2-addon" name="cat2-prodlist-addon" value="" checked disabled>
+				              <span class="tds-radio-btn"></span>
+				              <span class="h6 prod-subitem-name">Addon Item 1 Name</span>
+				            </label>
+				            <div class="prod-subitem-content">
+				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				            </div>
+										<div class="tds-divider-line dotted-dk-gray"></div>
+	                </div>
+	                <!-- END Product List Addon Item -->
+									<!-- START Product List Addon Item -->
+				          <div class="form-group">
+				            <label class="prod-subitem-label" for="cat2-prodlist1-item2-addon2">
+				              <input type="checkbox" id="cat2-prodlist1-item2-addon2" name="cat2-prodlist-addon2" value="">
+				              <span class="tds-radio-btn"></span>
+				              <span class="h6 prod-subitem-name">Addon Item 2 Name</span>
+				            </label>
+				            <div class="prod-subitem-content">
+				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				              <div class="form-sub-group">
+				                <label for="STBadd" class="sr-only">Number of STBs</label>
+				                <input id="STBadd" class="form-control" type="text" value="" name="STBadd">
+				              </div>
+				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				            </div>
+										<div class="tds-divider-line dotted-dk-gray"></div>
+	                </div>
+	                <!-- END Product List Addon Item -->
+				        </div>
+				      </div>
+				      <!-- END Product List Addons -->
+				    </div>
+				    <!-- END Product List 1 Option 1 Card -->
+				  </div>
+				  <!-- END Product List 1 Options -->
+				</div>
+				<!-- END Product List 1 Content -->
+
+
+				<!-- START Product List 2 Content -->
+				<div class="row product-list-contents">
+				  <!-- START Product List 2 Description -->
+				  <div class="col-sm-4 pkg-prod-list-summary">
+				    <div class="prod-listitem-content">
+				      <h3>Product List Item Heading</h3>
+				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				    </div>
+				  </div>
+				  <!-- END Product List 2 Description -->
+				  <!-- START Product List 2 Options -->
+				  <div class="col-sm-8 pkg-prod-list-options">
+				    <!-- START Product List 2 Option 1 Card -->
+				    <div class="form-group pkg-product-card">
+				      <div class="checkbox pkg-builder-listoption-wrap">
+				        <label class="pkg-builder-label" for="cat2-prodlist2-item1">
+				          <input id="cat2-prodlist2-item1" class="pkg-builder-radio" type="checkbox" name="cat2-prodlist2" value="">
+				          <span class="tds-radio-btn"></span>
+				          <span class="h4 prod-name">Product 1 Display Name</span>
+				        </label>
+				        <div class="product-content">
+				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				        </div>
+				      </div>
+				    </div>
+				    <!-- END Product List 2 Option 1 Card -->
+				    <!-- START Product List 2 Option 2 Card -->
+				    <div class="form-group pkg-product-card">
+				      <div class="checkbox pkg-builder-listoption-wrap">
+				        <label class="pkg-builder-label" for="cat2-prodlist2-item2">
+				          <input id="cat2-prodlist2-item2" class="pkg-builder-radio" type="checkbox" name="cat2-prodlist2" value="">
+				          <span class="tds-radio-btn"></span>
+				          <span class="h4 prod-name">Product 1 Display Name</span>
+				        </label>
+				        <div class="product-content">
+				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				        </div>
+				      </div>
+				    </div>
+				    <!-- END Product List Option 1 Card -->
+				  </div>
+				  <!-- END Product List 1 Options -->
+				</div>
+				<!-- END Product List 2 Content -->
 
 				<!-- START Bottom Buttons Content -->
 				<div class="bottom-buttons">
@@ -189,6 +317,7 @@ categories: CWS
 				        <div class="tds-divider-line thin-lt-blue"></div>
 				        <div class="product-subitem">
 				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
+									<!-- START Product List Addon Item -->
 				          <div class="form-group">
 				            <label class="prod-subitem-label" for="pkg-prodlist1-item1-addon">
 				              <input type="checkbox" id="cat3-prodlist1-item1-addon" name="cat3-prodlist1-addon" value="" checked disabled>
@@ -199,7 +328,9 @@ categories: CWS
 				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
 				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				            </div>
-				          </div>
+										<div class="tds-divider-line dotted-dk-gray"></div>
+	                </div>
+	                <!-- END Product List Addon Item -->
 				        </div>
 				      </div>
 				      <!-- END Product List Addons -->
@@ -223,6 +354,7 @@ categories: CWS
 				        <div class="tds-divider-line thin-lt-blue"></div>
 				        <div class="product-subitem">
 				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
+									<!-- START Product List Addon Item -->
 				          <div class="form-group">
 				            <label class="prod-subitem-label" for="pkg-prodlist1-item2-addon">
 				              <input type="checkbox" id="cat3-prodlist1-item2-addon" name="cat3-prodlist-addon" value="" checked disabled>
@@ -233,7 +365,9 @@ categories: CWS
 				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
 				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				            </div>
-				          </div>
+										<div class="tds-divider-line dotted-dk-gray"></div>
+	                </div>
+	                <!-- END Product List Addon Item -->
 				        </div>
 				      </div>
 				      <!-- END Product List Addons -->
@@ -322,6 +456,7 @@ categories: CWS
 				        <div class="tds-divider-line thin-lt-blue"></div>
 				        <div class="product-subitem">
 				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
+									<!-- START Product List Addon Item -->
 				          <div class="form-group">
 				            <label class="prod-subitem-label" for="cat4-prodlist2-item2-addon">
 				              <input type="checkbox" id="cat4-prodlist2-item2-addon" name="cat4-prodlist2-addon" value="" checked disabled>
@@ -332,7 +467,9 @@ categories: CWS
 				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
 				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				            </div>
-				          </div>
+										<div class="tds-divider-line dotted-dk-gray"></div>
+	                </div>
+	                <!-- END Product List Addon Item -->
 				        </div>
 				      </div>
 				      <!-- END Product List Addons -->
