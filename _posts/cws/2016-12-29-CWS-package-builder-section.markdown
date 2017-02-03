@@ -151,7 +151,6 @@ categories: CWS
 				<!-- END Bottom Buttons Content -->
 			</div>
 			<!-- END Product Category 2 Content -->
-
 			<!-- START Product Category 3 Content -->
 			<div id="category3" class="tab-pane fade">
 				<h3>Phone Product List Heading</h3>
@@ -258,11 +257,91 @@ categories: CWS
 				<!-- END Bottom Buttons Content -->
 			</div>
 			<!-- END Product Category 3 Content -->
-
 			<!-- START Product Category 4 Content -->
 			<div id="category4" class="tab-pane fade">
 				<h3>Terms Product List Heading</h3>
 				<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<!-- START Product List 1 Content -->
+				<div class="row product-list-contents">
+				  <!-- START Product List 1 Description -->
+				  <div class="col-sm-4 pkg-prod-list-summary">
+				    <div class="prod-listitem-content">
+				      <h3>Product List Item Heading</h3>
+				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				    </div>
+				  </div>
+				  <!-- END Product List 1 Description -->
+				  <!-- START Product List 1 Options -->
+				  <div class="col-sm-8 pkg-prod-list-options">
+				    <!-- START Product List 1 Option 1 Card -->
+				    <div class="form-group pkg-product-card is-selected">
+				      <div class="checkbox pkg-builder-listoption-wrap">
+				        <label class="pkg-builder-label" for="cat4-prodlist1-item1">
+				          <input id="cat4-prodlist1-item1" class="pkg-builder-radio" type="checkbox" name="cat4-prodlist1" value="" checked disabled>
+				          <span class="tds-radio-btn"></span>
+				          <span class="h4 prod-name">Product 1 Display Name</span>
+				        </label>
+				        <div class="product-content">
+				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				        </div>
+				      </div>
+				    </div>
+				    <!-- END Product List Option 1 Card -->
+				  </div>
+				  <!-- END Product List 1 Options -->
+				</div>
+				<!-- END Product List 1 Content -->
+				<!-- START Product List 2 Content -->
+				<div class="row product-list-contents">
+				  <!-- START Product List 2 Description -->
+				  <div class="col-sm-4 pkg-prod-list-summary">
+				    <div class="prod-listitem-content">
+				      <h3>Product List Item Heading</h3>
+				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				    </div>
+				  </div>
+				  <!-- END Product List 2 Description -->
+				  <!-- START Product List 2 Options -->
+				  <div class="col-sm-8 pkg-prod-list-options">
+				    <!-- START Product List 2 Option 1 Card -->
+				    <div class="form-group pkg-product-card">
+				      <div class="checkbox pkg-builder-listoption-wrap">
+				        <label class="pkg-builder-label" for="cat4-prodlist2-item1">
+				          <input id="cat4-prodlist2-item1" class="pkg-builder-radio" type="checkbox" name="cat4-prodlist2" value="">
+				          <span class="tds-radio-btn"></span>
+				          <span class="h4 prod-name">Product 1 Display Name</span>
+				        </label>
+				        <div class="product-content">
+				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				        </div>
+				      </div>
+				      <!-- START Product List Addons -->
+				      <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
+				        <div class="tds-divider-line thin-lt-blue"></div>
+				        <div class="product-subitem">
+				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
+				          <div class="form-group">
+				            <label class="prod-subitem-label" for="cat4-prodlist2-item2-addon">
+				              <input type="checkbox" id="cat4-prodlist2-item2-addon" name="cat4-prodlist2-addon" value="" checked disabled>
+				              <span class="tds-radio-btn"></span>
+				              <span class="h6 prod-subitem-name">Addon Item 1 Name</span>
+				            </label>
+				            <div class="prod-subitem-content">
+				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				      <!-- END Product List Addons -->
+				    </div>
+				    <!-- END Product List Option 1 Card -->
+				  </div>
+				  <!-- END Product List 2 Options -->
+				</div>
+				<!-- END Product List 2 Content -->
 
 				<!-- START Bottom Buttons Content -->
 				<div class="bottom-buttons">
@@ -318,6 +397,7 @@ categories: CWS
 
 		$("input:checkbox.pkg-builder-radio").change(function() {
 			$(this).closest($productCard).toggleClass('is-selected', this.checked);
+			$(this).closest($productCard).children($productAddOn).show();
 		});
 		//each new number spinner needs to be initiated here
 		$("input[name='catchTVadd']").TouchSpin({
