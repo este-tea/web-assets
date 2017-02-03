@@ -164,7 +164,7 @@
     .pkg-builder-internet-tab:before,
     .pkg-builder-phone-tab:before,
     .pkg-builder-tv-tab:before {
-        content: none;
+        //content: none;
     }
     .pkg-builder-internet-tab,
     .pkg-builder-phone-tab,
@@ -288,8 +288,11 @@
     background-color: #999;
     border-color: #999;
 }
-.pkg-builder-listoption-wrap .form-sub-group {
+.pkg-builder-listoption-wrap .product-subitem .form-sub-group {
     padding: 0 0 20px 20px;
+}
+.pkg-builder-listoption-wrap .product-content .form-sub-group {
+    padding: 0;
 }
 .pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
     margin-top:0;
@@ -308,8 +311,9 @@
     display: none;
 }
 // alert spacing in addon section
-.pkg-builder-addon-wrap .form-sub-group + .tds-alert.tds-alert-critical {
+.prod-subitem-content ~ .tds-alert.tds-alert-critical {
     margin-top: 16px;
+    margin-bottom: 0;
 }
 // Package product subitem checkbox
 .pkg-builder-addon-wrap {

@@ -148,7 +148,7 @@ categories: CWS
 				  <!-- START Product List 1 Description -->
 				  <div class="col-sm-4 pkg-prod-list-summary">
 				    <div class="prod-listitem-content">
-				      <h3>Product List Item Heading <span>(optional)</span></h3>
+				      <h3>Are you interested in purchasing CatchTV?</h3>
 				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				    </div>
 				  </div>
@@ -164,11 +164,10 @@ categories: CWS
 				        <label class="pkg-builder-label" for="cat2-prodlist1-item1">
 				          <input id="cat2-prodlist1-item1" class="pkg-builder-radio" type="radio" name="cat2-prodlist1" value="">
 				          <span class="tds-radio-btn"></span>
-				          <span class="h4 prod-name">Product 1 Display Name</span>
+				          <span class="h4 prod-name">Yes, I want to purchase CatchTV</span>
 				        </label>
 				        <div class="product-content">
 				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
-				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				        </div>
 				      </div>
 				      <!-- START Product List Addons -->
@@ -176,10 +175,10 @@ categories: CWS
 				        <div class="tds-divider-line thin-lt-blue"></div>
 				        <div class="product-subitem">
 				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
-									<!-- START Product List Addon Item -->
+				          <!-- START Product List Addon Item 1 -->
 				          <div class="form-group">
-				            <label class="prod-subitem-label" for="cat2-prodlist1-item2-addon">
-				              <input type="checkbox" id="cat2-prodlist1-item2-addon" name="cat2-prodlist-addon" value="" checked disabled>
+				            <label class="prod-subitem-label" for="cat2-prodlist1-item1-addon">
+				              <input type="checkbox" id="cat2-prodlist1-item1-addon" name="cat2-prodlist1-addon" value="" checked disabled>
 				              <span class="tds-radio-btn"></span>
 				              <span class="h6 prod-subitem-name">Addon Item 1 Name</span>
 				            </label>
@@ -187,44 +186,102 @@ categories: CWS
 				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
 				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				            </div>
-										<div class="tds-divider-line dotted-dk-gray"></div>
-	                </div>
-	                <!-- END Product List Addon Item -->
-									<!-- START Product List Addon Item -->
+				            <div class="tds-divider-line dotted-dk-gray"></div>
+				          </div>
+				          <!-- END Product List Addon Item 1 -->
+				          <!-- START Product List Addon Item 2 -->
 				          <div class="form-group">
-				            <label class="prod-subitem-label" for="cat2-prodlist1-item2-addon2">
-				              <input type="checkbox" id="cat2-prodlist1-item2-addon2" name="cat2-prodlist-addon2" value="">
+				            <label class="prod-subitem-label" for="cat2-prodlist1-item1-addon2">
+				              <input type="checkbox" id="cat2-prodlist1-item1-addon2" name="cat2-prodlist1-addon2" value="">
 				              <span class="tds-radio-btn"></span>
 				              <span class="h6 prod-subitem-name">Addon Item 2 Name</span>
 				            </label>
 				            <div class="prod-subitem-content">
 				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
 				              <div class="form-sub-group">
-				                <label for="STBadd" class="sr-only">Number of STBs</label>
-				                <input id="STBadd" class="form-control" type="text" value="" name="STBadd">
+				                <label for="catchSTBadd" class="sr-only">Number of CatchTV STBs</label>
+				                <input id="catchSTBadd" class="form-control" type="text" value="" name="catchSTBadd">
 				              </div>
 				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				            </div>
-										<div class="tds-divider-line dotted-dk-gray"></div>
-	                </div>
-	                <!-- END Product List Addon Item -->
+				            <div class="tds-divider-line dotted-dk-gray"></div>
+				          </div>
+				          <!-- END Product List Addon Item 2 -->
 				        </div>
 				      </div>
 				      <!-- END Product List Addons -->
 				    </div>
 				    <!-- END Product List 1 Option 1 Card -->
+				    <!-- START Product List 1 Option 2 Card -->
+				    <div class="form-group pkg-product-card">
+				      <div class="radio pkg-builder-listoption-wrap">
+				        <label class="pkg-builder-label" for="cat2-prodlist1-item2">
+				          <input id="cat2-prodlist1-item2" class="pkg-builder-radio" type="radio" name="cat2-prodlist1" value="">
+				          <span class="tds-radio-btn"></span>
+				          <span class="h4 prod-name">No, I don't want to purchase CatchTV</span>
+				        </label>
+				        <div class="product-content">
+				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				        </div>
+				      </div>
+				      <!-- START Product List Addons -->
+				      <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
+				        <div class="tds-divider-line thin-lt-blue"></div>
+				        <div class="product-subitem">
+				          <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
+				          <!-- START Product List Addon Item 1 -->
+				          <div class="form-group">
+				            <label class="prod-subitem-label" for="cat2-prodlist1-item2-addon">
+				              <input type="checkbox" id="cat2-prodlist1-item2-addon" name="cat2-prodlist1-addon" value="">
+				              <span class="tds-radio-btn"></span>
+				              <span class="h6 prod-subitem-name">Addon Item 1 Name</span>
+				            </label>
+				            <div class="prod-subitem-content">
+				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				              <div class="form-sub-group">
+				                <label for="HDSTBadd" class="sr-only">Number of HD STBs</label>
+				                <input id="HDSTBadd" class="form-control" type="text" value="" name="HDSTBadd">
+				              </div>
+				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				            </div>
+				            <div class="tds-alert tds-alert-critical">Error message: Limit selection to 10.</div>
+				            <div class="tds-divider-line dotted-dk-gray"></div>
+				          </div>
+				          <!-- END Product List Addon Item 1 -->
+				          <!-- START Product List Addon Item 2 -->
+				          <div class="form-group">
+				            <label class="prod-subitem-label" for="cat2-prodlist1-item2-addon2">
+				              <input type="checkbox" id="cat2-prodlist1-item2-addon2" name="cat2-prodlist2-addon2" value="">
+				              <span class="tds-radio-btn"></span>
+				              <span class="h6 prod-subitem-name">Addon Item 2 Name</span>
+				            </label>
+				            <div class="prod-subitem-content">
+				              <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				              <div class="form-sub-group">
+				                <label for="HDSTBadd" class="sr-only">Number of HD STBs</label>
+				                <input id="HDSTBadd" class="form-control" type="text" value="" name="HDSTBadd">
+				              </div>
+				              <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				            </div>
+				            <div class="tds-alert tds-alert-critical">Error message: Limit selection to 10.</div>
+				            <div class="tds-divider-line dotted-dk-gray"></div>
+				          </div>
+				          <!-- END Product List Addon Item 2 -->
+				        </div>
+				      </div>
+				      <!-- END Product List Addons -->
+				    </div>
+				    <!-- END Product List 1 Option 2 Card -->
 				  </div>
 				  <!-- END Product List 1 Options -->
 				</div>
 				<!-- END Product List 1 Content -->
-
-
 				<!-- START Product List 2 Content -->
 				<div class="row product-list-contents">
 				  <!-- START Product List 2 Description -->
 				  <div class="col-sm-4 pkg-prod-list-summary">
 				    <div class="prod-listitem-content">
-				      <h3>Product List Item Heading</h3>
+				      <h3>Product List Item Heading: User can't get CatchTV</h3>
 				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				    </div>
 				  </div>
@@ -241,6 +298,10 @@ categories: CWS
 				        </label>
 				        <div class="product-content">
 				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				          <div class="form-sub-group">
+				            <label for="HDSTBadd" class="sr-only">Number of HD STBs</label>
+				            <input id="HDSTBadd" class="form-control" type="text" value="" name="HDSTBadd">
+				          </div>
 				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
 				        </div>
 				      </div>
@@ -252,7 +313,57 @@ categories: CWS
 				        <label class="pkg-builder-label" for="cat2-prodlist2-item2">
 				          <input id="cat2-prodlist2-item2" class="pkg-builder-radio" type="checkbox" name="cat2-prodlist2" value="">
 				          <span class="tds-radio-btn"></span>
+				          <span class="h4 prod-name">Product 2 Display Name</span>
+				        </label>
+				        <div class="product-content">
+				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				          <div class="form-sub-group">
+				            <label for="HDSTBadd" class="sr-only">Number of HD STBs</label>
+				            <input id="HDSTBadd" class="form-control" type="text" value="" name="HDSTBadd">
+				          </div>
+				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				        </div>
+				      </div>
+				    </div>
+				    <!-- END Product List Option 1 Card -->
+				  </div>
+				  <!-- END Product List 1 Options -->
+				</div>
+				<!-- END Product List 2 Content -->
+				<!-- START Product List 3 Content -->
+				<div class="row product-list-contents">
+				  <!-- START Product List 3 Description -->
+				  <div class="col-sm-4 pkg-prod-list-summary">
+				    <div class="prod-listitem-content">
+				      <h3>Product List Item Heading <span>(optional)</span></h3>
+				      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				    </div>
+				  </div>
+				  <!-- END Product List 3 Description -->
+				  <!-- START Product List 3 Options -->
+				  <div class="col-sm-8 pkg-prod-list-options">
+				    <!-- START Product List 3 Option 1 Card -->
+				    <div class="form-group pkg-product-card">
+				      <div class="checkbox pkg-builder-listoption-wrap">
+				        <label class="pkg-builder-label" for="cat2-prodlist3-item1">
+				          <input id="cat2-prodlist3-item1" class="pkg-builder-radio" type="checkbox" name="cat2-prodlist3" value="">
+				          <span class="tds-radio-btn"></span>
 				          <span class="h4 prod-name">Product 1 Display Name</span>
+				        </label>
+				        <div class="product-content">
+				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
+				          <p class="price-text price-base" data-price="">$XX.XX/mo.</p>
+				        </div>
+				      </div>
+				    </div>
+				    <!-- END Product List 3 Option 1 Card -->
+				    <!-- START Product List 3 Option 2 Card -->
+				    <div class="form-group pkg-product-card">
+				      <div class="checkbox pkg-builder-listoption-wrap">
+				        <label class="pkg-builder-label" for="cat2-prodlist3-item2">
+				          <input id="cat2-prodlist3-item2" class="pkg-builder-radio" type="checkbox" name="cat2-prodlist3" value="">
+				          <span class="tds-radio-btn"></span>
+				          <span class="h4 prod-name">Product 2 Display Name</span>
 				        </label>
 				        <div class="product-content">
 				          <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
@@ -264,7 +375,8 @@ categories: CWS
 				  </div>
 				  <!-- END Product List 1 Options -->
 				</div>
-				<!-- END Product List 2 Content -->
+				<!-- END Product List 3 Content -->
+
 
 				<!-- START Bottom Buttons Content -->
 				<div class="bottom-buttons">
@@ -537,12 +649,12 @@ categories: CWS
 			$(this).closest($productCard).children($productAddOn).show();
 		});
 		//each new number spinner needs to be initiated here
-		$("input[name='catchTVadd']").TouchSpin({
+		$("input[name='catchSTBadd']").TouchSpin({
         min: 0,
         max: 10,
   			initval: 0
     });
-		$("input[name='STBadd']").TouchSpin({
+		$("input[name='HDSTBadd']").TouchSpin({
         min: 0,
         max: 5,
   			initval: 0
