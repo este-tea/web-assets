@@ -367,9 +367,16 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
 .pkg-subtotal-content {
     padding: 21px 0;
 }
+.subtotal-column {
+    text-align: center;
+}
+
 .subtotal-column-content {
     padding: 0 8px;
+    margin: 0 auto;
+    float: right;
 }
+
 .subtotal-items {
     text-align: center;
 }
@@ -402,11 +409,20 @@ table.table.pkg-subtotal-table {
 .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
     padding: 0;
 }
+
 @media (max-width: 960px) {
     .pkg-subtotal-content .subtotal-header-text {
-        text-align: center;
+        text-align: left;
     }
     .sel-summary.col-sm-12.col-md-3 {
+        text-align: center;
+    }
+}
+@media (max-width:750px) {
+    .subtotal-column-content {
+        float: none;
+    }
+    .pkg-subtotal-content .subtotal-header-text {
         text-align: center;
     }
 }
