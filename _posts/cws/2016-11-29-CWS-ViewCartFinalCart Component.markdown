@@ -22,6 +22,15 @@ categories: CWS
   </div>
 </div>
 
+<div class="container" >
+  <div class="tds-alert tds-alert-warning">
+      <p>Your shopping cart is empty. <a href="${LinkToMainPkgComparisonPage}">Shop our site</a> to find product pricing and availability
+information!</p>
+  </div>
+</div>
+
+
+
 
 <div class="container">
 
