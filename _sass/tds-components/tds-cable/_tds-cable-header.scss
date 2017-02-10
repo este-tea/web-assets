@@ -38,6 +38,33 @@
      content: none;
      display: none;
    }
+
+
+/// L1-nav override ///
+.L1-nav {
+    float: left;
+}
+.L1-nav > ul {
+    border-bottom: none;
+    font-weight: inherit;
+    > li {
+      font-size: inherit;
+    }
+}
+
+.L1-nav > ul > li > a:hover {
+    background-color: inherit;
+	}
+.L1-nav > ul > li > a:after,.L1-nav > ul > li > a:hover:after, .L1-nav > ul > li > a:focus:after  {
+    content: none;
+}
+
+.L1-nav ul ul {
+  overflow: visible;
+}
+
+
+
 /*////overrides end////*/
 
 #skiptonav {
@@ -72,6 +99,9 @@
 }
 
 .cable-top-bar {
+
+
+
   font-family: $tds-font-family;
   font-weight: 200;
   font-style: normal;
@@ -106,7 +136,7 @@
     width: 40px;
     height: 22px;
     background-size: contain;
-    background: url("../content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
+    background: url("/content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
   }
 
     @media only screen and (max-width: 568px) {
@@ -118,6 +148,14 @@
 
 // Top level of Nav
 .cable-nav-top-bar {
+  .L1-nav > ul > li > a {
+  background-color: inherit;
+  }
+
+  .L1-nav ul ul li a{
+  background-color: inherit !important;
+  color: $tds-white;
+  }
 
   >.container {
     max-width: 100%;
@@ -183,9 +221,11 @@
     }
 
 //Horzointal rule between dropdown menu items
-    ul ul li + li a {
+  .L1-nav ul ul li + li a,.L1-nav  ul ul li + li a:hover,.L1-nav  ul ul li + li a:focus  {
         border-top: 2px solid $tds-white;
     }
+
+
 
 
     @media screen and (max-width: 568px) {
@@ -252,7 +292,7 @@
     justify-content: left;
     align-items: center;
     margin:0 18%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 
     @media screen and (max-width: 1200px) {
@@ -267,12 +307,9 @@
 
 
 
-a.active {
-  color: $tds-white;
-  background: $cable-dk-blue;
-}
 
-    a {
+
+    .L1-nav > ul > li > a {
     padding: 15px 12px;
     display: block;
     color: $tds-dk-blue;
@@ -290,6 +327,11 @@ a.active {
         @media screen and (max-width: 568px) {
         width: 100%;
       }
+    }
+
+    .L1-nav > ul > li.active > a {
+      color: $tds-white;
+      background: $cable-dk-blue;
     }
 
     ul li {
@@ -456,7 +498,7 @@ a.active {
 }
 
 .contact-call-icon:before {
-  background-image: url(../content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 45px;
@@ -466,7 +508,7 @@ a.active {
 }
 
 .contact-account-icon:before {
-  background-image: url(../content/dam/tdstelecom/images/ui/icon_account-white.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
@@ -476,7 +518,7 @@ a.active {
 }
 
 .contact-cart-icon:before {
-  background-image: url(../content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 17px;
