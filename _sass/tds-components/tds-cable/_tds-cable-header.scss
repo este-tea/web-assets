@@ -63,7 +63,9 @@
   overflow: visible;
 }
 
-
+.L1-nav ul ul li:hover a {
+  background-image: none;
+}
 
 /*////overrides end////*/
 
@@ -167,7 +169,7 @@
     list-style: none;
     position: relative;
     /*--Set relative positioning on the unordered list itself - not on the list item--*/
-    z-index: 50;
+    z-index: 200;
     }
 
     ul li {
@@ -316,6 +318,9 @@
     text-decoration: none;
     }
 
+
+
+
     ul {
     margin: 0;
     padding: 0;
@@ -395,12 +400,10 @@
     }
   }
 
-    //Horzointal rule between dropdown menu items
-  ul ul li + li a {
-    border-top: 2px solid $tds-lt-blue-100;
-
-  }
-
+  //Horzointal rule between dropdown menu items
+    .L1-nav ul ul li + li a,.L1-nav  ul ul li + li a:hover,.L1-nav  ul ul li + li a:focus  {
+      border-top: 2px solid $tds-lt-blue-100 !important;
+      }
 }
 
 
@@ -501,9 +504,9 @@
   background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 15px;
       @media screen and (max-width: 480px) {
-        background-size: 35px;
+        background-size: 12px;
     }
 }
 
