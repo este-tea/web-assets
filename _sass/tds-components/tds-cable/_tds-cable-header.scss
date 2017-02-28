@@ -43,6 +43,9 @@
 /// L1-nav override ///
 .L1-nav {
     float: left;
+    @media only screen and (max-width: 568px) {
+      float: none;
+    }
 }
 .L1-nav > ul {
     border-bottom: none;
@@ -279,7 +282,8 @@
       display: block;
       text-decoration: none;
           @media screen and (max-width: 360px) {
-            width: 120px;
+            width: 102px;
+            padding: 11px 30px 14px 15px;
           }
       }
 
@@ -440,7 +444,7 @@
           margin: 8px 8px 8px 0;
       }
       @media screen and (max-width: 480px) {
-        margin: 8px 0px;
+        margin: 8px 16px;
       }
 
       &:last-child.gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
