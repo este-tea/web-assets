@@ -1,14 +1,26 @@
-// tds-panels.less
+// tds-panels.scss
 
 $panel-border-radius: 0px;
 $panel-default-border: #ccc;
-
 $border-radius-base: 0px;
+
+//added bootstrap panel code as a mixin
+@mixin panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+@mixin panel-default {
+    border-color: #ddd;
+}
 
 // bootstrap panel changes
 .tds-panel {
-  @extend .panel;
-  @extend .panel-default;
+  @include panel;
+  @include panel-default;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 0px;
