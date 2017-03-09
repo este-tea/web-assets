@@ -505,7 +505,18 @@ table.table.pkg-subtotal-table {
         font-size: 18px;
     }
 }
-//Page Layout
+/* Page Layout */
+// ----------------
+.pkg-builder-form.page-layout {
+  h2 {
+      color: #19388a;
+      margin-bottom: 8px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 500;
+  }
+}
+
 .col-sm-8.pkg-products-wrap {
     border-top: solid 3px #19388a;
 }
@@ -535,4 +546,100 @@ table.table.pkg-subtotal-table {
 
 .pkg-builder-page-content .col-sm-8.pkg-products-wrap {
     padding: 0;
+}
+
+.pkg-builder-page-content h2 {
+    color: #19388a;
+    margin-bottom: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.pkg-builder-page-content .category-heading h3 {
+    color: #19388a;
+    font-weight: 500;
+    margin-left: 50px;
+    line-height: 40px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li:before,
+.pkg-builder-page-content .category-heading h3:before {
+    counter-increment: section;
+    content: counter(section);
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    background-color: #7a86b7;
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.pkg-builder-page-content .category-heading h3:before {
+    margin-left: -50px;
+}
+.pkg-builder-page-content .prod-listitem-content > h4 {
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.pkg-builder-page-content .prod-listitem-content > h4 > a {
+    font-size: 20px;
+    text-decoration: none;
+    display:block;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    color: #0c8fd0;
+}
+.pkg-builder-page-content .prod-listitem-content > h4 > a:hover {
+    color: #19388a;
+}
+
+.pkg-builder-page-content .prod-listitem-content > h4 > a:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: right;
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-white.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    border-radius: 50%;
+    background-color: #0c8fd0;
+    margin-top: -4px;
+}
+
+.pkg-builder-page-content .prod-listitem-content > h4 > a.collapsed:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: right;
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    border-radius: 50%;
+    background-color: #0c8fd0;
+    margin-top: -4px;
+    text-decoration:none;
+}
+.pkg-builder-page-content .prod-listitem-content > h4 > a:hover:after {
+    background-color:#19388a;
+}
+
+.prod-listitem-content p {
+    margin-bottom: 0;
+}
+
+.pkg-prod-list-options .tds-alert.tds-alert-critical {
+    margin-top: 14px;
 }
