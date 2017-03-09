@@ -58,10 +58,10 @@ $border-radius-base: 0px;
   }
   // keep visible
   > .col-sm-6.last {
-      @extend .visible-xs;
-      @extend .visible-sm;
-      @extend .visible-md;
-      @extend .visible-lg;
+      //@extend .visible-xs;
+      //@extend .visible-sm;
+      //@extend .visible-md;
+      //@extend .visible-lg;
   }
 }
 // Hacky-McHckins Mobile fix TODO || rewrite all the mobile set ups
