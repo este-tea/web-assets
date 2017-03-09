@@ -4,6 +4,29 @@ title: "CWS-Package Builder Page Layout"
 date: 2016-12-29
 categories: CWS
 ---
+<style>
+.affix {
+  /*top: 20px;
+  width: 213px;*/
+}
+
+@media (min-width: 1200px) {
+  .affix {
+    /*width: 263px;*/
+  }
+}
+
+.affix-bottom {
+  position: absolute;
+  /*width: 213px;*/
+}
+
+@media (min-width: 1200px) {
+  .affix-bottom {
+    /*width: 263px;*/
+  }
+}
+</style>
 <div class="tds-error-msg tds-error-info">
 	<div class="container">
 		<p>Address: <span class="userGreeting-address"><span class="has-titleCase">${ADDRESS 1} ${ADDRESS 2}, ${CITY}</span>, <span class="has-allCaps">${STATE}</span></span>. <a href="/visitor/address-entry.html?redirectDestination=%2Fshop.html">Edit address</a></p>
@@ -121,10 +144,40 @@ categories: CWS
 				</div>
 
 			</div>
-			<div class="col-sm-4 pkg-subtotal-wrap">
-				<div data-spy="affix" data-offset-top="0">
-					Selection Summary
+			<div class="col-sm-4 pkg-summary-wrap">
+				<!-- START Package Summary Content -->
+				<div id="pkg-summary-sidebar" class="pkg-summary-content">
+					<h2>Selection Summary</h2>
+					<div class="tds-divider-line"></div>
+					<p class="">Product Category: Internet</p>
+					<p>Product Display Name: 1Gig Fiber Internet</p>
+					<p>$49.95/mo</p>
+					<p>4-port Wireless V1000H Gateway Modem</p>
+					<p>$4.95/mo</p>
+					<p class="">Product Category: TV</p>
+					<p>TV Channel Package</p>
+					<p>$49.95/mo</p>
+					<p>HD STB</p>
+					<p>$4.95/mo</p>
+					<p>Quantity: <span>3</span></p>
+					<div class="tds-divider-line"></div>
+					<div class="pkg-subtotal-wrap">
+						<div id="one-time-costs" style="display: block;">
+							<p class="sel-head-text">One-time costs</p>
+							<p class="sel-price-text">$49.95</p>
+						</div>
+						<div id="one-time-credits" style="display: block;">
+							<p class="sel-head-text">One-time credits</p>
+							<p class="sel-price-text">($49.95)</p>
+						</div>
+						<div id="monthly-charges">
+							<p class="sel-head-text sel-head-text-mth">Monthly Charges</p>
+							<p class="sel-price-text sel-price-text-mth">$221.88</p>
+							<p class="subtotal-fees">Plus Taxes and Fees</p>
+						</div>
+					</div>
 				</div>
+				<!-- END Package Summary Content -->
 			</div>
 		</div>
 		<!-- END Page Layout Contents -->
@@ -189,6 +242,18 @@ categories: CWS
 
 			resizeFn();
 			$(window).resize(resizeFn);
+		});
+		$('pkg-summary-sidebar').affix({
+		    offset: {
+		        top: $('pkg-summary-sidebar').offset().top
+		    }
+		});
+		$('pkg-summary-sidebar').affix({
+		  offset: {
+		    bottom: ($('#genericfooter-container').outerHeight(true) +
+		            $('#copyright-container').outerHeight(true)) +
+		            40
+		  }
 		});
 
 	});
