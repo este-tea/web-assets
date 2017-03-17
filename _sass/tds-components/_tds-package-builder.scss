@@ -507,6 +507,12 @@ table.table.pkg-subtotal-table {
 }
 /* Page Layout */
 // ----------------
+.pkg-builder-page-content {
+  .col-sm-8.pkg-products-wrap {
+      border-top: solid 3px #19388a;
+      padding: 0;
+  }
+} // END pkg-builder-page-content
 .pkg-builder-form.page-layout {
   h2 {
       color: #19388a;
@@ -548,7 +554,7 @@ table.table.pkg-subtotal-table {
     padding: 0;
 }
 
-.pkg-builder-page-content h2 {
+#pkg-summary-sidebar h2 {
     color: #19388a;
     margin-bottom: 8px;
     font-size: 20px;
