@@ -5,27 +5,7 @@ date: 2016-12-29
 categories: CWS
 ---
 <style>
-.affix {
-  /*top: 20px;
-  width: 213px;*/
-}
 
-@media (min-width: 1200px) {
-  .affix {
-    /*width: 263px;*/
-  }
-}
-
-.affix-bottom {
-  position: absolute;
-  /*width: 213px;*/
-}
-
-@media (min-width: 1200px) {
-  .affix-bottom {
-    /*width: 263px;*/
-  }
-}
 </style>
 <div class="tds-error-msg tds-error-info">
 	<div class="container">
@@ -243,18 +223,5 @@ categories: CWS
 			resizeFn();
 			$(window).resize(resizeFn);
 		});
-		$('pkg-summary-sidebar').affix({
-		    offset: {
-		        top: $('pkg-summary-sidebar').offset().top
-		    }
-		});
-		$('pkg-summary-sidebar').affix({
-		  offset: {
-		    bottom: ($('#genericfooter-container').outerHeight(true) +
-		            $('#copyright-container').outerHeight(true)) +
-		            40
-		  }
-		});
-
 	});
 </script>
