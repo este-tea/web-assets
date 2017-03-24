@@ -1,7 +1,7 @@
 ---
 layout: default-cable
 title:  "CWS-Checkout questions"
-date:   2016-11-8
+date:   2017-3-24
 categories: CWS
 ---
 
@@ -40,6 +40,15 @@ categories: CWS
   <div class="row" >
         <h2 class="hr-after-text">Customer Information</h2>
 
+        <!--authenticated customer name-->
+        <div class="form-group tds-form-group">
+          <label for="firstName">Name:</label>
+                <div id="fullName" class="readOnly disabled">
+                  FirstName LastName
+                </div>
+        </div>
+        <!--authenticated customer name end-->
+
         <div class="form-group tds-form-group">
             <label for="firstName">First Name</label>
             <input type="text" class="form-control" name="firstName" id="firstName">
@@ -51,6 +60,8 @@ categories: CWS
             <input type="text" class="form-control" name="lastName" id="lastName">
             <span class="help-block" id="lastName-error" style="display: none;"></span>
         </div>
+
+
 
         <div class="form-group tds-form-group">
             <label for="contactTel">Contact Tel. No.</label>
@@ -105,14 +116,6 @@ categories: CWS
             </div>
 <!---prospects only end-->
 
-
-<!---current customers only: email read only-->
-                <div id="contactEmail"  class="readOnly">
-                  Contact@EmailAddress
-                </div>
-                <br>
-                <a href="#" target="_blank">Visit accountURL.com to update contact email.</a>
-<!---current customers only: email read only end-->
 
 </div><!--closing tag for contactEmail form-group-->
 
@@ -184,7 +187,7 @@ categories: CWS
               <div class="label-text">Same as Service Address</div>
             </label>
           </div>
-
+  <fieldset disabled>
       <div class="form-group">
 
         <label for="billingAddressLine">Address: </label>
@@ -326,6 +329,7 @@ categories: CWS
         <input class="form-control" name="billingZip" id="billingZip" type="text" value="">
         <span class="help-block" id="billingZipError" style="display: none;"></span>
       </div>
+      </fieldset>
   </div>
 
 </div>
