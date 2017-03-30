@@ -113,10 +113,10 @@ Warning message appears above prefilled form with option to Log In-->
                   <input id="MS109SMAINST" class="" type="hidden" name="MS109SMAINST" value="?">
                   <input id="MT109SMAINST" class="" type="hidden" name="MT109SMAINST" value="?">
                   <input id="EX109SMAINST" class="" type="hidden" name="EX109SMAINST" value="?">
-                  <div class="label-text">
+                  <span class="label-text">
                     <span class="label-address">109 S MAIN ST</span>
                     <span class="label-city-state">VERONA, WI</span>
-                  </div>
+                  </span>
               </label>
             </div>
 
@@ -127,10 +127,10 @@ Warning message appears above prefilled form with option to Log In-->
                   <input id="MS109SMAINST" class="" type="hidden" name="MS109SMAINST" value="?">
                   <input id="MT109SMAINST" class="" type="hidden" name="MT109SMAINST" value="?">
                   <input id="EX109SMAINST" class="" type="hidden" name="EX109SMAINST" value="?">
-                  <div class="label-text">
+                  <span class="label-text">
                     <span class="label-address">109 S MAIN ST</span>
                     <span class="label-city-state">VERONA, WI</span>
-                  </div>
+                  </span>
               </label>
             </div>
 
@@ -141,10 +141,10 @@ Warning message appears above prefilled form with option to Log In-->
                   <input id="MS109SMAINST" class="" type="hidden" name="MS109SMAINST" value="?">
                   <input id="MT109SMAINST" class="" type="hidden" name="MT109SMAINST" value="?">
                   <input id="EX109SMAINST" class="" type="hidden" name="EX109SMAINST" value="?">
-                  <div class="label-text">
+                  <span class="label-text">
                     <span class="label-address">109 S MAIN ST</span>
                     <span class="label-city-state">VERONA, WI</span>
-                  </div>
+                  </span>
               </label>
             </div>
 
