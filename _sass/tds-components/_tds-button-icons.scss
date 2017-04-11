@@ -4,7 +4,7 @@
 
 // tds-icon/font-awesome extension
 // `.tds-icons` == `.fa` class for font-awesome
-.tds-icon
+.tds-icon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -61,7 +61,8 @@ button.gallery-btn.btn-next:after {
     top: -2px;
 }
 // Remove icon
-.tds-icon-times:before {
+.tds-icon-times {
+  &:before {
   content: "\f00d";
   }
   @include tds-icon-padding-right;
@@ -92,8 +93,8 @@ button.gallery-btn.btn-next:after {
   content: "\f02f";
 }
 // Key icon
-.tds-icon-key
-&:before {
+.tds-icon-key {
+  &:before {
     content: "\f084";
   }
   @include tds-icon-padding-right;
