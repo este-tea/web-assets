@@ -1,7 +1,7 @@
 ---
 layout: default-cable
 title:  "CWS-Checkout questions"
-date:   2016-11-8
+date:   2017-3-24
 categories: CWS
 ---
 
@@ -40,6 +40,15 @@ categories: CWS
   <div class="row" >
         <h2 class="hr-after-text">Customer Information</h2>
 
+        <!--authenticated customer name-->
+        <div class="form-group tds-form-group">
+          <label for="firstName">Name:</label>
+                <div id="fullName" class="readOnly disabled">
+                  FirstName LastName
+                </div>
+        </div>
+        <!--authenticated customer name end-->
+
         <div class="form-group tds-form-group">
             <label for="firstName">First Name</label>
             <input type="text" class="form-control" name="firstName" id="firstName">
@@ -51,6 +60,8 @@ categories: CWS
             <input type="text" class="form-control" name="lastName" id="lastName">
             <span class="help-block" id="lastName-error" style="display: none;"></span>
         </div>
+
+
 
         <div class="form-group tds-form-group">
             <label for="contactTel">Contact Tel. No.</label>
@@ -66,21 +77,21 @@ categories: CWS
               <label for="contactTime-am">
                 <input type="radio" name="contactTime" id="contactTime-am" value="am">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">Morning</div>
+                <span class="label-text">Morning</span>
               </label>
             </div>
             <div class="radio">
               <label for="contactTime-pm">
                 <input type="radio" name="contactTime" id="contactTime-pm" value="pm">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">Afternoon</div>
+                <span class="label-text">Afternoon</span>
               </label>
             </div>
             <div class="radio">
               <label for="contactTime-anytime">
                 <input type="radio" name="contactTime" id="contactTime-anytime" value="anytime">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">All day</div>
+                <span class="label-text">All day</span>
               </label>
         </div>
         <span class="help-block" id="contactTime-error" style="display: none;"></span>
@@ -98,21 +109,13 @@ categories: CWS
               <label for="subscribeToEmail">
                 <input name="subscribeToEmail" id="subscribeToEmail" type="checkbox" checked="checked">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">I would like to receive occasional updates from TDS via email with information about new product
+                <span class="label-text">I would like to receive occasional updates from TDS via email with information about new product
                 features and special offers. Visit our <a href="#" target="_blank"> Email Subscriptions page</a>
-                </div>
+              </span>
               </label>
             </div>
 <!---prospects only end-->
 
-
-<!---current customers only: email read only-->
-                <div id="contactEmail"  class="readOnly">
-                  Contact@EmailAddress
-                </div>
-                <br>
-                <a href="#" target="_blank">Visit accountURL.com to update contact email.</a>
-<!---current customers only: email read only end-->
 
 </div><!--closing tag for contactEmail form-group-->
 
@@ -181,10 +184,10 @@ categories: CWS
             <label for="useServiceAddressForBilling">
               <input name="useServiceAddressForBilling" id="useServiceAddressForBilling" type="checkbox">
               <span class="tds-radio-btn"></span>
-              <div class="label-text">Same as Service Address</div>
+              <span class="label-text">Same as Service Address</span>
             </label>
           </div>
-
+  <fieldset disabled>
       <div class="form-group">
 
         <label for="billingAddressLine">Address: </label>
@@ -326,6 +329,7 @@ categories: CWS
         <input class="form-control" name="billingZip" id="billingZip" type="text" value="">
         <span class="help-block" id="billingZipError" style="display: none;"></span>
       </div>
+      </fieldset>
   </div>
 
 </div>
@@ -391,21 +395,21 @@ categories: CWS
               <label for="homeNewConstruction-no">
                 <input type="radio" name="homeNewConstruction" id="homeNewConstruction-no" value="no">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">No</div>
+                <span class="label-text">No</span>
               </label>
             </div>
             <div class="radio">
               <label for="homeNewConstruction-yes">
                 <input type="radio" name="homeNewConstruction" id="homeNewConstruction-yes" value="yes">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">Yes</div>
+                <span class="label-text">Yes</span>
               </label>
             </div>
             <div class="radio">
               <label for="homeNewConstruction-unknown">
                 <input type="radio" name="homeNewConstruction" id="homeNewConstruction-unknown" value="unknown">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">I don't know</div>
+                <span class="label-text">I don't know</span>
               </label>
           </div>
           <span class="help-block" id="homeNewConstruction-error" style="display: none;"></span>
@@ -426,21 +430,21 @@ categories: CWS
               <label for="existingPhoneLine-no">
                 <input type="radio" name="existingPhoneLine" id="existingPhoneLine-no" value="no">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">No</div>
+                <span class="label-text">No</span>
               </label>
             </div>
             <div class="radio">
               <label for="existingPhoneLine-yes">
                 <input type="radio" name="existingPhoneLine" id="existingPhoneLine-yes" value="yes">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">Yes</div>
+                <span class="label-text">Yes</span>
               </label>
             </div>
             <div class="radio">
               <label for="existingPhoneLine-unknown">
                 <input type="radio" name="existingPhoneLine" id="existingPhoneLine-unknown" value="unknown">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">I don't know</div>
+                <span class="label-text">I don't know</span>
               </label>
             </div>
         <span class="help-block" id="existingPhoneLine-error" style="display: none;"></span>
@@ -473,7 +477,7 @@ categories: CWS
           <label for="localPhoneServiceAgree">
             <input name="localPhoneServiceAgree" id="localPhoneServiceAgree" type="checkbox">
             <span class="tds-radio-btn"></span>
-            <div class="label-text">I agree to have TDS as my local phone service provider.</div>
+            <span class="label-text">I agree to have TDS as my local phone service provider.</span>
           </label>
           <span class="help-block" id="localPhoneServiceAgree-error" style="display: none;"></span>
 
@@ -483,7 +487,7 @@ categories: CWS
           <label for="longDistancePhoneServiceAgree">
             <input name="longDistancePhoneServiceAgree" id="longDistancePhoneServiceAgree" type="checkbox">
             <span class="tds-radio-btn"></span>
-            <div class="label-text">I agree to have TDS as my long distance (in-state, state-to-state, and international) service provider</div>
+            <span class="label-text">I agree to have TDS as my long distance (in-state, state-to-state, and international) service provider</span>
           </label>
           <span class="help-block" id="longDistancePhoneServiceAgree-error" style="display: none;"></span>
 
@@ -493,7 +497,7 @@ categories: CWS
           <label for="certifyReadAuthorizationAgreement">
             <input name="certifyReadAuthorizationAgreement" id="certifyReadAuthorizationAgreement" type="checkbox">
             <span class="tds-radio-btn"></span>
-            <div class="label-text">I certify that I have read and understand the <a href="#" target="_blank">authorization agreement</a> and that I agree to the terms and conditions contained therein.</div>
+            <span class="label-text">I certify that I have read and understand the <a href="#" target="_blank">authorization agreement</a> and that I agree to the terms and conditions contained therein.</span>
           </label>
           <span class="help-block" id="certifyReadAuthorizationAgreement-error" style="display: none;"></span>
         </div>
@@ -506,14 +510,14 @@ categories: CWS
               <label for="verificationType-birthDate">
                 <input type="radio" name="verificationType" id="verificationType-birthDate" value="birthDate">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">Date of Birth</div>
+                <span class="label-text">Date of Birth</span>
               </label>
             </div>
             <div class="radio">
               <label for="verificationType-mothersMaidenName">
                 <input type="radio" name="verificationType" id="verificationType-mothersMaidenName" value="mothersMaidenName">
                 <span class="tds-radio-btn"></span>
-                <div class="label-text">Mother's Maiden Name</div>
+                <span class="label-text">Mother's Maiden Name</span>
               </label>
             </div>
               <span class="help-block" id="verificationType-error" style="display: none;"></span>
