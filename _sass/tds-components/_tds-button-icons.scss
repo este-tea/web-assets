@@ -101,7 +101,6 @@ button.gallery-btn.btn-next:after {
 }
 // trash icon
 .tds-icon-trash {
-  //@extend .fa-trash;
   &:before {
   content: "\f1f8";
   }

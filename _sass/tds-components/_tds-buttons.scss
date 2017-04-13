@@ -1,19 +1,70 @@
 /* tds-buttons
 ==========================================*/
 
-// Main TDS button
-// ------------------
-.gallery-btn {
+@mixin tds-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    border-radius: 0 ;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin gallery-btn {
   //display: table; // this gives the button size value without having to float.
   margin-top: 20px;
-  padding: 12px 16px !important;
+  padding: 12px 16px ;
   @include button-variant($tds-white, $tds-dk-blue, transparent);
   font-family: $tds-font-family;
   text-align: left;
   border: none;
   box-shadow: $box-shadow;
-  a {
-    color: #fff !important;
+  a:link, a:visited,&:hover,&:active, &:focus {
+    color: #fff ;
+    text-decoration: none;
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: $tds-lt-blue-100;
+    cursor: pointer;
+    box-shadow: none;
+  }
+}
+
+// Main TDS button
+// ------------------
+.gallery-btn {
+  //display: table; // this gives the button size value without having to float.
+  margin-top: 20px;
+  padding: 12px 16px ;
+  @include button-variant($tds-white, $tds-dk-blue, transparent);
+  font-family: $tds-font-family;
+  text-align: left;
+  border: none;
+  box-shadow: $box-shadow;
+  a:link, a:visited,&:hover,&:active,&:focus {
+    color: #fff!important ;
     text-decoration: none;
   }
   &:hover, &:focus {
@@ -54,7 +105,7 @@ a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
 }
 // spacing for buttons with left icon
 .fa.pull-left {
-  margin-right: 14px !important;
+  margin-right: 14px ;
   line-height: 1.5;
 }
 
@@ -63,7 +114,8 @@ a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
 // =============================================================================
 
 .gallery-grid .gallery-btn {
-  @extend .btn-block;
+  display: block;
+  width: 100%;
 }
 // repositioned arrows for block buttons
 .gallery-grid .gallery-btn,
@@ -104,18 +156,22 @@ a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
 .gallery-btn.btn-green,
 .tds-btn-green,
 button#addtocart {
-  @extend .btn-success;
+  border-color: #6b9c22;
+  background-color: #6b9c22;
+  &:hover {
+    background: $tds-dkr-green;
+  }
 }
 
 // ===== Gray button ===========================================================
 // gray button, blue text
 // =============================================================================
 .tds-btn-gray {
-  color: $tds-lt-blue !important;
+  color: $tds-lt-blue ;
   background: $tds-ltr-gray;
   &:hover {
-    background: $tds-lt-blue !important;
-    color: $tds-white !important;
+    background: $tds-lt-blue ;
+    color: $tds-white ;
   }
 }
 // gray close button
@@ -128,10 +184,11 @@ td .line-item-actions .tds-btn-gray {
 // orange button, white text
 // =============================================================================
 .tds-btn-orange {
-  color: $tds-white !important;
+  color: $tds-white ;
   background: $tds-orange-80;
-  &:hover {
-    background: $tds-orange-100 !important;
+  &:hover, &:focus  {
+    background: $tds-orange-100 ;
+    color: $tds-white;
   }
 }
 
@@ -139,11 +196,20 @@ td .line-item-actions .tds-btn-gray {
 // light blue button, white text
 // =============================================================================
 .tds-btn-lt-blue {
-  color: $tds-white !important;
+  color: $tds-white ;
   background: $tds-lt-blue-100;
   &:hover {
-    background: darken($tds-lt-blue, 5%) !important;
-    color: $tds-white !important;
+    background: darken($tds-lt-blue, 5%) ;
+    color: $tds-white;
+  }
+}
+
+@mixin tds-btn-lt-blue {
+  color: $tds-white;
+  background: $tds-lt-blue-100;
+  &:hover {
+    background: darken($tds-lt-blue, 5%) ;
+    color: $tds-white;
   }
 }
 
@@ -151,10 +217,9 @@ td .line-item-actions .tds-btn-gray {
 // when it's a gallery button but by design shows as text
 .gallery-btn-link,
 .gallery-btn.gallery-btn-link {
-  @extend .btn;
-  @extend .btn-link;
+  @include btn;
   font-family: 'ITC Avant Garde Gothic W01';
-  color: $tds-green-100 !important;
+  color: $tds-green-100;
   &:hover {
     color: $tds-green-80;
   }
@@ -163,12 +228,12 @@ td .line-item-actions .tds-btn-gray {
 button.gallery-btn-link:hover,
 button.gallery-btn-link:focus {
     background-color: #7bb227;
-    color: white!important;
+    color: white;
     text-decoration: none;
 }
 // arrow icon (default setting)
 .gallery-btn-link:after {
-  @extend .fa;
+  @include tds-icon;
   content: "\f054";
   margin-top: 3px;
   margin-left: 14px;
@@ -201,7 +266,7 @@ button.gallery-btn-link:focus {
 }
 // removes extra space from default gallery-btn
 .btn-right {
-  padding-right: 0px !important;
+  padding-right: 0px ;
 }
 .btn-left,
 .btn-back {
@@ -222,7 +287,12 @@ button.gallery-btn-link:focus {
 .back-arrow:before {
   content: "\f053";
   margin-right: 15px;
-  @extend .fa;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .back-arrow:after {
   display: none;
@@ -233,13 +303,13 @@ button.gallery-btn-link:focus {
 .btn-left {
   // default blue
   a {
-    @extend .btn;
-    @extend .btn-primary;
-    color: #fff !important;
+    @include btn;
+    border-color: #19388a;
+    color: #fff;
   }
   // green success
   .btn-green {
-    @extend .btn-success;
+    border-color: #6b9c22;
   }
 }
 
@@ -253,27 +323,26 @@ a#readMoreLink {
     cursor: pointer;
 }
 a#readMoreLink.read-less {
-    background: url(/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg) right 5px no-repeat!important;
-    background-size: 7px 10px!important;
+    background: url(/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg) right 5px no-repeat;
+    background-size: 7px 10px;
 }
 
 // other places
 .read-more {
   &.plus + .read-more-text:before,
   &.minus + .read-more-text:before {
-    @extend .fa;
+    @include tds-icon;
     position: relative;
     top: 3px;
     float: right;
     margin-left: 5px;
   }
   &.plus + .read-more-text:before {
-    @extend .fa-plus;
+    content: "\f067";
   }
   &.minus + .read-more-text:before {
-    @extend .fa-minus;
+    content: "\f068";
   }
-}
 .read-more-text {
   text-transform: capitalize;
 }
@@ -281,12 +350,11 @@ a#readMoreLink.read-less {
 // Search button
 input + span.input-group-btn .gallery-btn {
   margin-top: 0px;
-  .tds-icon {
-    @extend .fa;
-  }
+  @include tds-icon;
   .tds-icon-search {
-    @extend .fa-search;
-  }
+    &:before {
+      content: "\f002";
+    }
   &:after {
     display: none;
   }
@@ -315,14 +383,14 @@ input + span.input-group-btn .gallery-btn {
 // anywhere else.
 // **NOTE** || actual light blue button set up is in `.tds-btn-lt-blue` above.
 .lt-blue-button {
-  @extend .gallery-btn;
-  @extend .tds-btn-lt-blue;
+  @include gallery-btn;
+  @include tds-btn-lt-blue;
   float: left;
   padding: 16px;
   white-space: nowrap;
   // building icon left
   .layout-icon {
-    @extend .pull-left;
+    float: left !important;
   }
   // button text center
   .layout-text {
@@ -331,7 +399,7 @@ input + span.input-group-btn .gallery-btn {
   }
   // arrow icon right
   .layout-arrow {
-    @extend .pull-right;
+    float: right !important;
   }
 }
 
