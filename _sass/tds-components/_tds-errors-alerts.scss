@@ -1,11 +1,102 @@
 /* tds-errors-alerts
 ==========================================*/
 
+@mixin tds-alert {
+  margin-bottom: 20px;
+  display: block;
+  //float: left;
+  text-align: left;
+  padding: 12px 16px;
+  width: 100%;
+  line-height: 24px;
+  font-family: $tds-font-family;
+  font-size: 14px;
+  font-weight: 400 !important;
+  color: #000;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  p {
+    font-family: $tds-font-family;
+  }
+  p.h4 {
+      color: #000;
+      margin-top: 2px;
+  }
+  // When alert text isn't put in a p tag. This wraps long text if links are used
+  #ticketEntryNumberErrorBlock span {
+    word-wrap: break-word;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  #enteredAddress a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  // Because address messages were given their own div's :-/ need to give
+  // them values or else the browser default is to stack them
+  #enteredAddress,
+  #captilize,
+  #caps {
+    display: inline;
+  }
+  // cuz I have to ~.tom
+  #captilize {
+    text-transform: capitalize;
+  }
+  #caps {
+    text-transform: uppercase;
+  }
+  .tds-error-msg-description,
+  .tds-alert-msg-description {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+  }
+  .tds-error-msg-description .fa,
+  .tds-error-msg-description span {
+    float: left;
+    display: table;
+    margin-right: 15px;
+  }
+  // widths to contents
+  > .fa {
+    width: 25px;
+  }
+  .tds-error-msg-description {
+    //width: 90%;
+  }
+  // error items
+  ul {
+    display: block;
+    margin: 10px;
+    li {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      &:before {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@mixin alert-danger {
+background-color: #ffecec;
+border-color: #ffd3da;
+color: #a94442;
+}
+///Mixin End///
+
 // Main message set up.
 // types are determined by sub classes below
 .tds-error-msg,
 .tds-alert {
-  @extend .alert;
+  margin-bottom: 20px;
   display: block;
   //float: left;
   text-align: left;
@@ -102,8 +193,15 @@
 }
 // Product callout messages design
 .prod-callout {
-  @extend .tds-error-msg;
-  @extend .tds-error-info;
+  //@extend .tds-error-msg;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  //@extend .tds-error-info;
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: #353535;
   @include make-sm-column-offset(1);
   @include make-xs-column-offset(0);
   @include make-sm-column(7);
@@ -118,7 +216,7 @@
 // Red = critical
 .tds-error-critical,
 .tds-alert-critical {
-  @extend .alert-danger;
+  @include alert-danger;
   border-left: 3px solid $tds-red ;
   &.tds-top-border {
     border-top: 3px solid $tds-red ;
@@ -131,13 +229,15 @@
 }
 .tds-error-critical-input,
 .tds-alert-critical-input {
-  @extend .alert-danger;
+  @include alert-danger;
   border: 2px solid $tds-red ;
 }
 // Yellow = warning
 .tds-error-warning,
 .tds-alert-warning {
-  @extend .alert-warning;
+  background-color: #FFF8D8;
+  border-color: #ffe9bf;
+  color: #8a6d3b;
   border-left: 3px solid $tds-warning-yellow;
   &.tds-top-border {
     border-top: 3px solid $tds-warning-yellow;
@@ -152,7 +252,9 @@
 // Green = success
 .tds-error-success,
 .tds-alert-success {
-  @extend .alert-success;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
   //color: #353535 !important;
   border-left: 3px solid $tds-green ;
   &.tds-top-border {
@@ -168,7 +270,9 @@
 // Blue = info
 .tds-error-info,
 .tds-alert-info {
-  @extend .alert-info;
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: #353535;
 }
 
 // TDS Lt Blue info or loading
@@ -188,14 +292,30 @@
 
 // bundle error extender
 .bundle-error {
-  @extend .tds-error-msg;
-  @extend .tds-error-critical;
-  border: 0px solid transparent;
+  //@extend .tds-error-msg;
+  @include tds-alert;
+  //@extend .tds-error-critical;
+  @include alert-danger;
+  border-left: 3px solid $tds-red ;
+  &.tds-top-border {
+    border-top: 3px solid $tds-red ;
+    border-left: 0px ;
+  }
+  .fa {
+    font-size: 21px;
+    color: $tds-red;
+  }
+   border: 0px solid transparent;
   &:before {
-    @extend .fa;
+    //@extend .fa;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     content: "\f06a";
     margin-right: 20px;
-    font: normal normal normal 14px/1 FontAwesome;
     color: $tds-red;
   }
 }
@@ -205,10 +325,14 @@
   padding: 6px 0;
   color: $tds-red;
   &:before {
-    @extend .fa;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     content: "\f06a";
     margin-right: 20px;
-    font: normal normal normal 14px/1 FontAwesome;
     color: $tds-red;
   }
 }
