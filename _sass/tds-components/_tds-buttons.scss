@@ -40,7 +40,7 @@
   text-align: left;
   border: none;
   box-shadow: $box-shadow;
-  a:link, a:visited,&:hover,&:active, &:focus {
+  a:link, a:visited, &:hover, &:active, &:focus {
     color: #fff ;
     text-decoration: none;
   }
@@ -63,7 +63,7 @@
   text-align: left;
   border: none;
   box-shadow: $box-shadow;
-  a:link, a:visited,&:hover,&:active,&:focus {
+  a:link, a:visited, &:hover, &:active, &:focus {
     color: #fff!important ;
     text-decoration: none;
   }
@@ -167,7 +167,7 @@ button#addtocart {
 // gray button, blue text
 // =============================================================================
 .tds-btn-gray {
-  color: $tds-lt-blue ;
+  color: $tds-lt-blue;
   background: $tds-ltr-gray;
   &:hover {
     background: $tds-lt-blue ;
@@ -268,6 +268,7 @@ button.gallery-btn-link:focus {
 .btn-right {
   padding-right: 0px ;
 }
+
 .btn-left,
 .btn-back {
   float: left;
@@ -345,6 +346,7 @@ a#readMoreLink.read-less {
   }
 .read-more-text {
   text-transform: capitalize;
+  }
 }
 
 // Search button
@@ -357,6 +359,7 @@ input + span.input-group-btn .gallery-btn {
     }
   &:after {
     display: none;
+    }
   }
 }
 
@@ -443,7 +446,7 @@ input + span.input-group-btn .gallery-btn {
   .gallery-btn {
     float: left;
     display: inline;
-    margin-top: 0px
+    margin-top: 0px;
   }
 }
 
@@ -485,4 +488,4 @@ remove extra spacing when gallery btn within navbutton
 
 .btn-primary, .btn-right a, .btn-left a {
     border-color: #19388a;
-}
+  }
