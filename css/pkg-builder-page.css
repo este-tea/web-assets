@@ -401,7 +401,7 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers > li {
 .subtotal-column-content {
   padding: 0 8px;
   margin: 0 auto;
-  float: right;
+  /*float: right;*/
 }
 
 .subtotal-items {
@@ -446,7 +446,7 @@ table.table.pkg-subtotal-table {
 
 @media (max-width: 960px) {
     .pkg-subtotal-content .subtotal-header-text {
-        text-align: left;
+        text-align: center;
     }
     .sel-summary.col-sm-12.col-md-3 {
         text-align: center;
@@ -687,9 +687,238 @@ table.table.pkg-subtotal-table {
 }
 
 .prod-listitem-content p {
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .pkg-prod-list-options .tds-alert.tds-alert-critical {
   margin-top: 14px;
+}
+.price-text > .term {
+    font-size: 70%;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.dual-listoption-wrap .pkg-product-card {
+    border: none;
+    margin-left: 45px;
+}
+
+.dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+    margin-left: -45px;
+}
+
+.dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap .form-sub-group {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.pkg-prod-list-options > .pkg-product-card > .tds-divider-line.bgcolor-lt-blue {
+    height: 0;
+}
+
+.pkg-prod-list-options > .pkg-product-card > .tds-divider-line {
+    height: 0;
+}
+
+.pkg-product-card {
+    padding: 24px;
+}
+
+.pkg-product-card .pkg-builder-label {
+    padding: 0;
+}
+
+.product-content {
+    padding: 0;
+}
+
+.pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+    margin-left: -72px;
+}
+
+.pkg-prod-list-options > .pkg-product-card > .pkg-builder-addon-wrap {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.dual-listoption-wrap .pkg-product-card {
+    /* border: none; */
+    margin-left: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap {
+    margin: 0;
+    margin-left: 45px;
+    margin-top: 24px;
+}
+
+.dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+    margin-top: -1px;
+}
+
+.dual-listoption-wrap .pkg-product-card .pkg-builder-addon-wrap {
+    padding-left: 44px;
+    margin-top:20px;
+    padding-bottom: 0;
+        padding-right: 0;
+}
+
+.dual-listoption-wrap > .pkg-product-card > .pkg-builder-addon-wrap > .tds-divider-line {
+    background: url("../content/dam/tdstelecom/images/ui/dk-gray-dotted-line.svg");
+}
+.dual-listoption-wrap > .pkg-product-card > .tds-divider-line {
+    height: 1px;
+    background: #0c8fd0;
+}
+.dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap .form-sub-group {
+    margin-left: 2px;
+    margin-top: 16px;
+}
+
+.container .tds-alert.tds-alert-critical {
+    background-position: 16px 16px;
+}
+.pkg-builder-addon-wrap .prod-subitem-heading {
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    font-size: 16px;
+    color: #353535;
+    font-weight: 400;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.product-content {
+    padding-top: 8px;
+}
+.pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+    margin-bottom: 0;
+}
+.product-subitem .form-group {
+    margin-bottom: 0px;
+}
+
+.prod-description {
+    margin-bottom: 0;
+}
+.product-price {
+    margin-top: 12px;
+}
+.prod-subitem-content + .product-price {
+    margin-left: 44px;
+}
+@media (min-width: 990px) {
+    .pkg-product-card .pkg-builder-listoption-wrap {
+        position: relative;
+    }
+    .pkg-builder-listoption-wrap .pkg-builder-label,
+    .pkg-builder-listoption-wrap .product-content {
+        max-width: 72%;
+        display:block;
+    }
+    .pkg-builder-listoption-wrap .product-price {
+        position: absolute;
+        text-align: right;
+        float: right;
+        top: 0;
+        right: 0;
+        max-width: 30%;
+    }
+    .pkg-builder-addon-wrap .product-subitem {
+        position: relative;
+    }
+    .product-subitem .prod-subitem-heading,
+    .product-subitem .form-group {
+        max-width: 72%;
+        display:block;
+    }
+    .product-subitem .product-price {
+        position: absolute;
+        text-align: right;
+        float: right;
+        top: 0;
+        right: 0;
+        max-width: 30%;
+    }
+    .product-price {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 751px) and (min-width:640px) {
+  .pkg-product-card .pkg-builder-listoption-wrap {
+      position: relative;
+  }
+  .pkg-builder-listoption-wrap .pkg-builder-label,
+  .pkg-builder-listoption-wrap .product-content {
+      max-width: 72%;
+      display:block;
+  }
+  .pkg-builder-listoption-wrap .product-price {
+      position: absolute;
+      text-align: right;
+      float: right;
+      top: 0;
+      right: 0;
+      max-width: 30%;
+  }
+  .pkg-builder-addon-wrap .product-subitem {
+      position: relative;
+  }
+  .product-subitem .prod-subitem-heading,
+  .product-subitem .form-group {
+      max-width: 72%;
+      display:block;
+  }
+  .product-subitem .product-price {
+      position: absolute;
+      text-align: right;
+      float: right;
+      top: 0;
+      right: 0;
+      max-width: 30%;
+  }
+  .product-price {
+      margin-top: 0px;
+  }
+
+}
+@media (max-width:751px){
+  .pkg-product-card {
+      padding: 16px;
+  }
+  .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+      margin-left: 0px;
+      margin-top: -1px;
+  }
+  .pkg-builder-listoption-wrap > .product-content,
+  .pkg-builder-listoption-wrap > .product-price {
+    padding-left: 40px;
+  }
+  .dual-listoption-wrap .pkg-builder-listoption-wrap > .product-content,
+  .dual-listoption-wrap .pkg-builder-listoption-wrap > .product-price {
+      padding-left: 0px;
+  }
+  .pkg-prod-list-options > .pkg-product-card > .pkg-builder-addon-wrap {
+      margin-left: 40px;
+  }
+}
+@media (max-width: 583px) {
+  .pkg-builder-form .h4 {
+      line-height: 25px;
+  }
+}
+
+@media (max-width:400px){
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap {
+        margin-top: 16px;
+    }
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+        margin-left: -40px;
+    }
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-addon-wrap {
+        margin-top: 16px;
+        padding-left: 0px;
+    }
+    .pkg-prod-list-options > .pkg-product-card > .pkg-builder-addon-wrap {
+        margin-left: 0px;
+    }
 }
