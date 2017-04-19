@@ -28,3 +28,9 @@ relative_permalinks:
 
 sass:
     style: expanded
+
+# no longer watch for Sass file changes or compile them
+exclude: [‘css’, ‘_scss’]
+
+# don't erase the CSS directory in the _site output folder
+keep_files: ['_tds-local-dev/css']
