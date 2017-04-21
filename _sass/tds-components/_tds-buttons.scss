@@ -1,57 +1,6 @@
 /* tds-buttons
 ==========================================*/
 
-@mixin tds-icon {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@mixin btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857;
-    border-radius: 0 ;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-@mixin gallery-btn {
-  //display: table; // this gives the button size value without having to float.
-  margin-top: 20px;
-  padding: 12px 16px ;
-  @include button-variant($tds-white, $tds-dk-blue, transparent);
-  font-family: $tds-font-family;
-  text-align: left;
-  border: none;
-  box-shadow: $box-shadow;
-  a:link, a:visited, &:hover, &:active, &:focus {
-    color: #fff ;
-    text-decoration: none;
-  }
-  &:hover, &:focus {
-    text-decoration: none;
-    background-color: $tds-lt-blue-100;
-    cursor: pointer;
-    box-shadow: none;
-  }
-}
-
 // Main TDS button
 // ------------------
 .gallery-btn {

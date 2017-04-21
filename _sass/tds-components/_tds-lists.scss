@@ -229,7 +229,22 @@ div.myprodsservices > h3 {
 
 // Available tv listings box
 .tds-tv-where {
-    @extend .tds-card;
+    //@extend .tds-card;
+    button.dropdown-toggle .caret {
+      position: relative;
+      right: -135px;
+    }
+    .open > {
+      .dropdown-menu {
+        display: block;
+        padding-left: 0px;
+        width: 100%;
+      }
+      button.dropdown-toggle {
+        color: #fff;
+        background-color: $tds-lt-blue;
+      }
+    }
 }
 .tds-tv-cities > div {
     float: left;

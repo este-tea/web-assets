@@ -5,6 +5,8 @@
 
 /* TDS Checkboxes */
 
+
+
 // Makes it square
 .prod-items input[type="checkbox"] + label > .check-radio-btn {
   border-radius: 0px;
@@ -67,7 +69,14 @@
 // ==============================
 // extend the prod-items settings for checkboxes
 .tds-newsroom-search {
-  @extend .prod-items;
+  //@extend .prod-items;
+  position: relative;
+  min-height: 1px;
+  float: right!important;
+  @media(min-width:$screen-sm) {
+    float: left;
+    width: 66.66666667%;
+  }
   padding: 0px !important;
   width: 100% !important;
   .checkbox-inline {
@@ -96,14 +105,30 @@
   .tds-card .tds-form-group.tds-form-group-search-filters {
     display: inline;
     .checkbox-inline {
-      @extend  .col-sm-4;
+      //@extend  .col-sm-4;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @media (min-width: 751px)  {
+        width: 33.33333%;
+        float: left;
+      }
     }
   }
   // when in a form make ful width
   .tds-card.tds-card-gray .tds-form-group.tds-form-group-search-filters {
     display: block;
     .checkbox-inline {
-      @extend  .col-sm-12;
+      //@extend  .col-sm-12;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      @media (min-width: 751px) {
+        float: left;
+      }
     }
     // when a nested select or form group is inside a parent form group
     .form-group {

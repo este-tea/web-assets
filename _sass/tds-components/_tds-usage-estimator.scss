@@ -7,10 +7,20 @@ h2.usage-section-desc {
 }
 //estimated monthly usage at bottom of page
 .estimated-usage-desc {
-  @extend .h2;
-  margin: 0px 0px 20px 0px;
+  //@extend .h2;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 28px;
   color: $tds-dkr-gray;
+  @media (max-width: 584px) {
+    font-size: 24px;
+  }
 }
+
 .estimated-usage-desc span:first-child {
     font-size: .875em;
     font-weight:400;
@@ -99,13 +109,15 @@ h2.usage-section-desc {
   }
 }
 .tds-usage-tool.btn span {
-  @extend .fa;
+  @include tds-icon;
   color: #fff;
   font-size: 1em;
   line-height: 1.75em;
 }
 .tds-usage-tool.btn.collapsed span {
-  @extend .fa-plus;
+  &:before {
+  content: "\f055";
+  }
 }
 
 button.btn.tds-usage-tool.tds-card-btn,

@@ -59,17 +59,19 @@
   // -------
 
   a.gallery-btn {
-    @extend .gallery-btn;
+    @include gallery-btn;
   }
   // Collapsed
   a.gallery-btn.collapsed {
-    @extend .tds-btn-gray;
+    color: $tds-lt-blue !important;
+    background: $tds-ltr-gray;
     &:focus {
       color: $tds-lt-blue !important;
       background: $tds-ltr-gray;
     }
     &:hover {
       color: #fff !important;
+      background: #0C8FD0;
     }
   }
   a.gallery-btn:hover,
@@ -79,7 +81,10 @@
   }
   // +/- icons
   .btn-block .fa {
-    @extend .fa-minus;
+    //@extend .fa-minus;
+    &:before {
+      content: "\f068";
+    }
     padding: 2px 0px 1px 3px;
     width: 17px;
     color: $tds-white;
@@ -88,7 +93,10 @@
     border-radius: 10px;
   }
   .btn-block.collapsed .fa {
-    @extend .fa-plus;
+    //@extend .fa-plus;
+    &:before {
+    content: "\f067";
+    }
   }
   // Expand menu styles
   .panel > .panel-collapse > .list-group .list-group-item {

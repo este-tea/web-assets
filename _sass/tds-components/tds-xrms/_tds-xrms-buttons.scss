@@ -180,7 +180,7 @@ td .line-item-actions .tds-btn-gray {
 }
 // arrow icon (default setting)
 .tds-btn-link:after {
-  @extend .fa;
+  @include tds-icon;
   content: "\f054";
   margin-top: 3px;
   margin-left: 14px;

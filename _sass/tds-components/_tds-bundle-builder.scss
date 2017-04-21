@@ -408,9 +408,7 @@ img.down-caret-green-lg {
   padding-right: 15px;
   padding-left: 15px;
   float: right!important;
-}
-@media(min-width:$screen-sm) {
-  .prod-items {
+  @media(min-width:$screen-sm) {
     float: left;
     width: 66.66666667%;
   }

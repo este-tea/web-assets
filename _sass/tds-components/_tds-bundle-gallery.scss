@@ -29,7 +29,11 @@
         h3.card-sub-title {
             line-height: 34px;
             p {
-                @extend .h3;
+                font-family: inherit;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 1.1;
+                color: inherit;
                 margin: 0;
                 line-height: 34px;
             }
