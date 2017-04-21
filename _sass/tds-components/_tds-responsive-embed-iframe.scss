@@ -1,5 +1,6 @@
 .embed-responsive.tds-embed-responsive-iframe {
-  @extend .embed-responsive-4by3;
+  //@extend .embed-responsive-4by3;
+  padding-bottom: 75%;
 }
 // for chat window modal
 .embed-responsive.tds-embed-responsive-iframe-chat {

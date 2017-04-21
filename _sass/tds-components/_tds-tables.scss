@@ -6,7 +6,11 @@ table {
 }
 .text.parbase.section {
   table {
-    @extend .table;
+    //@extend .table;
+    border-collapse: collapse !important;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
     border-color: transparent;
   }
   // table headers
@@ -20,7 +24,11 @@ table {
 // =============================================================================
 
 table.careers-table {
-  @extend .table;
+  //@extend .table;
+  border-collapse: collapse !important;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
   border-color: transparent;
 }
 // table headers

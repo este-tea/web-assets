@@ -4,7 +4,7 @@
 // types are determined by sub classes below
 .tds-error-msg,
 .tds-alert {
-  @extend .alert;
+  @include tds-alert;
   display: block;
   padding: 16px 50px 16px 16px;
   width: 100%;
@@ -68,7 +68,7 @@
 // Red = critical
 .tds-error-critical,
 .tds-alert-critical {
-  @extend .alert-danger;
+  @include alert-danger;
   border-left: 3px solid $tds-red !important;
   &.tds-top-border {
     border-top: 3px solid $tds-red !important;
@@ -81,13 +81,16 @@
 }
 .tds-error-critical-input,
 .tds-alert-critical-input {
-  @extend .alert-danger;
+  @include alert-danger;
   border: 2px solid $tds-red !important;
 }
 // Yellow = warning
 .tds-error-warning,
 .tds-alert-warning {
-  @extend .alert-warning;
+  //@extend .alert-warning;
+  background-color: #FFF8D8;
+  border-color: #ffe9bf;
+  color: #8a6d3b;
   border-left: 3px solid $tds-warning-yellow !important;
   &.tds-top-border {
     border-top: 3px solid $tds-warning-yellow !important;
@@ -102,7 +105,9 @@
 // Green = success
 .tds-error-success,
 .tds-alert-success {
-  @extend .alert-success;
+  //@extend .alert-success;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
   color: #353535 !important;
   border-left: 3px solid $tds-green !important;
   &.tds-top-border {
@@ -118,7 +123,10 @@
 // Blue = info
 .tds-error-info,
 .tds-alert-info {
-  @extend .alert-info;
+  //@extend .alert-info;
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: #353535;
 }
 
 // TDS Lt Blue info or loading

@@ -5,9 +5,12 @@
 .parbase.section.breadcrumb,
 .parbase.bread_crumb.breadcrumb {
   padding-left: 15px;
-  @extend .visible-sm;
-  @extend .visible-md;
-  @extend .visible-lg;
+  // I think this extend three can be deteled.
+  // It looks like all three are adding display: none !importent and
+  // is getting display: block !importent later in the stack - Chris Holm
+  //@extend .visible-sm; 
+  //@extend .visible-md;
+  //@extend .visible-lg;
 }
 
 .breadcrumb {
