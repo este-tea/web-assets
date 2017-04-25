@@ -37,7 +37,6 @@
     margin-left: 0px;
     min-height: 0;
     margin-bottom: 0;
-    margin-top: 20px;
 }
 .pkg-builder-container .pkg-builder-nav-tabs > li > a,
 .pkg-builder-container .pkg-builder-nav-tabs > li > a:link,
@@ -224,45 +223,63 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
 }
 // typography
 // ----------------
-.prod-listitem-content h3 {
+.prod-listitem-content {
+  h3 {
     margin-top: 0;
-}
-// use for (optional)
-.prod-listitem-content h3 span {
-    font-size: 75%;
-    color: #555;
-}
-.pkg-product-card .prod-name {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 21px;
-}
-.pkg-product-card .pkg-builder-listoption-wrap .product-content p:last-child {
-    margin-bottom: 0;
-}
-.pkg-product-card .price-text.price-base {
-    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-    font-size: 21px;
-    color: #578228;
-    font-weight: 500;
-    line-height: 1.25em;
-}
-.product-subitem .prod-subitem-heading {
-    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-    font-size: 16px;
-    color: #353535;
-    font-weight: 400;
-    margin-top: 20px;
-    text-transform: uppercase;
-}
-.product-subitem .prod-subitem-name {
-    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-    color: #19388a;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+    span { // use for (optional)
+        font-size: 75%;
+        color: #555;
+    }
+  }
+  p {
+      margin-bottom: 0;
+  }
 }
 
+.pkg-product-card {
+  .prod-name {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 21px;
+  }
+  .product-content {
+    p:last-child {
+        margin-bottom: 0;
+    }
+  }
+  .product-price {
+    .price-text.price-base {
+        font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+        font-size: 21px;
+        color: #578228;
+        font-weight: 500;
+        line-height: 1.25em;
+    }
+    .price-text > .term {
+        font-size: 70%;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+  }
+}
+
+.product-subitem {
+  .prod-subitem-heading {
+      font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+      font-size: 16px;
+      color: #353535;
+      font-weight: 400;
+      margin-top: 20px;
+      text-transform: uppercase;
+  }
+  .prod-subitem-name {
+      font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+      color: #19388a;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+  }
+}
 
 // Section/Tab Content
 // ----------------
@@ -504,148 +521,4 @@ table.table.pkg-subtotal-table {
     .pkg-builder-form .h4 {
         font-size: 18px;
     }
-}
-/* Page Layout */
-// ----------------
-.pkg-builder-page-content {
-  .pkg-products-wrap {
-      border-top: solid 3px #19388a;
-      padding: 0;
-  }
-} // END pkg-builder-page-content
-.pkg-builder-form.page-layout {
-  h2 {
-      color: #19388a;
-      margin-bottom: 8px;
-      font-size: 20px;
-      text-align: center;
-      font-weight: 500;
-  }
-}
-
-.pkg-products-wrap {
-    border-top: solid 3px #19388a;
-}
-
-.pkg-subtotal-wrap {
-    padding-right: 0;
-    padding-left: 24px;
-}
-
-.pkg-subtotal-wrap .pkg-builder-subtotal {
-    margin-top: 0;
-    padding: 0;
-}
-
-.pkg-subtotal-wrap .pkg-builder-subtotal .tds-divider-line {
-    height: 3px;
-    background-color: #1c79b1;
-}
-.pkg-builder-page-content .prod-listitem-wrap .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
-    margin-left: -4px;
-    margin-top: -2px;
-}
-
-.pkg-builder-page-content .prod-listitem-wrap {
-    border-bottom: solid 2px red;
-}
-
-.pkg-builder-page-content .col-sm-8.pkg-products-wrap {
-    padding: 0;
-}
-
-#pkg-summary-sidebar h2 {
-    color: #19388a;
-    margin-bottom: 8px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 500;
-}
-.pkg-builder-page-content .category-heading h3 {
-    color: #19388a;
-    font-weight: 500;
-    margin-left: 50px;
-    line-height: 40px;
-    margin-top: 8px;
-    margin-bottom: 0;
-}
-
-
-.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li:before,
-.pkg-builder-page-content .category-heading h3:before {
-    counter-increment: section;
-    content: counter(section);
-    color: white;
-    font-size: 24px;
-    font-weight: 500;
-    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-    background-color: #7a86b7;
-    width: 40px;
-    height: 40px;
-    display: block;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.pkg-builder-page-content .category-heading h3:before {
-    margin-left: -50px;
-}
-.pkg-builder-page-content .prod-listitem-content > h4 {
-    margin-bottom: 4px;
-    margin-top: 0;
-}
-.pkg-builder-page-content .prod-listitem-content > h4 > a {
-    font-size: 20px;
-    text-decoration: none;
-    display:block;
-    padding-top: 8px;
-    padding-bottom: 4px;
-    color: #0c8fd0;
-}
-.pkg-builder-page-content .prod-listitem-content > h4 > a:hover {
-    color: #19388a;
-}
-
-.pkg-builder-page-content .prod-listitem-content > h4 > a:after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    display: block;
-    float: right;
-    background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-white.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    border-radius: 50%;
-    background-color: #0c8fd0;
-    margin-top: -4px;
-}
-
-.pkg-builder-page-content .prod-listitem-content > h4 > a.collapsed:after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    display: block;
-    float: right;
-    background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    border-radius: 50%;
-    background-color: #0c8fd0;
-    margin-top: -4px;
-    text-decoration:none;
-}
-.pkg-builder-page-content .prod-listitem-content > h4 > a:hover:after {
-    background-color:#19388a;
-}
-
-.prod-listitem-content p {
-    margin-bottom: 0;
-}
-
-.pkg-prod-list-options .tds-alert.tds-alert-critical {
-    margin-top: 14px;
 }
