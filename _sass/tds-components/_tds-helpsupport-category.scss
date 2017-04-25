@@ -19,7 +19,12 @@
 
 // hr design for page division sections
 .helpsupportcategory {
-  @extend .col-xs-12;
+  //@extend .col-xs-12;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
 }
 
 .helpsupportcategory .tds-menu-group ul li {

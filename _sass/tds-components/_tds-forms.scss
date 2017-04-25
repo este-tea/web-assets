@@ -91,8 +91,11 @@ p.form-control-static {
     margin-top: 10px;
     color: $tds-red;
     &:before {
-      @extend .fa;
-      @extend .fa-exclamation-circle;
+      //@extend .fa;
+      //Note: normaly the .fa class (aka tds-icon) is not in the before, only the icon is in the before, not sure why Tom did this - Chris H.
+      @include tds-icon;
+      //@extend .fa-exclamation-circle;
+      content: "\f06a";
       margin-right: 5px;
     }
   }
@@ -104,8 +107,11 @@ p.form-control-static {
   margin-top: 10px;
   color: $tds-red;
   &:before {
-    @extend .fa;
-    @extend .fa-exclamation-circle;
+    //@extend .fa;
+    //Note: normaly the .fa class (aka tds-icon) is not in the before, only the icon is in the before, not sure why Tom did this - Chris H.
+    @include tds-icon;
+    //@extend .fa-exclamation-circle;
+    content: "\f06a";
     margin-right: 5px;
   }
 }
@@ -141,15 +147,30 @@ label input:focus ~ .tds-radio-btn {
 // =============================================================================
 form.elq-form {
   .form-design-field {
-    @extend .form-group;
+    margin-bottom: 20px;
     input,
     select,
     textarea {
-      @extend .form-control;
+      display: block;
+      width: 100%;
+      height: 34px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #555555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 0 !important;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     }
   }
   input.submit-button {
-    @extend .gallery-btn;
+    @include gallery-btn;
     text-align: center;
     font-weight: 600;
   }

@@ -19,8 +19,15 @@ $border-radius-base: 0px;
 
 // bootstrap panel changes
 .tds-panel {
-  @include panel;
-  @include panel-default;
+  //@extend .panel;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0 !important;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  //@extend .panel-default;
+  border-color: #ddd;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 0px;
@@ -70,6 +77,7 @@ $border-radius-base: 0px;
   }
   // keep visible
   > .col-sm-6.last {
+    //Note: Don't think these are needed - Chris H.
       //@extend .visible-xs;
       //@extend .visible-sm;
       //@extend .visible-md;

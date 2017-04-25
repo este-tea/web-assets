@@ -3,8 +3,22 @@
 // search info message
 // TODO || need to move search to own less file
 .multiPathSearch .resultText {
-  @extend .tds-error-msg;
-  @extend .tds-error-info;
+  //@extend .tds-error-msg;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+  width: 100%;
+  line-height: 24px;
+  font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+  font-size: 14px;
+  font-weight: 400 !important;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  //@extend .tds-error-info;
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: #353535;
 }
 // search links see above
 .multiPathSearch > a {
@@ -17,7 +31,20 @@
 // search results page layout
 // Maybe move this to layout section later.
 .multiPathSearch {
-  @extend .container;
+  //@extend .container;
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+  max-width: $screen-md;
+
   //links
   .col-sm-6 a {
     color: #333;
