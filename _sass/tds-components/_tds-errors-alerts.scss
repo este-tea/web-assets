@@ -143,9 +143,8 @@
 // Yellow = warning
 .tds-error-warning,
 .tds-alert-warning {
-  background-color: #FFF8D8;
-  border-color: #ffe9bf;
-  color: #8a6d3b;
+  background-color: $state-warning-bg;
+  color: black;
   border-left: 3px solid $tds-warning-yellow;
   &.tds-top-border {
     border-top: 3px solid $tds-warning-yellow;
@@ -161,9 +160,7 @@
 .tds-error-success,
 .tds-alert-success {
   background-color: #dff0d8;
-  border-color: #d6e9c6;
-  color: #3c763d;
-  //color: #353535 !important;
+  color: black;
   border-left: 3px solid $tds-green ;
   &.tds-top-border {
     border-top: 3px solid $tds-green ;
@@ -180,7 +177,7 @@
 .tds-alert-info {
   background-color: #E8EBF3;
   border-color: #d1dae7;
-  color: #353535;
+  color: black;
 }
 
 // TDS Lt Blue info or loading
