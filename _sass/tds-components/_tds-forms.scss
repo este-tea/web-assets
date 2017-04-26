@@ -171,6 +171,7 @@ form.elq-form {
   }
   input.submit-button {
     @include gallery-btn;
+    height: auto;
     text-align: center;
     font-weight: 600;
   }
