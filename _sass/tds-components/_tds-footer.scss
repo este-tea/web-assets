@@ -26,9 +26,16 @@
 .extended-footer {
   background: #555;
   padding: 0;
+  border-top: solid 4px #353535;
+  @media (max-width: 751px) {
+  border-top: 0;
+  }
   .container {
       padding: 0;
   }
+}
+.extended-footer .homepageFooter {
+  border-top: 0;
 }
 
 .footer-contact-wrap .container {
@@ -163,6 +170,19 @@ div#footer-login {
   right: 1em;
 }
 
+//IMT-112 Update styling for TDS home page
+
+.customLargeNavBar.parbase.navbar {
+  border-top: solid 2px $tds-lt-blue-80;
+  padding: 28px 0;
+  @media (max-width: 751px) {
+    padding: 0;
+  }
+}
+
+.customLargeNavBar.parbase.navbar #genericfooter--navbar {
+  padding: 0;
+}
 
 //IWP-3247 Component Update: Author Configurable Homepage Footer and Generic Footer for Resi
 #genericfooter--navbar {
