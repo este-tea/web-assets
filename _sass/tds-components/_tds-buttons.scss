@@ -282,6 +282,7 @@ a#readMoreLink.read-less {
   &.plus + .read-more-text:before,
   &.minus + .read-more-text:before {
     @include tds-icon;
+    font: normal normal normal 14px/1 FontAwesome;
     position: relative;
     top: 3px;
     float: right;
