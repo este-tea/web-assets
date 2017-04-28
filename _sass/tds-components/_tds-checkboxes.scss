@@ -70,6 +70,32 @@
 // extend the prod-items settings for checkboxes
 .tds-newsroom-search {
   //@extend .prod-items;
+    input[type="checkbox"] {
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+  }
+    input:checked + label .check-radio-btn,
+    input:checked + label .tds-radio-btn {
+    background: $tds-green;
+    border: 3px solid $tds-green;
+  }
+
+  input:checked + label .check-radio-btn:before,
+  input:checked + label .tds-radio-btn:before {
+    position: absolute;
+    @include rotate (-45deg);
+    margin: 5px 3px;
+    height: .7rem;
+    width: 1.2rem;
+    content: "";
+    background: transparent;
+    border: 3px solid $tds-white;
+    border-top-style: none !important;
+    border-right-style: none !important;
+    border-radius: 0px;
+  }
+
   position: relative;
   min-height: 1px;
   float: right!important;
@@ -81,9 +107,16 @@
   width: 100% !important;
   .checkbox-inline {
     color: $tds-dk-gray;
+    padding-left: 0;
   }
   .check-radio-btn {
     margin: -4px 15px 10px 0px !important;
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: left;
+    background: #fff;
+    border: 3px solid #CCC;
   }
 }
 // Add the class `.tds-form-group-search-filters` for cases where `.form-groups` need
