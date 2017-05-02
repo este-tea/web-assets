@@ -68,7 +68,7 @@ categories: CWS
               </div>
               <!-- START Product List Addons -->
               <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
-                <div class="tds-divider-line thin-lt-blue"></div>
+                <div class="tds-divider-line"></div>
                 <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
                 <div class="product-subitem">
                   <!-- START Product List Addon Item -->
@@ -109,7 +109,7 @@ categories: CWS
               </div>
               <!-- START Product List Addons -->
               <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
-                <div class="tds-divider-line thin-lt-blue"></div>
+                <div class="tds-divider-line"></div>
                 <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
                 <div class="product-subitem">
                   <!-- START Product List Addon Item -->
@@ -203,7 +203,7 @@ categories: CWS
 
                   <!-- START .pkg-builder-addon-wrap -->
                   <div class="checkbox pkg-builder-addon-wrap">
-                    <div class="tds-divider-line thin-lt-blue"></div>
+                    <div class="tds-divider-line"></div>
                     <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
                     <div class="product-subitem">
                       <!-- START Product List Addon Item aka Sub Product Selection -->
@@ -568,7 +568,7 @@ categories: CWS
               </div>
               <!-- START Product List Addons -->
               <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
-                <div class="tds-divider-line thin-lt-blue"></div>
+                <div class="tds-divider-line"></div>
                 <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
                 <div class="product-subitem">
                   <!-- START Product List Addon Item -->
@@ -609,7 +609,7 @@ categories: CWS
               </div>
               <!-- START Product List Addons -->
               <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
-                <div class="tds-divider-line thin-lt-blue"></div>
+                <div class="tds-divider-line"></div>
                 <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
                 <div class="product-subitem">
                   <!-- START Product List Addon Item -->
@@ -717,7 +717,7 @@ categories: CWS
               </div>
               <!-- START Product List Addons -->
               <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
-                <div class="tds-divider-line thin-lt-blue"></div>
+                <div class="tds-divider-line"></div>
                 <p class="h5 prod-subitem-heading">Optional Addon Heading</p>
                 <div class="product-subitem">
                   <!-- START Product List Addon Item -->
