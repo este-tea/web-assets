@@ -4,6 +4,19 @@
 input {
   padding-left: 12px;
 }
+.radio {
+  padding-left: 0;
+}
+.radio label, .checkbox label {
+    min-height: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
 // Remove BS rounded borders globally
 .tds-form-group {
   input, select {
@@ -171,6 +184,7 @@ form.elq-form {
   }
   input.submit-button {
     @include gallery-btn;
+    height: auto;
     text-align: center;
     font-weight: 600;
   }

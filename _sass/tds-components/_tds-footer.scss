@@ -26,17 +26,27 @@
 .extended-footer {
   background: #555;
   padding: 0;
+  border-top: solid 4px #353535;
+  @media (max-width: 751px) {
+  border-top: 0;
+  }
   .container {
       padding: 0;
   }
+}
+.extended-footer .homepageFooter {
+  border-top: 0;
 }
 
 .footer-contact-wrap .container {
     padding: 0;
 }
 //removes the top border on children pages
-.footerContactInfo + .genericfooter > #genericfooter-container {
-    border-top: none;
+@media (max-width: $screen-sm) {
+  .footerContactInfo + .genericfooter > #genericfooter-container {
+      border-top: none;
+      padding-bottom: 0;
+  }
 }
 //===== footer copyright =======================================================
 //==============================================================================
@@ -162,7 +172,6 @@ div#footer-login {
   position: absolute;
   right: 1em;
 }
-
 
 //IWP-3247 Component Update: Author Configurable Homepage Footer and Generic Footer for Resi
 #genericfooter--navbar {

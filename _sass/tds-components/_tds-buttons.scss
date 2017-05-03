@@ -283,6 +283,7 @@ a#readMoreLink.read-less {
   &.plus + .read-more-text:before,
   &.minus + .read-more-text:before {
     @include tds-icon;
+    font: normal normal normal 14px/1 FontAwesome;
     position: relative;
     top: 3px;
     float: right;
@@ -307,10 +308,10 @@ input + span.input-group-btn .gallery-btn {
     &:before {
       content: "\f002";
     }
+  }
   &:after {
     display: none;
     }
-  }
 }
 
 // ===== Crazy stuff ===========================================================
