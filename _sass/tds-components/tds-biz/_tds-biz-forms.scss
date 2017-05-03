@@ -143,3 +143,10 @@ color:#cd1d1d;
   }
 }
 */
+.tds-card .tds-form-group input, .tds-card  .tds-form-group select {
+    background: #ffffff;
+  }
+
+.tds-card .form-control[disabled],.tds-card .form-control[readonly],.tds-card fieldset[disabled] .form-control {
+      background-color: #eee;
+    }
