@@ -131,3 +131,47 @@ dd {
 .container, .multiPathSearch, .tds-width-container, .tds-width-container, .multiPathSearch, .multiPathSearch {
     max-width: 1120px;
 }
+
+/*fix layout for terms page*/
+.page_content .tds-pagedivider-four-col,
+.page_content .tds-pagedivider-one-col,
+.page_content .tds-pagedivider-three-col,
+.page_content .tds-pagedivider-two-col {
+    padding-top: 0px;
+    margin: 0;
+}
+
+@media (max-width:583px) {
+    .tds-page-banner {
+        margin-bottom: 10px;
+    }
+}
+
+// add styling to home page title block
+.container-fluid.tds-block-lt-blue.home-title {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 32px;
+    padding: 0 48px;
+}
+
+.container-fluid.tds-block-lt-blue.home-title h1 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+@media (max-width:460px) {
+    .container-fluid.tds-block-lt-blue.home-title {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .container-fluid.tds-block-lt-blue.home-title h1 {
+        font-size: 16px;
+        text-align: left;
+        line-height: 24px;
+    }
+}
