@@ -5,13 +5,13 @@ date: 2016-12-29
 categories: CWS
 ---
 <div class="tds-error-msg tds-error-info">
-	<div class="container">
-		<p>Address: <span class="userGreeting-address"><span class="has-titleCase">${ADDRESS 1} ${ADDRESS 2}, ${CITY}</span>, <span class="has-allCaps">${STATE}</span></span>. <a href="/visitor/address-entry.html?redirectDestination=%2Fshop.html">Edit address</a></p>
-	</div>
+  <div class="container">
+    <p>Address: <span class="userGreeting-address"><span class="has-titleCase">${ADDRESS 1} ${ADDRESS 2}, ${CITY}</span>, <span class="has-allCaps">${STATE}</span></span>. <a href="/visitor/address-entry.html?redirectDestination=%2Fshop.html">Edit address</a></p>
+  </div>
 </div>
 <div class="container">
-	<h1 class="page-header">H1 Package Builder Page Title</h1>
-	<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+  <h1 class="page-header">H1 Package Builder Page Title</h1>
+  <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 </div>
 <!-- START .pkg-builder-container -->
 <div class="container pkg-builder-container">
@@ -752,7 +752,7 @@ categories: CWS
             <a class="gallery-btn back-arrow" href="#category3" data-toggle="tab">Back</a>
           </div>
           <div class="btn-right">
-            <a class="gallery-btn btn-green next-arrow" href="">Add to Cart</a>
+            <a id="addtocart" class="gallery-btn btn-green next-arrow" href="">Add to Cart</a>
           </div>
         </div>
         <!-- END Bottom Buttons Content -->
@@ -767,53 +767,53 @@ categories: CWS
 
 <!-- START Modal -->
 <div id="" class="loadingOverlay modal pkg-builder-modal">
-	<div class="modal-dialog">
-		<div class="modal-content tds-modal">
-			<div class="modal-body tds-msg-box">
-				<div class="row">
-					<div class="tds-msg-box">
-						<div class="spinner"></div>
-						<h2>One moment, please.</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="modal-dialog">
+    <div class="modal-content tds-modal">
+      <div class="modal-body tds-msg-box">
+        <div class="row">
+          <div class="tds-msg-box">
+            <div class="spinner"></div>
+            <h2>One moment, please.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- END Modal -->
 
 {% include pkg-builder-subtotal.html %}
 
 <script language="javascript">
-	$(document).ready(function() {
-		var $productCard = $('.pkg-product-card');
-		var $productAddOn = $('.pkg-builder-addon-wrap');
+  $(document).ready(function() {
+    var $productCard = $('.pkg-product-card');
+    var $productAddOn = $('.pkg-builder-addon-wrap');
 
-		$("input:radio.pkg-builder-radio").change(function() {
-			//removes highlight from other cards, adds it to selected card
-			$(this).closest($productCard).siblings().removeClass('is-selected');
-			$(this).closest($productCard).addClass('is-selected', this.checked);
-			//hides addons from other cards, reveals addon on selected card
-			$(this).closest($productCard).siblings().find($productAddOn).hide();
-			$(this).closest($productCard).children($productAddOn).show();
-		});
+    $("input:radio.pkg-builder-radio").change(function() {
+      //removes highlight from other cards, adds it to selected card
+      $(this).closest($productCard).siblings().removeClass('is-selected');
+      $(this).closest($productCard).addClass('is-selected', this.checked);
+      //hides addons from other cards, reveals addon on selected card
+      $(this).closest($productCard).siblings().find($productAddOn).hide();
+      $(this).closest($productCard).children($productAddOn).show();
+    });
 
-		$("input:checkbox.pkg-builder-radio").change(function() {
-			$(this).closest($productCard).toggleClass('is-selected', this.checked);
-			$(this).closest($productCard).children($productAddOn).show();
-		});
-		//each new number spinner needs to be initiated here
-		$("input[name='catchSTBadd']").TouchSpin({
-				min: 0,
-				max: 10,
-				initval: 0
-		});
-		$("input[name='HDSTBadd']").TouchSpin({
-				min: 0,
-				max: 5,
-				initval: 0
-		});
-		$("input[name='HDSTBadd2']").TouchSpin({
+    $("input:checkbox.pkg-builder-radio").change(function() {
+      $(this).closest($productCard).toggleClass('is-selected', this.checked);
+      $(this).closest($productCard).children($productAddOn).show();
+    });
+    //each new number spinner needs to be initiated here
+    $("input[name='catchSTBadd']").TouchSpin({
+        min: 0,
+        max: 10,
+        initval: 0
+    });
+    $("input[name='HDSTBadd']").TouchSpin({
+        min: 0,
+        max: 5,
+        initval: 0
+    });
+    $("input[name='HDSTBadd2']").TouchSpin({
         min: 0,
         max: 5,
         initval: 0
@@ -839,5 +839,5 @@ categories: CWS
         initval: 0
     });
 
-	});
+  });
 </script>
