@@ -1106,7 +1106,7 @@ a#internet-tab:hover, a#phone-tab:hover, a#tv-tab:hover, a#extra-tab:hover  {
     padding: 0;
     display: block!important;
 }
-/*---IMT-46 begin checkout button bundle builder---*/
+//---IMT-46 begin checkout button bundle builder---*/
 @media (max-width:435px) {
 .cart-overview-actions form.pull-right.form-group {
     float: none!important;
@@ -1115,9 +1115,13 @@ button#beginCheckout {
     margin-top: 28px;
     width: 100%!important;
     display: inline-block;
+    //IMT-47 cart error styling
+    @media (max-width: 435px) {
+            margin-top: 28px;
+    }
+  }
 }
-}
-/*fix button font on bundle builder*/
+//fix button font on bundle builder*/
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
     font-family: 'ITC Avant Garde Gothic W01',Century Gothic,sans-serif;
     font-size: 14px;
