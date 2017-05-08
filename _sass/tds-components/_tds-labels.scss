@@ -14,7 +14,17 @@
 }
 // basic label set up
 .tds-label {
-  @extend .label;
+  //@extend .label;
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
   margin-right: 5px;
   @include border-top-radius(0);
   @include border-right-radius(0);

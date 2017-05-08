@@ -18,7 +18,7 @@
   border: 0 none;
   outline: none;
   color: $tds-dk-gray;
-  background: $tds-ltr-gray;
+  background: $tds-lt-bluegray;
   font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
   font-weight: 400;
   font-style: normal;
@@ -172,6 +172,13 @@
 // keep input search-icon visible on focus
 .form-control-feedback {
   z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 34px;
+  text-align: center;
+  pointer-events: none;
 }
 // Searchbar for dataTable
 // -----------------------

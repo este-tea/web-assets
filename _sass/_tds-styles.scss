@@ -1,8 +1,8 @@
 /* START jquery-ui */
-@import "../etc/designs/tds-foundation/tds-styles/bower_components/jquery-ui/themes/base/jquery-ui.min";
+//@import "../etc/designs/tds-foundation/tds-styles/bower_components/jquery-ui/themes/base/jquery-ui.min";
 /* END jquery-ui */
 
-@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss";
+//@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss";
 
 @import "tds-components/_tds-variables";
 @import "tds-components/_tds-mixins";
@@ -19,11 +19,11 @@
 /* END fontello */
 
 /* START bs sprockets */
-@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+//@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 /* END bs sprockets */
 
 /* START bootstrap */
-@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "../etc/designs/tds-foundation/tds-styles/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 /* END bootstrap */
 
 @import "tds-components/_tds-grid";
@@ -96,6 +96,7 @@
 @import "tds-components/_tds-trouble-reporting-form";
 @import "tds-components/_tds-news-feed-articles";
 @import "tds-components/_tds-package-builder";
+@import "tds-components/_tds-package-builder-subtotal";
 @import "tds-components/_tds-package-comparison";
 
 //FOOTER

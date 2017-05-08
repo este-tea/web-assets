@@ -5,7 +5,7 @@
 .tds-btn {
   //display: table; // this gives the button size value without having to float.
   margin-top: 20px;
-  padding: 12px 16px !important;
+  padding: 12px 16px ;
   @include button-variant($tds-white, $tds-dk-blue, transparent);
   font-family: $tds-font-family;
   font-weight: 500;
@@ -14,7 +14,7 @@
   border: none;
   box-shadow: $box-shadow;
   a {
-    color: #fff !important;
+    color: #fff ;
     text-decoration: none;
   }
   &:hover {
@@ -24,7 +24,7 @@
   &:focus {
     box-shadow: none;
     background-color: $tds-dk-blue;
-    color: #fff !important;
+    color: #fff ;
   }
 }
 //added this because couldn't figure out how to add it above and make it work
@@ -124,18 +124,18 @@ a.tds-btn, a.tds-btn > span { text-decoration: none; }
 .tds-btn.btn-green,
 .tds-btn-green,
 button#addtocart {
-  @extend .btn-success;
+  border-color: #6b9c22;
 }
 
 // ===== Gray button ===========================================================
 // gray button, blue text
 // =============================================================================
 .tds-btn-gray {
-  color: $tds-lt-blue !important;
+  color: $tds-lt-blue ;
   background: $tds-ltr-gray;
   &:hover {
-    background: $tds-lt-blue !important;
-    color: $tds-white !important;
+    background: $tds-lt-blue ;
+    color: $tds-white ;
   }
 }
 // gray close button
@@ -148,10 +148,10 @@ td .line-item-actions .tds-btn-gray {
 // orange button, white text
 // =============================================================================
 .tds-btn-orange {
-  color: $tds-white !important;
+  color: $tds-white ;
   background: $tds-orange-100;
   &:hover {
-    background: $tds-orange-80 !important;
+    background: $tds-orange-80 ;
   }
 }
 
@@ -160,10 +160,10 @@ td .line-item-actions .tds-btn-gray {
 // =============================================================================
 .tds-btn-lt-blue {
   background: $tds-lt-blue-100;
-  color: $tds-white !important;
+  color: $tds-white ;
   &:hover {
-    background: darken($tds-lt-blue, 5%) !important;
-    color: $tds-white !important;
+    background: darken($tds-lt-blue, 5%) ;
+    color: $tds-white ;
   }
 }
 
@@ -171,17 +171,16 @@ td .line-item-actions .tds-btn-gray {
 // when it's a tds button but by design shows as text
 .tds-btn-link,
 .tds-btn.tds-btn-link {
-  @extend .btn;
-  @extend .btn-link;
+  @include btn;
   font-family: 'ITC Avant Garde Gothic W01';
-  color: $tds-green-100 !important;
+  color: $tds-green-100;
   &:hover {
     color: $tds-green-80;
   }
 }
 // arrow icon (default setting)
 .tds-btn-link:after {
-  @extend .fa;
+  @include tds-icon;
   content: "\f054";
   margin-top: 3px;
   margin-left: 14px;
@@ -214,7 +213,7 @@ td .line-item-actions .tds-btn-gray {
 }
 // removes extra space from default tds-btn
 .btn-right {
-  padding-right: 0px !important;
+  padding-right: 0px ;
 }
 .btn-left,
 .btn-back {

@@ -229,7 +229,22 @@ div.myprodsservices > h3 {
 
 // Available tv listings box
 .tds-tv-where {
-    @extend .tds-card;
+    //@extend .tds-card;
+    button.dropdown-toggle .caret {
+      position: relative;
+      right: -135px;
+    }
+    .open > {
+      .dropdown-menu {
+        display: block;
+        padding-left: 0px;
+        width: 100%;
+      }
+      button.dropdown-toggle {
+        color: #fff;
+        background-color: $tds-lt-blue;
+      }
+    }
 }
 .tds-tv-cities > div {
     float: left;
@@ -293,3 +308,36 @@ div.myprodsservices > h3 {
       }
   }
 }
+
+//---List style fixes
+//http://tdstelecom.com/styleguide/design-elements/typography.html
+
+.tds-content-rich ol li:nth-child(1n) {
+	margin-top:1.25em;
+}
+
+
+.tds-content-rich ol li ol {
+	margin-bottom:0;
+}
+
+.tds-content-rich ol li ol li {
+		color: inherit;
+}
+
+.tds-content-rich ol li ol li:before {
+	background: none;
+	color: inherit;
+	content: counter(li, lower-alpha) ".";
+	font-weight: 600;
+}
+
+.tds-content-rich ul li ul li:before {
+	background: none;
+	color: inherit;
+	content: counter(li, disc);
+	font-weight: 200;
+	font-size: 1.5em;
+	top: 2px;
+}
+/*---List style fixes end---*/

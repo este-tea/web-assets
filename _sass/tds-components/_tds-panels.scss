@@ -1,14 +1,33 @@
-// tds-panels.less
+// tds-panels.scss
 
 $panel-border-radius: 0px;
 $panel-default-border: #ccc;
-
 $border-radius-base: 0px;
+
+//added bootstrap panel code as a mixin
+@mixin panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+@mixin panel-default {
+    border-color: #ddd;
+}
 
 // bootstrap panel changes
 .tds-panel {
-  @extend .panel;
-  @extend .panel-default;
+  //@extend .panel;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0 !important;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  //@extend .panel-default;
+  border-color: #ddd;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 0px;
@@ -58,10 +77,11 @@ $border-radius-base: 0px;
   }
   // keep visible
   > .col-sm-6.last {
-      @extend .visible-xs;
-      @extend .visible-sm;
-      @extend .visible-md;
-      @extend .visible-lg;
+    //Note: Don't think these are needed - Chris H.
+      //@extend .visible-xs;
+      //@extend .visible-sm;
+      //@extend .visible-md;
+      //@extend .visible-lg;
   }
 }
 // Hacky-McHckins Mobile fix TODO || rewrite all the mobile set ups

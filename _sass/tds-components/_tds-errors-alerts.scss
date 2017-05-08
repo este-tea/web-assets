@@ -1,11 +1,10 @@
 /* tds-errors-alerts
 ==========================================*/
-
 // Main message set up.
 // types are determined by sub classes below
 .tds-error-msg,
 .tds-alert {
-  @extend .alert;
+  margin-bottom: 20px;
   display: block;
   //float: left;
   text-align: left;
@@ -102,8 +101,15 @@
 }
 // Product callout messages design
 .prod-callout {
-  @extend .tds-error-msg;
-  @extend .tds-error-info;
+  //@extend .tds-error-msg;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  //@extend .tds-error-info;
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: #353535;
   @include make-sm-column-offset(1);
   @include make-xs-column-offset(0);
   @include make-sm-column(7);
@@ -118,7 +124,7 @@
 // Red = critical
 .tds-error-critical,
 .tds-alert-critical {
-  @extend .alert-danger;
+  @include alert-danger;
   border-left: 3px solid $tds-red ;
   &.tds-top-border {
     border-top: 3px solid $tds-red ;
@@ -131,13 +137,14 @@
 }
 .tds-error-critical-input,
 .tds-alert-critical-input {
-  @extend .alert-danger;
+  @include alert-danger;
   border: 2px solid $tds-red ;
 }
 // Yellow = warning
 .tds-error-warning,
 .tds-alert-warning {
-  @extend .alert-warning;
+  background-color: $state-warning-bg;
+  color: black;
   border-left: 3px solid $tds-warning-yellow;
   &.tds-top-border {
     border-top: 3px solid $tds-warning-yellow;
@@ -152,8 +159,8 @@
 // Green = success
 .tds-error-success,
 .tds-alert-success {
-  @extend .alert-success;
-  //color: #353535 !important;
+  background-color: #dff0d8;
+  color: black;
   border-left: 3px solid $tds-green ;
   &.tds-top-border {
     border-top: 3px solid $tds-green ;
@@ -168,7 +175,9 @@
 // Blue = info
 .tds-error-info,
 .tds-alert-info {
-  @extend .alert-info;
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: black;
 }
 
 // TDS Lt Blue info or loading
@@ -188,14 +197,30 @@
 
 // bundle error extender
 .bundle-error {
-  @extend .tds-error-msg;
-  @extend .tds-error-critical;
-  border: 0px solid transparent;
+  //@extend .tds-error-msg;
+  @include tds-alert;
+  //@extend .tds-error-critical;
+  @include alert-danger;
+  border-left: 3px solid $tds-red ;
+  &.tds-top-border {
+    border-top: 3px solid $tds-red ;
+    border-left: 0px ;
+  }
+  .fa {
+    font-size: 21px;
+    color: $tds-red;
+  }
+   border: 0px solid transparent;
   &:before {
-    @extend .fa;
+    //@extend .fa;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     content: "\f06a";
     margin-right: 20px;
-    font: normal normal normal 14px/1 FontAwesome;
     color: $tds-red;
   }
 }
@@ -205,10 +230,14 @@
   padding: 6px 0;
   color: $tds-red;
   &:before {
-    @extend .fa;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     content: "\f06a";
     margin-right: 20px;
-    font: normal normal normal 14px/1 FontAwesome;
     color: $tds-red;
   }
 }

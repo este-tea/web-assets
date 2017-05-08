@@ -5,7 +5,12 @@
 // tds-icon/font-awesome extension
 // `.tds-icons` == `.fa` class for font-awesome
 .tds-icon {
-  @extend .fa;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // ===== spacing mixins ========================================================
@@ -17,7 +22,7 @@
 // =============================================================================
 
 // padding-right for `:before` icons
-.tds-icon-padding-right {
+@mixin tds-icon-padding-right {
   &:before {
     padding-right: 10px;
   }
@@ -48,10 +53,6 @@ button.gallery-btn.btn-next:after {
   content: "" !important;
 }
 // Pencil icon
-.tds-icon-pencil {
-  @extend .fa-pencil;
-  @extend .tds-icon-padding-right;
-}
 .fa-pencil:before, .tds-icon-pencil:before {
     content: "\e805";
     font-family: "fontello";
@@ -61,12 +62,14 @@ button.gallery-btn.btn-next:after {
 }
 // Remove icon
 .tds-icon-times {
-  @extend .fa-times;
-  @extend .tds-icon-padding-right;
+  &:before {
+  content: "\f00d";
+  }
+  @include tds-icon-padding-right;
 }
 // Search Icon
-.tds-icon-search {
-  @extend .fa-search;
+.tds-icon-search:before {
+  content: "\f002";
 }
 // Plus cart
 .tds-icon-cart-plus {
@@ -86,23 +89,29 @@ button.gallery-btn.btn-next:after {
 //HYDRA-1752 TV Channel Lineup Styling Issues End
 
 // Print icon
-.tds-icon-print {
-  @extend .fa-print;
+.tds-icon-print:before {
+  content: "\f02f";
 }
 // Key icon
 .tds-icon-key {
-  @extend .fa-key;
-  @extend .tds-icon-padding-right;
+  &:before {
+    content: "\f084";
+  }
+  @include tds-icon-padding-right;
 }
 // trash icon
 .tds-icon-trash {
-  @extend .fa-trash;
-  @extend .tds-icon-padding-right;
+  &:before {
+  content: "\f1f8";
+  }
+  @include tds-icon-padding-right;
 }
 // trash icon
 .tds-icon-circle-question {
-  @extend .fa-question-circle;
-  @extend .tds-icon-padding-right;
+  &:before {
+  content: "\f059";
+  }
+  @include tds-icon-padding-right;
 }
 // update icon on navlogin button
 #loginButton .gallery-btn.login > .fa.fa-user {

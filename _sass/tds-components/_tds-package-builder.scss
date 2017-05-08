@@ -3,17 +3,39 @@
 // NOTE: cable site uses the package builder component which
 // will hopefully replace the old bundle builder component
 // this component uses bootstrap's toggleable/dynamic tabs
-// instead of jquery ui tabs (because there is less css to override)
+// instead of jquery ui tabs (because there is less css to override and because we're already using bootstrap)
 
-// Section Layout
+// alerts
 // ----------------
-.pkg-builder-form.section-layout h2 {
+.product-list-contents .pkg-prod-list-options {
+  .tds-alert {
+    margin-top: 14px;
+    color: #000000;
+    &.tds-alert-critical {
+        background-position: 16px 16px;
+    }
+  }
 }
-.col-sm-4.pkg-prod-list-summary {
+
+@media (max-width: 767px) {
+  .pkg-builder-tab-content {
+    .tds-alert {
+      margin-top: 14px;
+    }
+  }
+}
+/* Pkg Builder Section Layout
+==========================================*/
+.row.product-list-contents {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pkg-prod-list-summary {
     padding-left: 0;
 }
 
-.col-sm-8.pkg-prod-list-options {
+.pkg-prod-list-options {
     padding-right: 0;
     padding-left: 48px;
 }
@@ -37,7 +59,6 @@
     margin-left: 0px;
     min-height: 0;
     margin-bottom: 0;
-    margin-top: 20px;
 }
 .pkg-builder-container .pkg-builder-nav-tabs > li > a,
 .pkg-builder-container .pkg-builder-nav-tabs > li > a:link,
@@ -222,32 +243,52 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
         padding-left: 60px;
     }
 }
+
 // typography
 // ----------------
-.prod-listitem-content h3 {
+.prod-listitem-content {
+  h3 {
     margin-top: 0;
+    span { // use for (optional)
+        font-size: 75%;
+        color: #555;
+    }
+  }
+  p {
+      margin-bottom: 0;
+  }
 }
-// use for (optional)
-.prod-listitem-content h3 span {
-    font-size: 75%;
-    color: #555;
+.pkg-product-card {
+  .prod-name {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 21px;
+  }
+  .product-content {
+    .prod-description {
+        margin-bottom: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+  }
+  .product-price {
+    margin-top: 12px;
+    .price-text.price-base {
+        font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+        font-size: 21px;
+        color: #578228;
+        font-weight: 500;
+        line-height: 1.25em;
+    }
+    .price-text > .term {
+        font-size: 70%;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+  }
 }
-.pkg-product-card .prod-name {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 21px;
-}
-.pkg-product-card .pkg-builder-listoption-wrap .product-content p:last-child {
-    margin-bottom: 0;
-}
-.pkg-product-card .price-text.price-base {
-    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-    font-size: 21px;
-    color: #578228;
-    font-weight: 500;
-    line-height: 1.25em;
-}
-.product-subitem .prod-subitem-heading {
+.prod-subitem-heading {
     font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
     font-size: 16px;
     color: #353535;
@@ -255,22 +296,27 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
     margin-top: 20px;
     text-transform: uppercase;
 }
-.product-subitem .prod-subitem-name {
+.prod-subitem-name {
     font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
     color: #19388a;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
 }
-
+.product-subitem .product-price {
+  margin-left: 44px;
+}
 
 // Section/Tab Content
 // ----------------
-.tab-content.pkg-builder-tab-content {
-    margin-top: 24px;
+.tab-content {
+  &.pkg-builder-tab-content {
+      margin-top: 24px;
+  }
 }
 
 // product list section
+// ----------------
 .product-list-contents {
     padding: 20px 0;
     border-bottom: solid 2px #d3d8e8;
@@ -287,28 +333,36 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
 // ----------------
 .pkg-product-card {
     border: solid 3px #d9d9d9;
-}
-.pkg-product-card.is-selected {
-  background-color: #d9d9d9;
+    padding: 24px;
+    &.is-selected {
+      background-color: #d9d9d9;
+    }
+    &:last-child {
+        margin-bottom: 4px;
+    }
 }
 .product-content {
-    padding: 0 20px 20px 20px;
+    padding: 0;
+    padding-top: 8px;
 }
 .prod-subitem-content {
     padding: 8px 20px 0 44px;
+    + .product-price {
+       margin-left: 44px;
+   }
 }
+
 // Package product list item radio styling
-.pkg-product-card:last-child {
-    margin-bottom: 4px;
-}
+// ----------------
 .pkg-product-card .pkg-builder-listoption-wrap {
     margin: 0;
-}
-.pkg-product-card .pkg-builder-label {
-    padding: 20px 20px 8px 20px;
+    padding: 0;
+    .pkg-builder-label {
+        padding: 0;
+    }
 }
 .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
-    margin-left: -64px;
+    margin-left: -72px;
     margin-top: -4px;
 }
 .pkg-product-card input:disabled + .tds-radio-btn {
@@ -323,14 +377,114 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
     padding: 0;
 }
 .pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
-    margin-top:0;
+    margin-bottom:0;
+}
+
+@media (max-width:990px) {
+    .pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+        margin-bottom:16px;
+    }
+}
+@media (max-width:767px) {
+    .pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+        margin-bottom:0px;
+    }
+}
+@media (max-width:640px) {
+    .pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+        margin-bottom:16px;
+    }
 }
 // Package product subitem/addon
 // ----------------
-.pkg-product-card .product-subitem .form-group:last-child {
-    margin-bottom: 0;
+.pkg-product-card {
+  .product-subitem {
+    .form-group {
+      margin-bottom: 0px;
+      &:last-child {
+          margin-bottom: 0;
+      }
+      .input-group.bootstrap-touchspin {
+          margin-bottom: 0;
+      }
+    }
+  }
 }
 
+// alert spacing in addon section
+// ----------------
+.prod-subitem-content ~ .tds-alert.tds-alert-critical {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+// Package product subitem checkbox
+// ----------------
+.pkg-prod-list-options .pkg-product-card .pkg-builder-addon-wrap {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.pkg-builder-addon-wrap {
+    .product-subitem {
+        margin-top: 20px;
+        .tds-radio-btn {
+           margin-left: -42px;
+       }
+       label {
+           padding-left: 44px;
+       }
+    }
+}
+
+// dual list option (CatchTV section)
+// ----------------
+.dual-listoption-wrap {
+  .pkg-product-card {
+      border: none;
+      margin-left: 0;
+      padding: 0;
+      margin-top: 20px;
+      .pkg-builder-listoption-wrap {
+        margin: 0;
+        margin-left: 45px;
+        margin-top: 24px;
+        .tds-radio-btn {
+            margin-top: -1px;
+            margin-left: -45px;
+        }
+        .form-sub-group {
+            margin-left: 2px;
+            margin-top: 16px;
+        }
+      }
+      .pkg-builder-addon-wrap {
+          padding-left: 44px;
+          margin-top:20px;
+          padding-bottom: 0;
+              padding-right: 0;
+      }
+  }
+}
+
+// Divider Lines
+// ----------------
+.pkg-prod-list-options {
+  > .pkg-product-card {
+    > .tds-divider-line {
+      //this class is re-used in catchTV dual list option so need to remove the styling when the line isn't in a dual list option
+        height: 0;
+    }
+    > .pkg-builder-addon-wrap {
+      margin-top: 20px;
+      margin-bottom: 0;
+      padding: 0;
+      .tds-divider-line {
+        height: 1px;
+        background: #0C8FD0;
+      }
+    }
+  }
+}
 .pkg-product-card .product-subitem .form-group > .tds-divider-line {
     margin-top: 20px;
 }
@@ -338,201 +492,339 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
 .pkg-product-card .product-subitem .form-group:last-child > .tds-divider-line {
     display: none;
 }
-// alert spacing in addon section
-.prod-subitem-content ~ .tds-alert.tds-alert-critical {
-    margin-top: 16px;
-    margin-bottom: 0;
-}
-// Package product subitem checkbox
-.pkg-builder-addon-wrap {
-    margin: 0px;
-    padding: 0 20px 20px 20px;
-}
-.pkg-builder-addon-wrap .product-subitem {
-    margin-bottom: 0;
-    margin-top: 20px;
-}
-.pkg-builder-addon-wrap .product-subitem .tds-radio-btn {
-    margin-left: -42px;
-}
-.pkg-builder-addon-wrap .product-subitem label {
-    padding-left: 44px;
-}
-// package subtotal
-// ----------------
-.pkg-builder-subtotal {
-    margin-top: 4px;
-    margin-bottom: 24px;
-}
-.pkg-subtotal-content {
-    padding: 21px 0;
-}
-.subtotal-column {
-    text-align: center;
-}
 
-.subtotal-column-content {
-    padding: 0 8px;
-    margin: 0 auto;
-    float: right;
-}
-
-.subtotal-items {
-    text-align: center;
-}
-h3.subtotal-header-text {
-    margin-top: 0;
-    font-weight: 400;
-}
-.pkg-subtotal-content .sel-head-text {
-    color: #353535;
-    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.pkg-subtotal-content .sel-price-text {
-    margin-top: 10px;
-}
-.pkg-subtotal-content .sel-head-text.sel-head-text-mth {
-    color: #19388a;
-}
-.pkg-subtotal-content .sel-price-text.sel-price-text-mth {
-    margin-bottom: 8px;
-}
-.subtotal-fees{
-    font-size: 75%;
-    margin-bottom: 0;
-}
-table.table.pkg-subtotal-table {
-    margin-bottom: 0;
-}
-.table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
-    padding: 0;
-}
-
-@media (max-width: 960px) {
-    .pkg-subtotal-content .subtotal-header-text {
-        text-align: left;
+.dual-listoption-wrap {
+  > .pkg-product-card {
+    > .pkg-builder-addon-wrap {
+      > .tds-divider-line {
+          background: url("/content/dam/tdstelecom/images/ui/dk-gray-dotted-line.svg");
+      }
     }
-    .sel-summary.col-sm-12.col-md-3 {
-        text-align: center;
+    > .tds-divider-line {
+        height: 1px;
+        background: #0c8fd0;
     }
+  }
 }
-@media (max-width:750px) {
-    .subtotal-column-content {
-        float: none;
-    }
-    .pkg-subtotal-content .subtotal-header-text {
-        text-align: center;
-    }
-}
-@media (max-width: 584px) {
-    .sel-head-text {
-        font-size: 16px;
-    }
-    h3.subtotal-header-text {
-        font-size: 21px;
-        margin-bottom: 20px;
-    }
-    .pkg-subtotal-content .sel-price-text {
-        font-size: 24px;
-    }
-    .pkg-subtotal-content .sel-price-text.sel-price-text-mth {
-        margin-bottom: 4px;
-    }
-}
-@media (max-width:420px){
-   .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
-        display: block!important;
-    }
-}
-// divider lines
 .tab-content .bottom-buttons .tds-divider-line.thin-lt-gray {
     margin-bottom: 4px;
+    height: 2px;
+    background: #d3d8e8;
 }
-//loading modal
-.pkg-builder-modal .modal-body.tds-msg-box {
-    border: none;
-    min-height: inherit;
-    border-top: 5px solid #19388a;
-}
-.pkg-builder-modal .modal-body.tds-msg-box .tds-msg-box {
-    border: none;
-    padding: 0;
-    text-align: center;
-    min-height: inherit;
-}
-.pkg-builder-modal .modal-body .tds-msg-box h2 {
-    font-size: 24px;
-    font-weight: 400;
-}
-.pkg-builder-modal .tds-modal .modal-body .tds-msg-box .spinner {
-    margin-top: 22px;
-    margin-bottom: 20px;
-}
-@media (max-width:751px) {
-    .col-sm-8.pkg-prod-list-options {
-        padding-left: 0px;
+
+// media queries for section layout
+// ----------------
+@media (min-width: 990px) {
+    .pkg-product-card .pkg-builder-listoption-wrap {
+        position: relative;
     }
-    .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+    .pkg-builder-listoption-wrap .pkg-builder-label,
+    .pkg-builder-listoption-wrap .product-content {
+        max-width: 72%;
+        display:block;
+    }
+    .pkg-builder-listoption-wrap .product-price {
+        position: absolute;
+        text-align: right;
+        float: right;
+        top: 0;
+        right: 0;
+        max-width: 30%;
+    }
+    .pkg-builder-addon-wrap .product-subitem {
+        position: relative;
+    }
+    .product-subitem .prod-subitem-heading,
+    .product-subitem .form-group {
+        max-width: 72%;
+        display:block;
+    }
+    .product-subitem .product-price {
+        position: absolute;
+        text-align: right;
+        float: right;
+        top: 0;
+        right: 0;
+        max-width: 30%;
+    }
+    .product-price {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 751px) and (min-width:640px) {
+  .pkg-product-card .pkg-builder-listoption-wrap {
+      position: relative;
+  }
+  .pkg-builder-listoption-wrap .pkg-builder-label,
+  .pkg-builder-listoption-wrap .product-content {
+      max-width: 72%;
+      display:block;
+  }
+  .pkg-builder-listoption-wrap .product-price {
+      position: absolute;
+      text-align: right;
+      float: right;
+      top: 0;
+      right: 0;
+      max-width: 30%;
+  }
+  .pkg-builder-addon-wrap .product-subitem {
+      position: relative;
+  }
+  .product-subitem .prod-subitem-heading,
+  .product-subitem .form-group {
+      max-width: 72%;
+      display:block;
+  }
+  .product-subitem .product-price {
+      position: absolute;
+      text-align: right;
+      float: right;
+      top: 0;
+      right: 0;
+      max-width: 30%;
+  }
+  .product-price {
+      margin-top: 0px;
+  }
+
+}
+@media (max-width:751px){
+  .pkg-product-card {
+      padding: 16px;
+  }
+  .pkg-prod-list-options {
+      padding-left: 0px;
+  }
+  .pkg-product-card .pkg-builder-listoption-wrap {
+    margin-left: 40px;
+}
+  .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+      margin-left: -40px;
+      margin-top: -1px;
+  }
+  .pkg-product-card .pkg-builder-label {
+      padding-left: 60px;
+      padding-top: 24px;
+  }
+  .dual-listoption-wrap .pkg-builder-listoption-wrap > .product-content,
+  .dual-listoption-wrap .pkg-builder-listoption-wrap > .product-price {
+      padding-left: 0px;
+  }
+  .pkg-prod-list-options > .pkg-product-card > .pkg-builder-addon-wrap {
+      margin-left: 40px;
+  }
+}
+@media (max-width: 583px) {
+  .pkg-product-card .pkg-builder-label {
+      padding-left: 54px;
+      padding-top: 16px;
+  }
+  .pkg-builder-addon-wrap {
+      margin: 0px;
+      padding: 0 14px 14px 14px;
+  }
+  .pkg-builder-form h2 {
+      font-size: 24px;
+  }
+  .pkg-builder-form h3 {
+      font-size: 21px;
+  }
+  .pkg-builder-form .h4 {
+      font-size: 18px;
+      line-height: 25px;
+  }
+}
+
+@media (max-width:400px){
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap {
+        margin-top: 16px;
+    }
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
         margin-left: -40px;
     }
-    .pkg-product-card .pkg-builder-label {
-        padding-left: 60px;
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-addon-wrap {
+        margin-top: 16px;
+        padding-left: 0px;
+    }
+    .pkg-prod-list-options > .pkg-product-card > .pkg-builder-addon-wrap {
+        margin-left: 0px;
+    }
+}
+/* Pkg Builder Page Layout
+==========================================*/
+
+// layout spacing
+// ----------------
+.pkg-builder-page-content {
+  .prod-listitem-content {
+      margin-left: 48px;
+  }
+}
+.row.pkg-builder-page-content {
+    margin-right: 0;
+    margin-left: 0;
+}
+// typography
+// ----------------
+.pkg-builder-form.page-layout {
+  > h2 {
+    color: #0c8fd0;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  .pkg-product-card .product-price {
+      margin-top: 0px;
+  }
+  p.prod-description {
+      margin-bottom: 0px;
+  }
+}
+.pkg-summary-content > h2 {
+    color: #19388a;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+}
+.pkg-builder-page-content {
+  .category-heading h3 {
+      color: #19388a;
+      font-weight: 500;
+      margin-left: 50px;
+      line-height: 40px;
+      margin-top: 8px;
+      margin-bottom: 0;
+      &:before {
+          counter-increment: section;
+          content: counter(section);
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+          background-color: #7a86b7;
+          width: 40px;
+          height: 40px;
+          display: block;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 50%;
+          position: absolute;
+          margin-left: -50px;
+      }
+  }
+}
+.pkg-builder-page-content {
+  .prod-listitem-content {
+    > h4 {
+       margin-bottom: 4px;
+       margin-top: 0;
+   }
+  }
+}
+.pkg-builder-page-content .prod-listitem-content > h4 > a {
+    font-size: 20px;
+    text-decoration: none;
+    display:block;
+    padding: 8px 40px 4px 0;
+    color: #0c8fd0;
+    &:hover {
+        color: #19388a;
+    }
+    &:after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        display: block;
+        float: right;
+        background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-white.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        border-radius: 50%;
+        background-color: #0c8fd0;
+        margin: -4px -40px 0 0;
+    }
+    &:hover:after {
+        background-color:#19388a;
+    }
+    &.collapsed:after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        display: block;
+        float: right;
+        background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        border-radius: 50%;
+        background-color: #0c8fd0;
+        margin-top: -4px;
+        text-decoration:none;
+    }
+}
+
+// divider lines
+// ----------------
+.pkg-builder-page-content {
+  .pkg-products-wrap {
+      border-top: solid 3px #19388a;
+      padding: 0;
+  }
+}
+.pkg-products-wrap {
+    border-top: solid 3px #19388a;
+}
+.product-category-content:last-child .product-list-contents {
+    border-bottom: solid 3px #19388a;
+}
+
+.pkg-disclaimer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+// disclaimer
+// ----------------
+.pkg-disclaimer {
+    margin: 40px 0;
+}
+
+.pkg-disclaimer > .col-sm-8 {
+    padding: 0;
+    @media (max-width:751px){
+        border-top: solid 2px #d9d9d9;
         padding-top: 24px;
     }
 }
-
-@media (max-width:583px) {
-    .pkg-product-card .pkg-builder-label {
-        padding-left: 54px;
-        padding-top: 16px;
+.disclaimer-heading {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+// media queries for page layout
+// ----------------
+@media (max-width: 990px) and (min-width:752px) {
+  .pkg-builder-form.page-layout {
+    p.prod-description {
+        margin-bottom: 16px;
     }
-    .product-content {
-        padding: 0 14px 14px 14px;
-    }
-    .pkg-builder-addon-wrap {
-        margin: 0px;
-        padding: 0 14px 14px 14px;
-    }
-    .pkg-builder-form h2 {
-        font-size: 24px;
-    }
-    .pkg-builder-form h3 {
-        font-size: 21px;
-    }
-    .pkg-builder-form .h4 {
-        font-size: 18px;
-    }
+  }
 }
-//Page Layout
-.col-sm-8.pkg-products-wrap {
-    border-top: solid 3px #19388a;
-}
+@media (max-width: 751px) and (min-width:640px) {
 
-.col-sm-4.pkg-subtotal-wrap {
-    padding-right: 0;
-    padding-left: 24px;
 }
+@media (max-width:751px){
+  .pkg-builder-page-content .prod-listitem-content {
+      margin-left: 0px;
+  }
+}
+@media (max-width: 583px) {
 
-.pkg-subtotal-wrap .pkg-builder-subtotal {
-    margin-top: 0;
-    padding: 0;
 }
+@media (max-width:400px){
 
-.pkg-subtotal-wrap .pkg-builder-subtotal .tds-divider-line {
-    height: 3px;
-    background-color: #1c79b1;
-}
-.pkg-builder-page-content .prod-listitem-wrap .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
-    margin-left: -4px;
-    margin-top: -2px;
-}
-
-.pkg-builder-page-content .prod-listitem-wrap {
-    border-bottom: solid 2px red;
-}
-
-.pkg-builder-page-content .col-sm-8.pkg-products-wrap {
-    padding: 0;
 }

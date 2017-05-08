@@ -19,3 +19,20 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# no longer watch for Sass file changes or compile them
+exclude: [
+  ‘css’,
+  ‘_scss’,
+  cws-pkg-builder-section.html,
+  cws-pkg-builder-section1.html,
+  cws-pkg-builder-wiki.html,
+  cws-pkg-builder-page-wiki.html,
+  cws-pkg-builder.html,
+  2016-11-15-CWS-package-comparison-horizontal-wikimarkup.markdown,
+  2016-11-16-CWS-package-comparison-vertical-wikimarkup.markdown,
+  2017-1-25-Customer-Self-ID-wiki.markdown,
+]
+
+# don't erase the CSS directory in the _site output folder
+keep_files: ['_tds-local-dev/css']

@@ -1,11 +1,9 @@
 ---
 layout: default-cable
-title:  "CWS-Address Entry Component"
-date:   2016-12-15
+title:  "CWS-Address Entry Component 2.0"
+date:   2017-3-24
 categories: CWS
 ---
-
-
 
 
 <div class="container">
@@ -31,151 +29,48 @@ Warning message appears above prefilled form with option to Log In-->
   </div>
 </div>
 
+<!--outOfServiceMessage error messages-->
+  <div class="container" id="out-of-service-area">
+      <div role="alert" class="tds-alert tds-alert-warning">
+        <p>
+        {outOfServiceMessage}
+        </p>
+      </div>
+    </div>
 
+  <div class="container" id="errors">
+      <div role="alert" class="tds-alert tds-alert-critical">
+        <p>{criticaleMessage}</p>
+      </div>
+  </div>
+<!--outOfServiceMessage error messages end-->
 
+<!--address-entry-->
 <div class="container address-entry">
   <div class="row">
-    <h2>To see available products, pricing, and special offers, please provide your address</h2>
+    <h2>To see available products, pricing, and special offers, <span class="inline-block">please provide your zip code</span> and address</h2>
   </div>
 
 
   <div class="row">
     <div class="col-sm-8 col-xs-12">
-      <form>
-        <div class="form-group">
-
-          <label for="billingAddressLineOptional">Address: </label>
-          <input class="form-control" name="billingAddressLineOptional" id="billingAddressLineOptional" type="text" value="">
-          <span class="help-block">Please remove any punctuation (Example: St not St.)</span>
-          <span class="help-block" id="billingAddressLineOptionalError" style="display: none;"></span>
-
+      <form id="addressForm">
+        <div class="ui-widget">
+          <div id="zip-container" class="form-group tds-form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" name="zip" id="zip" class="form-control">
+          </div>
+          <div id="term-container"class="form-group">
+            <label for="term">${labelText}</label>
+            <input id="term" type="text" name="term" class="form-control" style="text-transform: capitalize" value="">
+            <p class="help-block">${helpText}</p>
+          </div>
+          <input type="hidden" id="address" name="address">
+          <button id="address-submit" type="submit" class="gallery-btn pull-left">${buttonText}</button>
         </div>
-
-        <div class="form-group">
-
-          <label for="billingCity">City/Town: </label>
-          <input class="form-control" name="billingCity" id="billingCity" type="text" value="">
-          <span class="help-block">Please remove any punctuation (Example: St George not St. George)</span>
-          <span class="help-block" id="cityError" style="display: none;"></span>
-
-        </div>
-
-        <div class="form-group">
-
-          <label for="billingState">State: </label>
-          <select class="form-control" name="billingState" id="billingState" autofocus="autofocus" autocorrect="off" autocomplete="off">
-              <option value="" disabled="" selected="selected">Select State</option>
-
-              <option value="AK" data-alternative-spellings="Alaska">AK</option>
-
-              <option value="AL" data-alternative-spellings="Alabama">AL</option>
-
-              <option value="AR" data-alternative-spellings="Arkansas">AR</option>
-
-              <option value="AZ" data-alternative-spellings="Arizona">AZ</option>
-
-              <option value="CA" data-alternative-spellings="California">CA</option>
-
-              <option value="CO" data-alternative-spellings="Colorado">CO</option>
-
-              <option value="CT" data-alternative-spellings="Connecticut">CT</option>
-
-              <option value="DC" data-alternative-spellings="District of Columbia Washington, D.C.">DC</option>
-
-              <option value="DE" data-alternative-spellings="Delaware">DE</option>
-
-              <option value="FL" data-alternative-spellings="Florida">FL</option>
-
-              <option value="GA" data-alternative-spellings="Georgia">GA</option>
-
-              <option value="HI" data-alternative-spellings="Hawaii">HI</option>
-
-              <option value="IA" data-alternative-spellings="Iowa">IA</option>
-
-              <option value="ID" data-alternative-spellings="Idaho">ID</option>
-
-              <option value="IL" data-alternative-spellings="Illinois">IL</option>
-
-              <option value="IN" data-alternative-spellings="Indiana">IN</option>
-
-              <option value="KS" data-alternative-spellings="Kansas">KS</option>
-
-              <option value="KY" data-alternative-spellings="Kentucky">KY</option>
-
-              <option value="LA" data-alternative-spellings="Louisiana">LA</option>
-
-              <option value="MA" data-alternative-spellings="Massachusetts">MA</option>
-
-              <option value="MD" data-alternative-spellings="Maryland">MD</option>
-
-              <option value="ME" data-alternative-spellings="Maine">ME</option>
-
-              <option value="MI" data-alternative-spellings="Michigan">MI</option>
-
-              <option value="MN" data-alternative-spellings="Minnesota">MN</option>
-
-              <option value="MO" data-alternative-spellings="Missouri">MO</option>
-
-              <option value="MS" data-alternative-spellings="Mississippi">MS</option>
-
-              <option value="MT" data-alternative-spellings="Montana">MT</option>
-
-              <option value="NC" data-alternative-spellings="North Carolina">NC</option>
-
-              <option value="ND" data-alternative-spellings="North Dakota">ND</option>
-
-              <option value="NE" data-alternative-spellings="Nebraska">NE</option>
-
-              <option value="NH" data-alternative-spellings="New Hampshire">NH</option>
-
-              <option value="NJ" data-alternative-spellings="New Jersey">NJ</option>
-
-              <option value="NM" data-alternative-spellings="New Mexico">NM</option>
-
-              <option value="NV" data-alternative-spellings="Nevada">NV</option>
-
-              <option value="NY" data-alternative-spellings="New York">NY</option>
-
-              <option value="OH" data-alternative-spellings="Ohio">OH</option>
-
-              <option value="OK" data-alternative-spellings="Oklahoma">OK</option>
-
-              <option value="OR" data-alternative-spellings="Oregon">OR</option>
-
-              <option value="PA" data-alternative-spellings="Pennsylvania">PA</option>
-
-              <option value="RI" data-alternative-spellings="Rhode Island">RI</option>
-
-              <option value="SC" data-alternative-spellings="South Carolina">SC</option>
-
-              <option value="SD" data-alternative-spellings="South Dakota">SD</option>
-
-              <option value="TN" data-alternative-spellings="Tennessee">TN</option>
-
-              <option value="TX" data-alternative-spellings="Texas">TX</option>
-
-              <option value="UT" data-alternative-spellings="Utah">UT</option>
-
-              <option value="VA" data-alternative-spellings="Virginia">VA</option>
-
-              <option value="VT" data-alternative-spellings="Vermont">VT</option>
-
-              <option value="WA" data-alternative-spellings="Washington">WA</option>
-
-              <option value="WI" data-alternative-spellings="Wisconsin">WI</option>
-
-              <option value="WV" data-alternative-spellings="West Virginia">WV</option>
-
-              <option value="WY" data-alternative-spellings="Wyoming">WY</option>
-          </select>
-          <span class="help-block" id="billingStateError" style="display: none;"></span>
-
-        </div>
-
-          <button class="gallery-btn pull-left" type="submit" value="Submit">$buttonCTA</button>
-
       </form>
-    </div><!--Form Colume end-->
+    </div>
+    <!--Form Colume end-->
 
     <div class="col-sm-4 col-xs-12">
           <div class="tds-alert tds-alert-info">Looking for Business Services? <span class="inline-block">Visit <a href="https://tdsbusiness.com/">www.tdsbusiness.com</a>.</span></div>
@@ -343,21 +238,4 @@ Warning message appears above prefilled form with option to Log In-->
 
 
 
-<script src="{{ site.baseurl }}/etc/designs/tds-foundation/tds-styles/bower_components/jquery/dist/jquery.min.js"></script>
-
-<script src="{{ site.baseurl }}/etc/designs/tds-foundation/tds-styles/bower_components/jquery-ui/jquery-ui.min.js"></script>
-
-<script src="{{ site.baseurl }}/etc/designs/tds-foundation/tds-styles/bower_components/selectToAutocomplete/jquery.select-to-autocomplete.js"></script>
-
-<script>
-  (function($){
-    $(function(){
-      $('select').selectToAutocomplete();
-      $('form').submit(function(){
-        alert( $(this).serialize() );
-        return false;
-      });
-    });
-  })(jQuery);
-</script>
 <div style="height:50px"></div>

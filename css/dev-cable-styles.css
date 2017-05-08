@@ -1,0 +1,1077 @@
+/* ===== Start tds cable style overrides ======================================
+/* ========================================================================== */
+/* ===== tds cable layouts === */
+.row {
+  width: 100%;
+  max-width: 1156px;
+  margin: 0 auto;
+}
+
+/*/// Package Compairison  ///*/
+/* ===== tds cable header === */
+/*////overrides/////*/
+@media (min-width: 568px) {
+  .cable-top-bar div.customLargeNavBar {
+    display: inline;
+  }
+}
+
+@media (min-width: 1px) {
+  .cable-nav-main div.customLargeNavBar {
+    display: block;
+  }
+}
+
+.cable-top-bar .tds-clearfix:after,
+.cable-nav-main .tds-clearfix:after {
+  visibility: hidden;
+  display: none;
+  font-size: 0;
+  content: none;
+  clear: none;
+  height: 0;
+}
+
+.cable-top-bar .navbar:before, .cable-top-bar .navbar:after,
+.cable-nav-main .navbar:before, .cable-nav-main .navbar:after {
+  content: " ";
+  display: none;
+  clear: none;
+}
+
+.cable-top-bar .container:before, .cable-top-bar .container:after,
+.cable-nav-main .container:before, .cable-nav-main .container:after {
+  content: none;
+  display: none;
+}
+
+.L1-nav {
+  float: left;
+}
+@media only screen and (max-width: 568px) {
+  .L1-nav {
+    float: none;
+  }
+}
+
+.L1-nav > ul {
+  border-bottom: none;
+  font-weight: inherit;
+}
+.L1-nav > ul > li {
+  font-size: inherit;
+}
+
+.L1-nav > ul > li > a:hover {
+  background-color: inherit;
+}
+
+.L1-nav > ul > li > a:after, .L1-nav > ul > li > a:hover:after, .L1-nav > ul > li > a:focus:after {
+  content: none;
+}
+
+.L1-nav ul ul {
+  overflow: visible;
+}
+
+.L1-nav ul ul li:hover a {
+  background-image: none;
+}
+
+/*////overrides end////*/
+#skiptonav {
+  z-index: 100;
+}
+#skiptonav > a {
+  padding: 15px 12px;
+}
+
+#skiptocontent {
+  z-index: 100;
+}
+#skiptocontent > a {
+  padding: 15px 12px;
+}
+
+.container-header {
+  padding: 0 0 40px 0;
+  margin: 0 auto;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid #0A7AAA;
+}
+
+.row-header {
+  clear: both;
+}
+
+.cable-top-bar {
+  font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  color: #FFF;
+  background-color: #555;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+}
+.cable-top-bar:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.ui-mobile-menu {
+  display: none;
+  position: relative;
+  padding-left: 1.25em;
+  cursor: pointer;
+}
+.ui-mobile-menu span {
+  display: none;
+}
+.ui-mobile-menu:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  width: 40px;
+  height: 22px;
+  background-size: contain;
+  background: url("content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
+}
+@media only screen and (max-width: 568px) {
+  .ui-mobile-menu {
+    display: block;
+    top: 0;
+  }
+}
+
+.cable-nav-top-bar .L1-nav > ul > li > a {
+  background-color: inherit;
+}
+.cable-nav-top-bar .L1-nav ul ul li a {
+  background-color: inherit !important;
+  color: #FFF;
+}
+.cable-nav-top-bar > .container {
+  max-width: 100%;
+}
+.cable-nav-top-bar ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  position: relative;
+  /*--Set relative positioning on the unordered list itself - not on the list item--*/
+  z-index: 200;
+}
+.cable-nav-top-bar ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.cable-nav-top-bar ul li a {
+  padding: 15px 10px;
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+}
+.cable-nav-top-bar ul li:hover, .cable-nav-top-bar ul li :focus {
+  background: #0A7AAA;
+}
+.cable-nav-top-bar ul li:hover ul, .cable-nav-top-bar ul li :focus {
+  display: block;
+  background: #0A7AAA;
+}
+.cable-nav-top-bar ul li ul {
+  list-type: none;
+  float: left;
+  position: absolute;
+  left: 0;
+  display: none;
+  /*--Hide by default--*/
+  width: 100%;
+  color: #fff;
+}
+.cable-nav-top-bar ul li ul:hover, .cable-nav-top-bar ul li ul :focus {
+  background: #0A7AAA;
+}
+.cable-nav-top-bar ul li ul li {
+  color: #555;
+  padding: 0 10px;
+  font-size: 14px;
+  min-width: 200px;
+  background: #0A7AAA;
+}
+.cable-nav-top-bar ul li ul li:hover, .cable-nav-top-bar ul li ul li a:hover, .cable-nav-top-bar ul li ul li :focus {
+  background: #0C8FD0;
+}
+.cable-nav-top-bar .L1-nav ul ul li + li a, .cable-nav-top-bar .L1-nav ul ul li + li a:hover, .cable-nav-top-bar .L1-nav ul ul li + li a:focus {
+  border-top: 2px solid #FFF;
+}
+@media screen and (max-width: 568px) {
+  .cable-nav-top-bar {
+    display: none;
+  }
+}
+
+.nav-tds-external-sites {
+  float: right;
+}
+.nav-tds-external-sites .res {
+  border-top: 5px solid #0A7AAA;
+  background: #fff;
+  color: #353535;
+}
+.nav-tds-external-sites .res:hover, .nav-tds-external-sites .res :focus {
+  color: #0A7AAA;
+}
+.nav-tds-external-sites .bus {
+  border-top: 5px solid #f47e1d;
+  background: #353535;
+  color: #fff;
+}
+.nav-tds-external-sites .bus:hover, .nav-tds-external-sites .bus :focus {
+  color: #f47e1d;
+}
+.nav-tds-external-sites ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  /*--Set relative positioning on the unordered list itself - not on the list item--*/
+  z-index: 100;
+}
+.nav-tds-external-sites ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+}
+.nav-tds-external-sites ul li a {
+  padding: 11px 30px 14px 30px;
+  width: 135px;
+  display: block;
+  text-decoration: none;
+}
+@media screen and (max-width: 360px) {
+  .nav-tds-external-sites ul li a {
+    width: 102px;
+    padding: 11px 30px 14px 15px;
+  }
+}
+
+.cable-nav-main {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 18%;
+  font-size: 18px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1200px) {
+  .cable-nav-main {
+    margin: 0 0 0 18%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .cable-nav-main {
+    display: none;
+    margin: 20px auto;
+    width: 85%;
+  }
+}
+.cable-nav-main .L1-nav > ul > li > a {
+  padding: 15px 12px;
+  display: block;
+  color: #19388A;
+  text-decoration: none;
+}
+.cable-nav-main ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  position: relative;
+  /*--Set relative positioning on the unordered list itself - not on the list item--*/
+  z-index: 100;
+}
+@media screen and (max-width: 568px) {
+  .cable-nav-main ul {
+    width: 100%;
+  }
+}
+.cable-nav-main .L1-nav > ul > li.active > a {
+  color: #FFF;
+  background: #0A7AAA;
+}
+.cable-nav-main ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+@media screen and (max-width: 568px) {
+  .cable-nav-main ul li {
+    float: none;
+    clear: both;
+  }
+}
+.cable-nav-main ul li li:hover, .cable-nav-main ul li :focus {
+  color: #FFF;
+}
+.cable-nav-main ul li:hover, .cable-nav-main ul li :focus {
+  background: #0A7AAA;
+  color: #ffffff;
+}
+.cable-nav-main ul li:hover a, .cable-nav-main ul li :focus a {
+  color: #FFF;
+}
+.cable-nav-main ul li:hover ul, .cable-nav-main ul li :focus {
+  display: block;
+  background: #555;
+  color: #FFF;
+}
+@media screen and (max-width: 568px) {
+  .cable-nav-main ul li:hover ul, .cable-nav-main ul li :focus {
+    display: none;
+  }
+}
+@media screen and (max-width: 568px) {
+  .cable-nav-main ul li {
+    border-top: 1px solid #0C8FD0;
+  }
+}
+.cable-nav-main ul li ul {
+  list-type: none;
+  float: left;
+  position: absolute;
+  left: 0;
+  display: none;
+  /*--Hide by default--*/
+  width: 100%;
+  color: #fff;
+}
+.cable-nav-main ul li ul:hover, .cable-nav-main ul li ul :focus {
+  background: #0A7AAA;
+}
+.cable-nav-main ul li ul li {
+  color: #555;
+  padding: 0 10px;
+  font-size: 16px;
+  min-width: 225px;
+  background: #353535;
+}
+.cable-nav-main ul li ul li:hover, .cable-nav-main ul li ul li a:hover, .cable-nav-main ul li ul li :focus {
+  background: #555;
+}
+.cable-nav-main .L1-nav ul ul li + li a, .cable-nav-main .L1-nav ul ul li + li a:hover, .cable-nav-main .L1-nav ul ul li + li a:focus {
+  border-top: 2px solid #0C8FD0 !important;
+}
+
+.contact-links-wrap {
+  margin: 15px 0;
+  overflow: visible;
+}
+@media screen and (max-width: 360px) {
+  .contact-links-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contact-links-wrap ul li {
+  margin: 8px 0 0 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+.contact-links-wrap ul li .gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
+  margin: 12px 0 0 16px;
+}
+.contact-links-wrap ul li:last-child {
+  margin-right: 15px;
+}
+@media screen and (max-width: 680px) {
+  .contact-links-wrap ul li:last-child {
+    margin: 8px 8px 8px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact-links-wrap ul li:last-child {
+    margin: 8px 16px;
+  }
+}
+.contact-links-wrap ul li:last-child:last-child.gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
+  margin: 15px -15px 8px 8px;
+}
+@media screen and (max-width: 480px) {
+  .contact-links-wrap ul li:last-child:last-child.gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
+    margin: 18px -15px 8px 8px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .contact-links-wrap {
+    text-align: left;
+  }
+  .contact-links-wrap .gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
+    margin: 24px 0 0 12px;
+    float: right;
+  }
+}
+
+#header-contact-links .contact-links-text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #0A7AAA;
+}
+@media screen and (max-width: 480px) {
+  #header-contact-links .contact-links-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #header-contact-links .contact-links-text {
+    font-size: .9em;
+  }
+}
+#header-contact-links .contact-chat-icon:before, #header-contact-links .contact-email-icon:before, #header-contact-links .contact-call-icon:before, #header-contact-links .contact-form-icon:before,
+#header-contact-links .contact-account-icon:before, #header-contact-links .contact-cart-icon:before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  position: relative;
+  top: -2px;
+}
+@media screen and (max-width: 751px) {
+  #header-contact-links .contact-chat-icon:before, #header-contact-links .contact-email-icon:before, #header-contact-links .contact-call-icon:before, #header-contact-links .contact-form-icon:before,
+  #header-contact-links .contact-account-icon:before, #header-contact-links .contact-cart-icon:before {
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #header-contact-links .contact-chat-icon:before, #header-contact-links .contact-email-icon:before, #header-contact-links .contact-call-icon:before, #header-contact-links .contact-form-icon:before,
+  #header-contact-links .contact-account-icon:before, #header-contact-links .contact-cart-icon:before {
+    margin-right: 4px;
+    width: 25px;
+    height: 25px;
+  }
+}
+#header-contact-links .contact-call-icon:before {
+  background-image: url(../content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+@media screen and (max-width: 480px) {
+  #header-contact-links .contact-call-icon:before {
+    background-size: 12px;
+  }
+}
+#header-contact-links .contact-account-icon:before {
+  background-image: url(../content/dam/tdstelecom/images/ui/icon_account-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  #header-contact-links .contact-account-icon:before {
+    background-size: 12px;
+  }
+}
+#header-contact-links .contact-cart-icon:before {
+  background-image: url(../content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+}
+@media screen and (max-width: 480px) {
+  #header-contact-links .contact-cart-icon:before {
+    background-size: 12px;
+  }
+}
+@media screen and (max-width: 751px) {
+  #header-contact-links {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+}
+
+/*Header logo */
+.container-logo #tds-logo {
+  float: left;
+  width: 204px;
+  height: 83px;
+  margin: -15px 10% 0px 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 992px) {
+  .container-logo #tds-logo {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container-logo {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .container-logo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container-logo #tds-logo {
+    float: none;
+    width: 204px;
+    height: 83px;
+    margin: 0;
+  }
+}
+
+.subscribe-text:before {
+  content: "";
+  padding: 15px 25px;
+  background-image: linear-gradient(transparent, transparent), url(../content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.btn-subscribe {
+  padding: 0 10px;
+  display: block;
+}
+.btn-subscribe:after {
+  content: "";
+  padding-right: 0px;
+  margin-left: 0px;
+  background-image: none;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+a.btn-subscribe::before {
+  content: "";
+  padding-left: 0;
+  margin-right: 0;
+  background-image: none;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+/* ===== tds cable warrnings and error messages === */
+.tds-alert {
+  padding: 15px;
+}
+
+.container.warning-cartEmpty,
+.container.tds-alert.tds-alert-critical {
+  max-width: 100%;
+  padding: 15px 15px 5px 15px;
+}
+.container.warning-cartEmpty p,
+.container.tds-alert.tds-alert-critical p {
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.container.warning-cartEmpty a,
+.container.tds-alert.tds-alert-critical a {
+  color: #555;
+}
+.container.warning-cartEmpty a:hover, .container.warning-cartEmpty a :focus,
+.container.tds-alert.tds-alert-critical a:hover,
+.container.tds-alert.tds-alert-critical a :focus {
+  color: #0A7AAA;
+}
+
+.container.warning-cartEmpty {
+  background-color: #FFF8D8;
+}
+
+.tds-alert.tds-alert-warning,
+.tds-alert.tds-alert-critical {
+  background-image: none;
+  border-left: 0px;
+  padding-left: 0px;
+}
+.tds-alert.tds-alert-warning .col-md-9.col-sm-7.col-xs-12, .tds-alert.tds-alert-warning .col-md-3.col-sm-5.col-xs-12,
+.tds-alert.tds-alert-critical .col-md-9.col-sm-7.col-xs-12,
+.tds-alert.tds-alert-critical .col-md-3.col-sm-5.col-xs-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.tds-alert.tds-alert-warning a,
+.tds-alert.tds-alert-critical a {
+  color: #0C8FD0;
+}
+.tds-alert.tds-alert-warning a.gallery-btn.pull-right,
+.tds-alert.tds-alert-critical a.gallery-btn.pull-right {
+  margin-top: 0;
+  color: #FFF;
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+  .tds-alert.tds-alert-warning a.gallery-btn.pull-right,
+  .tds-alert.tds-alert-critical a.gallery-btn.pull-right {
+    float: left !important;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .tds-alert.tds-alert-warning a.gallery-btn.pull-right,
+  .tds-alert.tds-alert-critical a.gallery-btn.pull-right {
+    width: 100%;
+  }
+}
+.tds-alert.tds-alert-warning p:last-child,
+.tds-alert.tds-alert-critical p:last-child {
+  margin-bottom: 0;
+}
+
+.tds-alert.tds-alert-critical {
+  border-top: 3px solid #CB1D1D;
+}
+.tds-alert.tds-alert-critical .container {
+  background-color: #ffecec;
+  background-image: url(../content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+  background-size: 22px 22px;
+  background-position: 16px 0px;
+  background-repeat: no-repeat;
+  padding-left: 52px;
+}
+.tds-alert.tds-alert-critical .container a {
+  color: #CB1D1D;
+}
+.tds-alert.tds-alert-critical .container a:hover, .tds-alert.tds-alert-critical .container a :focus {
+  color: #991419;
+}
+.tds-alert.tds-alert-critical .container ul li {
+  list-style-type: square;
+  display: list-item;
+}
+
+.container .tds-alert.tds-alert-critical {
+  border-left: 3px solid #CB1D1D;
+  border-top: 0px;
+  background-color: #ffecec;
+  background-image: url(../content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+  background-size: 22px 22px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+.container .tds-alert.tds-alert-critical a {
+  color: #CB1D1D;
+}
+.container .tds-alert.tds-alert-critical a:hover, .container .tds-alert.tds-alert-critical a :focus {
+  color: #991419;
+}
+.container .tds-alert.tds-alert-critical ul li {
+  list-style-type: square;
+  display: list-item;
+}
+
+.container tr.tds-alert.tds-alert-critical {
+  border-top: none;
+  font-size: inherit;
+  font-weight: normal;
+  background-image: none;
+}
+.container tr.tds-alert.tds-alert-critical td:first-child:before {
+  content: "";
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin-right: 15px;
+}
+
+.tds-alert.tds-alert-warning {
+  border-top: 3px solid #FFCE00;
+}
+.tds-alert.tds-alert-warning .container {
+  background-color: #FFF8D8;
+  background-image: url(../content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg);
+  background-size: 22px 22px;
+  background-position: 16px 0px;
+  background-repeat: no-repeat;
+  padding-left: 52px;
+}
+.tds-alert.tds-alert-warning .container ul li {
+  list-style-type: square;
+  display: list-item;
+}
+
+.container .tds-alert.tds-alert-warning {
+  border-left: 3px solid #FFCE00;
+  border-top: 0px;
+  background-color: #FFF8D8;
+  background-image: url(../content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg);
+  background-size: 22px 22px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.datepicker-switch {
+  color: red;
+}
+
+/* ===== tds cable  form styles === */
+#subscribeToEmail + label {
+  margin-top: 10px;
+}
+
+.checkbox .tds-radio-btn {
+  border-radius: 0;
+}
+
+label:hover input:checked + .tds-radio-btn:before {
+  top: inherit;
+  left: inherit;
+}
+
+.datepicker-switch {
+  color: red;
+}
+
+/* Address Enrty Page */
+.address-entry .col-sm-8 {
+  padding-left: 0;
+}
+.address-entry .col-sm-4 {
+  padding-right: 0;
+}
+.address-entry .col-sm-6 {
+  padding-left: 0;
+}
+@media (max-width: 750px) {
+  .address-entry .col-sm-6 {
+    padding-right: 0;
+  }
+}
+.address-entry .col-sm-6:nth-child(odd) {
+  padding-left: 15px;
+  padding-right: 0;
+}
+@media (max-width: 750px) {
+  .address-entry .col-sm-6:nth-child(odd) {
+    padding-left: 0;
+  }
+}
+@media (max-width: 750px) {
+  .address-entry .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.address-entry .gallery-btn {
+  margin: 0 0 20px 0;
+}
+.address-entry .tds-msg-box {
+  min-height: 0;
+  padding: 28px;
+}
+.address-entry .tds-msg-box h3:first-child {
+  margin-top: 0;
+}
+.address-entry .tds-msg-box #loginButton, .address-entry .tds-msg-box #provideAddressButton {
+  height: auto;
+}
+.address-entry .tds-msg-box .gallery-btn {
+  margin-bottom: 0;
+}
+.address-entry h4, .address-entry .h4 {
+  margin: 0 0 5px 0;
+}
+
+div#suggestedAddresses button.gallery-btn.pull-left {
+  margin-top: 25px;
+}
+
+.readOnly {
+  display: inline-block;
+}
+
+/* ===== tds cable Typography === */
+h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+h1.page-header {
+  border-bottom: 2px solid #CCC;
+  padding-bottom: 15px;
+  margin: 40px 0 20px;
+}
+
+/*==form styles==*/
+.hr-after-text {
+  overflow: hidden;
+}
+.hr-after-text:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid #CCC;
+}
+
+/*==Self-ID page styles==*/
+.content-intro {
+  font-size: 18px;
+  color: #353535;
+  font-weight: normal;
+}
+
+/*==Text Formating==*/
+.inline-block {
+  display: inline-block;
+}
+
+.userGreeting-address {
+  font-weight: bold;
+}
+
+/*/// Shopper ID  ///*/
+#shopperId .content-intro {
+  padding: 20px 0;
+}
+
+.tds-msg-box {
+  border: solid 3px #e3e3e3;
+  min-height: 236px;
+  max-height: auto;
+}
+.tds-msg-box h2 {
+  font-weight: 400;
+  font-size: 21px;
+}
+@media (max-width: 750px) {
+  .tds-msg-box {
+    margin: 0 0 30px 0;
+  }
+}
+
+.col-sm-12 .tds-msg-box {
+  margin: 0 0 30px 0;
+}
+
+table.table {
+  font-size: 18px;
+}
+table.table tbody > tr:last-child > td {
+  border-bottom: none !important;
+}
+table.table tbody > tr > td {
+  padding: 8px 0px 8px 20px;
+}
+
+@media (max-width: 480px) {
+  section .table > tbody > tr > td {
+    display: block;
+    padding: 0px 0px 0px 20px;
+  }
+  section .table > tbody > tr > td:nth-child(odd) {
+    border-top: 20px solid transparent;
+  }
+}
+
+table.table tr.tds-alert.tds-alert-critical {
+  display: table-row;
+  border-top: 0;
+}
+table.table tr.tds-alert.tds-alert-critical td {
+  padding: 15px 0 15px 20px;
+}
+@media (max-width: 480px) {
+  table.table tr.tds-alert.tds-alert-critical td {
+    display: block;
+    padding: 0px 0px 0px 20px;
+  }
+  table.table tr.tds-alert.tds-alert-critical td:nth-child(odd) {
+    border-top: 20px solid #FFF;
+    padding-top: 15px;
+  }
+  table.table tr.tds-alert.tds-alert-critical td:nth-child(even) {
+    padding-bottom: 15px;
+  }
+}
+
+.cart-review-container {
+  border: 2px solid #CCC;
+  padding: 24px;
+  margin: 0 0 30px 0;
+}
+.cart-review-container h2 {
+  color: #0C8FD0;
+  margin: 0;
+}
+.cart-review-container h3.line-item-title {
+  font-size: 21px;
+  color: #19388A;
+  margin: 0;
+  padding-top: 20px;
+}
+.cart-review-container h3.line-item-title:nth-child(odd) {
+  padding-top: 15px;
+}
+.cart-review-container h3.line-item-title + table + h3 {
+  border-top: 2px solid #CCC;
+}
+@media (max-width: 480px) {
+  .cart-review-container h3.line-item-title + table {
+    margin-bottom: 15px;
+  }
+}
+.cart-review-container table:last-child {
+  margin-bottom: 0;
+}
+.cart-review-container td.single-product {
+  padding: 0px;
+}
+.cart-review-container td.single-product h3.line-item-title {
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .cart-review-container td.single-product h3.line-item-title {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .cart-review-container td.single-product + td {
+    padding: 0;
+  }
+}
+
+.cart-review-header {
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  border-bottom: 2px solid #CCC !important;
+}
+.cart-review-header .col-md-9.col-sm-12 {
+  padding: 0;
+}
+.cart-review-header .col-md-3.col-sm-12 {
+  padding: 0;
+}
+.cart-review-header .col-md-3.col-sm-12 .form-group {
+  float: right;
+}
+@media (max-width: 960px) {
+  .cart-review-header .col-md-3.col-sm-12 .form-group {
+    float: left;
+    margin-top: 20px;
+  }
+}
+.cart-review-header h2 {
+  margin: 10px 0 0 0;
+}
+.cart-review-header .line-item-actions .btn {
+  padding: 12px 16px !important;
+  margin-right: 16px;
+}
+.cart-review-header .line-item-actions .btn:last-child {
+  margin-right: 0px;
+}
+.cart-review-header .line-item-actions a.btn {
+  text-decoration: none;
+}
+@media (max-width: 480px) {
+  .cart-review-header {
+    margin-bottom: 0px;
+  }
+}
+
+.tds-cost-price {
+  width: 25%;
+}
+@media (max-width: 940px) {
+  .tds-cost-price {
+    width: 33%;
+  }
+}
+@media (max-width: 480px) {
+  .tds-cost-price {
+    width: 100%;
+  }
+}
+
+.cart-review-header + table {
+  margin-top: 20px;
+}
+@media (max-width: 480px) {
+  .cart-review-header + table {
+    margin-top: 0px;
+  }
+}
+
+#emptyCartButton:before {
+  content: "";
+  width: 30px;
+  height: 22px;
+  margin: -5px 0 0 -10px;
+  float: left;
+  background-image: url(../content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cart-overview-actions form.pull-right.form-group {
+  margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .cart-overview-actions form.pull-right.form-group {
+    float: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  button#beginCheckout {
+    margin-top: 28px;
+    width: 100% !important;
+    display: inline-block;
+  }
+}
+
+.tds-cost-price {
+  color: #6B9C22;
+  text-transform: uppercase;
+}
+.tds-cost-price span {
+  font-size: .65em;
+}
+
+.tds-cost-price.cost-one-time {
+  color: #19388A;
+}
+
+/* ===== END tds cable style overrides ========================================
+/* ========================================================================== */
