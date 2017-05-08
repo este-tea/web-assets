@@ -163,3 +163,35 @@ span.search-current-page {
     padding-left: 40px;
     padding-right: 40px;
 }
+
+// IWP-3214 style the search biz site copy*/
+.otherSearch-business {
+    background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-information.svg);
+    background-size: 18px 18px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+    margin-left: 40px;
+    margin-top: 28px;
+    font-weight: 500;
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+}
+
+@media (max-width: 751px) {
+    .otherSearch-business {
+    margin-left: 24px;
+    }
+}
+@media (max-width: 583px) {
+    .otherSearch-business {
+    margin-left: 0px;
+    }
+}
+
+.otherSearchDescription {
+    display: inline-block;
+}
+
+.otherSearch {
+    display: inline-block;
+}

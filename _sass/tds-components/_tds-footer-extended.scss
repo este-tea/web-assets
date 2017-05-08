@@ -223,14 +223,14 @@ li:hover > a#tv-plus > .link-minus {
 
 //IMT-112 Update styling for TDS home page
 
-.extendedFooter.parbase.extendedfooter .customLargeNavBar.parbase.navbar {
+#subscribe-container + .container .customLargeNavBar.parbase.navbar{
   border-top: solid 2px $tds-lt-blue-80;
   padding: 28px 0;
-  @media (max-width: 751px) {
-    padding: 0;
-  }
+  @media (max-width: 656px) {
+    padding: 28px 0 8px 0;
+    }
 }
 
-.extendedFooter.parbase.extendedfooter .customLargeNavBar.parbase.navbar #genericfooter--navbar {
+#subscribe-container + .container .customLargeNavBar.parbase.navbar #genericfooter--navbar {
   padding: 0;
 }

@@ -227,3 +227,15 @@ a.ui-slider-handle.ui-state-default.ui-corner-all {
         font-size: 20px;
     }
 }
+
+// IMT-65 expand buttons getting cut off in chrome on ipad air*/
+button.btn.tds-usage-tool.tds-card-btn, button.tds-usage-tool.tds-card-btn.gallery-btn-link, button.btn.tds-usage-tool.tds-card-btn.collapsed, button.tds-usage-tool.tds-card-btn.collapsed.gallery-btn-link {
+    height: 24px;
+    width: 24px;
+    padding-left: 0px;
+    font-size: 13px;
+}
+
+button.btn.tds-usage-tool.tds-card-btn:before, button.tds-usage-tool.tds-card-btn.gallery-btn-link:before {
+    margin-top: 0px;
+}

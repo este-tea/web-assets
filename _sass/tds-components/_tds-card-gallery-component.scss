@@ -126,3 +126,77 @@
     }
   }
 }
+
+
+// exec bios styling: affects card gallery and 4 card gallery*/
+.content.container .page_content .tds-richtext-padboth .parsys .parbase.pagedivision.section {
+    padding: 0;
+}
+
+.content.container .page_content .cardgallery h2.tds-card-heading {
+    color: #0c8fd0;
+}
+.content.container .page_content .cardgallery a:hover h2.tds-card-heading {
+    color: #fff;
+}
+.content.container .page_content .cardgallery img.center-block.img-responsive.tds-card-img {
+    border-radius: 50%;
+    height: 9em;
+    width: 9em;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.content.container .page_content .pagedivision > .container .tds-card-gallery-4 {
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
+.content.container .page_content .cardgallery div.tds-btn {
+    padding-right: 26px!important;
+}
+
+.content.container .page_content .cardgallery div.tds-btn:after {
+    content: "";
+    width: 9px;
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 9px 14px;
+    position: absolute;
+    margin-top: 3px;
+    height: 14px;
+    right: 36px;
+}
+
+@media (max-width: 584px){
+    .content.container .page_content .cardgallery div.tds-btn:after {
+        right: 30px;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 754px) {
+    .content.container .page_content .cardgallery .tds-card-gallery-4>a {
+        width: 33.33%;
+    }
+}
+
+section.share a.circle-blue.contact-email-icon:before {
+    background-size: 14px;
+    width: 40px;
+    height: 40px;
+}
+
+ul.MYA-links {
+    margin: 0;
+    padding: 0;
+}
+
+ul.MYA-links li {
+    margin-top: -10px;
+    padding-left: 24px;
+}
+
+ul.MYA-links li:last-child {
+    margin-bottom: 0px;
+}

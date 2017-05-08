@@ -1,9 +1,13 @@
 /* tds-biz-searchbar
 ==========================================*/
 input.tds-searchbar-input {
+    background-color: $tds-lt-gray;
     margin-right: 0;
     width: 240px;
     padding-left: 44px;
+    &:hover, &:active, &:focus {
+      background-color: $tds-lt-gray;
+    }
 }
 
 .tds-searchbar-button {
@@ -28,9 +32,7 @@ input.tds-searchbar-input {
     left: 0;
     background-image: url(/content/dam/tdstelecom/images/ui/icon_search-binoculars-gray.svg);
     background-size: 20px;
-    &:hover, &:active, &:focus {
-      background-image: url(/content/dam/tdstelecom/images/ui/icon_search-binoculars-blue.svg);
-    }
+
   }
   .tds-searchbar-input {
       line-height: 40px;
@@ -53,7 +55,7 @@ input.tds-searchbar-input {
    color: #999;
 }
 
-/*newsSearchBar component*/
+// newsSearchBar component
 .newsSearchBar h2 {
     color: #19388a;
 }
