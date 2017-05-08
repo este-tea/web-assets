@@ -13,17 +13,17 @@
 }
 // fall back for SVGs //
 .contact-call-icon:before {
-  background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-call.png");
+  background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/contact/icon_contact-call.png");
   background-size: 12px;
 }
 
 .contact-chat-icon:before {
-  background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-chat.png");
+  background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/contact/icon_contact-chat.png");
   background-size: 14px;
 }
 
 .contact-form-icon:before {
-  background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-form.png");
+  background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/contact/icon_contact-form.png");
   background-size: 12px;
 }
 

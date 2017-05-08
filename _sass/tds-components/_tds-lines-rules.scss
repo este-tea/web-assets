@@ -22,10 +22,10 @@
     background: $tds-lt-blue;
   }
   &.dotted-gray {
-    background: url("/content/dam/tdstelecom/images/ui/gray-dotted-line.svg");
+    background: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/gray-dotted-line.svg");
   }
   &.dotted-dk-gray {
-    background: url("/content/dam/tdstelecom/images/ui/dk-gray-dotted-line.svg");
+    background: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/dk-gray-dotted-line.svg");
   }
 }
 

@@ -141,7 +141,7 @@
     width: 40px;
     height: 22px;
     background-size: contain;
-    background: url("/content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
+    background: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
   }
 
     @media only screen and (max-width: 568px) {

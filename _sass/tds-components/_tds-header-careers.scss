@@ -39,7 +39,7 @@
 }
 
 #btn-menu-only:after {
-    background-image: url("/content/dam/tdstelecom/images/ui/arrows/down-caret-ltblue.svg");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/arrows/down-caret-ltblue.svg");
 }
 
 .sticky-nav {

@@ -332,7 +332,7 @@ cursor: pointer;
 }
 
 button#continue:after {
-    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
     background-position: right 3px;
 }
 

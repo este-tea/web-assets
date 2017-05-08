@@ -31,19 +31,19 @@
 }
 .news-feed-logo-tds,
 .tds-article-logo-tds {
-    background: url("/content/dam/tdstelecom/images/logos/tds-logo.svg") left center no-repeat;
+    background: url("{{ site.baseurl }}/content/dam/tdstelecom/images/logos/tds-logo.svg") left center no-repeat;
     background-size: 75px;
 }
 // bend
 .news-feed-logo-bend,
 .tds-article-logo-bend {
-    background: url("/content/dam/tdstelecom/images/logos/bendbroadband-logo.svg") right center no-repeat;
+    background: url("{{ site.baseurl }}/content/dam/tdstelecom/images/logos/bendbroadband-logo.svg") right center no-repeat;
     background-size: 75px;
 }
 // oneneck
 .news-feed-logo-oneneck,
 .tds-article-logo-oneneck {
-    background: url("/content/dam/tdstelecom/images/logos/oneneck-logo.svg") center center no-repeat;
+    background: url("{{ site.baseurl }}/content/dam/tdstelecom/images/logos/oneneck-logo.svg") center center no-repeat;
     background-size: 75px;
 }
 .tds-news-feed-disclaimer .tds-article-logos {

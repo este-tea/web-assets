@@ -4,7 +4,7 @@
     text-align: center;
 }
 .gallery-btn:after {
-    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-caret-white.svg");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/arrows/right-caret-white.svg");
 }
 
 .shift-up button.gallery-btn.btn-block.tds-btn-plain {

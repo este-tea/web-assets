@@ -57,7 +57,7 @@ li.column-heading > a:hover:after {
     content: "";
     width: 10px;
     height: 20px;
-    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
     background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg');
     background-size: 10px 20px;
     background-position: right center;
@@ -98,7 +98,7 @@ li.column-heading > a:hover:after {
     height: 22px;
     width: 30px;
     float: right;
-    background-image: url("/content/dam/tdstelecom/images/ui/icon_plus-gray.png");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/icon_plus-gray.png");
     background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_plus-gray.svg');
     background-size: 11px 11px;
     background-position: left center;
@@ -108,14 +108,14 @@ li:hover > a#account-plus > .link-plus,
 li:hover > a#internet-plus > .link-plus,
 li:hover > a#phone-plus > .link-plus,
 li:hover > a#tv-plus > .link-plus {
-    background-image: url("/content/dam/tdstelecom/images/ui/icon_plus-ltblue.png");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/icon_plus-ltblue.png");
     background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_plus-ltblue.svg');
 }
 .link-minus {
     height: 21px;
     width: 30px;
     float: right;
-    background-image: url("/content/dam/tdstelecom/images/ui/icon_minus-gray.png");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/icon_minus-gray.png");
     background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_minus-gray.svg');
     background-size: 11px 11px;
     background-position: left center;
@@ -125,7 +125,7 @@ li:hover > a#account-plus > .link-minus,
 li:hover > a#internet-plus > .link-minus,
 li:hover > a#phone-plus > .link-minus,
 li:hover > a#tv-plus > .link-minus {
-    background-image: url("/content/dam/tdstelecom/images/ui/icon_minus-ltblue.png");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/icon_minus-ltblue.png");
     background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/icon_minus-ltblue.svg');
 }
 .footer-gray {
@@ -185,7 +185,7 @@ li:hover > a#tv-plus > .link-minus {
             padding-right: 1em;
             margin-left: 0.125em;
             content: "";
-            background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
+            background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
             background-size: 11px 16px;
             background-position: right 3px;
             background-repeat: no-repeat;

@@ -29,13 +29,13 @@
 .panel-group.tds-collapse .panel-heading a.btn-block .icon-expand {
     width: 20px;
     height: 20px;
-    background-image: url("/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg");
     background-size: 14px 14px;
     background-position: 0 4px;
     background-repeat: no-repeat;
 }
 .panel-group.tds-collapse .panel-heading a.btn-block .icon-expand {
-    background-image: url("/content/dam/tdstelecom/images/ui/icon_minus-white.svg");
+    background-image: url("{{ site.baseurl }}/content/dam/tdstelecom/images/ui/icon_minus-white.svg");
 }
 .parbase.collapsibleArchive.section {
     display: block;
