@@ -30,7 +30,18 @@ sass:
     style: expanded
 
 # no longer watch for Sass file changes or compile them
-exclude: [‘css’, ‘_scss’]
+exclude: [
+    ‘css’,
+    ‘_scss’,
+    cws-pkg-builder-section.html,
+    cws-pkg-builder-section1.html,
+    cws-pkg-builder-wiki.html,
+    cws-pkg-builder-page-wiki.html,
+    cws-pkg-builder.html,
+    ‘_posts/2016-11-15-CWS-package-comparison-horizontal-wikimarkup.markdown’,
+    ‘_posts/2016-11-16-CWS-package-comparison-vertical-wikimarkup.markdown’,
+    ‘_posts/2017-1-25-Customer-Self-ID-wiki.markdown’,
+]
 
 # don't erase the CSS directory in the _site output folder
 keep_files: ['_tds-local-dev/css']
