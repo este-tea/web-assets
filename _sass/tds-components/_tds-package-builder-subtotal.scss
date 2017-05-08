@@ -1,0 +1,224 @@
+/* tds-package-builder-subtotal.scss
+==========================================*/
+//subtotal information found in package builder
+//found in sidebar in page layout
+//found at bottom in section layout
+/* Section Layout */
+// ----------------
+.pkg-builder-subtotal {
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+.pkg-subtotal-content {
+    padding: 21px 0;
+}
+.subtotal-column {
+    text-align: center;
+}
+.subtotal-column-content {
+    padding: 0 8px;
+    margin: 0 auto;
+    float: right;
+}
+// divider lines
+// ----------------
+.pkg-summary-content .tds-divider-line {
+    background: #027ab4;
+}
+.pkg-builder-subtotal .tds-divider-line {
+    height: 2px;
+    background-color: #1c79b1;
+}
+// typography
+// ----------------
+.subtotal-items {
+    text-align: center;
+}
+h3.subtotal-header-text {
+    margin-top: 0;
+    font-weight: 400;
+}
+.pkg-subtotal-content .sel-head-text {
+    color: #353535;
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.pkg-subtotal-content .sel-price-text {
+    margin-top: 10px;
+}
+.pkg-subtotal-content .sel-head-text.sel-head-text-mth {
+    color: #19388a;
+}
+.pkg-subtotal-content .sel-price-text.sel-price-text-mth {
+    margin-bottom: 8px;
+}
+.subtotal-fees {
+    font-size: 75%;
+    margin-bottom: 0;
+}
+table.pkg-subtotal-table {
+    margin-bottom: 0;
+}
+@media (max-width: 960px) {
+    .pkg-subtotal-content .subtotal-header-text {
+        text-align: left;
+    }
+    .sel-summary.col-sm-12.col-md-3 {
+        text-align: center;
+    }
+}
+@media (max-width:750px) {
+    .subtotal-column-content {
+        float: none;
+    }
+    .pkg-subtotal-content .subtotal-header-text {
+        text-align: center;
+    }
+}
+@media (max-width: 584px) {
+    .sel-head-text {
+        font-size: 16px;
+    }
+    h3.subtotal-header-text {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+    .pkg-subtotal-content .sel-price-text {
+        font-size: 24px;
+    }
+    .pkg-subtotal-content .sel-price-text.sel-price-text-mth {
+        margin-bottom: 4px;
+    }
+}
+/* Page Layout */
+// ----------------
+.pkg-builder-page-content {
+    .pkg-builder-subtotal {
+        margin-top: 0;
+        padding: 0;
+    }
+}
+.pkg-summary-wrap {
+    padding-right: 0;
+    padding-left: 20px;
+    text-align: center;
+    @media (min-width: 752px) {
+        #addtocart {
+            width: 100%;
+        }
+    }
+    @media (max-width: 751px) {
+        text-align: right;
+        padding: 0;
+        margin-top: 40px;
+    }
+    @media (max-width: 420px) {
+        #addtocart {
+            width: 100%;
+        }
+    }
+}
+.pkg-summary-content {
+    padding: 20px;
+    background-color: #e8ebf3;
+    border-top: solid 3px #027ab4;
+    text-align: left;
+}
+.pkg-summary-wrap .pkg-subtotal-table {
+    .sel-head-text,
+    .sel-price-text,
+    .sel-price-text-mth {
+        font-size: 16px;
+    }
+    .sel-head-text {
+        color: #000;
+    }
+    .sel-price-text-mth {
+        color: #19388a;
+    }
+}
+table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
+    padding: 0;
+}
+.pkg-summary-wrap {
+    table.pkg-summary-table tbody > tr > td {
+        padding: 12px 0 0;
+        font-size: 14px;
+        &.category-heading {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        &.product-price {
+            font-weight: 600;
+            color: #19388a;
+            padding-left: 16px;
+            font-size: 14px;
+            text-align: right;
+        }
+    }
+}
+@media (max-width:840px) and (min-width:752px) {
+    .pkg-summary-wrap table.pkg-summary-table tbody > tr > td {
+        display: block;
+    }
+    .pkg-summary-wrap table.pkg-summary-table tbody > tr > td.product-price {
+        padding-top: 0;
+        text-align: left;
+    }
+}
+@media (min-width:752px) {
+    .pkg-summary-content .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
+        display: initial !important;
+    }
+    .pkg-summary-wrap .pkg-subtotal-table .sel-head-text {
+        margin: 0;
+        text-align: left;
+        display: table-cell;
+        vertical-align: bottom;
+        padding-top: 16px;
+    }
+    .pkg-summary-wrap .subtotal-column-content {
+        float: none;
+        padding: 0;
+        margin: 0;
+        display: table;
+        width: 100%;
+    }
+    #monthly-charges .subtotal-column-content {
+        position: relative;
+    }
+    .pkg-summary-wrap .pkg-subtotal-table .sel-price-text {
+        margin: 0;
+        vertical-align: bottom;
+        display: table-cell;
+        text-align: right;
+    }
+    .pkg-summary-wrap .pkg-subtotal-table .subtotal-fees {
+        display: table-row;
+        text-align: left;
+    }
+}
+@media (max-width:751px) {
+    .pkg-summary-wrap {
+        .sel-head-text {
+            margin-bottom: 0;
+        }
+        .sel-price-text {
+            margin-top: 8px;
+        }
+        .sel-price-text-mth {
+            margin-bottom: 4px;
+        }
+    }
+}
+@media (max-width: 751px) and (min-width:380px) {
+    .pkg-summary-wrap table.pkg-summary-table tbody > tr > td.prod-name {
+        padding-left: 18px;
+    }
+}
+@media (max-width:420px) {
+    .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
+        display: block!important;
+    }
+}

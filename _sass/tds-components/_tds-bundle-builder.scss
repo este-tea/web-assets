@@ -640,7 +640,7 @@ input:checked+.tds-radio-btn:before {
 .summ-column {
   text-align: center;
 }
-[class*="sel-head-text"] {
+.sel-head-text {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -651,17 +651,17 @@ input:checked+.tds-radio-btn:before {
   color: $tds-blue-100;
   margin-bottom: 20px;
 }
-[class*="sel-head-text"] small,
-[class*="sel-head-text"] .small {
+.sel-head-text small,
+.sel-head-text .small {
   font-weight: normal;
   line-height: 1;
   color: $tds-dk-gray-80;
 }
-[class*="sel-head-text"] small,
-[class*="sel-head-text"] .small {
+.sel-head-text small,
+.sel-head-text .small {
   font-size: 75%;
 }
-[class*="sel-price-text"] {
+.sel-price-text {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -674,20 +674,30 @@ input:checked+.tds-radio-btn:before {
   color: $tds-blue-100;
   font-family: 'ITC Avant Garde Gothic W01';
 }
-[class*="sel-price-text"] small,
-[class*="sel-price-text"] .small {
+.sel-price-text small,
+.sel-price-text .small {
   font-weight: normal;
   line-height: 1;
   color: $tds-dk-gray-80;
 }
-[class*="sel-price-text"] small,
-[class*="sel-price-text"] .small {
+.sel-price-text small,
+.sel-price-text .small {
   font-size: 65%;
 }
 .summ-fees {
   font-size: 85%;
 }
 .sel-price-text-mth {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-family: 'ITC Avant Garde Gothic W01';
   color: $tds-green-80;
 }
 
@@ -729,11 +739,9 @@ input:checked+.tds-radio-btn:before {
 .referralProgram .tds-header {
   color: $tds-lt-blue-80;
 }
-// h3{color:#141414} removed via git commit #e88dd5a
 #captilize {
   font-weight: bold;
 }
-// christ
 .tds-price {
   font-family: 'ITC Avant Garde Gothic W01';
 }

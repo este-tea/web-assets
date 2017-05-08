@@ -440,6 +440,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     height: 40px;
     width: 40px;
     color: white;
+    border-radius: 0;
 }
 
 .pkg-builder-addon-wrap .form-group input.form-control {
@@ -471,6 +472,6 @@ button.btn.btn-default.bootstrap-touchspin-up:before {
 
 .bootstrap-touchspin {
     margin-bottom: 16px;
-    margin-top: 10px;
+    margin-top: 16px;
     max-width: 146px;
 }
