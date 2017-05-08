@@ -400,3 +400,25 @@ div#resetPwdHelpBlock .tds-alert {
 
   }
 }
+
+// package builder loading modal
+// ----------------
+.pkg-builder-modal .modal-body.tds-msg-box {
+    border: none;
+    min-height: inherit;
+    border-top: 5px solid #19388a;
+}
+.pkg-builder-modal .modal-body.tds-msg-box .tds-msg-box {
+    border: none;
+    padding: 0;
+    text-align: center;
+    min-height: inherit;
+}
+.pkg-builder-modal .modal-body .tds-msg-box h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.pkg-builder-modal .tds-modal .modal-body .tds-msg-box .spinner {
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
