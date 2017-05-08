@@ -1,7 +1,7 @@
 # Package
 ## Front end logic: For the category content that is visible on the page, the corresponding category tab (category/section navigation menu) has the "active" class on <li>
 ### Note: I believe this is already being handled via bootstrap js
-## HTML Markup
+## HTMLa Markup
 {code}
 <div class="container">
   <h1 class="page-header">H1 Package Builder Page Title</h1>
@@ -11,9 +11,8 @@
 <div class="container pkg-builder-container">
   <form method="post" class="pkg-builder-form section-layout">
 
+    <!-- START Section Navigation -->
     <h2>Select Your Services</h2>
-
-    <!-- START Section/Tab-like Navigation -->
     <div class="pkg-builder-tab-hr"></div>
     <!-- remove has numbers class to show icons-->
     <ul class="nav nav-tabs pkg-builder-nav-tabs has-numbers">
@@ -23,7 +22,7 @@
       <li><a data-toggle="tab" href="#{categoryXX}">categoryXX: ex. Terms</a></li>
     </ul>
     <div class="pkg-builder-tab-hr"></div>
-    <!-- END Section/Tab-like Navigation -->
+    <!-- END Section Navigation -->
 
     <!-- START Section/Tab Contents -->
     <div class="tab-content pkg-builder-tab-content">
@@ -83,8 +82,10 @@
 {code}
 #### Product Selection ZZ
 ##### Front end logic:
-###### If a user selects a Product Selection item, the class "is-selected" is added to the parent "pkg-product-card"
-###### If the Product Selection item is a radio button, only one card can be selected so the class "is-selected" should be removed from sibling cards that were not selected
+###### If a user selects a Product Selection item
+####### the class "is-selected" is added to the parent "pkg-product-card"
+####### any associated Sub Product Selections are made visible (they're otherwise hidden)
+###### If the Product Selection item is a radio button, only one card can be selected so the class "is-selected" should be removed from sibling cards that are not selected
 ###### NOTE: Author configures whether the product selection item is a radio or checkbox input via IPM
 {code}
 <div class="{{radio/checkbox}} pkg-builder-listoption-wrap">
@@ -146,6 +147,7 @@ $(function(){
 {code}
 ##### Sub Product Selection
 ###### Front end logic: The Sub Product Selection item is typically hidden unless the parent Product Selection item is selected/enabled/required
+####### The exception is when it is within a Dual Product List
 {code}
 <!-- START .pkg-builder-addon-wrap -->
 <div class="checkbox pkg-builder-addon-wrap" style="display:none;">
@@ -201,9 +203,9 @@ $(function(){
 {code}
 #### Dual Product Sublist AA
 ##### Front end logic:
-##### If a user selects a Dual Product Sublist item, the class "is-selected" is added to the parent "pkg-product-card"
-##### If the Dual Product Sublist item is a radio button, only one card can be selected so the class "is-selected" should be removed from sibling cards that were not selected
-###### NOTE: Author configures whether the product selection item is a radio or checkbox input via IPM
+###### If a user selects a Product Selection item
+####### the class "is-selected" is added to the parent "pkg-product-card". Only one DPS items can be selected so the class "is-selected" should be removed from sibling cards that are not selected.
+####### any associated Product Selections and their Sub Product Selections are made visible (they're otherwise hidden)
 {code}
 <!-- START Dual Product SubList AA -->
 <div class="form-group pkg-product-card">
