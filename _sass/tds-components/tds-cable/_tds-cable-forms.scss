@@ -70,6 +70,20 @@ label:hover input:checked + .tds-radio-btn:before {
     margin: 0 0 5px 0;
   }
 }
+//existing service intercept
+.existingService .login #loginFieldset {
+    padding: 0 3px 3px 0;
+}
+.gallery-btn.icon-account:before {
+    content: "";
+    width: 24px;
+    height: 14px;
+    display: inline-block;
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    background-size: 14px 12px;
+}
 //Overwrite for foundations//
 div#suggestedAddresses {
   button.gallery-btn.pull-left {
