@@ -1,0 +1,203 @@
+/* tds-page-banner
+==========================================*/
+
+//Banner Typography
+//==================================================
+
+h1.banner-title {
+  font-family: $tds-font-family;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.1em;
+  color: #19388a;
+  margin: 0;
+}
+
+@media (max-width: $screen-xs-min) {
+  h1.banner-title {
+    font-size: 24px;
+  }
+}
+
+//superscript
+h1.banner-title > sup {
+    font-size: 43%;
+    vertical-align: 8px;
+}
+
+h1.banner-title + p {
+    margin-top: 12px;
+}
+
+.banner-copy {
+  margin: 1em 0;
+  color: #555555;
+}
+.banner-sub {
+  font-family: $tds-font-family;
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 1em;
+  margin-top: 2em;
+  color: #19388a;
+}
+.banner-content ul {
+  margin-top: 25px;
+}
+//remove bottom margin from last p so that the padding on the card looks even
+.banner-content p:nth-last-of-type(1) {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+ul.banner-ul {
+  margin: 1em 0;
+  padding: 0;
+  max-width: 630px;
+  list-style-type: none;
+}
+ul.banner-ul li {
+  margin: 1em 1em .5em 1em;
+  padding-left: 1em;
+  background: url(/content/dam/tdstelecom/square-blue.svg) no-repeat 0px .5em;
+  background-size: .5em .5em;
+}
+
+/* second level */
+
+ul.banner-ul ul {
+  margin: .5em 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.banner-ul li li {
+  margin: 1em;
+  padding-left: 1em;
+  margin-bottom: .5em;
+  background: url(/content/dam/tdstelecom/circle-gray.svg) no-repeat 0px .5em;
+  background-size: .5em .5em;
+}
+
+// Banner Container
+//==================================================
+
+#page-banner {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  border-top: solid 3px $tds-lt-gray;
+  border-bottom: solid 3px $tds-lt-blue;
+  //z-index: 50;
+  //update so that shift-up side bars are positioned over the page banner
+  z-index: 0;
+  background-color: white;
+}
+
+// make padding change based on screen size
+.banner-content {
+    padding: $tds-padding-lg;
+    width: 65%;
+}
+@media (max-width: $screen-sm-min) {
+    .banner-content {
+      padding: $tds-padding-md;
+    }
+}
+@media (max-width: $screen-xs-min) {
+  .banner-content {
+      padding: $tds-padding-sm;
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  .banner-content {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: $screen-xs) {
+  //changes page-banner to full width on xs
+  .banner-content {
+    width: 100%;
+  }
+}
+
+// Banner Image
+//==================================================
+
+.banner-image {
+    position: absolute;
+    bottom: 0;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    background-size: cover!important;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+@media (max-width: $screen-xs-min) {
+  .banner-image {
+    display: none;
+  }
+}
+
+// Banner Overlay
+//==================================================
+
+// overlay img so that we don't have to do any touch up on the back ground image
+#banner-overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: -4;
+  width: 100%;
+  height: 100%;
+  background: url(/content/dam/tdstelecom/images/banners/banner-overlay.png) left top no-repeat;
+  background-size: 100% 100%;
+  opacity: .8;
+  border-left: solid 3px $tds-lt-gray;
+  border-right: solid 3px $tds-lt-gray;
+}
+
+// Full banner no images
+.banner-content-full.banner-content {
+  width: 100%;
+  border-left: 3px solid $tds-lt-gray;
+  border-right: 3px solid $tds-lt-gray;
+}
+@media (max-width: $screen-xs-min) {
+  .banner-content-full.banner-content {
+    margin-top: 0;
+  }
+}
+.tds-page-banner p.lead {
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    margin-bottom: -14px;
+    color: #25acf0;
+    margin-top: 0;
+}
+
+// Login button from MYA
+//==================================================
+#page-banner .banner-content .content.parsys .parbase.login {
+    /*mya unauth home page log in button: adds height so that bottom border drop shadow isn't cut off*/
+    height: 50px;
+}
+
+.tds-page-banner .content.parsys #loginButton {
+    margin-top: 24px;
+}
+#page-banner .banner-content .content.parsys .parbase.login {
+    height: 50px;
+}
+.parbase.richTextComponent.section ~ .navbutton.parbase.section {
+    margin-top: 24px;
+}
+// miscell tweaks
+//==================================================
+.tds-page-banner {
+  margin-bottom: 30px;
+}
+//remove float added by bootstrap column class
+.tds-page-banner.col-sm-12 {
+    float: none;
+}

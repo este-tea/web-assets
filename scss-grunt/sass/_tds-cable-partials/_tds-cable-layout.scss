@@ -1,0 +1,9 @@
+@import "../_tds-foundations-partials/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+/* ===== tds cable layouts === */
+//remove extra padding when bootstrap containers are nested within each other
+.container-fluid.cws-content .pagelayout .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}

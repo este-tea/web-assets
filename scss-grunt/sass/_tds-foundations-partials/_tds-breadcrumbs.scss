@@ -1,0 +1,75 @@
+/* tds-breadcrumbs
+==========================================*/
+
+// component name is the same as the class name. This removes duplicate design.
+.parbase.section.breadcrumb,
+.parbase.bread_crumb.breadcrumb {
+  padding-left: 15px;
+  // I think this extend three can be deteled.
+  // It looks like all three are adding display: none !importent and
+  // is getting display: block !importent later in the stack - Chris Holm
+  //@extend .visible-sm; 
+  //@extend .visible-md;
+  //@extend .visible-lg;
+}
+
+.breadcrumb {
+  padding: 0 15px;
+  background-color: transparent;
+  .fa-chevron-right {
+    padding: 0 5px 0px 10px;
+    color: $tds-gray;
+    font-size:12px;
+  }
+}
+.breadcrumbText {
+  text-decoration: none;
+  color: gray;
+  font-family: "Neue Helvetica W01";
+}
+
+.parbase.breadcrumb {
+    padding: 0;
+}
+//remove left padding now that it is within a "container" div
+.parbase.section.breadcrumb {
+    padding: 0;
+}
+// removes extra margin in header but leaves it because of breadcrumbs adding margins in myaheader
+div.parbase.header div.parbase.navbar div#main-navbar {
+  margin-bottom: 0;
+}
+
+//removes gap on careers home
+.breadcrumb + .carousel {
+    margin-top: -20px;
+}
+
+//removes extra padding on left if breadcrumb is nested within a colorBlock component
+.colorBlock_content > .breadcrumb > .breadcrumb {
+    padding: 0;
+}
+
+.colorBlock_content > .parbase.section.breadcrumb {
+    padding-left: 0;
+}
+
+.breadcrumb .breadcrumb a.breadcrumbText:hover {
+    text-decoration: underline;
+}
+
+//removes padding when placed in page layout component
+.pagelayout .breadcrumb {
+    padding: 0;
+}
+
+//changes colors if within a color block component
+.tds-block-dk-blue,
+.tds-block-lt-blue,
+.tds-block-dk-gray,
+.tds-block-orange {
+  a.breadcrumbText,
+  i.fa.fa-chevron-right {
+      color: rgba(255,255,255,.7);
+  }
+}

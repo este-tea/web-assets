@@ -1,0 +1,12 @@
+/* tds-biz-buttons
+==========================================*/
+.gallery-btn {
+    text-align: center;
+}
+.gallery-btn:after {
+    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-caret-white.svg");
+}
+
+.shift-up button.gallery-btn.btn-block.tds-btn-plain {
+    text-align: left;
+}

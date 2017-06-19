@@ -1,0 +1,103 @@
+/* tds-biz-searchbar
+==========================================*/
+input.tds-searchbar-input {
+    background-color: $tds-lt-gray;
+    margin-right: 0;
+    width: 240px;
+    padding-left: 44px;
+    &:hover, &:active, &:focus {
+      background-color: $tds-lt-gray;
+    }
+}
+
+.tds-searchbar-button {
+  background-color: $tds-lt-gray;
+  height: 40px;
+  float: left;
+  left: 0;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_search-binoculars-gray.svg);
+  background-size: 20px;
+  &:hover, &:active, &:focus {
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_search-binoculars-blue.svg);
+    background-color: transparent;
+  }
+}
+
+#mobile-searchbar {
+  input.tds-searchbar-button {
+    color: transparent!important;
+    background-color: $tds-lt-gray;
+    height: 40px;
+    float: left;
+    left: 0;
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_search-binoculars-gray.svg);
+    background-size: 20px;
+
+  }
+  .tds-searchbar-input {
+      line-height: 40px;
+      height: 40px\9;
+      height: 40px;
+      width: 100%;
+  }
+}
+
+::-webkit-input-placeholder {
+   color: #999;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #999;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;
+}
+:-ms-input-placeholder {
+   color: #999;
+}
+
+// newsSearchBar component
+.newsSearchBar h2 {
+    color: #19388a;
+}
+.newsSearchBar .tds-card .tds-form-group .tds-search-input input.form-control {
+  background-color: #fff;
+}
+.newsSearchBar .tds-card {
+    padding: 28px;
+}
+
+a.search-result {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.searchResultsContainer {
+    padding: 0;
+    max-width: 600px;
+}
+
+span.search-current-page {
+    color: #555;
+}
+
+.search-results-pagination.pagination {
+    border-top: #19388a solid 2px;
+    border-bottom: solid 2px #19388a;
+}
+
+p.resultText.tds-error-msg.tds-error-status {
+    background: #e3e3e3;
+}
+
+span.current-page {
+    background-color: #25acf0;
+    color: white;
+}
+
+.search-results-pagination a:hover {
+    background-color: #e3e3e3;
+}
+
+.tds-body-content .search-result-content .searchResultsContainer {
+    padding-left: 0px;
+}

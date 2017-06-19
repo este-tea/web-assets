@@ -1,0 +1,98 @@
+@import "../_tds-foundations-partials/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+/* ===== tds cable  form styles === */
+#subscribeToEmail + label {
+      margin-top: 10px;
+    }
+
+
+.checkbox .tds-radio-btn {
+    border-radius: 0;
+}
+
+label:hover input:checked + .tds-radio-btn:before {
+    top: inherit;
+    left: inherit;
+}
+
+//Data picker
+.datepicker-switch {
+  color:red;
+}
+
+
+/* Address Enrty Page */
+.address-entry {
+  .col-sm-8 {
+    padding-left: 0;
+  }
+  .col-sm-4 {
+    padding-right: 0;
+  }
+  .col-sm-6 {
+    padding-left: 0;
+    @media (max-width: 750px) {
+      padding-right: 0;
+    }
+    &:nth-child(odd) {
+      padding-left: 15px;
+      padding-right: 0;
+      @media (max-width: 750px) {
+        padding-left: 0;
+      }
+    }
+  }
+  .col-xs-12 {
+    @media (max-width: 750px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .gallery-btn {
+    margin: 0 0 20px 0;
+  }
+
+  .tds-card {
+    min-height: 0;
+    padding: 28px;
+    h3:first-child {
+      margin-top: 0;
+    }
+    #loginButton, #provideAddressButton {
+      height: auto;
+    }
+    .gallery-btn {
+      margin-bottom: 0
+    }
+  }
+  h4, .h4 {
+    margin: 0 0 5px 0;
+  }
+}
+//existing service intercept
+.existingService .login #loginFieldset {
+    padding: 0 3px 3px 0;
+}
+.gallery-btn.icon-account:before {
+    content: "";
+    width: 24px;
+    height: 14px;
+    display: inline-block;
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    background-size: 14px 12px;
+}
+//Overwrite for foundations//
+div#suggestedAddresses {
+  button.gallery-btn.pull-left {
+    margin-top: 25px;
+  }
+}
+
+
+
+.readOnly {
+  display: inline-block;
+}

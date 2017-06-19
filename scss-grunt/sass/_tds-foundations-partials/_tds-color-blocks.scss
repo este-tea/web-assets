@@ -1,0 +1,48 @@
+/* tds-color-blocks
+==========================================*/
+.parsys.componentParsys.colorBlock_content {
+    padding: 0 16px;
+}
+@media (min-width:1010px) {
+    .parsys.componentParsys.colorBlock_content {
+        padding: 0;
+    }
+}
+.color-block-wrap {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.tds-block-dk-blue {
+  background-color: $tds-blue-100;
+  h1, h2, h3, p {
+    color:#ffffff;
+  }
+}
+
+.tds-block-lt-blue {
+    background-color: $tds-lt-blue-100;
+    h1, h2, h3, p {
+      color:#ffffff;
+    }
+}
+
+.tds-block-orange {
+  background-color: $tds-orange-100;
+  h1, h2, h3, p {
+    color:#ffffff;
+  }
+
+}
+
+.tds-block-dk-gray {
+  background-color: $tds-dk-gray;
+  h1, h2, h3, p {
+    color:#ffffff;
+  }
+
+}
+
+.tds-block-lt-gray {
+  background-color: $tds-lt-gray;
+}

@@ -1,0 +1,580 @@
+@import "../_tds-foundations-partials/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+/* ===== tds cable header === */
+
+/*////overrides/////*/
+.cable-top-bar div.customLargeNavBar {
+    @media (min-width: 568px) {
+    display: inline;
+    }
+  }
+
+.cable-nav-main div.customLargeNavBar {
+  @media (min-width: 1px) {
+  display: block;
+  }
+}
+
+.cable-top-bar .tds-clearfix:after,
+.cable-nav-main .tds-clearfix:after {
+      visibility: hidden;
+      display: none;
+      font-size: 0;
+      content: none;
+      clear: none;
+      height: 0;
+    }
+
+ .cable-top-bar .navbar:before, .cable-top-bar .navbar:after,
+  .cable-nav-main .navbar:before, .cable-nav-main .navbar:after  {
+    content: " ";
+    display: none;
+    clear: none;
+}
+
+ .cable-top-bar .container:before, .cable-top-bar .container:after,
+  .cable-nav-main .container:before, .cable-nav-main .container:after {
+     content: none;
+     display: none;
+   }
+
+
+/// L1-nav override ///
+.L1-nav {
+    float: left;
+    @media only screen and (max-width: 568px) {
+      float: none;
+    }
+}
+.L1-nav > ul {
+    border-bottom: none;
+    font-weight: inherit;
+    > li {
+      font-size: inherit;
+    }
+}
+
+.L1-nav > ul > li > a:hover {
+    background-color: inherit;
+	}
+.L1-nav > ul > li > a:after,.L1-nav > ul > li > a:hover:after, .L1-nav > ul > li > a:focus:after  {
+    content: none;
+}
+
+.L1-nav ul ul {
+  overflow: visible;
+}
+
+.L1-nav ul ul li:hover a {
+  background-image: none;
+}
+
+/*////overrides end////*/
+
+#skiptonav {
+  z-index: 100;
+  >a {
+    padding: 15px 12px;
+  }
+}
+
+#skiptocontent {
+  z-index: 100;
+  >a {
+    padding: 15px 12px;
+  }
+}
+
+
+
+
+//Layout
+.container-header {
+  padding: 0 0 40px 0;
+  margin: 0 auto;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid $cable-dk-blue;
+}
+
+.row-header {
+  clear: both;
+}
+
+.cable-top-bar {
+
+
+
+  font-family: $tds-font-family;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  color: $tds-white;
+  background-color: $tds-dk-gray;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+
+      &:after {
+      content:" ";
+      display:table;
+      clear:both;
+      }
+}
+
+//UI
+.ui-mobile-menu {
+    display: none;
+    position: relative;
+    padding-left: 1.25em;
+    span {display: none}
+    cursor: pointer;
+
+    &:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    width: 40px;
+    height: 22px;
+    background-size: contain;
+    background: url("/content/dam/tdstelecom/images/ui/icon_cable-mobile-menu.svg");
+  }
+
+    @media only screen and (max-width: 568px) {
+    display: block;
+    top: 0;
+    }
+}
+
+
+// Top level of Nav
+.cable-nav-top-bar {
+  .L1-nav > ul > li > a {
+  background-color: inherit;
+  }
+
+  .L1-nav ul ul li a{
+  background-color: inherit !important;
+  color: $tds-white;
+  }
+
+  >.container {
+    max-width: 100%;
+  }
+    ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    position: relative;
+    /*--Set relative positioning on the unordered list itself - not on the list item--*/
+    z-index: 200;
+    }
+
+    ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    a {
+    padding: 15px 10px;
+    display: block;
+    color: $tds-white;
+    text-decoration: none;
+    }
+
+    &:hover,:focus {
+    background: $cable-dk-blue;
+    }
+
+    &:hover ul, :focus {
+      display: block;
+      background: $cable-dk-blue;
+      }
+
+  }
+  // drop down state of Top Nav
+    ul li ul {
+    list-type: none;
+    float: left;
+    position: absolute;
+    left: 0;
+    display: none;
+
+    /*--Hide by default--*/
+    width: 100%;
+    color: #fff;
+    &:hover, :focus {
+      background: $cable-dk-blue;
+      }
+    }
+
+    ul li ul li {
+    color: #555;
+    padding:0 10px;
+    font-size: 14px;
+    min-width: 200px;
+    background: $cable-dk-blue;
+        &:hover, a:hover, :focus {
+          background: $tds-lt-blue-100;
+        }
+    }
+
+//Horzointal rule between dropdown menu items
+  .L1-nav ul ul li + li a,.L1-nav  ul ul li + li a:hover,.L1-nav  ul ul li + li a:focus  {
+        border-top: 2px solid $tds-white;
+    }
+
+
+
+
+    @media screen and (max-width: 568px) {
+      display: none;
+    }
+
+}
+
+//Residenttial and Business Tabs
+.nav-tds-external-sites {
+  float: right;
+    .res {
+        border-top: 5px solid $cable-dk-blue;
+        background: #fff;
+        color: #353535;
+        &:hover, :focus {
+          color:$cable-dk-blue;
+        }
+    }
+
+    .bus {
+        border-top: 5px solid $cable-orange;
+        background: #353535;
+        color: #fff;
+        &:hover, :focus {
+          color:$cable-orange;
+        }
+    }
+
+  ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  /*--Set relative positioning on the unordered list itself - not on the list item--*/
+  z-index: 100;
+  }
+
+  ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+
+      a {
+      padding: 11px 30px 14px 30px;
+      width: 135px;
+      display: block;
+      text-decoration: none;
+          @media screen and (max-width: 360px) {
+            width: 102px;
+            padding: 11px 30px 14px 15px;
+          }
+      }
+
+  }
+}
+
+/////////////////////////
+/////////Main Nav
+////////////////////////
+.cable-nav-main {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin:0 18%;
+    font-size: 18px;
+    font-weight: 300;
+
+    @media screen and (max-width: 1200px) {
+      margin:0 0 0 18%;
+    }
+
+    @media screen and (max-width: 568px) {
+      display: none;
+      margin: 20px auto;
+      width: 85%;
+    }
+
+
+
+
+
+    .L1-nav > ul > li > a {
+    padding: 15px 12px;
+    display: block;
+    color: $tds-dk-blue;
+    text-decoration: none;
+    }
+
+
+
+
+    ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    position: relative;
+    /*--Set relative positioning on the unordered list itself - not on the list item--*/
+    z-index: 100;
+        @media screen and (max-width: 568px) {
+        width: 100%;
+      }
+    }
+
+    .L1-nav > ul > li.active > a {
+      color: $tds-white;
+      background: $cable-dk-blue;
+    }
+
+    ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+      @media screen and (max-width: 568px) {
+      float: none;
+      clear: both;
+    }
+    li:hover, :focus {
+    color: $tds-white;
+    }
+
+    &:hover, :focus {
+    background: $cable-dk-blue;
+    color:#ffffff;
+    a {color:$tds-white};
+    }
+
+    &:hover ul, :focus {
+    display: block;
+    background: $tds-dk-gray;
+    color: $tds-white;
+        @media screen and (max-width: 568px) {
+          display: none;
+      }
+    }
+
+    @media screen and (max-width: 568px) {
+      border-top: 1px solid $tds-lt-blue-100;
+    }
+
+  }
+
+    // drop down state of Main Nav
+  ul li ul {
+    list-type: none;
+    float: left;
+    position: absolute;
+    left: 0;
+    display: none;
+
+    /*--Hide by default--*/
+    width: 100%;
+    color: #fff;
+    &:hover, :focus {
+    background: $cable-dk-blue;
+    }
+  }
+
+  ul li ul li {
+    color: #555;
+    padding:0 10px;
+    font-size: 16px;
+    min-width: 225px;
+    background: $tds-dkr-gray;
+    &:hover, a:hover, :focus {
+    background: $tds-dk-gray;
+    }
+  }
+
+  //Horzointal rule between dropdown menu items
+    .L1-nav ul ul li + li a,.L1-nav  ul ul li + li a:hover,.L1-nav  ul ul li + li a:focus  {
+      border-top: 2px solid $tds-lt-blue-100 !important;
+      }
+}
+
+
+
+
+
+//////////////////////////
+///Contact, Cart and account Menu
+//////////////////////////
+.contact-links-wrap {
+  margin: 15px 0;
+  overflow: visible;
+
+  @media screen and (max-width: 360px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  ul li {
+  margin: 8px 0 0 16px;
+  display: inline-block;
+  vertical-align: top;
+
+    .gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
+    margin: 12px 0 0 16px;
+    }
+
+    &:last-child {
+      margin-right: 15px;
+
+      @media screen and (max-width: 680px) {
+          margin: 8px 8px 8px 0;
+      }
+      @media screen and (max-width: 480px) {
+        margin: 8px 16px;
+      }
+
+      &:last-child.gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
+        margin: 15px -15px 8px 8px;
+        @media screen and (max-width: 480px) {
+        margin: 18px -15px 8px 8px;
+      }
+      }
+  }
+  }
+
+
+  @media screen and (max-width: 680px) {
+  text-align: left;
+    .gallery-btn.tds-btn-orange.gallery-btn.tds-btn-orange {
+    margin: 24px 0 0 12px;
+    float: right;
+    }
+  }
+}
+
+#header-contact-links {
+
+.contact-links-text {
+  font-size: 16px;
+  font-weight: 300;
+  color:$cable-dk-blue;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: .9em;
+  }
+}
+
+.contact-chat-icon:before, .contact-email-icon:before, .contact-call-icon:before, .contact-form-icon:before,
+.contact-account-icon:before, .contact-cart-icon:before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  position: relative;
+  top: -2px;
+
+@media screen and (max-width: 751px) {
+  margin-right: 4px;
+  width: 30px;
+  height: 30px;
+    top: 0px;
+}
+
+@media screen and (max-width: 360px) {
+  margin-right: 4px;
+  width: 25px;
+  height: 25px;
+}
+
+}
+
+.contact-call-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+      @media screen and (max-width: 480px) {
+        background-size: 12px;
+    }
+}
+
+.contact-account-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+      @media screen and (max-width: 480px) {
+        background-size: 12px;
+    }
+}
+
+.contact-cart-icon:before {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+      @media screen and (max-width: 480px) {
+        background-size: 12px;
+    }
+}
+
+@media screen and (max-width: 751px)  {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+
+}
+
+
+/////Theme
+
+  /*Header logo */
+  .container-logo {
+    #tds-logo {
+      float: left;
+      width: 204px;
+      height: 83px;
+      margin: -15px 10% 0px 30px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      width: 33%;
+    }
+
+    @media only screen and (max-width: 568px) {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      #tds-logo {
+        float: none;
+        width: 204px;
+        height: 83px;
+        margin: 0;
+    }
+  }
+}

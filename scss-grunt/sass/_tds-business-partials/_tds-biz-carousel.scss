@@ -1,0 +1,192 @@
+/* tds-biz-carousel
+==========================================*/
+.parbase.carousel.section + .pagelayout.parbase.section {
+    margin-top: -40px;
+}
+.carouselcontainer {
+  width: 100%;
+  &.col-sm-12 {
+      padding: 0;
+  }
+  #maincarousel .carousel-inner .item .content-block {
+    height: 340px;
+    @media (max-width:$screen-xs-min) {
+      height: 320px;
+    }
+  }
+}
+#maincarousel .item .tds-width-container {
+    padding: 0;
+}
+// main full width photo image
+#carouselcontainer-image {
+  position: absolute;
+  top: 0;
+  z-index: -5;
+  width: 100%;
+  height: 340px;
+  background-size: cover !important;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+// slide overlay on resi site
+// ----------------------------------------
+#slide-overlay {
+  display:none;
+}
+// main slide content, includes :
+// carouseltitletext, carouselbodytext, gallery-btn
+// ----------------------------------------
+.carouselslide {
+  background-color: rgba(255, 255, 255, .85);
+  width: auto;
+  max-width: 525px;
+  height: auto;
+  padding: 32px;
+  position: absolute;
+  margin: 24px;
+  bottom: inherit;
+  @media (max-width: $screen-xs-min) {
+    margin-top: 42px!important;
+    max-width: 100%;
+  }
+}
+.carouseltitletext {
+  font-family: $tds-font-family;
+  font-size: 32px;
+  line-height: 1.5em;
+  margin-bottom: 12px;
+  @media (max-width: $screen-xs-min) {
+    color: $tds-blue-100;
+  }
+  @media (max-width: $screen-xxs) {
+    font-size: 20px;
+  }
+}
+.carouselbodytext {
+  font-family: $tds-font-family;
+  font-size: 18px;
+  max-width: inherit;
+}
+@media (max-width:$screen-xs-min) {
+  .carouselbodytext {
+    > p {
+      font-size: 14px;
+      line-height: 1.5em;
+      color: #555;
+    }
+    > span {
+      font-size: 16px;
+    }
+  }
+}
+.carouselslide > .gallery-btn {
+    background-color: $tds-orange-80;
+    padding: 15px 30px!important;
+    font-size: 18px;
+}
+.carouselslide > .gallery-btn:hover {
+    background-color: $tds-orange-100;
+}
+.carouselslide > .gallery-btn:after {
+    content: none;
+}
+
+@media (min-width: 1000px) {
+    .carouselslide {
+        margin-left: 0;
+    }
+}
+@media (max-width: $screen-xs) {
+    .carouselslide > .gallery-btn {
+        padding: 12px 16px !important;
+        box-shadow: $box-shadow;
+        text-decoration: none;
+    }
+}
+
+// Slide controls
+// ----------------------------------------
+#carousel-controls {
+  padding-left: 24px;
+  padding-right: 24px;
+  top: -64px;
+}
+#carousel-controls {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.carousel-btn {
+  background-color: rgba(255, 255, 255, .5);
+  &:hover,
+  &:active {
+    background-color: $tds-orange-80;
+  }
+}
+.carousel-btn {
+  .cc-icon-play {
+    background-color: rgba(153, 153, 153, .85);
+    &:hover,
+    &:active {
+      background-color: $tds-orange-80;
+    }
+  }
+}
+.cc-icon-back {
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/left-caret-dk-gray.svg);
+  background-size: 9px 14px;
+  background-position: 9px 8px;
+  background-repeat: no-repeat;
+  &:hover, &:focus, &:active  {
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/left-caret-white.svg);
+  }
+}
+.cc-icon-pause {
+  background-image: url(/content/dam/tdstelecom/images/ui/carousel/icon-pause-dk-gray.svg);
+  background-size: 10px 13px;
+  -webkit-background-size: 10px 13px;
+  background-position: 10px 8px;
+  &:hover, &:focus, &:active  {
+    background-image: url(/content/dam/tdstelecom/images/ui/carousel/icon-pause.svg);
+  }
+}
+.cc-icon-play {
+  background-image: url(/content/dam/tdstelecom/images/ui/carousel/icon-play-orange.svg);
+  background-size: 12px 18px;
+  background-position: 11px 6px;
+  &:hover, &:focus, &:active  {
+    background-image: url(/content/dam/tdstelecom/images/ui/carousel/icon-play.svg);
+  }
+}
+.cc-icon-next {
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-caret-dk-gray.svg);
+  background-size: 9px 14px;
+  background-position: 12px 8px;
+  &:hover, &:focus, &:active  {
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-caret-white.svg);
+  }
+}
+
+// slide indicators
+.carousel-indicators {
+  bottom: -3px;
+  li,
+  .active {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+  }
+  li {
+    background-color: $tds-dk-gray-80;
+    border: none;
+    &:hover, &:focus, &:active {
+      background-color: #25acf2;
+    }
+  }
+  .active {
+    background-color: #0c8fd0;
+  }
+  @media (max-width: $screen-xs-min) {
+    bottom: 260px;
+  }
+}

@@ -1,0 +1,241 @@
+/* tds-usage-summary.scss
+==========================================*/
+//tdstelecom.com/my-account/data-usage-summary/data-usage-estimator.html
+
+h2.usage-section-desc {
+  padding-right: 10px;
+}
+//estimated monthly usage at bottom of page
+.estimated-usage-desc {
+  //@extend .h2;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: $tds-dkr-gray;
+  @media (max-width: 584px) {
+    font-size: 24px;
+  }
+}
+
+.estimated-usage-desc span:first-child {
+    font-size: .875em;
+    font-weight:400;
+}
+.estimated-usage-desc span:last-child {
+    color: #0c8fd0;
+}
+// usage estimator tool
+//---------------------
+// styles to override jQuery UI
+.tds-usage-tool {
+  h2, button {
+    display: inline;
+  }
+  .usage-section {
+    margin: 20px 0 36px 0;
+  }
+  .usage-slider {
+    border-color: #eee;
+    background: #eee;
+    border-radius: 0px;
+    width: 85% !important;
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      top: 24px;
+    }
+    &::before {
+      content: "0";
+    }
+    &::after {
+      content: attr(data-max)"";
+      right: 0;
+    }
+  }
+  .usage-slider .ui-slider-range {
+    background: $tds-lt-blue !important;
+    border-radius: 0px;
+  }
+  .usage-slider .ui-slider-handle {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+    background: $tds-dk-blue !important;
+    opacity: 1;
+  }
+  .ui-widget-header {
+    background: $tds-green;
+  }
+  .ui-progressbar .ui-progressbar-value {
+    border: 1px solid $tds-green;
+    margin: 0px;
+  }
+  .usage-unit {
+    display: inline;
+    float: right;
+    margin-top: -28px;
+    width: 11%;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    white-space: normal;
+    color: $tds-dk-blue;
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 0.5em;
+      color: $tds-dk-gray;
+    }
+  }
+}
+// Expand collapse buttons
+//------------------------
+.tds-usage-tool.btn {
+  margin-bottom: 10px;
+  height: 28px;
+  width: 28px;
+  vertical-align: middle;
+  line-height: 16px;
+  text-align: center;
+  background: $tds-lt-blue;
+  border-radius: 50% !important;
+  span {
+    margin-left: -4px;
+  }
+}
+.tds-usage-tool.btn span {
+  @include tds-icon;
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.75em;
+}
+.tds-usage-tool.btn.collapsed span {
+  &:before {
+  content: "\f055";
+  }
+}
+
+button.btn.tds-usage-tool.tds-card-btn,
+button.btn.tds-usage-tool.tds-card-btn.collapsed {
+    padding: 0;
+    border: none;
+    height: 20px;
+    width: 20px;
+    line-height: initial;
+    padding-left: 3px;
+    font-size: 13px;
+}
+button.btn.tds-usage-tool.tds-card-btn {
+    padding-left: 4px;
+}
+@media (max-width: 584px) {
+    button.btn.tds-usage-tool.tds-card-btn,
+    button.btn.tds-usage-tool.tds-card-btn.collapsed {
+        padding: 0;
+        border: none;
+        height: 18px;
+        width: 18px;
+        line-height: initial;
+        padding-left: 4px;
+        font-size: 10px;
+    }
+    button.btn.tds-usage-tool.tds-card-btn {
+        padding-left: 3px;
+    }
+}
+/*re-style expand-collapse button on usage estimator*/
+.usageestimator .tds-usage-tool.tds-card > button > span {
+    display: none;
+}
+
+button.btn.tds-usage-tool.tds-card-btn {
+    background: none;
+}
+button.btn.tds-usage-tool.tds-card-btn:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-white.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    border-radius: 50%;
+    background-color: #0c8fd0;
+    margin-top: -4px;
+}
+button.btn.tds-usage-tool.tds-card-btn.collapsed:before {
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+}
+@media (max-width:400px) {
+    button.btn.tds-usage-tool.tds-card-btn:before {
+        width: 20px;
+        height: 20px;
+        background-size: 12px 12px;
+        margin-top: 0px;
+    }
+}
+//Usage Meter
+//------------------------
+
+// this removes padding in the card for the meter
+.tds-card-plain .tds-usage-tool {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.tds-usage-tool .usage-slider:before {
+    content: "0";
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+a.ui-slider-handle.ui-state-default.ui-corner-all {
+    margin-left: 0px;
+}
+@media (max-width: 584px) {
+    .tds-usage-tool .usage-slider {
+        width: 85%!important;
+    }
+    .tds-usage-tool .usage-unit {
+        font-size: 18px;
+        width: 10%;
+        margin-top: -18px;
+    }
+    .tds-usage-tool .usage-unit span {
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .tds-usage-tool .usage-slider {
+        width: 79%!important;
+    }
+    .tds-usage-tool .usage-unit {
+        font-size: 18px;
+        width: 13%;
+        margin-top: -18px;
+    }
+    .tds-usage-tool .usage-unit span {
+        font-size: 12px;
+    }
+    .usageestimator h2.usage-section-desc {
+        font-size: 20px;
+    }
+}
+
+// IMT-65 expand buttons getting cut off in chrome on ipad air*/
+button.btn.tds-usage-tool.tds-card-btn, button.tds-usage-tool.tds-card-btn.gallery-btn-link, button.btn.tds-usage-tool.tds-card-btn.collapsed, button.tds-usage-tool.tds-card-btn.collapsed.gallery-btn-link {
+    height: 24px;
+    width: 24px;
+    padding-left: 0px;
+    font-size: 13px;
+}
+
+button.btn.tds-usage-tool.tds-card-btn:before, button.tds-usage-tool.tds-card-btn.gallery-btn-link:before {
+    margin-top: 0px;
+}

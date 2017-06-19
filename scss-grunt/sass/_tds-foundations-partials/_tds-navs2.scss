@@ -1,0 +1,113 @@
+/* tds-navs2.scss
+==========================================*/
+// NOTE from Liz: not sure where these are getting applied, I don't
+// think these classes are getting used anymore but will keep them
+// in anyways
+
+// global nav
+.top-header {
+  .dropdown-menu {
+    min-width: 1px; // removes the min-width thats messing things up (get rid of it later).
+  }
+  img.right-caret-sm,
+  img.right-caret-open-sm,
+  img.down-caret-sm,
+  img.down-caret-open-sm {
+    height: 12px;
+    width: 12px;
+  }
+  img.right-caret-open-sm,
+  img.right-caret-sm {
+    top: 0px;
+  }
+  // sub menu
+  .dropdown-menu.sub-menu {
+    background: #555;
+    li {
+      a {
+        padding-right: 40px !important;
+      }
+      a:hover {
+        background-color: #353535;
+      }
+      a:after {
+        //.fa;
+        font-size: 17px;
+      }
+      a:hover:after {
+        content: "\f0da";
+        position: absolute;
+        right: 15px;
+      }
+    }
+  }
+}
+
+// cart and login navigation
+.top-header .nav > li > a,
+.tds-user-nav li a {
+  font-family: 'Neue Helvetica W01';
+}
+.tds-user-nav li {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+// mAIN SITE NAVIGATION
+
+// dropdown menu sprite
+// makes green arrow right one
+img.down-caret-green-lg {
+  background-position: -115px -101px;
+}
+.nav-bar .nav-tabs a {
+  color: $tds-dk-blue;
+}
+
+
+// Sub menu
+// Somehow the dropdown menu started showing li types again || TODO: find why?
+.nav-bar .menu > ul ul.dropdown {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+// footer navs
+// ==============
+// override bootstrap rollover color
+.site-navigation .nav > li > a:hover,
+.site-navigation .nav > li > a:focus {
+  background-color: #353535;
+}
+
+// eventually these fonts will be determined in one place.
+.site-navigation ul {
+  font-family: $tds-font-family;
+}
+
+// NOTE from Liz: adding back in just in case this was used somewhere I wasn't aware of
+.linkcontainer>.linkcontainer {
+  padding-left: 1em;
+}
+.linkcontainer .link {
+  padding-left: 1em;
+}
+.link a {
+  padding-left: 1em;
+}
+.link a {
+  font-size: 20px;
+}
+.linkcontainer>.linkcontainer>.linkcontainer>.linkcontainer>.link>a {
+  padding-left: 1em;
+  font-size: 14px;
+  text-decoration: none;
+}
+.linkcontainer>.linkcontainer>.linkcontainer>.linkcontainer>.link>a:before {
+  content: "■ ";
+  padding-right: 10px;
+  color: $tds-lt-blue-80;
+}
+.linkcontainer>.linkcontainer>.linkcontainer>.linkcontainer>.linkcontainer>.link a:before {
+  color: $tds-gray;
+}

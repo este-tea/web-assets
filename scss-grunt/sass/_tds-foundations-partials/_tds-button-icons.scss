@@ -1,0 +1,188 @@
+/* tds-button-icons
+==========================================*/
+//  icons for butttons
+
+// tds-icon/font-awesome extension
+// `.tds-icons` == `.fa` class for font-awesome
+.tds-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ===== spacing mixins ========================================================
+// FOR RE-USE WHEN NEEDED!!!! :)
+// Additional variables sometimes needed for icon styles
+// NEVER USE @EXTEND!!!
+// https://www.sitepoint.com/sass-extend-nobody-told-you/
+// TODO replace ALL @extends with @mixins
+// =============================================================================
+
+// padding-right for `:before` icons
+@mixin tds-icon-padding-right {
+  &:before {
+    padding-right: 10px;
+  }
+}
+// padding-left for `:after` icons
+.tds-icon-padding-left {
+  &:after {
+    padding-right: 10px;
+  }
+}
+
+// icon on left of button using img.
+.gallery-btn > img {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  width: 14px;
+  margin: -4px 5px 0px 0px;
+  border-radius: 0px;
+}
+
+// back button
+button.gallery-btn.btn-back:after {
+  content: "" !important;
+}
+// forward button
+button.gallery-btn.btn-next:after {
+  content: "" !important;
+}
+// Pencil icon
+.fa-pencil:before, .tds-icon-pencil:before {
+    content: "\e805";
+    font-family: "fontello";
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}
+// Remove icon
+.tds-icon-times {
+  &:before {
+  content: "\f00d";
+  }
+  @include tds-icon-padding-right;
+}
+// Search Icon
+.tds-icon-search:before {
+  content: "\f002";
+}
+// Plus cart
+.tds-icon-cart-plus {
+	background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-addon.svg");
+	height: 20px;
+	width: 25px;
+	position: relative;
+	background-repeat:
+	no-repeat;
+	top: 5px;
+}
+
+//HYDRA-1752 TV Channel Lineup Styling Issues
+.fa-cart-plus:before, .tds-icon-cart-plus:before {
+    content: "";
+}
+//HYDRA-1752 TV Channel Lineup Styling Issues End
+
+// Print icon
+.tds-icon-print:before {
+  content: "\f02f";
+}
+// Key icon
+.tds-icon-key {
+  &:before {
+    content: "\f084";
+  }
+  @include tds-icon-padding-right;
+}
+// trash icon
+.tds-icon-trash {
+  &:before {
+  content: "\f1f8";
+  }
+  @include tds-icon-padding-right;
+}
+// trash icon
+.tds-icon-circle-question {
+  &:before {
+  content: "\f059";
+  }
+  @include tds-icon-padding-right;
+}
+// update icon on navlogin button
+#loginButton .gallery-btn.login > .fa.fa-user {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
+  background-size: 16px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  width: 14px;
+  height: 20px;
+  padding-left: 0;
+  margin-right: 8px;
+  &:before {
+    content: "";
+  }
+}
+// styling for cancel type buttons
+.btn-x {
+  background-color: $tds-dk-gray-80!important;
+  &:hover {
+    background-color: $tds-blue-100!important;
+  }
+  @media (max-width: 360px){
+    display: block;
+    width: 100%;
+    margin-left: 0!important;
+  }
+}
+
+// icon for cancel buttons
+.btn-x:after {
+  content: "";
+  width: 24px;
+  height: 16px;
+  float: right;
+  background-image: url("/content/dam/tdstelecom/images/ui/icon_x-white.svg");
+  background-position: right 3px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+.gallery-btn.btn-x:after {
+    content: '\e819';
+    font-family: 'fontello';
+    color: #fff;
+    font-size: 12px;
+    margin-top: 1px;
+    background-image: none;
+    margin-left: 12px;
+    width: 12px;
+}
+
+.gallery-btn.btn-download:after {
+    content: "\e828";
+    font-family: 'fontello';
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
+    width: 14px;
+    height: auto;
+    float: none;
+    background-image: none;
+}
+
+// for some reason adding extra arrow in the captive
+// portal section, this should remove the extra
+button.btn-back.lt-blue-button:after,
+button.gallery-btn.btn-back:after {
+    content: none!important;
+}
+
+// remove font awesome code reference in bundle gallery*/
+.gallery-btn.next-arrow:after {
+    content: "";
+}

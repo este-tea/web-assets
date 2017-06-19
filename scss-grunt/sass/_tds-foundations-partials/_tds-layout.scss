@@ -1,0 +1,177 @@
+/* tds-layout
+==========================================*/
+// use this to address layout issues fixes that are sitewide
+.tds-clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+* html .tds-clearfix {
+    zoom: 1;
+}
+/* IE6 */
+*:first-child+html .tds-clearfix {
+    zoom: 1;
+}
+.page_content {
+    min-height: 300px;
+    float: left;
+    display: inline;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.container-fluid > .row {
+    margin-bottom: 0 !important;
+}
+// layout and positioning
+.clearboth {
+    clear: both;
+}
+.text.parbase.section {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media(min-width:$screen-sm) {
+    .text.parbase.section {
+        float: left;
+        width: 66.66666667%;
+    }
+}
+.text.parbase.section p {
+    clear: both;
+}
+
+.content.container .page_content .parbase.pagedivision.section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content.container .page_content #page-banner > .container {
+    padding: 0;
+}
+
+//removes padding so that color blocks span full width of page
+.container-fluid.tds-body-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+.pagelayout.parbase.section {
+    clear: both;
+}
+.pagelayout .parbase.richTextComponent.section {
+    margin-bottom: 24px;
+}
+// Data-list
+// ---------
+// overwriting some of the Bootstrap defaults for the Tarriff page designs.
+@media (min-width: $screen-sm-min) {
+    .dl-horizontal dt {
+        width: 165px;
+        text-overflow: initial !important;
+        white-space: normal;
+    }
+}
+dd {
+    margin-bottom: 1.5rem;
+}
+//product user guides component
+.parbase.productUserGuides.section .col-sm-8 {
+    margin-bottom: 36px;
+}
+// ===== Page Content Padding ==================================================
+// page banner and content padding that changes based on screen size
+// found in content - container and content - rich text component
+.tds-richtext-padboth {
+    padding-left: $tds-padding-lg;
+    padding-right: $tds-padding-lg;
+}
+.tds-richtext-padleft {
+    padding-left: $tds-padding-lg;
+}
+.tds-richtext-padright {
+    padding-right: $tds-padding-lg;
+}
+@media (max-width: $screen-sm-min) {
+    .tds-richtext-padboth,
+    .tds-richtext-padleft,
+    .tds-richtext-padright {
+        padding-left: $tds-padding-md;
+        padding-right: $tds-padding-md;
+    }
+}
+@media (max-width: $screen-xs-min) {
+    .tds-richtext-padboth,
+    .tds-richtext-padleft,
+    .tds-richtext-padright {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+// ===== Page Layout Padding ===================================================
+// adds top or bottom padding depending on whether content needs it or not
+.pagelayout .top-bottom-pad {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.pagelayout .top-pad {
+    padding-top: 32px;
+}
+.pagelayout .bottom-pad {
+    padding-bottom: 32px;
+}
+
+// increase page width site wide*/
+.container, .multiPathSearch, .tds-width-container, .tds-width-container, .multiPathSearch, .multiPathSearch {
+    max-width: 1120px;
+}
+
+/*fix layout for terms page*/
+.page_content .tds-pagedivider-four-col,
+.page_content .tds-pagedivider-one-col,
+.page_content .tds-pagedivider-three-col,
+.page_content .tds-pagedivider-two-col {
+    padding-top: 0px;
+    margin: 0;
+}
+
+@media (max-width:583px) {
+    .tds-page-banner {
+        margin-bottom: 10px;
+    }
+}
+
+// add styling to home page title block
+.container-fluid.tds-block-lt-blue.home-title {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 32px;
+    padding: 0 48px;
+}
+
+.container-fluid.tds-block-lt-blue.home-title h1 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+@media (max-width:460px) {
+    .container-fluid.tds-block-lt-blue.home-title {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .container-fluid.tds-block-lt-blue.home-title h1 {
+        font-size: 16px;
+        text-align: left;
+        line-height: 24px;
+    }
+}

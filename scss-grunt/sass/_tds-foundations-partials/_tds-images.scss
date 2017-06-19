@@ -1,0 +1,61 @@
+/* tds-images.scss
+==========================================*/
+
+#tds-logo {
+  float: left;
+  width: 98px;
+  height: 40px;
+  margin: 40px 0;
+  background-image: url(/content/dam/tdstelecom/images/logos/TDS_Logo.png); // IE 9 hack fallback
+  background-image: url(/content/dam/tdstelecom/images/logos/tds-logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media all and (max-width: $screen-sm-min) {
+  #tds-logo {
+    margin: 0;
+    width: 78px;
+  }
+}
+
+//===== Footer logo ============================================================
+//==============================================================================
+#fortune1000-logo {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+  background-image: url(/content/dam/tdstelecom/images/logos/2015-fortune-1000.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+}
+//NOTE new ID for use in generid footer component
+#fortune-logo {
+    width: 203px;
+    height: 77px;
+}
+div.copyright-logo {
+    padding: 36px 24px 36px 36px;
+}
+@media (max-width: $screen-sm-min) {
+  div.copyright-logo {
+    //padding: 26px 24px 30px 40px;
+  }
+}
+@media all and (max-width: $screen-xs-min) {
+  #fortune1000-logo, #fortune-logo {
+    display: none;
+  }
+  div.copyright-logo {
+    display: none;
+  }
+}
+//===== MISCELL TWEAKS =========================================================
+//==============================================================================
+.contentcontainer .tds-pagedivider-two-col .col-sm-4 .img-responsive {
+  /*adds space so that images on exec bio page don't butt up against the divider line*/
+    margin-top: 28px;
+}

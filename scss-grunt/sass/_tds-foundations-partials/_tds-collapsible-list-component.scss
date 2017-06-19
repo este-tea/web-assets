@@ -1,0 +1,68 @@
+// Accordion selections
+.panel-group.tds-collapse {
+  margin-bottom: 0; // Removing panel-group margin that is being used in the datatables
+  // Remove box-shadow under panel div
+  .panel {
+    box-shadow: none;
+  }
+  // removed padding since it's in the gallery-btn below
+  .panel-heading {
+    padding: 0;
+    background: none;
+    a.btn-block {
+      color: #19388a;
+      padding: 12px;
+      text-decoration: none;
+      .icon-expand {
+        width: 20px;
+        height: 16px;
+        background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg);
+        background-size: 14px 14px;
+        background-position: right center;
+        background-repeat: no-repeat;
+      }
+      &.collapsed .icon-expand {
+        background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-tdsblue.svg);
+      }
+    }
+    a.btn-block:hover {
+      background-color: #e9e9e9;
+      .icon-expand {
+        background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-white.svg);
+      }
+      &.collapsed .icon-expand {
+        background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+      }
+    }
+  }
+  // take out BS default borders
+  .panel-heading,
+  .panel-default {
+    border-color: transparent;
+  }
+  .panel-body {
+    border-top: none;
+    padding: 24px 0;
+    .media.tds-news-feed {
+      margin-top: 24px;
+      .media.tds-news-feed {
+        margin-top: 24px;
+      }
+    }
+  }
+  // Buttons
+  // Collapsed
+  // design for bottom border on expanded menu
+  .panel-footer {
+    background-color: $tds-dk-blue;
+    padding: 1px;
+  }
+}
+/*tariff collapsible list group*/
+.panel-group .panel-heading+.panel-collapse>.panel-body, .panel-group .panel-heading+.panel-collapse>.list-group {
+    /*remove top border when hover over city name*/
+    border-top: none;
+}
+.collapsableListGroup a.gallery-btn.tds-btn-plain.btn-block.collapsed {
+    box-shadow: none;
+}

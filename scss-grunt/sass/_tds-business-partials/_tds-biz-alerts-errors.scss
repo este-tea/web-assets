@@ -1,0 +1,38 @@
+/* tds-biz-alerts-errors
+==========================================*/
+//shopper ID that displays address for user
+.shopperid.shopperId > .container {
+    max-width: 100%;
+    padding: 0;
+}
+.shopperid.shopperId {
+    .tds-error-msg {
+        padding: 8px;
+        font-size: 12px;
+        color: #555;
+        margin-bottom: 0;
+        .container {
+            //this adds back the extra padding added by .container that had
+            //to be removed in the shared styles
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+.parbase.section.shopperId .tds-error-msg.tds-error-info {
+    padding: 8px 0;
+    margin-bottom: 0;
+}
+
+.agentGreeting .tds-error-msg.tds-error-info {
+    margin-bottom: 0;
+    padding: 8px 0;
+}
+.agentGreeting div#enteredUserName {
+    font-size: 12px;
+    color: #555;
+}
+.agentGreeting .container {
+    padding-left: 16px;
+    padding-right: 16px;
+}

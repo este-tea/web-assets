@@ -1,0 +1,255 @@
+/* tds-gallery
+==========================================*/
+// ============
+// Gallery or home grid refers to the four/3 column card
+// layout in the shop section of the resi site
+// ============
+
+// 4 Column Gallery Layout on home page
+//==================================================
+
+.home-grid {
+  list-style: none;
+  overflow: hidden;
+  padding: 0 0 0 1em;
+  margin: 0 auto;
+}
+.home-grid li {
+  padding: 0 1em 1em 0;
+  float: left;
+}
+.home-grid li > div {
+  position: relative;
+  border: solid 3px $tds-lt-gray;
+  vertical-align: bottom;
+}
+.home-grid li a {
+  color: #fff;
+}
+
+@media all and (min-width: $screen-md-min) {
+  .home-grid li {
+    width: 100%;
+    float: left;
+  }
+  .home-grid li > div {
+    padding: 1em;
+  }
+}
+
+@media all and (min-width: $screen-xs-min) {
+  .home-grid li {
+    width: 50%;
+  }
+  .home-grid li > div {
+    padding: 1em;
+  }
+}
+@media all and (min-width: $screen-sm-min) {
+  .home-grid li {
+    width: 25%;
+  }
+}
+ul.home-grid {
+  max-width: 100%;
+}
+// Mobile shop cards that weren't set up loke the other cards.
+@media all and (max-width: $screen-xs-min) {
+  .home-grid li {
+    width: 100%;
+    float: left;
+  }
+  .home-grid li>div {
+    padding: 1em;
+  }
+}
+// 3 Column Gallery Layout used in product galleries
+// ==================================================
+
+.gallery-grid {
+  list-style: none;
+  overflow: hidden;
+  padding: 0 0 0 1em;
+  min-width: 15em;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 750px) {
+  .gallery-grid { padding-bottom: 1em }
+
+}
+
+.gallery-grid li {
+  float: left;
+  padding: 0 1em 1em 0;
+}
+.gallery-grid li > div {
+  position: relative;
+  vertical-align: bottom;
+  border: solid 3px $tds-lt-gray;
+}
+
+@media all and (min-width: $screen-xs-min) {
+  .gallery-grid li {
+    width: 100%;
+    float: left;
+  }
+  .gallery-grid li > div {
+    padding: 1em;
+  }
+}
+
+@media all and (min-width: $screen-sm-min) {
+  .gallery-grid li {
+    width: 50%;
+  }
+  .gallery-grid li > div {
+    padding: 2em;
+  }
+}
+@media all and (min-width: $screen-md-min) {
+  .gallery-grid li {
+    width: 33.333333%;
+  }
+}
+
+// Typography
+//==================================================
+
+h2.gallery-title {
+  font-family:'ITC Avant Garde Gothic W01';
+  font-size: 1.5em;
+  line-height: 1.25em;
+  color: $tds-blue-100;
+  text-align: center;
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+h2.gallery-title > span {
+  display:table-cell;
+  vertical-align: middle;
+}
+
+@media all and (max-width: $screen-xs-min) {
+  h2.gallery-title {
+    height: auto;
+  }
+}
+
+.gallery-description {
+  margin: 1.5em 0;
+  color: $tds-dk-gray;
+}
+
+@media all and (min-width: $screen-xs-min) {
+  .gallery-description {
+    height: auto;
+  }
+}
+
+/* #Images
+================================================== */
+
+.gallery-img {
+  //container sized for the images used in 3 column gallery grid
+  margin: 0 auto 36px;
+  width: 9em;
+  height: 9em;
+}
+
+@media all and (min-width: $screen-xs-min) {
+  .gallery-img {
+    width: 9em;
+    height: 9em;
+  }
+}
+
+@media all and (min-width: $screen-sm-min) {
+  .gallery-img {
+    width: 75%;
+    padding-top: 75%;
+    height: 0;
+  }
+}
+
+// New styles
+h2.gallery-title-4c {
+  font-family: $tds-font-family;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  color: $tds-dk-blue;
+  text-align: center;
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+// "OR" text that appears between 2 buttons
+.gallery-grid b {
+  padding: 10px;
+  display: block;
+}
+
+// When an alternate price offer appears in a well in the `.tds-card`
+// other well attributes are in the <tds-well.less> file.
+.gallery-grid li > div .tds-well {
+  margin: 15px -15px -15px -15px;
+}
+
+// Center align set up.
+.gallery-grid li {
+  text-align: center;
+}
+.gallery-description p,
+.gallery-description p b {
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+  line-height: 1.65em;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: $screen-xs) {
+  .gallery-grid li {
+    width: 100%;
+    float: left;
+  }
+  .gallery-grid li>div {
+    padding: 1em;
+  }
+}
+//---hover/focus on cards with one cta---
+.bundlegallery ul.bundle-gallery > li.bundle-cards > div:hover,
+ul.gallery-of-bundle-galleries > li > div:hover,
+ul.home-grid > li > div.four-panel-card:hover,
+.galleryofgalleries .gallery-grid > li > div:hover,
+.galleryofgalleries .card-component-container:hover,
+.bundlegallery ul.bundle-gallery > li.bundle-cards > div:focus,
+ul.gallery-of-bundle-galleries > li > div:focus,
+ul.home-grid > li > div.four-panel-card:focus,
+.galleryofgalleries .gallery-grid > li > div:focus,
+.galleryofgalleries .card-component-container:focus {
+    background-color: #e3e3e3;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+.bundlegallery ul.bundle-gallery > li.bundle-cards > div .gallery-btn,
+ul.gallery-of-bundle-galleries > li > div:hover .gallery-btn,
+ul.home-grid > li > div.four-panel-card:hover  .gallery-btn,
+.galleryofgalleries .gallery-grid > li > div:hover .gallery-btn,
+.galleryofgalleries .card-component-container:hover .gallery-btn,
+ul.gallery-of-bundle-galleries > li > div:focus .gallery-btn,
+ul.home-grid > li > div.four-panel-card:focus  .gallery-btn,
+.galleryofgalleries .gallery-grid > li > div:focus .gallery-btn,
+.galleryofgalleries .card-component-container:focus .gallery-btn {
+    text-decoration: none;
+    background-color: #0c8fd0;
+    cursor: pointer;
+    box-shadow: none;
+}

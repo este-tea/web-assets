@@ -1,0 +1,830 @@
+/* tds-package-builder
+==========================================*/
+// NOTE: cable site uses the package builder component which
+// will hopefully replace the old bundle builder component
+// this component uses bootstrap's toggleable/dynamic tabs
+// instead of jquery ui tabs (because there is less css to override and because we're already using bootstrap)
+
+// alerts
+// ----------------
+.product-list-contents .pkg-prod-list-options {
+  .tds-alert {
+    margin-top: 14px;
+    color: #000000;
+    &.tds-alert-critical {
+        background-position: 16px 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .pkg-builder-tab-content {
+    .tds-alert {
+      margin-top: 14px;
+    }
+  }
+}
+/* Pkg Builder Section Layout
+==========================================*/
+.row.product-list-contents {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pkg-prod-list-summary {
+    padding-left: 0;
+}
+
+.pkg-prod-list-options {
+    padding-right: 0;
+    padding-left: 48px;
+}
+// Section Navigation/Tabs
+// ----------------
+.pkg-builder-tab-hr {
+    background-color: #19388a;
+    height: 2px;
+}
+.pkg-builder-nav-tabs {
+    max-width: 100%;
+    margin: 20px auto;
+    display: table;
+    border: none;
+}
+.pkg-builder-container .pkg-builder-nav-tabs li {
+    opacity: 1;
+    padding: 0;
+    display: block;
+    width: auto;
+    margin-left: 0px;
+    min-height: 0;
+    margin-bottom: 0;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li > a,
+.pkg-builder-container .pkg-builder-nav-tabs > li > a:link,
+.pkg-builder-container .pkg-builder-nav-tabs > li > a:visited {
+    color: #aaa;
+    height: 55px;
+    font-family: 'ITC Avant Garde Gothic W01';
+    font-size: 22px;
+    background: none;
+    position: relative;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li.active > a,
+.pkg-builder-container .pkg-builder-nav-tabs > li.active > a:hover {
+    color: #19388a;
+    border-color: transparent;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li.active > a:before {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li > a:hover,
+.pkg-builder-container .pkg-builder-nav-tabs > li > a:focus {
+    filter: grayscale(0%);
+    opacity: 1;
+    color: #0c8fd0;
+    border-color: transparent;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li:focus > a {
+    color: #0c8fd0;
+}
+.pkg-builder-container .pkg-builder-nav-tabs > li:focus > a:before {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+//product icons before categories
+// ----------------
+.pkg-builder-nav-tabs li a .pkg-category-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+.pkg-builder-nav-tabs li a:hover .pkg-category-img,
+.pkg-builder-nav-tabs li a:focus .pkg-category-img,
+.pkg-builder-nav-tabs li.active a .pkg-category-img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.pkg-builder-nav-tabs > li > a {
+  padding: 0 44px 0 0;
+}
+// arrow icons after categories
+.pkg-builder-container .pkg-builder-nav-tabs li a:after {
+    content: "";
+    width: 40px;
+    height: 50px;
+    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-gray.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 0;
+}
+// removes arrow icon from last item in tabs
+.pkg-builder-container .pkg-builder-nav-tabs li:last-child a:after {
+    content: none;
+}
+//tabs with numbers
+body {
+    counter-reset: section;
+}
+ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers {
+    text-align: center;
+    margin-top: 0;
+}
+
+ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
+    float: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li:before {
+    counter-increment: section;
+    content: counter(section);
+    color:white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    background-color:#7a86b7;
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+}
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li a {
+  padding-left: 50px;
+  padding-right: 56px;
+}
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li a img {
+    display:none;
+}
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li a:after {
+    width: 46px;
+    height: 40px;
+    background-size: 40px 40px;
+    opacity: 0.4;
+    right: 4px;
+    top: 0;
+}
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers > li > a,
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers > li > a:link,
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers > li > a:visited {
+  height: 40px;
+  line-height: 40px;
+}
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li.active:before {
+    background-color: #19388a;
+}
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li:hover:before {
+    background-color: #0c8fd0;
+}
+.pkg-builder-container .pkg-builder-nav-tabs.has-numbers li:last-child a {
+    padding-right: 0px;
+}
+@media (max-width:625px) {
+    .pkg-builder-nav-tabs > li > a {
+        padding: 0 50px 0 0;
+    }
+    .pkg-category-img {
+        width: 40px;
+        background-size: 34px;
+    }
+    .pkg-builder-container .pkg-builder-nav-tabs li:after {
+        width: 36px;
+        height: 40px;
+        background-size: 30px 30px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+}
+@media (max-width:445px) {
+    .pkg-builder-container .pkg-builder-nav-tabs li {
+        margin-left: 0;
+        min-height: 0;
+        margin-bottom: 0;
+    }
+}
+@media (max-width:340px) {
+    .pkg-builder-container .pkg-builder-nav-tabs li {
+        float: none;
+    }
+
+    .pkg-category-img {
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers {
+        text-align: left;
+        margin-top: 0;
+    }
+    ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
+        float: none;
+        display: block;
+        margin-top: 20px;
+        min-width: 240px;
+    }
+    .pkg-builder-container .pkg-builder-nav-tabs.has-numbers li a {
+        padding-left: 60px;
+    }
+}
+
+// typography
+// ----------------
+.prod-listitem-content {
+  h3 {
+    margin-top: 0;
+    span { // use for (optional)
+        font-size: 75%;
+        color: #555;
+    }
+  }
+  p {
+      margin-bottom: 0;
+  }
+}
+.pkg-product-card {
+  .prod-name {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 21px;
+  }
+  .product-content {
+    .prod-description {
+        margin-bottom: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+  }
+  .product-price {
+    margin-top: 12px;
+    .price-text.price-base {
+        font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+        font-size: 21px;
+        color: #578228;
+        font-weight: 500;
+        line-height: 1.25em;
+    }
+    .price-text > .term {
+        font-size: 70%;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+  }
+}
+.prod-subitem-heading {
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    font-size: 16px;
+    color: #353535;
+    font-weight: 400;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.prod-subitem-name {
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    color: #19388a;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+.product-subitem .product-price {
+  margin-left: 44px;
+}
+
+// Section/Tab Content
+// ----------------
+.tab-content {
+  &.pkg-builder-tab-content {
+      margin-top: 24px;
+  }
+}
+
+// product list section
+// ----------------
+.product-list-contents {
+    padding: 20px 0;
+    border-bottom: solid 2px #d3d8e8;
+}
+.pkg-builder-tab-content > div > .product-list-contents:first-child {
+    padding-top: 0;
+}
+.product-list-contents:nth-last-child(2) {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+// Package Cards
+// ----------------
+.pkg-product-card {
+    border: solid 3px #d9d9d9;
+    padding: 24px;
+    &.is-selected {
+      background-color: #d9d9d9;
+    }
+    &:last-child {
+        margin-bottom: 4px;
+    }
+}
+.product-content {
+    padding: 0;
+    padding-top: 8px;
+}
+.prod-subitem-content {
+    padding: 8px 20px 0 44px;
+    + .product-price {
+       margin-left: 44px;
+   }
+}
+
+// Package product list item radio styling
+// ----------------
+.pkg-product-card .pkg-builder-listoption-wrap {
+    margin: 0;
+    padding: 0;
+    .pkg-builder-label {
+        padding: 0;
+    }
+}
+.pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+    margin-left: -72px;
+    margin-top: -4px;
+}
+.pkg-product-card input:disabled + .tds-radio-btn {
+    opacity: initial;
+    background-color: #999;
+    border-color: #999;
+}
+.pkg-builder-listoption-wrap .product-subitem .form-sub-group {
+    padding: 0 0 20px 20px;
+}
+.pkg-builder-listoption-wrap .product-content .form-sub-group {
+    padding: 0;
+}
+.pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+    margin-bottom:0;
+}
+
+@media (max-width:990px) {
+    .pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+        margin-bottom:16px;
+    }
+}
+@media (max-width:767px) {
+    .pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+        margin-bottom:0px;
+    }
+}
+@media (max-width:640px) {
+    .pkg-builder-listoption-wrap .form-sub-group .input-group.bootstrap-touchspin {
+        margin-bottom:16px;
+    }
+}
+// Package product subitem/addon
+// ----------------
+.pkg-product-card {
+  .product-subitem {
+    .form-group {
+      margin-bottom: 0px;
+      &:last-child {
+          margin-bottom: 0;
+      }
+      .input-group.bootstrap-touchspin {
+          margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// alert spacing in addon section
+// ----------------
+.prod-subitem-content ~ .tds-alert.tds-alert-critical {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+// Package product subitem checkbox
+// ----------------
+.pkg-prod-list-options .pkg-product-card .pkg-builder-addon-wrap {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.pkg-builder-addon-wrap {
+    .product-subitem {
+        margin-top: 20px;
+        .tds-radio-btn {
+           margin-left: -42px;
+       }
+       label {
+           padding-left: 44px;
+       }
+    }
+}
+
+// dual list option (CatchTV section)
+// ----------------
+.dual-listoption-wrap {
+  .pkg-product-card {
+      border: none;
+      margin-left: 0;
+      padding: 0;
+      margin-top: 20px;
+      .pkg-builder-listoption-wrap {
+        margin: 0;
+        margin-left: 45px;
+        margin-top: 24px;
+        .tds-radio-btn {
+            margin-top: -1px;
+            margin-left: -45px;
+        }
+        .form-sub-group {
+            margin-left: 2px;
+            margin-top: 16px;
+        }
+      }
+      .pkg-builder-addon-wrap {
+          padding-left: 44px;
+          margin-top:20px;
+          padding-bottom: 0;
+              padding-right: 0;
+      }
+  }
+}
+
+// Divider Lines
+// ----------------
+.pkg-prod-list-options {
+  > .pkg-product-card {
+    > .tds-divider-line {
+      //this class is re-used in catchTV dual list option so need to remove the styling when the line isn't in a dual list option
+        height: 0;
+    }
+    > .pkg-builder-addon-wrap {
+      margin-top: 20px;
+      margin-bottom: 0;
+      padding: 0;
+      .tds-divider-line {
+        height: 1px;
+        background: #0C8FD0;
+      }
+    }
+  }
+}
+.pkg-product-card .product-subitem .form-group > .tds-divider-line {
+    margin-top: 20px;
+}
+
+.pkg-product-card .product-subitem .form-group:last-child > .tds-divider-line {
+    display: none;
+}
+
+.dual-listoption-wrap {
+  > .pkg-product-card {
+    > .pkg-builder-addon-wrap {
+      > .tds-divider-line {
+          background: url("/content/dam/tdstelecom/images/ui/dk-gray-dotted-line.svg");
+      }
+    }
+    > .tds-divider-line {
+        height: 1px;
+        background: #0c8fd0;
+    }
+  }
+}
+.tab-content .bottom-buttons .tds-divider-line.thin-lt-gray {
+    margin-bottom: 4px;
+    height: 2px;
+    background: #d3d8e8;
+}
+
+// media queries for section layout
+// ----------------
+@media (min-width: 990px) {
+    .pkg-product-card .pkg-builder-listoption-wrap {
+        position: relative;
+    }
+    .pkg-builder-listoption-wrap .pkg-builder-label,
+    .pkg-builder-listoption-wrap .product-content {
+        max-width: 72%;
+        display:block;
+    }
+    .pkg-builder-listoption-wrap .product-price {
+        position: absolute;
+        text-align: right;
+        float: right;
+        top: 0;
+        right: 0;
+        max-width: 30%;
+    }
+    .pkg-builder-addon-wrap .product-subitem {
+        position: relative;
+    }
+    .product-subitem .prod-subitem-heading,
+    .product-subitem .form-group {
+        max-width: 72%;
+        display:block;
+    }
+    .product-subitem .product-price {
+        position: absolute;
+        text-align: right;
+        float: right;
+        top: 0;
+        right: 0;
+        max-width: 30%;
+    }
+    .product-price {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 751px) and (min-width:640px) {
+  .pkg-product-card .pkg-builder-listoption-wrap {
+      position: relative;
+  }
+  .pkg-builder-listoption-wrap .pkg-builder-label,
+  .pkg-builder-listoption-wrap .product-content {
+      max-width: 72%;
+      display:block;
+  }
+  .pkg-builder-listoption-wrap .product-price {
+      position: absolute;
+      text-align: right;
+      float: right;
+      top: 0;
+      right: 0;
+      max-width: 30%;
+  }
+  .pkg-builder-addon-wrap .product-subitem {
+      position: relative;
+  }
+  .product-subitem .prod-subitem-heading,
+  .product-subitem .form-group {
+      max-width: 72%;
+      display:block;
+  }
+  .product-subitem .product-price {
+      position: absolute;
+      text-align: right;
+      float: right;
+      top: 0;
+      right: 0;
+      max-width: 30%;
+  }
+  .product-price {
+      margin-top: 0px;
+  }
+
+}
+@media (max-width:751px){
+  .pkg-product-card {
+      padding: 16px;
+  }
+  .pkg-prod-list-options {
+      padding-left: 0px;
+  }
+  .pkg-product-card .pkg-builder-listoption-wrap {
+    margin-left: 40px;
+}
+  .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+      margin-left: -40px;
+      margin-top: -1px;
+  }
+  .pkg-product-card .pkg-builder-label {
+      padding-left: 60px;
+      padding-top: 24px;
+  }
+  .dual-listoption-wrap .pkg-builder-listoption-wrap > .product-content,
+  .dual-listoption-wrap .pkg-builder-listoption-wrap > .product-price {
+      padding-left: 0px;
+  }
+  .pkg-prod-list-options > .pkg-product-card > .pkg-builder-addon-wrap {
+      margin-left: 40px;
+  }
+}
+@media (max-width: 583px) {
+  .pkg-product-card .pkg-builder-label {
+      padding-left: 54px;
+      padding-top: 16px;
+  }
+  .pkg-builder-addon-wrap {
+      margin: 0px;
+      padding: 0 14px 14px 14px;
+  }
+  .pkg-builder-form h2 {
+      font-size: 24px;
+  }
+  .pkg-builder-form h3 {
+      font-size: 21px;
+  }
+  .pkg-builder-form .h4 {
+      font-size: 18px;
+      line-height: 25px;
+  }
+}
+
+@media (max-width:400px){
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap {
+        margin-top: 16px;
+    }
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap .tds-radio-btn {
+        margin-left: -40px;
+    }
+    .dual-listoption-wrap .pkg-product-card .pkg-builder-addon-wrap {
+        margin-top: 16px;
+        padding-left: 0px;
+    }
+    .pkg-prod-list-options > .pkg-product-card > .pkg-builder-addon-wrap {
+        margin-left: 0px;
+    }
+}
+/* Pkg Builder Page Layout
+==========================================*/
+
+// layout spacing
+// ----------------
+.pkg-builder-page-content {
+  .prod-listitem-content {
+      margin-left: 48px;
+  }
+}
+.row.pkg-builder-page-content {
+    margin-right: 0;
+    margin-left: 0;
+}
+// typography
+// ----------------
+.pkg-builder-form.page-layout {
+  > h2 {
+    color: #0c8fd0;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  .pkg-product-card .product-price {
+      margin-top: 0px;
+  }
+  p.prod-description {
+      margin-bottom: 0px;
+  }
+}
+.pkg-summary-content > h2 {
+    color: #19388a;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+}
+.pkg-builder-page-content {
+  .category-heading h3 {
+      color: #19388a;
+      font-weight: 500;
+      margin-left: 50px;
+      line-height: 40px;
+      margin-top: 8px;
+      margin-bottom: 0;
+      &:before {
+          counter-increment: section;
+          content: counter(section);
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+          background-color: #7a86b7;
+          width: 40px;
+          height: 40px;
+          display: block;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 50%;
+          position: absolute;
+          margin-left: -50px;
+      }
+  }
+}
+.pkg-builder-page-content {
+  .prod-listitem-content {
+    > h4 {
+       margin-bottom: 4px;
+       margin-top: 0;
+   }
+  }
+}
+.pkg-builder-page-content .prod-listitem-content > h4 > a {
+    font-size: 20px;
+    text-decoration: none;
+    display:block;
+    padding: 8px 40px 4px 0;
+    color: #0c8fd0;
+    &:hover {
+        color: #19388a;
+    }
+    &:after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        display: block;
+        float: right;
+        background-image: url(/content/dam/tdstelecom/images/ui/icon_minus-white.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        border-radius: 50%;
+        background-color: #0c8fd0;
+        margin: -4px -40px 0 0;
+    }
+    &:hover:after {
+        background-color:#19388a;
+    }
+    &.collapsed:after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        display: block;
+        float: right;
+        background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        border-radius: 50%;
+        background-color: #0c8fd0;
+        margin-top: -4px;
+        text-decoration:none;
+    }
+}
+
+// divider lines
+// ----------------
+.pkg-builder-page-content {
+  .pkg-products-wrap {
+      border-top: solid 3px #19388a;
+      padding: 0;
+  }
+}
+.pkg-products-wrap {
+    border-top: solid 3px #19388a;
+}
+.product-category-content:last-child .product-list-contents {
+    border-bottom: solid 3px #19388a;
+}
+
+.pkg-disclaimer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+// disclaimer
+// ----------------
+.pkg-disclaimer {
+    margin: 40px 0;
+}
+
+.pkg-disclaimer > .col-sm-8 {
+    padding: 0;
+    @media (max-width:751px){
+        border-top: solid 2px #d9d9d9;
+        padding-top: 24px;
+    }
+}
+.disclaimer-heading {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+// media queries for page layout
+// ----------------
+@media (max-width: 990px) and (min-width:752px) {
+  .pkg-builder-form.page-layout {
+    p.prod-description {
+        margin-bottom: 16px;
+    }
+  }
+}
+@media (max-width: 751px) and (min-width:640px) {
+
+}
+@media (max-width:751px){
+  .pkg-builder-page-content .prod-listitem-content {
+      margin-left: 0px;
+  }
+}
+@media (max-width: 583px) {
+
+}
+@media (max-width:400px){
+
+}

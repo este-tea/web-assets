@@ -1,0 +1,234 @@
+/* tds-biz-header
+==========================================*/
+.tds-other-nav ul {
+    font-family: $tds-font-family;
+    font-weight: 400;
+}
+
+#othernav-container-topright {
+  margin-right: 0;
+}
+.tds-other-nav > ul > li > a {
+  white-space: nowrap;
+  width: auto;
+  display: block;
+  padding: 0.75em;
+  text-decoration: none;
+  color: $tds-headfoot-text-color;
+  border-right: solid 1px $tds-dk-gray-60;
+  margin-bottom: -1px;
+}
+#othernav-container-topright {
+  .tds-other-nav > ul > li:first-child > a {
+    border-left: solid 1px $tds-dk-gray-60;
+  }
+}
+#othernav-container-topright .tds-other-nav > ul > li > a {
+  border-right: solid 1px $tds-dk-gray-60;
+}
+#top-links {
+  border-bottom: solid 2px #555;
+}
+//adds spacing in small form
+@media (max-width: 750px) {
+  #add-padding {
+      height: 72px;
+  }
+}
+.tds-other-nav > ul > li a:focus,
+.tds-other-nav > ul > li a:focus,
+.tds-other-nav a.focus {
+    text-decoration: underline;
+}
+// LARGE/DESKTOP NAV
+// ----------------------------------------
+//remove space after request quote button with contact links
+#header-contact-links {
+  .button .gallery-btn.tds-btn-orange {
+    &:after {
+      content: none;
+    }
+  }
+  &.contact-links-wrap {
+    margin-top: 1.5em;
+    ul li {
+      vertical-align: middle;
+    }
+    .contact-links-text:before {
+      background-color: #FFF;
+    }
+    .contact-chat-icon:before {
+      background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-chat-gray.svg);
+      background-size: 16px;
+    }
+    .contact-call-icon:before {
+      background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-call-gray.svg);
+      background-size: 14px;
+    }
+    > ul > li:hover {
+      > a,
+      > a:hover {
+        color: $tds-blue-100;
+        &:before,
+        &:hover:before {
+          background-color: $tds-blue-100;
+        }
+      }
+      > .contact-chat-icon:before {
+        background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-chat.svg);
+        background-size: 14px;
+      }
+      > .contact-call-icon:before {
+        background-image: url(/content/dam/tdstelecom/images/ui/contact/icon_contact-call.svg);
+        background-size: 12px;
+      }
+    }
+  }
+}
+
+// LARGE NAV: Main Level Nav Links
+// ----------------------------------------
+.parbase.navbar {
+    margin-bottom: 0px;
+}
+div#main-navbar {
+    border-bottom: solid 2px #e3e3e3;
+    margin-bottom: 0;
+}
+.L0-nav-wrap {
+    border-bottom: solid 4px $tds-lt-blue-80;
+}
+.L0-nav-container {
+    border-bottom: none;
+}
+.L1-nav > ul > li > a:after,
+.L1-nav > ul > li > a:hover:after,
+.L1-nav > ul > li > a:active:after,
+.L1-nav > ul > li > a:focus:after {
+  content: none;
+}
+.L1-nav ul ul li:hover a {
+  background-image: none;
+}
+.L1-nav ul ul li a {
+  padding-right: 0;
+}
+.L1-nav > ul {
+  border-bottom: none;
+  display: block;
+}
+.L1-nav ul ul li + li a {
+  border-top: none;
+}
+.L1-nav ul ul li:hover + li a {
+  border-top: none;
+}
+.L1-nav > ul > li > a:hover {
+  background-color: #25acf0;
+}
+.L1-nav > ul > li:hover > a {
+  background: #25acf0;
+}
+.L1-nav ul ul li:hover {
+  background-color: #19388a;
+}
+.L1-nav ul ul li:hover a {
+  background-color: #19388a !important;
+}
+.L1-nav ul ul li {
+  background-color: #e3e3e3;
+}
+.L1-nav ul ul li a {
+  color: #353535;
+  background-color: #e3e3e3!important;
+}
+.L1-nav > ul > li a:focus {
+    color: #19388a;
+    text-decoration: underline;
+}
+.L1-nav > ul > li > a:focus {
+    color: white;
+}
+// SMALL NAV/MOBILE NAV
+// ----------------------------------------
+ul.mobile-header-nav {
+    text-align: right;
+    float:none;
+}
+div.hr-gray {
+  border-bottom: solid 4px #25acf0;
+}
+div.hr-mobile-tdsblue {
+    display: none;
+}
+div#mobile-menu {
+  border-bottom: solid 4px #25acf0;
+  top: 0;
+}
+#mobile-menu ul li {
+  background-color: #e3e3e3;
+}
+#mobile-menu ul li a {
+  border-bottom: none;
+  color: #19388a;
+  font-weight: 500;
+  padding: 14px 0;
+}
+#mobile-menu ul li li a,
+#mobile-menu ul li a,
+#mobile-menu ul li li:last-child a {
+  border-bottom: none;
+}
+#mobile-menu ul li li a {
+  color: #353535;
+  font-weight: 400;
+}
+#mobile-menu ul li {
+  background-color: #e3e3e3;
+}
+#mobile-menu ul li:hover > a {
+  background: none;
+}
+#mobile-menu ul li:hover {
+  background-color: #25acf0;
+}
+#mobile-menu ul ul li:hover {
+  background-color: #19388a;
+  border-top: none;
+}
+#mobile-menu ul li a:hover {
+  background: none;
+}
+// menu button
+a#btn-menu.menu-active:hover,
+a#btn-menu.menu-active:active {
+  background-color: #25acf0!important;
+  border: solid 2px #25acf0!important;
+}
+#skiptonav a:after,
+#skiptocontent a:after {
+    content: '\e821';
+    font-size: 10px;
+}
+
+/*--HYDRA-2133 Business Header Alignment - Styling - Firefox --*/
+
+#header-contact-links.contact-links-wrap {
+    margin-top: 3.25em;
+	}
+
+  #header-contact-links li {
+  display: inline;
+}
+
+.contact-chat-icon {
+  display: inline-block;
+}
+
+.tds-block-lt-blue .gallery-btn:hover {
+background-color:#4760A1;
+}
+
+.loginForm .tds-card #loginForm button.gallery-btn:hover {
+background: #C8600B !important;
+}

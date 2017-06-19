@@ -1,0 +1,454 @@
+/* tds-cards
+==========================================*/
+// cards is the term being used for blocks of content that are
+// wrapped in a border, or gray background, each card typically
+// has a header, image, content, and call-to-action button/link
+// single card layout
+//-------------------------------
+// used in productavailcta.jsp and referralProgram.jsp
+.tds-single-card li {
+    width: 100%;
+}
+
+// ===== TDS Card ==============================================================
+// Basic structure of the tds cards based on the design types
+// =============================================================================
+// Basic example
+// ----------------
+// By default, all the {{.tds-card}} does is apply some basic border and padding to contain some content.
+.tds-card,
+.tds-card-plain {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    //float causing display issues but there are so many dependencies we have to leave as is
+    width: 100%;
+    margin-bottom: 28px;
+    padding: 24px;
+    background-color: $tds-white;
+    border: 3px solid $tds-lt-gray;
+    h2,
+    h3 {
+        margin-top: 0;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    // Add space at the top of text for `.responsive-image`
+    .card-content {
+        margin-top: 20px;
+    }
+    // align blue `ul` squares in cards to the left
+    ul {
+        padding-left: 20px;
+        li {
+            color: $tds-dk-gray;
+            margin-bottom: 6px;
+        }
+    }
+    // adds padding between `.form groups` used in the same card.
+    .prod-items.tds-card-form-group {
+        overflow: hidden;
+        padding-bottom: 30px;
+        // lines up `.form groups` with checkbox `label` text used in the same card.
+        .tds-form-group {
+            padding-left: 40px;
+        }
+    }
+    // if tds-card happens to get nested in another card
+    .tds-card {
+        margin-bottom: 0;
+        padding: 0;
+        background: transparent;
+        border: none;
+    }
+    // if card set up is needed without border add
+    // `tds-card-plain`
+    // (use sparingly since this is normally detemined in the cms based on design)
+    &.tds-card-plain {
+        border-color: transparent;
+    }
+}
+@media (max-width: 584px) {
+    .searchsitesectionbar .tds-card,
+    .tds-card {
+        padding: 16px;
+    }
+}
+// cards in four column page divider component
+// ---------------------------------
+.tds-pagedivider-four-col {
+  margin-left: 0;
+    .col-md-3 {
+        padding-left: 0;
+    }
+    // These cards get less overall padding becase they are narrower here.
+    .tds-card {
+        padding: 15px;
+        // different header size for four column cards
+        h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+        img {
+            width: 75%;
+            padding-bottom: 20px;
+        }
+        // When chat is unavailable
+        .tds-card-cta {
+            margin-top: 20px;
+            .tds-card-well {
+                padding: 9px 9px 0;
+                p {
+                    color: $tds-dk-blue;
+                }
+            }
+        }
+    }
+}
+// Remove border for `.tds-card-plain`
+// -----------------------------------
+.tds-card-plain {
+    border-color: transparent;
+}
+// With Gray Background
+// -----------------------
+.tds-card-gray {
+    background-color: $tds-ltr-gray;
+}
+.tds-card.tds-card-gray {
+    border: none;
+}
+// *temp float fix* - TODO || need to find a way to fix this so the float it's
+// referencing isn't done directly on the text.parbase components. These exist
+// in the current website css
+.tds-card .text.parbase.section {
+    float: none;
+    padding: 0;
+    width: 100%;
+}
+// ===== Card Layouts ==========================================================
+.tds-card.card-image-first {
+    padding: 0;
+    img.center-block.img-responsive.tds-card-img {
+        width: 100%;
+        padding-bottom: 0;
+    }
+}
+.card-image-wrap {
+    width: 40%;
+    float: right;
+}
+.tds-card.card-image-first .card-vert-content {
+    padding: 28px;
+}
+.tds-card.card-horizontal {
+    padding: 0;
+}
+.card-content-wrap.card-horiz-content {
+    width: 60%;
+    float: left;
+    padding: 28px;
+}
+.card-image-first.card-horizontal .card-image-wrap {
+    width: 40%;
+    float: left;
+}
+.card-image-first .card-content-wrap.card-horiz-content {
+    width: 60%;
+    float: left;
+}
+.card-image-first.card-horizontal .card-content-wrap {
+    padding: 28px;
+}
+@media screen and (max-width: 760px) {
+    .card-content-wrap.card-horiz-content {
+        width: 100%;
+        float: left;
+    }
+    .card-image-wrap {
+        width: 100%;
+        float: left;
+    }
+    .card-image-first.card-horizontal .card-image-wrap {
+        width: 100%;
+        float: left;
+    }
+    .card-image-first.card-horizontal .card-content-wrap {
+        width: 100%;
+        float: left;
+    }
+    .card-image-first.card-horizontal .card-content-wrap.card-horiz-content {
+        width: 100%;
+        float: left;
+    }
+}
+// ===== Card Heading ==========================================================
+.contactUsCard .tds-card .tds-card-heading {
+    color: $tds-blue-100;
+}
+.card-horiz-content h2.tds-card-heading {
+    text-align: left;
+    padding: 9px 0;
+}
+h2.tds-card-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: $tds-dk-gray-80;
+}
+.tds-card.tds-card-gray {
+    h2 {
+        color: $tds-blue-100;
+    }
+}
+.card-horiz-content h2.tds-card-heading {
+    padding: 0;
+}
+.tds-card-heading > a {
+    color: #19388a;
+    text-decoration: none;
+    display: block;
+}
+.tds-card-content h3 {
+    color: #0c8fd0;
+}
+.cardgallery .tds-card .card-content-wrap.card-vert-content .tds-card-heading {
+    color: #19388a;
+}
+
+.cardgallery a:hover .tds-card .card-content-wrap.card-vert-content .tds-card-heading {
+    color: #fff;
+}
+// ===== Card Image ============================================================
+img.center-block.img-responsive.tds-card-img {
+    width: 9em;
+    padding-bottom: 20px;
+}
+.tds-card-heading + a > img,
+.tds-card-heading + img {
+    margin-top: 20px;
+}
+.contactUsCard .tds-card .tds-card-img {
+    margin-top: 20px;
+}
+.contactUsCard .tds-card.card-horizontal .tds-card-img,
+.contactUsCard .tds-card.card-image-first .tds-card-img {
+    margin-top: 0;
+}
+.tds-card.card-horizontal img.center-block.img-responsive.tds-card-img {
+    width: 100%;
+    padding-bottom: 0;
+}
+@media screen and (max-width: 760px) {
+    .contactUsCard .tds-card.card-horizontal .tds-card-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .contactUsCard .tds-card.card-horizontal .tds-card-img {
+        width: 100%;
+    }
+}
+// ===== Card Content ==========================================================
+.tds-card-content {
+    h1,
+    h2,
+    h3,
+    p {
+        color: $tds-dkr-gray;
+    }
+}
+.card-content-wrap {
+    padding: 20px !important;
+}
+// ===== Card CTA ==============================================================
+.card-horiz-content .tds-card-cta .navbutton {
+    text-align: left;
+}
+.tds-card-cta .tds-btn {
+    margin-top: 20px;
+    padding: 12px 16px !important;
+    color: #FFF;
+    background-color: #19388A;
+    border-color: transparent;
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    text-align: left;
+    text-transform: capitalize;
+    border: none;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.parsys.ctaParsys.page_content_cta {
+    padding: 0;
+}
+.card-horizontal .card-horiz-content .tds-btn {
+    width: auto;
+    display: inline-block;
+}
+@media screen and (max-width: 650px) {
+    .contactUsCard .tds-card.card-horizontal .tds-card-img {
+        width: 100%;
+    }
+    .tds-card.card-horizontal .gallery-btn.btn-next-arrow {
+        width: 100%;
+    }
+}
+@media all and (max-width: 583px) {
+    .card-horizontal .card-horiz-content .tds-btn {
+        width: 100%;
+    }
+}
+.tds-card-well {
+    padding: 9px;
+    font-family: $tds-font-family;
+    text-align: center;
+    background-color: $tds-ltr-gray;
+    border-color: transparent;
+    @include border-top-radius(0px);
+    @include border-right-radius(0px);
+    @include border-bottom-radius(0px);
+    @include border-left-radius(0px);
+    @include box-shadow(none);
+    margin-bottom: 0;
+}
+.tds-card-cta .tds-well a {
+    color: #19388a;
+    text-decoration: none;
+}
+.tds-card-cta .tds-well a:hover {
+    color: #0c8fd0;
+    text-decoration: underline;
+}
+.tds-card-cta .tds-well b a {
+    font-weight: 500!important;
+}
+.contactUsCard .tds-well.well.tds-card-well {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+// ===== Card Background Color =================================================
+.colorBlock .tds-block-dk-blue .tds-card,
+.colorBlock .tds-block-dk-gray .tds-card,
+.colorBlock .tds-block-lt-blue .tds-card,
+.colorBlock .tds-block-orange .tds-card,
+.pagelayout .tds-block-dk-blue .tds-card,
+.pagelayout .tds-block-dk-gray .tds-card,
+.pagelayout .tds-block-lt-blue .tds-card,
+.pagelayout .tds-block-orange .tds-card {
+    background-color: rgba(255,255,255,.80);
+}
+.tds-block-lt-gray .tds-card {
+    background-color: #fff;
+}
+.pagedivision .tds-card.contact-card-form,
+.pagedivision .tds-card.tds-card-gray,
+.pagelayout .tds-card.contact-card-form,
+.pagelayout .tds-card.tds-card-gray {
+    background-color: #e3e3e3;
+}
+.pagedivision .tds-card.tds-card-plain,
+.pagelayout .tds-card.tds-card-plain {
+    background: none;
+}
+// ===== Tweaks ================================================================
+
+.ch-filler {
+display: inline-block;
+}
+
+@media screen and (max-width: 580px) {
+.ch-filler {
+display: none;
+}
+}
+
+.contactUsCard.parbase.section .tds-card .parbase.troubleReporting.section .tds-card.tds-card-gray {
+	background-color: #ffffff !important;
+}
+
+ #ticketButton {
+ margin-top: 20px;
+ width:100%;
+ padding: 12px 16px 10px !important;
+ }
+
+ // 1 gig page alert cover page content in small form*/
+.parbase.productavailcta.section .tds-alert {
+    clear: both;
+}
+
+//HYDRA-2183 Styling: Referral Page spacing and alignment issues
+.parbase.referralProgram.section .tds-single-card .gallery-grid li {
+ padding:0;
+}
+
+// IMT-84 TV Channel Lineup Styling Issues
+// #1 Fix
+.channelLineupResults.parbase.section .col-sm-8.col-xs-12 .tds-card .form-group.tds-form-group {
+   margin-bottom: 0px;
+}
+
+// #2 Fix
+.well.tds-well.tds-tv-channel-legend {
+   box-shadow: none;
+   border: 1px solid #f5f5f5 ;
+}
+
+
+// #4 Fix
+.channelLineupResults.parbase.section .tds-card button.dropdown-toggle {
+    box-shadow: none;
+	font-weight: 500;
+}
+
+.channelLineupResults.parbase.section .open > .gallery-btn.dropdown-toggle:hover, .channelLineupResults.parbase.section .open > .gallery-btn.dropdown-toggle:focus {
+    background-color: #0c8fd0;
+    color:#ffffff;
+}
+
+// #3 Fix
+.channelLineupResults.parbase.section .tds-card button.dropdown-toggle .caret {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    border-top: 8px dashed;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+// #5 Fix
+.channelLineupResults.parbase.section .col-sm-4.col-xs-12 .tds-card .dropdown ul.dropdown-menu {
+  background: #383b38;
+  border: 1px solid #383b38;
+  position: absolute;
+  top: 41px;
+}
+
+.channelLineupResults.parbase.section .col-sm-4.col-xs-12 .tds-card .dropdown ul.dropdown-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding:12px 20px;
+	font-weight: 600;
+}
+
+.channelLineupResults.parbase.section .dropdown-menu>li>a:hover, .channelLineupResults.parbase.section .dropdown-menu>li>a:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #5c605d;
+}
+
+// Liz's add ons
+.tds-tv-channel-lineup button#print-button {
+    margin-top: 4px;
+}
+
+.tds-tv-channel-lineup .col-sm-2.col-xs-12 {
+    padding-right: 0;
+}
+
+span.tds-label {
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    font-weight: 500;
+    font-size: 14px;
+}
+// IMT-84 TV Channel Lineup Styling Issues End

@@ -1,0 +1,27 @@
+@import "_tds-foundations-partials/_tds-variables";
+@import "_tds-foundations-partials/_tds-mixins";
+
+//NAVIGATION
+@import "_tds-business-partials/_tds-biz-header";
+@import "_tds-business-partials/_tds-biz-footer";
+@import "_tds-business-partials/_tds-biz-searchbar";
+@import "_tds-business-partials/_tds-biz-breadcrumb";
+
+@import "_tds-business-partials/_tds-biz-layout";
+@import "_tds-business-partials/_tds-biz-type";
+@import "_tds-business-partials/_tds-biz-lists";
+@import "_tds-business-partials/_tds-biz-buttons";
+@import "_tds-business-partials/_tds-biz-card";
+@import "_tds-business-partials/_tds-biz-forms";
+@import "_tds-business-partials/_tds-biz-tables";
+@import "_tds-business-partials/_tds-biz-alerts-errors";
+
+//COMPONENTS
+@import "_tds-business-partials/_tds-biz-carousel";
+@import "_tds-business-partials/_tds-biz-page-banner";
+@import "_tds-business-partials/_tds-biz-collapsible-archive";
+@import "_tds-business-partials/_tds-biz-news-feed-articles";
+
+
+//STYLES FROM DAM THAT NEED TO BE MERGED
+@import "_tds-business-partials/_tds-biz-dam-styles";

@@ -1,0 +1,33 @@
+@import "../_tds-foundations-partials/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+/*/// Shopper ID  ///*/
+#shopperId {
+  .content-intro {
+    padding: 20px 0
+  }
+}
+
+/*
+//removed because affecting the styling on the overlay modals
+.tds-msg-box {
+  border: solid 3px #e3e3e3;
+  min-height: 236px;
+  max-height: auto;
+
+  h2 {
+    font-weight: 400;
+    font-size: 21px;
+  }
+
+  @media(max-width: 750px) {
+    margin: 0 0 30px 0;
+  }
+}
+
+.col-sm-12 .tds-msg-box {
+  margin: 0 0 30px 0;
+}
+*/
+
+.test {color:red;}

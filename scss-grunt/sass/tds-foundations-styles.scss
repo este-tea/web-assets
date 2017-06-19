@@ -1,0 +1,85 @@
+@import "_tds-foundations-partials/_tds-variables";
+@import "_tds-foundations-partials/_tds-mixins";
+
+@import "_tds-foundations-partials/_tds-grid";
+@import "_tds-foundations-partials/_tds-layout";
+
+@import "_tds-foundations-partials/_tds-fonts";
+@import "_tds-foundations-partials/_tds-type";
+
+@import "_tds-foundations-partials/_tds-forms";
+@import "_tds-foundations-partials/_tds-radio-buttons";
+@import "_tds-foundations-partials/_tds-checkboxes";
+
+@import "_tds-foundations-partials/_tds-tables";
+@import "_tds-foundations-partials/_tds-tables-responsive";
+@import "_tds-foundations-partials/_tds-buttons";
+@import "_tds-foundations-partials/_tds-button-icons";
+@import "_tds-foundations-partials/_tds-labels";
+@import "_tds-foundations-partials/_tds-images";
+
+@import "_tds-foundations-partials/_tds-panels";
+@import "_tds-foundations-partials/_tds-lines-rules";
+@import "_tds-foundations-partials/_tds-pagination";
+
+//NAVIGATION
+@import "_tds-foundations-partials/_tds-navs2";
+@import "_tds-foundations-partials/_tds-nav-main-sub";
+@import "_tds-foundations-partials/_tds-nav-header-footer-links";
+@import "_tds-foundations-partials/_tds-nav-mobile-header";
+@import "_tds-foundations-partials/_tds-stepped-nav";
+@import "_tds-foundations-partials/_tds-skip-links";
+@import "_tds-foundations-partials/_tds-header-careers";
+@import "_tds-foundations-partials/_tds-header-captive-portal";
+@import "_tds-foundations-partials/_tds-breadcrumbs";
+
+@import "_tds-foundations-partials/_tds-outdated-browser";
+@import "_tds-foundations-partials/_tds-errors-alerts";
+@import "_tds-foundations-partials/_tds-lists";
+@import "_tds-foundations-partials/_tds-contact-links";
+@import "_tds-foundations-partials/_tds-contact-icons";
+@import "_tds-foundations-partials/_tds-search-bars";
+@import "_tds-foundations-partials/_tds-site-map";
+
+//COMPONENTS
+@import "_tds-foundations-partials/_tds-landing-page";
+@import "_tds-foundations-partials/_tds-bundle-builder";
+@import "_tds-foundations-partials/_tds-bundle-gallery";
+@import "_tds-foundations-partials/_tds-cart-checkout";
+@import "_tds-foundations-partials/_tds-pull-quote";
+@import "_tds-foundations-partials/_tds-callouts";
+@import "_tds-foundations-partials/_tds-helpsupport-category";
+@import "_tds-foundations-partials/_tds-account-info";
+@import "_tds-foundations-partials/_tds-usage-summary";
+@import "_tds-foundations-partials/_tds-search-results";
+@import "_tds-foundations-partials/_tds-carousel";
+@import "_tds-foundations-partials/_tds-page-banner";
+@import "_tds-foundations-partials/_tds-color-blocks";
+@import "_tds-foundations-partials/_tds-page-division";
+@import "_tds-foundations-partials/_tds-gallery";
+@import "_tds-foundations-partials/_tds-cards";
+@import "_tds-foundations-partials/_tds-card-gallery-component";
+@import "_tds-foundations-partials/_tds-content-container-gallery";
+@import "_tds-foundations-partials/_tds-responsive-embed-iframe";
+@import "_tds-foundations-partials/_tds-video";
+@import "_tds-foundations-partials/_tds-modal";
+@import "_tds-foundations-partials/_tds-styled-bullet-headings";
+@import "_tds-foundations-partials/_tds-collapsible-list-component";
+@import "_tds-foundations-partials/_tds-collapsible-archive-component";
+@import "_tds-foundations-partials/_tds-dropdown-select-menus";
+@import "_tds-foundations-partials/_tds-testimonial";
+@import "_tds-foundations-partials/_tds-trouble-reporting-form";
+@import "_tds-foundations-partials/_tds-news-feed-articles";
+@import "_tds-foundations-partials/_tds-package-builder";
+@import "_tds-foundations-partials/_tds-package-builder-subtotal";
+@import "_tds-foundations-partials/_tds-package-comparison";
+
+//FOOTER
+@import "_tds-foundations-partials/_tds-footer";
+@import "_tds-foundations-partials/_tds-footer-extended";
+@import "_tds-foundations-partials/_tds-footer-subscribe";
+@import "_tds-foundations-partials/_tds-footer-social-icons";
+@import "_tds-foundations-partials/_tds-footer-careers";
+
+//STYLES FROM DAM THAT NEED TO BE MERGED
+@import "_tds-foundations-partials/_tds-dam-styles";

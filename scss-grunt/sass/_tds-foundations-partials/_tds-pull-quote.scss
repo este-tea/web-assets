@@ -1,0 +1,38 @@
+.tds-pull-quote {
+  //@extend blockquote;
+  letter-spacing: -1px;
+  > :last-child {
+      margin-bottom: 0;
+  }
+  border-left: 3px solid $tds-blue-100;
+  font-size: 24px;
+  color: $tds-lt-blue-100;
+  padding: 20px 24px;
+  margin-top: 12px;
+  p {
+    font-size: 24px;
+    line-height: 1.5em;
+    font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
+    color: #0c8fd0;
+    font-weight: 300;
+  }
+  i {
+    font-style: normal;
+    font-weight: 500;
+    color: $tds-blue-100;
+  }
+  b {
+    font-weight: 500;
+  }
+}
+@media (max-width: 400px) {
+    .tds-pull-quote p {
+        font-size: 20px;
+    }
+
+}
+@media (max-width: $screen-sm-min) {
+  .tds-pull-quote {
+    margin-top: 40px;
+  }
+}

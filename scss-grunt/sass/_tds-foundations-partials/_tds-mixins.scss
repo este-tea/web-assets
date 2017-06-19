@@ -1,0 +1,474 @@
+// Media Queries
+@mixin phones {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin desktops {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// EXAMPLE USAGE
+// .container {
+//   background: $tds-dk-blue;
+//   @include phones {
+//     background: red;
+//   }
+//   @include tablets {
+//     background: green;
+//   }
+//   @include desktops {
+//     background: orange;
+//   }
+// }
+
+//Legacy Media Queries - Needs to be obsoleted. doh!
+$tablet-width: 750px;
+$desktop-width: 1024px;
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// Vendor Prefixes
+// HOW TO USE:
+// @include prefix(transition, all 2s ease);
+// OUTPUTS:
+// -webkit-transition: all 2s ease;
+// -moz-transition: all 2s ease;
+// -ms-transition: all 2s ease;
+// -o-transition: all 2s ease;
+// transition: all 2s ease;
+@mixin prefix($property, $value, $vendors: (webkit moz ms o)) {
+  @each $vendor in $vendors {
+    #{'-' + $vendor + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin tds_card {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  //float causing display issues but there are so many dependencies we have to leave as is
+  width: 100%;
+  margin-bottom: 28px;
+  padding: 24px;
+  background-color: $tds-white;
+  border: 3px solid $tds-lt-gray;
+  h2,
+  h3 {
+      margin-top: 0;
+  }
+  h3 {
+      font-size: 1.5em;
+  }
+  .card-content {
+      margin-top: 20px;
+  }
+  ul {
+      padding-left: 20px;
+      li {
+          color: $tds-dk-gray;
+          margin-bottom: 6px;
+      }
+  }
+}
+
+@mixin tds-alert {
+  margin-bottom: 20px;
+  display: block;
+  //float: left;
+  text-align: left;
+  padding: 12px 16px;
+  width: 100%;
+  line-height: 24px;
+  font-family: $tds-font-family;
+  font-size: 14px;
+  font-weight: 400 !important;
+  color: #000;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  p {
+    font-family: $tds-font-family;
+  }
+  p.h4 {
+      color: #000;
+      margin-top: 2px;
+  }
+  // When alert text isn't put in a p tag. This wraps long text if links are used
+  #ticketEntryNumberErrorBlock span {
+    word-wrap: break-word;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  #enteredAddress a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  // Because address messages were given their own div's :-/ need to give
+  // them values or else the browser default is to stack them
+  #enteredAddress,
+  #captilize,
+  #caps {
+    display: inline;
+  }
+  // cuz I have to ~.tom
+  #captilize {
+    text-transform: capitalize;
+  }
+  #caps {
+    text-transform: uppercase;
+  }
+  .tds-error-msg-description,
+  .tds-alert-msg-description {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+  }
+  .tds-error-msg-description .fa,
+  .tds-error-msg-description span {
+    float: left;
+    display: table;
+    margin-right: 15px;
+  }
+  // widths to contents
+  > .fa {
+    width: 25px;
+  }
+  .tds-error-msg-description {
+    //width: 90%;
+  }
+  // error items
+  ul {
+    display: block;
+    margin: 10px;
+    li {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      &:before {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@mixin alert-danger {
+background-color: #ffecec;
+border-color: #ffd3da;
+color: #a94442;
+}
+
+// Clearfix //
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin tds-icon {
+  display: inline-block;
+  //font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    border-radius: 0 !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin gallery-btn {
+  //display: table; // this gives the button size value without having to float.
+  margin-top: 20px;
+  padding: 12px 16px ;
+  @include button-variant($tds-white, $tds-dk-blue, transparent);
+  font-family: $tds-font-family;
+  text-align: left;
+  border: none;
+  box-shadow: $box-shadow;
+  a:link, a:visited, &:hover, &:active, &:focus {
+    color: #fff ;
+    text-decoration: none;
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: $tds-lt-blue-100;
+    cursor: pointer;
+    box-shadow: none;
+  }
+}
+
+
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+      -ms-transform: rotate($degrees); // IE9 only
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
+}
+@mixin rotateX($degrees) {
+  -webkit-transform: rotateX($degrees);
+      -ms-transform: rotateX($degrees); // IE9 only
+       -o-transform: rotateX($degrees);
+          transform: rotateX($degrees);
+}
+@mixin rotateY($degrees) {
+  -webkit-transform: rotateY($degrees);
+      -ms-transform: rotateY($degrees); // IE9 only
+       -o-transform: rotateY($degrees);
+          transform: rotateY($degrees);
+}
+
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 25%);
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+          border-color: darken($border, 25%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  border-top-right-radius: $radius;
+   border-top-left-radius: $radius;
+}
+@mixin border-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+     border-top-right-radius: $radius;
+}
+@mixin border-bottom-radius($radius) {
+  border-bottom-right-radius: $radius;
+   border-bottom-left-radius: $radius;
+}
+@mixin border-left-radius($radius) {
+  border-bottom-left-radius: $radius;
+     border-top-left-radius: $radius;
+}
+
+// Grid system
+//
+// Generate semantic grid columns with these mixins.
+
+// Centered container element
+@mixin container-fixed($gutter: $grid-gutter-width) {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  floor(($gutter / 2));
+  padding-right: ceil(($gutter / 2));
+  @include clearfix;
+}
+
+// Creates a wrapper for a series of columns
+@mixin make-row($gutter: $grid-gutter-width) {
+  margin-left:  ceil(($gutter / -2));
+  margin-right: floor(($gutter / -2));
+  @include clearfix;
+}
+
+// Generate the extra small columns
+@mixin make-xs-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: percentage(($columns / $grid-columns));
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+}
+@mixin make-xs-column-offset($columns) {
+  margin-left: percentage(($columns / $grid-columns));
+}
+@mixin make-xs-column-push($columns) {
+  left: percentage(($columns / $grid-columns));
+}
+@mixin make-xs-column-pull($columns) {
+  right: percentage(($columns / $grid-columns));
+}
+
+// Generate the small columns
+@mixin make-sm-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-sm-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-sm-column-offset($columns) {
+  @media (min-width: $screen-sm-min) {
+    margin-left: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-sm-column-push($columns) {
+  @media (min-width: $screen-sm-min) {
+    left: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-sm-column-pull($columns) {
+  @media (min-width: $screen-sm-min) {
+    right: percentage(($columns / $grid-columns));
+  }
+}
+
+// Generate the medium columns
+@mixin make-md-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-md-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-md-column-offset($columns) {
+  @media (min-width: $screen-md-min) {
+    margin-left: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-md-column-push($columns) {
+  @media (min-width: $screen-md-min) {
+    left: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-md-column-pull($columns) {
+  @media (min-width: $screen-md-min) {
+    right: percentage(($columns / $grid-columns));
+  }
+}
+
+// Generate the large columns
+@mixin make-lg-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-lg-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-lg-column-offset($columns) {
+  @media (min-width: $screen-lg-min) {
+    margin-left: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-lg-column-push($columns) {
+  @media (min-width: $screen-lg-min) {
+    left: percentage(($columns / $grid-columns));
+  }
+}
+@mixin make-lg-column-pull($columns) {
+  @media (min-width: $screen-lg-min) {
+    right: percentage(($columns / $grid-columns));
+  }
+}

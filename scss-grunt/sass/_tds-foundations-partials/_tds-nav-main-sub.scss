@@ -1,0 +1,281 @@
+/* tds-navs.scss
+==========================================*/
+
+// #LEVEL 0 NAVIGATION BAR
+// main level navigation bar, always visible
+// -------------------------------
+#L0-nav ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 40px;
+  color: $tds-blue-100;
+}
+#L0-nav ul li a {
+  display: block;
+  float: left;
+  height: 40px;
+  padding: 0 16px;
+  color: $tds-blue-100;
+  text-decoration: none;
+}
+#L0-nav ul li a:hover {
+  color: $tds-white;
+  background-color: #4760a1;
+  cursor: pointer;
+}
+// Style for when user is in that section
+#L0-nav ul li.active a,
+#L0-nav ul li a:focus {
+  color: $tds-white;
+  background-color: $tds-blue-100;
+}
+.L0-nav-container {
+  border-bottom: solid 4px $tds-blue-100;
+  margin-bottom: 0;
+}
+// #LEVEL 1 NAVIGATION BAR
+// -------------------------------
+// sub menu, has dropdown items, typically found under the
+// level 0 nav bar, not always visible
+.L1-nav {
+  display: block;
+  z-index: 100;
+}
+.L1-nav > ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  display: box;
+  -moz-box-orient: horizontal;
+  border-bottom: solid 2px $tds-lt-blue-100;
+  width: 100%;
+}
+.L1-nav ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  // gets rid of any inherited margins and padding
+  font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+.L1-nav > ul > li {
+  position: relative;
+  float: left;
+  font-size: 14px;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+.L1-nav > ul > li > a {
+  white-space: nowrap;
+  width: auto;
+  background-color: $tds-white;
+  display: block;
+  padding: 14px;
+  text-decoration: none;
+  color: $tds-dk-gray;
+}
+.L1-nav > ul > li:hover > a {
+  color: $tds-white;
+  background: $tds-dkr-gray;
+}
+// Styles for navigation when user is in that section
+.L1-nav > ul > li.active > a {
+  background-color: $tds-lt-blue-100;
+  color: $tds-white;
+}
+.L1-nav > ul > li.active > a:after {
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/down-arrow-white.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/down-arrow-white.svg);
+  background-size: 14px 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.L1-nav > ul > li > a:after {
+  padding-right: 16px;
+  margin-left: 0.5em;
+  content: "";
+  width: 14px;
+  height: 9px;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.svg);
+  background-size: 14px 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.L1-nav > ul > li > a:active:after,
+.L1-nav > ul > li > a:focus:after {
+  padding-right: 16px;
+  margin-left: 0.5em;
+  content: "";
+  width: 9px;
+  height: 14px;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg);
+  background-size: 9px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.L1-nav > ul > li > a:hover:after {
+  padding-right: 16px;
+  margin-left: 0.5em;
+  content: "";
+  width: 9px;
+  height: 14px;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg);
+  background-size: 9px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.L1-nav > ul > li > a:hover {
+  background-color: $tds-dkr-gray;
+  color: $tds-white;
+}
+.L1-nav > ul > li a:focus,
+.L1-nav > ul > li a:active,
+.L1-nav a.active {
+  background-color: $tds-lt-blue-100;
+  color: $tds-white;
+}
+// the show/hide effects
+// the drop-down box
+.L1-nav ul ul {
+  position: absolute;
+  z-index: 200;
+  height: 0;
+  overflow: hidden;
+}
+.L1-nav > ul > li:hover ul,
+.L1-nav > ul > li > a:hover ul,
+.L1-nav ul ul li:hover > ul,
+.L1-nav ul ul li a:hover > ul {
+  // display: inline-block; removed via commit #0fc0579 to fix footer hover nav
+  height: auto;
+}
+// drop-down item styles
+.L1-nav ul ul li {
+  background-color: $tds-dkr-gray;
+  overflow: visible;
+}
+// unfortunate ie7 gap fix
+.ie7 .L1-nav ul ul li {
+  margin-bottom: -3px;
+}
+.L1-nav ul ul li:hover {
+  background-color: $tds-dk-gray;
+}
+.L1-nav ul ul li a {
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 0 14px;
+  padding: 14px 0;
+  color: $tds-headfoot-text-color;
+  padding-right: 24px;
+  background-color: $tds-dkr-gray!important;
+}
+.L1-nav ul ul li:hover a {
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg);
+  background-size: 9px 14px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: $tds-dk-gray!important;
+}
+
+// The following six rules set the lines in between menu items.
+// To make this play nice in IE, we will not be using nth-child
+// but the "+" sibling slector.
+.L1-nav ul ul ul li a {
+  border: none !important;
+}
+.L1-nav ul ul ul li + li a {
+  border-top: 1px solid $tds-lt-blue-80 !important;
+}
+.L1-nav ul ul li + li a {
+  border-top: 1px solid $tds-lt-blue-80;
+}
+.L1-nav ul ul li:hover + li a {
+  border-top: 1px solid $tds-lt-blue-80;
+}
+.L1-nav ul ul ul li:hover + li a {
+  border: 0 !important;
+}
+.L1-nav ul ul ul li:hover + li {
+  border-top: 1px solid $tds-lt-blue-80 !important;
+}
+.L1-nav ul ul li a:hover,
+.L1-nav ul ul li:hover > a {
+  color: $tds-white;
+}
+.L1-nav > ul {
+  border-bottom: solid 2px $tds-lt-blue-100;
+}
+.L1-nav>ul>li>a>:after {
+  display:none !important;
+}
+.L1-nav>ul>li>a>span:after {
+  padding-right: 16px;
+  margin-left: .5em;
+  content: "";
+  width: 14px;
+  height: 9px;
+  max-height: 100%;
+  background-image: url('/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.svg');
+  background-size: 14px 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+//nav on shop page override to get rid of js arrow
+.L1-nav ul li a img {
+  display: none;
+}
+// miscellaneous
+// -------------------------------
+#tds-searchbar {
+  float: right;
+}
+
+.show-menu {
+  height: auto;
+}
+
+@media all and (max-width: $screen-sm-min) {
+  #main-navbar {
+    display: none;
+  }
+}
+@media all and (max-width: $screen-sm-min) {
+  #main-navbar {
+    display: none;
+  }
+}
+
+// added nav styles need to merge
+@media all and (min-width: $screen-sm-min) {
+  .mobile-only {
+    display: none!important;
+  }
+}
+@media all and (max-width: $screen-sm-min) {
+  .desktop-only {
+    display: none!important;
+  }
+}
+
+img.down-caret-blue-lg {
+  //.fa;
+  content: "\f054";
+  margin-left: 15px;
+  color: $tds-lt-blue;
+}

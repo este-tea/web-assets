@@ -1,0 +1,87 @@
+/* tds-biz-news-feed-articles
+==========================================*/
+
+.pagelayout .tds-news-feed-group {
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tds-news-feed-group .tds-news-feed {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.tds-block-dk-blue,
+.tds-block-lt-blue,
+.tds-block-orange,
+.tds-block-dk-gray {
+  .tds-news-feed-group .tds-news-feed {
+      border-bottom: 1px solid rgba(255,255,255,.5);
+  }
+}
+
+/*--HYDRA-2137 Agent Portal - Styling - News article (incentive and promos) --*/
+  .tds-news-feed-parsys {
+  margin: 0px 0px 0px 0px;
+  }
+
+  .tds-news-feed-group.tds-news-feed-group-mixed.homepage {
+    padding-left: 0;
+}
+
+.tds-news-feed-group.tds-news-feed-group-mixed.homepage h2 {
+    margin-top:0;
+    padding-top: 0;
+}
+
+//HYDRA-2168 Styling: RSS Feed reader needs Biz Design and css so that images are all same size and don't wrap*/
+
+.media.tds-news-feed.feature-article .feed-image {
+    display: block;
+}
+
+.media.tds-news-feed.feature-article .feed-image img {
+    object-fit: cover;
+    object-position: 0% 20%;
+    height: 300px;
+    padding: 0!important;
+	}
+
+
+
+@media screen and (min-width: 480px) {
+
+	.media-body img {
+    float: none;
+    object-fit: cover;
+    object-position: 0% 20%;
+    height: 120px;
+    width: 120px;
+    padding: 0!important;
+}
+
+.feed-image {
+    display: table-cell;
+}
+
+}
+
+@media screen and (max-width: 479px) {
+
+.media.tds-news-feed.feature-article .feed-image img {
+    height: 200px;
+	}
+
+	.media-body img {
+    float: none;
+    object-fit: cover;
+    object-position: 0% 20%;
+    width: 100%;
+}
+
+.feed-image {
+    display: block;
+    margin-bottom: 20px;
+}
+
+}

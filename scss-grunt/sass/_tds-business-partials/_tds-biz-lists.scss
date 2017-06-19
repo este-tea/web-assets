@@ -1,0 +1,29 @@
+/* tds-biz-lists
+==========================================*/
+.pagelayout .tds-content-rich {
+  ul {
+      padding-left: 20px;
+      li {
+          margin-bottom: 12px;
+          &:before {
+              color: #999;
+              margin-right: 14px;
+              margin-left: -21px;
+              content: "\f111";
+          }
+      }
+  }
+}
+
+.pagelayout .tds-block-lt-blue .tds-content-rich li,
+.pagelayout .tds-block-lt-gray .tds-content-rich li,
+.pagelayout .tds-block-dk-blue .tds-content-rich li,
+.pagelayout .tds-block-dk-gray .tds-content-rich li,
+.pagelayout .tds-block-orange .tds-content-rich li,
+.pagelayout .tds-block-lt-blue .tds-content-rich li:before,
+.pagelayout .tds-block-lt-gray .tds-content-rich li:before,
+.pagelayout .tds-block-dk-blue .tds-content-rich li:before,
+.pagelayout .tds-block-dk-gray .tds-content-rich li:before,
+.pagelayout .tds-block-orange .tds-content-rich li:before {
+    color: white;
+}

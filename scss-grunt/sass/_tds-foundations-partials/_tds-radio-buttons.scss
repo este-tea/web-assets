@@ -1,0 +1,108 @@
+/* TDS Radio buttons */
+
+.prod-items .hit-area {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 49px;
+  cursor: pointer;
+  input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+}
+
+.prod-items .check-radio-btn,
+.tds-radio-btn {
+  width: 25px;
+  height: 25px;
+  display: block;
+  float: left;
+  margin: 0px 9px 10px 0px;
+  background: #fff;
+  border: 3px solid $tds-gray;
+  border-radius: 50%;
+}
+.prod-items input:checked + label .check-radio-btn,
+.prod-items input:checked + label .tds-radio-btn {
+  background: $tds-green;
+  border: 3px solid $tds-green;
+}
+.prod-items input:checked + label .check-radio-btn:before,
+.prod-items input:checked + label .tds-radio-btn:before {
+  position: absolute;
+  @include rotate (-45deg);
+  margin: 5px 3px;
+  height: .7rem;
+  width: 1.2rem;
+  content: "";
+  background: transparent;
+  border: 3px solid $tds-white;
+  border-top-style: none !important;
+  border-right-style: none !important;
+  border-radius: 0px;
+}
+
+// Hides actual radio button inputs
+.prod-items input[type="radio"],
+label input[type="radio"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+// fix <display:inline-block;> issue on labels.
+// -- do we need those overall? ~.tom
+.prod-items label {
+  float: left;
+}
+// Seriously. Need to figure out where the hell this stuff disappeard to?
+// Pasting this missing stuff in for now
+input.addressRadio, .radio input[type="radio"], .checkbox input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    float: left;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    cursor: pointer;
+}
+input:checked+.tds-radio-btn {
+    background: #7bb227;
+    border: 3px solid #7bb227;
+}
+
+input:checked+.tds-radio-btn:before {
+    content: "";
+    position: absolute;
+    margin: 5px 3px;
+    height: .7rem;
+    width: 1.2rem;
+    background: transparent;
+    border: 3px solid #fff;
+    border-top-style: none!important;
+    border-right-style: none!important;
+    border-radius: 0;
+    transform: rotate(-45deg);
+}
+//grays out disabled fields
+input:disabled + .tds-radio-btn {
+    opacity: 0.25;
+}
+input:disabled + .tds-radio-btn + .label-text {
+    opacity: 0.25;
+}
+
+.checkbox-inline:hover label span.check-radio-btn {
+    border-color: #7BB227;
+}
+
+.checkbox-inline:hover label,
+.checkbox-inline:focus label {
+    color: black;
+}
+label:hover input:checked + .tds-radio-btn:before {
+    top: 12px;
+    left: 23px;
+}

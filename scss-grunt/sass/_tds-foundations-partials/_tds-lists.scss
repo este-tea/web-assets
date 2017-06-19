@@ -1,0 +1,343 @@
+/* tds-lists
+==========================================*/
+
+// ===== ul > li blue squares design ===========================================
+// Cant just apply to page content.
+// Needs to be set to specific areas or it will effect sub-navigation.
+// Add new sections here when needed.
+// =============================================================================
+.landingpagetext,
+.text.parbase.section,
+.cards-full-width-content,
+.card-content,
+.checkoutquestions,
+.referralProgram .left-text,
+.page .col-sm-8,
+.banner-content,
+.tds-content-rich,
+.tds-menu-group,
+.accountcredentials,
+.tds-news-feed-article {
+  ul {
+    display: table;
+    list-style-type: none;
+  }
+  ul > li:before {
+    content: "\f04d";
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+    margin-left: -22px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 8px;
+    color: $tds-lt-blue;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    .tds-content-rich .tds-li-steps & {
+      display: none;
+    }
+  }
+
+  // Ordered lists with circle backgrounds set up
+  // -----------------------------------------------
+  ol {
+    counter-reset: li;
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  ol > li {
+    display: block;
+    padding: 0em .4em .2em 1em;
+    margin: .15em 0;
+    color: #444;
+    text-decoration: none;
+    position: relative;
+  }
+  // Circles and numbers
+  ol > li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -0.70em;
+    background: $tds-dk-blue;
+    height: 1.25em;
+    width: 1.25em;
+    line-height: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    color: white;
+    font-weight: normal;
+  }
+}
+// for collapsable menu li's wrapped in a nested `ul`
+// this removes the indentation
+.tds-menu-group ul ul {
+  padding-left: 0px;
+  li:before {
+    content: "\f04d";
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+    margin-left: -17px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 8px;
+    color: $tds-lt-blue;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+  }
+}
+// stupid instance where the menu is in a collapsed div nested in the li on
+// the support pages.
+.tds-menu-group ul {
+    div > li:before {
+    content: "\f04d";
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+    margin-left: -22px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 8px;
+    color: $tds-lt-blue;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    .tds-content-rich .tds-li-steps & {
+      display: none;
+    }
+  }
+}
+
+// for cards with blu squares || *TODO* create better method
+.tds-card ul.list-unstyled + h3 + ul {
+  display: table;
+  list-style-type: none;
+  > li:before {
+    content: "\f04d";
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+    margin-left: -17px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 8px;
+    color: $tds-lt-blue;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+  }
+}
+// extending nested list-unstyled set up
+ul.list-unstyled ul {
+  list-style: none;
+  padding-left: 20px;
+}
+//ordered lists with circled numbers on lt-blue background
+.tds-content-rich ol>li:before,
+.landingpagetext ol>li:before,
+.text.parbase.section ol>li:before,
+.cards-full-width-content ol>li:before,
+.checkoutquestions ol>li:before,
+.referralProgram .left-text ol>li:before {
+  left: -1.5em;
+  top: -3px;
+  background: #0c8fd0;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  font-weight: normal;
+  font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+}
+.tds-content-rich ol>li:before,
+.landingpagetext ol>li,
+.text.parbase.section ol>li,
+.cards-full-width-content ol>li,
+.checkoutquestions ol>li,
+.referralProgram .left-text ol>li {
+  margin: 1em 0;
+}
+.tds-content-rich ol>li,
+.landingpagetext ol>li,
+.text.parbase.section ol>li,
+.cards-full-width-content ol>li,
+.checkoutquestions ol>li,
+.referralProgram .left-text ol>li,
+.banner-content ol>li {
+  display: block;
+  padding: 0 0.4em 0.2em 1em;
+  margin: 0.15em 0;
+  color: $tds-dk-gray;
+  text-decoration: none;
+  position: relative;
+}
+//with dk-blue background
+ol.blue-list>li:before,
+ {
+  background: $tds-blue-100!important;
+}
+.tds-content-rich ol>li:before {
+  top: -16px;
+  left: -20px;
+}
+@media (max-width:$screen-xs-min) {
+  ol.blue-list {
+    padding-left: 18px;
+  }
+}
+
+.tds-content-rich li {
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1.5em;
+}
+.parsys.parsys-content li,
+.parbase.pagebanner.section li {
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1.5em;
+}
+
+/* mya home
+========================== */
+div#main-navbar {
+  margin-bottom: 16px;
+}
+.tds-form-group + button.gallery-btn {
+  margin-top: 12px;
+}
+div.myprodsservices li {
+  margin: 8px 0;
+}
+.myprodsservices > ul.list-unstyled {
+  padding: 0;
+}
+div.myprodsservices > h3 {
+  margin: 28px 0 8px;
+}
+.list-unstyled h4 {
+    margin-bottom: 0px;
+}
+
+
+// Available tv listings box
+.tds-tv-where {
+    //@extend .tds-card;
+    button.dropdown-toggle .caret {
+      position: relative;
+      right: -135px;
+    }
+    .open > {
+      .dropdown-menu {
+        display: block;
+        padding-left: 0px;
+        width: 100%;
+      }
+      button.dropdown-toggle {
+        color: #fff;
+        background-color: $tds-lt-blue;
+      }
+    }
+}
+.tds-tv-cities > div {
+    float: left;
+    width: 33.333333%;
+    padding: 0 1.5em 0 0;
+}
+.tds-tv-where > h2 {
+    margin-top: 0;
+}
+@media(max-width:$screen-md) {
+    .tds-tv-cities > div {
+        float: left;
+        width: 50%;
+    }
+}
+@media(max-width:$screen-xs) {
+    .tds-tv-cities > div {
+        float: left;
+        width: 100%;
+        padding: 0;
+    }
+}
+.tds-tv-where > h3 {
+    margin-top: 1em;
+    font-size: 21px;
+    color: #258ecd;
+    margin-bottom: 0;
+}
+.tds-tv-cities li {
+    margin-bottom: 0.5em;
+}
+
+//password requirements
+.password-requirements {
+  padding:20px;
+  margin-bottom: 24px;
+  background-color: $tds-ltr-gray;
+  ul {
+    list-style: none;
+    padding-left: 16px;
+    @media (max-width: 360px) {
+      padding-left: 0px;
+    }
+  }
+  .invalid {
+      background:url("/content/dam/tdstelecom/images/ui/icon_x-red.svg") no-repeat 2px 4px;
+      padding-left:26px;
+      line-height:24px;
+      background-size: 14px;
+      strong {
+        color:$tds-red;
+      }
+  }
+  .valid {
+      background:url("/content/dam/tdstelecom/images/ui/icon_checkmark-green.svg") no-repeat 0 4px;
+      padding-left:26px;
+      line-height:24px;
+      background-size: 18px;
+      strong {
+        color:$tds-green-100;
+      }
+  }
+}
+
+//---List style fixes
+//http://tdstelecom.com/styleguide/design-elements/typography.html
+
+.tds-content-rich ol li:nth-child(1n) {
+	margin-top:1.25em;
+}
+
+
+.tds-content-rich ol li ol {
+	margin-bottom:0;
+}
+
+.tds-content-rich ol li ol li {
+		color: inherit;
+}
+
+.tds-content-rich ol li ol li:before {
+	background: none;
+	color: inherit;
+	content: counter(li, lower-alpha) ".";
+	font-weight: 600;
+}
+
+.tds-content-rich ul li ul li:before {
+	background: none;
+	color: inherit;
+	content: counter(li, disc);
+	font-weight: 200;
+	font-size: 1.5em;
+	top: 2px;
+}
+/*---List style fixes end---*/

@@ -1,0 +1,25 @@
+/* tds-biz-collapsible-archive
+==========================================*/
+.collapsibleArchive .panel-group.tds-collapse .panel-heading a.btn-block {
+    color: white;
+    background-color: #19388A;
+}
+.collapsibleArchive .panel-group.tds-collapse .panel-heading a.btn-block:hover {
+    color: white;
+    background-color: #0c8fd0;
+}
+
+.collapsibleArchive .panel-group.tds-collapse .panel-heading a.btn-block.collapsed {
+    color: #fff;
+    background-color: #25acf0;
+}
+
+.collapsibleArchive .panel-group.tds-collapse .panel-heading a.btn-block.collapsed:hover,
+.collapsibleArchive .panel-group.tds-collapse .panel-heading a.btn-block.collapsed:focus {
+    color: #fff;
+    background-color: #19388a;
+}
+
+.panel-group.tds-collapse .panel-heading a.btn-block:focus.collapsed .icon-expand {
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_plus-white.svg);
+}

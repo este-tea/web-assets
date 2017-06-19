@@ -1,0 +1,47 @@
+@import "../_tds-foundations-partials/_tds-variables.scss";
+@import "_tds-cable-variables.scss";
+
+/* ===== tds cable Typography === */
+
+h1, h3 {
+  font-weight: 400;
+  line-height: 1.25;
+}
+h1 {
+    border-bottom: solid 2px #dce0ed;
+    padding-bottom: 16px;
+}
+/*==form styles==*/
+h2 {
+    margin-top: 0;
+}
+.hr-after-text {
+    overflow: hidden;
+&:after {
+    content:"";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid $tds-gray;
+}
+}
+
+
+/*==Self-ID page styles==*/
+.content-intro {
+  font-size: 18px;
+  color: $tds-dkr-gray;
+  font-weight: normal;
+}
+
+/*==Text Formating==*/
+.inline-block {
+  display: inline-block;
+}
+
+.userGreeting-address {
+  font-weight: bold;
+}

@@ -1,0 +1,83 @@
+/* tds-usage-summary.scss
+==========================================*/
+//tdstelecom.com/my-account/data-usage-summary.html
+
+//Usage Summary section
+//------------------------
+.tds-summary-section h2 {
+    margin: 0;
+    margin-bottom: 6px;
+}
+.tds-error-msg.tds-top-border {
+  padding-left: 55px;
+  h2 {
+    font-weight: 500;
+    position: relative;
+    span {
+      position: absolute;
+      left: -36px;
+      top: -2px;
+    }
+  }
+}
+
+.tds-alert.tds-alert-success.tds-top-border {
+    background-position: 20px 20px;
+    padding-left: 62px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+p.tds-status-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+span.current-usage {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+span.limit-usage {
+    font-weight: 500;
+    color: #000;
+}
+.usagePercentage {
+    position: absolute;
+    top: 221px;
+    left: 24px;
+    font-size: 24px;
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    font-style: normal;
+    font-weight: 500;
+    color: #000;
+}
+
+div#customerDataUsage {
+    clear: both;
+}
+
+.tds-usage-info {
+  padding: 12px 0;
+  margin: 20px 0 12px 0;
+  border-top: 1px solid $tds-lt-gray;
+  border-bottom: 1px solid $tds-lt-gray;
+}
+
+.tds-usage-info p {
+    line-height: 2em;
+    margin: 0;
+}
+//Data Usage History section
+//------------------------
+.tds-history-section h2 {
+    margin-bottom: 4px;
+}
+
+.tds-history-section, .tds-summary-table {
+    margin-top: 60px;
+}
+
+//Usage Detail section
+//------------------------

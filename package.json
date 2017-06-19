@@ -3,12 +3,12 @@
   "description": "assets for tds telecom branding",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.4.5",
+    "grunt": "^1.0.1",
     "grunt-concurrent": "^2.3.1",
-    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-watch": "~1.0.0",
     "grunt-sass": "^2.0.0",
-    "grunt-shell": "^1.1.2",
-    "load-grunt-tasks": "~0.6.0",
-    "time-grunt": "~0.4.0"
+    "grunt-shell": "^2.1.0",
+    "load-grunt-tasks": "~3.5.2",
+    "time-grunt": "~1.4.0"
   }
 }

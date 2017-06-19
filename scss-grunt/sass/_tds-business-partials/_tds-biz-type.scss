@@ -1,0 +1,72 @@
+/* tds-biz-type
+==========================================*/
+
+body {
+  font-family: $tds-font-family;
+}
+
+// headings
+// ----------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.1;
+  text-rendering: optimizeLegibility;
+}
+h1 sup {
+    font-size: .5em;
+    vertical-align: .2em;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 500;
+  color: $tds-dk-gray-80;
+  margin-bottom: 20px;
+}
+p ~ h2, ul ~ h2, ol ~ h2, {
+    margin-top: 28px;
+}
+.loginForm .tds-card h2 {
+    color: #19388a;
+    margin-bottom: 20px;
+}
+h3, .h3 {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  font-weight: 600;
+  color: $tds-dk-gray-80;
+}
+.tds-content-rich h3 {
+    margin-bottom: 14px;
+}
+.troubleReporting > .tds-card.tds-card-gray > h3 {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    color: #19388a;
+}
+h4, .h4, h5, .h5, h6, .h6 {
+  font-size: 1em;
+}
+
+
+p {
+  margin: 0 0 12px 0;
+  font-size: 1em;
+  line-height: 1.65em;
+  color: $tds-dk-gray;
+}
+
+a {
+  color: $tds-blue-100;
+  text-decoration: underline;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $tds-lt-blue-80;
+  }
+}

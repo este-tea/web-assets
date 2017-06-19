@@ -1,0 +1,60 @@
+/* tds-helpsupport-category
+==========================================*/
+// Menu list in the help and support pages
+.tds-menu-group {
+  float: left;
+  margin-bottom: 24px;
+  padding-right: 15px;
+  padding-bottom: 24px;
+  padding-left: 15px;
+  width: 100%;
+  background: url("/content/dam/tdstelecom/images/ui/gray-dotted-line.svg") left bottom repeat-x;
+  background-size: 8px;
+  a {
+    color: $tds-dk-blue;
+  }
+}
+// Note || li squares are set up in the _tds-type.scss file with the rest of
+// the `<ul>` set up.
+
+// hr design for page division sections
+.helpsupportcategory {
+  //@extend .col-xs-12;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.helpsupportcategory .tds-menu-group ul li {
+    margin-bottom: 12px;
+}
+
+.helpsupportcategory .tds-menu-group {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+@media (max-width: 750px) {
+  .helpsupportcategory .tds-menu-group {
+      padding-left: 28px;
+      padding-right: 28px;
+  }
+}
+@media (max-width: 584px) {
+  .helpsupportcategory .tds-menu-group {
+      padding-left: 16px;
+      padding-right: 16px;
+      /* padding-top: 8px; */
+  }
+}
+
+.helpsupportcategory .tds-menu-group h2 {
+    margin-top: 0;
+}
+
+.tds-menu-group a.btn .read-more-container {
+    margin-bottom: 12px;
+}

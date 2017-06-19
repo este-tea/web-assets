@@ -1,0 +1,342 @@
+/* tds-errors-alerts
+==========================================*/
+// Main message set up.
+// types are determined by sub classes below
+.tds-error-msg,
+.tds-alert {
+  margin-bottom: 20px;
+  display: block;
+  //float: left;
+  text-align: left;
+  padding: 12px 16px;
+  width: 100%;
+  line-height: 24px;
+  font-family: $tds-font-family;
+  font-size: 14px;
+  font-weight: 400 !important;
+  color: #000;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  p {
+    font-family: $tds-font-family;
+  }
+  p.h4 {
+      color: #000;
+      margin-top: 2px;
+  }
+  // When alert text isn't put in a p tag. This wraps long text if links are used
+  #ticketEntryNumberErrorBlock span {
+    word-wrap: break-word;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  #enteredAddress a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  // Because address messages were given their own div's :-/ need to give
+  // them values or else the browser default is to stack them
+  #enteredAddress,
+  #captilize,
+  #caps {
+    display: inline;
+  }
+  // cuz I have to ~.tom
+  #captilize {
+    text-transform: capitalize;
+  }
+  #caps {
+    text-transform: uppercase;
+  }
+  .tds-error-msg-description,
+  .tds-alert-msg-description {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+  }
+  .tds-error-msg-description .fa,
+  .tds-error-msg-description span {
+    float: left;
+    display: table;
+    margin-right: 15px;
+  }
+  // widths to contents
+  > .fa {
+    width: 25px;
+  }
+  .tds-error-msg-description {
+    //width: 90%;
+  }
+  // error items
+  ul {
+    display: block;
+    margin: 10px;
+    li {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      &:before {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+//alerts
+.tds-alert {
+  padding: 12px 16px;
+}
+.tds-alert-critical {
+  color: #000;
+  font-weight: 300;
+  font-size: 14px;
+}
+/*text in light colored boxes should be black*/
+.tds-error-msg p, .bundle-error p, .tds-alert p {
+    color: black;
+}
+// Product callout messages design
+.prod-callout {
+  //@extend .tds-error-msg;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  //@extend .tds-error-info;
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: #353535;
+  @include make-sm-column-offset(1);
+  @include make-xs-column-offset(0);
+  @include make-sm-column(7);
+  @include make-xs-column(12);
+}
+
+// Colors
+// ---------
+
+// *Note* Border added here to inherit the color type
+
+// Red = critical
+.tds-error-critical,
+.tds-alert-critical {
+  @include alert-danger;
+  border-left: 3px solid $tds-red ;
+  &.tds-top-border {
+    border-top: 3px solid $tds-red ;
+    border-left: 0px ;
+  }
+  .fa {
+    font-size: 21px;
+    color: $tds-red;
+  }
+}
+.tds-error-critical-input,
+.tds-alert-critical-input {
+  @include alert-danger;
+  border: 2px solid $tds-red ;
+}
+// Yellow = warning
+.tds-error-warning,
+.tds-alert-warning {
+  background-color: $state-warning-bg;
+  color: black;
+  border-left: 3px solid $tds-warning-yellow;
+  &.tds-top-border {
+    border-top: 3px solid $tds-warning-yellow;
+    border-left: 0px ;
+  }
+  .fa {
+    font-size: 21px;
+    color: $tds-warning-yellow;
+  }
+}
+
+// Green = success
+.tds-error-success,
+.tds-alert-success {
+  background-color: #dff0d8;
+  color: black;
+  border-left: 3px solid $tds-green ;
+  &.tds-top-border {
+    border-top: 3px solid $tds-green ;
+    border-left: 0px ;
+  }
+  .fa {
+    font-size: 21px;
+    color: $tds-green;
+  }
+}
+
+// Blue = info
+.tds-error-info,
+.tds-alert-info {
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: black;
+}
+
+// TDS Lt Blue info or loading
+.tds-alert-loading,
+.tds-alert-info,
+.tds-alert-status {
+    background: $tds-status-bg;
+    border-left: solid 3px $tds-status;
+}
+
+// ooo = Out of office (unavailable message)
+.tds-alert-ooo {
+  margin: 0px;
+  padding: 6px 14px 6px 12px !important;
+  background: $tds-ltr-gray;
+}
+
+// bundle error extender
+.bundle-error {
+  //@extend .tds-error-msg;
+  @include tds-alert;
+  //@extend .tds-error-critical;
+  @include alert-danger;
+  border-left: 3px solid $tds-red ;
+  &.tds-top-border {
+    border-top: 3px solid $tds-red ;
+    border-left: 0px ;
+  }
+  .fa {
+    font-size: 21px;
+    color: $tds-red;
+  }
+   border: 0px solid transparent;
+  &:before {
+    //@extend .fa;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f06a";
+    margin-right: 20px;
+    color: $tds-red;
+  }
+}
+
+// Input error messages with exclamation point in a circle icon
+.tds-input-error {
+  padding: 6px 0;
+  color: $tds-red;
+  &:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f06a";
+    margin-right: 20px;
+    color: $tds-red;
+  }
+}
+
+//yellow alert warning icon
+.tds-alert.tds-alert-warning {
+    background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg');
+    background-size: 22px 22px;
+    background-position: 16px 11px;
+    background-repeat: no-repeat;
+    padding-left: 52px;
+}
+
+//red alert critical icon
+.tds-alert.tds-alert-critical {
+  background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg');
+  background-size: 20px 20px;
+  background-position: 16px 14px;
+  background-repeat: no-repeat;
+  padding-left: 52px;
+}
+
+//green alert success icon
+.tds-alert.tds-alert-success {
+    background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-success.svg');
+    background-size: 22px 22px;
+    background-position: 16px 11px;
+    background-repeat: no-repeat;
+    padding-left: 52px;
+}
+
+//lt-blue alert informational icon
+.tds-alert.tds-alert-info, .tds-alert.tds-alert-status  {
+    background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-information.svg');
+    background-size: 22px 22px;
+    background-position: 16px 11px;
+    background-repeat: no-repeat;
+    padding-left: 52px;
+}
+
+//lt-blue alert loading icon
+.tds-alert.tds-alert-loading {
+  padding-left: 52px;
+  background-image: url('/content/dam/tdstelecom/images/ui/tds-spinner-icon.gif');
+  background-size: 22px 22px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+}
+#recommendationMessage.tds-alert-loading {
+  line-height: 24px;
+  font-family: $tds-font-family;
+  padding: 12px 16px;
+}
+
+// ===== Images/Icons ============================
+// when the alert box has an indicator image/font
+// or decorative icon not built into bootstrap
+// ===============================================
+
+// positioning when img is placed *above* alert-info
+.tds-pb-logo {
+  position: relative;
+  top: 18px;
+  text-align: center;
+}
+
+// ===== New Alert message box concepts ==========
+// Starting here we will add the new method for
+// the alert messages and slowly delte the stuff
+// above this.
+// ===============================================
+
+.tds-alert-status {
+  background-color: $tds-lt-bluegray;
+}
+
+// When errorBlock shows up in the clientlibs stylesheet.
+// TODO || need to go throught and delete all of these in the components
+.myaadduser #errorBlock {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.myaadduser #emailNotifications {
+    width: 100%;
+    margin: 0px;
+    border: none;
+    padding: 14px 16px 16px 50px;
+}
+
+.parbase.shopperid.shopperId {
+    max-width: 1120px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.tdsheader ~ .shopperid.shopperId > .container {
+    padding: 0;
+}
+
+/* IMT-49 Plus Pack Page doesn't work in small form Fix*/
+#errorMessage {
+    clear:both;
+}

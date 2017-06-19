@@ -1,0 +1,229 @@
+/* tds-navbar-header-footer.scss
+==========================================*/
+// links at the very top of the header (Residential/Business/About/Login)
+// and the simple links in the footer (Home/About/Policies)
+#top-links {
+  background-color: $tds-dk-gray;
+  border-bottom: solid 2px $tds-dkr-gray;
+}
+@media all and (max-width: $screen-sm-min) {
+  #top-links {
+    display: none;
+  }
+}
+div.hr-darkgray {
+  border-bottom: solid 2px $tds-dkr-gray;
+  position: relative;
+  top: 0;
+}
+.icon_ui-cart-empty {
+  display: inline-block;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-gray-sm.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-gray.svg);
+  background-size: 10px 10px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+#othernav-container-topright .tds-other-nav li:hover a:hover .icon_ui-cart-empty {
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white-sm.png);
+  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg);
+}
+/*==================================================
+#OTHER NAVIGATION LINKS
+==================================================*/
+#othernav-container-top {
+  margin: 0 auto;
+  text-align: left;
+}
+#othernav-container-top .tds-other-nav {
+  display: block;
+}
+#othernav-container-topright {
+  float: right;
+  margin-right: -.5em;
+}
+#othernav-container-bottom {
+  margin: 0 auto;
+  text-align: center;
+  padding: 44px 0;
+}
+#othernav-container-bottom .tds-other-nav {
+  display: inline-block;
+}
+.tds-other-nav {
+  z-index: 10;
+  text-align: left;
+}
+.tds-other-nav > ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  display: box;
+  -moz-box-orient: horizontal;
+}
+.tds-other-nav ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  // gets rid of any inherited margins and padding
+  font-family: "Neue Helvetica W01", Helvetica Neue, Helvetica, Arial;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+.tds-other-nav > ul > li {
+  position: relative;
+  float: left;
+  font-size: 12px;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+.tds-other-nav > ul > li > a {
+  white-space: nowrap;
+  width: auto;
+  display: block;
+  padding: 0.75em;
+  text-decoration: none;
+  color: $tds-headfoot-text-color;
+  border-right: solid 1px $tds-dk-gray-60;
+  margin-bottom: -1px;
+}
+#genericfooter--navbar.tds-other-nav > ul > li > a {
+  padding: 6px 12px;
+}
+#othernav-container-top {
+  .tds-other-nav > ul > li:first-child > a {
+    border-left: solid 1px $tds-dk-gray-60;
+  }
+}
+#othernav-container-topright .tds-other-nav > ul > li > a {
+  border-right: none;
+}
+#othernav-container-bottom .tds-other-nav > ul > li:last-child > a,
+#genericfooter--navbar.tds-other-nav > ul > li:last-child > a {
+  border-right: none!important;
+}
+#othernav-container-bottom .tds-other-nav > ul > li > a {
+  padding: 0.5em 1em;
+}
+.tds-other-nav > ul > li:hover > a {
+  color: $tds-white;
+  background-color: $tds-dkr-gray;
+}
+// Styles for navigation when user is in that section
+.tds-other-nav a.active {
+  background-color: $tds-dkr-gray;
+  color: $tds-white;
+}
+//add dropdown arrow
+.navbar-has-dropdown {
+  &:after {
+    padding-right: 1em;
+    margin-left: 0.5em;
+    content: "";
+    width: 10px;
+    height: 8px;
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/down-caret-gray.png);
+    background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/down-caret-gray.svg);
+    background-size: 10px 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.tds-other-nav > ul > li > a:hover {
+  background-color: $tds-dkr-gray;
+  color: $tds-white;
+}
+.tds-other-nav > ul > li a:focus,
+.tds-other-nav > ul > li a:active,
+.tds-other-nav a.active {
+  background-color: $tds-dkr-gray;
+  color: $tds-white;
+}
+.tds-other-nav ul ul {
+  position: absolute;
+  z-index: 20;
+  height: 0;
+  overflow: hidden;
+  margin-top: 1px;
+}
+.tds-other-nav > ul > li:hover ul,
+.tds-other-nav > ul > li > a:hover ul,
+.tds-other-nav ul ul li:hover > ul,
+.tds-other-nav ul ul li a:hover > ul {
+  //display: inline-block;
+  //removed because causing dropdown in footer in small form to misalign
+  //tested on mya home page and was not affecting the error message position
+  height: auto;
+}
+// drop-down item styles
+.tds-other-nav ul ul li {
+  background-color: $tds-dkr-gray; // darkest gray
+  overflow: visible;
+}
+// unfortunate ie7 gap fix
+.ie7 .tds-other-nav ul ul li {
+  margin-bottom: -3px;
+}
+.tds-other-nav ul ul li:hover {
+  background-color: $tds-headfoot-hover-color; // dark gray100
+}
+.tds-other-nav ul ul li a {
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 0 0.875em;
+  padding: 0.875em 0;
+  color: $tds-headfoot-text-color; // text gray
+  background-color: $tds-dkr-gray!important;
+}
+.tds-other-nav ul ul li:hover a {
+  background-color: $tds-headfoot-hover-color!important;
+}
+.tds-other-nav ul ul li a:hover,
+.tds-other-nav ul ul li:hover > a {
+  color: $tds-white;
+}
+.tds-other-nav-border {
+  border-bottom: solid 2px $tds-lt-blue-100;
+  max-width: $screen-md-min;
+}
+@media (max-width: $screen-sm) {
+    #genericfooter--navbar.tds-other-nav ul {
+        text-align: center;
+    }
+    #genericfooter--navbar.tds-other-nav > ul > li {
+        float: none;
+        display: inline-block;
+        margin-bottom: 20px;
+        /*gets rid of weird gap between links*/
+        margin-left: -4px;
+    }
+}
+@media all and (max-width: $screen-sm-min) {
+  #othernav-container-bottom .tds-other-nav ul {
+    text-align: center;
+  }
+  #othernav-container-bottom .tds-other-nav ul ul {
+    text-align: left;
+  }
+  #othernav-container-bottom .tds-other-nav > ul > li {
+    position: static;
+    float: none;
+    display: inline-block;
+    margin-left: -4px;
+    margin-bottom: 1.25em;
+  }
+  #othernav-container-bottom {
+    padding: 32px 0 16px;
+  }
+  #othernav-container-bottom .tds-other-nav > ul > li > a {
+    padding: 6px 12px;
+  }
+}

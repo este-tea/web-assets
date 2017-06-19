@@ -1,0 +1,32 @@
+/* tds-cable-disclaimer
+==========================================*/
+.disclaimer-wrap {
+    font-family: "ITC Avant Garde Gothic W01", Century Gothic,Arial;
+    margin: 24px 0;
+}
+
+.disclaimer-wrap p.disclaimer-heading {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-wrap p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+button.text-link.read-more {
+    font-size: 12px;
+}
+
+.disclaimer-wrap .tds-divider-line:first-child {
+    margin-bottom: 16px;
+    background: #d2d8e9;
+}
+
+.disclaimer-wrap .tds-divider-line:last-child {
+    margin-top: 16px;
+    background: #d2d8e9;
+}
+/* END tds-cable-disclaimer */
