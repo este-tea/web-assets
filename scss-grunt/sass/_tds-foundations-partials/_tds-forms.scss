@@ -4,6 +4,11 @@
 input {
   padding-left: 12px;
 }
+label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #353535;
+}
 .radio {
   padding-left: 0;
 }
@@ -35,9 +40,10 @@ input.form-control,
 select.form-control {
   height: 44px;
 }
-// textarea.form-control {
-// height: auto;
-// }
+.form-control:focus {
+    border-color: #25acf2;
+}
+
 // MYA Account information text and label set up
 // from dizzy riffy
 .mya-content-addresses .form-horizontal .form-group {
@@ -155,40 +161,9 @@ label:hover .tds-radio-btn:before {
 label input:focus ~ .tds-radio-btn {
     border: solid 3px #25acf0;
 }
-// ===== Eloqua Forms set up ===================================================
-// Makes these forms look like design by default
-// =============================================================================
-form.elq-form {
-  .form-design-field {
-    margin-bottom: 20px;
-    input,
-    select,
-    textarea {
-      display: block;
-      width: 100%;
-      height: 34px;
-      padding: 6px 12px;
-      font-size: 14px;
-      line-height: 1.42857;
-      color: #555555;
-      background-color: #fff;
-      background-image: none;
-      border: 1px solid #ccc;
-      border-radius: 0 !important;
-      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-      -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-      -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    }
-  }
-  input.submit-button {
-    @include gallery-btn;
-    height: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-}
+
+// moved to tds-forms-eloqua-forms.scss
+
 .form-group.tds-form-group select.form-control.tds-gray-select {
   border: none;
   background: #e9e9e9;
@@ -230,111 +205,7 @@ table.table tr.tds-form-group th {
   }
 }
 
-/*ADDRESS ENTRY FORM*/
-@media (min-width: 751px){
-    .locationPicker .col-sm-4.tds-richtext-padright {
-    top: 22px;
-  }
-}
-.has-error .form-control,
-.has-error form.elq-form .form-design-field input,
-.has-error form.elq-form .form-design-field select,
-.has-error form.elq-form .form-design-field textarea,
-form.elq-form .form-design-field .has-error input,
-form.elq-form .form-design-field .has-error select,
-form.elq-form .form-design-field .has-error textarea {
-    box-shadow: none;
-}
-.tds-card-gray .tds-form-group input {
-    background: white;
-}
-
-.parbase.section.accountSignUpForm .col-md-6 {
-  padding: 0;
-}
-
-/*locationpicker.jsp aka address entry page*/
-.tds-address > p {
-    text-transform: capitalize;
-    margin-bottom: 0;
-}
-
-.tds-address {
-    margin-bottom: 20px;
-}
-
-div#suggestedAddresses {
-    border-bottom: solid 3px #19388a;
-}
-
-form#SuggestedAddressForm h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-#SuggestedAddressForm .tds-address + p {
-    max-width: 600px;
-}
-
-div#suggestedAddresses {
-    margin-top: 24px;
-}
-
-div#suggestedAddresses .radio:last-child {
-    margin-bottom: 24px;
-}
-
-#SuggestedAddressForm button#continue {
-    margin-top: 24px;
-}
-.content.container .page_content .tds-pagedivider-one-col .contentcontainer .tds-richtext-padleft .parsys {
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-top: 24px;
-}
-
-.parbase.locationPicker.section:after {
-    clear: both;
-    display: table;
-    content: "";
-}
-
-form#SuggestedAddressForm input:checked + .tds-radio-btn:before {
-    top: 4px;
-    left: 23px;
-}
-
-p.entered-address {
-    font-size: 18px;
-    font-weight: 500;
-    color: #0c8fd0;
-    margin-bottom: 0;
-}
-
-.entered-address a {
-cursor: pointer;
-}
-
-.tds-address {
-    font-weight: 600;
-    color: black;
-}
-
-.label-text > span {
-    display: block;
-}
-
-#suggestedAddresses label:hover .label-text {
-    color: #0c8fd0;
-}
-
-#suggestedAddresses label .label-text {
-    margin-top: 0;
-}
-
-button#continue:after {
-    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
-    background-position: right 3px;
-}
+//moved Address Entry styles to _tds-forms-address-entry.scss
 
 /* HYDRA-2201: float is causing contact form to disappear in smaller sizes*/
 .parbase.contactform.section .col-xs-12 {
@@ -354,13 +225,7 @@ button#continue:after {
    margin-top: -20px;
     }
 }
-/*fix contact links alignment in footer in smallest form*/
-a.contact-links-text.contact-chat-icon {
-    padding-left: 0;
-}
-a.contact-links-text.contact-chat-icon:before {
-    margin-right: 8px;
-}
+
 // https://tdstelecom.com/my-account/manage-users/edit-users.html
 // make row bg transparent instead of white when in colored block
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {

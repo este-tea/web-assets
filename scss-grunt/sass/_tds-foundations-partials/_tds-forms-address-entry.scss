@@ -1,0 +1,137 @@
+/* _tds-forms-address-entry.scss
+==========================================*/
+@media (min-width: 751px){
+    .locationPicker .col-sm-4.tds-richtext-padright {
+    top: 22px;
+  }
+}
+.has-error .form-control,
+.has-error form.elq-form .form-design-field input,
+.has-error form.elq-form .form-design-field select,
+.has-error form.elq-form .form-design-field textarea,
+form.elq-form .form-design-field .has-error input,
+form.elq-form .form-design-field .has-error select,
+form.elq-form .form-design-field .has-error textarea {
+    box-shadow: none;
+}
+.tds-card-gray .tds-form-group input {
+    background: white;
+}
+
+.parbase.section.accountSignUpForm .col-md-6 {
+  padding: 0;
+}
+
+/*locationpicker.jsp aka address entry page*/
+.tds-address > p {
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.tds-address {
+    margin-bottom: 20px;
+}
+
+div#suggestedAddresses {
+    border-bottom: solid 3px #19388a;
+}
+
+form#SuggestedAddressForm h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+#SuggestedAddressForm .tds-address + p {
+    max-width: 600px;
+}
+
+div#suggestedAddresses {
+    margin-top: 24px;
+}
+
+div#suggestedAddresses .radio:last-child {
+    margin-bottom: 24px;
+}
+
+#SuggestedAddressForm button#continue {
+    margin-top: 24px;
+}
+.content.container .page_content .tds-pagedivider-one-col .contentcontainer .tds-richtext-padleft .parsys {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 24px;
+}
+
+.parbase.locationPicker.section:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+form#SuggestedAddressForm input:checked + .tds-radio-btn:before {
+    top: 4px;
+    left: 23px;
+}
+
+p.entered-address {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0c8fd0;
+    margin-bottom: 0;
+}
+
+.entered-address a {
+cursor: pointer;
+}
+
+.tds-address {
+    font-weight: 600;
+    color: black;
+}
+
+.label-text > span {
+    display: block;
+}
+
+#suggestedAddresses label:hover .label-text {
+    color: #0c8fd0;
+}
+
+#suggestedAddresses label .label-text {
+    margin-top: 0;
+}
+
+button#continue:after {
+    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
+    background-position: right 3px;
+}
+
+/* ======= Autocomplete form ======= */
+
+// autocomplete dropdown
+.ui-autocomplete {
+    background: #e3e3e3;
+    border-radius: 0px;
+    border-color: #e3e3e3;
+}
+
+// autocomplete dropdown line items
+.ui-autocomplete.ui-menu .ui-menu-item a {
+        text-decoration:none;
+        border-radius: 0;
+        padding: 8px 12px;
+        font-size: 14px;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:hover,
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:focus {
+    background:#19388a!important;
+    color:#fff!important;
+    border-radius:0;
+    border-color:#19388a!important;
+}
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:active {
+    background:#25acf2!important;
+    color:#fff!important;
+    border-radius:0;
+    border-color:#25acf2!important;
+}
