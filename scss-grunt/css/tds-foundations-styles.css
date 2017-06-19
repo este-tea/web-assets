@@ -420,6 +420,22 @@
 
 /* tds-layout
 ==========================================*/
+.tds-orange {
+  color: #f37d1d;
+}
+
+.tds-blue {
+  color: #19388a;
+}
+
+.tds-lt-blue {
+  color: #0c8fd0;
+}
+
+.tds-green {
+  color: #7bb227;
+}
+
 .tds-clearfix:after {
   visibility: hidden;
   display: block;
@@ -556,7 +572,12 @@ dd {
   padding-bottom: 32px;
 }
 
-.container, .multiPathSearch, .tds-width-container, .tds-width-container, .multiPathSearch, .multiPathSearch {
+.container,
+.multiPathSearch,
+.multiPathSearch,
+.multiPathSearch,
+.tds-width-container,
+.tds-width-container {
   max-width: 1120px;
 }
 
@@ -565,7 +586,7 @@ dd {
 .page_content .tds-pagedivider-one-col,
 .page_content .tds-pagedivider-three-col,
 .page_content .tds-pagedivider-two-col {
-  padding-top: 0px;
+  padding-top: 0;
   margin: 0;
 }
 
@@ -1029,6 +1050,19 @@ a strong {
   padding-top: 20px;
 }
 
+.page-intro {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 640px;
+  margin-bottom: 28px;
+  color: #0c8fd0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .gallery-grid .gallery-description p:last-child > a {
   display: inline-block;
   padding: 5px 12px;
@@ -1044,6 +1078,12 @@ a strong {
 ==========================================*/
 input {
   padding-left: 12px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #353535;
 }
 
 .radio {
@@ -1077,6 +1117,10 @@ input {
 input.form-control,
 select.form-control {
   height: 44px;
+}
+
+.form-control:focus {
+  border-color: #25acf2;
 }
 
 .mya-content-addresses .form-horizontal .form-group {
@@ -1206,104 +1250,6 @@ label input:focus ~ .tds-radio-btn {
   border: solid 3px #25acf0;
 }
 
-form.elq-form .form-design-field {
-  margin-bottom: 20px;
-}
-
-form.elq-form .form-design-field input,
-form.elq-form .form-design-field select,
-form.elq-form .form-design-field textarea {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #555555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 0 !important;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-}
-
-form.elq-form input.submit-button {
-  margin-top: 20px;
-  padding: 12px 16px;
-  color: #FFF;
-  background-color: #19388A;
-  border-color: transparent;
-  font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-  text-align: left;
-  border: none;
-  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
-  height: auto;
-  text-align: center;
-  font-weight: 600;
-}
-
-form.elq-form input.submit-button:focus, form.elq-form input.submit-button.focus {
-  color: #FFF;
-  background-color: #11265f;
-  border-color: transparent;
-}
-
-form.elq-form input.submit-button:hover {
-  color: #FFF;
-  background-color: #11265f;
-  border-color: transparent;
-}
-
-form.elq-form input.submit-button:active, form.elq-form input.submit-button.active,
-.open > form.elq-form input.submit-button.dropdown-toggle {
-  color: #FFF;
-  background-color: #11265f;
-  border-color: transparent;
-}
-
-form.elq-form input.submit-button:active:hover, form.elq-form input.submit-button:active:focus, form.elq-form input.submit-button:active.focus, form.elq-form input.submit-button.active:hover, form.elq-form input.submit-button.active:focus, form.elq-form input.submit-button.active.focus,
-.open > form.elq-form input.submit-button.dropdown-toggle:hover,
-.open > form.elq-form input.submit-button.dropdown-toggle:focus,
-.open > form.elq-form input.submit-button.dropdown-toggle.focus {
-  color: #FFF;
-  background-color: #0c1a41;
-  border-color: transparent;
-}
-
-form.elq-form input.submit-button:active, form.elq-form input.submit-button.active,
-.open > form.elq-form input.submit-button.dropdown-toggle {
-  background-image: none;
-}
-
-form.elq-form input.submit-button.disabled:hover, form.elq-form input.submit-button.disabled:focus, form.elq-form input.submit-button.disabled.focus, form.elq-form input.submit-button[disabled]:hover, form.elq-form input.submit-button[disabled]:focus, form.elq-form input.submit-button[disabled].focus,
-fieldset[disabled] form.elq-form input.submit-button:hover,
-fieldset[disabled] form.elq-form input.submit-button:focus,
-fieldset[disabled] form.elq-form input.submit-button.focus {
-  background-color: #19388A;
-  border-color: transparent;
-}
-
-form.elq-form input.submit-button .badge {
-  color: #19388A;
-  background-color: #FFF;
-}
-
-form.elq-form input.submit-button a:link, form.elq-form input.submit-button a:visited, form.elq-form input.submit-button:hover, form.elq-form input.submit-button:active, form.elq-form input.submit-button:focus {
-  color: #fff;
-  text-decoration: none;
-}
-
-form.elq-form input.submit-button:hover, form.elq-form input.submit-button:focus {
-  text-decoration: none;
-  background-color: #0C8FD0;
-  cursor: pointer;
-  box-shadow: none;
-}
-
 .form-group.tds-form-group select.form-control.tds-gray-select {
   border: none;
   background: #e9e9e9;
@@ -1350,116 +1296,6 @@ table.table tr.tds-form-group th {
   display: inline-block;
 }
 
-/*ADDRESS ENTRY FORM*/
-@media (min-width: 751px) {
-  .locationPicker .col-sm-4.tds-richtext-padright {
-    top: 22px;
-  }
-}
-
-.has-error .form-control,
-.has-error form.elq-form .form-design-field input,
-.has-error form.elq-form .form-design-field select,
-.has-error form.elq-form .form-design-field textarea,
-form.elq-form .form-design-field .has-error input,
-form.elq-form .form-design-field .has-error select,
-form.elq-form .form-design-field .has-error textarea {
-  box-shadow: none;
-}
-
-.tds-card-gray .tds-form-group input {
-  background: white;
-}
-
-.parbase.section.accountSignUpForm .col-md-6 {
-  padding: 0;
-}
-
-/*locationpicker.jsp aka address entry page*/
-.tds-address > p {
-  text-transform: capitalize;
-  margin-bottom: 0;
-}
-
-.tds-address {
-  margin-bottom: 20px;
-}
-
-div#suggestedAddresses {
-  border-bottom: solid 3px #19388a;
-}
-
-form#SuggestedAddressForm h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-#SuggestedAddressForm .tds-address + p {
-  max-width: 600px;
-}
-
-div#suggestedAddresses {
-  margin-top: 24px;
-}
-
-div#suggestedAddresses .radio:last-child {
-  margin-bottom: 24px;
-}
-
-#SuggestedAddressForm button#continue {
-  margin-top: 24px;
-}
-
-.content.container .page_content .tds-pagedivider-one-col .contentcontainer .tds-richtext-padleft .parsys {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-top: 24px;
-}
-
-.parbase.locationPicker.section:after {
-  clear: both;
-  display: table;
-  content: "";
-}
-
-form#SuggestedAddressForm input:checked + .tds-radio-btn:before {
-  top: 4px;
-  left: 23px;
-}
-
-p.entered-address {
-  font-size: 18px;
-  font-weight: 500;
-  color: #0c8fd0;
-  margin-bottom: 0;
-}
-
-.entered-address a {
-  cursor: pointer;
-}
-
-.tds-address {
-  font-weight: 600;
-  color: black;
-}
-
-.label-text > span {
-  display: block;
-}
-
-#suggestedAddresses label:hover .label-text {
-  color: #0c8fd0;
-}
-
-#suggestedAddresses label .label-text {
-  margin-top: 0;
-}
-
-button#continue:after {
-  background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
-  background-position: right 3px;
-}
-
 /* HYDRA-2201: float is causing contact form to disappear in smaller sizes*/
 .parbase.contactform.section .col-xs-12 {
   float: none;
@@ -1480,15 +1316,6 @@ button#continue:after {
   .parbase.contactform.section {
     margin-top: -20px;
   }
-}
-
-/*fix contact links alignment in footer in smallest form*/
-a.contact-links-text.contact-chat-icon {
-  padding-left: 0;
-}
-
-a.contact-links-text.contact-chat-icon:before {
-  margin-right: 8px;
 }
 
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
@@ -5130,6 +4957,7 @@ div.parbase.header div.parbase.navbar div#main-navbar {
 .tds-error-msg p,
 .tds-alert p {
   font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+  margin-bottom: 0;
 }
 
 .tds-error-msg p.h4,
@@ -5526,6 +5354,13 @@ div.parbase.header div.parbase.navbar div#main-navbar {
   background-size: 22px 22px;
   background-position: 16px 11px;
   background-repeat: no-repeat;
+}
+
+.tds-alert.tds-alert-info,
+.tds-alert.tds-alert-status {
+  background-size: 20px;
+  background-position: 16px 14px;
+  padding-left: 52px;
 }
 
 #recommendationMessage.tds-alert-loading {
@@ -6154,6 +5989,15 @@ div#footer-contact-links > ul > li:hover > a:hover {
 
 /* tds-contact-icons
 ==========================================*/
+/*fix contact links alignment in footer in smallest form*/
+a.contact-links-text.contact-chat-icon {
+  padding-left: 0;
+}
+
+a.contact-links-text.contact-chat-icon:before {
+  margin-right: 8px;
+}
+
 .contact-chat-icon:before,
 .contact-email-icon:before,
 .contact-call-icon:before,
@@ -6535,6 +6379,246 @@ div#users-search.tds-card {
 .tds-site-map ul > li:before {
   margin-right: 14px;
   margin-left: -21px;
+}
+
+/* _tds-forms-address-entry.scss
+==========================================*/
+@media (min-width: 751px) {
+  .locationPicker .col-sm-4.tds-richtext-padright {
+    top: 22px;
+  }
+}
+
+.has-error .form-control,
+.has-error form.elq-form .form-design-field input,
+.has-error form.elq-form .form-design-field select,
+.has-error form.elq-form .form-design-field textarea,
+form.elq-form .form-design-field .has-error input,
+form.elq-form .form-design-field .has-error select,
+form.elq-form .form-design-field .has-error textarea {
+  box-shadow: none;
+}
+
+.tds-card-gray .tds-form-group input {
+  background: white;
+}
+
+.parbase.section.accountSignUpForm .col-md-6 {
+  padding: 0;
+}
+
+/*locationpicker.jsp aka address entry page*/
+.tds-address > p {
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.tds-address {
+  margin-bottom: 20px;
+}
+
+div#suggestedAddresses {
+  border-bottom: solid 3px #19388a;
+}
+
+form#SuggestedAddressForm h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#SuggestedAddressForm .tds-address + p {
+  max-width: 600px;
+}
+
+div#suggestedAddresses {
+  margin-top: 24px;
+}
+
+div#suggestedAddresses .radio:last-child {
+  margin-bottom: 24px;
+}
+
+#SuggestedAddressForm button#continue {
+  margin-top: 24px;
+}
+
+.content.container .page_content .tds-pagedivider-one-col .contentcontainer .tds-richtext-padleft .parsys {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 24px;
+}
+
+.parbase.locationPicker.section:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+form#SuggestedAddressForm input:checked + .tds-radio-btn:before {
+  top: 4px;
+  left: 23px;
+}
+
+p.entered-address {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0c8fd0;
+  margin-bottom: 0;
+}
+
+.entered-address a {
+  cursor: pointer;
+}
+
+.tds-address {
+  font-weight: 600;
+  color: black;
+}
+
+.label-text > span {
+  display: block;
+}
+
+#suggestedAddresses label:hover .label-text {
+  color: #0c8fd0;
+}
+
+#suggestedAddresses label .label-text {
+  margin-top: 0;
+}
+
+button#continue:after {
+  background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
+  background-position: right 3px;
+}
+
+/* ======= Autocomplete form ======= */
+.ui-autocomplete {
+  background: #e3e3e3;
+  border-radius: 0px;
+  border-color: #e3e3e3;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item a {
+  text-decoration: none;
+  border-radius: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:hover,
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:focus {
+  background: #19388a !important;
+  color: #fff !important;
+  border-radius: 0;
+  border-color: #19388a !important;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:active {
+  background: #25acf2 !important;
+  color: #fff !important;
+  border-radius: 0;
+  border-color: #25acf2 !important;
+}
+
+/* _tds-forms-eloqua-forms.scss
+==========================================*/
+form.elq-form .form-design-field {
+  margin-bottom: 20px;
+}
+
+form.elq-form .form-design-field input,
+form.elq-form .form-design-field select,
+form.elq-form .form-design-field textarea {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+form.elq-form input.submit-button {
+  margin-top: 20px;
+  padding: 12px 16px;
+  color: #FFF;
+  background-color: #19388A;
+  border-color: transparent;
+  font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+  text-align: left;
+  border: none;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+  height: auto;
+  text-align: center;
+  font-weight: 600;
+}
+
+form.elq-form input.submit-button:focus, form.elq-form input.submit-button.focus {
+  color: #FFF;
+  background-color: #11265f;
+  border-color: transparent;
+}
+
+form.elq-form input.submit-button:hover {
+  color: #FFF;
+  background-color: #11265f;
+  border-color: transparent;
+}
+
+form.elq-form input.submit-button:active, form.elq-form input.submit-button.active,
+.open > form.elq-form input.submit-button.dropdown-toggle {
+  color: #FFF;
+  background-color: #11265f;
+  border-color: transparent;
+}
+
+form.elq-form input.submit-button:active:hover, form.elq-form input.submit-button:active:focus, form.elq-form input.submit-button:active.focus, form.elq-form input.submit-button.active:hover, form.elq-form input.submit-button.active:focus, form.elq-form input.submit-button.active.focus,
+.open > form.elq-form input.submit-button.dropdown-toggle:hover,
+.open > form.elq-form input.submit-button.dropdown-toggle:focus,
+.open > form.elq-form input.submit-button.dropdown-toggle.focus {
+  color: #FFF;
+  background-color: #0c1a41;
+  border-color: transparent;
+}
+
+form.elq-form input.submit-button:active, form.elq-form input.submit-button.active,
+.open > form.elq-form input.submit-button.dropdown-toggle {
+  background-image: none;
+}
+
+form.elq-form input.submit-button.disabled:hover, form.elq-form input.submit-button.disabled:focus, form.elq-form input.submit-button.disabled.focus, form.elq-form input.submit-button[disabled]:hover, form.elq-form input.submit-button[disabled]:focus, form.elq-form input.submit-button[disabled].focus,
+fieldset[disabled] form.elq-form input.submit-button:hover,
+fieldset[disabled] form.elq-form input.submit-button:focus,
+fieldset[disabled] form.elq-form input.submit-button.focus {
+  background-color: #19388A;
+  border-color: transparent;
+}
+
+form.elq-form input.submit-button .badge {
+  color: #19388A;
+  background-color: #FFF;
+}
+
+form.elq-form input.submit-button a:link, form.elq-form input.submit-button a:visited, form.elq-form input.submit-button:hover, form.elq-form input.submit-button:active, form.elq-form input.submit-button:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+form.elq-form input.submit-button:hover, form.elq-form input.submit-button:focus {
+  text-decoration: none;
+  background-color: #0C8FD0;
+  cursor: pointer;
+  box-shadow: none;
 }
 
 /* tds-landing-page

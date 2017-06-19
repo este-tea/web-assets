@@ -1,7 +1,5 @@
-@import "../_tds-foundations-partials/_tds-variables.scss";
-@import "_tds-cable-variables.scss";
-
-/* ===== tds cable  form styles === */
+/* tds-cable-forms.scss
+==========================================*/
 #subscribeToEmail + label {
       margin-top: 10px;
     }
@@ -91,8 +89,10 @@ div#suggestedAddresses {
   }
 }
 
-
-
 .readOnly {
   display: inline-block;
+}
+.ui-widget {
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    font-size: initial;
 }

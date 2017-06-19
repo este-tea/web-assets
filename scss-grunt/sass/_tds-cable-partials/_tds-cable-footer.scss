@@ -1,3 +1,5 @@
+/* tds-cable-footer.scss
+==========================================*/
 .subscribe-text:before {
     content: "";
     padding:15px 25px;
@@ -20,7 +22,6 @@
       background-repeat: no-repeat;
   }
 }
-
 a.btn-subscribe::before {
     content: "";
     padding-left: 0;
@@ -29,4 +30,7 @@ a.btn-subscribe::before {
     background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
+  }
+  div.copyright-text {
+      font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
   }

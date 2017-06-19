@@ -1,0 +1,45 @@
+/* tds-cable-page-banner.scss
+==========================================*/
+h1.banner-title {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.tds-page-banner .banner-image {
+    background-color: #eaeef5;
+    background-size: auto 100% !important;
+    background-position: 20% top;
+}
+.cws-content .banner-content {
+    display: table-cell;
+    height: 320px;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* ======= CATCH TV Page ======= */
+.catchtv-pagebanner .banner-title {
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin-top: -12px;
+}
+.catchtv-pagebanner span.banner-secondline {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 14px;
+}
+span.banner-never {
+    font-weight: 500;
+    color: #19388a;
+}
+
+span.banner-catchtv {
+    font-weight: 600;
+    color: #19388a;
+}
+
+.banner-title .banner-catchtv sup {
+    font-size: 60%;
+}
