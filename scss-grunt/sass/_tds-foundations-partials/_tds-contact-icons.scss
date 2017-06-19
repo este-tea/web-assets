@@ -1,6 +1,14 @@
 /* tds-contact-icons
 ==========================================*/
 
+/*fix contact links alignment in footer in smallest form*/
+a.contact-links-text.contact-chat-icon {
+    padding-left: 0;
+}
+a.contact-links-text.contact-chat-icon:before {
+    margin-right: 8px;
+}
+
 .contact-chat-icon:before,
 .contact-email-icon:before,
 .contact-call-icon:before,

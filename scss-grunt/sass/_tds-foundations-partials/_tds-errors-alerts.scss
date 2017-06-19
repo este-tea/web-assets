@@ -19,6 +19,7 @@
   border: 0px solid transparent;
   p {
     font-family: $tds-font-family;
+    margin-bottom: 0;
   }
   p.h4 {
       color: #000;
@@ -286,6 +287,13 @@
   background-position: 16px 11px;
   background-repeat: no-repeat;
 }
+.tds-alert.tds-alert-info,
+.tds-alert.tds-alert-status {
+    background-size: 20px;
+    background-position: 16px 14px;
+    padding-left: 52px;
+}
+
 #recommendationMessage.tds-alert-loading {
   line-height: 24px;
   font-family: $tds-font-family;

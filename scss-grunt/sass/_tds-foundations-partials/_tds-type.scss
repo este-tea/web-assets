@@ -126,6 +126,17 @@ a strong {
 #changeNameLinkDiv {
   padding-top: 20px;
 }
+.page-intro {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 640px;
+    margin-bottom: 28px;
+    color: #0c8fd0;
+}
+.uppercase {
+    text-transform: uppercase;
+}
 //---add padding to more details link in gallery cards---
 .gallery-grid .gallery-description p:last-child > a {
     display: inline-block;

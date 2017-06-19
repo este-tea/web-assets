@@ -1,5 +1,17 @@
 /* tds-layout
 ==========================================*/
+.tds-orange {
+    color: #f37d1d;
+}
+.tds-blue {
+    color: #19388a;
+}
+.tds-lt-blue {
+    color: #0c8fd0;
+}
+.tds-green {
+    color: #7bb227;
+}
 // use this to address layout issues fixes that are sitewide
 .tds-clearfix:after {
     visibility: hidden;
@@ -47,16 +59,13 @@
 .text.parbase.section p {
     clear: both;
 }
-
 .content.container .page_content .parbase.pagedivision.section {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .content.container .page_content #page-banner > .container {
     padding: 0;
 }
-
 //removes padding so that color blocks span full width of page
 .container-fluid.tds-body-content {
     padding-left: 0;
@@ -126,27 +135,28 @@ dd {
 .pagelayout .bottom-pad {
     padding-bottom: 32px;
 }
-
 // increase page width site wide*/
-.container, .multiPathSearch, .tds-width-container, .tds-width-container, .multiPathSearch, .multiPathSearch {
+.container,
+.multiPathSearch,
+.multiPathSearch,
+.multiPathSearch,
+.tds-width-container,
+.tds-width-container {
     max-width: 1120px;
 }
-
 /*fix layout for terms page*/
 .page_content .tds-pagedivider-four-col,
 .page_content .tds-pagedivider-one-col,
 .page_content .tds-pagedivider-three-col,
 .page_content .tds-pagedivider-two-col {
-    padding-top: 0px;
+    padding-top: 0;
     margin: 0;
 }
-
 @media (max-width:583px) {
     .tds-page-banner {
         margin-bottom: 10px;
     }
 }
-
 // add styling to home page title block
 .container-fluid.tds-block-lt-blue.home-title {
     margin-left: 15px;
@@ -154,14 +164,12 @@ dd {
     margin-top: 32px;
     padding: 0 48px;
 }
-
 .container-fluid.tds-block-lt-blue.home-title h1 {
     font-size: 20px;
     text-align: center;
     line-height: 27px;
     font-weight: 400;
 }
-
 @media (max-width:460px) {
     .container-fluid.tds-block-lt-blue.home-title {
         margin-left: 15px;
