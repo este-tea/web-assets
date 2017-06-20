@@ -4,6 +4,9 @@
 // will hopefully replace the old bundle builder component
 // this component uses bootstrap's toggleable/dynamic tabs
 // instead of jquery ui tabs (because there is less css to override and because we're already using bootstrap)
+.pkg-builder-addon-wrap .form-group input.form-control {
+    border-color: white;
+}
 
 // alerts
 // ----------------

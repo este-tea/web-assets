@@ -90,10 +90,8 @@
 //alerts
 .tds-alert {
   padding: 12px 16px;
-}
-.tds-alert-critical {
   color: #000;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
 }
 /*text in light colored boxes should be black*/
@@ -126,6 +124,7 @@
 .tds-error-critical,
 .tds-alert-critical {
   @include alert-danger;
+  color: black;
   border-left: 3px solid $tds-red ;
   &.tds-top-border {
     border-top: 3px solid $tds-red ;
@@ -185,6 +184,7 @@
 .tds-alert-loading,
 .tds-alert-info,
 .tds-alert-status {
+    color: black;
     background: $tds-status-bg;
     border-left: solid 3px $tds-status;
 }
@@ -202,6 +202,7 @@
   @include tds-alert;
   //@extend .tds-error-critical;
   @include alert-danger;
+  color: black;
   border-left: 3px solid $tds-red ;
   &.tds-top-border {
     border-top: 3px solid $tds-red ;

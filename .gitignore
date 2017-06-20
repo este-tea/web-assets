@@ -60,3 +60,5 @@ node_modules
 .jekyll-metadata
 
 scss-grunt/css/tds-cable-styles\.css
+
+scss-grunt/css/tds-foundations-styles\.css
