@@ -3,12 +3,19 @@
 
 //remove extra padding when bootstrap containers are nested within each other
 .container-fluid.cws-content .pagelayout .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-fluid.cws-content {
     padding-left: 0;
     padding-right: 0;
 }
 .container-fluid.center {
     text-align: center;
 }
+
+//classes for colors for authors to use
 .tds-orange {
     color: #f37d1d;
 }

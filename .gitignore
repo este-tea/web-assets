@@ -58,3 +58,5 @@ node_modules
 *.scssc
 
 .jekyll-metadata
+
+scss-grunt/css/tds-cable-styles\.css
