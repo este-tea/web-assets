@@ -49,6 +49,9 @@ input {
   border-width: 2px !important;
   border-radius: $input-border-radius;
   @include box-shadow(none);
+  input, select {
+    min-height: 44px;
+  }
 }
 
 .form-control:focus {
@@ -94,7 +97,7 @@ input {
     color: #cb1d1d;
     font-size: 14px;
     padding-left: 20px;
-    background-image: url(../../../content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+    background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
     background-position: left 2px;
     background-repeat: no-repeat;
     background-size: 15px;
