@@ -1,0 +1,14 @@
+/* tds-cable-selfID.scss
+==========================================*/
+.selfid {
+  .tds-card-gray {
+    #provideAddressButton, #loginButton {
+        overflow: hidden;
+        height: 48px;
+        margin-top: 20px;
+    }
+    .tds-card-heading {
+        text-align: left;
+    }
+  }
+}
