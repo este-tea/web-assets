@@ -1,13 +1,21 @@
 /* tds-forms
 ==========================================*/
 // form elements
-input {
-  padding-left: 12px;
-}
 label {
   font-weight: 500;
   font-size: 14px;
   color: #353535;
+}
+input {
+  padding-left: 12px;
+}
+.hint-block {
+    font-size: 11px;
+    color: #777;
+}
+.tds-form-group .help-block, .help-block {
+    font-size: 11px;
+    color: #777;
 }
 .radio {
   padding-left: 0;
@@ -30,70 +38,18 @@ label {
     border-radius: $input-border-radius;
   }
 }
+
 .form-control {
   border-width: 2px !important;
   border-radius: $input-border-radius;
   @include box-shadow(none);
 }
-// need to define direct height to input for eloqua forms
-input.form-control,
-select.form-control {
-  height: 44px;
-}
+
 .form-control:focus {
     border-color: #25acf2;
-}
-
-// MYA Account information text and label set up
-// from dizzy riffy
-.mya-content-addresses .form-horizontal .form-group {
-  margin-left: 0;
-  margin-right: 0;
-  label {
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0;
-  }
-  p.form-control-static {
-    padding-left: 6px;
-    padding-top: 8px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  @media (max-width: $screen-sm-min) {
-    label {
-      margin: 6px 0 0;
-    }
-    p.form-control-static {
-      padding-top: 15px;
-    }
-  }
-}
-// bottom margin was too large
-.mya-content-addresses .form-group {
-  margin-bottom: 4px;
-}
-// fix from HYDRA-1735
-.mya-content-addresses .col-sm-2,
-.mya-content-addresses .col-sm-10 {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  float: left;
-  display: inline-block;
-}
-// static form text needed padding for mya-content-addresses
-p.form-control-static {
-  padding-left: 3px;
-}
-.mya-content-addresses .col-sm-2 {
-  width: auto;
-  line-height: 20px;
-  padding-top: 8px;
-  white-space: nowrap;
-}
-.mya-content-addresses .col-sm-10 {
-  width: 70%;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05), 0 0 3px #25acf2;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05), 0 0 3px #25acf2;
 }
 
 // Error form-group
@@ -119,34 +75,25 @@ p.form-control-static {
     }
   }
 }
-// special case where the has-error text is for the entire card outside of the
-// `form-control` div.
-// This set up by ID{name}, if it needs to be done again add unique ID's below
-#preferred-contact-error {
-  margin-top: 10px;
-  color: $tds-red;
-  &:before {
-    //@extend .fa;
-    //Note: normaly the .fa class (aka tds-icon) is not in the before, only the icon is in the before, not sure why Tom did this - Chris H.
-    @include tds-icon;
-    //@extend .fa-exclamation-circle;
-    content: "\f06a";
-    margin-right: 5px;
-  }
+
+.has-error .form-control {
+    border-color: #cb1d1d;
 }
-// ticket status for lable font change. Not enough room
-form#searchTicketForm .control-label {
-  font-size: 10px;
+.has-error .form-control:focus {
+    border-color: #cb1d1d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05), 0 0 3px #cb1d1d;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05), 0 0 3px #cb1d1d;
 }
-// This fixes the fact that someone keeps rolling back the input form markup.
-form#searchTicketForm .tds-form-group input {
-  width: 100%;
-  height: 40px;
+.has-error .help-block {
+    color: #cb1d1d;
+    font-size: 14px;
+    padding-left: 20px;
+    background-image: url(../../../content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    background-size: 15px;
 }
-// help-block text
-#users-search.tds-card p.help-block {
-  margin-bottom: 0;
-}
+
 .tds-form-group .help-block {
     font-size: 11px;
     color: #777;
@@ -207,82 +154,7 @@ table.table tr.tds-form-group th {
 
 //moved Address Entry styles to _tds-forms-address-entry.scss
 
-/* HYDRA-2201: float is causing contact form to disappear in smaller sizes*/
-.parbase.contactform.section .col-xs-12 {
-    float: none;
-}
-/*remove padding so that form content aligns with page banner content*/
-.parbase.contactform.section > .col-xs-12 > .tds-richtext-padboth > .col-sm-8 {
-    padding: 0;
-}
-/*add so that there is spacing between continue button and support bar*/
-.parbase.contactform.section {
-    margin-bottom: 40px;
-}
-/*remove extra top margin that is added when in medium form*/
-@media (max-width:750px) {
-    .parbase.contactform.section {
-   margin-top: -20px;
-    }
-}
-
-// https://tdstelecom.com/my-account/manage-users/edit-users.html
-// make row bg transparent instead of white when in colored block
-tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
-    background-color: transparent;
-}
-// remove extra space from new email message alert*/
-div#newEmailMessage {
-    margin-bottom: 0;
-}
-// add spacing between check avail btn and auto gen link/alerts*/
-#userNameDiv form#userNameForm {
-    margin-bottom: 20px;
-}
-button#changePassword {
-    margin-top: 4px;
-    width: 100%;
-}
-button#changeSecQuestions {
-    width: 100%;
-}
-
-// MYA Add User
-tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
-    background-color: transparent;
-}
-#userNameDiv .tds-divider-line.dotted-gray {
-    margin-bottom: 24px;
-    margin-top: 28px;
-}
-#nameRecommendation > .radio:last-child {
-    margin-bottom: 0;
-}
-//contact form radio button fix
-#contactform .label-text {
-    margin-left: 40px;
-}
-#contactform span.tds-radio-btn {
-    position: relative;
-}
-#contactform label:hover input:checked + .tds-radio-btn:before {
-    top: 0px;
-    left: 0px;
-}
-#contactform .tds-form-group label:hover .label-text {
-    color: #0c8fd0;
-}
-
-#contactform .tds-form-group.has-error span.tds-radio-btn:before {
-    content: "";
-}
-
-#contactform .tds-form-group.has-error span.tds-radio-btn {
-    margin-top: 0;
-}
-#contactform .tds-form-group.has-error .label-text {
-    color: #555;
-}
+//moved contact form styles to _tds-forms-contact-form.scss
 
 // Number Touchspin Plugin
 // ----------------
@@ -306,10 +178,6 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     width: 40px;
     color: white;
     border-radius: 0;
-}
-
-.pkg-builder-addon-wrap .form-group input.form-control {
-    border-color: white;
 }
 
 button.btn.btn-default.bootstrap-touchspin-down,

@@ -1,0 +1,113 @@
+/* tds-forms-mya-content-addresses.scss
+==========================================*/
+// MYA Account information text and label set up
+.mya-content-addresses .form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+  label {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  p.form-control-static {
+    padding-left: 6px;
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media (max-width: $screen-sm-min) {
+    label {
+      margin: 6px 0 0;
+    }
+    p.form-control-static {
+      padding-top: 15px;
+    }
+  }
+}
+// bottom margin was too large
+.mya-content-addresses .form-group {
+  margin-bottom: 4px;
+}
+// fix from HYDRA-1735
+.mya-content-addresses .col-sm-2,
+.mya-content-addresses .col-sm-10 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  float: left;
+  display: inline-block;
+}
+// static form text needed padding for mya-content-addresses
+p.form-control-static {
+  padding-left: 3px;
+}
+.mya-content-addresses .col-sm-2 {
+  width: auto;
+  line-height: 20px;
+  padding-top: 8px;
+  white-space: nowrap;
+}
+.mya-content-addresses .col-sm-10 {
+  width: 70%;
+}
+// special case where the has-error text is for the entire card outside of the
+// `form-control` div.
+// This set up by ID{name}, if it needs to be done again add unique ID's below
+#preferred-contact-error {
+  margin-top: 10px;
+  color: $tds-red;
+  &:before {
+    //@extend .fa;
+    //Note: normaly the .fa class (aka tds-icon) is not in the before, only the icon is in the before, not sure why Tom did this - Chris H.
+    @include tds-icon;
+    //@extend .fa-exclamation-circle;
+    content: "\f06a";
+    margin-right: 5px;
+  }
+}
+// ticket status for lable font change. Not enough room
+form#searchTicketForm .control-label {
+  font-size: 10px;
+}
+// This fixes the fact that someone keeps rolling back the input form markup.
+form#searchTicketForm .tds-form-group input {
+  width: 100%;
+  height: 40px;
+}
+// help-block text
+#users-search.tds-card p.help-block {
+  margin-bottom: 0;
+}
+
+// https://tdstelecom.com/my-account/manage-users/edit-users.html
+// make row bg transparent instead of white when in colored block
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+    background-color: transparent;
+}
+// remove extra space from new email message alert*/
+div#newEmailMessage {
+    margin-bottom: 0;
+}
+// add spacing between check avail btn and auto gen link/alerts*/
+#userNameDiv form#userNameForm {
+    margin-bottom: 20px;
+}
+button#changePassword {
+    margin-top: 4px;
+    width: 100%;
+}
+button#changeSecQuestions {
+    width: 100%;
+}
+
+// MYA Add User
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+    background-color: transparent;
+}
+#userNameDiv .tds-divider-line.dotted-gray {
+    margin-bottom: 24px;
+    margin-top: 28px;
+}
+#nameRecommendation > .radio:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,46 @@
+/* tds-forms-contact-form
+==========================================*/
+/* HYDRA-2201: float is causing contact form to disappear in smaller sizes*/
+.parbase.contactform.section .col-xs-12 {
+    float: none;
+}
+/*remove padding so that form content aligns with page banner content*/
+.parbase.contactform.section > .col-xs-12 > .tds-richtext-padboth > .col-sm-8 {
+    padding: 0;
+}
+/*add so that there is spacing between continue button and support bar*/
+.parbase.contactform.section {
+    margin-bottom: 40px;
+}
+/*remove extra top margin that is added when in medium form*/
+@media (max-width:750px) {
+    .parbase.contactform.section {
+   margin-top: -20px;
+    }
+}
+
+//contact form radio button fix
+#contactform .label-text {
+    margin-left: 40px;
+}
+#contactform span.tds-radio-btn {
+    position: relative;
+}
+#contactform label:hover input:checked + .tds-radio-btn:before {
+    top: 0px;
+    left: 0px;
+}
+#contactform .tds-form-group label:hover .label-text {
+    color: #0c8fd0;
+}
+
+#contactform .tds-form-group.has-error span.tds-radio-btn:before {
+    content: "";
+}
+
+#contactform .tds-form-group.has-error span.tds-radio-btn {
+    margin-top: 0;
+}
+#contactform .tds-form-group.has-error .label-text {
+    color: #555;
+}
