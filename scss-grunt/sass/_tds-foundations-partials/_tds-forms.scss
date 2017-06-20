@@ -9,6 +9,11 @@ label {
 input {
   padding-left: 12px;
 }
+input:disabled {
+    background: #e3e3e3;
+    color: #999;
+    border-color: #999;
+}
 .hint-block {
     font-size: 11px;
     color: #777;
@@ -188,7 +193,9 @@ table.table tr.tds-form-group th {
     color: white;
     border-radius: 0;
 }
-
+.bootstrap-touchspin > .input-group-btn > .btn-default.disabled {
+    background-color: #777;
+}
 button.btn.btn-default.bootstrap-touchspin-down,
 button.btn.btn-default.bootstrap-touchspin-up {
     color: #19388a;
