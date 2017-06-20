@@ -4,7 +4,6 @@
       margin-top: 10px;
     }
 
-
 .checkbox .tds-radio-btn {
     border-radius: 0;
 }
@@ -19,8 +18,13 @@ label:hover input:checked + .tds-radio-btn:before {
   color:red;
 }
 
-
 /* Address Enrty Page */
+.autocomplete .address-entry > .row {
+    margin: 0;
+}
+#addressForm .form-group + button.gallery-btn {
+    margin-top: 12px;
+}
 .address-entry {
   .col-sm-8 {
     padding-left: 0;

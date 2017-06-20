@@ -13,6 +13,12 @@ input {
     font-size: 11px;
     color: #777;
 }
+.has-error .hint-block.help-block {
+    color: #777;
+    font-size: 12px;
+    background: none;
+    padding-left: 0;
+}
 .tds-form-group .help-block, .help-block {
     font-size: 11px;
     color: #777;
