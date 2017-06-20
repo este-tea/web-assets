@@ -1,4 +1,4 @@
-/* tds-cable-selfID.scss
+/* tds-selfID.scss
 ==========================================*/
 .selfid {
   .tds-card-gray {
@@ -11,4 +11,8 @@
         text-align: left;
     }
   }
+}
+@media (min-width: 751px) {
+.selfid #shopperId .row div.col-sm-6:first-child {
+    padding-left: 15px;
 }
