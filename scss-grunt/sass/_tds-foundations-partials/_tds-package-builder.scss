@@ -5,10 +5,11 @@
 // this component uses bootstrap's toggleable/dynamic tabs
 // instead of jquery ui tabs (because there is less css to override and because we're already using bootstrap)
 
-.packageBuilder > .container > .page-header + p {
-    font-size: 21px;
-    font-weight: 300;
-    margin-bottom: 24px;
+.pkg-builder-header .page-header + p {
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 24px;
+  line-height: 1.4;
 }
 
 .pkg-builder-addon-wrap .form-group input.form-control {
