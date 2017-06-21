@@ -136,6 +136,23 @@ a strong {
 .uppercase {
     text-transform: uppercase;
 }
+/*CWS-135 cart review*/
+.page-title-lead {
+    color: #25acf0;
+    margin-top: 24px;
+    font-size: 21px;
+    display: block;
+}
+/*thank you page CWS-365*/
+.readable-width {
+    max-width: 700px;
+}
+.is-emphasized {
+  font-size: 18px;
+  color: #0c8fd0;
+  margin-top: 12px;
+}
+
 //---add padding to more details link in gallery cards---
 .gallery-grid .gallery-description p:last-child > a {
     display: inline-block;
@@ -144,5 +161,21 @@ a strong {
 .gallery-grid .gallery-description p:last-child > a:hover,
 .gallery-grid .gallery-description p:last-child > a:focus  {
     background-color: #0c8fd0;
+    color: white;
+}
+//adding the "get details" link to cards in card gallery component
+form.get-details {
+    text-align: center;
+}
+button.text-link.details {
+    padding: 8px;
+}
+button.text-link.details:hover,
+button.text-link.details:focus {
+    color: #fff;
+    background: #618e34;
+}
+.cardgallery a:focus .tds-card button.text-link.details,
+.cardgallery a:hover .tds-card button.text-link.details {
     color: white;
 }

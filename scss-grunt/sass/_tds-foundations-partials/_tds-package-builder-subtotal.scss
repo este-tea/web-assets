@@ -147,6 +147,10 @@ table.pkg-subtotal-table {
         color: #19388a;
     }
 }
+/*CWS-480*/
+.pkg-summary-content table.table tbody > tr:last-child > td {
+    border-bottom: none !important;
+}
 table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
     padding: 0;
 }

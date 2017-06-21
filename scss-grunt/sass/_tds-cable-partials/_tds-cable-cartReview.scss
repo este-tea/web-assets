@@ -1,22 +1,20 @@
 /* tds-cable-cartReview.scss
 ==========================================*/
-.cart-review-container{
-    margin: 0 0 16px 0;
-}
 .container.warning-cartEmpty {
-  background-color: $state-warning-bg;
-  max-width: 100%;
-  padding: 15px 15px 5px 15px;
-  p {
-    line-height: 1.5em;
-    font-size: 14px;
-  }
-  a {
-    color: $tds-dk-gray;
-    &:hover, :focus {
-      color: $cable-dk-blue;
+    background-color: $state-warning-bg;
+    max-width: 100%;
+    padding: 15px 15px 5px;
+    p {
+        line-height: 1.5em;
+        font-size: 14px;
     }
-  }
+    a {
+        color: $tds-dk-gray;
+        &:hover,
+        :focus {
+            color: $cable-dk-blue;
+        }
+    }
 }
 /////Table styles///////
 .cartReview table.table {
@@ -28,6 +26,9 @@
     font-size: 18px;
     tbody > tr > td {
         padding: 8px 0 8px 20px;
+        @media (max-width: 480px) {
+            padding: 0;
+        }
     }
 }
 section .table > tbody > tr > td {
@@ -35,7 +36,7 @@ section .table > tbody > tr > td {
         display: block;
         padding: 0 0 0 20px;
         &:nth-child(odd) {
-            border-top: 20px solid transparent;
+            border-top: 16px solid transparent;
         }
     }
 }
@@ -62,7 +63,7 @@ section .table > tbody > tr > td {
 .cart-review-container {
     border: 2px solid $tds-gray;
     padding: 24px;
-    margin: 0 0 30px;
+    margin: 0 0 16px;
     h2 {
         color: $tds-lt-blue;
         margin: 0;
@@ -70,19 +71,22 @@ section .table > tbody > tr > td {
     h3.line-item-title {
         font-size: 21px;
         color: $tds-dkr-blue;
-        margin: 0 0 8px 0;
+        margin: 0 0 8px;
         font-weight: 500;
         padding-top: 20px;
         &:nth-child(odd) {
             padding-top: 15px;
         }
         + table + h3 {
-            border-top: 2px solid $tds-gray;
+            border-top: 2px solid #d8ddeb;
         }
         + table {
             @media (max-width: 480px) {
                 margin-bottom: 15px;
             }
+        }
+        @media (max-width: 480px) {
+            margin-bottom:0;
         }
     }
     table {
@@ -110,7 +114,7 @@ section .table > tbody > tr > td {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
-    border-bottom: 2px solid $tds-gray !important;
+    border-bottom: 2px solid #d8ddeb !important;
     .col-md-9.col-sm-12 {
         padding: 0;
     }

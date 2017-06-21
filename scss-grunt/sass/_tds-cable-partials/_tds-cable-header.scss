@@ -1,6 +1,16 @@
 /* tds-cable-header.scss
 ==========================================*/
+/* CWS-481 */
+.tdscableheader a#tds-logo {
+    text-indent: 0;
+    text-align: center;
+    background: none;
+}
 
+.tdscableheader #tds-logo img {
+    width: 204px;
+    height: 83px;
+}
 /*////overrides/////*/
 .cable-top-bar div.customLargeNavBar {
     @media (min-width: 568px) {
