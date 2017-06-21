@@ -184,7 +184,9 @@ table.table tr.tds-form-group th {
     padding: 0;
     float: left;
 }
-
+.bootstrap-touchspin input[disabled] {
+    color: #999;
+}
 .bootstrap-touchspin > .input-group-btn > .btn-default {
     background-color: #19388a;
     border: solid 1px transparent;
