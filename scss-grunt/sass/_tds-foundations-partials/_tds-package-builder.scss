@@ -536,6 +536,9 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
         max-width: 72%;
         display:block;
     }
+    .dual-product-list .pkg-prod-list-options > .pkg-product-card:last-child .product-content {
+		    max-width: 100%;
+		}
     .pkg-builder-listoption-wrap .product-price {
         position: absolute;
         text-align: right;
@@ -573,6 +576,9 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
   .pkg-builder-listoption-wrap .product-content {
       max-width: 72%;
       display:block;
+  }
+  .dual-product-list .pkg-prod-list-options > .pkg-product-card:last-child .product-content {
+      max-width: 100%;
   }
   .pkg-builder-listoption-wrap .product-price {
       position: absolute;
