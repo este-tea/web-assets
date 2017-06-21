@@ -103,12 +103,12 @@ table.pkg-subtotal-table {
     padding-right: 0;
     padding-left: 20px;
     text-align: center;
-    @media (min-width: 752px) {
+    @media (min-width: 768px) {
         #addtocart {
             width: 100%;
         }
     }
-    @media (max-width: 751px) {
+    @media (max-width: 767px) {
         text-align: right;
         padding: 0;
         margin-top: 40px;
@@ -124,6 +124,15 @@ table.pkg-subtotal-table {
     background-color: #e8ebf3;
     border-top: solid 3px #027ab4;
     text-align: left;
+    .prod-name > .quantity {
+      font-size: 12px;
+      @media (min-width: 767px) {
+          display: block;
+      }
+      @media (max-width: 420px) {
+          display: block;
+      }
+    }
 }
 .pkg-summary-wrap .pkg-subtotal-table {
     .sel-head-text,
@@ -158,7 +167,10 @@ table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
         }
     }
 }
-@media (max-width:840px) and (min-width:752px) {
+.pkg-submit-wrap {
+    text-align: center;
+}
+@media (max-width:840px) and (min-width:768px) {
     .pkg-summary-wrap table.pkg-summary-table tbody > tr > td {
         display: block;
     }
@@ -167,7 +179,7 @@ table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
         text-align: left;
     }
 }
-@media (min-width:752px) {
+@media (min-width:768px) {
     .pkg-summary-content .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
         display: initial !important;
     }
@@ -199,7 +211,7 @@ table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
         text-align: left;
     }
 }
-@media (max-width:751px) {
+@media (max-width:767px) {
     .pkg-summary-wrap {
         .sel-head-text {
             margin-bottom: 0;
@@ -212,7 +224,7 @@ table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
         }
     }
 }
-@media (max-width: 751px) and (min-width:380px) {
+@media (max-width: 767px) and (min-width:380px) {
     .pkg-summary-wrap table.pkg-summary-table tbody > tr > td.prod-name {
         padding-left: 18px;
     }
@@ -220,5 +232,14 @@ table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
 @media (max-width:420px) {
     .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
         display: block!important;
+    }
+}
+@media (max-width:320px) {
+    .pkg-summary-wrap table.pkg-summary-table tbody > tr > td {
+        display: block;
+    }
+    .pkg-summary-wrap table.pkg-summary-table tbody > tr > td.product-price {
+        padding-top: 0;
+        text-align: left;
     }
 }
