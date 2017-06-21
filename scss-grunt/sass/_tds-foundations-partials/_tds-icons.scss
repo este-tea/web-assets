@@ -1,6 +1,8 @@
 /* tds-button-icons
 ==========================================*/
-//  icons for butttons
+.btn {
+    border-radius: 0;
+}
 
 // tds-icon/font-awesome extension
 // `.tds-icons` == `.fa` class for font-awesome
@@ -90,7 +92,12 @@ button.gallery-btn.btn-next:after {
 
 // Print icon
 .tds-icon-print:before {
-  content: "\f02f";
+  content: "\e809";
+  font-family: "fontello";
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  padding-right: 10px;
 }
 // Key icon
 .tds-icon-key {
@@ -100,13 +107,23 @@ button.gallery-btn.btn-next:after {
   @include tds-icon-padding-right;
 }
 // trash icon
-.tds-icon-trash {
-  &:before {
-  content: "\f1f8";
-  }
-  @include tds-icon-padding-right;
+.tds-icon-trash:before {
+    content: "\e80d";
+    font-family: "fontello";
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    padding-right: 10px;
 }
-// trash icon
+// remove cart
+.tds-icon-empty-cart:before {
+    content: "\e81a";
+    font-family: "fontello";
+    font-size: 12px;
+    position: relative;
+    top: 0px;
+    padding-right: 10px;
+}
 .tds-icon-circle-question {
   &:before {
   content: "\f059";
