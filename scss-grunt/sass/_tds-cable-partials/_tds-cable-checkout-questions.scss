@@ -1,0 +1,30 @@
+/* tds-cable-checkout-questions.scss
+==========================================*/
+
+.cablecheckoutquestions {
+	.checkbox {
+	    padding-left: 0px;
+	    margin-bottom: 20px;
+	}
+	span.label-text {
+	    display: flex;
+	}
+}
+input#contactEmail {
+    margin-bottom: 16px;
+}
+input#pinNumber {
+    max-width: 80px;
+}
+.checkout-container .tds-divider-line {
+    margin: 32px 0;
+    height: 1px;
+    background: #0c8fd0;
+}
+.checkout-container.submit button#submitBtn {
+    margin-top: 0;
+}
+.checkout-container.submit .tds-divider-line {
+    height: 2px;
+    background: #dce0ed;
+}

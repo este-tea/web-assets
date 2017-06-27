@@ -1,0 +1,20 @@
+/* tds-cable-lists.scss
+==========================================*/
+.pagelayout ul {
+    display: table;
+    list-style-type: none;
+}
+.pagelayout li:before {
+    content: "\e80c";
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+    margin-left: -22px;
+    font: normal normal normal 14px/1 fontello;
+    font-size: 7px;
+    color: #0C8FD0;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
