@@ -26,21 +26,6 @@
 //added this because couldn't figure out how to add it above and make it work
 a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
 
-// arrows for gallery buttons
-/*
-// change arrow so that it isn't using font awesome
-.gallery-btn:after {
-  display: inline-block;
-  margin-left: 15px;
-  font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
-  font-size: inherit; // can't have font-size inherit on line above, so need to override
-  text-rendering: auto; // optimizelegibility throws things off #1094
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
-  content: "\f054";
-}*/
-
 //new btn after so it isn't using font awesome
 .gallery-btn:after, .tds-btn:after {
   content: "";
@@ -118,10 +103,11 @@ button#addtocart {
 .tds-btn-gray {
   color: $tds-lt-blue;
   background: $tds-ltr-gray;
-  &:hover {
+  &:hover, &:focus, &:active {
     background: $tds-lt-blue ;
     color: $tds-white ;
   }
+
 }
 // gray close button
 td .line-item-actions .tds-btn-gray {
@@ -147,9 +133,9 @@ td .line-item-actions .tds-btn-gray {
 .tds-btn-lt-blue {
   color: $tds-white ;
   background: $tds-lt-blue-100;
-  &:hover {
-    background: darken($tds-lt-blue, 5%) ;
-    color: $tds-white;
+  &:hover, &:focus, &:active {
+    background: $tds-blue-100 ;
+    color: $tds-white ;
   }
 }
 

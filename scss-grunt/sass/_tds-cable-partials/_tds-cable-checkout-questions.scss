@@ -1,30 +1,71 @@
 /* tds-cable-checkout-questions.scss
 ==========================================*/
-
 .cablecheckoutquestions {
-	.checkbox {
-	    padding-left: 0px;
-	    margin-bottom: 20px;
-	}
-	span.label-text {
-	    display: flex;
-	}
+  .checkbox {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  span.label-text {
+    display: inline;
+    line-height: 25px;
+    > span {
+        margin-left: 38px;
+        line-height: 25px
+    }
+  }
+  .radio label, .checkbox label {
+      width: 100%;
+  }
+}
+@media (max-width:480px) {
+    .cablecheckoutquestions {
+      .radio label, .checkbox label {
+          padding-left: 0px
+      }
+    }
+    .existingPhoneLine-section {
+        margin-left: 38px;
+    }
 }
 input#contactEmail {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 input#pinNumber {
-    max-width: 80px;
+  max-width: 80px;
 }
 .checkout-container .tds-divider-line {
-    margin: 32px 0;
-    height: 1px;
-    background: #0c8fd0;
+  margin: 32px 0;
+  height: 1px;
+  background: #0c8fd0;
 }
 .checkout-container.submit button#submitBtn {
-    margin-top: 0;
+  margin-top: 0;
 }
 .checkout-container.submit .tds-divider-line {
-    height: 2px;
-    background: #dce0ed;
+  height: 2px;
+  background: #dce0ed;
+  margin-top: 20px;
+}
+.existingPhoneLine-section {
+  margin-left: 58px;
+}
+input#birthDate {
+  max-width: 140px;
+}
+div#birthDateInput {
+  margin-left: 58px;
+}
+div#maidenNameInput {
+  margin-left: 58px;
+}
+//agreement authorization modal
+div#authorizationModal {
+  .modal-footer {
+      margin-top: 0;
+      padding-top: 0;
+  }
+  .modal-title {
+      margin-bottom: 16px;
+      text-align: center;
+  }
 }
