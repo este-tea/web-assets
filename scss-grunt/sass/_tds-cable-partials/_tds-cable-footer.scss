@@ -1,26 +1,43 @@
 /* tds-cable-footer.scss
 ==========================================*/
-.subscribe-text:before {
-    content: "";
-    padding:15px 25px;
+.tdscablefooter #subscribe-container + .container .customLargeNavBar.parbase.navbar {
+    padding: 28px 0 14px 0;
+}
+//=== START subscribe footer ===
+#subscribe-container {
+    padding: 36px 0;
+    .container {
+        padding: 0 15px;
+    }
+    table {
+        width: auto;
+    }
+}
+.subscribe-text {
+    padding-left: 36px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-right: 16px;
     background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg);
-    background-size: contain;
-    background-position: right center;
+    background-size: 18px 18px;
+    background-position: left 9px;
     background-repeat: no-repeat;
 }
-
+td.subscribe-button {
+    margin-top: 0;
+}
 .btn-subscribe {
-  padding: 0 10px;
-  display: block;
-  &:after {
-      content: "";
-      padding-right: 0px;
-      margin-left: 0px;
-      background-image: none;
-      background-size: contain;
-      background-position: right center;
-      background-repeat: no-repeat;
-  }
+    padding: 0 10px;
+    display: block;
+    &:after {
+        content: "";
+        padding-right: 0;
+        margin-left: 0;
+        background-image: none;
+        background-size: contain;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
 }
 a.btn-subscribe::before {
     content: "";
@@ -30,7 +47,54 @@ a.btn-subscribe::before {
     background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
-  }
-  div.copyright-text {
-      font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-  }
+}
+@media (max-width: 583px){
+    a.btn-subscribe {
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subscribe-text {
+        padding-left: 0;
+        padding-top: 32px;
+        padding-bottom: 7px;
+        padding-right: 0;
+        background-size: 24px;
+        background-position: center top;
+        text-align: center;
+        max-width: 300px;
+    }
+    #subscribe-container .container table tbody tr td {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+}
+// copyright
+div.copyright-text {
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+}
+// text links and dropdown
+div#tdscablefooter--navbar {
+    text-align: center;
+    &.tds-other-nav {
+      ul {
+          text-align: center;
+      }
+      > ul > li {
+          float: none;
+          display: inline-block;
+          > a {
+              font-family: "ITC Avant Garde Gothic W01", Century Gothic,Arial;
+              font-size: 12px;
+              margin-bottom: 16px;
+              padding: 4px 12px;
+              border-right: solid 2px;
+              margin-left: -4px;
+          }
+          &:last-child > a {
+              border-right: none;
+          }
+      }
+    }
+}
