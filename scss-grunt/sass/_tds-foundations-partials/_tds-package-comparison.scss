@@ -25,12 +25,6 @@ p.pkg-comp-intro {
             color: $tds-dkr-blue;
         }
     }
-    &:focus,
-    &:hover {
-        background-color: #ebf6fc;
-        border-radius: 5px;
-        border: 0;
-    }
 }
 ////Package Title////
 h3.hr-after-text {
@@ -159,8 +153,8 @@ h3.hr-after-text {
             background-size: 15px;
             @media(max-width: 991px) {
                 top: 21px;
-                left: 57%;
-                margin: -34px 37%;
+                left: 60%;
+                margin-top: -34px;
             }
         }
     }
