@@ -135,3 +135,6 @@ button#continue:after {
     border-radius:0;
     border-color:#25acf2!important;
 }
+div#zip-container > input#zipCode {
+    max-width: 80px;
+}
