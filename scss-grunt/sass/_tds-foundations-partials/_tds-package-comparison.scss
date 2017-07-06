@@ -153,7 +153,7 @@ h3.hr-after-text {
             background-size: 15px;
             @media(max-width: 991px) {
                 top: 21px;
-                left: 60%;
+                left: 57%;
                 margin-top: -34px;
             }
         }
@@ -266,6 +266,10 @@ div.tds-btn.mobile {
 ////////////////////////////////////
 ///////Vertical Layout/////////
 ///////////////////////////////////
+
+.vertical .tds-container-packageDetails {
+    margin-right: 0;
+}
 ////Package Title////
 .tds-packages section.vertical h3.hr-after-text {
     text-align: center;
@@ -289,7 +293,7 @@ div.tds-btn.mobile {
     }
 }
 .tds-packages section.vertical .packageOfferings {
-    padding: 0 15px;
+    padding: 0;
 }
 ////Package Descriptions////
 .tds-packages section.vertical .tds-container-productDescription {
@@ -309,7 +313,8 @@ div.tds-btn.mobile {
             z-index: 50;
             position: absolute;
             top: auto;
-            margin: -34px 40%;
+            left: 0;
+            margin: -34px 47%;
             background-image: url("/content/dam/tdstelecom/images/ui/icon_plus-white.svg");
             background-position: center;
             background-repeat: no-repeat;
@@ -318,5 +323,11 @@ div.tds-btn.mobile {
         border-left: 0;
         width: 100%;
         padding: 20px 0;
+    }
+}
+@media (min-width: 991px){
+    .pkg-comp-card-gallery > section.pkg-comp-card.vertical {
+        width: 25%;
+        float: left;
     }
 }
