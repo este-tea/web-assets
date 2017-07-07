@@ -169,7 +169,7 @@ button.gallery-btn-link:focus {
 // arrow icon (default setting)
 .gallery-btn-link:after {
   @include tds-icon;
-  content: "\f054";
+  content: "\e804";
   margin-top: 3px;
   margin-left: 14px;
 }
@@ -194,7 +194,7 @@ button.gallery-btn-link:focus {
   float: right;
   // next arrow
   .next-arrow:after {
-    content: "\f054";
+    content: "\e804";
     margin-left: 15px;
     //.fa;
   }
@@ -210,7 +210,7 @@ button.gallery-btn-link:focus {
   // back arrow
   .back-arrow:before,
   .tds-icon-chevron-left:before {
-    content: "\f053";
+    content: "\e803";
     margin-right: 15px;
   }
   .back-arrow:after,
@@ -221,11 +221,15 @@ button.gallery-btn-link:focus {
 
 // Updated  back-arrow button method
 .back-arrow:before {
-  content: "\f053";
+  content: "\e803";
   margin-right: 15px;
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 14px;
+  line-height: 1;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -269,17 +273,22 @@ a#readMoreLink.read-less {
   &.plus + .read-more-text:before,
   &.minus + .read-more-text:before {
     @include tds-icon;
-    font: normal normal normal 14px/1 FontAwesome;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 14px;
+    line-height: 1;
     position: relative;
     top: 3px;
     float: right;
     margin-left: 5px;
   }
   &.plus + .read-more-text:before {
-    content: "\f067";
+    content: "\e808";
   }
   &.minus + .read-more-text:before {
-    content: "\f068";
+    content: "\e812";
   }
 .read-more-text {
   text-transform: capitalize;
@@ -292,7 +301,7 @@ input + span.input-group-btn .gallery-btn {
   @include tds-icon;
   .tds-icon-search {
     &:before {
-      content: "\f002";
+      content: "\e80b";
     }
   }
   &:after {

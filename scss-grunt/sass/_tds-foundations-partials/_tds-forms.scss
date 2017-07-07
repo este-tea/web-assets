@@ -78,19 +78,6 @@ select.form-control, input.form-control {
     background: $tds-critical-bg;
     border-color: $tds-critical-bg !important;
   }
-  // error icon on span text under form
-  span {
-    margin-top: 10px;
-    color: $tds-red;
-    &:before {
-      //@extend .fa;
-      //Note: normaly the .fa class (aka tds-icon) is not in the before, only the icon is in the before, not sure why Tom did this - Chris H.
-      @include tds-icon;
-      //@extend .fa-exclamation-circle;
-      content: "\f06a";
-      margin-right: 5px;
-    }
-  }
 }
 
 .has-error .form-control {
@@ -115,9 +102,46 @@ select.form-control, input.form-control {
     font-size: 11px;
     color: #777;
 }
+.form-group.tds-form-group.has-error span:before {
+    content: "";
+}
+.form-group.tds-form-group.has-error span.label-text:before {
+    content: none;
+}
+.form-group.has-error span.help-block {
+    line-height: 20px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.form-group.tds-form-group.has-error span {
+    margin-top: initial;
+    color: initial;
+}
+.form-group.tds-form-group.has-error span.help-block  {
+    margin-top: 10px;
+    color: #CB1D1D;
+}
+
+.form-group.has-error > label {
+    color: #CB1D1D;
+}
+
+.form-group.has-error input,
+.form-group.has-error select,
+.form-group.has-error textarea {
+    background: #ffecec;
+    border-color: #CB1D1D !important;
+}
+.form-group.tds-form-group.has-error input, .form-group.tds-form-group.has-error select, .form-group.tds-form-group.has-error textarea {
+    background: #ffecec;
+    border-color: #CB1D1D !important;
+}
+
 label:hover .tds-radio-btn {
     border: solid 3px #25acf0;
 }
+
 label:hover .tds-radio-btn:before {
     top: 3px;
     left: 23px;

@@ -135,13 +135,6 @@
 .bundle-error .alert-link {
   color: $tds-red;
 }
-.bundle-error:before {
-  width: 25px;
-  content: "\f06a";
-  margin-right: 20px;
-  font: normal normal normal 14px/1 FontAwesome;
-  color: $tds-red;
-}
 .tds-pb-logo {
   position: relative;
   top: 18px;
@@ -210,13 +203,17 @@
 }
 .bundle_container ul.ui-tabs-nav li:after {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0,0);
-  content: "\f054";
+  content: "\e804";
   color: $tds-gray;
   font-size: 55px;
 }
@@ -287,7 +284,11 @@ a#extra-tab {
 }
 .top-header .dropdown-menu.sub-menu li a:after {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -302,7 +303,7 @@ a#extra-tab {
   margin-left: 0.3em;
 }
 .top-header .dropdown-menu.sub-menu li a:hover:after {
-  content: "\f0da";
+  content: "\e821";
   position: absolute;
   right: 15px;
 }

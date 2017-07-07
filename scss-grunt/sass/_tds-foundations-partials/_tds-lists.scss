@@ -23,14 +23,18 @@
     list-style-type: none;
   }
   ul > li:before {
-    content: "\f04d";
-    position: relative;
-    top: -3px;
-    margin-right: 10px;
-    margin-left: -22px;
-    font: normal normal normal 14px/1 FontAwesome;
+    content: "\e80c";
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
     font-size: 8px;
     color: $tds-lt-blue;
+    position: relative;
+    top: -2px;
+    margin-right: 18px;
+    margin-left: -26px;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -77,14 +81,18 @@
 .tds-menu-group ul ul {
   padding-left: 0px;
   li:before {
-    content: "\f04d";
-    position: relative;
-    top: -3px;
-    margin-right: 10px;
-    margin-left: -17px;
-    font: normal normal normal 14px/1 FontAwesome;
+    content: "\e80c";
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
     font-size: 8px;
     color: $tds-lt-blue;
+    position: relative;
+    top: -2px;
+    margin-right: 18px;
+    margin-left: -26px;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -95,14 +103,18 @@
 // the support pages.
 .tds-menu-group ul {
     div > li:before {
-    content: "\f04d";
-    position: relative;
-    top: -3px;
-    margin-right: 10px;
-    margin-left: -22px;
-    font: normal normal normal 14px/1 FontAwesome;
+    content: "\e80c";
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
     font-size: 8px;
     color: $tds-lt-blue;
+    position: relative;
+    top: -2px;
+    margin-right: 18px;
+    margin-left: -26px;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -118,14 +130,18 @@
   display: table;
   list-style-type: none;
   > li:before {
-    content: "\f04d";
-    position: relative;
-    top: -3px;
-    margin-right: 10px;
-    margin-left: -17px;
-    font: normal normal normal 14px/1 FontAwesome;
+    content: "\e80c";
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
     font-size: 8px;
     color: $tds-lt-blue;
+    position: relative;
+    top: -2px;
+    margin-right: 18px;
+    margin-left: -26px;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

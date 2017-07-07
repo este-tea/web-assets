@@ -54,16 +54,15 @@ p.form-control-static {
 // `form-control` div.
 // This set up by ID{name}, if it needs to be done again add unique ID's below
 #preferred-contact-error {
-  margin-top: 10px;
-  color: $tds-red;
-  &:before {
-    //@extend .fa;
-    //Note: normaly the .fa class (aka tds-icon) is not in the before, only the icon is in the before, not sure why Tom did this - Chris H.
-    @include tds-icon;
-    //@extend .fa-exclamation-circle;
-    content: "\f06a";
-    margin-right: 5px;
-  }
+  color: #cb1d1d;
+  line-height: 20px;
+  margin-top: 8px;
+  font-size: 12px;
+  padding-left: 20px;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+  background-position: left 2px;
+  background-repeat: no-repeat;
+  background-size: 15px;
 }
 // ticket status for lable font change. Not enough room
 form#searchTicketForm .control-label {

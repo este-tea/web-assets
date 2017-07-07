@@ -83,7 +83,7 @@
   .btn-block .fa {
     //@extend .fa-minus;
     &:before {
-      content: "\f068";
+      content: "\e812";
     }
     padding: 2px 0px 1px 3px;
     width: 17px;
@@ -95,7 +95,7 @@
   .btn-block.collapsed .fa {
     //@extend .fa-plus;
     &:before {
-    content: "\f067";
+    content: "\e808";
     }
   }
   // Expand menu styles
@@ -116,14 +116,18 @@
 }
 
 .tds-menu-group ul div > li:before {
-  content: "\f04d";
-  position: relative;
-  top: -3px;
-  margin-right: 10px;
-  margin-left: -22px;
-  font: normal normal normal 14px/1 FontAwesome;
+  content: "\e80c";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
   font-size: 8px;
-  color: #0C8FD0;
+  line-height: 1em;
+  color: $tds-lt-blue;
+  position: relative;
+  top: -2px;
+  margin-right: 18px;
+  margin-left: -26px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

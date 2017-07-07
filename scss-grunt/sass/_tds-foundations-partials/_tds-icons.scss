@@ -8,8 +8,12 @@
 // `.tds-icons` == `.fa` class for font-awesome
 .tds-icon {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
   font-size: inherit;
+  line-height: 1;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,13 +70,13 @@ button.gallery-btn.btn-next:after {
 // Remove icon
 .tds-icon-times {
   &:before {
-  content: "\f00d";
+  content: "\e819";
   }
   @include tds-icon-padding-right;
 }
 // Search Icon
 .tds-icon-search:before {
-  content: "\f002";
+  content: "\e80b";
 }
 // Plus cart
 .tds-icon-cart-plus {
@@ -103,7 +107,7 @@ button.gallery-btn.btn-next:after {
 // Key icon
 .tds-icon-key {
   &:before {
-    content: "\f084";
+    content: "\e816";
   }
   @include tds-icon-padding-right;
 }
@@ -126,9 +130,6 @@ button.gallery-btn.btn-next:after {
     padding-right: 10px;
 }
 .tds-icon-circle-question {
-  &:before {
-  content: "\f059";
-  }
   @include tds-icon-padding-right;
 }
 // update icon on navlogin button

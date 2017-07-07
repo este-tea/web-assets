@@ -218,52 +218,18 @@
   background: $tds-ltr-gray;
 }
 
-// bundle error extender
-.bundle-error {
-  //@extend .tds-error-msg;
-  @include tds-alert;
-  //@extend .tds-error-critical;
-  @include alert-danger;
-  color: black;
-  border-left: 3px solid $tds-red ;
-  &.tds-top-border {
-    border-top: 3px solid $tds-red ;
-    border-left: 0px ;
-  }
-  .fa {
-    font-size: 21px;
-    color: $tds-red;
-  }
-   border: 0px solid transparent;
-  &:before {
-    //@extend .fa;
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f06a";
-    margin-right: 20px;
-    color: $tds-red;
-  }
-}
-
 // Input error messages with exclamation point in a circle icon
 .tds-input-error {
-  padding: 6px 0;
-  color: $tds-red;
-  &:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f06a";
-    margin-right: 20px;
-    color: $tds-red;
-  }
+  line-height: 20px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #cb1d1d;
+  font-size: 14px;
+  padding-left: 20px;
+  background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+  background-position: left 2px;
+  background-repeat: no-repeat;
+  background-size: 15px;
 }
 
 //yellow alert warning icon

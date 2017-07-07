@@ -732,7 +732,13 @@ a:hover, a:focus {
   color: #999;
   margin-right: 14px;
   margin-left: -21px;
-  content: "\f111";
+  content: "\e81f";
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  font-size: 8px;
 }
 
 .pagelayout .tds-block-lt-blue .tds-content-rich li,

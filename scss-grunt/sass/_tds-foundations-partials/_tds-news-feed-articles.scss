@@ -86,21 +86,6 @@ time.post-date {
         margin: 15px 0;
     }
 }
-.tds-news-feed-article ul {
-    display: table;
-    list-style-type: none;
-}
-.tds-news-feed-article ul > li::before {
-    content: "\f04d";
-    position: relative;
-    top: -3px;
-    margin-right: 10px;
-    margin-left: -22px;
-    font: 8px/1 FontAwesome;
-    color: #0C8FD0;
-    text-rendering: auto;
-    transform: translate(0px, 0px);
-}
 // Articles in newsfeed group
 .tds-news-feed-group .tds-news-feed {
     border-bottom: 2px dotted $tds-lt-gray;
