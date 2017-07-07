@@ -133,11 +133,11 @@
             text-decoration: none;
         }
         &:hover,
-        :focus {
+        &:focus {
             background: $cable-dk-blue;
         }
         &:hover ul,
-        :focus {
+        &:focus {
             display: block;
             background: $cable-dk-blue;
         }
@@ -150,23 +150,27 @@
         left: 0;
         display: none;
         /*--Hide by default--*/
-        width: 100%;
         color: #fff;
         &:hover,
-        :focus {
+        &:focus {
             background: $cable-dk-blue;
         }
     }
     ul li ul li {
+        float: none;
         color: #555;
         padding: 0 10px;
         font-size: 14px;
-        min-width: 200px;
         background: $cable-dk-blue;
         &:hover,
-        :focus,
+        &:focus,
         a:hover {
             background: $tds-lt-blue-100;
+        }
+        a {
+            padding-right: 0;
+            margin: 0 2px;
+            font-weight: 300;
         }
     }
     //Horizontal rule between dropdown menu items
@@ -372,7 +376,7 @@
 nav.desktop-nav {
     float: left;
 }
-.cable-nav-main {
+.cable-nav-main #tdscableheader--nav-main {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -384,7 +388,7 @@ nav.desktop-nav {
         margin: 20px auto;
         width: 85%;
     }
-    .L1-nav > ul > li > a {
+    > ul > li > a {
         padding: 15px 12px;
         display: block;
         color: $tds-dk-blue;
@@ -402,12 +406,11 @@ nav.desktop-nav {
             width: 100%;
         }
     }
-    .L1-nav > ul > li.active > a {
+    > ul > li.active > a {
         color: $tds-white;
         background: $cable-dk-blue;
     }
     ul li {
-        float: left;
         margin: 0;
         padding: 0;
         position: relative;
@@ -415,12 +418,12 @@ nav.desktop-nav {
             float: none;
             clear: both;
         }
-        :focus,
+        &:focus,
         li:hover {
             color: $tds-white;
         }
         &:hover,
-        :focus {
+        &:focus {
             background: $cable-dk-blue;
             color: #ffffff;
             a {
@@ -428,7 +431,7 @@ nav.desktop-nav {
             };
         }
         &:hover ul,
-        :focus {
+        &:focus {
             display: block;
             background: $tds-dk-gray;
             color: $tds-white;
@@ -448,10 +451,9 @@ nav.desktop-nav {
         left: 0;
         display: none;
         /*--Hide by default--*/
-        width: 100%;
         color: #fff;
         &:hover,
-        :focus {
+        &:focus {
             background: $cable-dk-blue;
         }
     }
@@ -459,12 +461,16 @@ nav.desktop-nav {
         color: #555;
         padding: 0 10px;
         font-size: 16px;
-        min-width: 225px;
         background: $tds-dkr-gray;
         &:hover,
-        :focus,
+        &:focus,
         a:hover {
             background: $tds-dk-gray;
+        }
+        a {
+            padding-right: 0;
+            margin: 0 2px;
+            font-weight: 300;
         }
     }
     //Horizontal rule between dropdown menu items
@@ -481,7 +487,7 @@ nav.desktop-nav {
     text-transform: uppercase;
     background: #555;
     color: white;
-    border: none;
+    border-top: none;
     font-weight: 300;
     &:after {
     	content: none;
@@ -493,7 +499,7 @@ nav.desktop-nav {
     }
 }
 #mobile-menu {
-    border-bottom: solid 2px #0c8fd0;
+    border-bottom: solid 3px #0c8fd0;
     ul li {
         background-color: #fff;
         &:hover {
