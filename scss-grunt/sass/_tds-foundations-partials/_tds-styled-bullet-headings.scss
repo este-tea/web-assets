@@ -43,7 +43,7 @@ div.styledBulletHeadings {
             font-family: 'fontello';
             content: '\e820';
             color: $tds-dk-gray-80;
-            margin-top: .25em;
+            //margin-top: .25em;
             font-size: .65em;
             position: absolute;
           }
@@ -70,7 +70,7 @@ div.styledBulletHeadings {
             font-family: 'fontello';
             content: '\e80c';
             color: $tds-lt-blue-80;
-            margin-top: .6em;
+            //margin-top: .6em;
             font-size: .5em;
             position: absolute;
           }
@@ -97,7 +97,7 @@ div.styledBulletHeadings {
             font-family: 'fontello';
             content: '\e80c';
             color: $tds-blue-100;
-            margin-top: .6em;
+            //margin-top: .6em;
             font-size: .5em;
             position: absolute;
           }
@@ -166,7 +166,7 @@ ol.ol-gray > li:before {
       generated content but not positioning it (Camino 2 is one example) */
    margin-right:8px;
    padding:4px;
-   border-top:2px solid #000000;
+   //border-top:2px solid #000000;
    color:#fff;
    background:#666;
    border-radius: 50px;
@@ -190,7 +190,7 @@ ol.ol-gray > li:before {
       generated content but not positioning it (Camino 2 is one example) */
    margin-right:8px;
    padding:4px;
-   border-top:2px solid #000000;
+   //border-top:2px solid #000000;
    color:#fff;
    background:#666;
    border-radius: 50px;
@@ -214,7 +214,7 @@ ol.ol-lt-blue > li:before {
       generated content but not positioning it (Camino 2 is one example) */
    margin-right:8px;
    padding:4px;
-   border-top:2px solid #000000;
+   //border-top:2px solid #000000;
    color:#fff;
    background:#0b8fcf;
    border-radius: 50px;
@@ -238,7 +238,7 @@ ol.ol-tds-blue > li:before {
       generated content but not positioning it (Camino 2 is one example) */
    margin-right:8px;
    padding:4px;
-   border-top:2px solid #000000;
+   //border-top:2px solid #000000;
    color:#fff;
    background:#19398a;
    border-radius: 50px;

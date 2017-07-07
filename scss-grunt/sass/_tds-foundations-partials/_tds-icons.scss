@@ -205,3 +205,17 @@ button.gallery-btn.btn-back:after {
 .gallery-btn.next-arrow:after {
     content: "";
 }
+
+//Font Awesome Replacements
+.fa.fa-chevron-right:before {
+    content: "\e804";
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    font-size: 14px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
