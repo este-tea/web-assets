@@ -30,12 +30,13 @@ a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
 .gallery-btn:after, .tds-btn:after {
   content: "";
   width: 24px;
-  height: 16px;
+  height: 21px;
   float: right;
+  margin-right: -18px;
   background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 9px 14px;
+  background-size: 11px 16px;
 }
 // spacing for buttons with left icon
 .fa.pull-left {
