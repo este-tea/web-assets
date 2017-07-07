@@ -94,7 +94,7 @@
     content: none;
 }
 .L1-nav ul ul {
-    overflow: visible;
+    //overflow: visible;
 }
 .L1-nav ul ul li:hover a {
     background-image: none;
@@ -148,7 +148,6 @@
         float: left;
         position: absolute;
         left: 0;
-        display: none;
         /*--Hide by default--*/
         color: #fff;
         &:hover,
@@ -449,7 +448,6 @@ nav.desktop-nav {
         float: left;
         position: absolute;
         left: 0;
-        display: none;
         /*--Hide by default--*/
         color: #fff;
         &:hover,
