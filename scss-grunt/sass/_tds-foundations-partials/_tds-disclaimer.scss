@@ -1,0 +1,26 @@
+/* tds-disclaimers.scss
+==========================================*/
+
+//when disclaimers are in tdstelecom
+.page_content .disclaimers.parbase.section {
+    clear: both;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 20px;
+}
+
+h6.disclaimer-heading {
+  font-weight: bold;
+}
+.disclaimer-heading {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+.disclaimer-wrap .tds-divider-line:first-child {
+    margin-bottom: 16px;
+}
+.disclaimer-wrap .tds-divider-line:last-child {
+    margin-top: 16px;
+}
