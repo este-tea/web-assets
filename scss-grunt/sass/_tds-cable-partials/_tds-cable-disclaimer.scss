@@ -1,5 +1,10 @@
 /* tds-cable-disclaimer
 ==========================================*/
+.page_content .disclaimers.parbase.section {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+}
 .disclaimer-wrap {
     font-family: "ITC Avant Garde Gothic W01", Century Gothic,Arial;
     margin: 24px 0;
@@ -21,12 +26,10 @@ button.text-link.read-more {
 }
 
 .disclaimer-wrap .tds-divider-line:first-child {
-    margin-bottom: 16px;
     background: #d2d8e9;
 }
 
 .disclaimer-wrap .tds-divider-line:last-child {
-    margin-top: 16px;
     background: #d2d8e9;
 }
 /* END tds-cable-disclaimer */
