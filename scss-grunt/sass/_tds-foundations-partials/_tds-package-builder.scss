@@ -723,6 +723,10 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
       margin-bottom: 0px;
   }
 }
+//hides icons is pkg is set to display numbers
+.pkg-builder-page-content.has-numbers .category-heading > .pkg-category-img{
+   display:none;
+}
 .pkg-summary-content > h2 {
     color: #19388a;
     margin-bottom: 16px;
@@ -737,7 +741,7 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
       font-weight: 500;
       margin-left: 50px;
       line-height: 40px;
-      margin-top: 8px;
+      margin-top: 20px;
       margin-bottom: 0;
       &:before {
           counter-increment: section;

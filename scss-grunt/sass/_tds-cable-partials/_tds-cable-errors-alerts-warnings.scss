@@ -9,3 +9,10 @@
 .tds-alert {
   padding: 15px;
 }
+.userGreeting .tds-error-msg,
+.userGreeting .tds-alert {
+    margin-bottom: 0;
+}
+.userGreeting .container {
+    padding: 0;
+}

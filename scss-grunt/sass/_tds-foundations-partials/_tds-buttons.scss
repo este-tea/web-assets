@@ -458,3 +458,35 @@ button.read-more {
     background-size: 7px 10px;
     padding-right: 12px;
 }
+
+//button styling tweaks on intercept components
+.parbase.login, .parbase.address {
+   .gallery-btn {
+     width: auto;
+     display: inline-block;
+     margin-top: 0;
+     background-color: #19388a;
+     padding-right: 32px!important;
+     float: right;
+     color: white;
+     text-decoration: none;
+     @media (max-width:767px){
+         float: left;
+         margin-top: 20px;
+     }
+     @media (max-width:400px){
+         width: 100%;
+     }
+     &:after {
+         content: "";
+         width: 24px;
+         height: 21px;
+         float: right;
+         margin-right: -18px;
+         background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg);
+         background-position: right center;
+         background-repeat: no-repeat;
+         background-size: 11px 16px;
+     }
+   }
+}
