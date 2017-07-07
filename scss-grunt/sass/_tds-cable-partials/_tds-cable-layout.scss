@@ -1,16 +1,17 @@
 /* tds-cable-layout.scss
 ==========================================*/
 
+.container-fluid.cws-content {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: -5px;
+}
 //remove extra padding when bootstrap containers are nested within each other
 .container-fluid.cws-content .pagelayout .container-fluid {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.container-fluid.cws-content {
-    padding-left: 0;
-    padding-right: 0;
-}
 .container-fluid.center {
     text-align: center;
 }
