@@ -753,12 +753,12 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
           background-color: #7a86b7;
           width: 40px;
           height: 40px;
-          display: block;
+          display: inline-block;
           line-height: 40px;
           text-align: center;
           border-radius: 50%;
-          position: absolute;
           margin-left: -50px;
+          margin-right: 10px;
       }
   }
 }
