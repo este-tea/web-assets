@@ -147,12 +147,12 @@
 <!-- START number input spinner -->
 <div class="form-sub-group">
     <label for="{spinnerID}" class="sr-only">Number of {Product Selection ZZ Display Name}'s needed</label>
-    <input id="H={spinnerID}" class="form-control" type="text" value="" name="{spinnerID}">
+    <input id="{spinnerID}" class="form-control" type="text" value="" name="{spinnerID}">
 </div>
 <!-- END  number input spinner -->
 {code}
 ###### Javascript
-####### Creates a mobile, touch-friendly number spinner input (http://www.virtuosoft.eu/code/bootstrap-touchspin/)
+####### Creates a mobile, touch-friendly number spinner input ([http://www.virtuosoft.eu/code/bootstrap-touchspin/])
 ####### Every number spinner input needs to be initiated via javascript
 {code}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/3.1.2/jquery.bootstrap-touchspin.min.js"></script>
@@ -261,17 +261,34 @@ $(function(){
 </div>
 <!-- END Dual Product SubList AA -->
 {code}
-### Combo Product List: ex. Plus Packs (note: not needed yet for TDS Cable)
-{code}
-
-{code}
+### Combo Product List: ex. Plus Packs  or DISH Premium Channels
 #### Bulk Priced Product: Plus Pack 2 (The “bulk” price we’d use if the customer selected 2 total items; in our case below, both Identity Protection and Hacker Alert would be selected). NOTE: For plus packs, the "bulk price" are the prices that display on the left side of the form (See [http://fdevp.tdstelecom.com/shop/internet-services/safety-security-services/plus-packs.html]; using 1311 Middleton St Middleton, WI will let you see the details)
-{code}
-
-{code}
 #### Combo Product Selection: ex. Identity Protection
 {code}
+<!-- START Combo Product List Item -->
+<div class="form-group pkg-product-card">
+    <div class="tds-divider-line"></div>
+    <div class="radio pkg-builder-listoption-wrap">
+        <label class="pkg-builder-label" for="cat1-prodlist1-item1">
+            <input id="cat1-prodlist1-item1" class="pkg-builder-radio" type="radio" name="cat1-prodlist1" value="">
+            <span class="tds-radio-btn"></span>
+            <span class="h4 prod-name">Display Name: ex. Premium Wifi</span>
+        </label>
+        <div class="product-content">
+            <p class="prod-description">Description. Epicurei accusamus consequat ut qui, hinc etiam persecuti his ad, fugit suscipit lucilius ex nec. <a href="" target="_blank" aria-label="">More Details.</a></p>
 
+            {{--INSERT Number Input spinner HERE IF NEEDED--}}
+
+        </div>
+        <div class="product-price">
+            <p class="price-text price-base" data-price="">${$XX.XX/mo.} <span class="term">${for 24 months}</span></p>
+        </div>
+        <div id="" class="tds-alert tds-alert-critical">
+            Error message: A selection from this product list is required.
+        </div>
+    </div>
+</div>
+<!-- END Combo Product List Item -->
 {code}
 ## Summary Sidebar
 ### Front end logic:
@@ -349,19 +366,19 @@ $(function(){
                     <p class="sel-head-text">One-time costs</p>
                     <p class="sel-price-text">$49.95</p>
                 </div>
-                <td class="subtotal-column" id="one-time-credits" style="display: table-cell;">
-                    <div class="subtotal-column-content">
-                        <p class="sel-head-text">One-time credits</p>
-                        <p class="sel-price-text">($49.95)</p>
-                    </div>
-                </td>
-                <td class="subtotal-column" id="monthly-charges">
-                    <div class="subtotal-column-content">
-                        <p class="sel-head-text sel-head-text-mth">Monthly Charges</p>
-                        <p class="sel-price-text sel-price-text-mth">$221.88</p>
-                        <p class="subtotal-fees">Plus Taxes and Fees</p>
-                    </div>
-                </td>
+            </td>
+            <td class="subtotal-column" id="one-time-credits" style="display: table-cell;">
+                <div class="subtotal-column-content">
+                    <p class="sel-head-text">One-time credits</p>
+                    <p class="sel-price-text">($49.95)</p>
+                </div>
+            </td>
+            <td class="subtotal-column" id="monthly-charges">
+                <div class="subtotal-column-content">
+                    <p class="sel-head-text sel-head-text-mth">Monthly Charges</p>
+                    <p class="sel-price-text sel-price-text-mth">$221.88</p>
+                    <p class="subtotal-fees">Plus Taxes and Fees</p>
+                </div>
             </td>
         </tr>
     </tbody>
