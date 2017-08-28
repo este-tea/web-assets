@@ -1,0 +1,121 @@
+/* bend-header-nav-utility
+==========================================*/
+.navbar.bbb-navbar-utility {
+  margin-bottom: 0;
+  z-index: 1001;
+  background: #a7a6a3;
+  background: rgba(88, 88, 82, .35);
+  color: #fff;
+  font-size: 12px;
+  border: 0;
+}
+
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > button {
+  background-color: transparent;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: initial;
+}
+
+.navbar.bbb-navbar-utility a > .ss-icon,
+.navbar.bbb-navbar-utility button > .ss-icon {
+  padding-right: 0.25em;
+}
+
+.business .navbar.bbb-navbar-utility {
+  background: #262626;
+  background: rgba(0, 0, 0, .5);
+}
+
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.residential:focus,
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.residential:hover,
+.navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.residential:focus,
+.navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.residential:hover {
+  color: white;
+  background: #f70;
+}
+
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a.business:focus,
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a.business:hover,
+.navbar-inverse.bbb-navbar-utility .navbar-nav > li > a.business:focus,
+.navbar-inverse.bbb-navbar-utility .navbar-nav > li > a.business:hover {
+  color: white;
+  background: #f70;
+}
+
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a:focus,
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a:hover,
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > button:focus,
+.navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > button:hover,
+.navbar-inverse.bbb-navbar-utility .navbar-nav > li > a:focus,
+.navbar-inverse.bbb-navbar-utility .navbar-nav > li > a:hover,
+.top-bar .L1-nav.bend-nav-lg > ul > li:hover > a {
+  background-color: #47473d;
+}
+@media (min-width:768px) {
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a,
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > button,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li > a {
+    color: #fff;
+    border-top: 3px solid transparent;
+    position: relative;
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    text-decoration: none;
+    height: 44px;
+  }
+
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a.residential,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li > a.residential {
+    text-transform: uppercase;
+    background: #e1e1e1 url("../../bend-assets/images/checkers-light.gif") left top repeat;
+    color: #585852;
+  }
+
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a.business,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li > a.business {
+    text-transform: uppercase;
+    background: #47473d url("../../bend-assets/images/checkers-dark.gif") left top repeat;
+  }
+
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.business,
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.residential,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.business,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.residential {
+    border-top: 3px solid #f70;
+  }
+
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.business:before,
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.residential:before,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.business:before,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.residential:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin: 0 0 0 -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #f70;
+  }
+
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.residential,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.residential {
+    background: #e1e1e1 url("../../bend-assets/images/checkers-light.gif") left top repeat;
+    color: #585852;
+    border-top: 3px solid #f70;
+  }
+
+  .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.business,
+  .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.business {
+    background: #47473d url("../../bend-assets/images/checkers-dark.gif") left top repeat;
+    color: #fff;
+  }
+}

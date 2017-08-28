@@ -1,0 +1,174 @@
+/* bend-bbb-packages
+==========================================*/
+.panel.bbb-packages .panel-heading {
+    background: #fff;
+    font-size: 21px;
+    font-family: "Museo Slab W01_300", Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    line-height: 1.1;
+    position: relative;
+    text-align: left
+}
+.panel.bbb-packages .panel-heading:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #64bfd3
+}
+.panel.bbb-packages .list-group {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900
+}
+.panel.bbb-packages .list-group-item {
+    font-size: 12px
+}
+.panel.bbb-packages .list-group-item:first-child {
+    padding-top: 20px
+}
+.panel.bbb-packages .offer-type {
+    font-weight: 500;
+    font-size: 14px
+}
+.panel.bbb-packages .offer-type sup {
+    line-height: 0
+}
+.panel.bbb-packages .price {
+    line-height: 1;
+    padding: 0
+}
+.panel.bbb-packages .price .currency {
+    font-weight: 500;
+    font-size: 40px;
+    position: relative;
+    top: -25px;
+    font-weight: 500
+}
+.panel.bbb-packages .price .integer {
+    font-size: 77px;
+    letter-spacing: -4px
+}
+.panel.bbb-packages .price .meta-sep {
+    display: none
+}
+.panel.bbb-packages .price .decimal {
+    font-size: 44px;
+    position: relative;
+    top: -26px;
+    left: 3px
+}
+.panel.bbb-packages .includes {
+    padding-top: 0;
+    padding-bottom: 0
+}
+.panel.bbb-packages .includes .includes {
+    font-weight: 700;
+    display: block;
+    text-align: right;
+    width: 45%;
+    line-height: 1
+}
+.panel.bbb-packages .includes .numeral {
+    font-size: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    text-align: right;
+    font-weight: 900;
+}
+.panel.bbb-packages .includes .channels {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+    width: 45%;
+    text-align: left;
+    line-height: 1.1
+}
+.panel.bbb-packages .includes .channels .meta-sep {
+    display: none
+}
+.panel.bbb-packages .btn-holder {
+    padding-top: 0
+}
+.panel.bbb-packages .features {
+    border-top: 1px solid #fff;
+    border-top: 1px solid rgba(255, 255, 255, .5)
+}
+.panel.bbb-packages .features .heading {
+    font-size: 28px;
+    display: inline-block;
+    line-height: 1
+}
+.panel.bbb-packages .call-to-action {
+    border-top: 1px solid #fff;
+    background: #5a5a4d;
+    font-weight: 700;
+    padding: 5px 0
+}
+.panel.bbb-packages .call-to-action strong {
+    font-weight: 900
+}
+.panel.bbb-packages .call-to-action a {
+    color: #fff
+}
+.panel.bbb-packages .meta-sep {
+    font-weight: 500;
+    opacity: 1
+}
+.panel.bbb-packages .btn {
+    border: 0;
+    background: #fff
+}
+.panel.bbb-packages .price .meta-sep {
+    padding: 0
+}
+.bbb-packages.panel-primary .panel-heading {
+    color: #f70
+}
+.bbb-packages.panel-primary .panel-heading:after {
+    border-bottom: 6px solid #f70
+}
+.bbb-packages.panel-primary .btn {
+    color: #f70
+}
+.bbb-packages.panel-secondary .panel-heading {
+    color: #64bfd3
+}
+.bbb-packages.panel-secondary .panel-heading:after {
+    border-bottom: 6px solid #64bfd3
+}
+.bbb-packages.panel-secondary .btn {
+    color: #64bfd3
+}
+.bbb-packages.panel-tertiary .panel-heading {
+    color: #8dc73f
+}
+.bbb-packages.panel-tertiary .panel-heading:after {
+    border-bottom: 6px solid #8dc73f
+}
+.bbb-packages.panel-tertiary .btn {
+    color: #8dc73f
+}
+.bbb-packages.panel-quartenary .panel-heading {
+    color: #fc0
+}
+.bbb-packages.panel-quartenary .panel-heading:after {
+    border-bottom: 6px solid #fc0
+}
+.bbb-packages.panel-quartenary .btn {
+    color: #fc0
+}
+.bbb-packages.panel-quincenary .panel-heading {
+    color: #1c76b4
+}
+.bbb-packages.panel-quincenary .panel-heading:after {
+    border-bottom: 6px solid #1c76b4
+}
+.bbb-packages.panel-quincenary .btn {
+    color: #1c76b4
+}

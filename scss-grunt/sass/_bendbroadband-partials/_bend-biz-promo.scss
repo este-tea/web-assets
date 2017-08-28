@@ -1,0 +1,46 @@
+/* bend-biz-promo
+==========================================*/
+.business .promo .panel-vault {
+    background: #8dc73f url(../images/bg-vault.png) bottom right no-repeat;
+    -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, .5)
+}
+.business .promo .panel-vault .heading {
+    text-transform: uppercase;
+    font-family: "MuseoSans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+    letter-spacing: -2px
+}
+.lt-ie9 .business .promo .panel-vault .heading {
+    font-size: 32px
+}
+.business .promo .panel-vault .heading small {
+    color: #fff;
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 14px
+}
+.business .promo .panel-vault p {
+    font-size: 14px
+}
+@media (min-width:992px) {
+    .business .promo .panel-vault {
+        margin-bottom: 0
+    }
+    .business .promo .panel-vault .heading {
+        width: 100%
+    }
+    .business .promo .panel-vault .heading small {
+        display: block;
+        text-align: right;
+        margin-top: -3px
+    }
+}
+@media (max-width:480px) {
+    .business .promo .panel-vault .heading small {
+        display: block;
+        margin-top: -3px
+    }
+}

@@ -1,0 +1,77 @@
+/* bend-footer
+==========================================*/
+footer {
+    background: #518eaa;
+    border-top: 3px solid rgba(0, 0, 0, .2);
+    padding-top: 20px;
+    color: #e6e6e6;
+    font-size: 12px
+}
+@media (min-width:992px) {
+    footer.residential {
+        background: #518eaa url(../../bend-assets/images/bg-footer-residential.jpg) center bottom no-repeat
+    }
+    footer.business {
+        background: #518eaa url(../images/bg-footer-business.jpg) center bottom no-repeat
+    }
+}
+@media (min-width: 768px) {
+    footer.residential {
+        background-size: cover;
+    }
+}
+footer a {
+    color: #e6e6e6
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover, footer a:focus {
+    color: #fff
+}
+footer p {
+    color: white;
+}
+footer p.address {
+    font-size: 18px;
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    footer p.address {
+        margin-bottom: 0
+    }
+}
+footer .superfoot {
+    margin-bottom: 20px
+}
+footer .superfoot .heading {
+    text-transform: uppercase
+}
+small.top {
+    font-size: 50%;
+    padding-left: 1em
+}
+small.top a {
+    text-decoration: none
+}
+footer .ss-icon {
+    position: relative;
+    top: 2px
+}
+footer p.copyright {
+    padding-bottom: 20px
+}
+footer p.copyright {
+    font-size: 13px;
+    margin-top: 0;
+    font-weight: 700;
+}
+footer .superfoot ul.list-unstyled {
+    margin-bottom: 20px;
+}
+footer.residential .superfoot .list-unstyled li {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 0;
+    line-height: 18px;
+}

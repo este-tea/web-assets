@@ -1,0 +1,41 @@
+/* bend-hottopics
+==========================================*/
+.hottopics {
+    background: #1f1f1f;
+    color: #fff
+}
+.hottopics .hottopic-main h1.heading {
+    margin-top: 30px
+}
+.hottopics .hottopic-sub {
+    padding-top: 28px
+}
+.hottopics .hottopic-sub ul.list-group {
+    margin-bottom: 10px
+}
+.hottopics .hottopic-sub li.list-group-item {
+    background: 0;
+    border-color: #626255;
+    padding: 5px 0;
+    margin-right: 10px;
+    border-left: 0;
+    border-right: 0;
+    font-size: 12px;
+    line-height: 1.5
+}
+.hottopics .hottopic-sub li.list-group-item:first-child {
+    border-top: 0
+}
+.hottopics .hottopic-sub li.list-group-item:last-child {
+    border-bottom: 0
+}
+@media (min-width:992px) {
+    .hottopics.sidebar {
+        background-image: -webkit-linear-gradient(90deg, #1f1f1f 50%, #5a5a4d 50%);
+        background-image: linear-gradient(90deg, #1f1f1f 50%, #5a5a4d 50%)
+    }
+    .hottopics.sidebar>.container>.row {
+        background-image: -webkit-linear-gradient(90deg, #1f1f1f 75%, #5a5a4d 75%);
+        background-image: linear-gradient(90deg, #1f1f1f 75%, #5a5a4d 75%)
+    }
+}

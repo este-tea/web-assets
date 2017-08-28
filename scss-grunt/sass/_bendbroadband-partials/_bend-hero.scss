@@ -1,0 +1,38 @@
+/* bend-hero
+==========================================*/
+.bbb-hero {
+    background: #f8f8f8
+}
+.bbb-hero h1 {
+    color: #f70
+}
+.bbb-hero .text-holder {
+    padding-top: 20px
+}
+@media (min-width:992px) {
+    .bbb-hero .text-holder {
+        padding-top: 50px;
+        padding-bottom: 30px
+    }
+}
+.bbb-hero .image-holder img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto
+}
+.bbb-hero.business {
+    padding-top: 0;
+    background: #585852;
+    color: #fff
+}
+.bbb-hero.business .mega-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto
+}
+@media (max-width:991px) {
+    .bbb-hero.business .mega-container {
+        background: none!important
+    }
+}

@@ -1,0 +1,112 @@
+/* bend-errors-alerts
+==========================================*/
+.has-error .form-control {
+    border-color: $bend-red;
+}
+.has-error .form-control:focus {
+    border-color: $bend-dk-blue;
+}
+
+.tds-card .alert {
+    margin-bottom: 0;
+}
+.alert .h4 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+.alert .h4 .bold {
+    font-weight: 600;
+}
+.alert ul.alert-list {
+    margin-left: 12px;
+}
+
+.alert ul.alert-list li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+.alert ul.alert-list li:before {
+    background: #fff;
+    width: 6px;
+    height: 6px;
+    margin-top: 7px;
+    content: "";
+    position: relative;
+    top: 0;
+    display: block;
+    float: left;
+    margin-left: -12px;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 1em 0;
+    padding: 14px;
+    padding-left: 2.75em;
+}
+.alert a {
+    color: black;
+}
+.alert a:hover, .alert a:focus {
+    text-decoration:none;
+    background: white;
+}
+.alert-success {
+    background-color: lighten($bend-green, 20);
+    background-image: url('../images/ui/icon_alert-success-bend.svg');
+    background-size: 1.25em 1.25em;
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+    border-radius: 4px;
+}
+.alert-danger {
+    background-color: $bend-red;
+    background-image: url('../images/ui/icon_alert-error-bend.svg');
+    background-size: 1.25em 1.25em;
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+    border-radius: 4px;
+}
+.alert-info {
+    background-color: lighten($bend-lt-blue, 10);
+    background-image: url('../images/ui/icon_alert-information-bend.svg');
+    background-size: 1.25em 1.25em;
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+    border-radius: 4px;
+}
+.alert-loading {
+    color: #555;
+    background-color: lighten($bend-lt-blue, 10);
+    background-image: url('../images/ui/loading-icon.gif');
+    background-size: 1.25em 1.25em;
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+    border-radius: 4px;
+}
+.alert-warning {
+    color: #555;
+    background-color: lighten($bend-yellow, 15);
+    background-image: url('../images/ui/icon_alert-warning-bend.svg');
+    background-size: 1.45em 1.45em;
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+    border-radius: 4px;
+}
+
+.alert-success.bend-usage-status {
+    background-image: url('../images/ui/icon_alert-success-bend-green.svg');
+}
+.alert-warning.bend-usage-status {
+    background-image: url('../images/ui/icon_alert-warning-bend-orange.svg');
+}
+.alert-danger.bend-usage-status {
+    background-image: url('../images/ui/icon_alert-error-bend-red.svg');
+}

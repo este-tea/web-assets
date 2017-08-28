@@ -1,0 +1,53 @@
+/* bend-lists
+==========================================*/
+.tds-card ul.bullets li {
+    font-size: 14px;
+}
+
+.tds-card ul.bullets {
+    margin-top: .5em;
+}
+/* #RIGHT COLUMN/MAIN CONTENT BULLETS
+--------------------------------- */
+
+.column-right > ul,
+ul.bullets {
+    margin: 1em 0 1em 0;
+    color: #555555;
+}
+
+/* first level */
+
+.column-right > ul,
+ul.bullets {
+    margin: 1em 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    list-style-type: none;
+}
+.column-right > ul li,
+ul.bullets li {
+    margin: 0 0 .25em 1em;
+    padding-left: 1em;
+    background: url('../images/ui/square-orange.svg') no-repeat 0px .5em;
+    background-size: .5em .5em;
+    font-size: 16px;
+}
+
+/* second level */
+
+.column-right > ul ul,
+ul.bullets ul {
+    margin: .5em 0 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+.column-right > ul li li,
+ul.bullets li li {
+    margin: 1em;
+    padding-left: 1em;
+    margin-bottom: .5em;
+    background: url('../images/ui/circle-gray.svg') no-repeat 0px .5em;
+    background-size: .5em .5em;
+}

@@ -1,0 +1,111 @@
+/* bend-header-nav-secondary
+==========================================*/
+.navbar.bbb-navbar-secondary {
+    font-size: 16px;
+    font-family: "Museo Slab W01_300", Georgia, "Times New Roman", Times, serif;
+    line-height: 1.1;
+    background: #f70;
+    border-top: 3px solid #d66400;
+    border-bottom: 0;
+    margin-bottom: 0
+}
+.navbar.bbb-navbar-secondary .navbar-nav {
+    margin-top: 0
+}
+.navbar.bbb-navbar-secondary .navbar-nav>li>a {
+    color: #fff
+}
+.navbar.bbb-navbar-secondary .navbar-nav>li>a:hover, .navbar.bbb-navbar-secondary .navbar-nav>li>a:focus {
+    background: #626255
+}
+@media (min-width:768px) {
+    .navbar.bbb-navbar-secondary .navbar-nav>li>a:hover, .navbar.bbb-navbar-secondary .navbar-nav>li>a:focus {
+        margin-top: -3px;
+        border-top: 3px solid #47473d
+    }
+    .navbar.bbb-navbar-secondary .navbar-nav>li>a:hover:before, .navbar.bbb-navbar-secondary .navbar-nav>li>a:focus:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin: 0 0 0 -6px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #e1e1e1
+    }
+}
+.navbar.bbb-navbar-secondary .navbar-nav>li.active>a {
+    color: #fff
+}
+.navbar.bbb-navbar-secondary .navbar-nav>li.active>a, .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:hover, .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:focus {
+    background: #47473d
+}
+@media (min-width:768px) {
+    .navbar.bbb-navbar-secondary .navbar-nav>li.active>a, .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:hover, .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:focus {
+        margin-top: -3px;
+        border-top: 3px solid #2c2c25
+    }
+    .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:before, .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:hover:before, .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:focus:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin: 0 0 0 -6px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #e1e1e1
+    }
+}
+.business .navbar.bbb-navbar-secondary .navbar-nav>li>a {
+    padding: 10px
+}
+.business .navbar.bbb-navbar-secondary .navbar-nav>li>a:hover, .business .navbar.bbb-navbar-secondary .navbar-nav>li>a:focus {
+    color: #585852;
+    background: #e6e6e6
+}
+@media (min-width:768px) {
+    .business .navbar.bbb-navbar-secondary .navbar-nav>li>a:hover, .business .navbar.bbb-navbar-secondary .navbar-nav>li>a:focus {
+        margin-top: -3px;
+        border-top: 3px solid #ccc
+    }
+    .business .navbar.bbb-navbar-secondary .navbar-nav>li>a:hover:before, .business .navbar.bbb-navbar-secondary .navbar-nav>li>a:focus:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin: 0 0 0 -6px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #47473d
+    }
+}
+.business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a {
+    color: #585852
+}
+.business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a, .business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:hover, .business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:focus {
+    background: #fff
+}
+@media (min-width:768px) {
+    .business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a, .business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:hover, .business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:focus {
+        margin-top: -3px;
+        border-top: 3px solid #e6e6e6
+    }
+    .business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:before, .business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:hover:before, .business .navbar.bbb-navbar-secondary .navbar-nav>li.active>a:focus:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin: 0 0 0 -6px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #47473d
+    }
+}

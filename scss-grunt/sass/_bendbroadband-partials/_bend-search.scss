@@ -1,0 +1,120 @@
+/* bend-search
+==========================================*/
+@media (min-width:768px) {
+    .navbar.bbb-navbar-utility .navbar-form,
+    .bend-searchbar > .topSearch > form {
+        width: 220px;
+        margin-top:5px;
+    }
+}
+.navbar.bbb-navbar-primary .navbar-form {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.navbar.bbb-navbar-primary .navbar-form .form-group {
+    margin-bottom: 0;
+}
+.form-control.search,
+.bend-searchbar > .topSearch > form .tds-searchbar-input {
+    height: 34px;
+    border: 0;
+    -webkit-appearance: none;
+    width: 80%;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 12px;
+    border-radius: 0;
+}
+@media (min-width:768px) {
+    .navbar .form-control.search,
+    .bend-searchbar > .topSearch > form .tds-searchbar-input {
+        color: #fff;
+        border-left: 1px solid #ccc;
+        background: 0;
+    }
+    .bend-searchbar > .topSearch > form .tds-searchbar-input::-webkit-input-placeholder {
+        color: #fff;
+        font-weight: 500;
+    }
+    .bend-searchbar > .topSearch > form .tds-searchbar-input:-moz-placeholder {
+        color: #fff;
+        font-weight: 500;
+    }
+    .bend-searchbar > .topSearch > form .tds-searchbar-input::-moz-placeholder {
+        color: #fff;
+        font-weight: 500;
+    }
+    .bend-searchbar > .topSearch > form .tds-searchbar-input:-ms-input-placeholder {
+        color: #fff;
+        font-weight: 500;
+    }
+}
+.panel.sidebar .form-control.search {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.btn-search,
+.bend-searchbar > .topSearch > form .tds-searchbar-button {
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #fff;
+    width: 20%;
+    text-align: right;
+    -webkit-appearance: none;
+    vertical-align: top;
+    float:right;
+    height: 34px;
+    text-align: center;
+     height: 44px;
+     background-image: linear-gradient(transparent,transparent),url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_search-white.svg);
+     background-size: 16px;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: absolute;
+     background-color: transparent;
+     right: 0;
+     top: 0;
+     text-indent: -9999em;
+}
+@media (min-width:768px) {
+    .navbar .btn-search,
+    .bend-searchbar > .topSearch > form .tds-searchbar-button {
+        border-radius: 0;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.panel.sidebar .btn-search {
+    color: #f70;
+}
+.mobile-search .tds-searchbar-input {
+    float: left;
+}
+
+.mobile-search .tds-searchbar-button {
+    float: right;
+    width: 20%;
+    max-width: 44px;
+    margin: 0;
+    height: 44px;
+    position: absolute;
+    right: 16px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border: solid 1px #aaa;
+    border-left: 0;
+}
+#mobile-searchbar .tds-searchbar-input {
+    line-height: 44px;
+    height: 44px\9;
+    height: 44px;
+    border: solid 1px #bbb;
+}
+.topSearch.mobile-search {
+    margin-bottom: 16px;
+}

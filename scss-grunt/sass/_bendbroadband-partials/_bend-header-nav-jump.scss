@@ -1,0 +1,31 @@
+/* bend-header-nav-jump
+==========================================*/
+.navbar.bbb-navbar-jump {
+    background: #585852;
+    border: 0;
+    font-family: "Museo Slab W01_300", Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.lt-ie9 .navbar.bbb-navbar-jump {
+    overflow: hidden
+}
+.navbar.bbb-navbar-jump .navbar-text {
+    color: #fff
+}
+.navbar.bbb-navbar-jump .navbar-nav>li>a {
+    color: #fff
+}
+.navbar.bbb-navbar-jump.affix {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    -webkit-transform: scale3d(1, 1, 1)
+}
+.navbar.bbb-navbar-jump.affix-bottom {
+    width: 100%;
+    position: absolute;
+    top: auto;
+    bottom: 274px
+}

@@ -1,0 +1,46 @@
+/* bend-carousel
+==========================================*/
+.carousel-residential {
+    background: #333
+}
+.carousel-business {
+    background: #0f0f0f
+}
+.carousel-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto
+}
+.carousel-inner img {
+    height: auto!important
+}
+.carousel-caption h1 {
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+.carousel-caption h1, .carousel-caption .h1, .carousel-caption h2, .carousel-caption .h2, .carousel-caption h3, .carousel-caption .h3, .carousel-caption h4, .carousel-caption .h4, .carousel-caption h5, .carousel-caption .h5 {
+    font-family: "WriteHand W01", "Marker Felt", "Comic Sans", cursive;
+    text-shadow: none
+}
+.carousel-indicators li {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 2px;
+    text-indent: 0;
+    background-color: #fff;
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid transparent;
+    background: #47473d;
+    background: rgba(255, 255, 255, .2)
+}
+.carousel-indicators .active {
+    margin: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #fff;
+    background: 0
+}

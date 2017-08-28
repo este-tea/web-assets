@@ -1,0 +1,25 @@
+/* bend-product-panes
+==========================================*/
+
+.product-panes {
+    z-index: 1000
+}
+.product-panes .tab-content h1 {
+    color: #64bfd3
+}
+.product-panes .tab-content .tab-pane {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+@media (max-width:991px) {
+    .product-panes .tab-content .tab-pane {
+        background: #fff!important
+    }
+}
+@media (min-width:992px) {
+    .product-panes .tab-content .tab-pane {
+        padding-top: 75px;
+        padding-bottom: 0;
+        height: 460px
+    }
+}

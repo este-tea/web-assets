@@ -1,0 +1,28 @@
+/* bend-sidebar
+==========================================*/
+.panel.sidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #5a5a4d;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.75
+}
+.panel.sidebar .panel-body:first-child {
+    margin-top: 0
+}
+.panel.sidebar .panel-body:last-child {
+    margin-bottom: 0
+}
+.panel.sidebar .panel-body+hr {
+    margin: 0;
+    border-top: #767665 1px solid
+}
+@media (min-width:992px) {
+    .panel.sidebar .heading {
+        width: 75%
+    }
+}
+.panel.sidebar.business {
+    background: #1f1f1f
+}

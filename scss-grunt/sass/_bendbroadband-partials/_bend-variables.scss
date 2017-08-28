@@ -1,0 +1,97 @@
+//TOC
+// ====================================
+// BRAND COLOR PALETTE
+// OTHER UI COLORS
+// ALERT/STATUS MESSAGES
+// IMAGES
+// TYPOGRAPHY
+// INPUT STYLES
+// MOBILE BREAKPOINTS GLOBAL OVERRIDES
+// LAYOUT
+
+// BRAND COLOR PALETTE
+// ====================================
+.brand-primary {
+    color: #f70;
+}
+.brand-primary a {
+    color: #f70;
+}
+.brand-secondary {
+    color: #64bfd3;
+}
+.brand-secondary a {
+    color: #64bfd3;
+}
+.brand-tertiary {
+    color: #8dc73f;
+}
+.brand-tertiary a {
+    color: #8dc73f;
+}
+.brand-quartenary {
+    color: #fc0;
+}
+.brand-quartenary a {
+    color: #fc0;
+}
+.brand-quincenary {
+    color: #1c76b4;
+}
+.brand-quincenary a {
+    color: #1c76b4;
+}
+$bend-orange: #f70;
+$bend-green: #8dc73f;
+$bend-yellow: #fc0;
+$bend-lt-blue: #64bfd3;
+$bend-dk-blue: #1c76b4;
+$bend-red: #FF4D50;
+
+$bend-orange-80: lighten($bend-orange, 10);
+$bend-gray: #585852;
+
+// OTHER UI COLORS
+// ====================================
+// body text color
+$text-color: $bend-gray;
+// radius reset
+$border-radius-base: 0 !important;
+// xrms box shadow setting
+$box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+//** `.form-group` margin
+$form-group-margin-bottom: 20px;
+
+// ALERT/STATUS MESSAGES
+// ====================================---
+// *informational
+$state-info-bg: $tds-lt-bluegray;
+$state-info-text: $tds-dkr-gray;
+
+// *loading or status
+$tds-status: $tds-lt-blue-80;
+$tds-status-bg: #d6efff;
+
+// *warning yellow
+$tds-warning-yellow: #FFCE00;
+$state-warning-bg: #FFF8D8;
+
+// *error red
+$tds-red: #CB1D1D;
+$tds-critical-bg: #ffecec;
+
+// *success green
+$tds-success: $tds-green-100;
+$tds-success-bg: #E5F0D4;
+
+// bootstrap alert
+$state-danger-bg: $tds-critical-bg;
+
+// TYPOGRAPHY
+// ====================================
+
+// font families
+$bend-font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
+$bend-font-body: "Museo Sans W01", Helvetica Neue, Helvetica, Arial, sans-serif;
+$tds-font-family: $bend-font-family;
+$tds-font-body: $bend-font-body;

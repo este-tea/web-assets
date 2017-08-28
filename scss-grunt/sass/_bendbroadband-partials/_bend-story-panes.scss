@@ -1,0 +1,47 @@
+/* bend-product-panes
+==========================================*/
+
+.story-panes .tab-content h1 {
+    color: #64bfd3
+}
+.story-panes .tab-content .tab-pane {
+    color: #fff;
+    background: #47473d;
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+@media (max-width:991px) {
+    .story-panes .tab-content .tab-pane {
+        background: #47473d!important
+    }
+}
+@media (min-width:768px) {
+    .story-panes .tab-content .tab-pane {
+        padding-top: 75px;
+        padding-bottom: 0;
+        height: 460px
+    }
+}
+@media (max-width:480px) {
+    .story-panes .tab-content .btn, .casestudy .btn {
+        display: block;
+        max-width: 200px
+    }
+    .story-panes .tab-content .btn+.btn, .casestudy .btn+.btn {
+        margin-top: 5px
+    }
+}
+@media (max-width:991px) {
+    .casestudy .megacontainer {
+        background: #47473d!important
+    }
+}
+
+.content.content-casestudy {
+    border: 0;
+    background-color: #0f0f0f;
+    color: #fff
+}
+.content.content-casestudy h1, .content.content-casestudy .h1, .content.content-casestudy h2, .content.content-casestudy .h2, .content.content-casestudy h3, .content.content-casestudy .h3, .content.content-casestudy h4, .content.content-casestudy .h4, .content.content-casestudy h5, .content.content-casestudy .h5, .content.content-casestudy h6, .content.content-casestudy .h6, .content.content-casestudy a {
+    color: #64bfd3
+}

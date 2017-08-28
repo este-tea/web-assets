@@ -1,0 +1,264 @@
+/* bend-header-nav-mobile
+==========================================*/
+
+// #logo
+// -------------------------------
+.bend-nav-mobile .small-nav-logo {
+  float: left;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+  background-position: center left;
+	height: 26px;
+	width: 305px;
+	background-image: url("../../bend-assets/images/logo-bend-horizontal.svg");
+}
+@media (max-width: 600px) {
+	.bend-nav-mobile .small-nav-logo {
+    background-size: auto 18px;
+    width: 215px;
+	}
+}
+@media (max-width: 440px) {
+	.bend-nav-mobile .small-nav-logo {
+    background-image: url("../../bend-assets/images/logo-bend-vertical.svg");
+    width: 94px;
+    height: 30px;
+    background-size: auto 30px;
+	}
+}
+#mobile-nav-container {
+  padding: 16px 16px 0 16px;
+  min-width: 304px;
+	background-color: transparent;
+}
+
+// #menu dropdown styling
+// -------------------------------
+#mobile-menu {
+  overflow: auto;
+  display: none;
+  min-width: 300px;
+  z-index: 100;
+  position: relative;
+  top: -2px;
+}
+#mobile-menu ul {
+  position: relative;
+  z-index: 20;
+  // remove the bullets next to list items:
+  list-style: none;
+  // get rid of any default or inherited margins and padding:
+  margin: 0;
+  padding: 0;
+  font-family: $bend-font-body;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.375em;
+  background: #47473d url(../../bend-assets/images/checkers-dark.gif) left top repeat;
+}
+#mobile-menu ul li:hover {
+  background-color: $bend-orange;
+}
+#mobile-menu ul ul li:hover {
+  background-color: darken($bend-orange,15%);
+}
+#mobile-menu ul li a {
+  display: block;
+  text-decoration: none;
+  margin: 0 18px;
+  // left and right padding
+  padding: 10px 0;
+  color: white;
+}
+#mobile-menu ul li li a {
+  padding-left: 1.2em;
+}
+#mobile-menu ul li li:last-child a {
+}
+// Link on hover
+#mobile-menu ul li a:hover,
+#mobile-menu ul li:hover > a {
+  color: white;
+}
+#mobile-menu ul li:hover > a {
+  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.png);
+  background-image: linear-gradient(transparent, transparent), url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.svg);
+  background-size: 16px 11px;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+#mobile-menu ul li a:hover {
+  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png);
+  background-image: linear-gradient(transparent, transparent), url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg);
+  background-size: 11px 16px;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+ul.mobile-header-nav {
+  margin: 0;
+  list-style-type: none;
+  text-align: right;
+}
+ul.mobile-header-nav li {
+  display: inline-block;
+  height: 30px;
+  margin: 0 0 0 14px;
+}
+
+// #BUTTONS
+// -------------------------------
+#btn-menu {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $bend-font-family;
+  font-weight: 400;
+  font-style: normal;
+  height: 28px;
+}
+.menu-normal {
+  border: solid 1px $bend-gray;
+  color: $bend-gray;
+  background-color: transparent;
+  padding: 16px;
+  &:hover, &:active {
+    border: solid 1px $bend-orange;
+    color: $tds-white;
+    background-color: $bend-orange;
+    cursor: pointer;
+  }
+}
+.menu-active {
+  border: solid 1px $bend-orange;
+  color: $tds-white;
+  background-color: $bend-orange;
+  padding: 16px;
+  margin-bottom: 0;
+  z-index: 250;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin: 0 0 0 -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid darken($bend-orange,10%);
+  }
+}
+.menu-normal, .menu-active {
+    padding: 8px;
+    top: -13px;
+    position: relative;
+    text-decoration: none;
+}
+.search-normal {
+  width: 30px;
+  height: 28px;
+  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search-gray-lgr.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 32px 32px;
+  background-size: 32px 32px;
+}
+.search-normal:hover {
+  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
+  background-color: $bend-orange;
+}
+.search-active {
+  width: 30px;
+  height: 28px;
+  background-color: $bend-orange;
+  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 32px 32px;
+  background-size: 32px 32px;
+}
+#btn-search, #btn-cart {
+  text-indent: -9999px;
+  position: relative;
+  top: -4px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: initial;
+}
+.icon_cart-empty {
+  width: 30px;
+  height: 28px;
+  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-cart-gray-lgr.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 32px 32px;
+  background-size: 32px 32px;
+}
+.icon_cart-empty:hover {
+  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
+  background-color: $bend-orange;
+}
+// request a quote button on the tds business site
+// called the "cta button" in the component dialog
+#mobile-nav-container .mobile-header-nav {
+  .btn-cta-wrap {
+    a#btn-cta.gallery-btn.tds-btn-orange {
+      font-size: 12px;
+      font-family: "ITC Avant Garde Gothic W01",Century Gothic,Arial;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+      padding: 8px 16px 0;
+      border: solid 2px darken( $bend-orange, 10% );
+      background-color: darken( $bend-orange, 10% );
+      &:after {
+          content: none;
+      }
+      &:hover, &:focus {
+        border: solid 2px $bend-orange;
+        color: white;
+        background-color: $bend-orange;
+      }
+    }
+  }
+}
+
+#mobile-menu ul li a span.gallery-btn.tds-btn-orange {
+  margin: 8px 0;
+  width: 100%;
+  display: inline-block;
+  &:after {
+    content: none;
+  }
+}
+@media (max-width: 430px) {
+    li.btn-cta-wrap {
+        display: none;
+    }
+}
+@media (min-width: 431px) {
+    #mobile-menu-dropdown li.mobile-cta-wrap {
+        display: none;
+    }
+}
+
+
+// #horizontal rules and lines
+// -------------------------------
+div.hr-gray {
+  border-bottom: solid 2px $tds-lt-gray;
+}
+div.hr-ltblue {
+  border-bottom: solid 2px darken($bend-orange,10%);
+}
+div.hr-mobile-tdsblue {
+  border-top: solid 4px darken($bend-orange,10%);
+  position: relative;
+}
+@media (max-width:768px) {
+  .bend-header {
+    border-bottom: none;
+  }
+}

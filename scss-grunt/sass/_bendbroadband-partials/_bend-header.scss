@@ -1,0 +1,330 @@
+/* bend-header
+==========================================*/
+.bend-header {
+    background: url(../../bend-assets/images/checkers-light.gif) left top repeat
+}
+.bend-header.business {
+    background: #47473d url(../../bend-assets/images/checkers-dark.gif) left top repeat
+}
+
+/* #BRANDING/LOGO
+--------------------------------- */
+a.navbar-brand {
+    padding: 7.5px 10px;
+    height: auto;
+}
+@media (min-width:768px) {
+    .business .navbar-brand {
+        padding-bottom: 2px;
+        padding-top: 0
+    }
+}
+.navbar-brand .bbb-logo {
+    width: 230px;
+    height: 18px;
+}
+@media (min-width:992px) {
+    .navbar-brand .bbb-logo {
+        width: 300px;
+        height: auto;
+    }
+}
+@media (max-width: 340px) {
+    .navbar-brand .bbb-logo {
+        width: 190px;
+    }
+}
+.business .navbar-brand .bbb-logo {
+    width: 210px
+}
+@media (min-width:768px) {
+    .business .navbar-brand .bbb-logo {
+        position: relative;
+        top: -2px
+    }
+}
+@media (min-width:992px) {
+    .business .navbar-brand .bbb-logo {
+        width: 300px
+    }
+}
+
+/* #NAVBAR
+--------------------------------- */
+.bend-nav-lg > ul > li {
+    position: relative;
+    display: block;
+}
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+.navbar {
+    position: relative;
+    min-height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.navbar-collapse {
+    max-height: 250px;
+    overflow-x: visible;
+}
+.navbar-nav > li, .bend-nav-lg > ul > li {
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    float: left;
+}
+.nav a {
+    text-decoration: none;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 10px 10px 10px;
+}
+ul.dropdown-menu {
+    border-radius: 0px;
+}
+.dropdown-menu>li>a {
+    text-decoration: none;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #ddd;
+}
+.dropdown-menu .divider {
+    background-color: #ccc;
+}
+.bend-nav-lg > ul>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+button.navbar-toggle {
+    margin: 4px;
+    width: inherit;
+}
+
+/* #MOBILE/SMALL FORM MENU
+--------------------------------- */
+
+#menu {
+    outline: none;
+    border: 1px solid #f70;
+    padding: 12px!important;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    color: #000;
+    text-decoration: none;
+    background-color: #ffffff;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 16px;
+}
+#menu:hover, #menu.menu-up {
+    background-color: #f70;
+    color: #ffffff;
+}
+#menu.menu-up:hover {
+    background-color: #d66400;
+    border-color: #c25a00;
+}
+button#menu.menu-up {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.menu-down:after {
+    padding-right: 1.5em;
+    content: "";
+    width: 12px;
+    height: 5px;
+    background-image: url('../images/ui/down-caret-orange.svg');
+    background-size: .75em .3125em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu-down:hover:after {
+    padding-right: 1.5em;
+    content: "";
+    width: 12px;
+    height: 5px;
+    background-image: url('../images/ui/down-caret-white.png');
+    background-image: linear-gradient(transparent, transparent), url('../images/ui/down-caret-white.svg');
+    background-size: .75em .3125em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu-up:after, .menu-up:hover:after {
+    padding-right: 1.5em;
+    content: "";
+    width: 12px;
+    height: 5px;
+    background-image: url('../images/ui/up-caret-white.png');
+    background-image: linear-gradient(transparent, transparent), url('../images/ui/up-caret-white.svg');
+    background-size: .75em .3125em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 40em) {
+    div#nav-menu {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: 0px;
+    }
+}
+
+/* #OUTDATED BROWSER/DISABLED JAVASCRIPT MESSAGE
+--------------------------------- */
+
+.msg-old-browser, .msg-js-disabled {
+  &.alert {
+      margin: 0;
+      border-radius: 0;
+      p {
+          margin-top: 0;
+      }
+  }
+}
+
+#close-icon {
+    position: absolute;
+    width: 1.125em;
+    height: 1.125em;
+    top: 1.125em;
+    right: 1.125em;
+    background-image: url('../images/ui/icon_x-white.png');
+    background-image: linear-gradient(transparent, transparent), url('../images/ui/icon_x-white.svg');
+    background-size: 1.125em 1.125em;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* #LEFT/TOP NAVIGATION MENU
+--------------------------------- */
+.menu-heading {
+    text-align: center;
+    padding: 8px;
+    background: #f70;
+    color: white;
+    font-weight: 600;
+}
+#nav-menu {
+    /*min-width: 100px;
+	max-width: 230px;*/
+    border-radius: 4px;
+    margin-top: 40px;
+    border: solid 1px #f70;
+    z-index: 25;
+}
+#nav-menu ul {
+    position: relative;
+    z-index: 20;
+    /* remove the dots next to list items: */
+    list-style: none;
+    /* get rid of any default or inherited margins and padding: */
+    margin: 0;
+    padding: 0;
+    /* styling: */
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.375em;
+}
+#nav-menu ul li:hover, #nav-menu ul li:focus, #nav-menu ul li:active {
+    background-color: #ccc;
+}
+#nav-menu ul li a {
+    display: block;
+    text-decoration: none;
+    margin: 0 14px;
+    padding: 12px 0;
+    padding-right: 22px;
+    color: #555;
+    text-align: left;
+    font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#nav-menu ul li:last-child a {
+    border-bottom: none;
+}
+#nav-menu ul li li a {
+    color: #f70;
+    padding-left: 1.5em;
+}
+@media (max-width: 640px) {
+    #nav-menu ul li a {
+        text-align: left;
+    }
+}
+#nav-menu ul li a:focus {
+    color: #f70;
+}
+#nav-menu ul li a:hover, #nav-menu ul li a:focus {
+    background-image: url('../images/ui/right-arrow-black.svg');
+    background-size: 11px 16px;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+.menu-active1 {
+    font-weight: 500;
+    font-style: normal;
+    background-image: url('../images/ui/right-arrow-black.svg');
+    background-size: 11px 16px;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+.menu-active2 {
+    background-color: #ccc!important;
+}
+/* skip-links
+==========================================*/
+// skip to nav and skip to content link in the header
+
+#skiptonav a,
+#skiptocontent a {
+    padding: 12px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    background: transparent;
+    -webkit-transition: top .3s ease-out, background .3s linear;
+    transition: top .3s ease-out, background .3s linear;
+    z-index: 1300;
+    text-decoration: underline;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#skiptonav a:focus,
+#skiptocontent a:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline: 0;
+    -webkit-transition: top .3s ease-in, background .3s linear;
+    transition: top .3s ease-in, background .3s linear;
+}
+
+#skiptonav a:focus {
+    background: $bend-orange;
+}
+#skiptocontent a:focus {
+    background: $bend-dk-blue;
+}
+
+#skiptonav a:after,
+#skiptocontent a:after {
+    content: '\e804';
+    font-family: "fontello";
+    font-size: 12px;
+    margin-left: 9px;
+    position:relative;
+    top:-1px;
+    display: inline-block;
+}

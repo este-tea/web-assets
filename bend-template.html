@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bend Template</title>
+
+  <!-- CSS -->
+  <link type="text/css" href="bend-assets/fonts/ss-webfonts/ss-standard.css" rel="Stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/7fe8cead-d1c9-4a2d-9a8f-4b29252c595c.css" />
+  <link rel="stylesheet" href="scss-grunt/css/bend-resi-styles.css">
+
+  <!-- Icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">-->
+  <link rel="shortcut icon" href="bend-assets/bend-favicon.ico">
+
+</head>
+
+<body>
+  <header class="bend-header">
+
+    <!-- START outdated browser message -->
+    <!--[if lt IE 9]>
+    <div class="msg-old-browser alert alert-info">
+      <div class="container">
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
+      </div>
+    </div>
+    <![endif]-->
+    <!-- END outdated browser message -->
+
+    <!-- START javascript disabled message -->
+    <noscript>
+      <div class="msg-js-disabled alert alert-warning">
+        <div class="container">
+          <p>It looks like you have javascript <strong>disabled</strong>. For full functionality of this site, please <a href="http://www.enable-javascript.com/" target="_blank">enable JavaScript</a>.</p>
+        </div>
+      </div>
+    </noscript>
+    <!-- END javascript disabled message -->
+
+    <!-- START skip links -->
+    <div id="skiptonav">
+      <a href="#main-navbar">Skip to main nav</a>
+    </div>
+    <div id="skiptocontent">
+      <a href="#maincontent">Skip to main content</a>
+    </div>
+    <!-- END skip links -->
+
+    <nav class="bend-header-top-bar">
+
+      <!-- START top nav aka .bbb-navbar-utility -->
+      <div class="navbar navbar-inverse navbar-static-top bbb-navbar-utility hidden-xs" role="navigation" aria-hidden="true">
+        <div class="container">
+          <!-- START tds-foundations custom large nav component -->
+          <div class="customLargeNavBar top-bar parbase">
+            <div aria-label="Navigation menu" class="L1-nav bend-nav-lg" id="bendheader--top-bar" role="navigation">
+              <ul aria-hidden="false" class="show-menu" role="menubar">
+                <li role="menuitem">
+                  <a href="https://bendbroadband.com/webmail/" title="Webmail"><span class="ss-icon ss-standard ss-mail"></span> Webmail</a>
+                </li>
+                <li aria-haspopup="true" role="menuitem">
+                  <a class="dropdown-toggle" href="#"><span class="ss-icon ss-standard ss-lock"></span> My Account <span class="caret"></span></a>
+                  <ul aria-hidden="true" role="menu">
+                    <li role="menuitem"><a href="https://elemt.convergentcare.com/elemt/oidc/initializeOidcSso.action?subClientId=3405" tabindex="-1">Online Bill Pay</a></li>
+                    <li role="menuitem"><a href="https://bendbroadband.com/webmail/" title="Webmail" tabindex="-1">Webmail</a></li>
+                    <li role="menuitem"><a href="https://bendaccountsettings.tds.net/manageusers/" tabindex="-1">My Email Manager</a></li>
+                    <li><button class="btn-plain" data-toggle="modal" data-target="#UsageLogin">Internet Usage</a></li>
+                    <li role="menuitem"><a href="https://bendbroadband.com/myphonemanager/" tabindex="-1" target="_blank">My Phone Manager</a></li>
+                    <li class="divider"></li>
+                    <li role="menuitem"><a href="https://bendbroadband.com/rewards/" tabindex="-1">Bonus Rewards Program</a></li>
+                    <li role="menuitem"><a href="https://bendbroadband.com/residential/referral/" tabindex="-1">Earn $75 - Refer a Friend</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="tds-clearfix"></div>
+            </div>
+          </div>
+          <!-- END tds-foundations custom large nav component -->
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <!-- START tds-foundations topsearch component -->
+              <div class="bend-searchbar">
+                <div class="topSearch">
+                  <form action="/Search.html" method="get">
+                    <fieldset class="tds-search-container">
+                      <input aria-label="Search" class="tds-searchbar-input" name="q" placeholder="Search" type="text" value=""> <input class="tds-searchbar-button" type="submit" value="GO">
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+              <!-- END tds-foundations topsearch component -->
+            </li>
+            <li class="active"><a href="https://bendbroadband.com/residential/" class="residential"><span class="ss-icon ss-standard ss-home"></span> Residential</a></li>
+            <li><a href="https://bendbroadband.com/business/" class="business"><span class="ss-icon ss-standard ss-buildings"></span> Business</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- END top nav aka .bbb-navbar-utility -->
+
+    </nav>
+    <!-- END .bend-header-top-bar -->
+
+    <!-- START logo and contact links -->
+    <div class="bend-logo-wrap hidden-xs">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img src="bend-assets/images/bbb-website-logo_@2x.png" alt="BendBroadband" class="bbb-logo"></a>
+        <ul class="nav navbar-nav navbar-right bend-contact-links">
+          <li><a href="https://bendbroadband.com/residential/chat-options/"><span class="ss-icon ss-standard ss-chat"></span> Live Chat</a>
+          </li>
+          <li><button class="btn-plain" data-toggle="modal" data-target="#Contact"><span class="ss-icon ss-standard ss-phone"></span> 541.382.5551</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- END logo and contact links -->
+
+    <!-- START .bend-nav-main -->
+    <nav id="main-navbar" class="container hidden-xs">
+      <!-- START tds-foundations custom large nav component -->
+      <div class="nav-main customLargeNavBar parbase">
+        <div aria-label="Navigation menu" class="L1-nav bend-nav-lg" role="navigation">
+          <ul aria-hidden="false" class="show-menu" role="menubar">
+            <li role="menuitem">
+              <a href="/packages/best-deals.html" tabindex="0" target="_self"><span>Best Deals</span></a>
+            </li>
+            <li role="menuitem">
+              <a href="/internet.html" tabindex="-1" target="_self"><span>Alpha</span></a>
+            </li>
+            <li class="active" role="menuitem">
+              <a href="/internet.html" tabindex="-1" target="_self"><span>Internet</span></a>
+            </li>
+            <li aria-haspopup="true" role="menuitem">
+              <a href="/tv.html" tabindex="-1" target="_self"><span>TV</span></a>
+              <ul aria-hidden="true" class="" data-test="true" role="menu">
+                <li role="menuitem">
+                  <a href="/tv.html" tabindex="-1" target="_self"><span>TV Packages</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="http://hellotds.com/tv/channel-lineups" tabindex="-1" target="_self"><span>Channel Lineups</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="/tv/premium-channels.html" tabindex="-1" target="_self"><span>Premium Channels</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="/tv/specialty-tiers.html" tabindex="-1" target="_self"><span>Specialty Tiers</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="/tv/catchtv.html" tabindex="-1" target="_self"><span>CatchTV</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="/tv/tv-everywhere.html" tabindex="-1" target="_self"><span>TV Everywhere</span></a>
+                </li>
+              </ul>
+            </li>
+            <li role="menuitem">
+              <a href="/phone.html" tabindex="-1" target="_self"><span>Phone</span></a>
+            </li>
+            <li aria-haspopup="true" role="menuitem">
+              <a href="http://hellotds.com/support" tabindex="-1" target="_self"><span>Support</span></a>
+              <ul aria-hidden="true" data-test="true" role="menu">
+                <li role="menuitem">
+                  <a href="http://hellotds.com/support/cable-tv" tabindex="-1" target="_self"><span>Cable TV Support</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="http://hellotds.com/support/internet" tabindex="-1" target="_self"><span>Internet Support</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="http://hellotds.com/support/digital-phone" tabindex="-1" target="_self"><span>Digital Phone Support</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="http://hellotds.com/support/payment-options" tabindex="-1" target="_self"><span>Payment Options</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="http://hellotds.com/support/faqs" tabindex="-1" target="_self"><span>FAQs</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="http://hellotds.com/support/rate-cards" tabindex="-1" target="_self"><span>TDS Rate Cards</span></a>
+                </li>
+                <li role="menuitem">
+                  <a href="http://hellotds.com/support/remote-pc-support" tabindex="-1" target="_self"><span>Remote PC Support</span></a>
+                </li>
+              </ul>
+            </li>
+            <li role="menuitem">
+              <a href="http://blog.hellotds.com/" tabindex="-1" target="_self"><span>News</span></a>
+            </li>
+          </ul>
+          <div class="tds-clearfix"></div>
+        </div>
+      </div>
+      <!-- START tds-foundations custom large nav component -->
+    </nav>
+    <!-- END .bend-nav-main -->
+
+    <!-- START .bend-nav-mobile -->
+    <div class="bend-nav-mobile visible-xs-block">
+      <div class="customSmallNavBar parbase">
+        <div class="stuck-header"></div>
+        <nav class="sticky-nav">
+          <div aria-label="Navigation menu" id="mobile-nav-container" role="navigation">
+            <a href="/shop.html" class="small-nav-logo"></a>
+            <ul class="mobile-header-nav" role="menubar">
+              <li class="btn-cart-wrap" role="presentation">
+                <a class="icon_cart-empty" href="/shop/ordering/cart.html" id="btn-cart" role="menuitem"></a>
+              </li>
+              <li class="btn-search-wrap" role="presentation">
+                <a class="search-normal" href="#" id="btn-search" role="menuitem"></a>
+              </li>
+              <li class="btn-menu-wrap" role="presentation">
+                <button class="menu-normal" id="btn-menu" role="button">Menu</button>
+              </li>
+            </ul>
+            <div style="clear:both;"></div>
+            <div id="mobile-searchbar" style="display:none;">
+              <div class="topSearch mobile-search">
+                <form action="/Search.html" method="get">
+                  <fieldset class="tds-search-container">
+                    <input aria-label="Search" class="tds-searchbar-input" name="q" placeholder="Search" type="text" value=""> <input class="tds-searchbar-button" type="submit" value="GO">
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="hr-gray"></div>
+          <div style="clear:both;"></div>
+          <div>
+            <div aria-label="Navigation Menu" id="mobile-menu" role="navigation" style="overflow: hidden; display: none;">
+              <div class="hr-mobile-tdsblue"></div>
+              <ul class="" id="mobile-menu-dropdown" role="menubar" style="overflow-y: auto;">
+                <li aria-haspopup="true" class="active" role="menuitem">
+                  <a href="/shop.html" tabindex="0" target="_self">Shop</a>
+                  <ul aria-hidden="true" data-test="true" role="menu">
+                    <li role="menuitem">
+                      <a href="/shop/bundles.html" tabindex="-1" target="_self">Bundles</a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="/shop/internet-services.html" tabindex="-1" target="_self">Internet Services</a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="/shop/tv.html" tabindex="-1" target="_self">TV Services</a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="/shop/home-phone-services.html" tabindex="-1" target="_self">Phone Services</a>
+                    </li>
+                  </ul>
+                </li>
+                <li role="menuitem">
+                  <a href="/my-account.html" tabindex="-1" target="_self"><span class="ss-icon ss-standard ss-lock"></span>My Account</a>
+                </li>
+                <li role="menuitem">
+                  <a href="/support.html" tabindex="-1" target="_self">Help &amp; Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="stuck-footer"></div>
+      </div>
+    </div>
+    <!-- START .bend-nav-mobile -->
+
+    <!-- START modals -->
+    <!-- START #Contact Modal -->
+    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="Contact" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+            <h4 class="modal-title" id="myModalLabel">Contact</h4>
+          </div>
+          <div class="modal-body" style="padding-bottom:0;">
+            <p class="small">You can reach us by calling 541-382-5551, <a class="modalButton" data-height="240" data-width="100%" href="/residential/chat-options/">Live Chat</a>, <a class="modalButton" href="mailto:bendbroadbandcustomersupport@tdstelecom.com">Email Us</a>,
+              <a
+               class="modalButton" data-dismiss="modal" data-height="530" data-src="https://go.pardot.com/l/24342/2014-02-13/4s23k" data-target="#Pardot" data-toggle="modal" data-width="100%" href="#">Sign Up For Service</a> or stop by our office at <a href="https://www.google.com/maps/dir//63090+Sherman+Rd,+Bend,+OR+97701/@44.0904644,-121.3050053,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x54b8cf32cd389e4b:0x4bb27ce3806492b!2m2!1d-121.3028542!2d44.0904644">63090 Sherman Rd. Bend, OR 97703</a>.</p>
+            <h5>Hours of Operation</h5>
+            <table class="table table-striped small table-condensed table-hover">
+              <thead>
+                <tr>
+                  <th width="25%">&nbsp;</th>
+                  <th width="25%">Sales &amp; Billing</th>
+                  <th width="25%">Technical Support</th>
+                  <th width="25%">Office / Lobby</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>8am - 6pm</td>
+                  <td>24/7</td>
+                  <td>8am - 5:30pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>8am - 6pm</td>
+                  <td>24/7</td>
+                  <td>8am - 5:30pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>8am - 6pm</td>
+                  <td>24/7</td>
+                  <td>8am - 5:30pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>8am - 6pm</td>
+                  <td>24/7</td>
+                  <td>8am - 5:30pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>8am - 6pm</td>
+                  <td>24/7</td>
+                  <td>8am - 5:30pm</td>
+                </tr>
+                <tr class="info">
+                  <td>Saturday</td>
+                  <td>8am - 5pm</td>
+                  <td>24/7</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>Closed</td>
+                  <td>24/7</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="small"><a href="../../public/media/Holiday-Hours.pdf">Holiday Hours</a></p>
+            <p class="small">For closed Captioning concerns please call 541-330-8399 or fax 541-385-3271.</p>
+            <p class="small">Administrative assistance is available Monday through Friday 8am - 5pm by calling 541-388-5820.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- END #Contact Modal -->
+    <!-- START #UsageLogin Modal -->
+    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="UsageLogin" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+            <h4 class="modal-title" id="myModalLabel">Internet Usage</h4>
+          </div>
+          <!-- /.modal-header -->
+          <form accept-charset="UTF-8" action="/usage/?action=submit" id="usage" method="post" name="usage" role="form">
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="uaddress">Email address</label> <input autocomplete="off" class="form-control" id="uaddress" name="uaddress" placeholder="Enter Email Address" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"
+                 type="text"> <label for="upassword">Password</label> <input autocomplete="off" class="form-control" id="upassword" name="upassword" placeholder="Enter Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"
+                 type="password">
+              </div><a data-dismiss="modal" data-target="#ForgotPassword" data-toggle="modal" href="#">Forgot your password?</a>
+            </div>
+            <!-- /.modal-body -->
+            <div class="modal-footer">
+              <div id="cancelULogin" style="display:inline">
+                <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+              </div>
+              <div id="submitULogin" style="display:inline">
+                <button class="btn btn-primary" onclick="toggleDiv('processingULogin'); toggleDiv('submitULogin');toggleDiv('cancelULogin');" type="submit">Login</button>
+              </div>
+              <div id="processingULogin" style="display:none">
+                <button class="btn btn-default" type="button">Processing...</button>
+              </div>
+            </div>
+            <!-- /.modal-footer -->
+          </form>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- END #UsageLogin Modal -->
+    <!-- END modals -->
+
+  </header>
+  <div class="parbase pagebanner section">
+    <!-- Page Banner Component -->
+    <div class="tds-page-banner col-sm-12 section-internet has-copy">
+      <div class="banner-lg" id="page-banner">
+        <div class="banner-image" style="background-image: url(https://shop.hellotds.com/content/dam/tdscable/images/shop/internet/internet-banner.jpg); background-color:"></div>
+        <div id="banner-overlay"></div>
+        <div class="container">
+          <div class="banner-content">
+            <h1 class="banner-title"></h1>
+            <div class="content parsys">
+              <div class="parbase richTextComponent section">
+                <div class="tds-content-rich">
+                  <h1 class="banner-title">High-Speed Internet Service</h1>
+                  <p>TDS is a leading Internet provider in your area, delivering fast speeds, reliable service and dependable home WiFi service. All Internet plans include access to 24/7 techical support.<br></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagelayout parbase section">
+    <div class="container-fluid category-content">
+      <div class="row">
+        <div class="container">
+          <div class="tds-pagedivider-two-col">
+            <div class="col-sm-4">
+              <div class="parsys parsys-sidebar">
+                <div class="responsiveImage parbase section">
+                  <img alt="" class="center-block img-responsive" src="https://shop.hellotds.com/content/dam/tdscable/images/shop/internet/internet-connect-better.png" title="">
+                  <!--To deal with overlapping parsys issues in author mode-->
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="parsys parsys-content">
+                <div class="parbase richTextComponent section">
+                  <div class="tds-content-rich">
+                    <h2><span class="uppercase">Connect Better</span></h2>
+                    <p>Whether you're browsing the web, streaming your favorite show or online video gaming, get the speed you need for all your devices.<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagelayout parbase section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="tds-pagedivider-one-col">
+            <div class="parsys parsys-content">
+              <div class="cardgallery parbase section">
+                <div class="tds-card-gallery-3">
+                  <a aria-label="" href="/packages/internet.html">
+                    <div class="tds-card">
+                      <h2 class="tds-card-heading" style="height: 26px;">Ultra 300</h2><img alt="" class="center-block img-responsive tds-card-img" src="https://shop.hellotds.com/content/dam/tdscable/images/shop/internet/icon-internet-300.svg" title="">
+                      <div class="tds-card-content" style="height: 191px;">
+                        <p style="text-align: center;">Up to 300Mbps</p>
+                        <p style="text-align: center;">Max Download: 300Mbps</p>
+                        <p style="text-align: center;">Max Upload: 10Mbps</p>
+                        <p style="text-align: center;">Great for homes with numerous devices and extreme Internet demands</p>
+                        <form action="/internet/ultra-300.html" class="get-details" method="get">
+                          <button aria-labelledby="Ultra 300 Internet details" class="text-link details">Get Details</button>
+                        </form>
+                      </div>
+                      <div class="tds-card-cta" style="height: 44px;">
+                        <div class="tds-btn">
+                          Check Availability
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a aria-label="" href="/packages/internet.html">
+                    <div class="tds-card">
+                      <h2 class="tds-card-heading" style="height: 26px;">Ultra 100</h2><img alt="" class="center-block img-responsive tds-card-img" src="https://shop.hellotds.com/content/dam/tdscable/images/shop/internet/icon-internet-100.svg" title="">
+                      <div class="tds-card-content" style="height: 191px;">
+                        <p style="text-align: center;">Up to 100Mbps</p>
+                        <p style="text-align: center;">Max Download: 100Mbps</p>
+                        <p style="text-align: center;">Max Upload: 5Mbps</p>
+                        <p style="text-align: center;">Great for homes with multiple devices and high Internet demands</p>
+                        <form action="/internet/ultra-100.html" class="get-details" method="get">
+                          <button aria-labelledby="Ultra 100 Internet details" class="text-link details">Get Details</button>
+                        </form>
+                      </div>
+                      <div class="tds-card-cta" style="height: 44px;">
+                        <div class="tds-btn">
+                          Check Availability
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a aria-label="" href="/packages/internet.html">
+                    <div class="tds-card">
+                      <h2 class="tds-card-heading" style="height: 26px;">Ultra 60</h2><img alt="" class="center-block img-responsive tds-card-img" src="https://shop.hellotds.com/content/dam/tdscable/images/shop/internet/icons_internet-60.png" title="">
+                      <div class="tds-card-content" style="height: 191px;">
+                        <p style="text-align: center;">Up to 60Mbps</p>
+                        <p style="text-align: center;">Max Download:60Mbps</p>
+                        <p style="text-align: center;">Max Upload: 3Mbps</p>
+                        <p style="text-align: center;">Great for homes with several devices and moderate Internet demands</p>
+                        <form action="/internet/ultra-60.html" class="get-details" method="get">
+                          <button aria-labelledby="Ultra 60 Internet details" class="text-link details">Get Details</button>
+                        </form>
+                      </div>
+                      <div class="tds-card-cta" style="height: 44px;">
+                        <div class="tds-btn">
+                          Check Availability
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dividerline parbase section">
+    <div class="tds-divider-line  " style="background:#999;"></div>
+    <div class="divider-arrow" style="border:8px #19388a solid;">
+      <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="color:#19388a;"></span>
+    </div>
+  </div>
+  <div class="pagelayout parbase section">
+    <div class="container-fluid tds-block-dk-blue category-content">
+      <div class="row">
+        <div class="container">
+          <div class="tds-pagedivider-two-col">
+            <div class="col-sm-4">
+              <div class="parsys parsys-sidebar">
+                <div class="responsiveImage parbase section">
+                  <img alt="" class="center-block img-responsive" src="https://shop.hellotds.com/content/dam/tdscable/images/shop/internet/internet-wifi.png" title="">
+                  <!--To deal with overlapping parsys issues in author mode-->
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="parsys parsys-content">
+                <div class="parbase richTextComponent section">
+                  <div class="tds-content-rich">
+                    <h2><span class="uppercase">The Best Wifi Performance</span></h2>
+                    <p>Enjoy improved connectivity and a smoother online experience with a TDS Advanced Wireless Modem. Receive a stronger, faster WiFi signal throughout your home, as well as increased network security.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="disclaimers parbase section">
+    <div class="disclaim er-wrap">
+      <div class="tds-divider-line"></div>
+      <p class="disclaimer-heading">Disclaimer</p>
+      <div class="disclaimer-first">
+        <p><strong>High-Speed Internet</strong> availability varies and speeds shown may not be available at all service addresses. Actual speeds experienced by customers vary and are not guaranteed. Speed ranges shown are expressed as "up to" to represent network
+          capabilities between customer location and the TDS network. Speeds vary due to factors including: distance from switching locations and external/internal network conditions. Additional equipment may be required and charges may apply. A $15 service
+          charge will apply to existing customers who switch plans without increasing speed or adding qualifying service.</p>
+      </div>
+      <div class="disclaimer-rest collapse" id="disclaimerContent">
+        <p>TDS<sup>®</sup> is a registered trademark of Telephone and Data Systems, Inc. Copyright © 2017, TDS Telecommunications Corporation, All Rights Reserved.</p>
+      </div><button aria-expanded="false" class="text-link read-more collapsed" data-lesscopy="Read less" data-morecopy="Read more" data-target="#disclaimerContent" data-toggle="collapse" type="button">Read more</button>
+      <div class="tds-divider-line"></div>
+    </div>
+  </div>
+  <footer class="residential">
+    <div class="container">
+      <div class="row superfoot">
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <h5 class="h6 heading">My Account</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://elemt.convergentcare.com/elemt/oidc/initializeOidcSso.action?subClientId=3405">Online Bill Pay</a></li>
+            <li><a href="https://bendbroadband.com/webmail/" title="Webmail">Webmail</a></li>
+            <li><a href="https://bendaccountsettings.tds.net/manageusers/">My Email Manager</a></li>
+            <!-- **KEEP THIS OUT UNTIL UBB FUNCTIONALITY IS ADDED**
+            <li><a href="https://bendbroadband.com/usage/?action=usage#" data-toggle="modal" data-target="#UsageLogin">Internet Usage</a></li>
+            -->
+            <li><a href="https://bendbroadband.com/myphonemanager/" target="_blank">My Phone Manager</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><a href="https://bendbroadband.com/rewards/" target="_blank">Bonus Rewards Program</a></li>
+            <li><a href="https://bendbroadband.com/referral/" target="_blank">Earn $75 - Refer a Friend</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <h5 class="h6 heading">Our Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://bendbroadband.com/residential/deals/">Best Deals</a></li>
+            <li><a href="https://bendbroadband.com/residential/internet/">High-Speed Internet</a></li>
+            <li><a href="https://bendbroadband.com/residential/tv/">Digital TV</a></li>
+            <li><a href="https://bendbroadband.com/residential/phone/">Home Phone</a></li>
+            <li><a href="https://bendbroadband.com/residential/terms-conditions.asp">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <h5 class="h6 heading">Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://bendbroadband.com/residential/support/internet/">High-Speed Internet</a></li>
+            <li><a href="https://bendbroadband.com/residential/support/tv/">Digital TV</a></li>
+            <li><a href="https://bendbroadband.com/residential/support/phone/">Home Phone</a></li>
+            <li><a href="https://bendbroadband.com/residential/support/billing/">Billing &amp; Account</a></li>
+            <li><a href="https://bendbroadband.com/residential/support/detail.asp?kb=100223">Network Management</a></li>
+            <li><a href="https://bendbroadband.com/residential/chat-options/">Contact Us</a></li>
+            <li><a href="https://bendbroadband.com/remotepc/" target="_blank" class="btn btn-primary btn-xs" style="margin:10px 0 0 -10px;">Remote PC Support</a></li>
+          </ul>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <h5 class="h6 heading">About Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://bendbroadband.com/about.asp">Company Info</a></li>
+            <li><a href="https://bendbroadband.com/community.asp">Community</a></li>
+            <li><a href="https://bendbroadband.com/careers/">Careers</a></li>
+            <li><a href="https://bendbroadband.com/press.asp">Press Room </a></li>
+            <li><a href="https://bendbroadband.com/bios.asp">Executive Bios </a></li>
+          </ul>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-sm-4 col-md-2">
+          <h5 class="h6 heading"><a href="http://www.zolomedia.com/" target="_blank">Zolo Media</a></h5>
+          <ul class="list-unstyled">
+            <li><a href="http://www.cotv11.com/" target="_blank">COTV11</a></li>
+            <li><a href="http://www.kohd.com/" target="_blank">KOHD (ABC)</a></li>
+            <li><a href="http://zolomedia.com/kbnz-cbs/" target="_blank">KBNZ (CBS)</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><a href="https://bendbroadband.com/unsubscribe/" target="_blank">Newsletter Sign Up</a></li>
+          </ul>
+
+        </div>
+        <div class="clearfix visible-xs"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+
+          <p><a href="https://bendbroadband.com/moving.asp"><span class="fa fa-globe" aria-hidden="true"></span> Moving? Come see how we can help.</a></p>
+
+          <p class="address"><strong>BendBroadband</strong> &nbsp;
+            <a href="https://www.google.com/maps/dir//63090+Sherman+Rd,+Bend,+OR+97703/@44.0904644,-121.3050053,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x54b8cf32cd389e4b:0x4bb27ce3806492b!2m2!1d-121.3028542!2d44.0904644" target="_blank">63090 Sherman Road Bend, Oregon 97703</a>            &nbsp; <strong>541.382.5551</strong></p>
+          <p class="copyright">© 2016 BendBroadband. All Rights Reserved. <span class="meta-sep">|</span><a href="https://bendbroadband.com/privacy.asp">Privacy Policy</a><span class="meta-sep">|</span><a href="https://bendbroadband.com/public/media/Subscriber-Agreement.pdf">Subscriber Agreement</a>            <span class="social-links"><span class="meta-sep first">|</span> <span class="fa fa-facebook-official" aria-hidden="true"></span> <a href="http://www.facebook.com/bendbroadband" target="_blank">Connect with Us</a> <span class="meta-sep">|</span>
+            <span class="fa fa-twitter" aria-hidden="true"></span> <a href="https://twitter.com/bbbbusiness" target="_blank">Talk with Us</a> <span class="meta-sep">|</span> <span class="fa fa-youtube-play" aria-hidden="true"></span>
+            <a href="https://www.youtube.com/user/BBBLocalDogbiz" target="_blank">Watch Us</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- START js links -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <!-- END js links -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#btn-menu").click(function() {
+        $("#mobile-menu").slideToggle('medium', 'swing');
+      });
+      $("#btn-search").click(function() {
+        $("#mobile-searchbar").slideToggle('medium', 'swing');
+      });
+    });
+  </script>
+</body>
+
+</html>
