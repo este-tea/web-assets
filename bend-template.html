@@ -72,7 +72,7 @@
                     <li role="menuitem"><a href="https://elemt.convergentcare.com/elemt/oidc/initializeOidcSso.action?subClientId=3405" tabindex="-1">Online Bill Pay</a></li>
                     <li role="menuitem"><a href="https://bendbroadband.com/webmail/" title="Webmail" tabindex="-1">Webmail</a></li>
                     <li role="menuitem"><a href="https://bendaccountsettings.tds.net/manageusers/" tabindex="-1">My Email Manager</a></li>
-                    <li><button class="btn-plain" data-toggle="modal" data-target="#UsageLogin">Internet Usage</a></li>
+                    <li><button class="btn-plain" data-toggle="modal" data-target="#UsageLogin">Internet Usage</button></li>
                     <li role="menuitem"><a href="https://bendbroadband.com/myphonemanager/" tabindex="-1" target="_blank">My Phone Manager</a></li>
                     <li class="divider"></li>
                     <li role="menuitem"><a href="https://bendbroadband.com/rewards/" tabindex="-1">Bonus Rewards Program</a></li>
@@ -268,7 +268,7 @@
 
     <!-- START modals -->
     <!-- START #Contact Modal -->
-    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="Contact" role="dialog" tabindex="-1">
+    <div aria-hidden="true" aria-labelledby="ContactModalLabel" class="modal fade" id="Contact" role="dialog" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -348,7 +348,7 @@
     </div>
     <!-- END #Contact Modal -->
     <!-- START #UsageLogin Modal -->
-    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="UsageLogin" role="dialog" tabindex="-1">
+    <div aria-hidden="true" aria-labelledby="UsageLoginModalLabel" class="modal fade" id="UsageLogin" role="dialog" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -644,20 +644,394 @@
       </div>
     </div>
   </footer>
+<footer class="bend-footer residential">
+  <div class="extendedFooter parbase extendedfooter">
+    <div class="extended-footer">
+      <div class="container">
+        <div class="homepageFooter">
+          <div class="col-md-5ths col-xs-6 col-xxs-12">
+            <p class="sectionTitle"><a href="/my-account.html">My Account</a></p>
+            <ul class="sectionLinks" id="homepageFooterSectionLinks0" role="menubar">
+              <li role="menuitem">
+                <a href="/my-account/account-information.html" tabindex="0">View / Modify Account Information</a>
+              </li>
+              <li role="menuitem">
+                <a href="/my-account.html" tabindex="-1">View / Pay Bill</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/account.html" tabindex="-1">Account Questions</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/account/make-payment-view-bill-online.html" tabindex="-1">How To Read Your Bill</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/account/consumer-information-third-party-charges.html" tabindex="-1">Third Party Charges</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5ths col-xs-6 col-xxs-12">
+            <p class="sectionTitle"><a href="/support.html">Help &amp; Support</a></p>
+            <ul class="sectionLinks" id="homepageFooterSectionLinks1" role="menubar">
+              <li role="menuitem">
+                <a href="/support/phone.html" tabindex="0">Phone Feature Questions</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/phone/troubleshooting-no-dial-tone-noisy-line.html" tabindex="-1">Phone Repair Questions</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/phone/user-guides.html" tabindex="-1">Downloadable Phone User Guides</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/internet/connection-speed-troubleshooting-wireless-modem.html" tabindex="-1">Internet Connection (DSL, Dialup Questions)</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/internet.html" tabindex="-1">Internet Services (TDS Internet Security, Backup Online, etc.) Questions</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/email.html" tabindex="-1">Email Questions</a>
+              </li>
+              <li role="menuitem">
+                <a href="https://tdstelecom.com/support/internet.html#security" tabindex="-1">Internet Tools and Security</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/internet/connection-speed-test.html" tabindex="-1">Speed Test</a>
+              </li>
+              <li role="menuitem">
+                <a href="https://tdstelecom.com/support/internet.html#setup" tabindex="-1">High-Speed Setup</a>
+              </li>
+              <li role="menuitem">
+                <a href="/support/tv.html" tabindex="-1">Digital Television Questions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5ths col-xs-6 col-xxs-12">
+            <p class="sectionTitle"><a href="/about/company-information/company-profile.html">About TDS</a></p>
+            <ul class="sectionLinks" id="homepageFooterSectionLinks2" role="menubar">
+              <li role="menuitem">
+                <a href="/about/company-information/company-profile.html" tabindex="0">Company Profile</a>
+              </li>
+              <li role="menuitem">
+                <a href="http://portal.tds.net" tabindex="-1" target="_blank">My TDS Home Page</a>
+              </li>
+              <li role="menuitem">
+                <a href="/policies/internet-network-management.html" tabindex="-1">Internet Network Management</a>
+              </li>
+              <li role="menuitem">
+                <a href="/about/news.html" tabindex="-1">TDS Newsroom</a>
+              </li>
+              <li role="menuitem">
+                <a href="/careers.html" tabindex="-1">Careers</a>
+              </li>
+              <li role="menuitem">
+                <a href="/about/company-information/service-locations.html" tabindex="-1">Service Locations</a>
+              </li>
+              <li role="menuitem">
+                <a href="/carrierservices.html" tabindex="-1">Carrier Relations</a>
+              </li>
+              <li role="menuitem">
+                <a href="/carrierservices/lnp.html" tabindex="-1">LNP</a>
+              </li>
+              <li role="menuitem">
+                <a href="/tariffs.html" tabindex="-1">Tariffs</a>
+              </li>
+              <li role="menuitem">
+                <a href="/public-inspection-file.html" tabindex="-1">FCC Public Inspection File</a>
+              </li>
+              <li role="menuitem">
+                <a href="/lifeline.html" tabindex="-1">Lifeline</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5ths col-xs-6 col-xxs-12">
+            <p class="sectionTitle"><a href="/about/company-information/company-profile.html">About TDS</a></p>
+            <ul class="sectionLinks" id="homepageFooterSectionLinks2" role="menubar">
+              <li role="menuitem">
+                <a href="/about/company-information/company-profile.html" tabindex="0">Company Profile</a>
+              </li>
+              <li role="menuitem">
+                <a href="http://portal.tds.net" tabindex="-1" target="_blank">My TDS Home Page</a>
+              </li>
+              <li role="menuitem">
+                <a href="/policies/internet-network-management.html" tabindex="-1">Internet Network Management</a>
+              </li>
+              <li role="menuitem">
+                <a href="/about/news.html" tabindex="-1">TDS Newsroom</a>
+              </li>
+              <li role="menuitem">
+                <a href="/careers.html" tabindex="-1">Careers</a>
+              </li>
+              <li role="menuitem">
+                <a href="/about/company-information/service-locations.html" tabindex="-1">Service Locations</a>
+              </li>
+              <li role="menuitem">
+                <a href="/carrierservices.html" tabindex="-1">Carrier Relations</a>
+              </li>
+              <li role="menuitem">
+                <a href="/carrierservices/lnp.html" tabindex="-1">LNP</a>
+              </li>
+              <li role="menuitem">
+                <a href="/tariffs.html" tabindex="-1">Tariffs</a>
+              </li>
+              <li role="menuitem">
+                <a href="/public-inspection-file.html" tabindex="-1">FCC Public Inspection File</a>
+              </li>
+              <li role="menuitem">
+                <a href="/lifeline.html" tabindex="-1">Lifeline</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5ths col-xs-6 col-xxs-12">
+            <p class="sectionTitle"><a href="/about/company-information/company-profile.html">About TDS</a></p>
+            <ul class="sectionLinks" id="homepageFooterSectionLinks2" role="menubar">
+              <li role="menuitem">
+                <a href="/about/company-information/company-profile.html" tabindex="0">Company Profile</a>
+              </li>
+              <li role="menuitem">
+                <a href="http://portal.tds.net" tabindex="-1" target="_blank">My TDS Home Page</a>
+              </li>
+              <li role="menuitem">
+                <a href="/policies/internet-network-management.html" tabindex="-1">Internet Network Management</a>
+              </li>
+              <li role="menuitem">
+                <a href="/about/news.html" tabindex="-1">TDS Newsroom</a>
+              </li>
+              <li role="menuitem">
+                <a href="/careers.html" tabindex="-1">Careers</a>
+              </li>
+              <li role="menuitem">
+                <a href="/about/company-information/service-locations.html" tabindex="-1">Service Locations</a>
+              </li>
+              <li role="menuitem">
+                <a href="/carrierservices.html" tabindex="-1">Carrier Relations</a>
+              </li>
+              <li role="menuitem">
+                <a href="/carrierservices/lnp.html" tabindex="-1">LNP</a>
+              </li>
+              <li role="menuitem">
+                <a href="/tariffs.html" tabindex="-1">Tariffs</a>
+              </li>
+              <li role="menuitem">
+                <a href="/public-inspection-file.html" tabindex="-1">FCC Public Inspection File</a>
+              </li>
+              <li role="menuitem">
+                <a href="/lifeline.html" tabindex="-1">Lifeline</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="footer-address">
+            <p><strong>BendBroadband</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.google.com/maps/dir//63090+Sherman+Rd,+Bend,+OR+97703/@44.0904644,-121.3050053,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x54b8cf32cd389e4b:0x4bb27ce3806492b!2m2!1d-121.3028542!2d44.0904644"
+               target="_blank">63090 Sherman Road Bend, Oregon 97703</a>&nbsp;&nbsp;|&nbsp;&nbsp;<strong><a href="tel:15413825551">541.382.5551</a></strong>
+            </p>
+          </div>
+          <div class="footer-copyright">
+            <p class="copyright">© 2017 BendBroadband. All Rights Reserved. BendBroadband is a subsidiary of Telephone and Data Systems, Inc., recognized as a Fortune 1000® 2017 company.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://bendbroadband.com/public/images/TDS_White.png" alt="TDS logo" width="100" height="67" style="margin-bottom:15px;margin-right:15px;">
+        </div>
+      </div>
 
+      <div class="footer-legal-links">
+        <div class="bend-footer customLargeNavBar parbase">
+          <div aria-label="Navigation menu" class="L1-nav bend-nav-lg" role="navigation">
+            <ul aria-hidden="false" class="show-menu" role="menubar">
+              <li role="menuitem">
+                <a href="/packages/best-deals.html" tabindex="0" target="_self"><span>Privacy Policy</span></a>
+              </li>
+              <li role="menuitem">
+                <a href="/internet.html" tabindex="-1" target="_self"><span>Subscriber Agreement</span></a>
+              </li>
+              <li class="active" role="menuitem">
+                <a href="/internet.html" tabindex="-1" target="_self"><span>Acceptable Use Policy</span></a>
+              </li>
+            </ul>
+            <div class="tds-clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-social-links">
+        <div class="bend-footer customLargeNavBar parbase">
+          <div aria-label="Navigation menu" class="L1-nav bend-nav-lg" role="navigation">
+            <ul aria-hidden="false" class="show-menu" role="menubar">
+              <li role="menuitem">
+                <span class="ss-icon ss-social-regular ss-facebook"></span> <a href="http://www.facebook.com/bendbroadband" target="_blank">Connect with Us</a>
+              </li>
+              <li role="menuitem">
+                <span class="ss-icon ss-social-regular ss-twitter"></span> <a href="https://twitter.com/bbbbusiness" target="_blank">Talk with Us</a>
+              </li>
+              <li class="active" role="menuitem">
+                <span class="ss-icon ss-social-regular ss-youtube"></span> <a href="https://www.youtube.com/channel/UC-Ww-XUoPtcMazWF5hFr3ug" target="_blank">Watch Us</a>
+              </li>
+            </ul>
+            <div class="tds-clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
   <!-- START js links -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
   <!-- END js links -->
   <script type="text/javascript">
-    $(document).ready(function() {
-      $("#btn-menu").click(function() {
-        $("#mobile-menu").slideToggle('medium', 'swing');
+  // Shop header JavaScript Document
+  $(document).ready(function(){
+
+      //header.html
+      $('#close-icon').click(function(){
+          $('#old-browser').hide();
+          setOldBrowserCookie();
       });
-      $("#btn-search").click(function() {
-        $("#mobile-searchbar").slideToggle('medium', 'swing');
+
+      if (getOldBrowserCookie() == "OldBrowser") {
+          $('#old-browser').hide();
+      }
+
+      function setOldBrowserCookie() {
+          document.cookie = "OldBrowserTDS" + "=" + "OldBrowser; path=/";
+      }
+      function getOldBrowserCookie() {
+          var name = "OldBrowserTDS" + "=";
+          var ca = document.cookie.split(';');
+          for(var i=0; i<ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1);
+              if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+          }
+          return "";
+      }
+
+      var btnMenu = $('#btn-menu');
+      var mobileSearchbar = $('#mobile-searchbar');
+      var btnSearch = $('#btn-search');
+      var mobileMenu = $('#mobile-menu');
+      var mobileMenuAutoHeight = mobileMenu.height();
+
+      btnMenu.click(function(){
+          if (!mobileSearchbar.is(':hidden')) {
+                mobileSearchbar.hide();
+          }
+          if (!btnSearch.hasClass('search-normal')) {
+                btnSearch.toggleClass("search-active search-normal");
+          }
+          mobileMenu.slideToggle();
+          btnMenu.toggleClass("menu-active menu-normal");
+
       });
-    });
+
+      btnSearch.click(function(){
+          if (!mobileMenu.is(':hidden')) {
+                mobileMenu.hide();
+          }
+          if (!btnMenu.hasClass('menu-normal')) {
+                btnMenu.toggleClass("menu-active menu-normal");
+          }
+          mobileSearchbar.slideToggle();
+          btnSearch.toggleClass("search-active search-normal");
+      });
+
+       // Optimization: Store the references outside the event handler:
+      var $window = $(window);
+
+      function checkWidth() {
+          var windowWidth = $window.width();
+          if (windowWidth > 750) {
+              mobileMenu.hide();
+              mobileSearchbar.hide();
+          }
+          if ((windowWidth > 750) && btnMenu.hasClass("menu-active"))  {
+              btnMenu.toggleClass("menu-active menu-normal");
+          }
+          if ((windowWidth > 750) && btnSearch.hasClass("search-active"))  {
+              btnSearch.toggleClass("search-active search-normal");
+          }
+      }
+      // Execute on load
+      checkWidth();
+      // Bind event listener
+      $(window).resize(checkWidth);
+
+      function checkHeight() {
+          var padding = 14;
+          var windowHeight = $window.height();
+          var mobMenuDrop = $('ul#mobile-menu-dropdown');
+
+          // We need to possibly update the mobile menu auto height. This is a
+          // workaround for when the mobile menu is hidden in a desktop view and
+          // starts with a negative height. 50 is the height of the sticky nav and
+          // gives us a baseline minimum we'd like for the mobile menu.
+          var temp = mobileMenu.height();
+          if(mobileMenuAutoHeight <= 50) {
+              mobileMenuAutoHeight = temp;
+          }
+
+          // Either this or btnMenuOnly will be available.
+          var mobNavContainer = $('#mobile-nav-container');
+          var mobNavContainerHeight = mobNavContainer.height();
+          if(!mobNavContainerHeight) {
+              mobNavContainerHeight = 0;
+          }
+
+          var btnMenuOnly = $('#btn-menu-only');
+          var btnMenuOnlyHeight = btnMenuOnly.height();
+          if(!btnMenuOnlyHeight) {
+              btnMenuOnlyHeight = 0;
+          }
+
+          // Adjust the padding for the full toolbar
+          if(btnMenuOnlyHeight == 0) {
+              padding = 40;
+          }
+
+          //Adjust padding for button element in mobile menu for biz
+          var bizButtonHeight = $('#mobile-menu-dropdown').children().filter('.mobile-cta-wrap').first().height();
+          if(!bizButtonHeight) {
+              bizButtonHeight = 0;
+          }
+
+          var mobileToolBarHeight = mobNavContainerHeight + btnMenuOnlyHeight;
+
+          var finalHeight = windowHeight - mobileToolBarHeight;
+
+          if(windowHeight < mobileMenuAutoHeight + mobileToolBarHeight + padding + bizButtonHeight) {
+              mobMenuDrop.css({'height': finalHeight - padding, 'overflow-y': 'scroll'});
+          } else {
+              mobMenuDrop.css({'height': '', 'overflow-y': 'auto'});
+          }
+      }
+      // Execute on load
+      checkHeight();
+      // Bind event listener
+      $(window).resize(checkHeight);
+
+      //var mobileHeaderHeight = $('#mobile-header-container').height();
+      //$('#add-space').height(mobileHeaderHeight + 18);
+  });
+
+  $(function() {
+      $('.gallery-description').matchHeight();
+      $('.gallery-title').matchHeight();
+      $('.gallery-title-4c').matchHeight();
+
+      //for some reason, need this empty click function so that
+      //the dropdown menus work in iPad 1 Safari
+      $('#menu-about, #menu-policies').click(function () {
+      });
+
+      $( '.L1-nav li:has(ul)' ).doubleTapToGo();
+
+  });
+  // END Shop header JavaScript Document
+
   </script>
 </body>
 
