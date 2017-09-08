@@ -73,14 +73,14 @@
   .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a.residential,
   .navbar-inverse.bbb-navbar-utility .navbar-nav > li > a.residential {
     text-transform: uppercase;
-    background: #e1e1e1 url("../../bend-assets/images/checkers-light.gif") left top repeat;
+    background: #e1e1e1 url("/content/dam/bendbroadband/images/ui/checkers-light.gif") left top repeat;
     color: #585852;
   }
 
   .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a.business,
   .navbar-inverse.bbb-navbar-utility .navbar-nav > li > a.business {
     text-transform: uppercase;
-    background: #47473d url("../../bend-assets/images/checkers-dark.gif") left top repeat;
+    background: #47473d url("/content/dam/bendbroadband/images/ui/checkers-dark.gif") left top repeat;
   }
 
   .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.business,
@@ -108,14 +108,14 @@
 
   .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.residential,
   .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.residential {
-    background: #e1e1e1 url("../../bend-assets/images/checkers-light.gif") left top repeat;
+    background: #e1e1e1 url("/content/dam/bendbroadband/images/ui/checkers-light.gif") left top repeat;
     color: #585852;
     border-top: 3px solid #f70;
   }
 
   .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.business,
   .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.business {
-    background: #47473d url("../../bend-assets/images/checkers-dark.gif") left top repeat;
+    background: #47473d url("/content/dam/bendbroadband/images/ui/checkers-dark.gif") left top repeat;
     color: #fff;
   }
 }

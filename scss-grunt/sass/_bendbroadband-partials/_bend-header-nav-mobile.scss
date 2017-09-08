@@ -1,6 +1,10 @@
 /* bend-header-nav-mobile
 ==========================================*/
-
+@media (min-width: 768px) {
+  nav.bend-nav-mobile {
+    display:none;
+  }
+}
 // #logo
 // -------------------------------
 .bend-nav-mobile .small-nav-logo {
@@ -10,7 +14,7 @@
   background-position: center left;
 	height: 26px;
 	width: 305px;
-	background-image: url("../../bend-assets/images/logo-bend-horizontal.svg");
+	background-image: url("/content/dam/bendbroadband/images/logos/logo-bend-horizontal.svg");
 }
 @media (max-width: 600px) {
 	.bend-nav-mobile .small-nav-logo {
@@ -20,7 +24,7 @@
 }
 @media (max-width: 440px) {
 	.bend-nav-mobile .small-nav-logo {
-    background-image: url("../../bend-assets/images/logo-bend-vertical.svg");
+    background-image: url("/content/dam/bendbroadband/images/logos/logo-bend-vertical.svg");
     width: 94px;
     height: 30px;
     background-size: auto 30px;
@@ -55,7 +59,7 @@
   font-style: normal;
   font-size: 16px;
   line-height: 1.375em;
-  background: #47473d url(../../bend-assets/images/checkers-dark.gif) left top repeat;
+  background: #47473d url(/content/dam/bendbroadband/images/ui/checkers-dark.gif) left top repeat;
 }
 #mobile-menu ul li:hover {
   background-color: $bend-orange;

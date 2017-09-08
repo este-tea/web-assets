@@ -1,7 +1,7 @@
 /* bend-pills
 ==========================================*/
 .panes-nav {
-    background: url(../../bend-assets/images/checkers-light.gif) left top repeat;
+    background: url(/content/dam/bendbroadband/images/ui/checkers-light.gif) left top repeat;
     border-top: 3px solid rgba(0, 0, 0, .2)
 }
 .panes-nav .nav-pills {
@@ -73,7 +73,7 @@
     margin-bottom: 0
 }
 .panes-nav.business {
-    background: url(../../bend-assets/images/checkers-dark.gif) left top repeat
+    background: url(/content/dam/bendbroadband/images/ui/checkers-dark.gif) left top repeat
 }
 .panes-nav.business .nav-pills>li>a {
     color: #d9d9d9

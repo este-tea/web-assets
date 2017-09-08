@@ -16,6 +16,15 @@
 *:first-child+html .clearfix {
     zoom: 1;
 }
+@media (min-width: 960px) {
+  .container,
+  .tds-width-container,
+  .multiPathSearch,
+  .multiPathSearch {
+    width: 100%;
+    max-width: 1120px;
+  }
+}
 /* #VISIBILITY
 --------------------------------- */
 .lg-visible {

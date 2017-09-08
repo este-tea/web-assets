@@ -6,6 +6,15 @@
   border: 0;
   border-radius: 0;
 }
+.navbar-has-dropdown:after {
+    display: inline-block;
+    width: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+}
 // #STYLING FROM BENDBROADBAND.COM
 // -------------------------------
 
@@ -119,7 +128,7 @@
 }
 // -------------------------------
 
-.nav-main.customLargeNavBar.parbase {
+.bendMainLargeNav.customLargeNavBar.parbase {
   display: flex;
 }
 
@@ -268,7 +277,7 @@
   }
 }
 
-.nav-main .L1-nav.bend-nav-lg > ul {
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul {
   border-bottom: none;
 
   > li {
@@ -294,24 +303,24 @@
   }
 }
 
-.nav-main .L1-nav.bend-nav-lg > ul > li > a:focus ul,
-.nav-main .L1-nav.bend-nav-lg > ul > li > a:focus ~ ul,
-.nav-main .L1-nav.bend-nav-lg > ul > li > a:hover ~ ul,
-.nav-main .L1-nav.bend-nav-lg > ul > li:focus ul,
-.nav-main .L1-nav.bend-nav-lg > ul > li:hover ul,
-.nav-main .L1-nav.bend-nav-lg ul ul li a:focus > ul,
-.nav-main .L1-nav.bend-nav-lg ul ul li a:hover > ul,
-.nav-main .L1-nav.bend-nav-lg ul ul li:focus > ul,
-.nav-main .L1-nav.bend-nav-lg ul ul li:hover > ul {
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li > a:focus ul,
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li > a:focus ~ ul,
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li > a:hover ~ ul,
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li:focus ul,
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li:hover ul,
+.bendMainLargeNav .L1-nav.bend-nav-lg ul ul li a:focus > ul,
+.bendMainLargeNav .L1-nav.bend-nav-lg ul ul li a:hover > ul,
+.bendMainLargeNav .L1-nav.bend-nav-lg ul ul li:focus > ul,
+.bendMainLargeNav .L1-nav.bend-nav-lg ul ul li:hover > ul {
   // display: inline-block; removed via commit #0fc0579 to fix footer hover nav
   height: auto;
   border-top: 3px solid darken($bend-orange,10%);
 }
 
-.nav-main .L1-nav.bend-nav-lg > ul > li > a:focus:before,
-.nav-main .L1-nav.bend-nav-lg > ul > li > a:hover:before,
-.nav-main .L1-nav.bend-nav-lg > ul > li.active > a:before,
-.nav-main .L1-nav.bend-nav-lg > ul > li:hover > a:before {
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li > a:focus:before,
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li > a:hover:before,
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li.active > a:before,
+.bendMainLargeNav .L1-nav.bend-nav-lg > ul > li:hover > a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -324,7 +333,7 @@
   border-bottom: 6px solid darken($bend-orange,10%);
 }
 
-.nav-main .L1-nav.bend-nav-lg ul ul {
+.bendMainLargeNav .L1-nav.bend-nav-lg ul ul {
   li {
     background-color: $bend-orange;
 

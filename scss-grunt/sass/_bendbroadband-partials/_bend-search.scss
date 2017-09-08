@@ -32,8 +32,9 @@
     .navbar .form-control.search,
     .bend-searchbar > .topSearch > form .tds-searchbar-input {
         color: #fff;
-        border-left: 1px solid #ccc;
-        background: 0;
+        border-left: 1px solid #ddd;
+        padding-left: 10px;
+        background: transparent;
     }
     .bend-searchbar > .topSearch > form .tds-searchbar-input::-webkit-input-placeholder {
         color: #fff;
@@ -79,6 +80,9 @@
      right: 0;
      top: 0;
      text-indent: -9999em;
+     &:hover {
+        background-color: #f70!important;
+    }
 }
 @media (min-width:768px) {
     .navbar .btn-search,

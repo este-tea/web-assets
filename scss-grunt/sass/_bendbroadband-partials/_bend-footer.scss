@@ -9,7 +9,7 @@ footer {
 }
 @media (min-width:992px) {
     footer.residential {
-        background: #518eaa url(../../bend-assets/images/bg-footer-residential.jpg) center bottom no-repeat
+        background: #518eaa url(/content/dam/bendbroadband/images/ui/bg-footer-residential.jpg) center bottom no-repeat
     }
     footer.business {
         background: #518eaa url(../images/bg-footer-business.jpg) center bottom no-repeat
@@ -74,4 +74,13 @@ footer.residential .superfoot .list-unstyled li {
     font-weight: 500;
     margin-top: 0;
     line-height: 18px;
+}
+.homepageFooter {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.footer-column .sectionTitle {
+    text-transform: uppercase;
+    font-family: $bend-font-family;
+    font-size: 14px;
 }
