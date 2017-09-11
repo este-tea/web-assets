@@ -1,124 +1,218 @@
 /* bend-search
 ==========================================*/
 @media (min-width:768px) {
-    .navbar.bbb-navbar-utility .navbar-form,
-    .bend-searchbar > .topSearch > form {
-        width: 220px;
-        margin-top:5px;
-    }
+  .bend-searchbar > .topSearch > form,
+  .navbar.bbb-navbar-utility .navbar-form {
+    width: 220px;
+  }
 }
+
 .navbar.bbb-navbar-primary .navbar-form {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.navbar.bbb-navbar-primary .navbar-form .form-group {
+  margin-bottom: 0;
+}
+
+.bend-searchbar > .topSearch > form .tds-searchbar-input,
+.form-control.search {
+  height: 36px;
+  margin-top: 3px;
+  -webkit-appearance: none;
+  width: calc(100% - 44px);
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  font-size: 12px;
+  border-radius: 0;
+}
+@media (min-width:768px) {
+  .bend-searchbar > .topSearch > form .tds-searchbar-input,
+  .navbar .form-control.search {
+    color: #000;
+    border: transparent;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+    background: transparent;
+    font-size: 14px;
+    &::placeholder {
+      color: white;
+      font-weight: 300;
+    }
+  }
+}
+
+.panel.sidebar .form-control.search {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.tds-searchbar-button:before {
+  font-family: "SSStandard";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  content: '🔎';
+}
+.tds-searchbar-button span.display-text {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.bend-searchbar > .topSearch > form .tds-searchbar-button,
+.btn-search {
+  border: transparent;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background: transparent;
+  width: 44px;
+  height: 44px;
+  float: right;
+  text-align: center;
+
+  &:focus,
+  &:hover {
+    background-color: #f70!important;
+  }
+  &:before {
+  font-size: 16px;
+  line-height: 36px;
+  }
+}
+@media (min-width:768px) {
+  .bend-searchbar > .topSearch > form .tds-searchbar-button,
+  .navbar .btn-search {
+    border-radius: 0;
+    color: #fff;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0;
+  }
 }
-.navbar.bbb-navbar-primary .navbar-form .form-group {
-    margin-bottom: 0;
-}
-.form-control.search,
-.bend-searchbar > .topSearch > form .tds-searchbar-input {
-    height: 34px;
-    border: 0;
-    -webkit-appearance: none;
-    width: 80%;
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    vertical-align: top;
-    font-size: 12px;
-    border-radius: 0;
-}
-@media (min-width:768px) {
-    .navbar .form-control.search,
-    .bend-searchbar > .topSearch > form .tds-searchbar-input {
-        color: #fff;
-        border-left: 1px solid #ddd;
-        padding-left: 10px;
-        background: transparent;
-    }
-    .bend-searchbar > .topSearch > form .tds-searchbar-input::-webkit-input-placeholder {
-        color: #fff;
-        font-weight: 500;
-    }
-    .bend-searchbar > .topSearch > form .tds-searchbar-input:-moz-placeholder {
-        color: #fff;
-        font-weight: 500;
-    }
-    .bend-searchbar > .topSearch > form .tds-searchbar-input::-moz-placeholder {
-        color: #fff;
-        font-weight: 500;
-    }
-    .bend-searchbar > .topSearch > form .tds-searchbar-input:-ms-input-placeholder {
-        color: #fff;
-        font-weight: 500;
-    }
-}
-.panel.sidebar .form-control.search {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
-.btn-search,
-.bend-searchbar > .topSearch > form .tds-searchbar-button {
-    border: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    background: #fff;
-    width: 20%;
-    text-align: right;
-    -webkit-appearance: none;
-    vertical-align: top;
-    float:right;
-    height: 34px;
-    text-align: center;
-     height: 44px;
-     background-image: linear-gradient(transparent,transparent),url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_search-white.svg);
-     background-size: 16px;
-     background-position: center;
-     background-repeat: no-repeat;
-     position: absolute;
-     background-color: transparent;
-     right: 0;
-     top: 0;
-     text-indent: -9999em;
-     &:hover {
-        background-color: #f70!important;
-    }
-}
-@media (min-width:768px) {
-    .navbar .btn-search,
-    .bend-searchbar > .topSearch > form .tds-searchbar-button {
-        border-radius: 0;
-        color: #fff;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
+
 .panel.sidebar .btn-search {
-    color: #f70;
+  color: #f70;
 }
+
+#mobile-searchbar {
+  display: none;
+}
+
 .mobile-search .tds-searchbar-input {
-    float: left;
+  float: left;
 }
 
 .mobile-search .tds-searchbar-button {
-    float: right;
-    width: 20%;
-    max-width: 44px;
-    margin: 0;
-    height: 44px;
-    position: absolute;
-    right: 16px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    border: solid 1px #aaa;
-    border-left: 0;
+  float: right;
+  width: 20%;
+  max-width: 44px;
+  margin: 0;
+  height: 44px;
+  position: absolute;
+  right: 16px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border: solid 1px #aaa;
+  border-left: 0;
 }
+
 #mobile-searchbar .tds-searchbar-input {
-    line-height: 44px;
-    height: 44px\9;
-    height: 44px;
-    border: solid 1px #bbb;
+  line-height: 44px;
+  height: 44px\9;
+  height: 44px;
+  border: solid 1px #bbb;
 }
+
 .topSearch.mobile-search {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+}
+// ---
+// search card
+// ---
+
+.tds-card.bend-search-card {
+  border: none;
+  background-color: #5a5a4d;
+  border-radius: 2px;
+}
+
+.contactUsCard .bend-search-card .tds-card-heading {
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.bend-search-card .tds-card-content p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.bend-search-card {
+  .topSearch.section {
+    margin-top: 20px;
+  }
+
+  .tds-searchbar-input {
+    border-radius: 2px;
+    border-bottom-right-radius: 0;
+    border: solid 1px transparent;
+    height: 36px;
+    width: calc(100% - 36px);
+    border-top-right-radius: 0;
+    padding-left: 8px;
+    ::placeholder {
+      color: #d9d9d9;
+    }
+  }
+
+  .tds-searchbar-button {
+    float: right;
+    width: 36px;
+    height: 36px;
+    border: solid 1px transparent;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: white;
+    padding: 0;
+    font-size: 16px;
+
+    &:before {
+      font-size: 16px;
+      line-height: 36px;
+      color: #f70;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: #f70;
+      &:before {
+        color: #fff;
+      }
+    }
+
+    span.display-text {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+  }
 }
