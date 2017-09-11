@@ -5,31 +5,21 @@
     display:none;
   }
 }
+@media (min-width: 768px) {
+  //make .bend-nav-mobile appear in author mode
+    nav#cq-gen757 {
+        display: block;
+    }
+}
 // #logo
 // -------------------------------
 .bend-nav-mobile .small-nav-logo {
   float: left;
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-  background-position: center left;
-	height: 26px;
-	width: 305px;
-	background-image: url("/content/dam/bendbroadband/images/logos/logo-bend-horizontal.svg");
+	height: 30px;
+	width: 94px;
+  margin-top: -2px;
 }
-@media (max-width: 600px) {
-	.bend-nav-mobile .small-nav-logo {
-    background-size: auto 18px;
-    width: 215px;
-	}
-}
-@media (max-width: 440px) {
-	.bend-nav-mobile .small-nav-logo {
-    background-image: url("/content/dam/bendbroadband/images/logos/logo-bend-vertical.svg");
-    width: 94px;
-    height: 30px;
-    background-size: auto 30px;
-	}
-}
+
 #mobile-nav-container {
   padding: 16px 16px 0 16px;
   min-width: 304px;
