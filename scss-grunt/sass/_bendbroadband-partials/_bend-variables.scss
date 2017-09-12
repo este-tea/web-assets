@@ -47,9 +47,12 @@ $bend-yellow: #fc0;
 $bend-lt-blue: #64bfd3;
 $bend-dk-blue: #1c76b4;
 $bend-red: #FF4D50;
-
-$bend-orange-80: lighten($bend-orange, 10);
 $bend-gray: #585852;
+
+$bend-orange-80: lighten($bend-orange, 10); //aka #ff9233
+
+$bend-lt-gray: lighten($bend-gray, 15); //aka #808077
+$bend-dk-gray: darken($bend-gray, 15); //aka #30302d
 
 // OTHER UI COLORS
 // ====================================
