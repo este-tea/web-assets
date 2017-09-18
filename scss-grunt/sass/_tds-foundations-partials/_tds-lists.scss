@@ -388,3 +388,17 @@ div.myprodsservices > h3 {
   top: 2px;
 }
 /*---List style fixes end---*/
+
+ul.MYA-links {
+    margin: 0;
+    padding: 0;
+}
+
+ul.MYA-links li {
+    margin-top: -10px;
+    padding-left: 24px;
+}
+
+ul.MYA-links li:last-child {
+    margin-bottom: 0px;
+}
