@@ -105,6 +105,9 @@
   top: 0;
   color: white;
   text-indent: 0;
+  &:hover, &:focus {
+    background-color: #0c8fd9;
+  }
 }
 #mobile-searchbar .tds-searchbar-input {
   line-height: 44px;

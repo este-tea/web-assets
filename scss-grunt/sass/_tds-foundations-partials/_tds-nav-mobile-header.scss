@@ -221,6 +221,9 @@ ul.mobile-header-nav li {
   background-repeat: no-repeat;
   -webkit-background-size: 36px 36px;
   background-size: 36px 36px;
+  &:hover, &:focus {
+    background-color: #0c8fd0;
+  }
 }
 #btn-search, #btn-cart {
   text-indent: -9999px;
