@@ -184,9 +184,6 @@ table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
     }
 }
 @media (min-width:768px) {
-    .pkg-summary-content .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
-        display: initial !important;
-    }
     .pkg-summary-wrap .pkg-subtotal-table .sel-head-text {
         margin: 0;
         text-align: left;
