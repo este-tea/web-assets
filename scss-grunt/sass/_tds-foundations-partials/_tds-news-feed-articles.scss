@@ -185,8 +185,9 @@ section.share a {
         // icon wasn't showing properly
         &.contact-email-icon:before {
             display: block;
-            width: 35px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
+            background-size: 16px;
         }
         &:hover {
             background-color: $tds-dk-blue;
