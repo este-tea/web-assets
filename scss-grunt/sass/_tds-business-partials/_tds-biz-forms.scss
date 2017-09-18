@@ -112,41 +112,34 @@ div#setPasswordResults.tds-alert {
 
 /*--HYDRA-2139 Agent Portal - Styling - Temp password--*/
 #createAccountForm .tds-card .tds-form-group input {
-background: #ffffff;
+  background: #ffffff;
 }
 
-
-#createAccountForm  .tds-card .tds-form-group select {
-background: #ffffff;
+#createAccountForm .tds-card .tds-form-group select {
+  background: #ffffff;
 }
 
 .LV_validation_message.LV_invalid {
-color:#cd1d1d;
+  color: #cd1d1d;
 }
 
 .LV_validation_message.LV_valid {
- display:none;
- color:#6b9c22;
+  display: none;
+  color: #6b9c22;
 }
 
-//---------------------
-/*
-//check styles on https://fdevp.tdsbusiness.com/my-account/support-tickets.html
-//might not need this section anymore
-.parbase.troubleReporting.section {
-    margin-top: 28px;
-}
-@media (max-width:751px) {
-  .parbase.troubleReporting.section {
-      margin-top: 20px;
-      margin-bottom: -8px;
-  }
-}
-*/
-.tds-card .tds-form-group input, .tds-card  .tds-form-group select {
-    background: #ffffff;
-  }
 
-.tds-card .form-control[disabled],.tds-card .form-control[readonly],.tds-card fieldset[disabled] .form-control {
-      background-color: #eee;
-    }
+.tds-card .tds-form-group input,
+.tds-card .tds-form-group select {
+  background: #ffffff;
+}
+
+.tds-card .form-control[disabled],
+.tds-card .form-control[readonly],
+.tds-card fieldset[disabled] .form-control {
+  background-color: #eee;
+}
+
+.contactUsCard.parbase.section .tds-card .parbase.troubleReporting.section .tds-card.tds-card-gray {
+  background-color: #e3e3e3 !important;
+}

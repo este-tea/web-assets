@@ -10,3 +10,8 @@
 .shift-up button.gallery-btn.btn-block.tds-btn-plain {
     text-align: left;
 }
+
+// buttons in agent promos getting cut off at bottom
+.tds-news-feed-parsys .navbutton>.gallery-btn {
+  margin-bottom: 3px;
+}

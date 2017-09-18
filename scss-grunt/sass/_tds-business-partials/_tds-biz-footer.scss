@@ -27,6 +27,11 @@ div#tdsbizfooter--navbar {
  height: 40px;
  padding-bottom: 0;
 }
+@media (max-width:460px) {
+    .customLargeNavBar + #social-container {
+        padding-top: 12px;
+    }
+}
 // extended/homepage footer
 // ----------------------------------------
 .homepageFooter {
@@ -145,6 +150,10 @@ div.contact-links-wrap > ul > li:hover > a:hover:before {
     max-width: 600px;
   }
 }
+#subscribe-container+.container .customLargeNavBar.parbase.navbar {
+  border-top: none;
+  border-bottom: solid 1px #25acf0;
+}
 /*icon not showing up in ie 9, remove linear gradient*/
 a.btn-subscribe::before {
 background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg");
@@ -160,6 +169,26 @@ div.copyright-text {
     line-height: 21px;
 }
 
+@media (max-width:584px) {
+    .tdsbizfooter .copyright-logo {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .tdsbizfooter .copyright-logo #fortune-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .tdsbizfooter .copyright-text {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+
+// footer navbar links
+// ----------------------------------------
 #genericfooter-container .customLargeNavBar.parbase.navbar {
     text-align: center;
 }
@@ -191,20 +220,20 @@ div.copyright-text {
         padding-top: 12px;
     }
 }
+div#tdsbizfooter--navbar.tds-other-nav>ul>li {
+  margin-top: 20px;
+  float: none;
+  display: inline-block;
+  margin-left: -4px;
+}
 
-@media (max-width:584px) {
-    .tdsbizfooter .copyright-logo {
-        display: block;
-        padding-bottom: 0;
-    }
+div#tdsbizfooter--navbar.tds-other-nav>ul>li>a {
+  padding-left: 16px;
+  padding-right: 16px
+}
 
-    .tdsbizfooter .copyright-logo #fortune-logo {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .tdsbizfooter .copyright-text {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
+@media (max-width: 751px) {
+  div#tdsbizfooter--navbar.tds-other-nav>ul {
+    text-align: center;
+  }
 }

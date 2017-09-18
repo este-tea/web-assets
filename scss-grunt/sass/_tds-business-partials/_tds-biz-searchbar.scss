@@ -1,6 +1,6 @@
 /* tds-biz-searchbar
 ==========================================*/
-input.tds-searchbar-input {
+.tds-searchbar-input {
     background-color: $tds-lt-gray;
     margin-right: 0;
     width: 240px;
@@ -24,7 +24,7 @@ input.tds-searchbar-input {
 }
 
 #mobile-searchbar {
-  input.tds-searchbar-button {
+  .tds-searchbar-button {
     color: transparent!important;
     background-color: $tds-lt-gray;
     height: 40px;
@@ -41,21 +41,29 @@ input.tds-searchbar-input {
       width: 100%;
   }
 }
-
+::placeholder {
+    color: #888;
+}
 ::-webkit-input-placeholder {
-   color: #999;
+   color: #888;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: #999;
+   color: #888;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #999;
+   color: #888;
 }
 :-ms-input-placeholder {
-   color: #999;
+   color: #888;
 }
 
 // newsSearchBar component
+// ----
+
+// remove extra padding that is being added globally
+.pagelayout .container-fluid .container .parbase.section.newsSearchBar {
+  padding: 0;
+}
 .newsSearchBar h2 {
     color: #19388a;
 }

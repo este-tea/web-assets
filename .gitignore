@@ -62,3 +62,5 @@ node_modules
 scss-grunt/css/tds-cable-styles\.css
 
 scss-grunt/css/tds-foundations-styles\.css
+
+scss-grunt/css/tds-biz-styles\.css

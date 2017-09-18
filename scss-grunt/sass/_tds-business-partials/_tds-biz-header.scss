@@ -26,6 +26,10 @@
 #othernav-container-topright .tds-other-nav > ul > li > a {
   border-right: solid 1px $tds-dk-gray-60;
 }
+//remove dropdown arrow from about us menu in header
+#othernav-container-topright .tds-other-nav a#menu-about:after {
+  content: none;
+}
 #top-links {
   border-bottom: solid 2px #555;
 }

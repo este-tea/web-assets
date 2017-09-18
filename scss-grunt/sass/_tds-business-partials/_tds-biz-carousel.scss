@@ -67,10 +67,14 @@
   font-family: $tds-font-family;
   font-size: 18px;
   max-width: inherit;
+  p {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
 }
 @media (max-width:$screen-xs-min) {
   .carouselbodytext {
-    > p {
+    > p, p {
       font-size: 14px;
       line-height: 1.5em;
       color: #555;
