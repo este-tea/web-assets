@@ -1,3 +1,6 @@
+/* tds-variables
+==========================================*/
+
 //TOC
 // ====================================
 // BRAND COLOR PALETTE
@@ -11,7 +14,18 @@
 
 // BRAND COLOR PALETTE
 // ====================================
-
+.tds-orange {
+    color: #f37d1d;
+}
+.tds-blue {
+    color: #19388a;
+}
+.tds-lt-blue {
+    color: #0c8fd0;
+}
+.tds-green {
+    color: #7bb227;
+}
 // TDS Blue: main brand color and color of logo
 $tds-dkr-blue: #19388A;
 $tds-dk-blue: #19388A;

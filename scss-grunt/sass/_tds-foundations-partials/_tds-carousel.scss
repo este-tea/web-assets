@@ -77,14 +77,17 @@
 }
 // remove vignette and replace with box
 @media (min-width: 585px) {
-.content.container .carouselslide {
-    background-color: white;
-    background-color: rgba(255,255,255,0.75);
-    width: auto;
-    float: left;
-    margin: 28px;
-    padding: 28px;
+  .content.container .carouselslide {
+      background-color: white;
+      background-color: rgba(255,255,255,0.75);
+      width: auto;
+      float: left;
+      margin: 28px;
+      padding: 28px;
+  }
 }
+.no-content .carouselslide {
+    background-color: transparent!important;
 }
 .carouseltitletext {
   font-weight: 500;

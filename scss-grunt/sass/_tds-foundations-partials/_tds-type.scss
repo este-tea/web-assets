@@ -153,29 +153,6 @@ a strong {
   margin-top: 12px;
 }
 
-//---add padding to more details link in gallery cards---
-.gallery-grid .gallery-description p:last-child > a {
-    display: inline-block;
-    padding: 5px 12px;
-}
-.gallery-grid .gallery-description p:last-child > a:hover,
-.gallery-grid .gallery-description p:last-child > a:focus  {
-    background-color: #0c8fd0;
-    color: white;
-}
-//adding the "get details" link to cards in card gallery component
-form.get-details {
-    text-align: center;
-}
-button.text-link.details {
-    padding: 8px;
-}
-button.text-link.details:hover,
-button.text-link.details:focus {
-    color: #fff;
-    background: #618e34;
-}
-.cardgallery a:focus .tds-card button.text-link.details,
-.cardgallery a:hover .tds-card button.text-link.details {
-    color: white;
+.ui-widget {
+    font-family: $tds-font-body;
 }

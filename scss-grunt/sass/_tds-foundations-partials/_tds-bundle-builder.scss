@@ -47,10 +47,6 @@
     border-bottom: 2px solid $tds-dk-blue; // border just for sub-banners
   }
 }
-.bundleSubheader {
-  padding-top: 20px;
-  padding-bottom: 35px;
-}
 
 .bundle-error {
   padding: 15px;
@@ -716,7 +712,17 @@ input:checked+.tds-radio-btn:before {
   border-bottom: 2px solid $tds-blue-100;
 }
 .bundleSubheader {
-  padding: 20px 30px 35px;
+  padding: 10px 40px 25px;
+}
+@media (max-width: 750px) {
+  .bundleSubheader {
+    padding: 28px;
+  }
+}
+@media (max-width: 583px) {
+  .bundleSubheader {
+    padding: 16px;
+  }
 }
 .bundle_container.section {
   float: left;
@@ -783,6 +789,7 @@ h3.tds-price {
 }
 .bundle_container .tds-page-banner.tds-sub-banner .col-sm-8 {
   width: 100% !important;
+  padding:0;
 }
 .bundleSubheader h2 {
   text-transform: none;
@@ -952,16 +959,6 @@ p.price-text.price-override {
     margin-left: 0px;
     min-height: 0;
     margin-bottom: 0!important;
-}
-@media (max-width: 750px) {
-.bundleSubheader {
-    padding: 16px;
-}
-}
-@media (max-width: 583px) {
-.bundleSubheader {
-    padding: 0;
-}
 }
 
 .prod-items input[type="checkbox"] {

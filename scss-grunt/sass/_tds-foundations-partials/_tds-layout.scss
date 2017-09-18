@@ -1,26 +1,20 @@
 /* tds-layout
 ==========================================*/
-.tds-orange {
-    color: #f37d1d;
-}
-.tds-blue {
-    color: #19388a;
-}
-.tds-lt-blue {
-    color: #0c8fd0;
-}
-.tds-green {
-    color: #7bb227;
-}
 // use this to address layout issues fixes that are sitewide
-.tds-clearfix:after {
+.tds-clearfix, .clearfix {
+  &:before, &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
     visibility: hidden;
     display: block;
     font-size: 0;
-    content: " ";
     clear: both;
     height: 0;
+  }
 }
+
 * html .tds-clearfix {
     zoom: 1;
 }
@@ -76,6 +70,9 @@
 }
 .pagelayout .parbase.richTextComponent.section {
     margin-bottom: 24px;
+}
+.content.container .row .content .page_content .pagelayout > .container-fluid > .row {
+    margin: 0;
 }
 // Data-list
 // ---------
@@ -186,4 +183,7 @@ dd {
 .tds-plus-packs-section .prod-summary {
     padding-left: 15px;
     padding-right: 15px;
+}
+.top-margin-28 {
+  margin-top: -28px;
 }

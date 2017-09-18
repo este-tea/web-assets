@@ -1,3 +1,5 @@
+/* tds-collapsible-list-component
+==========================================*/
 // Accordion selections
 .panel-group.tds-collapse {
   margin-bottom: 0; // Removing panel-group margin that is being used in the datatables
@@ -63,6 +65,21 @@
     /*remove top border when hover over city name*/
     border-top: none;
 }
+.panel-group.tds-tariff-select-menu .panel > .panel-collapse > .list-group .list-group-item:hover p {
+    color: #fff;
+}
 .collapsableListGroup a.gallery-btn.tds-btn-plain.btn-block.collapsed {
     box-shadow: none;
+}
+.collapsableListGroup .panel-group .panel ul.list-group {
+    margin-bottom: 0;
+}
+
+ul.list-group > .list-group-item > p {
+    padding: 14px;
+    margin-bottom: 0;
+}
+
+.list-group-item {
+    border: none;
 }

@@ -78,7 +78,9 @@ ul.home-grid {
   .gallery-grid { padding-bottom: 1em }
 
 }
-
+ul.gallery-grid.col-sm-12 {
+    padding-right: 0;
+}
 .gallery-grid li {
   float: left;
   padding: 0 1em 1em 0;
@@ -252,4 +254,40 @@ ul.home-grid > li > div.four-panel-card:focus  .gallery-btn,
     background-color: #0c8fd0;
     cursor: pointer;
     box-shadow: none;
+}
+.galleryofgalleries:before, .galleryofgalleries:after {
+    display: table;
+    content: " ";
+}
+.galleryofgalleries:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+//---add padding to more details link in gallery cards---
+.gallery-grid .gallery-description p:last-child > a {
+    display: inline-block;
+    padding: 5px 12px;
+}
+.gallery-grid .gallery-description p:last-child > a:hover,
+.gallery-grid .gallery-description p:last-child > a:focus  {
+    background-color: #0c8fd0;
+    color: white;
+}
+//adding the "get details" link to cards in card gallery component
+form.get-details {
+    text-align: center;
+}
+button.text-link.details {
+    padding: 8px;
+}
+button.text-link.details:hover,
+button.text-link.details:focus {
+    color: #fff;
+    background: #618e34;
+}
+.cardgallery a:focus .tds-card button.text-link.details,
+.cardgallery a:hover .tds-card button.text-link.details {
+    color: white;
 }

@@ -94,7 +94,10 @@
 	display: inline-block;
 	padding: 0 4%;
 }
-
+#social-media-links li a img {
+    height: 40px;
+    width: 40px;
+}
 @media all and (max-width: $screen-sm-min) {
 #social-media-links li {
 	padding: 0 3%;

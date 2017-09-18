@@ -38,3 +38,47 @@
     margin-top: 40px;
   }
 }
+
+// pull quote in about section
+// -----
+.pagelayout.parbase.section .pull-quote {
+  padding: 0;
+}
+
+.pagelayout > .pull-quote .tds-pagedivider-two-col {
+  padding-top: 40px;
+}
+
+.pagelayout .pull-quote .tds-pull-quote {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+.pagelayout .pull-quote .parbase.richTextComponent.section {
+  margin-bottom: 40px;
+}
+
+.pagelayout > .pull-quote .tds-content-rich p.h2 {
+  margin-bottom: 8px;
+}
+
+.pagelayout .pull-quote .img-responsive {
+  max-width: 250px;
+  width: 100%;
+}
+@media (max-width: 751px) {
+  .pagelayout .pull-quote .parsys.parsys-sidebar {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  .pagelayout .pull-quote .tds-pull-quote {
+    padding-right: 0;
+  }
+}
+@media (max-width:400px) {
+  .pagelayout > .pull-quote .tds-pagedivider-two-col .col-sm-8 {
+    padding: 0;
+  }
+}

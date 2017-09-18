@@ -281,6 +281,10 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
   .product-content {
     .prod-description {
         margin-bottom: 0;
+        a:focus {
+            color:white;
+            background-color:#0c8fd0;
+        }
     }
     p:last-child {
         margin-bottom: 0;
@@ -353,6 +357,7 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
     padding: 24px;
     &.is-selected {
       background-color: #d9d9d9;
+      border-color: #25acf0;
     }
     &:last-child {
         margin-bottom: 4px;
@@ -547,7 +552,9 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
     height: 2px;
     background: #d3d8e8;
 }
-
+.pkg-builder-addon-wrap .product-subitem input:focus + .tds-radio-btn {
+    border-color: #0c8fd0;
+}
 // media queries for section layout
 // ----------------
 @media (min-width: 990px) {
@@ -778,6 +785,10 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
     color: #0c8fd0;
     &:hover {
         color: #19388a;
+    }
+    &:focus {
+        color: white;
+        background-color: #0c8fd0;
     }
     &:after {
         content: "";

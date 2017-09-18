@@ -78,6 +78,12 @@ button.gallery-btn.btn-next:after {
 .tds-icon-search:before {
   content: "\e80b";
 }
+.fa-search:before {
+    content: "\e80b";
+    font-size:16px;
+    position:relative;
+    top:0px;
+}
 // Plus cart
 .tds-icon-cart-plus {
 	background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-addon.svg");

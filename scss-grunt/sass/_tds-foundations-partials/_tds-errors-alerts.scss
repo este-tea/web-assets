@@ -36,6 +36,15 @@
   a {
     color: #000;
     text-decoration: underline;
+    &:focus {
+      background: #555;
+      color: white;
+      padding: 0 8px;
+    }
+    &:hover {
+      text-decoration: none;
+      font-weight: 500;
+    }
   }
   #enteredAddress a {
     text-decoration: underline;
@@ -262,7 +271,7 @@
 //lt-blue alert informational icon
 .tds-alert.tds-alert-info, .tds-alert.tds-alert-status  {
     background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-information.svg');
-    background-size: 22px 22px;
+    background-size: 20px 20px;
     background-position: 16px 11px;
     background-repeat: no-repeat;
     padding-left: 52px;

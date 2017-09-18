@@ -86,6 +86,11 @@
 .col-xxxs-9 {
   float: left;
 }
+@media (max-width:600px) {
+    .col-xxs-12 {
+        width: 100%;
+    }
+}
 @media (max-width: $screen-xs) {
   .col-xxs-pull-12 {
     right: 100%;

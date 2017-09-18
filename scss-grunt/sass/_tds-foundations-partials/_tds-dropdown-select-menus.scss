@@ -17,7 +17,9 @@
 
 
 // tariff select menu
-
+.panel-group .panel {
+    border-radius:0;
+}
 // Accordion selections
 .panel-group.tds-tariff-select-menu {
   margin-bottom: 0px;// Removing panel-group margin that is being used in the datatables
@@ -83,14 +85,27 @@
   .btn-block .fa {
     //@extend .fa-minus;
     &:before {
-      content: "\e812";
+      display: inline-block;
+      font-size: 13px;
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      line-height: 1;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: #0c8fd0;
+      border-radius: 50%;
+      padding: 5px;
+      margin-top: -3px;
     }
-    padding: 2px 0px 1px 3px;
-    width: 17px;
+    padding: 0;
+    width: 18px;
     color: $tds-white;
     font-size: 14px;
-    background: $tds-lt-blue;
-    border-radius: 10px;
+    background: none;
+    border-radius: 0px;
   }
   .btn-block.collapsed .fa {
     //@extend .fa-plus;
@@ -103,6 +118,7 @@
     background: $tds-ltr-gray;
     border-top: 0px;
     border-bottom: 0px;
+    border-radius: 0;
     &:hover {
       color: $tds-white;
       background: $tds-lt-blue;
