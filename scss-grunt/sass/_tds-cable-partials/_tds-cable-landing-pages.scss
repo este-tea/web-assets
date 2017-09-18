@@ -1,0 +1,135 @@
+/* tds-cable-landing-pages.scss
+==========================================*/
+// 600 mb landing page
+.cws-content .tds-page-banner.has-copy.lp-600 .banner-content .tds-content-rich {
+  background: rgba(25, 25, 25, .75);
+}
+// 30 day moneyback
+.cws-content .tds-page-banner.section-moneyback .banner-image {
+  background-color: #ff9d18;
+}
+
+.cws-content .tds-page-banner.section-moneyback .banner-content .tds-content-rich {
+  background: rgba(255, 255, 255, .85);
+}
+
+.cws-content .tds-page-banner.section-moneyback .banner-content .tds-content-rich h1 {
+  color: #19388a;
+}
+
+.cws-content .tds-page-banner.section-moneyback .banner-content .tds-content-rich p {
+  color: #353535;
+}
+
+.moneyback-nocatch .tds-pagedivider-one-col .navbutton {
+  text-align: center;
+}
+
+table.table-moneyback {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.table-moneyback tr td {
+  padding: 8px;
+  border: solid 2px #d9d9d9;
+  font-size: 20px;
+}
+
+.table-moneyback tr td:last-child {
+  text-align: center;
+}
+
+.table-moneyback tr.product-section, tr.benefits-section {
+  border-top: solid 6px #19388a;
+}
+
+.table-moneyback span.product {
+  font-weight: 500;
+  color: black;
+  font-size: 28px;
+}
+
+.table-moneyback td>span.benefit {
+  font-weight: 500;
+  color: #19388a;
+}
+// 300mb landing page
+.cws-content .tds-page-banner.section-300 .banner-image {
+  background-color: #091e49;
+}
+
+.cws-content .tds-page-banner.section-300 .banner-content .tds-content-rich {
+  background: rgba(53, 53, 53, .85);
+}
+
+.category-content.section-300-greatnews .tds-pagedivider-two-col>div.col-sm-4 {
+  padding-right: 0;
+}
+
+.category-content.section-300-greatnews .tds-pagedivider-two-col>div.col-sm-8 {
+  padding-left: 0;
+}
+
+@media (max-width:767px) {
+  .category-content.section-300-greatnews .tds-pagedivider-two-col>div {
+    padding: 0;
+  }
+}
+.table-300>tbody>tr>th {
+  background-color: #d9d9d9;
+}
+
+.table-300 tr {
+  border-bottom: solid 2px #d9d9d9;
+}
+
+// freedom
+table.table-freedom-channels {
+  background: #d9d9d9;
+}
+
+.table-freedom-channels tr {
+  border-bottom: solid 3px #fff;
+}
+
+.table-freedom-channels tr:last-child {
+  border-bottom: none
+}
+
+.table-freedom-channels td {
+  padding: 8px 16px;
+}
+
+.table-freedom-channels td.channel-type {
+  text-transform: uppercase;
+  font-size: 20px;
+  background: #0c8fd0;
+  color: white;
+}
+
+.table-freedom-channels td.channel-logos>img {
+  margin-right: 16px;
+}
+
+@media (max-width:480px) {
+  .table-freedom-channels td.channel-type {
+    display: block;
+    text-align: center;
+  }
+  .table-freedom-channels td.channel-logos {
+    display: block;
+    text-align: center;
+  }
+}
+
+.cws-content .tds-page-banner.section-lp-freedom .banner-image {
+  background-color: #362941;
+}
+.cardgallery>.section-lp-freedom>a>.tds-card>img.tds-card-img {
+  height: 100px;
+  width: auto!important;
+  margin-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

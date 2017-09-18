@@ -104,10 +104,18 @@
 .cable-nav-top-bar {
     .L1-nav > ul > li > a {
         background-color: inherit;
+        &:hover, &:focus {
+            background-color: #0a7aaa;
+        }
     }
     .L1-nav ul ul li a {
         background-color: inherit !important;
         color: $tds-white;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:focus {
+            background-color: #19388a!important;
+        }
     }
     > .container {
         max-width: 100%;
@@ -267,7 +275,7 @@
         }
         img {
             width: 140px;
-            height: auto;
+            height: 60px;
         }
     }
 }
@@ -304,7 +312,13 @@
     .contact-links-text {
         font-size: 16px;
         font-weight: 300;
-        color: $cable-dk-blue;
+        color: #555;
+        &:hover, &:focus {
+            color: #19388a;
+            &::before {
+                background-color: #19388a;
+            }
+        }
         @media screen and (max-width: 480px) {
             font-size: 14px;
         }
@@ -363,7 +377,7 @@
         background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-white.svg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 17px;
+        background-size: initial;
         @media screen and (max-width: 480px) {
             background-size: 12px;
         }
@@ -392,6 +406,11 @@ nav.desktop-nav {
         display: block;
         color: $tds-dk-blue;
         text-decoration: none;
+        //fixes color on main nav on focus
+        &:focus {
+            color: #fff;
+            background-color: #19388a;
+        }
     }
     ul {
         margin: 0;
@@ -466,9 +485,13 @@ nav.desktop-nav {
             background: $tds-dk-gray;
         }
         a {
-            padding-right: 0;
+            padding-left: 10px;
+            padding-right: 10px;
             margin: 0 2px;
             font-weight: 300;
+            &:focus {
+                background-color: #0c8fd0!important;
+            }
         }
     }
     //Horizontal rule between dropdown menu items
@@ -480,6 +503,10 @@ nav.desktop-nav {
 }
 // mobile nav menu
 //------------------------
+/*fixes small nav dialog overlapping large nav in author mode*/
+.mobile-nav {
+    clear: both;
+}
 #btn-menu-only {
     font-size: 18px;
     text-transform: uppercase;

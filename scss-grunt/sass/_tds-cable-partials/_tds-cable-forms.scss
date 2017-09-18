@@ -7,12 +7,16 @@
 .checkbox .tds-radio-btn {
     border-radius: 0;
 }
-
+input:disabled + .tds-radio-btn {
+    opacity: 1;
+}
 label:hover input:checked + .tds-radio-btn:before {
     top: inherit;
     left: inherit;
 }
-
+label input:focus ~ .tds-radio-btn {
+    box-shadow: 0px 0px 3px 0 rgba(12, 143, 208, 1);
+}
 /* Address Enrty Page */
 #addressForm .form-group + button.gallery-btn {
     margin-top: 12px;
@@ -37,6 +41,19 @@ label:hover input:checked + .tds-radio-btn:before {
   h4, .h4 {
     margin: 0 0 5px 0;
   }
+}
+#provideAddressButton .gallery-btn:hover,
+#loginButton .gallery-btn:hover,
+#provideAddressButton .gallery-btn:focus,
+#loginButton .gallery-btn:focus {
+    background-color: #0c8fd0;
+}
+
+@media (max-width: 400px) {
+    #provideAddressButton .gallery-btn,
+    #loginButton .gallery-btn {
+        width: 100%;
+    }
 }
 //existing service intercept
 .existingService .login #loginFieldset {

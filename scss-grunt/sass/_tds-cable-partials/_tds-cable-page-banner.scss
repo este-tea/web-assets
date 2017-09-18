@@ -1,59 +1,145 @@
 /* tds-cable-page-banner.scss
 ==========================================*/
-
 .cws-content {
   .tds-page-banner {
-      padding-left: 0;
-      padding-right: 0;
-      div#page-banner {
-          border-top: 0;
-          border-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+
+    div#page-banner {
+      border-top: 0;
+      border-bottom: 0;
+    }
+
+    div#banner-overlay {
+      display: none;
+    }
+
+    .banner-image {
+      background-color: #e3e3e3;
+      background-size: auto 100% !important;
+      background-position: center center;
+      @media (max-width:900px) {
+        background-position: calc(100% + 80px) center;
       }
-      div#banner-overlay {
-          display: none;
+    }
+
+    .banner-content {
+      display: table-cell;
+      height: 320px;
+      vertical-align: middle;
+      width: 100%;
+      max-width: 700px;
+
+      h1.banner-title {
+        border-bottom: 0;
+        padding-bottom: 0;
       }
-      .banner-image {
-          background-color: #e3e3e3;
-          background-size: auto 100% !important;
-          background-position: 90% top;
-      }
-      .banner-content {
-          display: table-cell;
-          height: 320px;
-          vertical-align: middle;
-          width: 100%;
-          max-width: 600px;
-          h1.banner-title {
-              border-bottom: 0;
-              padding-bottom: 0;
-          }
-      }
+    }
+
+    &.section-internet .banner-image {
+      background-color: #8d9ba4;
+    }
+
+    &.section-tv .banner-image {
+      background-color: #4b4141;
+    }
+    &.section-tv-premiumchannels .banner-image {
+      background-color: #220f05;
+    }
+    &.section-tv-specialtytiers .banner-image {
+      background-color: #a3abaa;
+    }
+
+    &.section-phone .banner-image {
+      background-color: #e1cabf;
+    }
+  }
+
+  .tds-page-banner.has-copy .banner-content .tds-content-rich {
+    background: rgba(25, 56, 138, .75);
+    padding: 24px;
+
+    h1 {
+      margin-top: 0;
+      color: white;
+    }
+
+    p {
+      color: white;
+      line-height: 32px;
+      font-size: 16px;
+    }
   }
 }
-
 /* ======= CATCH TV Page ======= */
 .catchtv-pagebanner {
   .banner-title {
-      font-size: 36px;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    margin-top: -12px;
+
+    .banner-never {
+      font-weight: 500;
+      color: #19388a;
+    }
+
+    .banner-secondline {
+      display: block;
       text-align: center;
-      color: #000;
-      margin-top: -12px;
-      .banner-never {
-          font-weight: 500;
-          color: #19388a;
+      font-size: 50px;
+      margin-top: 14px;
+    }
+
+    .banner-catchtv {
+      font-weight: 600;
+      color: #19388a;
+
+      sup {
+        font-size: 60%;
       }
-      .banner-secondline {
-          display: block;
-          text-align: center;
-          font-size: 50px;
-          margin-top: 14px;
-      }
-      .banner-catchtv {
-          font-weight: 600;
-          color: #19388a;
-          sup {
-              font-size: 60%;
-          }
-      }
+    }
   }
+
+  .banner-image {
+    background-color: #231c16;
+  }
+
+  .banner-content {
+    padding-left: 0;
+
+    .tds-content-rich {
+      background: rgba(255, 255, 255, .70);
+      padding: 24px;
+    }
+  }
+}
+//tv everywhere banner-content
+
+.cws-content .tds-page-banner.section-tveverywhere {
+  .banner-image {
+    background-color: white;
+    background-position: center center;
+  }
+
+  .banner-content {
+    @media (max-width:767px) {
+      height: 240px;
+    }
+    @media (max-width:583px) {
+      height: 190px;
+    }
+    @media (max-width:460px) {
+      height: 150px;
+    }
+    @media (max-width:360px) {
+      height: 120px;
+    }
+  }
+}
+
+//premium channels content
+.category-content.premium-channels .tds-pagedivider-two-col .col-sm-8 {
+  min-height: inherit;
 }

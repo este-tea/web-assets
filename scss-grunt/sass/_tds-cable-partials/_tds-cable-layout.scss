@@ -1,38 +1,21 @@
 /* tds-cable-layout.scss
 ==========================================*/
-
 .container-fluid.cws-content {
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: -5px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -5px;
 }
 //remove extra padding when bootstrap containers are nested within each other
+
 .container-fluid.cws-content .pagelayout .container-fluid {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-fluid.center {
-    text-align: center;
+  text-align: center;
 }
 
-//classes for colors for authors to use
-.tds-orange {
-    color: #f37d1d;
-}
-.tds-blue {
-    color: #19388a;
-}
-.tds-lt-blue {
-    color: #0c8fd0;
-}
-.tds-green {
-    color: #7bb227;
-}
-
-.gallery-btn, .tds-btn {
-    box-shadow: none;
-}
 .cws-content .tds-pagedivider-one-col {
-    padding-top: 0;
+  padding-top: 0;
 }

@@ -1,0 +1,109 @@
+/* tds-cable-category-content.scss
+==========================================*/
+//product pages content
+
+.pagelayout .container-fluid.category-content {
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  .tds-content-rich p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+.category-content .img-responsive {
+  max-height: 240px;
+}
+
+.pagelayout .category-content .parbase.richTextComponent.section {
+  margin-bottom: 0;
+}
+
+.category-content .tds-pagedivider-two-col .col-sm-8 {
+  min-height: 240px;
+  display: table;
+  margin-bottom: 0;
+  @media (max-width:767px) {
+    min-height: 0;
+    margin-top: 36px;
+  }
+
+  .parsys.parsys-content {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+
+.category-content .tds-pagedivider-two-col > div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 751px) {
+  .parsys.parsys-sidebar {
+    margin-top: 0;
+  }
+}
+//display in author mode
+
+.cq-wcm-edit .category-content .tds-pagedivider-two-col .col-sm-8 {
+  display: initial;
+}
+
+.category-content.catchtv-equipment .tds-pagedivider-two-col .col-sm-8 {
+  min-height: 185px;
+}
+
+.category-content.catchtv-intro .tds-pagedivider-two-col .col-sm-8 {
+  min-height: 130px;
+}
+
+.pagelayout .container-fluid.category-content.catchtv-intro {
+  padding-bottom: 0;
+}
+
+.pagelayout .category-content.catchtv-intro .parbase.richTextComponent.section,
+.pagelayout .category-content.catchtv-intro .parbase.richTextComponent.section .page-intro {
+  margin-bottom: 0;
+}
+
+.category-content.catchtv-benefits .navbutton.parbase.section {
+  margin: 0 auto;
+  text-align: center;
+
+  .gallery-btn {
+    margin: 0;
+  }
+}
+
+.category-content .col-sm-8 .parbase.richTextComponent.section {
+  margin-bottom: 0;
+}
+
+.category-content.tveverywhere-access .tds-pagedivider-two-col .col-sm-8 {
+  padding-left: 0;
+}
+
+.tveverywhere-access .col-sm-8 .richTextComponent .tds-content-rich li {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 18px;
+}
+
+.tveverywhere-subscription .tds-pagedivider-two-col > .col-sm-4 {
+  padding-left: 0;
+}
+
+.tveverywhere-subscription .tds-pagedivider-two-col > .col-sm-8 {
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  .tveverywhere-subscription .tds-pagedivider-two-col > .col-sm-4 {
+    padding: 0 0 36px;
+  }
+
+  .tveverywhere-subscription .tds-pagedivider-two-col > .col-sm-8 {
+    padding: 0;
+  }
+}

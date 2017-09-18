@@ -152,6 +152,7 @@ div.hr-darkgray {
   height: 0;
   overflow: hidden;
   margin-top: 1px;
+  text-align: left;
 }
 .tds-other-nav > ul > li:hover ul,
 .tds-other-nav > ul > li > a:hover ul,
@@ -194,6 +195,12 @@ div.hr-darkgray {
   border-bottom: solid 2px $tds-lt-blue-100;
   max-width: $screen-md-min;
 }
+#genericfooter--navbar.tds-other-nav>ul>li {
+    margin-top: 20px;
+}
+#genericfooter--navbar.tds-other-nav>ul>li>ul>li>a {
+    text-align: left;
+}
 @media (max-width: $screen-sm) {
     #genericfooter--navbar.tds-other-nav ul {
         text-align: center;
@@ -201,7 +208,7 @@ div.hr-darkgray {
     #genericfooter--navbar.tds-other-nav > ul > li {
         float: none;
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         /*gets rid of weird gap between links*/
         margin-left: -4px;
     }

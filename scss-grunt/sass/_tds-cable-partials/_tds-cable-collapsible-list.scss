@@ -1,0 +1,37 @@
+/* tds-cable-listgroup.scss
+==========================================*/
+.listgroup-faqs .collapsableListGroup .panel-title a {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.listgroup-faqs .collapsableListGroup .panel .panel-collapse li:before {
+  content: none;
+}
+
+.listgroup-faqs .collapsableListGroup .panel .panel-collapse li p {
+  font-size: 16px;
+  line-height: 32px;
+}
+.listgroup-faqs .panel-group.tds-tariff-select-menu a.gallery-btn.collapsed {
+  color: #fff!important;
+  background: #0c8fd0;
+}
+
+.listgroup-faqs .panel-group.tds-tariff-select-menu .btn-block .fa:before {
+  background: #19388a;
+  margin-top: 1px;
+}
+
+.listgroup-faqs .panel-group.tds-tariff-select-menu a.gallery-btn.collapsed:hover {
+  color: #fff!important;
+  background: #19388a;
+}
+
+.listgroup-faqs .panel-group.tds-tariff-select-menu .panel>.panel-collapse>.list-group .list-group-item:hover {
+  background: #d9d9d9;
+}
+
+.listgroup-faqs .panel-group.tds-tariff-select-menu .panel>.panel-collapse>.list-group .list-group-item:hover p {
+  color: #555;
+}

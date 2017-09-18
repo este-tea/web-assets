@@ -109,6 +109,7 @@ section .table > tbody > tr > td {
         }
     }
 }
+
 .cart-review-header {
     overflow: hidden;
     margin-top: 0;
@@ -164,16 +165,22 @@ section .table > tbody > tr > td {
 }
 ////Buttons////
 #emptyCartButton {
+    &:hover::before {
+      background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg");
+    }
     &:before {
         content: "";
         width: 30px;
         height: 22px;
         margin: -5px 0 0 -10px;
         float: left;
-        background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg");
+        background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-lt-blue.svg");
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    @media (max-width: 480px) {
+        float: right!important;
     }
 }
 .cart-overview-actions form.pull-right.form-group {
@@ -184,7 +191,7 @@ section .table > tbody > tr > td {
 }
 button#beginCheckout {
     @media (max-width: 480px) {
-        margin-top: 28px;
+        margin-top: 60px;
         width: 100%!important;
         display: inline-block;
     }
@@ -192,11 +199,33 @@ button#beginCheckout {
 ///Tyopgraphy//
 .tds-cost-price {
     color: $tds-green;
-    text-transform: uppercase;
+    text-transform: none;
     span {
-        font-size: 0.65em;
+        font-size: .85em;
     }
 }
 .tds-cost-price.cost-one-time {
     color: $tds-dkr-blue;
+}
+.cart-review-container h2.package-title.col-md-9.col-sm-12 {
+  width: auto;
+  display: inline-block;
+}
+
+.cart-review-container .line-item-actions.col-md-3.col-sm-12 {
+  width: auto;
+  float: right;
+  margin-left: 20px;
+}
+
+@media (max-width: 960px) {
+  .cart-review-header .col-md-3.col-sm-12 .form-group {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-review-header .col-md-3.col-sm-12 .form-group {
+    margin-top: 0px;
+  }
 }

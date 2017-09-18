@@ -71,8 +71,14 @@ a.btn-subscribe::before {
     }
 }
 // copyright
+div.copyright-logo {
+    padding-left: 0;
+    padding-right: 0;
+}
 div.copyright-text {
     font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 // text links and dropdown
 div#tdscablefooter--navbar {
