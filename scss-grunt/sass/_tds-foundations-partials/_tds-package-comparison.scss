@@ -161,69 +161,7 @@ h3.hr-after-text {
         }
     }
 }
-////Package Button and links////
-a.tds-btn,
-div.tds-btn {
-    width: 100%;
-    margin-top: 20px;
-    padding: 12px 16px !important;
-    clear: both;
-    color: #FFFFFF!important;
-    background-color: $tds-green;
-    border-color: $tds-green;
-    text-align: left;
-    border: 1px;
-    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
-    text-decoration: none !important;
-    z-index: 100;
-    &:after {
-        content: "";
-        width: 24px;
-        height: 16px;
-        float: right;
-        background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
-        background-position: right center;
-        background-repeat: no-repeat;
-        background-size: 9px 14px;
-    }
-    &:before {
-        content: " ";
-        display: table;
-        clear: both;
-        ////// Clear Icon over border/////
-        width: 0 !important;
-        height: 0 !important;
-        background: none !important;
-        background-image: none !important;
-    }
-    &:focus,
-    &:hover {
-        text-decoration: none;
-        background-color: $tds-dkr-green !important;
-        cursor: pointer;
-        box-shadow: none;
-        text-decoration: none !important;
-        color: $tds-white;
-        border-radius: 0;
-        border: 0;
-        z-index: 100;
-    }
-}
-a.tds-btn.desktop,
-div.tds-btn.desktop {
-    @media (max-width: 991px) {
-        display: none;
-    }
-}
-a.tds-btn.mobile,
-div.tds-btn.mobile {
-    @media (min-width: 992px) {
-        display: none;
-    }
-    @media (max-width: 991px) {
-        display: block;
-    }
-}
+
 ///Price Typography styling////
 .tds-container-priceDetails {
     text-align: center;

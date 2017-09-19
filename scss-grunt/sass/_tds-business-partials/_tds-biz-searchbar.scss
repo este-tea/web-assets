@@ -1,111 +1,109 @@
 /* tds-biz-searchbar
 ==========================================*/
-.tds-searchbar-input {
-    background-color: $tds-lt-gray;
-    margin-right: 0;
-    width: 240px;
-    padding-left: 44px;
-    &:hover, &:active, &:focus {
-      background-color: $tds-lt-gray;
-    }
-}
-
-.tds-searchbar-button {
-  background-color: $tds-lt-gray;
-  height: 40px;
-  float: left;
-  left: 0;
-  background-image: url(/content/dam/tdstelecom/images/ui/icon_search-binoculars-gray.svg);
-  background-size: 20px;
-  &:hover, &:active, &:focus {
-    background-image: url(/content/dam/tdstelecom/images/ui/icon_search-binoculars-blue.svg);
-    background-color: transparent;
-  }
-}
-
 #mobile-searchbar {
   .tds-searchbar-button {
-    color: transparent!important;
     background-color: $tds-lt-gray;
     height: 40px;
     float: left;
     left: 0;
-    background-image: url(/content/dam/tdstelecom/images/ui/icon_search-binoculars-gray.svg);
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_search-binoculars-gray.svg");
     background-size: 20px;
+    text-indent: -9999px;
 
+    &:active,
+    &:focus,
+    &:hover {
+      background-image: url("/content/dam/tdstelecom/images/ui/icon_search-binoculars-blue.svg");
+      background-color: transparent;
+    }
+    @media (max-width: 751px) {
+      width: 40px;
+    }
   }
+
   .tds-searchbar-input {
-      line-height: 40px;
-      height: 40px\9;
-      height: 40px;
-      width: 100%;
+    line-height: 40px;
+    height: 40px\9;
+    height: 40px;
+    width: 100%;
+    background-color: $tds-lt-gray;
+    margin-right: 0;
+    padding-left: 44px;
   }
 }
+
 ::placeholder {
-    color: #888;
-}
-::-webkit-input-placeholder {
-   color: #888;
-}
-:-moz-placeholder { /* Firefox 18- */
-   color: #888;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #888;
-}
-:-ms-input-placeholder {
-   color: #888;
+  color: #888;
 }
 
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #888;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
 // newsSearchBar component
 // ----
-
 // remove extra padding that is being added globally
 .pagelayout .container-fluid .container .parbase.section.newsSearchBar {
   padding: 0;
 }
+
 .newsSearchBar h2 {
-    color: #19388a;
+  color: #19388a;
 }
+
 .newsSearchBar .tds-card .tds-form-group .tds-search-input input.form-control {
   background-color: #fff;
 }
+
 .newsSearchBar .tds-card {
-    padding: 28px;
+  padding: 28px;
 }
 
 a.search-result {
-    text-decoration: none;
-    font-size: 20px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .searchResultsContainer {
-    padding: 0;
-    max-width: 600px;
+  padding: 0;
+  max-width: 600px;
 }
 
 span.search-current-page {
-    color: #555;
+  color: #555;
 }
 
 .search-results-pagination.pagination {
-    border-top: #19388a solid 2px;
-    border-bottom: solid 2px #19388a;
+  border-top: #19388a solid 2px;
+  border-bottom: solid 2px #19388a;
 }
 
 p.resultText.tds-error-msg.tds-error-status {
-    background: #e3e3e3;
+  background: #e3e3e3;
 }
 
 span.current-page {
-    background-color: #25acf0;
-    color: white;
+  background-color: #25acf0;
+  color: white;
 }
 
 .search-results-pagination a:hover {
-    background-color: #e3e3e3;
+  background-color: #e3e3e3;
 }
 
 .tds-body-content .search-result-content .searchResultsContainer {
-    padding-left: 0px;
+  padding-left: 0;
 }
