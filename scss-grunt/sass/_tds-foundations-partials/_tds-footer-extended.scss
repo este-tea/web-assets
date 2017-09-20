@@ -144,52 +144,25 @@ li:hover > a#tv-plus > .link-minus {
     border-top: solid 4px #353535;
     background-color: #555555;
     text-align: center;
+    &:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
 }
-.homepageFooter:after {
-    clear: both;
-}
-.homepageFooter:after {
-    content: " ";
-    display: table;
-}
+
 //removes top border on genericfooter because the extendedfooter has one
 .extendedfooter ~ .genericfooter > #genericfooter-container {
     border-top: 0;
 }
-@media (max-width: 750px) {
+@media (max-width: $screen-xs-max) {
     .homepageFooter {
-        /* border-top: none; */
         display: none;
     }
     .container-fluid.footer-contact-wrap {
         background: #555;
         border-top: solid 4px #353535;
         clear: both;
-    }
-}
-.homepageFooter .sectionTitle {
-    color: #FFFFFF;
-    padding-top: 32px;
-    line-height: 1.25em;
-    font-weight: 400;
-    font-family: $tds-font-family;
-    font-size: 18px;
-    margin: 0 0 24px 0;
-    border-bottom: solid 2px #25acf2;
-    text-align: left;
-    padding-bottom: 6px;
-    > a {
-        color: white;
-        text-decoration: none;
-        &:hover:after {
-            padding-right: 1em;
-            margin-left: 0.125em;
-            content: "";
-            background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
-            background-size: 11px 16px;
-            background-position: right 3px;
-            background-repeat: no-repeat;
-        }
     }
 }
 .homepageFooter .sectionLinks {
@@ -210,9 +183,39 @@ li:hover > a#tv-plus > .link-minus {
             display: inline;
             text-decoration: none;
             color: #BBBBBB;
-            &:hover {
-                text-decoration: none;
+            &:hover, &:focus {
+                text-decoration: underline;
                 color: #FFFFFF;
+            }
+        }
+    }
+    li.sectionTitle {
+        color: #FFFFFF;
+        line-height: 1.25em;
+        font-weight: 400;
+        font-family: $tds-font-family;
+        font-size: 16px;
+        margin: 0 0 24px 0;
+        border-bottom: solid 2px #25acf2;
+        text-align: left;
+        padding: 12px 0;
+        > a {
+            color: #FFFFFF;
+            line-height: 20px;
+            font-weight: 400;
+            font-family: $tds-font-family;
+            font-size: 18px;
+            &:hover:after, &:focus:after {
+                padding-right: 16px;
+                margin-left: 5px;
+                content: "";
+                width: 16px;
+                height: 16px;
+                float: none;
+                background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-ltblue.svg");
+                background-position: right center;
+                background-repeat: no-repeat;
+                background-size: 12px 16px;
             }
         }
     }
