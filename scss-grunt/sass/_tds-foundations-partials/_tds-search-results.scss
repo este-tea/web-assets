@@ -31,19 +31,6 @@
 // search results page layout
 // Maybe move this to layout section later.
 .multiPathSearch {
-  //@extend .container;
-  @include container-fixed;
-
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
-  }
-  @media (min-width: $screen-md-min) {
-    width: $container-md;
-  }
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
-  }
-  max-width: $screen-md;
 
   //links
   .col-sm-6 a {
@@ -164,8 +151,16 @@ span.search-current-page {
 }
 
 .noResultsFound > div {
-    padding-left: 40px;
-    padding-right: 40px;
+  padding-left: $tds-padding-lg;
+  padding-right: $tds-padding-lg;
+  @media (max-width: $screen-xs-max) {
+    padding-left: $tds-padding-md;
+    padding-right: $tds-padding-md;
+  }
+  @media (max-width: $screen-xxs-max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 // IWP-3214 style the search biz site copy*/

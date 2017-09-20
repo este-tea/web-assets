@@ -1,5 +1,14 @@
 /* tds-layout
 ==========================================*/
+// max width for site
+.container,
+.tds-width-container {
+  //@extend .container;
+  @include container-fixed;
+  width: 100%;
+  max-width: $screen-lg;
+}
+
 // use this to address layout issues fixes that are sitewide
 .tds-clearfix, .clearfix {
   &:before, &:after {

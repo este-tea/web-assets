@@ -9,26 +9,6 @@
 // Or maybe that will be for media design changes and this should be for
 // overall bootstrap grid changes? We'll discuss later maybe? ~Tom
 // =============================================================================
-// max width for site
-.container,
-.tds-width-container,
-.multiPathSearch,
-.multiPathSearch {
-  //@extend .container;
-  @include container-fixed;
-
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
-  }
-  @media (min-width: $screen-md-min) {
-    width: $container-md;
-  }
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
-  }
-  max-width: $screen-lg;
-}
-
 
 //extended bootstrap columns
 .col-xxs-1,

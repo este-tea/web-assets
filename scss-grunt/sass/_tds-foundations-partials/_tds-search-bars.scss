@@ -153,11 +153,18 @@
   display: none !important;
 }
 // search bars in support section */
+
+.searchsitesectionbar h2,
+.searchSiteSectionBar.section h2 {
+  margin-top: 0;
+}
+
 .parbase.searchSiteSectionBar.section input.form-control,
 .searchsitesectionbar.parbase.searchSiteSectionBar input.form-control {
-  border: none !important;
+  border: solid 1px transparent !important;
   background-color: $tds-ltr-gray !important;
 }
+
 // Search forms with only an indicator icon, no search button
 .tds-search-input.tds-search-input-indicator {
   // Make form full width
@@ -186,6 +193,7 @@
   text-align: center;
   pointer-events: none;
 }
+
 // Searchbar for dataTable
 // -----------------------
 //  in a card has different padding and margin in the design
@@ -201,6 +209,17 @@ div#users-search.tds-card {
 
 .searchSiteSectionBar button.gallery-btn {
     box-shadow: none;
+}
+
+.searchSiteSectionBar form .input-group .gallery-btn {
+    padding-right: 16px;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.searchSiteSectionBar form .input-group input.form-control {
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+    font-size: 14px;
 }
 // Search box header
 // It was requested that an h2 be a different size here than the rest of the
