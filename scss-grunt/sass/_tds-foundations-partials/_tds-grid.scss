@@ -91,7 +91,7 @@
         width: 100%;
     }
 }
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-xxs-max) {
   .col-xxs-pull-12 {
     right: 100%;
   }
@@ -246,7 +246,7 @@
     width: 100%;
   }
 }
-@media (max-width: $screen-xxs) {
+@media (max-width: $screen-xxxs-max) {
   .col-xxxs-pull-12 {
     right: 100%;
   }
@@ -416,21 +416,21 @@
     float: left;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
     .col-sm-5ths {
         width: 20%;
         float: left;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $screen-md-min) {
     .col-md-5ths {
         width: 20%;
         float: left;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $screen-lg-min) {
     .col-lg-5ths {
         width: 20%;
         float: left;

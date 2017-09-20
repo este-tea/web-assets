@@ -50,7 +50,7 @@ h1.banner-title {
         max-width: 50%;
     }
 }
-@media (max-width: 584px) {
+@media (max-width: $screen-xs-max) {
     .container .banner-content {
         max-width: 100%;
     }
@@ -108,7 +108,7 @@ h1.banner-title {
 .tds-page-banner.error-page h1.banner-title {
     font-size: 28px;
 }
-@media (max-width:750px) {
+@media (max-width:$screen-xs-max) {
     .tds-page-banner.error-page .banner-content {
     max-width: 100%;
     margin: 8% auto;
@@ -119,7 +119,7 @@ h1.banner-title {
     color: #353535;
 }
 
-@media (max-width:584px) {
+@media (max-width:$screen-xs-max) {
   .tds-page-banner.error-page h1.banner-title {
       font-size: 22px;
   }

@@ -179,7 +179,9 @@ $input-border-radius: $border-radius-base;
 
 // Replaces variable references in the bootstrap scss
 $screen-xxxs: 320px;
+$screen-xxxs-min: $screen-xxxs;
 $screen-xxs: 400px;
+$screen-xxs-min: $screen-xxs;
 $screen-xs: 584px;
 $screen-xs-min: $screen-xs;
 $screen-sm: 751px;
@@ -190,9 +192,11 @@ $screen-lg: 1120px;
 $screen-lg-min: $screen-lg;
 
 // So media queries don't overlap when required, provide a maximum
-$screen-xs-max: ($screen-sm-min - 1);
-$screen-sm-max: ($screen-md-min - 1);
-$screen-md-max: ($screen-lg-min - 1);
+$screen-xxxs-max: ($screen-xxs-min - 1);
+$screen-xxs-max:  ($screen-xs-min - 1);
+$screen-xs-max:   ($screen-sm-min - 1);
+$screen-sm-max:   ($screen-md-min - 1);
+$screen-md-max:   ($screen-lg-min - 1);
 
 //LAYOUT
 // ====================================

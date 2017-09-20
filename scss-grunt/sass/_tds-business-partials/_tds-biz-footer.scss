@@ -36,11 +36,10 @@ div#tdsbizfooter--navbar {
 // ----------------------------------------
 .homepageFooter {
   border-top: none;
-  @media (max-width: 750px) {
+  @media (max-width: $screen-xs-max) {
       display: initial;
   }
   .sectionTitle {
-    font-size: 16px;
     text-align: left;
     border-bottom: solid 4px #777;
   }
@@ -169,7 +168,7 @@ div.copyright-text {
     line-height: 21px;
 }
 
-@media (max-width:584px) {
+@media (max-width:$screen-xs-max) {
     .tdsbizfooter .copyright-logo {
         display: block;
         padding-bottom: 0;
@@ -193,7 +192,7 @@ div.copyright-text {
     text-align: center;
 }
 
-@media (max-width:751px) {
+@media (max-width:$screen-xs-max) {
     #genericfooter-container .customLargeNavBar.parbase.navbar {
         display:inherit;
     }
@@ -232,7 +231,7 @@ div#tdsbizfooter--navbar.tds-other-nav>ul>li>a {
   padding-right: 16px
 }
 
-@media (max-width: 751px) {
+@media (max-width: $screen-xs-max) {
   div#tdsbizfooter--navbar.tds-other-nav>ul {
     text-align: center;
   }
