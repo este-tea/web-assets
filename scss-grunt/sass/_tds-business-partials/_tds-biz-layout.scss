@@ -23,3 +23,8 @@ margin-bottom: 0;
 .pagelayout .parbase.richTextComponent.section {
     margin-bottom: 0;
 }
+
+//get rid of annoying tracker add causing gap
+body > img:nth-last-of-type(1) {
+    display: none;
+}

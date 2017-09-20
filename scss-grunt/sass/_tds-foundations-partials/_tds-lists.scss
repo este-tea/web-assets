@@ -261,13 +261,12 @@ div.myprodsservices > h3 {
 }
 // Available tv listings box
 .tds-tv-where {
-  &.tds-clearfix {
+    margin: 0 13px;
     border: solid 3px #d9d9d9;
     padding: 24px;
     @media (max-width:750px) {
       padding: 15px;
     }
-  }
   //@extend .tds-card;
   button.dropdown-toggle .caret {
     position: relative;

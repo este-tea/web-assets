@@ -1,6 +1,11 @@
 /* tds-page-banner
 ==========================================*/
-
+.tds-page-banner {
+  margin-bottom: 30px;
+}
+.tds-page-banner .container {
+    padding: 0;
+}
 //Banner Typography
 //==================================================
 
@@ -194,9 +199,7 @@ ul.banner-ul li li {
 }
 // miscell tweaks
 //==================================================
-.tds-page-banner {
-  margin-bottom: 30px;
-}
+
 //remove float added by bootstrap column class
 .tds-page-banner.col-sm-12 {
     float: none;

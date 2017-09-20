@@ -1,17 +1,24 @@
 /* tds-buttons
 ==========================================*/
+// if multi buttons placed in parsys, will display next to each other
+.navbutton.parbase.section {
+    display: initial;
+}
 
 // Main TDS button
 // ------------------
 .gallery-btn, .tds-btn {
-  //display: table; // this gives the button size value without having to float.
+  clear: both;
   margin-top: 20px;
-  padding: 12px 16px ;
+  padding: 12px 34px 12px 16px;
   @include button-variant($tds-white, $tds-dk-blue, transparent);
   font-family: $tds-font-family;
+  font-size: 16px;
+  line-height: 21px;
   text-align: left;
-  border: none;
+  border: solid 1px transparent;
   box-shadow: $box-shadow;
+  text-decoration: none !important;
   a:link, a:visited, &:hover, &:active, &:focus {
     color: #fff!important ;
     text-decoration: none;
@@ -22,22 +29,41 @@
     cursor: pointer;
     box-shadow: none;
   }
+  //new btn :after so it isn't using font awesome
+  &:after {
+    content: "";
+    width: 24px;
+    height: 20px;
+    float: right;
+    margin-right: -18px;
+    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 11px 16px;
+  }
+  @media (max-width: 400px) {
+        width: 100%;
+    }
 }
 //added this because couldn't figure out how to add it above and make it work
-a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
-
-//new btn after so it isn't using font awesome
-.gallery-btn:after, .tds-btn:after {
-  content: "";
-  width: 24px;
-  height: 21px;
-  float: right;
-  //margin-right: -18px;
-  background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: 11px 16px;
+a.gallery-btn,
+a.gallery-btn > span {
+  text-decoration: none;
 }
+.tds-btn.desktop {
+    @media (max-width: $screen-sm-max) {
+        display: none;
+    }
+}
+.tds-btn.mobile{
+    @media (min-width: $screen-md-min) {
+        display: none;
+    }
+    @media (max-width: $screen-sm-max) {
+        display: block;
+    }
+}
+
 // spacing for buttons with left icon
 .fa.pull-left {
   margin-right: 14px ;
@@ -56,8 +82,8 @@ a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
 .gallery-grid .gallery-btn,
 .home-grid .gallery-btn {
   &:after {
-    position: absolute;
-    right: 45px;
+    //position: absolute;
+    //right: 45px;
   }
 }
 // // **Three cards position**
@@ -65,7 +91,7 @@ a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
 // }
 // // **Four cards position**
 .home-grid .gallery-btn:after {
-  right: 30px;
+  //right: 30px;
 }
 
 // ===== .btn-block Arrows =====================================================
@@ -75,12 +101,8 @@ a.gallery-btn, a.gallery-btn > span { text-decoration: none; }
 // **TODO** || integrate method above into this.
 // =============================================================================
 .gallery-btn.btn-block:after {
-  // position: absolute; // holy hell! may not need this here after cleaning up
-  // right: 40px; // it may have been something in all those styles causing it.
   float: right;
-  display: inline;
-  margin-top: 3px; // this aligns the carat to center
-  height: 14px;
+  height: 18px;
 }
 
 
@@ -179,7 +201,11 @@ button.gallery-btn-link:focus {
 .gallery-btn.tds-btn-plain:after {
   display: none;
 }
-
+.gallery-btn.btn-back,
+.gallery-btn.btn-left,
+.gallery-btn.tds-btn-plain {
+    padding-right: 16px;
+}
 // When button is an `input` submit element
 // - *Note* || Working on changing this. All `<input>` divs should be changed
 //   to `<button>` divs.
@@ -207,12 +233,16 @@ button.gallery-btn-link:focus {
 
 .btn-left,
 .btn-back {
-  float: left;
+  //float: left;
   // back arrow
+  .tds-icon {
+      font-size: 18px;
+      line-height: 21px;
+  }
   .back-arrow:before,
   .tds-icon-chevron-left:before {
     content: "\e803";
-    margin-right: 15px;
+    margin-right: 8px;
   }
   .back-arrow:after,
   .tds-icon-chevron-left:after {
@@ -296,7 +326,7 @@ a#readMoreLink.read-less {
   }
 }
 
-// Search button
+// Search button in search form
 input + span.input-group-btn .gallery-btn {
   margin-top: 0px;
   @include tds-icon;
@@ -470,11 +500,11 @@ button.read-more {
      float: right;
      color: white;
      text-decoration: none;
-     @media (max-width:767px){
+     @media (max-width: $screen-xs-max){
          float: left;
          margin-top: 20px;
      }
-     @media (max-width:400px){
+     @media (max-width: $screen-xxxs-max){
          width: 100%;
      }
      &:after {
