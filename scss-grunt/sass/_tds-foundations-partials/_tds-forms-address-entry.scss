@@ -138,3 +138,15 @@ button#continue:after {
 div#zip-container > input#zipCode {
     max-width: 80px;
 }
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    //background: #B2D1F0 !important;
+    //border: none !important;
+    //color:#000 !important;
+    //border-radius:0 !important;
+    //font-weight: normal !important;
+}
