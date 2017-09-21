@@ -196,7 +196,7 @@
 .bundle_container ul.ui-tabs-nav li {
   position: relative;
   margin-bottom: 20px !important;
-  margin-left: 2em !important;
+  //margin-left: 2em !important;
   min-height: 3em;
   border-color: transparent;
 }
@@ -453,7 +453,9 @@ img.down-caret-green-lg {
     width: 66.66666667%;
   }
 }
-
+#internet-tab-contents .prod-contents.prod-readonly.prod-autoadd.prod-highlight {
+    margin-top: -18px;
+}
 .prod-contents .prod-name {
   font-family: inherit;
   font-weight: 500;
@@ -482,12 +484,11 @@ img.down-caret-green-lg {
   line-height: 1.1;
   color: inherit;
   margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 18px;
   color: $tds-blue-100;
   margin-bottom: 20px;
   color: $tds-green-80;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .prod-contents .price-text .small,
@@ -863,7 +864,7 @@ h3.tds-price {
 p.term-text {
   display: inline-block;
   margin-bottom: 0;
-  color: #7BB227;
+  color: $tds-green-80;
   font-size: 18px;
   font-weight: 500;
   font-family: 'ITC Avant Garde Gothic W01';
@@ -965,7 +966,7 @@ p.price-text.price-override {
 @media (max-width: 584px) {
   .prod-items > label,
   .tds-newsroom-search > label {
-    top: 14px;
+    top: 20px;
     left: 16px;
   }
 
@@ -973,9 +974,7 @@ p.price-text.price-override {
     margin-bottom: 0;
   }
 }
-.prod-items > label > .check-radio-btn {
-    margin-top: 18px;
-}
+
 .bundle_container ul.ui-tabs-nav li {
   width: auto;
   margin-left: 0;

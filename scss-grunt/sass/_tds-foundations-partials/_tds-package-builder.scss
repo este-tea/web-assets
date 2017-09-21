@@ -457,10 +457,10 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
         margin-top: 20px;
         .tds-radio-btn {
            margin-left: -42px;
-           border-color: #19388a
+           border-color: $tds-blue-100;
        }
        input:checked + .tds-radio-btn {
-           border-color: #7BB227
+           border-color: $tds-green-80;
        }
        input:disabled + .tds-radio-btn {
            border-color: #999;
@@ -485,10 +485,10 @@ ul.nav.nav-tabs.pkg-builder-nav-tabs.has-numbers>li {
         .tds-radio-btn {
             margin-top: -1px;
             margin-left: -45px;
-            border-color: #19388a
+            border-color: $tds-blue-100;
         }
         input:checked + .tds-radio-btn {
-            border-color: #7BB227
+            border-color: $tds-green-80;
         }
         input:disabled + .tds-radio-btn {
             border-color: #999;
