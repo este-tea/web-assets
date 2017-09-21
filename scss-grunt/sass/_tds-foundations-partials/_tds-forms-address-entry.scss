@@ -105,6 +105,19 @@ button#continue:after {
     background-position: right 3px;
 }
 
+.address-entry-notes .tds-divider-line {
+    margin: 20px 0;
+}
+
+.address-entry-maincontent #address-submit {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.address-entry-maincontent .page-intro {
+    margin-top: 0;
+}
+
 /* ======= Autocomplete form ======= */
 
 // autocomplete dropdown
