@@ -30,19 +30,8 @@
     cursor: pointer;
     box-shadow: none;
   }
-  //new btn :after so it isn't using font awesome
+
   &:after {
-    /*
-    content: "";
-    width: 24px;
-    height: 20px;
-    float: right;
-    margin-right: -18px;
-    background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg");
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: 11px 16px;
-    */
     content: "\e804";
     float: right;
     margin-right: -18px;
