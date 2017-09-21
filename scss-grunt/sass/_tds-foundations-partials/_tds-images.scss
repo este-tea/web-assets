@@ -62,3 +62,8 @@ div.copyright-logo {
 .img-rounded {
     border-radius: 50%;
 }
+
+// make sure images aren't cropped in product galleries
+.gallery-img.product_picture {
+    background-size: contain;
+}
