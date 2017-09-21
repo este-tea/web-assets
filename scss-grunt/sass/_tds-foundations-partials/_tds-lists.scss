@@ -25,22 +25,7 @@
   }
 
   ul > li:before {
-    content: "\e80c";
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    line-height: 1;
-    font-size: 8px;
-    color: $tds-lt-blue;
-    position: relative;
-    top: -2px;
-    margin-right: 18px;
-    margin-left: -26px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
+    @include tds-bullets;
 
     .tds-content-rich .tds-li-steps & {
       display: none;
@@ -86,22 +71,7 @@
   padding-left: 0;
 
   li:before {
-    content: "\e80c";
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    line-height: 1;
-    font-size: 8px;
-    color: $tds-lt-blue;
-    position: relative;
-    top: -2px;
-    margin-right: 18px;
-    margin-left: -26px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
+    @include tds-bullets;
   }
 }
 // stupid instance where the menu is in a collapsed div nested in the li on
@@ -109,22 +79,7 @@
 
 .tds-menu-group ul {
   div > li:before {
-    content: "\e80c";
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    line-height: 1;
-    font-size: 8px;
-    color: $tds-lt-blue;
-    position: relative;
-    top: -2px;
-    margin-right: 18px;
-    margin-left: -26px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
+    @include tds-bullets;
 
     .tds-content-rich .tds-li-steps & {
       display: none;
@@ -137,22 +92,7 @@
   list-style-type: none;
 
   > li:before {
-    content: "\e80c";
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    line-height: 1;
-    font-size: 8px;
-    color: $tds-lt-blue;
-    position: relative;
-    top: -2px;
-    margin-right: 18px;
-    margin-left: -26px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
+    @include tds-bullets;
   }
 }
 // extending nested list-unstyled set up
@@ -176,7 +116,7 @@ ul.list-unstyled ul {
   width: 2em;
   line-height: 2em;
   font-weight: normal;
-  font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
+  font-family: $tds-font-family;
   font-weight: 500;
   font-style: normal;
   font-size: 13px;

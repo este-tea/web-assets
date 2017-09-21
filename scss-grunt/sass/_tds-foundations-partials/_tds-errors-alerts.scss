@@ -100,16 +100,13 @@
       width: 100%;
       &:before {
         content: "\e80c";
+        @include fontello;
         position: relative;
         top: -3px;
         margin-right: 12px;
         margin-left: -20px;
-        font-family: "fontello";
         font-size: 8px;
         color: #000;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
         transform: translate(0,0);
       }
       &:last-child {

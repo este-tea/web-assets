@@ -85,16 +85,8 @@
   .btn-block .fa {
     //@extend .fa-minus;
     &:before {
-      display: inline-block;
+      @include fontello;
       font-size: 13px;
-      font-family: "fontello";
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      line-height: 1;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       background: #0c8fd0;
       border-radius: 50%;
       padding: 5px;
@@ -132,22 +124,7 @@
 }
 
 .tds-menu-group ul div > li:before {
-  content: "\e80c";
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  font-size: 8px;
-  line-height: 1em;
-  color: $tds-lt-blue;
-  position: relative;
-  top: -2px;
-  margin-right: 18px;
-  margin-left: -26px;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+  @include tds-bullets;
 }
 .tds-content-rich .tds-li-steps .tds-menu-group ul div > li:before {
   display: none;
