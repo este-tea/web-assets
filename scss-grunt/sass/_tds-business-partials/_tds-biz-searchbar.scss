@@ -26,12 +26,17 @@
   line-height: 40px;
   height: 40px\9;
   height: 40px;
-  width: 100%;
   background-color: $tds-lt-gray;
   margin-right: 0;
   padding-left: 44px;
 }
+.tds-searchbar-input {
+  width: 240px;
+}
 
+#mobile-searchbar .tds-searchbar-input {
+  width: 100%;
+}
 ::placeholder {
   color: #888;
 }
