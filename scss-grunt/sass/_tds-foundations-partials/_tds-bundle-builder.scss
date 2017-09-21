@@ -1,39 +1,40 @@
 /* tds-bundle-builder
 ==========================================*/
 // this is used in the shop section
-
 // TODO see if they're still needed
 #bundleMessages {
-    display: none;
+  display: none;
 }
 
 .bundle-success {
-    background-color: #90ee90;
-    border: 2px solid #008000;
-    color: #006400;
+  background-color: #90ee90;
+  border: 2px solid #008000;
+  color: #006400;
 }
 
 .tds-select-btn ul {
-    top: 2.3em;
+  top: 2.3em;
 }
 
-.ext-gecko #CQ .x-form-text, .ext-ie8 #CQ .x-form-text {
-    min-height: 22px;
-    min-width: 300px;
+.ext-gecko #CQ .x-form-text,
+.ext-ie8 #CQ .x-form-text {
+  min-height: 22px;
+  min-width: 300px;
 }
 
-#one-time-costs, #one-time-credits {
-    display: none;
+#one-time-costs,
+#one-time-credits {
+  display: none;
 }
 
 .tab-contents {
-    /*border: 1px solid black;*/
+  /*border: 1px solid black;*/
 }
 /* END taken from bundlecontainer.css */
-
 // note from liz: these aren't actually page banners,
 // just the content that goes under the page banner on
 // the bundle picker pages
+
 .bundleSubheader h3 {
   font-family: $tds-font-family;
   font-weight: normal;
@@ -41,8 +42,10 @@
   line-height: 1.1em;
   color: $tds-dk-blue;
 }
+
 .bundle_container .tds-page-banner {
   max-width: 960px;
+
   &.tds-sub-banner {
     border-bottom: 2px solid $tds-dk-blue; // border just for sub-banners
   }
@@ -65,120 +68,139 @@
   border-left: 3px solid $tds-red!important;
   border: 0 solid transparent;
 }
+
 .bundle-error:before {
-    color: #cb1c1d;
+  color: #cb1c1d;
 }
+
 .bundle-error h4 {
   margin-top: 0;
   color: inherit;
 }
+
 .bundle-error h5 {
-    color: #000;
-    font-weight: 400;
-    line-height: 1.5em;
-    margin: 0;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0;
 }
+
 .bundle-error .alert-link {
   font-weight: bold;
 }
-.bundle-error>p,
-.bundle-error>ul {
+
+.bundle-error > p,
+.bundle-error > ul {
   margin-bottom: 0;
 }
-.bundle-error>p+p {
+
+.bundle-error > p+p {
   margin-top: 5px;
 }
+
 .bundle-error a {
   color: #000;
   text-decoration: underline;
 }
+
 .bundle-error #enteredAddress a {
   text-decoration: underline;
 }
+
 .bundle-error #enteredAddress a:hover {
   text-decoration: none;
 }
+
 .bundle-error .tds-error-msg-description {
   float: left;
   position: relative;
   min-height: 1px;
   padding-right: 15px;
 }
+
 .bundle-error .tds-error-msg-description .fa,
 .bundle-error .tds-error-msg-description span {
   float: left;
   display: table;
   margin-right: 15px;
 }
-.bundle-error>.fa {
+
+.bundle-error > .fa {
   width: 25px;
 }
+
 .bundle-error ul {
   display: block;
   margin: 10px;
 }
+
 .bundle-error ul li {
   display: block;
   margin-bottom: 10px;
   width: 100%;
 }
+
 .bundle-error ul li:before {
   margin-right: 10px;
 }
+
 .bundle-error hr {
   border-top-color: $tds-red;
 }
+
 .bundle-error .alert-link {
   color: $tds-red;
 }
+
 .tds-pb-logo {
   position: relative;
   top: 18px;
   text-align: center;
 }
-
 /*replace icon with correct one and make styling match tds-alert-critical*/
 .bundle-error {
-    background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
-    background-size: 20px 20px;
-    background-position: 16px 14px;
-    background-repeat: no-repeat;
-    text-align: left;
-    padding: 12px 16px;
-    padding-left: 52px;
-    width: 100%;
-    line-height: 24px;
-    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-    font-size: 14px;
-    color: #000;
-    border: 0px solid transparent;
+  background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg");
+  background-size: 20px 20px;
+  background-position: 16px 14px;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding: 12px 16px 12px 52px;
+  width: 100%;
+  line-height: 24px;
+  font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+  font-size: 14px;
+  color: #000;
+  border: 0 solid transparent;
 }
 
 .bundle-error:before {
-    content: none;
+  content: none;
 }
-
 //moved to page-layout.scss
 //moved to grid.scss
 //moved to type.scss
+
 .bundle_container ul.ui-tabs-nav {
   max-width: 100%;
   margin: 0 auto;
   display: table;
 }
+
 .ui-tabs .ui-tabs-panel {
   border-top: 2px solid $tds-blue-100!important;
   max-width: 940px;
   margin-left: 15px;
   margin-top: 20px;
 }
+
 .bundle_container ul.ui-tabs-nav li {
   position: relative;
   margin-bottom: 20px !important;
-  margin-left: 2em;
+  margin-left: 2em !important;
   min-height: 3em;
   border-color: transparent;
 }
+
 .bundle_container ul.ui-tabs-nav li a {
   display: block;
   width: auto;
@@ -186,145 +208,157 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
 .ui-state-default {
   opacity: 0.5;
   filter:alpha(opacity=50);
 }
+
 .ui-state-active {
   opacity: 1;
   filter:alpha(opacity=100);
 }
+
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
   cursor: default!important;
 }
+
 .bundle_container ul.ui-tabs-nav li:after {
-  display: inline-block;
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @include fontello;
   transform: translate(0,0);
   content: "\e804";
   color: $tds-gray;
   font-size: 55px;
 }
+
 .bundle_container ul.ui-tabs-nav li:after.pull-left {
   margin-right: 0.3em;
 }
+
 .bundle_container ul.ui-tabs-nav li:after.pull-right {
   margin-left: 0.3em;
 }
+
+a#extra-tab,
 a#internet-tab,
 a#phone-tab,
-a#tv-tab,
-a#extra-tab {
+a#tv-tab {
   height: 55px;
   font-family: 'ITC Avant Garde Gothic W01';
   padding-left: 65px;
 }
+
 a#internet-tab {
-  background: url(/content/dam/tdstelecom/images/products/internet/icon-product-internet.svg) left center no-repeat;
+  background: url("/content/dam/tdstelecom/images/products/internet/icon-product-internet.svg") left center no-repeat;
   -ms-background-position-x: -60px;
 }
+
 a#phone-tab {
-  background: url(/content/dam/tdstelecom/images/products/phone/icon-product-phone.svg) left center no-repeat;
+  background: url("/content/dam/tdstelecom/images/products/phone/icon-product-phone.svg") left center no-repeat;
   -ms-background-position-x: -50px;
 }
+
 a#tv-tab {
-  background: url(/content/dam/tdstelecom/images/products/tv/icon-product-tv.svg) left center no-repeat;
+  background: url("/content/dam/tdstelecom/images/products/tv/icon-product-tv.svg") left center no-repeat;
   -ms-background-position-x: -27px;
 }
+
 a#extra-tab {
-  background: url(/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg) left center no-repeat;
+  background: url("/content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg") left center no-repeat;
   -ms-background-position-x: -45px;
 }
+
+.ui-state-default,
 .ui-tabs-nav,
-.ui-widget-header,
-.ui-state-default {
+.ui-widget-header {
   background: transparent!important;
   border: 0 transparent!important;
 }
+
+.ui-state-default,
 .ui-tabs-nav,
-.ui-widget-header,
-.ui-state-default {
+.ui-widget-header {
   background: transparent!important;
   border: 0 transparent!important;
 }
+
 .top-header .dropdown-menu {
   min-width: 1px;
 }
-.top-header img.right-caret-sm,
-.top-header img.right-caret-open-sm,
+
+.top-header img.down-caret-open-sm,
 .top-header img.down-caret-sm,
-.top-header img.down-caret-open-sm {
+.top-header img.right-caret-open-sm,
+.top-header img.right-caret-sm {
   height: 12px;
   width: 12px;
 }
+
 .top-header img.right-caret-open-sm,
 .top-header img.right-caret-sm {
   top: 0;
 }
+
 .top-header .dropdown-menu.sub-menu {
   background: $tds-dk-gray;
 }
+
 .top-header .dropdown-menu.sub-menu li a {
   padding-right: 40px !important;
 }
+
 .top-header .dropdown-menu.sub-menu li a:hover {
   background-color: $tds-dkr-gray;
 }
+
 .top-header .dropdown-menu.sub-menu li a:after {
-  display: inline-block;
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @include fontello;
   transform: translate(0,0);
   font-size: 17px;
 }
+
 .top-header .dropdown-menu.sub-menu li a:after.pull-left {
   margin-right: 0.3em;
 }
+
 .top-header .dropdown-menu.sub-menu li a:after.pull-right {
   margin-left: 0.3em;
 }
+
 .top-header .dropdown-menu.sub-menu li a:hover:after {
   content: "\e821";
   position: absolute;
   right: 15px;
 }
-.top-header .nav>li>a,
-.tds-user-nav li a {
+
+.tds-user-nav li a,
+.top-header .nav > li > a {
   font-family: 'Neue Helvetica W01';
 }
+
 .tds-user-nav li {
   margin-top: 5px;
   margin-left: 20px;
 }
+
 img.down-caret-green-lg {
   background-position: -115px -101px;
 }
+
 .nav-bar .nav-tabs a {
   color: $tds-blue-100;
 }
-.nav-bar .menu>ul ul.dropdown {
+
+.nav-bar .menu > ul ul.dropdown {
   padding-left: 0;
   list-style-type: none;
 }
-.site-navigation .nav>li>a:hover,
-.site-navigation .nav>li>a:focus {
+
+.site-navigation .nav > li > a:focus,
+.site-navigation .nav > li > a:hover {
   background-color: $tds-dkr-gray;
 }
+
 .site-navigation ul {
   font-family: 'ITC Avant Garde Gothic W01';
 }
@@ -335,9 +369,11 @@ img.down-caret-green-lg {
   color: $tds-lt-blue-80;
   font-weight: 300;
 }
+
 .bundle_container #bundleMessages ~ div > h2 {
   text-transform: uppercase;
 }
+
 #bundle-products {
   margin-left: -15px;
   margin-right: -15px;
@@ -345,6 +381,7 @@ img.down-caret-green-lg {
   border-radius: 0;
   border: 0 solid transparent;
 }
+
 .prod-section-wrap {
   position: relative;
   float: left;
@@ -354,6 +391,7 @@ img.down-caret-green-lg {
   min-height: 1px;
   border-bottom: 2px solid $tds-lt-gray;
 }
+
 .prod-summary {
   float: left;
   width: 100%;
@@ -368,6 +406,7 @@ img.down-caret-green-lg {
     width: 33.33333333%;
   }
 }
+
 .prod-summary .prod-title {
   font-family: inherit;
   font-weight: 500;
@@ -383,20 +422,24 @@ img.down-caret-green-lg {
   font-family: 'ITC Avant Garde Gothic W01';
   font-weight: 400;
 }
-.prod-summary .prod-title small,
-.prod-summary .prod-title .small {
+
+.prod-summary .prod-title .small,
+.prod-summary .prod-title small {
   font-weight: normal;
   line-height: 1;
   color: $tds-dk-gray-80;
 }
-.prod-summary .prod-title small,
-.prod-summary .prod-title .small {
+
+.prod-summary .prod-title .small,
+.prod-summary .prod-title small {
   font-size: 75%;
 }
+
 .tds-error-msg.tds-plus-pricing {
   padding: 30px 0;
   text-align: center;
 }
+
 .prod-items {
   float: left;
   width: 100%;
@@ -410,28 +453,29 @@ img.down-caret-green-lg {
     width: 66.66666667%;
   }
 }
+
 .prod-contents .prod-name {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 18px;
-  margin-bottom: 20px;
   color: $tds-blue-100;
-  margin-top: 0;
 }
-.prod-contents .prod-name small,
-.prod-contents .prod-name .small {
+
+.prod-contents .prod-name .small,
+.prod-contents .prod-name small {
   font-weight: normal;
   line-height: 1;
   color: $tds-dk-gray-80;
 }
-.prod-contents .prod-name small,
-.prod-contents .prod-name .small {
+
+.prod-contents .prod-name .small,
+.prod-contents .prod-name small {
   font-size: 75%;
 }
+
 .prod-contents .price-text {
   font-family: inherit;
   font-weight: 500;
@@ -445,34 +489,42 @@ img.down-caret-green-lg {
   color: $tds-green-80;
   font-size: 24px;
 }
-.prod-contents .price-text small,
-.prod-contents .price-text .small {
+
+.prod-contents .price-text .small,
+.prod-contents .price-text small {
   font-weight: normal;
   line-height: 1;
   color: $tds-dk-gray-80;
 }
-.prod-contents .price-text small,
-.prod-contents .price-text .small {
+
+.prod-contents .price-text .small,
+.prod-contents .price-text small {
   font-size: 75%;
 }
-.prod-contents .prod-name,
-.prod-contents .price-text {
+
+.prod-contents .price-text,
+.prod-contents .prod-name {
   font-family: 'ITC Avant Garde Gothic W01';
 }
+
 .prod-contents .price-text.price-base {
   font-size: 18px;
 }
+
 .prod-contents .term-base {
   font-size: 85%;
 }
+
 .prod-contents a {
   color: $tds-blue-100!important;
 }
-.prod-subitems>p {
+
+.prod-subitems > p {
   font-family: 'ITC Avant Garde Gothic W01';
   text-transform: uppercase;
   font-weight: 500;
 }
+
 .dish-subtotal.prod-contents {
   background: $tds-ltr-gray;
   border-top: 2px dotted $tds-lt-gray!important;
@@ -480,9 +532,11 @@ img.down-caret-green-lg {
   border-right-color: transparent!important;
   border-left-color: transparent!important;
 }
+
 .prod-contents hr {
   border: solid 1px $tds-blue-40;
 }
+
 .bottom-buttons {
   position: relative;
   float: left;
@@ -491,6 +545,7 @@ img.down-caret-green-lg {
   width: 100%;
   min-height: 1px;
 }
+
 .campaign-subtotal {
   position: relative;
   float: left;
@@ -503,112 +558,35 @@ img.down-caret-green-lg {
   border-top: 2px solid $tds-blue-100;
   border-bottom: 3px solid $tds-lt-blue-80;
 }
+
 .row.tds-divider {
   padding-top: 16px;
   padding-bottom: 36px;
   border-bottom: 2px solid $tds-lt-gray;
 }
+
 .row.tds-divider.last {
   padding-top: 36px;
   border-color: transparent;
 }
+
 .row.tds-divider h3 {
   color: $tds-lt-blue-80;
 }
+
 .row.tds-divider h2 {
   color: $tds-blue-100;
 }
+
 div#usernameError {
   margin-top: 20px;
 }
-.prod-items .hit-area {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 49px;
-  cursor: pointer;
-}
-.prod-items .hit-area input {
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-.prod-items .check-radio-btn {
-  width: 25px;
-  height: 25px;
-  display: block;
-  float: left;
-  margin: 22px 9px 10px 0;
-  background: #fff;
-  border: 3px solid $tds-gray;
-  border-radius: 50%;
-}
-.prod-items input:checked+label .check-radio-btn {
-  background: $tds-green-80;
-  border: 3px solid $tds-green-80;
-}
-.prod-items input:checked+label .check-radio-btn:before {
-  position: absolute;
-  transform: rotate(-45deg);
-  margin: 5px 3px;
-  height: 0.7rem;
-  width: 1.2rem;
-  content: "";
-  background: transparent;
-  border: 3px solid $tds-lt-gray;
-  border-top-style: none!important;
-  border-right-style: none!important;
-  border-radius: 0;
-}
-.prod-items input[type="radio"] {
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
+
 .prod-items label {
   float: left;
-}
-input.addressRadio,
-.radio input[type="radio"],
-.checkbox input[type="checkbox"] {
-  position: absolute;
-  display: block;
-  float: left;
-  margin: 0;
-  width: 25px;
-  height: 25px;
-  opacity: 0;
   cursor: pointer;
 }
-span.tds-radio-btn {
-  display: block;
-  float: left;
-  margin: 0 14px 0 0;
-  width: 25px;
-  height: 25px;
-  background: #fff;
-  border: 3px solid $tds-gray;
-  border-radius: 50%;
-}
-.radio {
-  margin-bottom: 20px;
-}
-input:checked+.tds-radio-btn {
-  background: $tds-green-80;
-  border: 3px solid $tds-green-80;
-}
-input:checked+.tds-radio-btn:before {
-  content: "";
-  position: absolute;
-  margin: 5px 3px;
-  height: 0.7rem;
-  width: 1.2rem;
-  background: transparent;
-  border: 3px solid $tds-lt-gray;
-  border-top-style: none!important;
-  border-right-style: none!important;
-  border-radius: 0;
-  transform: rotate(-45deg);
-}
+
 .sel-summary .summ-header-text {
   font-family: inherit;
   font-weight: 500;
@@ -621,22 +599,27 @@ input:checked+.tds-radio-btn:before {
   font-size: 24px;
   color: $tds-lt-blue-80;
 }
-.sel-summary .summ-header-text small,
-.sel-summary .summ-header-text .small {
+
+.sel-summary .summ-header-text .small,
+.sel-summary .summ-header-text small {
   font-weight: normal;
   line-height: 1;
   color: $tds-dk-gray-80;
 }
-.sel-summary .summ-header-text small,
-.sel-summary .summ-header-text .small {
+
+.sel-summary .summ-header-text .small,
+.sel-summary .summ-header-text small {
   font-size: 65%;
 }
+
 .summ-items {
   float: right;
 }
+
 .summ-column {
   text-align: center;
 }
+
 .sel-head-text {
   font-family: inherit;
   font-weight: 500;
@@ -648,16 +631,19 @@ input:checked+.tds-radio-btn:before {
   color: $tds-blue-100;
   margin-bottom: 20px;
 }
-.sel-head-text small,
-.sel-head-text .small {
+
+.sel-head-text .small,
+.sel-head-text small {
   font-weight: normal;
   line-height: 1;
   color: $tds-dk-gray-80;
 }
-.sel-head-text small,
-.sel-head-text .small {
+
+.sel-head-text .small,
+.sel-head-text small {
   font-size: 75%;
 }
+
 .sel-price-text {
   font-family: inherit;
   font-weight: 500;
@@ -671,19 +657,23 @@ input:checked+.tds-radio-btn:before {
   color: $tds-blue-100;
   font-family: 'ITC Avant Garde Gothic W01';
 }
-.sel-price-text small,
-.sel-price-text .small {
+
+.sel-price-text .small,
+.sel-price-text small {
   font-weight: normal;
   line-height: 1;
   color: $tds-dk-gray-80;
 }
-.sel-price-text small,
-.sel-price-text .small {
+
+.sel-price-text .small,
+.sel-price-text small {
   font-size: 65%;
 }
+
 .summ-fees {
   font-size: 85%;
 }
+
 .sel-price-text-mth {
   font-family: inherit;
   font-weight: 500;
@@ -705,12 +695,15 @@ input:checked+.tds-radio-btn:before {
   line-height: 1.1em;
   color: $tds-blue-100;
 }
+
 .bundle_container .tds-page-banner {
   max-width: 940px;
 }
+
 .bundle_container .tds-page-banner.tds-sub-banner {
   border-bottom: 2px solid $tds-blue-100;
 }
+
 .bundleSubheader {
   padding: 10px 40px 25px;
 }
@@ -724,6 +717,7 @@ input:checked+.tds-radio-btn:before {
     padding: 16px;
   }
 }
+
 .bundle_container.section {
   float: left;
 }
@@ -735,28 +729,35 @@ input:checked+.tds-radio-btn:before {
   font-size: 20pt;
   font-weight: 300;
 }
+
 .bundleSubheader p {
   font-size: 1.3em;
   color: #555;
 }
+
 .tds-header {
   margin-bottom: 36px;
   color: $tds-blue-100;
 }
+
 .referralProgram .tds-header {
   color: $tds-lt-blue-80;
 }
+
 #captilize {
   font-weight: bold;
 }
+
 .tds-price {
   font-family: 'ITC Avant Garde Gothic W01';
 }
+
 h2.tds-price {
   margin: -10px 0 0;
   height: auto!important;
   font-weight: 500;
 }
+
 h2.tds-price small {
   color: $tds-blue-100;
   margin-left: -7px;
@@ -764,33 +765,41 @@ h2.tds-price small {
   font-size: 21px;
   font-weight: 500;
 }
+
 h3.tds-price {
   margin: -10px 0 10px;
   height: auto;
   font-weight: 500;
 }
+
 .pluspack-lineitem.tds-panel h3 {
   padding-left: 0;
   margin-top: 5px;
   color: $tds-lt-blue-80;
 }
+
 .tds-cart-price {
   color: $tds-green-80;
 }
+
 .tds-cost-price {
   color: $tds-blue-100;
 }
+
 .tds-cart-price,
 .tds-cost-price {
   font-family: 'ITC Avant Garde Gothic W01';
 }
+
 .price-text.price-base {
   font-size: 85%;
 }
+
 .bundle_container .tds-page-banner.tds-sub-banner .col-sm-8 {
   width: 100% !important;
-  padding:0;
+  padding: 0;
 }
+
 .bundleSubheader h2 {
   text-transform: none;
   font-size: 22px;
@@ -802,6 +811,7 @@ h3.tds-price {
   .bundle_container ul.ui-tabs-nav li {
     width: 80%;
   }
+
   .bundle_container ul.ui-tabs-nav li a {
     width: 100%;
   }
@@ -813,7 +823,8 @@ h3.tds-price {
     left: 20px;
     z-index: 2;
   }
-  .prod-items>.prod-contents,
+
+  .prod-items > .prod-contents,
   .prod-items.tds-plus-packs .prod-contents {
     padding: 20px 20px 20px 50px;
     width: 100%;
@@ -824,308 +835,370 @@ h3.tds-price {
   }
 }
 /*---IMT-46 bundle builder refinements---*/
-#bundle-products .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
-    color: #0c8fd0;
-    text-decoration: none;
+#bundle-products .ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+  color: #0c8fd0;
+  text-decoration: none;
 }
+
 .ui-tabs .ui-tabs-panel {
-    max-width: 100%;
-    margin: 15px;
-    padding: 0;
+  max-width: 100%;
+  margin: 15px;
+  padding: 0;
 }
 
 .bundle_container .tds-page-banner {
-    max-width: 1120px;
+  max-width: 1120px;
 }
 
 .parbase.bundle_container.section {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .container.tds-page-banner.tds-sub-banner {
-    padding: 0;
+  padding: 0;
 }
 
 p.term-text {
-    display: inline-block;
-    margin-bottom: 0;
-    color: #7BB227;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: 'ITC Avant Garde Gothic W01';
+  display: inline-block;
+  margin-bottom: 0;
+  color: #7BB227;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'ITC Avant Garde Gothic W01';
 }
 
 p.price-text.price-override {
-    display: inline-block;
+  display: inline-block;
 }
 
 .costoverview.parbase.section {
-    margin-left: 15px;
-    margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .sel-summary .summ-header-text {
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 #bundle-products .prod-section-wrap .prod-items {
-    padding: 0;
+  padding: 0;
 }
 
 .prod-summary {
-    padding-left: 0;
-    padding-right: 24px;
+  padding-left: 0;
+  padding-right: 24px;
 }
 @media (max-width: 750px) {
-.prod-summary {
-    padding-left: 0px;
-}
+  .prod-summary {
+    padding-left: 0;
+  }
 }
 @media (max-width: 583px) {
-.prod-summary {
-    padding-left: 0px;
-}
+  .prod-summary {
+    padding-left: 0;
+  }
 }
 
 .prod-summary .prod-title {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 p.price-text.price-base {
-    margin: 0;
+  margin: 0;
 }
 
 p.price-text.price-override {
-    margin-bottom: 0px;
-    margin-right: 8px;
+  margin-bottom: 0;
+  margin-right: 8px;
 }
 
 .prod-contents .price-text.price-base {
-    font-size: 21px;
+  font-size: 21px;
 }
 
 .prod-contents .prod-name {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .prod-section-wrap {
-    padding-top: 8px;
-    margin-top: 20px;
-    margin-bottom: 0;
+  padding-top: 8px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .prod-summary p:last-child {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .prod-items > .prod-contents {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
+  margin-top: -18px;
+  > .price-text {
+    margin: 0;
+  }
 }
 
 #dish_movie_pack .term-text.term-base {
-    color: #555;
+  color: #555;
 }
 
-.prod-items input:checked + label .check-radio-btn:before, .tds-newsroom-search input:checked + label .check-radio-btn:before {
-    border-color: white!important;
+.prod-items input:checked + label .check-radio-btn:before,
+.tds-newsroom-search input:checked + label .check-radio-btn:before {
+  border-color: white!important;
 }
 
 .prod-items > .prod-contents {
-    width: 92%;
-}
-
-@media (max-width: 584px) {
-    .prod-items > .prod-contents {
-        padding: 17px 20px 20px 50px;
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        left: 0px;
-        position: relative;
-    }
+  width: 92%;
 }
 @media (max-width: 584px) {
-    .prod-items > label, .tds-newsroom-search > label {
-        top: 14px;
-        left: 16px
-    }
-    .prod-summary p:last-child {
-        margin-bottom: 0px;
-    }
+  .prod-items > .prod-contents {
+    padding: 17px 20px 20px 50px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    position: relative;
+  }
 }
+@media (max-width: 584px) {
+  .prod-items > label,
+  .tds-newsroom-search > label {
+    top: 14px;
+    left: 16px;
+  }
 
+  .prod-summary p:last-child {
+    margin-bottom: 0;
+  }
+}
+.prod-items > label > .check-radio-btn {
+    margin-top: 18px;
+}
 .bundle_container ul.ui-tabs-nav li {
-    width: auto;
-    margin-left: 0px;
-    min-height: 0;
-    margin-bottom: 0!important;
+  width: auto;
+  margin-left: 0;
+  min-height: 0;
+  margin-bottom: 0 !important;
 }
 
 .prod-items input[type="checkbox"] {
-    position: absolute;
+  position: absolute;
 }
 /*---IMT-46 bundle builder select services tabs---*/
 .bundle_container ul.ui-tabs-nav li:after {
-    content: none;
-}
-.bundle_container ul.ui-tabs-nav li a:after {
-    content: "";
-    width: 40px;
-    height: 50px;
-    background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-gray.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    opacity: .4;
-    display: block;
-    position: absolute;
-    right: 4px;
-    top: 0;
-}
-.bundle_container ul.ui-tabs-nav li:last-child:after {
-    content: none;
-}
-a#internet-tab, a#phone-tab, a#tv-tab {
-    padding: 0px 50px 0px 60px;
-}
-a#internet-tab, a#phone-tab, a#tv-tab, a#extra-tab {
-    background: none!important;
-    position: relative;
-    line-height: 50px;
-}
-a#extra-tab {
-    padding:0;
+  content: none;
 }
 
-a#internet-tab:before, a#phone-tab:before, a#tv-tab:before {
+.bundle_container ul.ui-tabs-nav li a:after {
+  content: "";
+  width: 40px;
+  height: 50px;
+  background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-gray.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  opacity: 0.4;
+  display: block;
+  position: absolute;
+  right: 4px;
+  top: 0;
+}
+
+.bundle_container ul.ui-tabs-nav li:last-child:after {
+  content: none;
+}
+
+a#internet-tab,
+a#phone-tab,
+a#tv-tab {
+  padding: 0 50px 0 60px;
+}
+
+a#extra-tab,
+a#internet-tab,
+a#phone-tab,
+a#tv-tab {
+  background: none!important;
+  position: relative;
+  line-height: 50px;
+}
+
+a#extra-tab {
+  padding: 0;
+}
+
+a#internet-tab:before,
+a#phone-tab:before,
+a#tv-tab:before {
+  content: "";
+  width: 60px!important;
+  height: 50px!important;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  margin-top: 0;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+}
+@media (max-width:625px) {
+  a#internet-tab,
+  a#phone-tab,
+  a#tv-tab {
+    padding: 0 50px 0 46px;
+  }
+
+  a#internet-tab:before,
+  a#phone-tab:before,
+  a#tv-tab:before {
+    width: 40px!important;
+    background-size: 34px;
+  }
+
+  .bundle_container ul.ui-tabs-nav li:after {
+    width: 36px;
+    height: 40px;
+    background-size: 30px 30px;
+    margin-right: 5px;
+    margin-left: 3px;
+  }
+}
+@media (max-width:560px) {
+  a#internet-tab:before,
+  a#phone-tab:before,
+  a#tv-tab:before {
+    content: none;
+  }
+
+  a#internet-tab,
+  a#phone-tab,
+  a#tv-tab {
+    padding: 0 50px 0 0;
+  }
+}
+@media (max-width:445px) {
+  .bundle_container ul.ui-tabs-nav li {
+    margin-left: 0;
+    min-height: 0;
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width:340px) {
+  .bundle_container ul.ui-tabs-nav li {
+    float: none;
+  }
+
+  a#internet-tab,
+  a#phone-tab,
+  a#tv-tab {
+    padding: 0 50px;
+  }
+
+  a#internet-tab:before,
+  a#phone-tab:before,
+  a#tv-tab:before {
     content: "";
-    width: 60px!important;
-    height: 50px!important;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 50px;
-    margin-top: 0px;
-    filter: grayscale(100%);
-    opacity: .5;
-    position: absolute;
-    left: 0;
+  }
 }
-@media (max-width:625px){
-    a#internet-tab, a#phone-tab, a#tv-tab {
-        padding: 0px 50px 0px 46px;
-    }
-    a#internet-tab:before, a#phone-tab:before, a#tv-tab:before {
-        width: 40px!important;
-        background-size: 34px;
-    }
-    .bundle_container ul.ui-tabs-nav li:after {
-        width: 36px;
-        height: 40px;
-        background-size: 30px 30px;
-        margin-right: 5px;
-        margin-left: 3px;
-    }
-}
-@media (max-width:560px){
-    a#internet-tab:before, a#phone-tab:before, a#tv-tab:before {
-        content: none;
-    }
-    a#internet-tab, a#phone-tab, a#tv-tab {
-        padding: 0px 50px 0px 0px;
-    }
-}
-@media (max-width:445px){
-    .bundle_container ul.ui-tabs-nav li {
-        margin-left: 0px;
-        min-height: 0;
-        margin-bottom: 0!important;
-    }
-}
-@media (max-width:340px){
-    .bundle_container ul.ui-tabs-nav li {
-        float: none;
-    }
-    a#internet-tab, a#phone-tab, a#tv-tab {
-        padding: 0px 50px 0px 50px;
-    }
-    a#internet-tab:before, a#phone-tab:before, a#tv-tab:before {
-        content: "";
-    }
-}
+
 .bundle_container ul.ui-tabs-nav li.progress-highlight a {
-    color:#19388a!important;
+  color: #19388a!important;
 }
+
 .bundle_container ul.ui-tabs-nav li.progress-highlight a:before {
-    filter: grayscale(0%)!important;
-    opacity: 1!important;
+  filter: grayscale(0%)!important;
+  opacity: 1!important;
 }
+
 a#internet-tab:before {
-    background-image: url(/content/dam/tdstelecom/images/products/internet/icon-product-internet.svg);
+  background-image: url("/content/dam/tdstelecom/images/products/internet/icon-product-internet.svg");
 }
 
 a#phone-tab:before {
-    background-image: url(/content/dam/tdstelecom/images/products/phone/icon-product-phone.svg);
+  background-image: url("/content/dam/tdstelecom/images/products/phone/icon-product-phone.svg");
 }
 
 a#tv-tab:before {
-    background-image: url(/content/dam/tdstelecom/images/products/tv/icon-product-tv.svg);
-}
-a#extra-tab:after {
-    content: none;
+  background-image: url("/content/dam/tdstelecom/images/products/tv/icon-product-tv.svg");
 }
 
-a#internet-tab:hover:before, a#phone-tab:hover:before, a#tv-tab:hover:before,
-a#internet-tab:focus:before, a#phone-tab:focus:before, a#tv-tab:focus:before {
-    filter: grayscale(0%)!important;
-    opacity: 1!important;
+a#extra-tab:after {
+  content: none;
 }
-a#internet-tab:hover, a#phone-tab:hover, a#tv-tab:hover, a#extra-tab:hover  {
-    filter: grayscale(0%)!important;
-    opacity: 1!important;
-    color: #0c8fd0!important;
+
+a#internet-tab:focus:before,
+a#internet-tab:hover:before,
+a#phone-tab:focus:before,
+a#phone-tab:hover:before,
+a#tv-tab:focus:before,
+a#tv-tab:hover:before {
+  filter: grayscale(0%)!important;
+  opacity: 1!important;
 }
+
+a#extra-tab:hover,
+a#internet-tab:hover,
+a#phone-tab:hover,
+a#tv-tab:hover {
+  filter: grayscale(0%)!important;
+  opacity: 1!important;
+  color: #0c8fd0!important;
+}
+
 .bundle_container ul.ui-tabs-nav .ui-state-default {
-    opacity: 1;
-    filter: alpha(opacity=100);
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .bundle_container ul.ui-tabs-nav .ui-state-default a,
 .bundle_container ul.ui-tabs-nav .ui-state-default a:link,
 .bundle_container ul.ui-tabs-nav .ui-state-default a:visited {
-    color: #aaa;
-    text-decoration: none;
+  color: #aaa;
+  text-decoration: none;
 }
+
 .bundle_container ul.ui-tabs-nav li:focus a.ui-tabs-anchor {
-    color: #0c8fd0!important;
+  color: #0c8fd0!important;
 }
+
 .bundle_container ul.ui-tabs-nav li:focus a.ui-tabs-anchor:before {
-    filter: grayscale(0%)!important;
-    opacity: 1!important;
+  filter: grayscale(0%)!important;
+  opacity: 1!important;
 }
+
 .bundle_container ul.ui-tabs-nav {
-    padding: 0 24px;
+  padding: 0 24px;
 }
+
 .bundle_container ul.ui-tabs-nav li.ui-state-default.ui-corner-top {
-    padding: 0;
-    display: block!important;
+  padding: 0;
+  display: block!important;
 }
 //---IMT-46 begin checkout button bundle builder---*/
 @media (max-width:435px) {
-.cart-overview-actions form.pull-right.form-group {
+  .cart-overview-actions form.pull-right.form-group {
     float: none!important;
-}
-button#beginCheckout {
+  }
+
+  button#beginCheckout {
     margin-top: 28px;
     width: 100%!important;
     display: inline-block;
     //IMT-47 cart error styling
     @media (max-width: 435px) {
-            margin-top: 28px;
+      margin-top: 28px;
     }
   }
 }
 //fix button font on bundle builder*/
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-    font-family: 'ITC Avant Garde Gothic W01',Century Gothic,sans-serif;
-    font-size: 14px;
+
+.ui-widget button,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+  font-family: 'ITC Avant Garde Gothic W01',Century Gothic,sans-serif;
+  font-size: 14px;
 }
