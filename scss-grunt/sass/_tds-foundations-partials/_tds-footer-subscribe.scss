@@ -37,16 +37,7 @@
 }
 // SUBSCRIBE BUTTON
 //----------------------------------------
-a.btn-subscribe:before {
-    content: "";
-    padding-left: 14px;
-    margin-right: 12px;
-    background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg');
-    background-size: contain;
-    background-position: right center;
-    background-repeat: no-repeat;
-}
-a.btn-subscribe {
+.btn-subscribe {
     font-family: "ITC Avant Garde Gothic W01",Century Gothic,Arial;
     font-weight: 400;
     font-style: normal;
@@ -59,22 +50,25 @@ a.btn-subscribe {
     text-transform: uppercase;
     text-align: center;
     max-width: 320px;
+    &:before, &:after {
+        @include fontello;
+    }
+    &:before {
+      content: "\e81c";
+      margin-right: 10px;
+      font-size: 13px;
+    }
+    &:after {
+        content: "\e804";
+        margin-left: 10px;
+    }
+    &:focus, &:hover {
+        background-color: #0c8fd0;
+        color: white;
+        text-decoration: none;
+    }
 }
-a.btn-subscribe:focus,
-a.btn-subscribe:hover {
-    background-color: #0c8fd0;
-    color: white;
-    text-decoration: none;
-}
-.btn-subscribe:after {
-    content: "";
-    padding-right: 10px;
-    margin-left: 16px;
-    background-image: linear-gradient(transparent,transparent),url('/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg');
-    background-size: contain;
-    background-position: right center;
-    background-repeat: no-repeat;
-}
+
 //move subscribe button below copy
 @media (max-width:583px) {
     #subscribe-container .container table tbody tr td {
@@ -83,7 +77,7 @@ a.btn-subscribe:hover {
     .subscribe-text {
         padding: 0;
     }
-    a.btn-subscribe {
+    .btn-subscribe {
         margin-top: 28px;
     }
     .subscribe-button {
