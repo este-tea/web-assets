@@ -204,8 +204,11 @@ ul.banner-ul li li {
 .tds-page-banner.col-sm-12 {
     float: none;
 }
-
-// make banner full width
-.tds-page-banner.full-width .banner-image {
+// make banner image full width
+.tds-page-banner.full-width .banner-image,
+.tds-page-banner.image-full .banner-image {
     background-size: cover!important;
+}
+.tds-page-banner.content-full .banner-content {
+    width: 100%;
 }
