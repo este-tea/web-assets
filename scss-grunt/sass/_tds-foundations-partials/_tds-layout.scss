@@ -83,19 +83,7 @@
 .content.container .row .content .page_content .pagelayout > .container-fluid > .row {
     margin: 0;
 }
-// Data-list
-// ---------
-// overwriting some of the Bootstrap defaults for the Tarriff page designs.
-@media (min-width: $screen-xs-max) {
-    .dl-horizontal dt {
-        width: 165px;
-        text-overflow: initial !important;
-        white-space: normal;
-    }
-}
-dd {
-    margin-bottom: 1.5rem;
-}
+
 //product user guides component
 .parbase.productUserGuides.section .col-sm-8 {
     margin-bottom: 36px;

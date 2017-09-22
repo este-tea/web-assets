@@ -1,0 +1,31 @@
+/* tds-dropdown-menus
+==========================================*/
+.dropdown > .gallery-btn {
+    margin-top: 0;
+}
+
+.dropdown-menu li {
+    margin-bottom: 0!important;
+}
+
+.tds-card .open > .dropdown-menu {
+  width: 100%;
+  padding-left: 0px;
+}
+
+.tds-card button.dropdown-toggle .caret {
+  position: relative;
+  right: -135px;
+}
+
+.open > button.gallery-btn.dropdown-toggle {
+  color: #fff !important;
+  background-color: #0C8FD0;
+}
+
+.tds-menu-group ul div > li:before {
+  @include tds-bullets;
+}
+.tds-content-rich .tds-li-steps .tds-menu-group ul div > li:before {
+  display: none;
+}

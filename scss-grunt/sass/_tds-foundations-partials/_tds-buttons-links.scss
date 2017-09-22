@@ -398,13 +398,7 @@ input + span.input-group-btn .gallery-btn {
   }
 }
 
-// Remove text on the print button in the TV listings on mobile devices.
-// Because people print from their phones so often
-@media (max-width: $screen-xs) {
-  .tds-tv-channel-lineup .print-btn {
-    display: none;
-  }
-}
+
 
 // for the link text in mya edit user
 #generateNameLink .caret {

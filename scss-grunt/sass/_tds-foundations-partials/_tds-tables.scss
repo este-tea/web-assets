@@ -294,20 +294,13 @@ table#usersTable {
 // end IMT-185
 
 
-// IMT-84 tv styling issues
-.tds-tv-channel-legend h4 {
-    margin-top: 0;
-    margin-bottom: 20px;
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background-position: left;
 }
-
-.tds-tv-channel-legend .tds-labels:last-child {
-    margin-bottom: 0;
-}
-
-.tds-tv-channel-lineup .table.dataTable .tds-channel-listing-table > tr > td {
-    text-align: center;
-}
-
-.tds-tv-channel-lineup .table.dataTable .tds-channel-listing-table > tr > td:nth-of-type(2) {
-    text-align: left;
+table.dataTable .tds-form-group th.sorting,
+table.dataTable .tds-form-group th.sorting_asc,
+table.dataTable .tds-form-group th.sorting_desc {
+    padding: 16px 8px 16px 20px !important;
 }
