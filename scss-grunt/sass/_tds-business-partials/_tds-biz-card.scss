@@ -35,3 +35,10 @@
 .home-block .contactUsCard .tds-card-content > .card_content > .navbutton:first-child > .gallery-btn {
     margin-top: 0;
 }
+
+.tds-card-cta > .tds-btn:after {
+    margin-right: -22px;
+}
+.tds-card-cta > .tds-btn {
+    padding-right: 38px;
+}

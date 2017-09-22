@@ -1,0 +1,106 @@
+/* tds-channel-lineup
+==========================================*/
+.tds-tv-channel-lineup h2 {
+  margin-left: -15px;
+}
+// IMT-84 TV Channel Lineup Styling Issues
+// #1 Fix
+
+.channelLineupResults.parbase.section .col-sm-8.col-xs-12 .tds-card .form-group.tds-form-group {
+  margin-bottom: 0;
+}
+// #2 Fix
+.well.tds-well.tds-tv-channel-legend {
+  box-shadow: none;
+  border: 1px solid #f5f5f5;
+}
+// #4 Fix
+.channelLineupResults.parbase.section .tds-card button.dropdown-toggle {
+  box-shadow: none;
+  font-weight: 400;
+  height: 44px;
+}
+
+.channelLineupResults.parbase.section .open > .gallery-btn.dropdown-toggle:focus,
+.channelLineupResults.parbase.section .open > .gallery-btn.dropdown-toggle:hover {
+  background-color: #0c8fd0;
+  color: #ffffff;
+}
+// #3 Fix
+.channelLineupResults.parbase.section .tds-card button.dropdown-toggle .caret {
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  border-top: 6px dashed;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+// #5 Fix
+.channelLineupResults.parbase.section .col-sm-4.col-xs-12 .tds-card .dropdown ul.dropdown-menu {
+  background: #383b38;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 44px;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.channelLineupResults.parbase.section .col-sm-4.col-xs-12 .tds-card .dropdown ul.dropdown-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-weight: 600;
+}
+
+.channelLineupResults.parbase.section .dropdown-menu > li > a:focus,
+.channelLineupResults.parbase.section .dropdown-menu > li > a:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #5c605d;
+}
+// Liz's add ons
+.tds-tv-channel-lineup button#print-button {
+  margin-top: 4px;
+}
+// Remove text on the print button in the TV listings on mobile devices.
+// Because people print from their phones so often
+@media (max-width: $screen-xs) {
+  .tds-tv-channel-lineup .print-btn {
+    display: none;
+  }
+}
+
+.tds-tv-channel-lineup .col-sm-2.col-xs-12 {
+  padding-right: 0;
+}
+
+.tds-tv-channel-legend h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.tds-tv-channel-legend .tds-labels:last-child {
+  margin-bottom: 0;
+}
+
+.tds-tv-channel-lineup .table.dataTable .tds-channel-listing-table > tr > td {
+  text-align: center;
+}
+
+.tds-tv-channel-lineup .table.dataTable .tds-channel-listing-table > tr > td:nth-of-type(2) {
+  text-align: left;
+}
+.tds-channel-listing-table a {
+    text-decoration: none;
+}
+
+.tds-channel-listing-table a .tds-label.label-dk-gray {
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tds-channel-listing-table a:hover .tds-label.label-dk-gray,
+.tds-channel-listing-table a:focus .tds-label.label-dk-gray {
+    background-color: #0c8fd0;
+    box-shadow: none;
+}

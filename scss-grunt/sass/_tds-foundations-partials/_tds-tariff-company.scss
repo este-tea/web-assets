@@ -1,0 +1,24 @@
+/* tds-tariff-company
+==========================================*/
+// example: https://www.tdstelecom.com/tariffs/new-hampshire/kearsarge-telephone-company.html
+
+.tds-tarriff-outline {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.tds-card-plain.tds-tarriff-outline {
+    padding: 0;
+}
+// Data-list aka description list
+// ---------
+// overwriting some of the Bootstrap defaults for the Tarriff page designs.
+@media (min-width: $screen-xs-max) {
+    .dl-horizontal dt {
+        width: 165px;
+        text-overflow: initial !important;
+        white-space: normal;
+    }
+}
+dd {
+    margin-bottom: 1.5rem;
+}

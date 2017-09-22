@@ -153,10 +153,7 @@ div.contact-links-wrap > ul > li:hover > a:hover:before {
   border-top: none;
   border-bottom: solid 1px #25acf0;
 }
-/*icon not showing up in ie 9, remove linear gradient*/
-a.btn-subscribe::before {
-background-image: url("/content/dam/tdstelecom/images/ui/contact/icon_contact-email.svg");
-}
+
 // copyright
 // ----------------------------------------
 div.copyright-text {

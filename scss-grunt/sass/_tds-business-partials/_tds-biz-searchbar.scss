@@ -1,37 +1,42 @@
 /* tds-biz-searchbar
 ==========================================*/
-#mobile-searchbar {
-  .tds-searchbar-button {
-    background-color: $tds-lt-gray;
-    height: 40px;
-    float: left;
-    left: 0;
-    background-image: url("/content/dam/tdstelecom/images/ui/icon_search-binoculars-gray.svg");
-    background-size: 20px;
-    text-indent: -9999px;
+#mobile-searchbar .tds-searchbar-button,
+.tds-searchbar-button {
+  background-color: $tds-lt-gray;
+  height: 40px;
+  float: left;
+  left: 0;
+  background-image: url("/content/dam/tdstelecom/images/ui/icon_search-binoculars-gray.svg");
+  background-size: 20px;
+  text-indent: -9999px;
 
-    &:active,
-    &:focus,
-    &:hover {
-      background-image: url("/content/dam/tdstelecom/images/ui/icon_search-binoculars-blue.svg");
-      background-color: transparent;
-    }
-    @media (max-width: 751px) {
-      width: 40px;
-    }
+  &:active,
+  &:focus,
+  &:hover {
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_search-binoculars-blue.svg");
+    background-color: transparent;
   }
-
-  .tds-searchbar-input {
-    line-height: 40px;
-    height: 40px\9;
-    height: 40px;
-    width: 100%;
-    background-color: $tds-lt-gray;
-    margin-right: 0;
-    padding-left: 44px;
+  @media (max-width: 751px) {
+    width: 40px;
   }
 }
 
+#mobile-searchbar .tds-searchbar-input,
+.tds-searchbar-input {
+  line-height: 40px;
+  height: 40px\9;
+  height: 40px;
+  background-color: $tds-lt-gray;
+  margin-right: 0;
+  padding-left: 44px;
+}
+.tds-searchbar-input {
+  width: 240px;
+}
+
+#mobile-searchbar .tds-searchbar-input {
+  width: 100%;
+}
 ::placeholder {
   color: #888;
 }

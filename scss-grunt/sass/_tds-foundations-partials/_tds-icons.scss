@@ -7,18 +7,18 @@
 // tds-icon/font-awesome extension
 // `.tds-icons` == `.fa` class for font-awesome
 .tds-icon, .fa {
-  display: inline-block;
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
+  @include fontello;
   font-size: inherit;
-  line-height: 1;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
+// for use with items using fontello
+.fo-icon:after {
+  @include fontello;
+}
+// spacing for buttons with left icon
+.fa.pull-left {
+  margin-right: 14px ;
+  line-height: 1.5;
+}
 // ===== spacing mixins ========================================================
 // FOR RE-USE WHEN NEEDED!!!! :)
 // Additional variables sometimes needed for icon styles
@@ -207,21 +207,8 @@ button.gallery-btn.btn-back:after {
     content: none!important;
 }
 
-// remove font awesome code reference in bundle gallery*/
-.gallery-btn.next-arrow:after {
-    content: "";
-}
-
 //Font Awesome Replacements
 .fa.fa-chevron-right:before {
     content: "\e804";
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    line-height: 1;
-    font-size: 14px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    @include fontello;
 }
