@@ -1,14 +1,174 @@
-/* bend-buttons
-==========================================*/
-.btn {
-    text-transform: uppercase;
+/* BUTTON - Defaults -*/
+
+.pagelayout button,
+#page-banner button {
+	padding: 10px 16px 8px;
+	font-size: 14px;
+	line-height: 1.33;
+	border-radius: 2px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
 }
-.btn-inverse {
-    color: #e6e6e6;
-    background: 0;
-    border-color: #e6e6e6;
+
+   /* BUTTON - Colors -*/
+
+.pagelayout button,
+#page-banner button  {
+	color: #fff;
+	background-color: #1c76b4;
 }
-.btn-inverse:focus, .btn-inverse:hover {
-    color: #fff;
-    border-color: #fff;
+
+.pagelayout button.tds-btn-lt-blue,
+#page-banner button.tds-btn-lt-blue  {
+	color: #fff;
+	background-color: #64bfd3;
+}
+
+.pagelayout button.tds-btn-gray,
+#page-banner button.tds-btn-gray {
+	color: #fff;
+	background-color: #808077;
+}
+
+.pagelayout button.tds-btn-dk-gray,
+#page-banner button.tds-btn-dk-gray  {
+	color: #fff;
+	background-color: #30302d;
+}
+
+.pagelayout button.tds-btn-green,
+#page-banner button.tds-btn-green  {
+	color: #fff;
+	background-color: #8dc73f;
+}
+
+.pagelayout button.tds-btn-orange,
+#page-banner button.tds-btn-orange {
+	color: #fff;
+	background-color:  #f70;
+}
+
+.pagelayout button.tds-btn-transparent,
+#page-banner button.tds-btn-transparent {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+   /* BUTTON - hover - focus -*/
+
+.pagelayout button:hover,
+#page-banner button:hover,
+.pagelayout button:focus,
+#page-banner button:focus  {
+	color: #fff;
+	background-color: #156398;
+}
+
+.pagelayout button.tds-btn-lt-blue:hover,
+.pagelayout button.tds-btn-lt-blue:focus,
+#page-banner button.tds-btn-lt-blue:hover,
+#page-banner button.tds-btn-lt-blue:focus {
+	color: #fff;
+	background-color: #51a7ba;
+}
+
+.pagelayout button.tds-btn-gray:hover,
+.pagelayout button.tds-btn-gray:focus,
+#page-banner button.tds-btn-gray:hover,
+#page-banner button.tds-btn-gray:focus {
+	color: #fff;
+	background-color: #6d6d5e;
+}
+
+.pagelayout button.tds-btn-dk-gray:hover,
+.pagelayout button.tds-btn-dk-gray:focus,
+#page-banner button.tds-btn-dk-gray:hover,
+#page-banner button.tds-btn-dk-gray:hover {
+	color: #fff;
+	background-color: #161614;
+}
+
+.pagelayout button.tds-btn-green:hover,
+.pagelayout button.tds-btn-green:focus,
+#page-banner button.tds-btn-green:hover ,
+#page-banner button.tds-btn-green:focus {
+	color: #fff;
+	background-color: #75a92e;
+}
+
+.pagelayout button.tds-btn-orange:hover,
+.pagelayout button.tds-btn-orange:focus,
+#page-banner button.tds-btn-orange:hover,
+#page-banner button.tds-btn-orange:focus {
+	color: #fff;
+	background-color:  #cf6202;
+}
+
+.pagelayout button.tds-btn-transparent:hover,
+.pagelayout button.tds-btn-transparent:focus,
+#page-banner button.tds-btn-transparent:hover,
+#page-banner button.tds-btn-transparent:focus {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+   /* BUTTON - Border -*/
+
+.pagelayout button.border-tds-blue,
+#page-banner button .border-tds-blue {
+	border-color: #1c76b4;
+}
+
+.pagelayout button.border-lt-blue,
+#page-banner button  {border-color: #64bfd3;}
+.pagelayout button.border-lt-gray,
+#page-banner button.border-lt-gray  {border-color: #808077;}
+.pagelayout button.border-gray,
+#page-banner button.border-gray  {border-color: #585852;}
+.pagelayout button.border-dk-gray,
+#page-banner button.border-dk-gray  {border-color: #30302d;}
+.pagelayout button.border-green,
+#page-banner button.border-green {border-color: #8dc73f;}
+.pagelayout button.border-orange
+#page-banner button.border-orange  {border-color: #f70;}
+
+   /* BUTTON - Decoration -*/
+
+.pagelayout .btn-next-arrow:after,
+#page-banner button .btn-next-arrow:after  {
+	content: "";
+	display:inline-block;
+	position:relative;
+	top:1px;
+    width: 10px;
+    height: 21px;
+    float: right;
+	margin-top: -3px;
+	margin-left: 10px;
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-white.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.pagelayout .tds-icon-chevron-left:before,
+#page-banner  .tds-icon-chevron-left:before  {
+	content: "";
+    width: 10px;
+    height: 21px;
+    padding: 0;
+    margin-top: -3px;
+	margin-right: 10px;
+    float: left;
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/left-arrow-white.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
 }
