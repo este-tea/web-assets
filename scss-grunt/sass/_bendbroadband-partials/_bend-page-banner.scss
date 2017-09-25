@@ -1,0 +1,99 @@
+/* PAGE BANNER -*/
+
+.tds-page-banner {
+	margin-bottom: 0;
+}
+
+div.tds-page-banner.col-sm-12 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#page-banner {
+	border-top: 0;
+	border-bottom: 0;
+	width:100%;
+}
+
+#page-banner  #banner-overlay {
+	background: none;
+	border-right: 0;
+	border-left: 0;
+}
+
+#page-banner .container {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0.4) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0.4) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0.4) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0.4) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0.4) 100%);
+	margin-top:245px;
+	margin-bottom:60px;
+	padding:0;
+}
+
+#page-banner .banner-image {
+	background-position-y: center;
+}
+
+#page-banner .banner-content {
+	padding: 26px;
+	width: 100%;
+}
+
+#page-banner .banner-content > .container {
+	padding: 0;
+	margin: 0;
+}
+
+#page-banner .content {
+	background: none;
+	border-top: none;
+}
+
+.banner-content p {
+	color: white;
+	font-size: 26px;
+	font-weight: 300;
+	font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
+	line-height: 34px;
+	text-align: center;
+	font-weight: lighter;
+}
+
+#page-banner h1.banner-title {
+	color: rgb(255, 119, 0);
+	font-size: 56px;
+	font-weight: normal;
+	font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
+	line-height: 58px;
+	text-align: center;
+}
+
+@media (max-width: 584px) {
+	#page-banner .banner-image {
+		display: block !important;
+	}
+}
+
+@media (max-width:991px) {
+	#page-banner .container,
+	#page-banner #banner-overlay,
+	#page-banner .banner-image {
+		min-height: 300px;
+	}
+	#page-banner .container {
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 992px) {
+	#page-banner .banner-content {
+		width:60%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1134px) {
+	#page-banner .container {min-width:100% !important;}
+}

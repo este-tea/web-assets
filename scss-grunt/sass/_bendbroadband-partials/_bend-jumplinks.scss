@@ -1,0 +1,45 @@
+/* JUMP LINKS -*/
+
+.jump-links {
+	padding: 0;
+	margin: 0;
+	background: $bend-gray;
+}
+
+
+.jump-links .customLargeNavBar {
+	/* float: right; */
+	height: 40px;
+}
+
+.jump-links li {
+	margin-top: 8px;
+	float: left;
+}
+
+.jump-links a {
+	background-color: $bend-gray;
+	padding: 12px;
+	color: #fff;
+	font-family: $bend-font-headings;
+	font-weight: lighter;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.jump-links a:hover,
+.jump-links a:focus {
+	background-color: rgb(50, 50, 44);
+}
+
+@media (min-width: 1010px) {
+	.jump-links {
+		padding-right: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.jump-links {
+		display: none;
+	}
+}
