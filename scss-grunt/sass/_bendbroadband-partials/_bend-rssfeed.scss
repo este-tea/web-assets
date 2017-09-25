@@ -1,0 +1,129 @@
+/* RSS FEED -*/
+.rssFeedReader {
+  margin: 0;
+  padding: 0;
+}
+
+.rssFeedReader .feature-article,
+.rssFeedReader .tds-news-feed {
+  margin-right: 24px;
+}
+
+.rssFeedReader .tds-news-feed {
+  border-bottom: 1px #ccc solid;
+}
+
+.rssFeedReader .feature-article {
+  border-bottom: none;
+}
+
+.rssFeedReader h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.rssFeedReader .tds-card {
+  padding: 0;
+}
+
+.rssFeedReader .post-date {
+  font-size: 14px;
+}
+
+.rssFeedReader .post-meta {
+  margin-top: 5px;
+}
+
+.rssFeedReader .tds-card-plain.tds-card-plain {
+  border: 0;
+}
+
+.rssFeedReader .media-heading {
+  margin-top: 6px;
+}
+
+.rssFeedReader .feature-article h4 a,
+.rssFeedReader .feature-article h4 a:hover,
+.rssFeedReader .feature-article h4 a:focus {
+  font-size: 21px;
+  line-height: 24px;
+  text-transform: unset;
+}
+
+
+.rssFeedReader h4 a {
+  color: #f70;
+  border: 0;
+  background: no-repeat right transparent;
+  text-transform: unset;
+  padding: 0;
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.tds-block-orange .rssFeedReader h4 a {
+  color: #fff;
+  border: 0;
+  background: no-repeat right transparent;
+  text-transform: unset;
+  padding: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.rssFeedReader h4 a:hover,
+.rssFeedReader h4 a:focus {
+  color: #cc5f00;
+  background: no-repeat right transparent;
+  opacity: 1.0;
+}
+
+.tds-block-orange .feature-article h4 a:hover,
+.tds-block-orange .feature-article h4 a:focus,
+.tds-block-orange .rssFeedReader h4 a:hover,
+.tds-block-orange .rssFeedReader h4 a:focus {
+  color: #fff;
+  background: no-repeat right transparent;
+  opacity: 1.0;
+}
+
+.rssFeedReader .feed-content {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.tds-block-dk-gray .rssFeedReader,
+.tds-block-orange .rssFeedReader {
+  color: #fff;
+}
+
+.tds-block-lt-gray .rssFeedReader {
+  color: #333;
+}
+
+.rssFeedReader .feature-article {
+  font-weight: bold;
+}
+
+.rssFeedReader a {
+  font-size: 12px;
+  display: block;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background: no-repeat right transparent;
+  border: solid thin #f70;
+  margin: 6px 0;
+  font-weight: lighter;
+  text-decoration: none;
+  max-width: 92px;
+  color: #f70;
+}
+
+.rssFeedReader a:hover,
+.rssFeedReader a:focus {
+  opacity: 0.85;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
