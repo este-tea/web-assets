@@ -241,7 +241,7 @@
 //yellow alert warning icon
 .tds-alert.tds-alert-warning {
     background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-warning.svg');
-    background-size: 22px 22px;
+    background-size: 22px;
     background-position: 16px 16px;
     background-repeat: no-repeat;
     padding-left: 52px;
@@ -250,7 +250,7 @@
 //red alert critical icon
 .tds-alert.tds-alert-critical {
   background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg');
-  background-size: 20px 20px;
+  background-size: 20px;
   background-position: 16px 14px;
   background-repeat: no-repeat;
   padding-left: 52px;
@@ -259,7 +259,7 @@
 //green alert success icon
 .tds-alert.tds-alert-success {
     background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-success.svg');
-    background-size: 22px 22px;
+    background-size: 22px;
     background-position: 16px 11px;
     background-repeat: no-repeat;
     padding-left: 52px;
@@ -268,7 +268,7 @@
 //lt-blue alert informational icon
 .tds-alert.tds-alert-info, .tds-alert.tds-alert-status  {
     background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-information.svg');
-    background-size: 20px 20px;
+    background-size: 20px;
     background-position: 16px 11px;
     background-repeat: no-repeat;
     padding-left: 52px;
@@ -278,7 +278,7 @@
 .tds-alert.tds-alert-loading {
   padding-left: 52px;
   background-image: url('/content/dam/tdstelecom/images/ui/tds-spinner-icon.gif');
-  background-size: 22px 22px;
+  background-size: 22px;
   background-position: 16px 11px;
   background-repeat: no-repeat;
 }

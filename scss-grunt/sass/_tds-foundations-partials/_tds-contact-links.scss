@@ -10,7 +10,6 @@
   margin: 1.75em 0 0 0;
   float: right;
   text-align: left;
-  overflow: hidden;
 }
 .contact-links-wrap ul {
   list-style: none;
@@ -60,7 +59,9 @@ div.contact-links-wrap > ul > li:hover > a:hover:before {
     display: none;
   }
 }
-
+.contact-links-wrap li .gallery-btn {
+    margin-top: 0;
+}
 // #CONTACT LINKS IN THE FOOTER
 // --------------------------------
 #footer-contact-links {
