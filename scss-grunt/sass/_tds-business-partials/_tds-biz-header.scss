@@ -61,6 +61,7 @@
 
     .gallery-btn {
       padding: 8px 12px;
+      margin-top: 0;
       &:after {
         content: none;
       }
@@ -72,10 +73,16 @@
 
     ul li {
       vertical-align: middle;
+      float: left;
+    }
+
+    .contact-links-text {
+      line-height: 40px;
     }
 
     .contact-links-text:before {
       background-color: #FFF;
+      margin-top: 6px;
     }
 
     .contact-chat-icon:before {
