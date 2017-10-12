@@ -204,50 +204,48 @@ ul.mobile-header-nav li {
   background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
   background-color: $bend-orange;
 }
-// request a quote button on the tds business site
-// called the "cta button" in the component dialog
+
+// cta button on the header
 #mobile-nav-container .mobile-header-nav {
   .btn-cta-wrap {
-    a#btn-cta.gallery-btn.tds-btn-orange {
+    .gallery-btn {
       font-size: 12px;
-      font-family: "ITC Avant Garde Gothic W01",Century Gothic,Arial;
-      font-weight: 400;
-      font-style: normal;
       color: white;
-      padding: 8px 16px 0;
-      border: solid 2px darken( $bend-orange, 10% );
-      background-color: darken( $bend-orange, 10% );
+      padding: 4px 9px !important;
       &:after {
           content: none;
       }
-      &:hover, &:focus {
+      .tds-btn-orange {
         border: solid 2px $bend-orange;
-        color: white;
         background-color: $bend-orange;
+        &:hover, &:focus {
+          border: solid 2px darken($bend-orange, 15);
+          color: white;
+          background-color: darken($bend-orange, 15);
+        }
+      }
+      @media (max-width: 430px) {
+        display: none!important;
       }
     }
   }
 }
 
-#mobile-menu ul li a span.gallery-btn.tds-btn-orange {
-  margin: 8px 0;
-  width: 100%;
-  display: inline-block;
-  &:after {
-    content: none;
+// cta button that appears in mobile dropdown
+#mobile-menu .mobile-cta-wrap {
+  .gallery-btn {
+    margin: 8px 0;
+    width: 100%;
+    display: inline-block;
+
+    &:after {
+      content: none;
+    }
+    @media (min-width: 431px) {
+      display: none!important;
+    }
   }
 }
-@media (max-width: 430px) {
-    li.btn-cta-wrap {
-        display: none;
-    }
-}
-@media (min-width: 431px) {
-    #mobile-menu-dropdown li.mobile-cta-wrap {
-        display: none;
-    }
-}
-
 
 // #horizontal rules and lines
 // -------------------------------
