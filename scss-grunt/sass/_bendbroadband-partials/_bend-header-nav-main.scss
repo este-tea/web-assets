@@ -396,14 +396,21 @@
         color: white;
         border-radius: 3px;
 
-        > .ss-icon {
+        > .ss-icon,
+        > .link-item-cssIcon {
           color: white;
         }
       }
 
-      > .ss-icon {
+      > .ss-icon,
+      > .link-item-cssIcon {
         color: $bend-orange;
       }
+      > .link-item-cssIcon:before {
+        top: 1px;
+        position: relative;
+      }
+
     }
   }
 }
