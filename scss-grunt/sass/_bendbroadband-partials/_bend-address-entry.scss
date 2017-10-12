@@ -1,4 +1,5 @@
-/* ADDRESS ENTRY -*/
+/* bend-address-entry
+==========================================*/
 
 .address-entry h2 {
 	font-size:18px;
@@ -37,55 +38,17 @@ input,
 	padding-bottom:20px;
 }
 
-
-
-   /* ADDRESS ENTRY - Errors -*/
-
-#allErrorsContainer {
-	background-color: #ffecec;
-    background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
-    background-size: 20px 20px;
-    background-position: 16px 14px;
-    background-repeat: no-repeat;
-    border-left: 3px solid #cb1d1d;
-    padding: 12px 16px 12px 52px;
-    margin: 16px 0;
-    display: block;
-    width: 100%;
-}
-
-#allErrorsContainer p {
-    line-height: 24px;
-    text-align: left;
-    font-family: "Museo Sans W01", Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400!important;
-    color: black;
-    margin-top:0;
-}
-
-#addressForm .has-error label {
-    color: #cb1d1d;
-}
-
-#addressForm .has-error input {
-	background: #ffecec;
-}
-
 .address-entry #fullAddressError {
 	font-weight: 600;
 	font-size: 16px;
 	font-family: "Museo Sans W01", Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-
 #out-of-service-area .tds-alert-warning {
 	border: 4px #f70 solid;
 	margin:20px 0;
 	padding: 0 18px;
 }
-
-   /* ADDRESS ENTRY (cont) -*/
 
 .address-entry .tds-card {
 	min-height: 130px;
@@ -95,28 +58,6 @@ input,
 	color: #737373;
 	margin-bottom: 14px;
 	font-size: 26px;
-}
-
-.address-entry .text-link {
-	 background:none!important;
-     color: #f70;
-     text-decoration: underline;
-     border:none;
-     padding:0!important;
-     font: inherit;
-     cursor: pointer;
-     font-size:16px;
-}
-
-.address-entry .text-link:hover {
-	 background:none!important;
-     color: #f70;
-     text-decoration: none;
-     border:none;
-     padding:0!important;
-     font: inherit;
-     cursor: pointer;
-     font-size:16px;
 }
 
 p.entered-address {color:#737373;}
@@ -182,6 +123,28 @@ line-height: 33px;
 margin: 0 0 10px 0;
 padding: 10px 15px;
 text-align: center;
+}
+
+.address-entry .text-link {
+	 background:none!important;
+     color: #f70;
+     text-decoration: underline;
+     border:none;
+     padding:0!important;
+     font: inherit;
+     cursor: pointer;
+     font-size:16px;
+}
+
+.address-entry .text-link:hover {
+	 background:none!important;
+     color: #f70;
+     text-decoration: none;
+     border:none;
+     padding:0!important;
+     font: inherit;
+     cursor: pointer;
+     font-size:16px;
 }
 
 @media (max-width: 767px) {
