@@ -38,10 +38,6 @@
   }
 }
 
-#BendChatModal .modal-header {
-  border-bottom: none;
-}
-
 .modal-body {
   padding: 0 15px;
   font-weight: 500;
@@ -51,4 +47,28 @@
   .modal-dialog {
     margin-top: 50px;
   }
+}
+
+//  BEND OLARK CHAT MODAL
+
+#BendChatModal .modal-header {
+  border-bottom: none;
+}
+
+#olark-box-container > p.title {
+    margin-top: 0;
+    display: block;
+    background-color: #8cc73f;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #353535;
+    text-align:center;
+}
+
+#olark-box-container > p.message {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
 }
