@@ -123,3 +123,41 @@
 .alert-danger.bend-usage-status {
     background-image: url('/content/dam/bendbroadband/images/ui/icon_alert-error-bend-red.svg');
 }
+
+/* address-entry errors
+==========================================*/
+
+#allErrorsContainer {
+background-color: #ffecec;
+ background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
+ background-size: 20px 20px;
+ background-position: 16px 14px;
+ background-repeat: no-repeat;
+ border-left: 3px solid #cb1d1d;
+ padding: 12px 16px 12px 52px;
+ margin: 16px 0;
+ display: block;
+ width: 100%;
+}
+
+#allErrorsContainer p {
+ line-height: 24px;
+ text-align: left;
+ font-family: "Museo Sans W01", Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+ font-size: 14px;
+ font-weight: 400!important;
+ color: black;
+ margin-top:0;
+}
+
+.address-entry #fullAddressError {
+font-weight: 600;
+font-size: 16px;
+font-family: "Museo Sans W01", Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#out-of-service-area .tds-alert-warning {
+border: 4px #f70 solid;
+margin:20px 0;
+padding: 0 18px;
+}
