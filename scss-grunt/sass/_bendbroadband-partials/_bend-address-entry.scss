@@ -2,9 +2,6 @@
 ==========================================*/
 .address-entry-maincontent .page-intro {
     margin-top: 0;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 500;
 }
 .address-entry .tds-divider-line {
   background-color: $bend-lt-gray;
@@ -65,14 +62,28 @@ p.entered-address {
   }
 }
 // autocomplete address entry
-.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:focus,
-.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:hover {
-  background: $bend-lt-blue!important;
-  color: #fff!important;
-  border-radius: 2px;
-  border-color: $bend-lt-blue!important;
+.ui-autocomplete {
+  border-width: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
 }
-
+.ui-state-focus,
+.ui-state-hover,
+.ui-widget-content .ui-state-focus,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-focus,
+.ui-widget-header .ui-state-hover,
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:focus,
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:hover,
 .ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:active {
   background: $bend-lt-blue!important;
   color: #fff!important;
