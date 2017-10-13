@@ -23,6 +23,13 @@
     max-width: $screen-lg;
   }
 }
+.page_content.parsys {
+    min-height: 320px;
+}
+.page_content > .dividerline.parbase.section {
+    margin-left: 0;
+    margin-right: 0;
+}
 /* #VISIBILITY
 --------------------------------- */
 .lg-visible {

@@ -23,7 +23,8 @@
 html:hover [class^="ss-"] {
   -ms-zoom: 1;
 }
-
+.icon-location:before,
+.fa,
 .ss-icon,
 .ss-icon.ss-standard,
 [class*=" ss-"].right:after,
@@ -279,7 +280,7 @@ html:hover [class^="ss-"] {
 .ss-ellipsis:before {
   content: '…';
 }
-
+.fa-user:before,
 .ss-user.right:after,
 .ss-user:before {
   content: '👤';

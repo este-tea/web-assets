@@ -1,150 +1,220 @@
 /* bend-errors-alerts
 ==========================================*/
-.has-error .form-control {
+.has-error {
+  .form-control {
     border-color: $bend-red;
-}
-.has-error .form-control:focus {
-    border-color: $bend-dk-blue;
+    border-width: 2px;
+    background: $bend-ltr-gray;
+
+    &:focus {
+      border-color: darken($bend-red, 25);
+      -webkit-box-shadow: 0 0 6px darken($bend-red, 25);
+      box-shadow: 0 0 6px darken($bend-red, 25);
+    }
+  }
 }
 
-.tds-card .alert {
-    margin-bottom: 0;
+.has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline {
+  color: $bend-red;
 }
-.alert .h4 {
-    color: #fff;
-    margin-bottom: 8px;
-}
-.alert .h4 .bold {
-    font-weight: 600;
-}
-.alert ul.alert-list {
-    margin-left: 12px;
-}
-
-.alert ul.alert-list li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-}
-.alert ul.alert-list li:before {
-    background: #fff;
-    width: 6px;
-    height: 6px;
-    margin-top: 7px;
-    content: "";
-    position: relative;
-    top: 0;
-    display: block;
-    float: left;
-    margin-left: -12px;
-}
-.alert {
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: white;
-    font-weight: 500;
+.has-error .help-block {
     font-size: 16px;
-    margin: 1em 0;
-    padding: 14px;
-    padding-left: 2.75em;
+    padding-left: 20px;
+    background-image: url(/content/dam/bendbroadband/images/ui/icon_alert-error-bend-red.svg);
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    background-size: 15px;
 }
-.alert a {
+
+.alert,
+.tds-alert,
+.tds-error-msg {
+  font-family: $bend-font-body;
+  color: white;
+
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    font-family: $bend-font-body;
+    color: white;
+    margin-top: 2px;
+  }
+
+  a {
+    color: white;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      background: white;
+    }
+  }
+
+  .h4 {
+    color: white;
+    margin-bottom: 8px;
+
+    .bold {
+      font-weight: 600;
+    }
+  }
+
+  ul.alert-list,
+  ul.errorText {
+    margin-left: 12px;
+
+    li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      color: white!important;
+      line-height: 1.8em !important;
+
+      &:before {
+        background: white;
+        width: 8px;
+        height: 8px;
+        margin-top: 8px;
+        content: "";
+        position: relative;
+        top: 0;
+        display: block;
+        float: left;
+        margin-left: -12px;
+      }
+    }
+  }
+}
+
+.alert,
+.tds-alert,
+.tds-error-msg {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 1em 0;
+  padding: 14px 14px 14px 2.75em;
+  //for icons
+  background-size: 1.25em 1.25em;
+  background-repeat: no-repeat;
+  background-position: 14px 14px;
+  border-radius: 4px;
+}
+
+.alert-success .tds-error-success,
+.tds-alert.tds-alert-success {
+  padding-left: 46px;
+  background-color: $bend-green;
+  background-image: url('/content/dam/bendbroadband/images/ui/icon_alert-success-bend.svg');
+}
+
+.alert-danger,
+.tds-alert.tds-alert-critical,
+.tds-error-critical {
+  padding-left: 46px;
+  background-color: $bend-red;
+  background-image: url('/content/dam/bendbroadband/images/ui/icon_alert-error-bend.svg');
+}
+
+.alert-info,
+.alert-loading,
+.tds-alert.tds-alert-info,
+.tds-alert.tds-alert-loading,
+.tds-error-info {
+  padding-left: 46px;
+  background-color: $bend-lt-blue;
+  a:hover, a:focus {
+    color: $bend-lt-blue;
+  }
+}
+
+.address-entry-maincontent .tds-alert-info {
+  margin-top: 0;
+}
+
+.alert-info,
+.tds-alert.tds-alert-info,
+.tds-error-info {
+  background-image: url('/content/dam/bendbroadband/images/ui/icon_alert-information-bend.svg');
+}
+
+.alert-loading,
+.tds-alert.tds-alert-loading {
+  padding-left: 46px;
+  background-image: url('/content/dam/bendbroadband/images/ui/loading-icon.gif');
+}
+
+.alert-warning,
+.tds-alert.tds-alert-warning,
+.tds-error-warning {
+  padding-left: 46px;
+  color: $bend-dk-gray;
+  background-color: $bend-yellow;
+  background-image: url('/content/dam/bendbroadband/images/ui/icon_alert-warning-bend.svg');
+
+  p {
+    color: $bend-dk-gray;
+  }
+
+  a {
     color: black;
-}
-.alert a:hover, .alert a:focus {
-    text-decoration:none;
-    background: white;
-}
-.alert-success {
-    background-color: lighten($bend-green, 20);
-    background-image: url('../images/ui/icon_alert-success-bend.svg');
-    background-size: 1.25em 1.25em;
-    background-repeat: no-repeat;
-    background-position: 14px 14px;
-    border-radius: 4px;
-}
-.alert-danger {
-    background-color: $bend-red;
-    background-image: url('../images/ui/icon_alert-error-bend.svg');
-    background-size: 1.25em 1.25em;
-    background-repeat: no-repeat;
-    background-position: 14px 14px;
-    border-radius: 4px;
-}
-.alert-info {
-    background-color: lighten($bend-lt-blue, 10);
-    background-image: url('../images/ui/icon_alert-information-bend.svg');
-    background-size: 1.25em 1.25em;
-    background-repeat: no-repeat;
-    background-position: 14px 14px;
-    border-radius: 4px;
-}
-.alert-loading {
-    color: #555;
-    background-color: lighten($bend-lt-blue, 10);
-    background-image: url('../images/ui/loading-icon.gif');
-    background-size: 1.25em 1.25em;
-    background-repeat: no-repeat;
-    background-position: 14px 14px;
-    border-radius: 4px;
-}
-.alert-warning {
-    color: #555;
-    background-color: lighten($bend-yellow, 15);
-    background-image: url('../images/ui/icon_alert-warning-bend.svg');
-    background-size: 1.45em 1.45em;
-    background-repeat: no-repeat;
-    background-position: 14px 14px;
-    border-radius: 4px;
+
+    &:hover {
+      color: white;
+      background: $bend-dk-gray;
+    }
+  }
 }
 
 .alert-success.bend-usage-status {
-    background-image: url('../images/ui/icon_alert-success-bend-green.svg');
+  background-image: url('/content/dam/bendbroadband/images/ui/icon_alert-success-bend-green.svg');
 }
+
 .alert-warning.bend-usage-status {
-    background-image: url('../images/ui/icon_alert-warning-bend-orange.svg');
+  background-image: url('/content/dam/bendbroadband/images/ui/icon_alert-warning-bend-orange.svg');
 }
+
 .alert-danger.bend-usage-status {
-    background-image: url('../images/ui/icon_alert-error-bend-red.svg');
+  background-image: url('/content/dam/bendbroadband/images/ui/icon_alert-error-bend-red.svg');
 }
 
-/* address-entry errors
-==========================================*/
-
-#allErrorsContainer {
-background-color: #ffecec;
- background-image: url(/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg);
- background-size: 20px 20px;
- background-position: 16px 14px;
- background-repeat: no-repeat;
- border-left: 3px solid #cb1d1d;
- padding: 12px 16px 12px 52px;
- margin: 16px 0;
- display: block;
- width: 100%;
+// USER GREETING
+//--------------
+.userGreeting .tds-error-msg.tds-error-info {
+    margin: 0;
+    border-radius: 0;
+    background-image: none;
+    padding-left: 0;
+    background-color: #d4e5ed;
+    padding: 8px 0;
+}
+.userGreeting .tds-error-msg.tds-error-info p {
+    color: $bend-dk-gray;
+    font-size: 14px;
+    margin: 0;
+}
+.userGreeting .tds-error-msg.tds-error-info a {
+    color: $bend-dk-gray;
+}
+.userGreeting .tds-error-msg.tds-error-info a:hover,
+.userGreeting .tds-error-msg.tds-error-info a:focus {
+    background-color: #518eaa;
+    color:white;
+}
+.userGreeting-address {
+    font-weight: 700;
 }
 
-#allErrorsContainer p {
- line-height: 24px;
- text-align: left;
- font-family: "Museo Sans W01", Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
- font-size: 14px;
- font-weight: 400!important;
- color: black;
- margin-top:0;
-}
-
-.address-entry #fullAddressError {
-font-weight: 600;
-font-size: 16px;
-font-family: "Museo Sans W01", Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-#out-of-service-area .tds-alert-warning {
-border: 4px #f70 solid;
-margin:20px 0;
-padding: 0 18px;
+// PACKAGE BUILDER
+.product-list-contents .pkg-prod-list-options .tds-alert {
+    color: white;
 }

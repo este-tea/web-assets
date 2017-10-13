@@ -64,7 +64,7 @@ div.dataTables_length select {
     font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
     font-weight: 200;
     font-style: normal;
-    color: #353535;
+    color: $bend-dk-gray;
     width: auto;
     text-align: center;
     background-position: 85% 50%;
@@ -233,7 +233,7 @@ div.dataTables_length label {
 }
 .tds-responsive-table tbody tr th:first-child {
     vertical-align: middle;
-    border-bottom: solid 2px #e3e3e3 !important;
+    border-bottom: solid 2px $bend-ltr-gray !important;
 }
 @media (min-width: 584px) {
     .tds-responsive-table tbody th[scope="row"] {

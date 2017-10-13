@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?55908463');
+  src: url('../font/fontello.eot?55908463#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?55908463') format('woff2'),
+       url('../font/fontello.woff?55908463') format('woff'),
+       url('../font/fontello.ttf?55908463') format('truetype'),
+       url('../font/fontello.svg?55908463#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?55908463#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-tds-chev-down:before { content: '\e800'; } /* '' */
+.icon-tds-lock:before { content: '\e801'; } /* '' */
+.icon-tds-envelope-open:before { content: '\e802'; } /* '' */
+.icon-tds-chev-left:before { content: '\e803'; } /* '' */
+.icon-tds-chev-right:before { content: '\e804'; } /* '' */
+.icon-tds-pencil-1:before { content: '\e805'; } /* '' */
+.icon-tds-person:before { content: '\e806'; } /* '' */
+.icon-tds-pinterest:before { content: '\e807'; } /* '' */
+.icon-tds-plus:before { content: '\e808'; } /* '' */
+.icon-tds-print:before { content: '\e809'; } /* '' */
+.icon-tds-cart-remove:before { content: '\e80a'; } /* '' */
+.icon-tds-search:before { content: '\e80b'; } /* '' */
+.icon-tds-square:before { content: '\e80c'; } /* '' */
+.icon-tds-trash:before { content: '\e80d'; } /* '' */
+.icon-tds-twitter:before { content: '\e80e'; } /* '' */
+.icon-tds-unlocked:before { content: '\e80f'; } /* '' */
+.icon-tds-youtube:before { content: '\e810'; } /* '' */
+.icon-tds-pencil:before { content: '\e811'; } /* '' */
+.icon-tds-minus:before { content: '\e812'; } /* '' */
+.icon-tds-caret-up:before { content: '\e813'; } /* '' */
+.icon-tds-caret-down:before { content: '\e814'; } /* '' */
+.icon-tds-location:before { content: '\e815'; } /* '' */
+.icon-tds-key:before { content: '\e816'; } /* '' */
+.icon-tds-gplus:before { content: '\e817'; } /* '' */
+.icon-tds-facebook:before { content: '\e818'; } /* '' */
+.icon-tds-ex:before { content: '\e819'; } /* '' */
+.icon-tds-cart-empty:before { content: '\e81a'; } /* '' */
+.icon-tds-download:before { content: '\e81b'; } /* '' */
+.icon-tds-contact-email:before { content: '\e81c'; } /* '' */
+.icon-tds-chat:before { content: '\e81d'; } /* '' */
+.icon-tds-call:before { content: '\e81e'; } /* '' */
+.icon-tds-circle:before { content: '\e81f'; } /* '' */
+.icon-tds-checkmark:before { content: '\e820'; } /* '' */
+.icon-tds-caret-right:before { content: '\e821'; } /* '' */
+.icon-tds-caret-left:before { content: '\e822'; } /* '' */
+.icon-tds-blogger:before { content: '\e823'; } /* '' */
+.icon-tds-chev-up:before { content: '\e824'; } /* '' */
+.icon-tds-linkedin:before { content: '\e825'; } /* '' */
+.icon-tds-business:before { content: '\e826'; } /* '' */
+.icon-star:before { content: '\e827'; } /* '' */
+.icon-download-alt:before { content: '\e828'; } /* '' */
+.icon-heart:before { content: '\e829'; } /* '' */
