@@ -1,4 +1,4 @@
-/* bend-cards
+/* bend-cards.scss
 ==========================================*/
 .tds-card {
   margin-bottom: 18px;
@@ -6,29 +6,49 @@
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   padding: 0;
+  h4 {
+      margin: 0;
+  }
+  .alert {
+    margin-bottom: 0;
+  }
+  .tds-card-heading {
+    color: #737373;
+    margin-bottom: 14px;
+    font-size: 26px;
+    display: table;
+    span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 }
-.tds-card h4 {
-    margin: 0;
-}
+
 .tds-card-border {
   border: solid 1px #ccc;
   border-radius: 8px;
   padding: 18px;
 }
 
-.tds-card-gray {
-  background: #ddd;
-  border-radius: 8px;
-  border-bottom: 0;
-  padding: 12px;
+.tds-card-gray,
+.pagelayout .tds-card.tds-card-gray {
+    background-color: #5a5a4d;
+    border-radius: 4px;
+    padding: 20px;
 }
-
-.tds-card .alert {
-  margin-bottom: 0;
-}
-
-.tds-card-heading {
-  color: #737373;
-  margin-bottom: 14px;
-  font-size: 26px;
+.tds-card.tds-card-gray {
+  .tds-card-heading {
+      font-size: 22px;
+      line-height: 28px;
+  }
+  h2 {
+     color: white;
+     font-weight: 400;
+  }
+  .tds-card-content {
+    p {
+      color: white;
+      font-weight: 200;
+    }
+  }
 }
