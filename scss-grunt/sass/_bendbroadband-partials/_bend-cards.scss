@@ -1,16 +1,34 @@
 /* bend-cards
 ==========================================*/
 .tds-card {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
+  border: 1px solid silver;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  padding: 0;
+}
+.tds-card h4 {
+    margin: 0;
 }
 .tds-card-border {
-    border: solid 1px #ccc;
-    border-radius: 8px;
-    padding: 18px;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: 18px;
 }
+
 .tds-card-gray {
-    background: #ddd;
-    border-radius: 8px;
-    border-bottom: 0;
-    padding: 12px;
+  background: #ddd;
+  border-radius: 8px;
+  border-bottom: 0;
+  padding: 12px;
+}
+
+.tds-card .alert {
+  margin-bottom: 0;
+}
+
+.tds-card-heading {
+  color: #737373;
+  margin-bottom: 14px;
+  font-size: 26px;
 }
