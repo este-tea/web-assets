@@ -11,36 +11,6 @@
 
 // BRAND COLOR PALETTE
 // ====================================
-.brand-primary {
-    color: #f70;
-}
-.brand-primary a {
-    color: #f70;
-}
-.brand-secondary {
-    color: #64bfd3;
-}
-.brand-secondary a {
-    color: #64bfd3;
-}
-.brand-tertiary {
-    color: #8dc73f;
-}
-.brand-tertiary a {
-    color: #8dc73f;
-}
-.brand-quartenary {
-    color: #fc0;
-}
-.brand-quartenary a {
-    color: #fc0;
-}
-.brand-quincenary {
-    color: #1c76b4;
-}
-.brand-quincenary a {
-    color: #1c76b4;
-}
 $bend-orange: #f70;
 $bend-green: #8dc73f;
 $bend-yellow: #fc0;
@@ -49,10 +19,43 @@ $bend-dk-blue: #1c76b4;
 $bend-red: #FF4D50;
 $bend-gray: #585852;
 
+
 $bend-orange-80: lighten($bend-orange, 10); //aka #ff9233
 
+$bend-ltr-gray: lighten($bend-gray, 55);
 $bend-lt-gray: lighten($bend-gray, 15); //aka #808077
 $bend-dk-gray: darken($bend-gray, 15); //aka #30302d
+
+.brand-primary {
+    color: $bend-orange;
+}
+.brand-primary a {
+    color: $bend-orange;
+}
+.brand-secondary {
+    color: $bend-lt-blue;
+}
+.brand-secondary a {
+    color: $bend-lt-blue;
+}
+.brand-tertiary {
+    color: $bend-green;
+}
+.brand-tertiary a {
+    color: $bend-green;
+}
+.brand-quartenary {
+    color: $bend-yellow;
+}
+.brand-quartenary a {
+    color: $bend-yellow;
+}
+.brand-quincenary {
+    color: $bend-dk-blue;
+}
+.brand-quincenary a {
+    color: $bend-dk-blue;
+}
 
 // OTHER UI COLORS
 // ====================================
