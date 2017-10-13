@@ -46,19 +46,6 @@ a.gallery-btn,
 a.gallery-btn > span {
   text-decoration: none;
 }
-.tds-btn.desktop {
-    @media (max-width: $screen-sm-max) {
-        display: none;
-    }
-}
-.tds-btn.mobile{
-    @media (min-width: $screen-md-min) {
-        display: none;
-    }
-    @media (max-width: $screen-sm-max) {
-        display: block;
-    }
-}
 
 // go to bundles button on product cards-full-width
 .tds-well > .gallery-btn {
