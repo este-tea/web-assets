@@ -66,20 +66,22 @@
     }
   }
 
-  ul.alert-list {
+  ul.alert-list,
+  ul.errorText {
     margin-left: 12px;
 
     li {
       list-style-type: none;
       padding: 0;
       margin: 0;
-      color: white;
+      color: white!important;
+      line-height: 1.8em !important;
 
       &:before {
         background: white;
-        width: 6px;
-        height: 6px;
-        margin-top: 7px;
+        width: 8px;
+        height: 8px;
+        margin-top: 8px;
         content: "";
         position: relative;
         top: 0;
@@ -210,4 +212,9 @@
 }
 .userGreeting-address {
     font-weight: 700;
+}
+
+// PACKAGE BUILDER
+.product-list-contents .pkg-prod-list-options .tds-alert {
+    color: white;
 }
