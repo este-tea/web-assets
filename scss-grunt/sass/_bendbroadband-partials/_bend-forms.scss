@@ -1,2 +1,38 @@
 /* bend-forms
 ==========================================*/
+.form-control {
+  height: 44px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  &:focus {
+    border-color: $bend-lt-blue;
+    border-width: 2px;
+    outline: 0;
+    -webkit-box-shadow: 0 0 3px rgba(100,191,211, .6);
+    box-shadow: 0 0 3px rgba(100,191,211, .6);
+  }
+}
+
+input, input.form-control,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+  font-size: 16px;
+  font-family: $bend-font-body;
+  color: black;
+  font-weight:600;
+}
+
+label {
+  font-weight: 600;
+  font-family: $bend-font-headings;
+  color: $bend-dk-gray;
+  font-size: 13px;
+}
+
+.hint-block {
+  font-size: 13px;
+  color: $bend-gray;
+}
