@@ -32,7 +32,7 @@
 
     &:focus,
     &:hover {
-      background-color: #353535;
+      background-color: $bend-dk-gray;
       color: white;
     }
   }
@@ -62,7 +62,7 @@
     padding: 12px 16px;
     font-weight: 600;
     font-size: 18px;
-    color: #353535;
+    color: $bend-dk-gray;
     text-align:center;
 }
 
