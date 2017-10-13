@@ -50,7 +50,7 @@ p.tds-note {
     font-style: italic;
 }
 p, li {
-    color: #555555;
+    color: $bend-gray;
     padding: 0;
 }
 p {
@@ -112,7 +112,7 @@ strong b {
     font-weight: 700;
 }
 .help-text.form-hint, .has-error .help-text.form-hint {
-    color: #555;
+    color: $bend-gray;
     font-weight: 500;
 }
 /* #SUB-HEADINGS/TITLES
