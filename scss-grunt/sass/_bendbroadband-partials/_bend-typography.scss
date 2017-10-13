@@ -3,30 +3,29 @@
 body {
   font-family: $bend-font-body;
 }
-h1, .h1 {
-    color: #f70
-}
-h1[id] {
-    padding-top: 35px
-}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-family: $bend-font-headings;
     font-weight: 700;
     margin: 0;
 }
+h1, .h1 {
+    color: $bend-orange;
+    margin-bottom: 12px;
+    border-bottom: solid 1px silver;
+    padding-bottom: 8px;
+}
+h1[id] {
+    padding-top: 35px
+}
 h2, .h2 {
     margin-bottom: 12px;
-}
-h2.h3 {
     margin-top: 24px;
-    color: black;
+    color: $bend-gray;
 }
 h3, .h3 {
-    color: #f70;
+    color: $bend-lt-blue;
 }
-.tds-card h4 {
-    margin: 0;
-}
+
 h6, .h6 {
     font-size: 14px;
 }
@@ -171,4 +170,8 @@ strong b {
     .username-title {
         font-size: 1em;
     }
+}
+.ui-widget {
+    font-family: $bend-font-body;
+    font-size: 1em;
 }
