@@ -83,14 +83,18 @@
   height: 44px;
   float: right;
   text-align: center;
+  text-indent: -9999px;
 
   &:focus,
   &:hover {
     background-color: #f70!important;
   }
   &:before {
-  font-size: 16px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 44px;
+  text-indent: 0;
+  float: right;
+  margin-right: 7px;
   }
 }
 @media (min-width:768px) {
@@ -107,33 +111,48 @@
   color: #f70;
 }
 
+// MOBILE SEARCH BAR
+
+.tds-search-container {
+    padding: 0;
+    position: relative;
+}
+
 #mobile-searchbar {
   display: none;
 }
 
 .mobile-search .tds-searchbar-input {
   float: left;
-}
-
-.mobile-search .tds-searchbar-button {
-  float: right;
-  width: 20%;
-  max-width: 44px;
-  margin: 0;
-  height: 44px;
-  position: absolute;
-  right: 16px;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border: solid 1px #aaa;
-  border-left: 0;
-}
-
-#mobile-searchbar .tds-searchbar-input {
   line-height: 44px;
   height: 44px\9;
   height: 44px;
   border: solid 1px #bbb;
+  width: 100%;
+  border-radius: 2px;
+  padding-left: 8px;
+}
+
+.mobile-search .tds-searchbar-button {
+  float: right;
+  width: auto;
+  margin: 0;
+  padding: 0 10px;
+  height: 44px;
+  position: absolute;
+  right: 0;
+  border: solid 1px #518eaa;
+  border-left: 0;
+  background: #518eaa;
+  color: white;
+  border-radius: 0 2px 2px 0;
+  &:hover, &:focus {
+    background-color: $bend-orange;
+    border-color: $bend-orange;
+  }
+  &:before {
+    content: none;
+  }
 }
 
 .topSearch.mobile-search {
@@ -190,11 +209,15 @@
     background-color: white;
     padding: 0;
     font-size: 16px;
+    text-indent: -9999px;
 
     &:before {
       font-size: 16px;
       line-height: 36px;
       color: #f70;
+      text-indent: 0;
+      float: right;
+      margin-right: 9px;
     }
 
     &:focus,
