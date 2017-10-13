@@ -196,13 +196,18 @@
     padding: 8px 0;
 }
 .userGreeting .tds-error-msg.tds-error-info p {
-    color: #353535;
+    color: $bend-dk-gray;
+    font-size: 14px;
+    margin: 0;
 }
 .userGreeting .tds-error-msg.tds-error-info a {
-    color: #353535;
+    color: $bend-dk-gray;
 }
 .userGreeting .tds-error-msg.tds-error-info a:hover,
 .userGreeting .tds-error-msg.tds-error-info a:focus {
     background-color: #518eaa;
     color:white;
+}
+.userGreeting-address {
+    font-weight: 700;
 }
