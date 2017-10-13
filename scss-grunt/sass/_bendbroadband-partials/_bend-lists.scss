@@ -51,3 +51,16 @@ ul.bullets li li {
     background: url('../images/ui/circle-gray.svg') no-repeat 0px .5em;
     background-size: .5em .5em;
 }
+
+.pagelayout li:before {
+    background: #1c76b4;
+    width: 7px;
+    height: 7px;
+    margin-top: 7px;
+    content: "";
+    position: relative;
+    top: 0;
+    display: block;
+    float: left;
+    margin-left: -12px;
+}

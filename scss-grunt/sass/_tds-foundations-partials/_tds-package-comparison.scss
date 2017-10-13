@@ -69,17 +69,15 @@ h3.hr-after-text {
         border: 0;
     }
 }
-.tds-btn.desktop {
-    @media (max-width: $screen-sm-max) {
-        display: none;
+@media (min-width:992px) {
+    .tds-btn.btn-block.mobile {
+        display:none;
     }
 }
-.tds-btn.mobile{
-    @media (min-width: $screen-md-min) {
+
+@media (max-width:991px) {
+    .tds-btn.btn-block.desktop {
         display: none;
-    }
-    @media (max-width: $screen-sm-max) {
-        display: block;
     }
 }
 //=== START Pkg Comparison Gallery Setup ===//
