@@ -17,6 +17,14 @@
 	background-image: none;
 	border: 1px solid transparent;
 	white-space: nowrap;
+	text-decoration: none;
+}
+
+.gallery-btn:focus,
+.gallery-btn:hover,
+.tds-btn:focus,
+.tds-btn:hover {
+	text-decoration: none;
 }
 
 .gallery-btn .align-center,
@@ -31,8 +39,12 @@
 .gallery-btn,
 .tds-btn  {
 	color: #fff;
-	background-color: #F70;
-	/* background-color: #1c76b4; */
+	background-color: #f70;
+}
+
+.navbutton button {
+	color: #fff;
+	background-color: #1c76b4;
 }
 
 .gallery-btn.tds-btn-lt-blue,
@@ -41,31 +53,31 @@
 	background-color: #64bfd3;
 }
 
-.gallery-btn.tds-btn-gray,
+.gallery-btn.tds-btn-gray, 
 .tds-btn.tds-btn-gray {
 	color: #fff;
 	background-color: #808077;
 }
 
-.gallery-btn.tds-btn-dk-gray,
+.gallery-btn.tds-btn-dk-gray, 
 .tds-btn.tds-btn-dk-gray  {
 	color: #fff;
 	background-color: #30302d;
 }
 
-.gallery-btn.tds-btn-green,
+.gallery-btn.tds-btn-green, 
 .tds-btn.tds-btn-green  {
 	color: #fff;
 	background-color: #8dc73f;
 }
 
-.gallery-btn.tds-btn-orange,
+.gallery-btn.tds-btn-orange, 
 .tds-btn.tds-btn-orange {
 	color: #fff;
 	background-color:  #f70;
 }
 
-.gallery-btn.tds-btn-transparent,
+.gallery-btn.tds-btn-transparent, 
 .tds-btn.tds-btn-transparent {
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.0);
@@ -78,6 +90,12 @@
 .gallery-btn:focus,
 .tds-btn:focus  {
 	color: #fff;
+	background-color: #cc5f00;
+}
+
+.navbutton button:hover,
+.navbutton button:focus {
+	color: #fff;
 	background-color: #156398;
 }
 
@@ -89,75 +107,79 @@
 	background-color: #51a7ba;
 }
 
-.gallery-btn.tds-btn-gray:hover,
-.gallery-btn.tds-btn-gray:focus,
+.gallery-btn.tds-btn-gray:hover, 
+.gallery-btn.tds-btn-gray:focus, 
 .tds-btn.tds-btn-gray:hover,
 .tds-btn.tds-btn-gray:focus {
 	color: #fff;
 	background-color: #6d6d5e;
 }
 
-.gallery-btn.tds-btn-dk-gray:hover,
-.gallery-btn.tds-btn-dk-gray:focus,
+.gallery-btn.tds-btn-dk-gray:hover, 
+.gallery-btn.tds-btn-dk-gray:focus, 
 .tds-btn.tds-btn-dk-gray:hover,
 .tds-btn.tds-btn-dk-gray:hover {
 	color: #fff;
 	background-color: #161614;
 }
 
-.gallery-btn.tds-btn-green:hover,
-.gallery-btn.tds-btn-green:focus,
+.gallery-btn.tds-btn-green:hover, 
+.gallery-btn.tds-btn-green:focus, 
 .tds-btn.tds-btn-green:hover ,
 .tds-btn.tds-btn-green:focus {
 	color: #fff;
 	background-color: #75a92e;
 }
 
-.gallery-btn.tds-btn-orange:hover,
-.gallery-btn.tds-btn-orange:focus,
+.gallery-btn.tds-btn-orange:hover, 
+.gallery-btn.tds-btn-orange:focus, 
 .tds-btn.tds-btn-orange:hover,
 .tds-btn.tds-btn-orange:focus {
 	color: #fff;
 	background-color:  #cc5f00;
 }
 
-.gallery-btn.tds-btn-transparent:hover,
-.gallery-btn.tds-btn-transparent:focus,
+.gallery-btn.tds-btn-transparent:hover, 
+.gallery-btn.tds-btn-transparent:focus, 
 .tds-btn.tds-btn-transparent:hover,
 .tds-btn.tds-btn-transparent:focus {
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.2);
 }
-
+   
 
    /* BUTTON - Border */
 
-.gallery-btn.border-tds-blue,
+.gallery-btn.border-tds-blue, 
 .tds-btn .border-tds-blue {
 	border-color: #1c76b4;
 }
 
-.gallery-btn.border-lt-blue,
+.navbutton button {
+	background-color: none;
+}
+
+.gallery-btn.border-lt-blue, 
 .tds-btn  {border-color: #64bfd3;}
-.gallery-btn.border-lt-gray,
+.gallery-btn.border-lt-gray, 
 .tds-btn.border-lt-gray  {border-color: #808077;}
-.gallery-btn.border-gray,
+.gallery-btn.border-gray, 
 .tds-btn.border-gray  {border-color: #585852;}
-.gallery-btn.border-dk-gray,
+.gallery-btn.border-dk-gray, 
 .tds-btn.border-dk-gray  {border-color: #30302d;}
-.gallery-btn.border-green,
+.gallery-btn.border-green, 
 .tds-btn.border-green {border-color: #8dc73f;}
 .gallery-btn.border-orange,
 .tds-btn.border-orange  {border-color: #f70;}
 
    /* BUTTON - Decoration */
 
-.gallery-btn .btn-next-arrow:after,
+.gallery-btn .btn-next-arrow:after, 
 .tds-btn .btn-next-arrow:after  {
 	content: "";
 	display:inline-block;
 	position:relative;
-	top:1px;
+	top:1px; 
     width: 10px;
     height: 14px;
 	margin-top: -3px;
@@ -167,14 +189,14 @@
     background-repeat: no-repeat;
 }
 
-.gallery-btn .tds-icon-chevron-left:before,
+.gallery-btn .tds-icon-chevron-left:before, 
 .tds-btn .tds-icon-chevron-left:before  {
 	content: "";
     width: 10px;
     height: 21px;
     padding: 0;
     margin-top: -3px;
-		margin-right: 10px;
+	margin-right: 10px;
     float: left;
     background-image: url(/content/dam/tdstelecom/images/ui/arrows/left-arrow-white.svg);
     background-position: right center;
