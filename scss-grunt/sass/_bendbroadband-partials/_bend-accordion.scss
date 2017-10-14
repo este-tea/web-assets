@@ -1,2 +1,39 @@
 /* bend-accordion
 ==========================================*/
+
+.tds-accordion .panel {
+	border: none;
+	box-shadow: none;
+}
+
+.tds-accordion .panel-title {
+	font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
+	font-weight: 700;
+	line-height: 1.1;
+	font-size: 18px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: left;
+    padding-right: 10px;
+    color: grey;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\e080";
+}
+
+.tds-accordion .panel-title a {
+	text-decoration: none;
+}
+
+.tds-accordion .panel-body > p:first-child {
+    margin-top: 0;
+}
+
+.tds-accordion .panel-footer {
+	display: none;
+}
