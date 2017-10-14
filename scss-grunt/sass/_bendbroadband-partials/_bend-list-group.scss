@@ -1,2 +1,43 @@
 /* bend-list-group
 ==========================================*/
+
+.listGroup .list-group-item:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.listGroup .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.listGroup a.list-group-item {
+    text-decoration: none;
+}
+
+.listGroup .list-group  {
+    font-weight: 700;
+}
+
+.listGroup .label {
+    color: #fff;
+}
+
+.listGroup .glyphicon:before {
+    position:relative;
+    top: 1px;
+    margin-right: 4px;
+}
+
+.listGroup .label-star {
+    background-color: #fc0;
+}
+
+.listGroup .label-file {
+    background-color: #64bfd3;
+}
+
+.listGroup .label-link {
+    background-color: #7ab127;
+}

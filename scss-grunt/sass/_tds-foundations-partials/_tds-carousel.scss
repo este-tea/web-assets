@@ -5,7 +5,7 @@
   #maincarousel .carousel-inner .item .content-block {
     height: 280px;
     @media (max-width:$screen-xs-min) {
-      height: 320px;
+      height: 420px;
     }
   }
 }
@@ -219,7 +219,7 @@
     background-color: $tds-dk-blue;
   }
   @media (max-width: $screen-xs-min) {
-    bottom: 324px;
+    bottom: 424px;
   }
 }
 @media (max-width: 584px){

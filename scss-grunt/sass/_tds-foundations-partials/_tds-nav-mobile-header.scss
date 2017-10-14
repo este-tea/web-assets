@@ -271,46 +271,48 @@ a#tds-logo, a#btn-cart, a#btn-search {
     float: left;
     width: auto;
 }
+
 // request a quote button on the tds business site
+// can also be used on telecom and other sites
 // called the "cta button" in the component dialog
 #mobile-nav-container .mobile-header-nav {
   .btn-cta-wrap {
-    a#btn-cta.gallery-btn.tds-btn-orange {
+    .gallery-btn {
       font-size: 12px;
-      font-family: "ITC Avant Garde Gothic W01",Century Gothic,Arial;
-      font-weight: 400;
-      font-style: normal;
       color: white;
-      padding: 8px 16px 0;
-      border: solid 2px $tds-orange-80;
-      background-color: $tds-orange-80;
+      padding: 4px 9px !important;
       &:after {
           content: none;
       }
-      &:hover, &:focus {
-        border: solid 2px $tds-orange-100;
-        color: white;
-        background-color: $tds-orange-100;
+      .tds-btn-orange {
+        border: solid 2px $tds-orange-80;
+        background-color: $tds-orange-80;
+        &:hover, &:focus {
+          border: solid 2px $tds-orange-100;
+          color: white;
+          background-color: $tds-orange-100;
+        }
+      }
+      @media (max-width: 430px) {
+        display: none!important;
       }
     }
   }
 }
 
-#mobile-menu ul li a span.gallery-btn.tds-btn-orange {
-  margin: 8px 0;
-  width: 100%;
-  display: inline-block;
-  &:after {
-    content: none;
+
+//button that appears in dropdown
+#mobile-menu .mobile-cta-wrap {
+  .gallery-btn {
+    margin: 8px 0;
+    width: 100%;
+    display: inline-block;
+
+    &:after {
+      content: none;
+    }
+    @media (min-width: 431px) {
+      display: none!important;
+    }
   }
-}
-@media (max-width: 430px) {
-    li.btn-cta-wrap {
-        display: none!important;
-    }
-}
-@media (min-width: 431px) {
-    #mobile-menu-dropdown li.mobile-cta-wrap {
-        display: none!important;
-    }
 }

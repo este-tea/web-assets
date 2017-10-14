@@ -7,7 +7,7 @@
     padding: 0;
 }
 //Banner Typography
-//==================================================
+//-----------------
 
 h1.banner-title {
   font-family: $tds-font-family;
@@ -83,7 +83,7 @@ ul.banner-ul li li {
 }
 
 // Banner Container
-//==================================================
+//-----------------
 
 #page-banner {
   position: relative;
@@ -128,7 +128,7 @@ ul.banner-ul li li {
 }
 
 // Banner Image
-//==================================================
+//-------------
 
 .banner-image {
     position: absolute;
@@ -147,7 +147,7 @@ ul.banner-ul li li {
 }
 
 // Banner Overlay
-//==================================================
+//---------------
 
 // overlay img so that we don't have to do any touch up on the back ground image
 #banner-overlay {
@@ -181,24 +181,8 @@ ul.banner-ul li li {
     margin-top: 0;
 }
 
-// Login button from MYA
-//==================================================
-#page-banner .banner-content .content.parsys .parbase.login {
-    /*mya unauth home page log in button: adds height so that bottom border drop shadow isn't cut off*/
-    height: 50px;
-}
-
-.tds-page-banner .content.parsys #loginButton {
-    margin-top: 24px;
-}
-#page-banner .banner-content .content.parsys .parbase.login {
-    height: 50px;
-}
-.parbase.richTextComponent.section ~ .navbutton.parbase.section {
-    margin-top: 24px;
-}
 // miscell tweaks
-//==================================================
+//---------------
 
 //remove float added by bootstrap column class
 .tds-page-banner.col-sm-12 {

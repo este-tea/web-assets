@@ -9,6 +9,7 @@
 @import "_tds-foundations-partials/_tds-lines-rules";
 @import "_tds-foundations-partials/_tds-skip-links";
 
+@import "_tds-foundations-partials/_tds-errors-alerts";
 @import "_tds-foundations-partials/_tds-forms-address-entry";
 @import "_tds-foundations-partials/_tds-date-picker";
 @import "_tds-foundations-partials/_tds-forms-touchspin";
@@ -64,8 +65,8 @@
 @import "_bendbroadband-partials/_bend-typography";
 
 @import "_bendbroadband-partials/_bend-accordion";
-@import "_bendbroadband-partials/_bend-address-entery";
-@import "_bendbroadband-partials/_bend-page-banner.scss";
+@import "_bendbroadband-partials/_bend-address-entry";
+@import "_bendbroadband-partials/_bend-page-banner";
 @import "_bendbroadband-partials/_bend-bbb-packages";
 @import "_bendbroadband-partials/_bend-carousel";
 @import "_bendbroadband-partials/_bend-cards";
@@ -75,11 +76,13 @@
 @import "_bendbroadband-partials/_bend-hottopics";
 @import "_bendbroadband-partials/_bend-list-group";
 @import "_bendbroadband-partials/_bend-modals";
+@import "_bendbroadband-partials/_bend-package-comparison";
 @import "_bendbroadband-partials/_bend-pagination";
 @import "_bendbroadband-partials/_bend-pills";
 @import "_bendbroadband-partials/_bend-product-panes";
 @import "_bendbroadband-partials/_bend-rssfeed";
 @import "_bendbroadband-partials/_bend-search";
+@import "_bendbroadband-partials/_bend-selfID";
 @import "_bendbroadband-partials/_bend-story-panes";
 
 //STYLES FROM DAM THAT NEED TO BE MERGED

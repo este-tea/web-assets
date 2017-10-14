@@ -44,3 +44,12 @@
         display: none
     }
 }
+
+// icons being used in self id page buttons
+.icon-location:before,
+.fa-user:before {
+    margin-right: 8px;
+}
+.icon-location:before, {
+  content:"\E6D0"
+}

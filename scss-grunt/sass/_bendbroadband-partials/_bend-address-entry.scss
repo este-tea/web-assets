@@ -1,0 +1,126 @@
+/* bend-address-entry
+==========================================*/
+.address-entry-maincontent .page-intro {
+    margin-top: 0;
+}
+.address-entry .tds-divider-line {
+  background-color: $bend-lt-gray;
+  margin-top: 26px;
+}
+
+.address-entry #address-submit {
+  margin-top: 14px;
+}
+
+.address-entry .address-entry-notes {
+  padding-bottom: 20px;
+}
+
+.address-entry .tds-card {
+  min-height: 130px;
+}
+
+p.entered-address {
+  color: $bend-lt-blue;
+}
+
+.address-entry .tds-address {
+  margin: 10px 0 40px;
+  background-color: #fff;
+  padding: 6px 20px 20px;
+  border: 1px solid silver;
+  font-family: "Museo Sans W01", Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.address-entry .tds-address p {
+  color: $bend-gray;
+  line-height: 10px;
+}
+
+.address-entry .tds-card .login,
+.address-entry .tds-card form {
+  padding: 15px 18px 18px;
+}
+
+.address-entry .tds-card-heading {
+  background-color: $bend-ltr-gray;
+  border-bottom: #ddd solid 1px;
+  box-sizing: border-box;
+  color: $bend-dk-gray;
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 33px;
+  margin: 0 0 10px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .address-entry .tds-card-heading {
+    font-size: 20px;
+  }
+}
+// autocomplete address entry
+.ui-autocomplete {
+  border-width: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+}
+.ui-state-focus,
+.ui-state-hover,
+.ui-widget-content .ui-state-focus,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-focus,
+.ui-widget-header .ui-state-hover,
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:focus,
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:hover,
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-corner-all:active {
+  background: $bend-lt-blue!important;
+  color: #fff!important;
+  border-radius: 2px;
+  border-color: $bend-lt-blue!important;
+}
+
+//TODO: move to _bend-buttons.scss
+//and rename to _bend-buttons-links.scess
+.ui-widget button {
+  font-family: $bend-font-headings;
+}
+.address-entry .entered-address .text-link {
+  color: $bend-lt-blue;
+  &:hover, &:focus {
+    color: $bend-dk-blue;
+  }
+}
+button.text-link {
+  background: none;
+  color: $bend-orange;
+  text-decoration: underline;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: inherit;
+}
+
+button.text-link:hover {
+  background: none;
+  color: $bend-orange;
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  font-size: 16px;
+}
