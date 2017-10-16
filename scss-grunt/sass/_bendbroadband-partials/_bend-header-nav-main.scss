@@ -161,7 +161,7 @@
   padding: 0;
   // gets rid of any inherited margins and padding
   font-family: $bend-font-headings;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   position: relative;
 }
@@ -232,7 +232,7 @@
   button {
     border: 0;
     text-transform: inherit;
-    font-weight: 400;
+    font-weight: 500;
   }
   a, button {
     display: block;
@@ -305,7 +305,7 @@
       color: #585852;
       background: none;
       padding: 6px 12px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 18px;
 
       &:active,
@@ -388,7 +388,7 @@
     > li > a {
       color: $bend-gray;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 500;
 
       &:focus,
       &:hover {

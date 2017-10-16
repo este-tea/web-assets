@@ -1,5 +1,28 @@
 /* bend-forms
 ==========================================*/
+.help-text {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.hint-block {
+  font-size: 13px;
+  color: $bend-gray;
+}
+
+.has-error .help-text {
+  color: #FF4D50;
+  display: block;
+  font-weight: 700;
+}
+
+.has-error .help-text.form-hint,
+.help-text.form-hint {
+  color: $bend-gray;
+  font-weight: 500;
+}
+
 .form-control {
   height: 44px;
   -webkit-box-shadow: none;
@@ -15,24 +38,39 @@
   }
 }
 
-input, input.form-control,
 .ui-widget input,
 .ui-widget select,
-.ui-widget textarea {
+.ui-widget textarea,
+input,
+input.form-control {
   font-size: 16px;
   font-family: $bend-font-body;
   color: black;
-  font-weight:600;
+  font-weight: 700;
 }
 
 label {
-  font-weight: 600;
+  font-weight: 700;
   font-family: $bend-font-headings;
   color: $bend-dk-gray;
   font-size: 13px;
 }
+span.tds-radio-btn {
+    border: solid 2px silver;
+}
+label:hover .tds-radio-btn {
+  border: solid 3px #f70;
+}
 
-.hint-block {
-  font-size: 13px;
-  color: $bend-gray;
+label input:focus ~ .tds-radio-btn {
+  border-color: #f70;
+}
+
+input[type="checkbox"] + .tds-radio-btn {
+  border-radius: 2px;
+}
+
+input:checked + .tds-radio-btn {
+  background: #8dc73f;
+  border: 3px solid #8dc73f;
 }
