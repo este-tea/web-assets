@@ -14,11 +14,6 @@ span.tds-radio-btn {
   border-radius: 50%;
 }
 
-input:checked+.tds-radio-btn {
-  background: $tds-green-80;
-  border: 3px solid $tds-green-80;
-}
-
 input:checked+.tds-radio-btn:before {
   content: "";
   position: absolute;
