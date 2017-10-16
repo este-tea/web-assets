@@ -26,8 +26,8 @@
     top: -13px;
     z-index: 1;
     @media (max-width: 768px) {
-      right:6px;
-      top:8px;
+      right: 6px;
+      top: 8px;
     }
 
     &:focus,
@@ -42,33 +42,68 @@
   padding: 0 15px;
   font-weight: 500;
 }
-
 @media (min-width: 768px) {
   .modal-dialog {
     margin-top: 50px;
   }
 }
+//--- PACKAGE BUILDER LOADING MODAL ---//
+.modal-body.tds-msg-box .tds-msg-box {
+  padding: 0 16px;
+}
 
-//  BEND OLARK CHAT MODAL
+.modal-body.tds-msg-box .tds-msg-box h2 {
+  text-align: center;
+  color: #f70;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
 
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url("/content/dam/bendbroadband/images/ui/bend-loading-ellipsis.gif");
+  background-image: url("/content/dam/bendbroadband/images/ui/bend-loading-ellipsis.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loadingOverlay.modal {
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+}
+
+.pkg-builder-modal .modal-dialog {
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+  .pkg-builder-modal .modal-dialog {
+    max-width: 400px;
+    margin: 30px auto;
+  }
+}
+//--- BEND OLARK CHAT MODAL ---//
 #BendChatModal .modal-header {
   border-bottom: none;
 }
 
 #olark-box-container > p.title {
-    margin-top: 0;
-    display: block;
-    background-color: #8cc73f;
-    padding: 12px 16px;
-    font-weight: 700;
-    font-size: 18px;
-    color: $bend-dk-gray;
-    text-align:center;
+  margin-top: 0;
+  display: block;
+  background-color: #8cc73f;
+  padding: 12px 16px;
+  font-weight: 700;
+  font-size: 18px;
+  color: $bend-dk-gray;
+  text-align: center;
 }
 
 #olark-box-container > p.message {
-    text-align: center;
-    padding: 20px;
-    max-width: 500px;
-    margin: auto;
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
 }
