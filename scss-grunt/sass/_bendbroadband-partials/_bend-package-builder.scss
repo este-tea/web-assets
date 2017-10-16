@@ -57,7 +57,7 @@
   margin-top: 0;
   color: #8dc73f;
   font-weight: 900;
-  font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
+  font-family: $bend-font-headings;
 }
 // --- COLLAPSIBLE PRODUCT LIST HEADING --- //
 .pkg-builder-page-content .prod-listitem-content > h4 > a {
@@ -77,7 +77,9 @@
   &:after {
     background-color: #000;
   }
-
+  &.collapsed {
+      color: #1c76b4;
+  }
   &.collapsed:after {
     background-color: #1c76b4;
   }
@@ -121,14 +123,16 @@
       opacity: 0.75;
     }
 
-    .product-content .prod-description {
+    .product-content {
       color: white;
-      opacity: 0.75;
-    }
-
-    .product-content p:last-child {
-      color: white;
-      opacity: 0.75;
+      .prod-description {
+        color: white;
+        opacity: 0.75;
+      }
+      p:last-child {
+        color: white;
+        opacity: 0.75;
+      }
     }
 
     .pkg-builder-listoption-wrap .pkg-builder-label {
@@ -213,10 +217,23 @@
 .dual-listoption-wrap .pkg-product-card .pkg-builder-listoption-wrap input:disabled + .tds-radio-btn {
   border-color: #999;
 }
+
+.dual-listoption-wrap > .pkg-product-card > .tds-divider-line {
+    background: #518eaa;
+}
+
+.dual-listoption-wrap > .pkg-product-card > .pkg-builder-addon-wrap > .tds-divider-line {
+    background: silver;
+}
 // --- PACKAGE SUMMARY SIDEBAR --- //
 
 .pkg-summary-wrap {
   padding-left: 0;
+}
+
+.pkg-summary-wrap table.pkg-summary-table tbody > tr > td.product-price {
+    font-weight: 700;
+    color: black;
 }
 
 .pkg-summary-content {
@@ -250,10 +267,6 @@
     &.category-heading {
       color: black;
       padding-top: 14px;
-    }
-
-    &.product-price {
-      color: black;
     }
   }
 }
