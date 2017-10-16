@@ -219,6 +219,11 @@
   padding-left: 0;
 }
 
+.pkg-summary-wrap table.pkg-summary-table tbody > tr > td.product-price {
+    font-weight: 700;
+    color: black;
+}
+
 .pkg-summary-content {
   border: solid 1px silver;
   border-radius: 4px;
@@ -250,10 +255,6 @@
     &.category-heading {
       color: black;
       padding-top: 14px;
-    }
-
-    &.product-price {
-      color: black;
     }
   }
 }
