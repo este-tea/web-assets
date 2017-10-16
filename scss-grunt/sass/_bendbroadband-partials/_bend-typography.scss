@@ -104,21 +104,7 @@ strong b {
     line-height: 26px;
     font-weight: 500;
 }
-.help-text {
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 4px;
-}
 
-.has-error .help-text {
-    color: #FF4D50;
-    display: block;
-    font-weight: 700;
-}
-.help-text.form-hint, .has-error .help-text.form-hint {
-    color: $bend-gray;
-    font-weight: 500;
-}
 /* #SUB-HEADINGS/TITLES
 --------------------------------- */
 .page-header {
