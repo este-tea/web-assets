@@ -6,163 +6,183 @@ Imaging with any questions regarding Web Fonts:  https://www.fonts.com
 */
 /* bend-fonts
 ==========================================*/
-
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=7fe8cead-d1c9-4a2d-9a8f-4b29252c595c");
-    @font-face{
-        font-family:"Museo W01_i1";
-        src:url("fonts/bend-fonts/09ff0996-bed5-4fd5-8329-0d201d5fa356.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo W01";
-        src:url("fonts/bend-fonts/09ff0996-bed5-4fd5-8329-0d201d5fa356.eot?#iefix");
-        src:url("fonts/bend-fonts/09ff0996-bed5-4fd5-8329-0d201d5fa356.eot?#iefix") format("eot"),url("fonts/bend-fonts/b374acdb-4837-4065-b4bb-e03b4e0a38c2.woff2") format("woff2"),url("fonts/bend-fonts/3c915ecf-550f-43b4-a471-83733d983006.woff") format("woff"),url("fonts/bend-fonts/93de3636-8338-4959-8c8d-700f45113a52.ttf") format("truetype"),url("fonts/bend-fonts/80cdae2d-caef-41c0-8bbc-2ffe8ec169d7.svg#80cdae2d-caef-41c0-8bbc-2ffe8ec169d7") format("svg");
-font-weight: 100;
-font-style: italic;
-    }
-    @font-face{
-        font-family:"Museo W01_i3";
-        src:url("fonts/bend-fonts/d46fab59-3c68-4899-b045-b527cc7d3312.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo W01";
-        src:url("fonts/bend-fonts/d46fab59-3c68-4899-b045-b527cc7d3312.eot?#iefix");
-        src:url("fonts/bend-fonts/d46fab59-3c68-4899-b045-b527cc7d3312.eot?#iefix") format("eot"),url("fonts/bend-fonts/a3c68f38-e060-429b-8acd-c84fb3ff3e00.woff2") format("woff2"),url("fonts/bend-fonts/2e952561-3a75-4c68-8074-9e588b2b6b77.woff") format("woff"),url("fonts/bend-fonts/99bb7b87-c828-4fd3-ae5c-4193550fe331.ttf") format("truetype"),url("fonts/bend-fonts/f6b1f01f-4547-4ec6-89bb-45806d850044.svg#f6b1f01f-4547-4ec6-89bb-45806d850044") format("svg");
-font-weight: 300;
-font-style: italic;
-    }
-    @font-face{
-        font-family:"Museo W01_i5";
-        src:url("fonts/bend-fonts/758cdfbb-3df9-4531-874f-8b1ec9ed551b.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo W01";
-        src:url("fonts/bend-fonts/758cdfbb-3df9-4531-874f-8b1ec9ed551b.eot?#iefix");
-        src:url("fonts/bend-fonts/758cdfbb-3df9-4531-874f-8b1ec9ed551b.eot?#iefix") format("eot"),url("fonts/bend-fonts/6f0dd3b6-e038-41dd-9bad-8e9e8fd14c78.woff2") format("woff2"),url("fonts/bend-fonts/0e3b857c-fdf4-4ed8-8328-921f6f31b4b3.woff") format("woff"),url("fonts/bend-fonts/1a2af85d-0ff8-40ef-9d8d-8a966465ab1e.ttf") format("truetype"),url("fonts/bend-fonts/388ccc1c-ce88-4d22-94af-970c99d71999.svg#388ccc1c-ce88-4d22-94af-970c99d71999") format("svg");
-font-weight: 500;
-font-style: italic;
-    }
-    @font-face{
-        font-family:"Museo W01_i7";
-        src:url("fonts/bend-fonts/af276b07-6043-432e-abd6-85db62b396af.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo W01";
-        src:url("fonts/bend-fonts/af276b07-6043-432e-abd6-85db62b396af.eot?#iefix");
-        src:url("fonts/bend-fonts/af276b07-6043-432e-abd6-85db62b396af.eot?#iefix") format("eot"),url("fonts/bend-fonts/739e4f17-c4aa-4db3-9bbb-150afd3be4c5.woff2") format("woff2"),url("fonts/bend-fonts/e971d9dd-4d24-4c3e-b863-898a551d55c9.woff") format("woff"),url("fonts/bend-fonts/06faee15-8303-4a77-9cc7-9b261d10756f.ttf") format("truetype"),url("fonts/bend-fonts/2bbf4242-33e5-4e94-9387-be23695bc758.svg#2bbf4242-33e5-4e94-9387-be23695bc758") format("svg");
-font-weight: 700;
-font-style: italic;
-    }
-    @font-face{
-        font-family:"Museo W01_n1";
-        src:url("fonts/bend-fonts/bd70b185-ad25-4819-b7e9-2d6ebe2cf722.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo W01";
-        src:url("fonts/bend-fonts/bd70b185-ad25-4819-b7e9-2d6ebe2cf722.eot?#iefix");
-        src:url("fonts/bend-fonts/bd70b185-ad25-4819-b7e9-2d6ebe2cf722.eot?#iefix") format("eot"),url("fonts/bend-fonts/71e645d2-276d-4568-b9e4-e215b8e5b24f.woff2") format("woff2"),url("fonts/bend-fonts/65bf816d-089f-4500-aad4-72a4f160b487.woff") format("woff"),url("fonts/bend-fonts/ff43203c-5008-4e1d-86fc-48c3d0f8e1b2.ttf") format("truetype"),url("fonts/bend-fonts/eaf744fb-4131-4966-b507-d0474d384707.svg#eaf744fb-4131-4966-b507-d0474d384707") format("svg");
-font-weight: 100;
-font-style: normal;
-    }
-    @font-face{
-        font-family:"Museo W01_n3";
-        src:url("fonts/bend-fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo W01";
-        src:url("fonts/bend-fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix");
-        src:url("fonts/bend-fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix") format("eot"),url("fonts/bend-fonts/d9dabe05-624c-4f28-8eee-b3b6f1841abf.woff2") format("woff2"),url("fonts/bend-fonts/827f2f08-a8d3-40b2-9795-927b59905269.woff") format("woff"),url("fonts/bend-fonts/92143848-9290-4516-80fc-ebf83b053307.ttf") format("truetype"),url("fonts/bend-fonts/b0d9d7a5-5c5b-439c-afa5-2c875dcf8ea2.svg#b0d9d7a5-5c5b-439c-afa5-2c875dcf8ea2") format("svg");
-font-weight: 300;
-font-style: normal;
-    }
-    @font-face{
-        font-family:"Museo W01_n5";
-        src:url("fonts/bend-fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo W01";
-        src:url("fonts/bend-fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix");
-        src:url("fonts/bend-fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix") format("eot"),url("fonts/bend-fonts/52be0694-00c1-4daa-8782-419021c48e95.woff2") format("woff2"),url("fonts/bend-fonts/dee84039-06ae-4a61-89c4-709e594804a3.woff") format("woff"),url("fonts/bend-fonts/9547becc-44c3-4b00-8568-8d3debb4d299.ttf") format("truetype"),url("fonts/bend-fonts/5d61f150-54fd-4fa1-98ff-155e222626e1.svg#5d61f150-54fd-4fa1-98ff-155e222626e1") format("svg");
-font-weight: 500;
-font-style: normal;
-    }
-    @font-face{
-        font-family:"Museo W01_n7";
-        src:url("fonts/bend-fonts/3b3d99a2-6b36-4912-a93e-29277020a5cf.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo W01";
-        src:url("fonts/bend-fonts/3b3d99a2-6b36-4912-a93e-29277020a5cf.eot?#iefix");
-        src:url("fonts/bend-fonts/3b3d99a2-6b36-4912-a93e-29277020a5cf.eot?#iefix") format("eot"),url("fonts/bend-fonts/13012335-73ef-44f0-b295-7b83041355af.woff2") format("woff2"),url("fonts/bend-fonts/28d74e9b-4ea9-4e3c-b265-c67a72c66856.woff") format("woff"),url("fonts/bend-fonts/b432b4e1-014a-4ed8-865c-249744f856b0.ttf") format("truetype"),url("fonts/bend-fonts/8e63fd1e-adc9-460e-9ef7-bbf98ee32a71.svg#8e63fd1e-adc9-460e-9ef7-bbf98ee32a71") format("svg");
-font-weight: 700;
-font-style: normal;
-    }
-    @font-face{
-        font-family:"Museo Sans W01_n3";
-        src:url("fonts/bend-fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo Sans W01";
-        src:url("fonts/bend-fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix");
-        src:url("fonts/bend-fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot"),url("fonts/bend-fonts/1d3191cd-ae8c-45e2-bb04-11e96d8fa974.woff2") format("woff2"),url("fonts/bend-fonts/b252d464-65cb-4950-88f7-ac0a1bf79b75.woff") format("woff"),url("fonts/bend-fonts/b3d18117-6517-4d3f-afc1-774086ff5fc1.ttf") format("truetype"),url("fonts/bend-fonts/b9bed509-0816-43d8-b14b-7525a21f4bde.svg#b9bed509-0816-43d8-b14b-7525a21f4bde") format("svg");
-font-weight: 300;
-font-style: normal;
-    }
-    @font-face{
-        font-family:"Museo Sans W01_i3";
-        src:url("fonts/bend-fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo Sans W01";
-        src:url("fonts/bend-fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix");
-        src:url("fonts/bend-fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix") format("eot"),url("fonts/bend-fonts/a0f222f7-39b4-41c9-a5c0-0b9b7e6b8f89.woff2") format("woff2"),url("fonts/bend-fonts/96766c08-0e19-43a8-b45d-e95c5b09785c.woff") format("woff"),url("fonts/bend-fonts/304f4215-6b57-433a-83f7-2d4c3aaf82e9.ttf") format("truetype"),url("fonts/bend-fonts/2acdd065-8f32-4b1d-a7c8-c59fa153ce86.svg#2acdd065-8f32-4b1d-a7c8-c59fa153ce86") format("svg");
-font-weight: 300;
-font-style: italic;
-    }
-    @font-face{
-        font-family:"Museo Sans W01_n5";
-        src:url("fonts/bend-fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo Sans W01";
-        src:url("fonts/bend-fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
-        src:url("fonts/bend-fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("fonts/bend-fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2") format("woff2"),url("fonts/bend-fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("fonts/bend-fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("fonts/bend-fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
-font-weight: 500;
-font-style: normal;
-    }
-    @font-face{
-        font-family:"Museo Sans W01_i5";
-        src:url("fonts/bend-fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo Sans W01";
-        src:url("fonts/bend-fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix");
-        src:url("fonts/bend-fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix") format("eot"),url("fonts/bend-fonts/b76ff444-27dd-4494-b96e-2f5157f347d5.woff2") format("woff2"),url("fonts/bend-fonts/136eb3cf-249c-40a3-bb62-49c1ad9ae6d8.woff") format("woff"),url("fonts/bend-fonts/70c24c76-d52f-4d55-be08-6085ad014f1b.ttf") format("truetype"),url("fonts/bend-fonts/ac37080b-1709-4b25-bda1-03c4a58e3ef5.svg#ac37080b-1709-4b25-bda1-03c4a58e3ef5") format("svg");
-font-weight: 500;
-font-style: italic;
-    }
-    @font-face{
-        font-family:"Museo Sans W01_n7";
-        src:url("fonts/bend-fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo Sans W01";
-        src:url("fonts/bend-fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
-        src:url("fonts/bend-fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("fonts/bend-fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("fonts/bend-fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("fonts/bend-fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("fonts/bend-fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
-font-weight: 700;
-font-style: normal;
-    }
-    @font-face{
-        font-family:"Museo Sans W01_i7";
-        src:url("fonts/bend-fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix") format("eot")
-    }
-    @font-face{
-        font-family:"Museo Sans W01";
-        src:url("fonts/bend-fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix");
-        src:url("fonts/bend-fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix") format("eot"),url("fonts/bend-fonts/0db19ee1-b74a-4eb6-b48f-60c7047ea44b.woff2") format("woff2"),url("fonts/bend-fonts/9c98d320-d511-4d3d-9ba3-6516302dba95.woff") format("woff"),url("fonts/bend-fonts/b4b164e1-3b4c-42c1-8db5-ca02bfad125c.ttf") format("truetype"),url("fonts/bend-fonts/8673e9b2-7e5d-4749-8588-b7de69b662c2.svg#8673e9b2-7e5d-4749-8588-b7de69b662c2") format("svg");
-font-weight: 700;
-font-style: italic;
-    }
-
+@font-face {
+  font-family: "Museo W01_i1";
+  src: url("fonts/bend-fonts/09ff0996-bed5-4fd5-8329-0d201d5fa356.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/09ff0996-bed5-4fd5-8329-0d201d5fa356.eot?#iefix");
+  src: url("fonts/bend-fonts/09ff0996-bed5-4fd5-8329-0d201d5fa356.eot?#iefix") format("eot"),url("fonts/bend-fonts/b374acdb-4837-4065-b4bb-e03b4e0a38c2.woff2") format("woff2"),url("fonts/bend-fonts/3c915ecf-550f-43b4-a471-83733d983006.woff") format("woff"),url("fonts/bend-fonts/93de3636-8338-4959-8c8d-700f45113a52.ttf") format("truetype"),url("fonts/bend-fonts/80cdae2d-caef-41c0-8bbc-2ffe8ec169d7.svg#80cdae2d-caef-41c0-8bbc-2ffe8ec169d7") format("svg");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo W01_i3";
+  src: url("fonts/bend-fonts/d46fab59-3c68-4899-b045-b527cc7d3312.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/d46fab59-3c68-4899-b045-b527cc7d3312.eot?#iefix");
+  src: url("fonts/bend-fonts/d46fab59-3c68-4899-b045-b527cc7d3312.eot?#iefix") format("eot"),url("fonts/bend-fonts/a3c68f38-e060-429b-8acd-c84fb3ff3e00.woff2") format("woff2"),url("fonts/bend-fonts/2e952561-3a75-4c68-8074-9e588b2b6b77.woff") format("woff"),url("fonts/bend-fonts/99bb7b87-c828-4fd3-ae5c-4193550fe331.ttf") format("truetype"),url("fonts/bend-fonts/f6b1f01f-4547-4ec6-89bb-45806d850044.svg#f6b1f01f-4547-4ec6-89bb-45806d850044") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo W01_i5";
+  src: url("fonts/bend-fonts/758cdfbb-3df9-4531-874f-8b1ec9ed551b.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/758cdfbb-3df9-4531-874f-8b1ec9ed551b.eot?#iefix");
+  src: url("fonts/bend-fonts/758cdfbb-3df9-4531-874f-8b1ec9ed551b.eot?#iefix") format("eot"),url("fonts/bend-fonts/6f0dd3b6-e038-41dd-9bad-8e9e8fd14c78.woff2") format("woff2"),url("fonts/bend-fonts/0e3b857c-fdf4-4ed8-8328-921f6f31b4b3.woff") format("woff"),url("fonts/bend-fonts/1a2af85d-0ff8-40ef-9d8d-8a966465ab1e.ttf") format("truetype"),url("fonts/bend-fonts/388ccc1c-ce88-4d22-94af-970c99d71999.svg#388ccc1c-ce88-4d22-94af-970c99d71999") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo W01_i7";
+  src: url("fonts/bend-fonts/af276b07-6043-432e-abd6-85db62b396af.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/af276b07-6043-432e-abd6-85db62b396af.eot?#iefix");
+  src: url("fonts/bend-fonts/af276b07-6043-432e-abd6-85db62b396af.eot?#iefix") format("eot"),url("fonts/bend-fonts/739e4f17-c4aa-4db3-9bbb-150afd3be4c5.woff2") format("woff2"),url("fonts/bend-fonts/e971d9dd-4d24-4c3e-b863-898a551d55c9.woff") format("woff"),url("fonts/bend-fonts/06faee15-8303-4a77-9cc7-9b261d10756f.ttf") format("truetype"),url("fonts/bend-fonts/2bbf4242-33e5-4e94-9387-be23695bc758.svg#2bbf4242-33e5-4e94-9387-be23695bc758") format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo W01_n1";
+  src: url("fonts/bend-fonts/bd70b185-ad25-4819-b7e9-2d6ebe2cf722.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/bd70b185-ad25-4819-b7e9-2d6ebe2cf722.eot?#iefix");
+  src: url("fonts/bend-fonts/bd70b185-ad25-4819-b7e9-2d6ebe2cf722.eot?#iefix") format("eot"),url("fonts/bend-fonts/71e645d2-276d-4568-b9e4-e215b8e5b24f.woff2") format("woff2"),url("fonts/bend-fonts/65bf816d-089f-4500-aad4-72a4f160b487.woff") format("woff"),url("fonts/bend-fonts/ff43203c-5008-4e1d-86fc-48c3d0f8e1b2.ttf") format("truetype"),url("fonts/bend-fonts/eaf744fb-4131-4966-b507-d0474d384707.svg#eaf744fb-4131-4966-b507-d0474d384707") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo W01_n3";
+  src: url("fonts/bend-fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix");
+  src: url("fonts/bend-fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix") format("eot"),url("fonts/bend-fonts/d9dabe05-624c-4f28-8eee-b3b6f1841abf.woff2") format("woff2"),url("fonts/bend-fonts/827f2f08-a8d3-40b2-9795-927b59905269.woff") format("woff"),url("fonts/bend-fonts/92143848-9290-4516-80fc-ebf83b053307.ttf") format("truetype"),url("fonts/bend-fonts/b0d9d7a5-5c5b-439c-afa5-2c875dcf8ea2.svg#b0d9d7a5-5c5b-439c-afa5-2c875dcf8ea2") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo W01_n5";
+  src: url("fonts/bend-fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix");
+  src: url("fonts/bend-fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix") format("eot"),url("fonts/bend-fonts/52be0694-00c1-4daa-8782-419021c48e95.woff2") format("woff2"),url("fonts/bend-fonts/dee84039-06ae-4a61-89c4-709e594804a3.woff") format("woff"),url("fonts/bend-fonts/9547becc-44c3-4b00-8568-8d3debb4d299.ttf") format("truetype"),url("fonts/bend-fonts/5d61f150-54fd-4fa1-98ff-155e222626e1.svg#5d61f150-54fd-4fa1-98ff-155e222626e1") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo W01_n7";
+  src: url("fonts/bend-fonts/3b3d99a2-6b36-4912-a93e-29277020a5cf.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/3b3d99a2-6b36-4912-a93e-29277020a5cf.eot?#iefix");
+  src: url("fonts/bend-fonts/3b3d99a2-6b36-4912-a93e-29277020a5cf.eot?#iefix") format("eot"),url("fonts/bend-fonts/13012335-73ef-44f0-b295-7b83041355af.woff2") format("woff2"),url("fonts/bend-fonts/28d74e9b-4ea9-4e3c-b265-c67a72c66856.woff") format("woff"),url("fonts/bend-fonts/b432b4e1-014a-4ed8-865c-249744f856b0.ttf") format("truetype"),url("fonts/bend-fonts/8e63fd1e-adc9-460e-9ef7-bbf98ee32a71.svg#8e63fd1e-adc9-460e-9ef7-bbf98ee32a71") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo W01_n9";
+  src: url("fonts/bend-fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo W01";
+  src: url("fonts/bend-fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix");
+  src: url("fonts/bend-fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix") format("eot"),url("fonts/bend-fonts/30cf41ae-6706-4b43-af3c-b78d041b321f.woff2") format("woff2"),url("fonts/bend-fonts/6c2eb955-de0e-4fee-88d2-b7d4efd3b231.woff") format("woff"),url("fonts/bend-fonts/d7334e65-d173-4627-9343-888384cb4ba8.ttf") format("truetype"),url("fonts/bend-fonts/1974d8aa-f576-4359-ad9d-67a183f915c8.svg#1974d8aa-f576-4359-ad9d-67a183f915c8") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans W01_n3";
+  src: url("fonts/bend-fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo Sans W01";
+  src: url("fonts/bend-fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix");
+  src: url("fonts/bend-fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot"),url("fonts/bend-fonts/1d3191cd-ae8c-45e2-bb04-11e96d8fa974.woff2") format("woff2"),url("fonts/bend-fonts/b252d464-65cb-4950-88f7-ac0a1bf79b75.woff") format("woff"),url("fonts/bend-fonts/b3d18117-6517-4d3f-afc1-774086ff5fc1.ttf") format("truetype"),url("fonts/bend-fonts/b9bed509-0816-43d8-b14b-7525a21f4bde.svg#b9bed509-0816-43d8-b14b-7525a21f4bde") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans W01_i3";
+  src: url("fonts/bend-fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo Sans W01";
+  src: url("fonts/bend-fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix");
+  src: url("fonts/bend-fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix") format("eot"),url("fonts/bend-fonts/a0f222f7-39b4-41c9-a5c0-0b9b7e6b8f89.woff2") format("woff2"),url("fonts/bend-fonts/96766c08-0e19-43a8-b45d-e95c5b09785c.woff") format("woff"),url("fonts/bend-fonts/304f4215-6b57-433a-83f7-2d4c3aaf82e9.ttf") format("truetype"),url("fonts/bend-fonts/2acdd065-8f32-4b1d-a7c8-c59fa153ce86.svg#2acdd065-8f32-4b1d-a7c8-c59fa153ce86") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo Sans W01_n5";
+  src: url("fonts/bend-fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo Sans W01";
+  src: url("fonts/bend-fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
+  src: url("fonts/bend-fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("fonts/bend-fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2") format("woff2"),url("fonts/bend-fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("fonts/bend-fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("fonts/bend-fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans W01_i5";
+  src: url("fonts/bend-fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo Sans W01";
+  src: url("fonts/bend-fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix");
+  src: url("fonts/bend-fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix") format("eot"),url("fonts/bend-fonts/b76ff444-27dd-4494-b96e-2f5157f347d5.woff2") format("woff2"),url("fonts/bend-fonts/136eb3cf-249c-40a3-bb62-49c1ad9ae6d8.woff") format("woff"),url("fonts/bend-fonts/70c24c76-d52f-4d55-be08-6085ad014f1b.ttf") format("truetype"),url("fonts/bend-fonts/ac37080b-1709-4b25-bda1-03c4a58e3ef5.svg#ac37080b-1709-4b25-bda1-03c4a58e3ef5") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo Sans W01_n7";
+  src: url("fonts/bend-fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo Sans W01";
+  src: url("fonts/bend-fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+  src: url("fonts/bend-fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("fonts/bend-fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("fonts/bend-fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("fonts/bend-fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("fonts/bend-fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans W01_i7";
+  src: url("fonts/bend-fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo Sans W01";
+  src: url("fonts/bend-fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix");
+  src: url("fonts/bend-fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix") format("eot"),url("fonts/bend-fonts/0db19ee1-b74a-4eb6-b48f-60c7047ea44b.woff2") format("woff2"),url("fonts/bend-fonts/9c98d320-d511-4d3d-9ba3-6516302dba95.woff") format("woff"),url("fonts/bend-fonts/b4b164e1-3b4c-42c1-8db5-ca02bfad125c.ttf") format("truetype"),url("fonts/bend-fonts/8673e9b2-7e5d-4749-8588-b7de69b662c2.svg#8673e9b2-7e5d-4749-8588-b7de69b662c2") format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Museo Sans W01_n9";
+  src: url("fonts/bend-fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot");
+}
+@font-face {
+  font-family: "Museo Sans W01";
+  src: url("fonts/bend-fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix");
+  src: url("fonts/bend-fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot"),url("fonts/bend-fonts/009ca58d-46af-4651-a359-f0ae2301085b.woff2") format("woff2"),url("fonts/bend-fonts/3619b5f4-8df9-44f5-8c53-b7c236e9c74e.woff") format("woff"),url("fonts/bend-fonts/9b2d949a-4e1c-435c-8412-f377c80583ae.ttf") format("truetype"),url("fonts/bend-fonts/7a319e11-05eb-49ce-bdb7-f692766e6477.svg#7a319e11-05eb-49ce-bdb7-f692766e6477") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
 //hack so that fonts show up locally
 @font-face {
   src: local("☺"),;
