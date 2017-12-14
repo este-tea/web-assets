@@ -62,13 +62,10 @@
 .text.parbase.section p {
     clear: both;
 }
-.content.container .page_content .parbase.pagedivision.section {
-    padding-left: 15px;
-    padding-right: 15px;
+.top-margin-28 {
+  margin-top: -28px;
 }
-.content.container .page_content #page-banner > .container {
-    padding: 0;
-}
+
 //removes padding so that color blocks span full width of page
 .container-fluid.tds-body-content {
     padding-left: 0;
@@ -134,19 +131,7 @@
 .tds-width-container {
     max-width: $screen-lg;
 }
-/*fix layout for terms page*/
-.page_content .tds-pagedivider-four-col,
-.page_content .tds-pagedivider-one-col,
-.page_content .tds-pagedivider-three-col,
-.page_content .tds-pagedivider-two-col {
-    padding-top: 0;
-    margin: 0;
-}
-@media (max-width:$screen-xxs-max) {
-    .tds-page-banner {
-        margin-bottom: 10px;
-    }
-}
+
 // add styling to home page title block
 .container-fluid.tds-block-lt-blue.home-title {
     margin-left: 15px;
@@ -172,11 +157,4 @@
         text-align: left;
         line-height: 24px;
     }
-}
-.tds-plus-packs-section .prod-summary {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.top-margin-28 {
-  margin-top: -28px;
 }
