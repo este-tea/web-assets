@@ -1,0 +1,43 @@
+/* START tds-plus-packs
+==========================================*/
+.tds-plus-packs-section .prod-summary {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.prod-items.tds-plus-packs .prod-contents {
+  float: right;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 90%;
+  border: 3px solid #ccc !important;
+
+  &.prod-highlight {
+    background: $tds-lt-gray;
+  }
+}
+@media (max-width: $screen-xs) {
+  .prod-items.tds-plus-packs .prod-contents {
+    padding: 20px 20px 20px 50px;
+    width: 100%;
+    margin-left: -20px;
+    margin-right: -15px;
+    left: -25px;
+    position: relative;
+  }
+}
+
+.tds-plus-packs .tds-panel-items .check-radio-btn {
+  margin-top: 20px;
+}
+
+.prod-contents.tds-plus-pack-contents > a {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.prod-contents.tds-plus-pack-contents .row .col-sm-2 {
+  width: 105px;
+  margin-top: 12px;
+}
+/* END tds-plus-packs */
