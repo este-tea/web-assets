@@ -49,9 +49,14 @@
   margin: 0 auto;
   // needed to float btn in carousel to use default margin-top value for spacing
   .gallery-btn {
-    float: left;
-    display: inline;
+    float: none;
+    display: inline-block;
+    padding-right: 16px;
     margin-top: 0;
+    &:after {
+        margin-left: 12px;
+        margin-right: 0;
+    }
   }
   @media (max-width: $screen-sm){
     padding: 8%;

@@ -44,6 +44,10 @@
         li {
             color: $tds-dk-gray;
             margin-bottom: 6px;
+            &:before {
+                margin-left: -20px;
+                margin-right: 12px;
+            }
         }
     }
     // adds padding between `.form groups` used in the same card.
@@ -227,8 +231,10 @@ h2.tds-card-heading {
 }
 // ===== Card Image ============================================================
 img.center-block.img-responsive.tds-card-img {
-    width: 9em;
-    padding-bottom: 20px;
+    border-radius: 50%;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: 175px;
 }
 .tds-card-heading + a > img,
 .tds-card-heading + img {
@@ -266,6 +272,9 @@ img.center-block.img-responsive.tds-card-img {
 }
 .card-content-wrap {
     padding: 20px !important;
+}
+.tds-card-content .tds-content-rich {
+    margin-top: 20px;
 }
 // ===== Card CTA ==============================================================
 .card-horiz-content .tds-card-cta .navbutton {
