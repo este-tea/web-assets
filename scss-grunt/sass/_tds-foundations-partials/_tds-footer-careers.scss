@@ -50,3 +50,18 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+//IWP-3474: replaced careers footer with generic footer
+//-----------------------------------------------------
+.careers-footer #subscribe-container {
+    padding: 28px 0;
+}
+
+//hides empty button
+.careers-footer #subscribe-container td.subscribe-button {
+    display: none;
+}
+
+.careers-footer #subscribe-container table {
+    max-width: 960px;
+}
