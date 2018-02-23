@@ -1,9 +1,5 @@
 /* tds-buttons
 ==========================================*/
-// if multi buttons placed in parsys, will display next to each other
-.navbutton.parbase.section {
-    display: initial;
-}
 
 // Main TDS button
 // ------------------
@@ -439,4 +435,31 @@ button.read-more {
     background: url(/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg) right 5px no-repeat;
     background-size: 7px 10px;
     padding-right: 12px;
+}
+
+// NAV BUTTON COMPONENT
+// ------------------
+// if multi buttons placed in parsys, will display next to each other
+.navbutton.parbase.section {
+    display: initial;
+}
+
+// nav button arrows
+.navbutton .gallery-btn.btn-next-arrow:after {
+    float: none;
+    margin-left: 6px;
+}
+
+.navbutton .gallery-btn.btn-next-arrow.btn-block:after {
+    float: right;
+}
+
+.navbutton .gallery-btn.btn-next-arrow {
+    padding-right: 30px;
+}
+
+@media (max-width: 400px) {
+    .navbutton .gallery-btn.btn-next-arrow:after {
+        float: right;
+    }
 }
