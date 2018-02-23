@@ -261,7 +261,7 @@
     text-transform: uppercase;
     color: $tds-dk-gray;
     @media (max-width: $screen-xs) {
-      color: #fff;
+      color: $tds-white;
       margin-bottom: 4px;
     }
   }
