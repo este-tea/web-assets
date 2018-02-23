@@ -1,21 +1,28 @@
 /* TDS FOUNDATIONS STYLES
 ------------------------------------------
 ==========================================*/
+// required in order for css to compile correctly
 @import "_tds-foundations-partials/_tds-variables";
 @import "_tds-foundations-partials/_tds-mixins";
 
+// layout and composition
 @import "_tds-foundations-partials/_tds-grid";
 @import "_tds-foundations-partials/_tds-layout";
 
+// typography
 @import "_tds-foundations-partials/_tds-fonts";
 @import "_tds-foundations-partials/_tds-type";
 
+// forms
 @import "_tds-foundations-partials/_tds-forms";
 @import "_tds-foundations-partials/_tds-radio-buttons";
 @import "_tds-foundations-partials/_tds-checkboxes";
 
+// tables
 @import "_tds-foundations-partials/_tds-tables";
 @import "_tds-foundations-partials/_tds-tables-responsive";
+
+
 @import "_tds-foundations-partials/_tds-buttons-links";
 @import "_tds-foundations-partials/_tds-icons";
 @import "_tds-foundations-partials/_tds-labels";
@@ -35,7 +42,6 @@
 @import "_tds-foundations-partials/_tds-header-careers";
 @import "_tds-foundations-partials/_tds-header-captive-portal";
 @import "_tds-foundations-partials/_tds-breadcrumbs";
-
 @import "_tds-foundations-partials/_tds-outdated-browser";
 @import "_tds-foundations-partials/_tds-errors-alerts";
 @import "_tds-foundations-partials/_tds-lists";
@@ -45,12 +51,14 @@
 @import "_tds-foundations-partials/_tds-site-map";
 
 //COMPONENTS
+//BE VERY CAREFULL about re-arranging ANY of the following
+//lines since some of these are dependent on the previous ones
 @import "_tds-foundations-partials/_tds-forms-address-entry";
 @import "_tds-foundations-partials/_tds-forms-contact-form";
 @import "_tds-foundations-partials/_tds-forms-mya-forms";
 @import "_tds-foundations-partials/_tds-forms-eloqua-forms";
 @import "_tds-foundations-partials/_tds-forms-touchspin";
-@import "_tds-foundations-partials/_tds-date-picker";
+@import "_tds-foundations-partials/_tds-forms-date-picker";
 @import "_tds-foundations-partials/_tds-selfID";
 @import "_tds-foundations-partials/_tds-disclaimer";
 @import "_tds-foundations-partials/_tds-landing-page";
@@ -61,10 +69,12 @@
 @import "_tds-foundations-partials/_tds-pull-quote";
 @import "_tds-foundations-partials/_tds-callouts";
 @import "_tds-foundations-partials/_tds-helpsupport-category";
+
 @import "_tds-foundations-partials/_tds-account-info";
 @import "_tds-foundations-partials/_tds-usage-summary";
 @import "_tds-foundations-partials/_tds-usage-estimator";
 @import "_tds-foundations-partials/_tds-usage-notifications";
+
 @import "_tds-foundations-partials/_tds-search-results";
 @import "_tds-foundations-partials/_tds-carousel";
 @import "_tds-foundations-partials/_tds-page-banner";
@@ -89,7 +99,7 @@
 @import "_tds-foundations-partials/_tds-package-builder";
 @import "_tds-foundations-partials/_tds-package-builder-subtotal";
 @import "_tds-foundations-partials/_tds-package-comparison";
-
+@import "_tds-foundations-partials/_tds-channel-status-updates";
 
 //FOOTER
 @import "_tds-foundations-partials/_tds-footer";
