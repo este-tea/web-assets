@@ -14,3 +14,35 @@
   margin: 0;
   font-size: 16px;
 }
+
+/* STEVEN'S PROMO BLURB BOXES */
+.sc-homeboxes .tds-card {
+  border: 0;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.sc-homeboxes .tds-card-content {
+  background-color: #BDD893;
+  padding: 8px 10px;
+}
+
+.sc-homeboxes a:hover .tds-card-content {
+  background-color: #6B9C22;
+}
+.sc-homeboxes h2 {
+  line-height: 27px;
+  margin-bottom: 0 !important;
+  font-size: 16px;
+  color: #353535;
+  font-weight: 400;
+}
+
+.container-fluid.promo-cards .tds-pagedivider-one-col {
+    padding-top: 0;
+    margin-bottom: -16px;
+}
+.tds-card-gallery-1.sc-homeboxes {
+    padding: 0;
+}
