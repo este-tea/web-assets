@@ -76,7 +76,7 @@
       width: auto;
       &:hover {
         text-decoration: none;
-        background-color: transparent;
+        background-color: $tds-lt-blue-100;
       }
     }
   }
@@ -230,16 +230,31 @@
 @media (max-width: 584px){
   .carouselslide {
       bottom: 0px;
+      background-color: rgba(255,255,255,.75);
+      .gallery-btn {
+          padding: 10px!important;
+          width: 100%;
+      }
   }
   .carousel-indicators {
     width: 100%;
     margin-left: -50%;
   }
+
+  .carouseltitletext {
+      color: $tds-dk-blue;
+  }
+
+  .carouselbodytext>p {
+      color: $tds-dkr-gray;
+  }
 }
-// ===== Careers carousel ======================================================
+// CAREERS CAROUSEL
+// ----------------------------------------
 // Styles for careers page carousel that are different from the normal set up.
 // added to the bottom to give them priority over normal settings.
-// =============================================================================
+// ----------------------------------------
+
 // Careers page title & role text
 .carouselbodytext {
   .careers-job-title {
