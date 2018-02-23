@@ -11,7 +11,9 @@
 .tds-page-banner .container {
     padding: 0;
 }
-
+.tds-page-banner.col-sm-12.noDisplay {
+  display: none;
+}
 //Banner Typography
 //-----------------
 
