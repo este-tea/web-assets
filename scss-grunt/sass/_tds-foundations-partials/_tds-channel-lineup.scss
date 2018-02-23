@@ -3,9 +3,12 @@
 .tds-tv-channel-lineup h2 {
   margin-left: -15px;
 }
+h2.channel-status-heading {
+    margin-top: 0;
+}
+
 // IMT-84 TV Channel Lineup Styling Issues
 // #1 Fix
-
 .channelLineupResults.parbase.section .col-sm-8.col-xs-12 .tds-card .form-group.tds-form-group {
   margin-bottom: 0;
 }
