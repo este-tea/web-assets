@@ -37,6 +37,12 @@
 }
 // SUBSCRIBE BUTTON
 //----------------------------------------
+td.subscribe-text {
+    padding-right: 10px;
+}
+td.subscribe-button {
+    min-width: 150px;
+}
 .btn-subscribe {
     font-family: "ITC Avant Garde Gothic W01",Century Gothic,Arial;
     font-weight: 400;
@@ -70,9 +76,6 @@
         text-decoration: none;
     }
 }
-td.subscribe-text {
-    padding-right: 10px;
-}
 //move subscribe button below copy
 @media (max-width:583px) {
     #subscribe-container .container table tbody tr td {
@@ -81,11 +84,11 @@ td.subscribe-text {
     .subscribe-text {
         padding: 0;
     }
-    .btn-subscribe {
-        margin-top: 28px;
-    }
     .subscribe-button {
         margin-top: 32px;
         margin-bottom: 16px;
+    }
+    .btn-subscribe {
+        margin-top: 28px;
     }
 }
