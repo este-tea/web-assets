@@ -1,15 +1,12 @@
-/* tds-layout
+/* tds-layout.scss
 ==========================================*/
-// max width for site
-.container,
-.tds-width-container {
-  //@extend .container;
-  @include container-fixed;
-  width: 100%;
-  max-width: $screen-lg;
-}
+// use this for generic site wide layout classes
+// (clearfix, containers, wraps, etc.)
+// to modify the page layout, page divider COMPONENT css,
+// use the tds-page-layout-division.scss file
 
-// use this to address layout issues fixes that are sitewide
+// CLEARFIX TO CLEAR FLOATS AND MISCELL LAYOUT ISSUES
+// ----------------------------------------
 .tds-clearfix, .clearfix {
   &:before, &:after {
     display: table;
