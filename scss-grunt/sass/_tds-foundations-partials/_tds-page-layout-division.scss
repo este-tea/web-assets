@@ -1,77 +1,106 @@
-/* tds-page-division.scss
+/* tds-page-layout-division.scss
 ==========================================*/
+// use this file for css changes to the page layout
+// or the page division COMPONENT
+// for generic site wide layout changes (clearfix,
+// container, wraps, etc) see _tds-layout.scss
+
+// CUSTOM TOP OR BOTTOM PADDING
+// ----------------------------------------
+// adds top or bottom padding depending on whether content needs it or not
+.pagelayout .top-bottom-pad {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.pagelayout .top-pad {
+    padding-top: 32px;
+}
+.pagelayout .bottom-pad {
+    padding-bottom: 32px;
+}
+
+
 @media (max-width:$screen-sm) {
   .parsys.parsys-sidebar {
-    margin-top: 32px;
+      margin-top: 32px;
   }
 }
-
-.content.container .page_content .parbase.pagedivision.section {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .pagedivision > .container {
-  padding: 0;
+    padding: 0;
 }
-
 .tds-pagedivider-one-col {
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0 16px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 16px;
 }
-
 .pagelayout .tds-pagedivider-one-col {
-  padding: 0;
+    padding: 0;
 }
-
 .tds-pagedivider-four-col,
 .tds-pagedivider-three-col,
 .tds-pagedivider-two-col {
   margin-left: -15px;
   margin-right: -15px;
-
-  div.shift-up {
-    margin-top: -160px;
-    @media (max-width: $screen-sm) {
-      margin-top: 0;
+    div.shift-up {
+        margin-top: -160px;
+        @media (max-width: $screen-sm) {
+            margin-top: 0;
+        }
     }
-  }
 }
 
 .tds-pagedivider-four-col .col-md-3 {
-  padding-left: 15px;
+    padding-left: 15px;
 }
 
 .pagelayout .tds-pagedivider-four-col,
 .pagelayout .tds-pagedivider-one-col,
 .pagelayout .tds-pagedivider-three-col,
 .pagelayout .tds-pagedivider-two-col {
-  padding-top: 32px;
-  padding-bottom: 0;
-  display: block;
-  // display: inline-block;
-  // causing aem parsys to collapse
+    padding-top: 32px;
+    padding-bottom: 0;
+    display: block;
+    // display: inline-block;
+    // causing aem parsys to collapse
 }
-/*fix layout for terms page*/
-.page_content .tds-pagedivider-four-col,
-.page_content .tds-pagedivider-one-col,
-.page_content .tds-pagedivider-three-col,
-.page_content .tds-pagedivider-two-col {
-  padding-top: 0;
-  margin: 0;
-}
+
 /*remove padding so content lines up with banner when content
 is in a page div one col comp*/
 .content.container .pagedivision .tds-pagedivider-one-col {
-  padding: 0;
+    padding: 0;
 }
 /*http://tdstelecom.com/contactus/chat-not-available.html
 remove 32px padding gap from one col page layout*/
 .content.container .page_content .pagelayout .tds-pagedivider-one-col {
   padding-top: 0;
 }
-/*new internships page in career section*/
+// CAREERS HOME PAGE
+// ----------------------------------------
+.careers-home .container {
+    padding:0;
+}
+.careers-home p.h4 {
+    margin-top: 0;
+}
+
+.careers-home .tds-pagedivider-two-col .col-sm-8 {
+    padding-left: 0;
+}
+.careers-home .tds-pagedivider-two-col .col-sm-4 {
+    padding-right: 0;
+}
+
+@media (max-width: 767px) {
+    .careers-home .tds-pagedivider-two-col .col-sm-8 {
+        padding: 0;
+    }
+    .careers-home .tds-pagedivider-two-col .col-sm-4 {
+        padding: 0;
+    }
+}
+
+// CAREERS INTERNSHIPS PAGE
+// ----------------------------------------
 .pagelayout .telecom-content .tds-pagedivider-four-col,
 .pagelayout .telecom-content .tds-pagedivider-one-col,
 .pagelayout .telecom-content .tds-pagedivider-three-col,
