@@ -1,7 +1,9 @@
 /* tds-trouble-reporting-form.scss
 ==========================================*/
-
-// trouble problem ticket form
+.page_content > .troubleReporting.parbase.section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 // add col-values to headers
 .troubleReporting > .tds-card.tds-card-gray > h3 {
@@ -71,14 +73,12 @@
 }
 //---support tickets page https://tdstelecom.com/my-account/support-tickets.html
 
-.troubleReporting .horizontal button#ticketButton {
+.troubleReporting .horizontal button#ticketButton,
+.troubleReporting .horizontal button#serviceButton  {
     width: auto;
     margin-top: 0;
 }
 
-.troubleReporting .horizontal button#serviceButton {
-    margin-top: 0;
-}
 //--- my account page https://tdstelecom.com/my-account.html
 
 .troubleReporting .tds-card.vertical span.tds-or-text {
@@ -96,3 +96,8 @@
 .col-sm-4 button#serviceButton {
     margin-top: 0;
 }
+
+.contactUsCard.parbase.section .tds-card .parbase.troubleReporting.section .tds-card.tds-card-gray {
+	background-color: #ffffff !important;
+}
+/* END tds-trouble-reporting-form.scss */
