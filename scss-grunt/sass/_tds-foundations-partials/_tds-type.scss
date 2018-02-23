@@ -152,3 +152,17 @@ a strong {
 .ui-widget {
     font-family: $tds-font-body;
 }
+// Because address messages were given their own div's :-/ need to give
+// them values or else the browser default is to stack them
+#enteredAddress,
+#captilize,
+#caps {
+  display: inline;
+}
+// cuz I have to ~.tom
+#captilize {
+  text-transform: capitalize;
+}
+#caps {
+  text-transform: uppercase;
+}

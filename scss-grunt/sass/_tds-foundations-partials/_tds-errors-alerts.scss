@@ -7,7 +7,8 @@
 }
 
 .tds-error-msg,
-.tds-alert {
+.tds-alert,
+.bundle-success {
   margin-bottom: 20px;
   display: block;
   //float: left;
@@ -29,10 +30,6 @@
       color: #000;
       margin-top: 2px;
   }
-  // When alert text isn't put in a p tag. This wraps long text if links are used
-  #ticketEntryNumberErrorBlock span {
-    word-wrap: break-word;
-  }
   a {
     color: #000;
     text-decoration: underline;
@@ -46,26 +43,19 @@
       font-weight: 500;
     }
   }
+  // When alert text isn't put in a p tag. This wraps long text if links are used
+  #ticketEntryNumberErrorBlock span {
+    word-wrap: break-word;
+  }
   #enteredAddress a {
     text-decoration: underline;
     &:hover {
       text-decoration: none;
     }
   }
-  // Because address messages were given their own div's :-/ need to give
-  // them values or else the browser default is to stack them
-  #enteredAddress,
-  #captilize,
-  #caps {
-    display: inline;
-  }
-  // cuz I have to ~.tom
-  #captilize {
-    text-transform: capitalize;
-  }
-  #caps {
-    text-transform: uppercase;
-  }
+
+// moved to _tds-type.scss
+
   .tds-error-msg-description,
   .tds-alert-msg-description {
     float: left;
@@ -115,33 +105,14 @@
     }
   }
 }
-//alerts
-.tds-alert {
-  padding: 12px 16px;
-  color: #000;
-  font-weight: 400;
-  font-size: 14px;
-}
+//duplicate
+
 /*text in light colored boxes should be black*/
 .tds-error-msg p, .bundle-error p, .tds-alert p {
     color: black;
 }
-// Product callout messages design
-.prod-callout {
-  //@extend .tds-error-msg;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 0;
-  //@extend .tds-error-info;
-  background-color: #E8EBF3;
-  border-color: #d1dae7;
-  color: #353535;
-  @include make-sm-column-offset(1);
-  @include make-xs-column-offset(0);
-  @include make-sm-column(7);
-  @include make-xs-column(12);
-}
+
+// moved to _tds-bundle-builder.scss
 
 // Colors
 // ---------
@@ -186,7 +157,8 @@
 
 // Green = success
 .tds-error-success,
-.tds-alert-success {
+.tds-alert-success
+.bundle-success {
   background-color: #dff0d8;
   color: black;
   border-left: 3px solid $tds-green ;
@@ -257,7 +229,8 @@
 }
 
 //green alert success icon
-.tds-alert.tds-alert-success {
+.tds-alert.tds-alert-success,
+.bundle-success {
     background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-success.svg');
     background-size: 22px;
     background-position: 16px 11px;
@@ -300,12 +273,7 @@
 // or decorative icon not built into bootstrap
 // ===============================================
 
-// positioning when img is placed *above* alert-info
-.tds-pb-logo {
-  position: relative;
-  top: 18px;
-  text-align: center;
-}
+// deleted, not being used in markup
 
 // ===== New Alert message box concepts ==========
 // Starting here we will add the new method for
@@ -342,4 +310,9 @@
 /* IMT-49 Plus Pack Page doesn't work in small form Fix*/
 #errorMessage {
     clear:both;
+}
+
+//used in agent portal login form
+#usernameError {
+  margin-top: 20px;
 }
