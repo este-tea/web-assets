@@ -64,6 +64,9 @@ p.form-control-static {
   background-repeat: no-repeat;
   background-size: 15px;
 }
+
+// MYA TROUBLEREPORTING FORM
+// ----------------------------------------
 // ticket status for lable font change. Not enough room
 form#searchTicketForm .control-label {
   font-size: 10px;
@@ -77,7 +80,20 @@ form#searchTicketForm .tds-form-group input {
 #users-search.tds-card p.help-block {
   margin-bottom: 0;
 }
+// mya visitor page
+.col-sm-4 button#ticketButton {
+    max-width: max-content;
+    display: block;
+    padding-right: 32px;
+}
 
+.col-sm-4 button#ticketButton:after {
+    display: inline-block;
+    float: none;
+    margin-left: 6px;
+}
+// MYA EDIT USERS
+// ----------------------------------------
 // https://tdstelecom.com/my-account/manage-users/edit-users.html
 // make row bg transparent instead of white when in colored block
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
@@ -100,6 +116,7 @@ button#changeSecQuestions {
 }
 
 // MYA Add User
+// ----------------------------------------
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     background-color: transparent;
 }
