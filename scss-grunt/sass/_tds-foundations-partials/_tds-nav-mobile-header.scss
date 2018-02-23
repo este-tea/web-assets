@@ -1,6 +1,5 @@
 /* tds-mobile-header.scss
 ==========================================*/
-
 #mobile-header-container {
   position: fixed;
   display: block;
@@ -8,12 +7,15 @@
   z-index: 500;
   //margin-left: -15px;
 }
+
 #add-padding {
   height: 78px;
 }
+
 .tdsheader > #add-padding {
   height: 72px;
 }
+
 .myaheader.parbase.header > div#add-padding {
   height: 87px;
 }
@@ -21,19 +23,23 @@
   #mobile-header-container {
     position: relative;
   }
+
   #add-padding,
   .myaheader.parbase.header > div#add-padding,
   .tdsheader > #add-padding {
     height: 0;
   }
 }
+
 #mobile-menu {
   overflow: auto;
 }
+
 .add-scroll {
   height: 370px;
   overflow: auto;
 }
+
 #mobile-menu {
   display: none;
   min-width: 300px;
@@ -43,6 +49,7 @@
   position: relative;
   top: -2px;
 }
+
 #mobile-menu ul {
   position: relative;
   z-index: 20;
@@ -57,21 +64,26 @@
   font-size: 16px;
   line-height: 1.375em;
 }
+
 #mobile-menu ul li {
   background-color: $tds-dkr-gray;
 }
+
 #mobile-menu ul li:hover {
   background-color: $tds-dk-gray;
 }
+
 #mobile-menu ul ul li:hover {
   background-color: $tds-dk-gray;
   border-top: solid 1px $tds-dk-gray;
   margin-top: -1px;
 }
+
 #mobile-menu ul li:first-child:hover {
   border-top: none;
   margin-top: 0;
 }
+
 #mobile-menu ul li a {
   display: block;
   text-decoration: none;
@@ -81,15 +93,18 @@
   color: $tds-headfoot-text-color;
   border-bottom: solid 2px $tds-lt-blue-80;
 }
+
 #mobile-menu > ul > li:first-child > a {
   //border-bottom: solid 2px #7bb227;
   //removing green border, not consistent throughout
 }
+
 #mobile-menu ul li li a {
   color: $tds-headfoot-text-color;
   padding-left: 1.2em;
   border-bottom: solid 1px $tds-dk-gray;
 }
+
 #mobile-menu ul li li:last-child a {
   border-bottom: solid 2px $tds-lt-blue-80;
 }
@@ -97,60 +112,69 @@
 // #mobile-menu ul ul li:last-child a {
 //   border-bottom: none;
 // }
-
 // Link on hover
 #mobile-menu ul li a:hover,
 #mobile-menu ul li:hover > a {
   color: white;
 }
+
 #mobile-menu ul li:hover > a {
-  background-image: url(/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.png);
-  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.svg);
+  background-image: url("/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.png");
+  background-image: linear-gradient(transparent, transparent), url("/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.svg");
   background-size: 16px 11px;
   background-position: center right;
   background-repeat: no-repeat;
 }
+
 #mobile-menu ul li a:hover {
-  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png);
-  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg);
+  background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
+  background-image: linear-gradient(transparent, transparent), url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg");
   background-size: 11px 16px;
   background-position: center right;
   background-repeat: no-repeat;
 }
+
 .mobile-menu-active1 {
   color: $tds-white!important;
   font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
   font-weight: 500;
   font-style: normal;
-  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png);
-  background-image: linear-gradient(transparent, transparent), url(/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg);
+  background-image: url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png");
+  background-image: linear-gradient(transparent, transparent), url("/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg");
   background-size: 11px 16px;
   background-position: center right;
   background-repeat: no-repeat;
 }
+
 .mobile-menu-active2 {
   background-color: $tds-dk-gray!important;
 }
+
 #tds-mobile-header {
   display: block;
   width: 100%;
   min-width: 280px;
   position: relative;
 }
+
 div.hr-gray {
   border-bottom: solid 2px $tds-lt-gray;
 }
+
 div.hr-ltblue {
   border-bottom: solid 2px $tds-blue-100;
 }
+
 #mobile-nav-container {
-  padding: 16px 16px 0 16px;
+  padding: 16px 16px 0;
   min-width: 304px;
   background-color: white;
 }
+
 .remove-padding {
   padding-bottom: 0;
 }
+
 ul.mobile-header-nav {
   margin: 0;
   list-style-type: none;
@@ -158,11 +182,13 @@ ul.mobile-header-nav {
   //float was causing weird gaps in small form
   text-align: right;
 }
+
 ul.mobile-header-nav li {
   display: inline-block;
   height: 30px;
   margin: 0 0 0 14px;
 }
+
 #btn-menu {
   font-size: 12px;
   font-family: "ITC Avant Garde Gothic W01", Century Gothic, Arial;
@@ -172,18 +198,21 @@ ul.mobile-header-nav li {
   height: 36px;
   padding: 8px 16px 0;
 }
-#btn-menu:hover,
-#btn-menu:active {
+
+#btn-menu:active,
+#btn-menu:hover {
   border: solid 2px $tds-blue-100;
   color: $tds-white;
   background-color: $tds-blue-100;
   cursor: pointer;
 }
+
 .menu-normal {
   border: solid 2px $tds-lt-gray;
   color: $tds-blue-100;
   padding: 16px;
 }
+
 .menu-active {
   border: solid 2px $tds-blue-100;
   color: $tds-white !important;
@@ -193,114 +222,134 @@ ul.mobile-header-nav li {
   z-index: 250!important;
   position: relative;
 }
-.menu-normal, .menu-active {
-    padding: 8px!important;
-    top: -13px;
-    position: relative;
-    text-decoration: none;
+
+.menu-active,
+.menu-normal {
+  padding: 8px !important;
+  top: -13px;
+  position: relative;
+  text-decoration: none;
 }
+
 .search-normal {
   width: 36px;
   height: 36px;
-  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search-gray-lgr.svg);
+  background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-search-gray-lgr.svg");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 36px 36px;
   background-size: 36px 36px;
 }
+
 .search-normal:hover {
-  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
+  background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-search.svg");
   background-color: $tds-blue-100;
 }
+
 .search-active {
   width: 36px;
   height: 36px;
   background-color: $tds-blue-100;
-  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
+  background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-search.svg");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 36px 36px;
   background-size: 36px 36px;
-  &:hover, &:focus {
+
+  &:focus,
+  &:hover {
     background-color: #0c8fd0;
   }
 }
-#btn-search, #btn-cart {
+
+#btn-cart,
+#btn-search {
   text-indent: -9999px;
 }
+
 .icon_cart-empty {
   width: 36px;
   height: 36px;
-  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-gray-lgr.svg);
+  background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-cart-gray-lgr.svg");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 36px 36px;
   background-size: 36px 36px;
 }
+
 .icon_cart-empty:hover {
-  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
+  background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg");
   background-color: $tds-blue-100;
 }
 @media all and (min-width: $screen-sm-min) {
-  #tds-mobile-header,
-  #mobile-menu {
+  #mobile-menu,
+  #tds-mobile-header {
     display: none;
   }
 }
+
 div.hr-mobile-tdsblue {
   border-top: solid 4px $tds-blue-100;
   position: relative;
 }
 // Removing the bootstrap min-height for `.navbar` since we don't use it it was
 // adding extra padding in mobile.
+
 .navbar {
   margin-bottom: 15px;
   min-height: 0;
   border: 0;
   border-radius: 0 !important;
 }
-
 //hides link text but still makes it available for screen readers
-a#tds-logo, a#btn-cart, a#btn-search {
-    text-indent: -9999px;
-    display: inline-block;
-    text-align: initial;
-}
-.small-nav-logo {
-    height: 36px;
-    float: left;
-    width: auto;
+a#btn-cart,
+a#btn-search,
+a#tds-logo {
+  text-indent: -9999px;
+  display: inline-block;
+  text-align: initial;
 }
 
+.small-nav-logo {
+  height: 36px;
+  float: left;
+  width: auto;
+}
 // request a quote button on the tds business site
 // can also be used on telecom and other sites
 // called the "cta button" in the component dialog
+
 #mobile-nav-container .mobile-header-nav {
   .btn-cta-wrap {
+    @media screen and (max-width:430px){
+        display:none;
+    }
     .gallery-btn {
       font-size: 12px;
       color: white;
       padding: 4px 9px !important;
+
       &:after {
-          content: none;
+        content: none;
       }
+
       .tds-btn-orange {
         border: solid 2px $tds-orange-80;
         background-color: $tds-orange-80;
-        &:hover, &:focus {
+
+        &:focus,
+        &:hover {
           border: solid 2px $tds-orange-100;
           color: white;
           background-color: $tds-orange-100;
         }
       }
-      @media (max-width: 430px) {
+      @media screen and (max-width: 430px) {
         display: none!important;
       }
     }
   }
 }
-
-
 //button that appears in dropdown
 #mobile-menu .mobile-cta-wrap {
   .gallery-btn {
