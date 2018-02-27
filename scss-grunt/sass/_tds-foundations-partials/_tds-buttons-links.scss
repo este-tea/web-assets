@@ -1,6 +1,9 @@
 /* tds-buttons
 ==========================================*/
 .btn { box-shadow: $box-shadow; }
+.btn.btn-link {
+    box-shadow: none;
+}
 // Main TDS button
 // ------------------
 .gallery-btn, .tds-btn {
@@ -106,8 +109,9 @@ button#addtocart {
 // gray button, blue text
 // =============================================================================
 .tds-btn-gray {
-  color: $tds-lt-blue;
-  background: $tds-ltr-gray;
+  // gray buttons contrast doesn't meet AIM standards
+  color: $tds-white;
+  background: $tds-dk-blue;
   &:hover, &:focus, &:active {
     background: $tds-lt-blue ;
     color: $tds-white ;
@@ -444,6 +448,15 @@ button.read-more {
     display: initial;
 }
 
+.nav-button-wrap.align-center {
+    text-align: center;
+}
+
+.navbutton .gallery-btn {
+    border-radius: 0;
+    margin-top: 0;
+}
+
 // nav button arrows
 .navbutton .gallery-btn.btn-next-arrow:after {
     float: none;
@@ -462,4 +475,32 @@ button.read-more {
     .navbutton .gallery-btn.btn-next-arrow:after {
         float: right;
     }
+}
+
+// Social buttons on news page
+// https://tdstelecom.com/about/news.html
+.card-social .navbutton .gallery-btn>img {
+    width: 20px;
+    height: 20px;
+    background: #0c8fd0;
+    border-radius: 50%;
+}
+
+.card-social .navbutton .gallery-btn:hover>img,
+.card-social .navbutton .gallery-btn:focus>img {
+    background: #19388a;
+}
+
+
+// when nav button component is placed right after a rich text component
+.parbase.contentcontainer.section .parbase.richTextComponent.section+.navbutton.parbase.section {
+    display: block;
+    margin-top: 20px!important;
+}
+
+//fix contact form arrow
+.nonRepairButton .gallery-btn.btn-next-arrow:after {
+    float: none;
+    display: inline-block;
+    margin-left: 8px;
 }
