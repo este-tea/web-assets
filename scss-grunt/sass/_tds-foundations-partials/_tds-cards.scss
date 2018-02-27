@@ -142,6 +142,9 @@
     img.center-block.img-responsive.tds-card-img {
         width: 100%;
         padding-bottom: 0;
+         // fix card images on biz contact page
+        border-radius: 0;
+        max-width: none;
     }
 }
 .card-image-wrap {
@@ -273,6 +276,8 @@ img.center-block.img-responsive.tds-card-img {
 .card-content-wrap {
     padding: 20px !important;
 }
+
+img + .tds-card-content,
 .tds-card-content .tds-content-rich {
     margin-top: 20px;
 }
