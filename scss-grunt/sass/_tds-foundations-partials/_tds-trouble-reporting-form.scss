@@ -5,6 +5,21 @@
     padding-right: 15px;
 }
 
+// ticket status for lable font change. Not enough room
+form#searchTicketForm .control-label {
+  font-size: 10px;
+}
+
+// This fixes the fact that someone keeps rolling back the input form markup.
+form#searchTicketForm .tds-form-group input {
+  width: 100%;
+  height: 40px;
+}
+// help-block text
+#users-search.tds-card p.help-block {
+  margin-bottom: 0;
+}
+
 // add col-values to headers
 .troubleReporting > .tds-card.tds-card-gray > h3 {
   margin-top: 20px;
@@ -32,6 +47,7 @@
 .troubleReporting button.gallery-btn {
   margin: 8px 0 0;
 }
+
 .troubleReporting > .tds-card.tds-card-gray > h3 {
   //margin-top: 28px;
 }
@@ -40,6 +56,7 @@
   padding: 0 0 4px;
   height: auto;
 }
+
 .troubleReporting .tds-alert {
     margin-bottom: 0;
     margin-top: 24px;
@@ -49,11 +66,18 @@
     text-align: center;
     padding-top: 24px;
 }
+
 @media (max-width:750px) {
     .troubleReporting span.tds-or-text {
         text-align: left;
         padding-bottom: 16px;
     }
+}
+.troubleReporting .tds-card.vertical span.tds-or-text {
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    color: #000;
 }
 .troubleReporting > .tds-card.tds-card-gray > h3 {
     padding: 0;
@@ -71,7 +95,6 @@
 .navbutton.parbase ~ .parbase.troubleReporting.section {
     margin-top: 28px;
 }
-//---support tickets page https://tdstelecom.com/my-account/support-tickets.html
 
 .troubleReporting .horizontal button#ticketButton,
 .troubleReporting .horizontal button#serviceButton  {
@@ -79,22 +102,18 @@
     margin-top: 0;
 }
 
-//--- my account page https://tdstelecom.com/my-account.html
-
-.troubleReporting .tds-card.vertical span.tds-or-text {
-    text-align: left;
-    padding-top: 12px;
-    padding-bottom: 14px;
-    color: #000;
-}
-
-.col-sm-4 button#ticketButton {
+.troubleReporting button#ticketButton,
+.troubleReporting button#serviceButton {
     width: auto;
     margin-top: 0;
-}
-
-.col-sm-4 button#serviceButton {
-    margin-top: 0;
+    max-width: max-content;
+    display: block;
+    padding-right: 32px;
+    &:after {
+        display: inline-block;
+        float: none;
+        margin-left: 6px;
+    }
 }
 
 .contactUsCard.parbase.section .tds-card .parbase.troubleReporting.section .tds-card.tds-card-gray {
