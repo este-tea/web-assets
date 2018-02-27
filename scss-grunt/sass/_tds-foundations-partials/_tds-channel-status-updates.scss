@@ -1,8 +1,33 @@
 /* _tds-channel-status-updates.scss
 ==========================================*/
+.parbase.channelStatusUpdates.section > div {
+    padding-left: 40px;
+    padding-right: 30px;
+}
+@media screen and (max-width: 767px) {
+    .parbase.channelStatusUpdates.section > div {
+        padding-left: 28px;
+    }
+}
+@media screen and (max-width: 583px) {
+    .parbase.channelStatusUpdates.section > div {
+        padding: 0 16px;
+    }
+}
+
 h2.channel-status-heading {
     margin-top: 0;
 }
+
+.channel-status-article {
+    border-bottom: solid 2px #ccc;
+    padding-bottom: 10px;
+}
+
+.channel-status-updates .channel-status-article:first-of-type {
+    border-top: solid 2px #ccc;
+}
+
 
 
 /* END _tds-channel-status-updates.scss */
