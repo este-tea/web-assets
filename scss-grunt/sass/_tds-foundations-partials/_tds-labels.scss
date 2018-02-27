@@ -31,16 +31,14 @@
   @include border-bottom-radius(0);
   @include border-left-radius(0);
 }
-// colors by Ice-T
-.label-tds-blue {
+// colors
+// changed to dark blue because not meeting AIM accessibility standards
+.label-tds-blue,
+.label-tds-lt-blue,
+.label-tds-orange {
   background-color: $tds-dk-blue;
 }
-.label-tds-lt-blue {
-  background-color: $tds-lt-blue;
-}
-.label-tds-orange {
-  background-color: $tds-orange;
-}
+
 .label-dk-gray {
   background-color: $tds-dk-gray;
 }

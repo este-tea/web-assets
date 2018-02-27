@@ -19,6 +19,9 @@
   box-shadow: none;
   font-weight: 400;
   height: 44px;
+  color: #353535;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .channelLineupResults.parbase.section .open > .gallery-btn.dropdown-toggle:focus,
@@ -58,6 +61,24 @@
   text-decoration: none;
   color: #262626;
   background-color: #5c605d;
+}
+
+button#dropdownMenu1 {
+    background: #d9d9d9;
+}
+
+button#dropdownMenu1:hover,
+button#dropdownMenu1:active {
+    background: #0c8fd0;
+    color: white;
+}
+
+.dropdown.open button#dropdownMenu1 {
+    background: #0c8fd0;
+}
+input#channel-search {
+    font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+    font-weight: 400;
 }
 // Liz's add ons
 .tds-tv-channel-lineup button#print-button {
