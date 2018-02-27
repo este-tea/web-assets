@@ -1,0 +1,343 @@
+/* bend-buttons
+==========================================*/
+a {
+    color: #f70;
+    text-decoration: underline;
+  transition: all 0.1s ease-in-out;
+}
+
+a:focus,
+a:hover {
+  color: #000000;
+    text-decoration: none;
+}
+
+.navbutton button {
+  color: #fff;
+  background-color: #1c76b4;
+
+  &:focus,
+  &:hover {
+    background-color: #156398;
+  }
+}
+
+.gallery-btn,
+.tds-btn {
+  padding: 10px 16px 8px;
+  font-size: 14px;
+  line-height: 1.33;
+  border-radius: 2px!important;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: none!important;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+  &:after {
+    content: none;
+  }
+
+  .align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* BUTTON - Colors */
+.gallery-btn,
+.tds-btn {
+  color: #fff;
+  background-color: #f70;
+
+  &:focus,
+  &:hover {
+    background-color: #cc5f00;
+  }
+
+  &.tds-btn-lt-blue {
+    background-color: #64bfd3;
+
+    &:focus,
+    &:hover {
+      background-color: #51a7ba;
+    }
+  }
+
+  &.tds-btn-gray {
+    background-color: #808077;
+
+    &:focus,
+    &:hover {
+      background-color: #6d6d5e;
+    }
+  }
+
+  &.tds-btn-dk-gray {
+    background-color: #30302d;
+
+    &:focus,
+    &:hover {
+      background-color: #161614;
+    }
+  }
+
+  &.tds-btn-green {
+    background-color: #8dc73f;
+
+    &:focus,
+    &:hover {
+      background-color: #75a92e;
+    }
+  }
+
+  &.tds-btn-orange {
+    background-color: #f70;
+
+    &:focus,
+    &:hover {
+      background-color: #cc5f00;
+    }
+  }
+
+  &.tds-btn-transparent {
+    background-color: rgba(0, 0, 0, 0.0);
+
+    &:focus,
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+  // button border colors
+  &.border-tds-blue {
+    border-color: #1c76b4;
+  }
+
+  &.border-lt-blue {
+    border-color: #64bfd3;
+  }
+
+  &.border-lt-gray {
+    border-color: #808077;
+  }
+
+  &.border-gray {
+    border-color: #585852;
+  }
+
+  &.border-dk-gray {
+    border-color: #30302d;
+  }
+
+  &.border-green {
+    border-color: #8dc73f;
+  }
+
+  &.border-orange {
+    border-color: #f70;
+  }
+}
+
+/* BUTTON - Decoration */
+.gallery-btn .btn-next-arrow:after,
+.tds-btn .btn-next-arrow:after {
+  width: 10px;
+  height: 14px;
+  margin-top: -3px;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid white;
+  content: "";
+  position: relative;
+  top: -1px;
+  margin-left: 8px;
+}
+
+.gallery-btn .tds-icon-chevron-left:before,
+.tds-btn .tds-icon-chevron-left:before {
+  content: "";
+  width: 10px;
+  height: 21px;
+  padding: 0;
+  margin-top: -3px;
+  margin-right: 10px;
+  float: left;
+  background-image: url("/content/dam/tdstelecom/images/ui/arrows/left-arrow-white.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px 4px;
+  font-size: 14px;
+  line-height: 1.43;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.btn-xs {
+  padding: 1px 5px -1px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+
+// NAV BUTTON COMPONENT
+// ------------------
+// if multi buttons placed in parsys, will display next to each other
+.navbutton.parbase.section {
+    display: initial;
+}
+
+// center aligned configuration
+.nav-button-wrap.align-center {
+    text-align: center;
+}
+
+.navbutton .gallery-btn {
+    border-radius: 0;
+    margin-top: 0;
+}
+
+// nav button arrows
+.navbutton .gallery-btn.btn-next-arrow:after {
+    float: none;
+    margin-left: 6px;
+}
+
+.navbutton .gallery-btn.btn-next-arrow.btn-block:after {
+    float: right;
+}
+
+.navbutton .gallery-btn.btn-next-arrow {
+    padding-right: 10px;
+}
+
+@media (max-width: 400px) {
+    .navbutton .gallery-btn.btn-next-arrow:after {
+        float: right;
+    }
+}
+
+// buttons that should look like text links
+// typically used in card gallery content area
+button.text-link.details:hover, button.text-link.details:focus {
+	color: #fff;
+	background: #000;
+}
+
+.gallery-btn, .tds-btn, button, .bend-contact-links>li>a, .jump-links a, .navbar-nav a, .L1-nav>ul>li>a, .mobile-header-nav a, .pkg-comp-card a, .pkg-comp-content h3, .tds-alert a {
+	white-space: normal;
+	transition: all .1s ease-in-out;
+}
+
+
+// if button is in page banner component
+.banner-content .gallery-btn.tds-btn-transparent:hover {
+  background: #f70;
+}
+
+// MODAL BUTTONS
+#overlayPrintButton, #printButton {
+  background: #518eaa;
+  color: white;
+  padding: 8px 12px!important;
+  border-radius: 2px;
+  text-transform: uppercase;
+  &:hover, &:focus {
+    background: #387591;
+    color: white;
+  }
+  &:before {
+    content: "\e045";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 8px
+  }
+}
+
+#printButton:before {
+  padding-right: 0;
+}
+
+#authorizationModal button.btn.tds-btn-lt-blue.pull-right {
+  background: #f70;
+  color: white;
+  padding: 8px 12px!important;
+  border-radius: 2px;
+  text-transform: uppercase;
+  &:hover {
+    background: #cc5f00;
+  }
+  &:before {
+    content: "\e014";
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 8px
+  }
+}
+
+// SERVICE AREA INTERCEPT PAGE
+// ----------------------------------
+.address.section button#interceptButton {
+  float: right;
+}
+
+@media (max-width:$screen-xs-max) {
+  .address.section button#interceptButton {
+    float: none;
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+}
+
+.tds-alert button.text-link {
+  color: black;
+}
+
+.tds-alert button.text-link:hover, .tds-alert button.text-link:focus, .tds-alert.tds-alert-warning a:hover, .tds-alert.tds-alert-warning a:focus {
+  background: #555;
+  color: #fff;
+  border-radius: 2px;
+}
