@@ -1,15 +1,24 @@
 /* START tds-plus-packs
 ==========================================*/
+// plus pack piggy bank graphic
+.tds-pb-logo {
+    position: relative;
+    top: 18px;
+    text-align: center;
+}
+
 .tds-plus-packs-section .prod-summary {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.tds-plus-packs-section .tds-panel-items {
+    padding-left: 0;
+}
 .prod-items.tds-plus-packs .prod-contents {
   float: right;
   margin-bottom: 20px;
   padding: 20px;
-  width: 90%;
+  width: calc(100% - 42px);
   border: 3px solid #ccc !important;
 
   &.prod-highlight {
@@ -39,5 +48,48 @@
 .prod-contents.tds-plus-pack-contents .row .col-sm-2 {
   width: 105px;
   margin-top: 12px;
+}
+
+// disabled pre-checked item should be gray
+.prod-items input:checked:disabled + label .check-radio-btn {
+    background: #888888;
+    border-color: #888888;
+    cursor: not-allowed;
+}
+
+.tds-plus-packs-section .prod-items input[type="checkbox"] {
+  position: absolute;
+}
+
+/* IMT-236 plus back checkboxes not working in mobile */
+@media (max-width: 584px) {
+    .prod-items.tds-plus-packs .tds-panel-items {
+        padding-left: 0;
+    }
+
+    .prod-items.tds-plus-packs .prod-contents.tds-plus-pack-contents {
+        margin-left: 0;
+        margin-right: 0;
+        left: 0;
+        position: relative;
+    }
+    .prod-items.tds-plus-packs .tds-panel-items > label {
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        z-index: 2;
+    }
+    .prod-items.tds-plus-packs .tds-panel-items > label.hit-area {
+        left: 8px;
+        top: 8px;
+        height: 40px;
+        width: 40px;
+    }
+    .prod-items.tds-plus-packs .prod-contents {
+        padding: 16px 16px 16px 50px;
+    }
+    .tds-plus-packs .tds-panel-items label > .check-radio-btn {
+        margin: 10px;
+    }
 }
 /* END tds-plus-packs */
