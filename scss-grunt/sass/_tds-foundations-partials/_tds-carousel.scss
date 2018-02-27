@@ -49,9 +49,14 @@
   margin: 0 auto;
   // needed to float btn in carousel to use default margin-top value for spacing
   .gallery-btn {
-    float: left;
-    display: inline;
+    float: none;
+    display: inline-block;
+    padding-right: 16px;
     margin-top: 0;
+    &:after {
+        margin-left: 12px;
+        margin-right: 0;
+    }
   }
   @media (max-width: $screen-sm){
     padding: 8%;
@@ -71,7 +76,7 @@
       width: auto;
       &:hover {
         text-decoration: none;
-        background-color: transparent;
+        background-color: $tds-lt-blue-100;
       }
     }
   }
@@ -225,23 +230,38 @@
 @media (max-width: 584px){
   .carouselslide {
       bottom: 0px;
+      background-color: rgba(255,255,255,.75);
+      .gallery-btn {
+          padding: 10px!important;
+          width: 100%;
+      }
   }
   .carousel-indicators {
     width: 100%;
     margin-left: -50%;
   }
+
+  .carouseltitletext {
+      color: $tds-dk-blue;
+  }
+
+  .carouselbodytext>p {
+      color: $tds-dkr-gray;
+  }
 }
-// ===== Careers carousel ======================================================
+// CAREERS CAROUSEL
+// ----------------------------------------
 // Styles for careers page carousel that are different from the normal set up.
 // added to the bottom to give them priority over normal settings.
-// =============================================================================
+// ----------------------------------------
+
 // Careers page title & role text
 .carouselbodytext {
   .careers-job-title {
     text-transform: uppercase;
     color: $tds-dk-gray;
     @media (max-width: $screen-xs) {
-      color: #fff;
+      color: $tds-white;
       margin-bottom: 4px;
     }
   }
@@ -251,4 +271,56 @@
     font-size: 24px;
     color: $tds-green;
   }
+}
+
+// PROMO CAROUSEL IDEA
+// ----------------------------------------
+// add .promo-carousel class to the component
+// ----------------------------------------
+.content.container .promo-carousel  .carouselslide {
+    width: 100%;
+    margin: 0;
+    padding: 8px 36px;
+    background-color: #D9D9D9;
+}
+
+.promo-carousel .carouselbodytext {
+    display: none;
+}
+
+.promo-carousel .carouseltitletext {
+    font-size: 16px;
+    color: #0c8fd0;
+    line-height: 20px;
+    font-weight:400;
+    text-align: center;
+}
+
+.promo-carousel div#carouselcontainer-image {
+    display: none;
+}
+
+.carouselcontainer.promo-carousel #maincarousel .carousel-inner .item .content-block {
+    min-height: unset;
+    height: auto;
+}
+
+.promo-carousel div#maincarousel {
+    position: relative;
+}
+
+.promo-carousel div#carousel-controls {
+    position: absolute;
+    top: 0;
+    padding-top: 3px;
+}
+
+.promo-carousel div#control-middle,
+.promo-carousel #cc-btn-play,
+.promo-carousel #cc-btn-pause {
+    display: none;
+}
+
+.promo-carousel .carousel-btn {
+    background-color: transparent;
 }

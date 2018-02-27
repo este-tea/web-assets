@@ -1,31 +1,21 @@
-/* tds-cart-checkout
+/* _tds-cart-checkout.scss
 ==========================================*/
+.cartoverview:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+    content: " ";
+}
 .cartoverview,
 .checkoutquestions {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 990px;
 }
-@media(min-width:$screen-sm) {
-    .cartoverview,
-    .checkoutquestions {
-        width: 750px;
-    }
-}
-@media(min-width:$screen-md) {
-    .cartoverview,
-    .checkoutquestions {
-        width: 1030px;
-    }
-}
-@media(min-width:$screen-lg) {
-    .cartoverview,
-    .checkoutquestions {
-        width: 1170px;
-    }
-}
+
 .cartoverview .prod-section-wrap {
     border-color: transparent;
 }
@@ -76,10 +66,9 @@ span#openOverlay:hover {
 }
 #cartDisplay .line-item-title.panel-heading {
     padding: 0;
+    border-radius: 0;
 }
-.cartoverview.section {
-    max-width: 100%;
-}
+
 .cartoverview.section .prod-section-wrap {
     padding-top: 0;
 }
@@ -143,8 +132,6 @@ span#openOverlay:hover {
     line-height: 20px;
     margin-bottom: 32px;
 }
-
-
 
 #cartDisplay .table > tbody > tr > td {
     padding-left: 28px;
@@ -218,6 +205,21 @@ td.h4.tds-cart-price {
     }
 }
 
+h3.line-item-title.col-xs-9 {
+    width: 66.666667%;
+}
+
+.line-item-actions.col-xs-3 {
+    width: 33.333%;
+}
+
+@media only screen and (max-width:751px) {
+    h3.line-item-title.col-xs-9,
+    .line-item-actions.col-xs-3 {
+        width: 100%;
+    }
+}
+
 #cartDisplay .btn.tds-btn-gray,
 .cart-overview-actions.form-inline button.btn.tds-btn-gray {
     text-decoration: none;
@@ -237,6 +239,19 @@ td.h4.tds-cart-price {
         padding-right: 10px;
     }
 }
+
+/* catch other gray buttons*/
+/* only add icon to bundle and plus pack items*/
+#cartDisplay .bundle-lineitems .line-item-actions > form.form-group > button.tds-btn-gray:before,
+#cartDisplay .pluspack-lineitem .line-item-actions > form.form-group > button.tds-btn-gray:before {
+    content: "\e80d";
+    font-family: "fontello";
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    padding-right: 10px;
+}
+
 /*taxes and fees heading*/
 .taxes-and-fees h3.line-item-title {
     font-size: 18px;
@@ -287,7 +302,7 @@ button#printButton {
     height: 22px;
     margin: -5px 0 0 -10px;
     float: left;
-    background-image: url("/content/dam/tdstelecom/images/ui/icon_ui-cart-empty-ltblue.svg");
+    background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -335,22 +350,19 @@ td.h4.tds-cost-price {
 }
 
 // cart error styling
+
+.tds-error-description ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
 .tds-error-description li:before {
-    background: #000;
-    width: 6px;
-    height: 6px;
     margin-top: 8px;
     content: "";
     position: relative;
     top: 0;
     display: block;
-    float: left;
     margin-left: -12px;
-}
-
-.tds-error-description ul {
-    margin: 0;
-    padding-left: 24px;
 }
 
 .tds-error-description ul li:last-child {
@@ -359,6 +371,7 @@ td.h4.tds-cost-price {
 
 #cartDisplay .table > tbody > tr.hasError {
     background-color: #ffecec;
+    color: black;
 }
 
 #cartDisplay .table > tbody > tr.hasError > td:first-child {
@@ -390,6 +403,10 @@ td.h4.tds-cost-price {
     line-height: 0px;
     float: right;
 }
+/* remove padding on single line item like phone remove x button*/
+.single-order-lineitems table .tds-cart-price + td {
+    padding: 0;
+}
 
 #cartDisplay td .line-item-actions form.form-group {
     margin-bottom: 0;
@@ -409,7 +426,9 @@ td.h4.tds-cost-price {
     font-weight: 500;
     font-size: 16px;
 }
-
+#cartErrors .tds-alert ul li {
+    margin-bottom: 0;
+}
 /*make sure price lines up with product display name*/
 @media (max-width: 400px){
     #cartDisplay .table tbody .hasError td.h4.tds-cart-price {
@@ -422,3 +441,59 @@ td.h4.tds-cost-price {
          padding-left: 0;
     }
 }
+.content.container .cartoverview + .richTextComponent.parbase.section {
+    margin-top: 24px;
+}
+.content.container .checkoutquestions.section {
+    padding-left: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    max-width: 66%;
+}
+
+@media only screen and (max-width: 751px) {
+    .content.container .checkoutquestions.section {
+        padding-left: 30px;
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 583px) {
+    .content.container .checkoutquestions.section {
+        padding-left: 18px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .content.container .checkoutquestions.section {
+        padding: 0;
+    }
+}
+
+.checkoutquestions button#checkAvailability {
+    margin-bottom: 28px;
+}
+
+.checkout-container span.label-text {
+    display: inline;
+}
+
+.checkout-container span.label-text > span {
+    margin-left: 38px;
+    margin-top: 3px;
+    width: 100%;
+}
+
+//fix checkmark position on hover
+.checkoutquestions label:hover input:checked + .tds-radio-btn:before {
+    top: 3px;
+}
+
+// error summary bullets
+.checkoutquestions ul#errorList > li:before {
+    color: black;
+    margin-left: -20px;
+    margin-right: 12px;
+}
+/* _tds-cart-checkout.scss */

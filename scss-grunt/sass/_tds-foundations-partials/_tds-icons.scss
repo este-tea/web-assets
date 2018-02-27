@@ -138,6 +138,10 @@ button.gallery-btn.btn-next:after {
 .tds-icon-circle-question {
   @include tds-icon-padding-right;
 }
+.tds-icon-circle-question:before {
+    padding-right: 10px;
+    content: "\e801";
+}
 // update icon on navlogin button
 #loginButton .gallery-btn.login > .fa.fa-user {
   background-image: url(/content/dam/tdstelecom/images/ui/icon_account-white.svg);
@@ -208,7 +212,14 @@ button.gallery-btn.btn-back:after {
 }
 
 //Font Awesome Replacements
-.fa.fa-chevron-right:before {
+.fa-chevron-right:before {
     content: "\e804";
     @include fontello;
+}
+
+.fa-plus:before {
+    content: "\e808";
+    font-size: 14px;
+    top: -2px;
+    position: relative;
 }

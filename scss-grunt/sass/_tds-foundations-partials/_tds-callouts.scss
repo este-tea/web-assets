@@ -14,3 +14,43 @@
   margin: 0;
   font-size: 16px;
 }
+
+// https://tdstelecom.com/offer/internet-unbundled.html
+.tds-content-rich.sidebar-callout {
+    padding: 32px 17px 8px 17px;
+    font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+}
+
+/* STEVEN'S PROMO BLURB BOXES */
+.sc-homeboxes .tds-card {
+  border: 0;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.sc-homeboxes .tds-card-content {
+  background-color: #BDD893;
+  padding: 8px 10px;
+}
+
+.sc-homeboxes a:hover .tds-card-content {
+  background-color: #6B9C22;
+}
+.sc-homeboxes h2 {
+  line-height: 27px;
+  margin-bottom: 0 !important;
+  font-size: 16px;
+  color: #353535;
+  font-weight: 400;
+}
+.pagelayout .cardgallery .sc-homeboxes .tds-card {
+    margin-bottom: 0;
+}
+.container-fluid.promo-cards .tds-pagedivider-one-col {
+    padding-top: 0;
+    margin-bottom: -16px;
+}
+.cardgallery .tds-card-gallery-1.sc-homeboxes {
+    padding: 0 0 24px 0;
+}

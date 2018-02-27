@@ -201,7 +201,6 @@ div.myprodsservices > h3 {
 }
 // Available tv listings box
 .tds-tv-where {
-    margin: 0 13px;
     border: solid 3px #d9d9d9;
     padding: 24px;
     @media (max-width:750px) {
@@ -340,4 +339,22 @@ ul.MYA-links li {
 
 ul.MYA-links li:last-child {
     margin-bottom: 0px;
+}
+
+// styling for two column lists
+// https://tdstelecom.com/careers/internships.html
+.container-fluid.two-col-list {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.two-col-list .tds-pagedivider-two-col > .col-xs-6:first-child .parbase.richTextComponent.section,
+.two-col-list .tds-pagedivider-two-col > .col-xs-6:first-child .parbase.richTextComponent.section ul,
+.two-col-list .tds-pagedivider-two-col > .col-xs-6:last-child  .richTextComponent,
+.two-col-list .tds-pagedivider-two-col > .col-xs-6:last-child  .richTextComponent ul {
+    margin-bottom: 0;
+}
+
+.two-col-list .tds-pagedivider-two-col > .col-xs-6 {
+    padding: 0;
 }

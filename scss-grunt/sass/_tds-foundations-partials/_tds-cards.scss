@@ -35,7 +35,7 @@
         font-size: 1.5em;
     }
     // Add space at the top of text for `.responsive-image`
-    .card-content {
+    .card-content, .card_content {
         margin-top: 20px;
     }
     // align blue `ul` squares in cards to the left
@@ -44,6 +44,10 @@
         li {
             color: $tds-dk-gray;
             margin-bottom: 6px;
+            &:before {
+                margin-left: -20px;
+                margin-right: 12px;
+            }
         }
     }
     // adds padding between `.form groups` used in the same card.
@@ -138,6 +142,9 @@
     img.center-block.img-responsive.tds-card-img {
         width: 100%;
         padding-bottom: 0;
+         // fix card images on biz contact page
+        border-radius: 0;
+        max-width: none;
     }
 }
 .card-image-wrap {
@@ -227,8 +234,10 @@ h2.tds-card-heading {
 }
 // ===== Card Image ============================================================
 img.center-block.img-responsive.tds-card-img {
-    width: 9em;
-    padding-bottom: 20px;
+    border-radius: 50%;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: 175px;
 }
 .tds-card-heading + a > img,
 .tds-card-heading + img {
@@ -266,6 +275,11 @@ img.center-block.img-responsive.tds-card-img {
 }
 .card-content-wrap {
     padding: 20px !important;
+}
+
+img + .tds-card-content,
+.tds-card-content .tds-content-rich {
+    margin-top: 20px;
 }
 // ===== Card CTA ==============================================================
 .card-horiz-content .tds-card-cta .navbutton {
@@ -346,30 +360,24 @@ img.center-block.img-responsive.tds-card-img {
 // ===== Tweaks ================================================================
 
 .ch-filler {
-display: inline-block;
+    display: inline-block;
 }
 
 @media screen and (max-width: 580px) {
-.ch-filler {
-display: none;
+    .ch-filler {
+    display: none;
+    }
 }
-}
-
-.contactUsCard.parbase.section .tds-card .parbase.troubleReporting.section .tds-card.tds-card-gray {
-	background-color: #ffffff !important;
-}
-
- #ticketButton {
- margin-top: 20px;
- width:100%;
- }
 
  // 1 gig page alert cover page content in small form*/
 .parbase.productavailcta.section .tds-alert {
     clear: both;
 }
 
+// moved to _tds-trouble-reporting-form.scss
+
 //HYDRA-2183 Styling: Referral Page spacing and alignment issues
 .parbase.referralProgram.section .tds-single-card .gallery-grid li {
  padding:0;
 }
+/* END tds-cards.scss */

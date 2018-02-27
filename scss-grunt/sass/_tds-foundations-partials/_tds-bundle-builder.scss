@@ -1,55 +1,54 @@
 /* tds-bundle-builder
 ==========================================*/
-// this is used in the shop section
-// TODO see if they're still needed
-#bundleMessages {
-  display: none;
-}
+// this css is used by the bundlebuilder in the tdstelecom shop section
+// tds cable uses the package builder css for the most part with this
+// as a base
 
-.bundle-success {
-  background-color: #90ee90;
-  border: 2px solid #008000;
-  color: #006400;
-}
-
-.tds-select-btn ul {
-  top: 2.3em;
-}
-
+// AEM AUTHOR STUFF
 .ext-gecko #CQ .x-form-text,
 .ext-ie8 #CQ .x-form-text {
   min-height: 22px;
   min-width: 300px;
 }
 
-#one-time-costs,
-#one-time-credits {
+// DIVIDERS AND HORIZONTAL RULES
+.prod-contents hr {
+  border: solid 1px $tds-blue-40;
+}
+
+.bundle-error hr {
+  border-top-color: $tds-red;
+}
+
+.row.tds-divider {
+  padding-top: 16px;
+  padding-bottom: 36px;
+  border-bottom: 2px solid $tds-lt-gray;
+}
+
+.row.tds-divider.last {
+  padding-top: 36px;
+  border-color: transparent;
+}
+
+.row.tds-divider h3 {
+  color: $tds-lt-blue-80;
+}
+
+.row.tds-divider h2 {
+  color: $tds-blue-100;
+}
+
+// ALERTS AND MESSAGES
+#bundleMessages {
   display: none;
 }
 
-.tab-contents {
-  /*border: 1px solid black;*/
-}
-/* END taken from bundlecontainer.css */
-// note from liz: these aren't actually page banners,
-// just the content that goes under the page banner on
-// the bundle picker pages
-
-.bundleSubheader h3 {
-  font-family: $tds-font-family;
-  font-weight: normal;
-  font-size: 2.25em;
-  line-height: 1.1em;
-  color: $tds-dk-blue;
+.bundle_container #bundleMessages ~ div > h2 {
+  text-transform: uppercase;
 }
 
-.bundle_container .tds-page-banner {
-  max-width: 960px;
-
-  &.tds-sub-banner {
-    border-bottom: 2px solid $tds-dk-blue; // border just for sub-banners
-  }
-}
+//moved to _tds-errors-alerts.scss
 
 .bundle-error {
   padding: 15px;
@@ -144,20 +143,11 @@
   margin-right: 10px;
 }
 
-.bundle-error hr {
-  border-top-color: $tds-red;
-}
-
 .bundle-error .alert-link {
   color: $tds-red;
 }
 
-.tds-pb-logo {
-  position: relative;
-  top: 18px;
-  text-align: center;
-}
-/*replace icon with correct one and make styling match tds-alert-critical*/
+//replace icon with correct one and make styling match tds-alert-critical
 .bundle-error {
   background-image: url("/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg");
   background-size: 20px 20px;
@@ -176,10 +166,68 @@
 .bundle-error:before {
   content: none;
 }
+
+// Product callout messages design
+.prod-callout {
+  //@extend .tds-error-msg;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  //@extend .tds-error-info;
+  background-color: #E8EBF3;
+  border-color: #d1dae7;
+  color: #353535;
+  @include make-sm-column-offset(1);
+  @include make-xs-column-offset(0);
+  @include make-sm-column(7);
+  @include make-xs-column(12);
+}
+
+//dropdown menu/select button
+.tds-select-btn ul {
+  top: 2.3em;
+}
+
+#one-time-costs,
+#one-time-credits {
+  display: none;
+}
+
+// CLEAN UP/remove old css
+
+// BUNDLE BUILDER INTRO
+//----------------------
+// note from liz: these aren't actually page banners,
+// just the content that goes under the page banner on
+// the bundle picker pages
+
+.bundleSubheader h3 {
+  font-family: $tds-font-family;
+  font-weight: normal;
+  font-size: 2.25em;
+  line-height: 1.1em;
+  color: $tds-dk-blue;
+}
+
+// moved to alerts and messages section
+
+.bundle_container .tds-page-banner {
+  max-width: 960px;
+
+  &.tds-sub-banner {
+    border-bottom: 2px solid $tds-dk-blue; // border just for sub-banners
+  }
+}
+
+// deleted .tds-pb-logo cuz not being used in html anywhere
+
 //moved to page-layout.scss
 //moved to grid.scss
 //moved to type.scss
 
+// TABS / SECTION
+//------------------
 .bundle_container ul.ui-tabs-nav {
   max-width: 100%;
   margin: 0 auto;
@@ -209,6 +257,7 @@
   text-transform: uppercase;
 }
 
+// jquery ui overrides
 .ui-state-default {
   opacity: 0.5;
   filter:alpha(opacity=50);
@@ -282,85 +331,17 @@ a#extra-tab {
   border: 0 transparent!important;
 }
 
-.top-header .dropdown-menu {
-  min-width: 1px;
-}
+// not being used in html markup anywhere
 
-.top-header img.down-caret-open-sm,
-.top-header img.down-caret-sm,
-.top-header img.right-caret-open-sm,
-.top-header img.right-caret-sm {
-  height: 12px;
-  width: 12px;
-}
-
-.top-header img.right-caret-open-sm,
-.top-header img.right-caret-sm {
-  top: 0;
-}
-
-.top-header .dropdown-menu.sub-menu {
-  background: $tds-dk-gray;
-}
-
-.top-header .dropdown-menu.sub-menu li a {
-  padding-right: 40px !important;
-}
-
-.top-header .dropdown-menu.sub-menu li a:hover {
-  background-color: $tds-dkr-gray;
-}
-
-.top-header .dropdown-menu.sub-menu li a:after {
-  @include fontello;
-  transform: translate(0,0);
-  font-size: 17px;
-}
-
-.top-header .dropdown-menu.sub-menu li a:after.pull-left {
-  margin-right: 0.3em;
-}
-
-.top-header .dropdown-menu.sub-menu li a:after.pull-right {
-  margin-left: 0.3em;
-}
-
-.top-header .dropdown-menu.sub-menu li a:hover:after {
-  content: "\e821";
-  position: absolute;
-  right: 15px;
-}
-
-.tds-user-nav li a,
-.top-header .nav > li > a {
-  font-family: 'Neue Helvetica W01';
-}
-
-.tds-user-nav li {
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-img.down-caret-green-lg {
-  background-position: -115px -101px;
-}
-
-.nav-bar .nav-tabs a {
-  color: $tds-blue-100;
-}
-
-.nav-bar .menu > ul ul.dropdown {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.site-navigation .nav > li > a:focus,
-.site-navigation .nav > li > a:hover {
-  background-color: $tds-dkr-gray;
-}
-
-.site-navigation ul {
-  font-family: 'ITC Avant Garde Gothic W01';
+// GENERAL LAYOUT AND TEXT FORMATTING
+// IN THE FORM SECTION OF THE COMPONENT
+//-------------------------------------
+#bundle-products {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+  border-radius: 0;
+  border: 0 solid transparent;
 }
 
 .bundle_container h2 {
@@ -370,18 +351,7 @@ img.down-caret-green-lg {
   font-weight: 300;
 }
 
-.bundle_container #bundleMessages ~ div > h2 {
-  text-transform: uppercase;
-}
-
-#bundle-products {
-  margin-left: -15px;
-  margin-right: -15px;
-  overflow: hidden;
-  border-radius: 0;
-  border: 0 solid transparent;
-}
-
+// EACH PRODUCT SECTION IN A CATEGORY, FOR EXAMPLE INTERNET SPEEDS, TV PACKAGES, TV EQUIPMENT OPTIONS
 .prod-section-wrap {
   position: relative;
   float: left;
@@ -392,6 +362,7 @@ img.down-caret-green-lg {
   border-bottom: 2px solid $tds-lt-gray;
 }
 
+// THE HEADING AND DESCRIPTION FOR THE PRODUCT SECTION
 .prod-summary {
   float: left;
   width: 100%;
@@ -406,7 +377,6 @@ img.down-caret-green-lg {
     width: 33.33333333%;
   }
 }
-
 .prod-summary .prod-title {
   font-family: inherit;
   font-weight: 500;
@@ -435,11 +405,7 @@ img.down-caret-green-lg {
   font-size: 75%;
 }
 
-.tds-error-msg.tds-plus-pricing {
-  padding: 30px 0;
-  text-align: center;
-}
-
+// EACH INDIVIDUAL PRODUCT ITEM, FOR EX. 1 GIG FIBER, TURBO INTERNET, CINEMAX
 .prod-items {
   float: left;
   width: 100%;
@@ -453,9 +419,7 @@ img.down-caret-green-lg {
     width: 66.66666667%;
   }
 }
-#internet-tab-contents .prod-contents.prod-readonly.prod-autoadd.prod-highlight {
-    margin-top: -18px;
-}
+
 .prod-contents .prod-name {
   font-family: inherit;
   font-weight: 500;
@@ -534,10 +498,7 @@ img.down-caret-green-lg {
   border-left-color: transparent!important;
 }
 
-.prod-contents hr {
-  border: solid 1px $tds-blue-40;
-}
-
+// CTA BUTTONS AT BOTTOM OF FORM
 .bottom-buttons {
   position: relative;
   float: left;
@@ -547,6 +508,7 @@ img.down-caret-green-lg {
   min-height: 1px;
 }
 
+// SUBTOTAL AKA SELECTION SUMMARY BELOW CTA BUTTONS
 .campaign-subtotal {
   position: relative;
   float: left;
@@ -560,34 +522,11 @@ img.down-caret-green-lg {
   border-bottom: 3px solid $tds-lt-blue-80;
 }
 
-.row.tds-divider {
-  padding-top: 16px;
-  padding-bottom: 36px;
-  border-bottom: 2px solid $tds-lt-gray;
-}
-
-.row.tds-divider.last {
-  padding-top: 36px;
-  border-color: transparent;
-}
-
-.row.tds-divider h3 {
-  color: $tds-lt-blue-80;
-}
-
-.row.tds-divider h2 {
-  color: $tds-blue-100;
-}
-
-div#usernameError {
-  margin-top: 20px;
-}
-
 .prod-items label {
   float: left;
   cursor: pointer;
 }
-
+//selection summary in the cost overview/subtotal section
 .sel-summary .summ-header-text {
   font-family: inherit;
   font-weight: 500;
@@ -620,7 +559,7 @@ div#usernameError {
 .summ-column {
   text-align: center;
 }
-
+// one-time costs/credits under selection summary
 .sel-head-text {
   font-family: inherit;
   font-weight: 500;
@@ -825,8 +764,7 @@ h3.tds-price {
     z-index: 2;
   }
 
-  .prod-items > .prod-contents,
-  .prod-items.tds-plus-packs .prod-contents {
+  .prod-items > .prod-contents {
     padding: 20px 20px 20px 50px;
     width: 100%;
     margin-left: -20px;
@@ -983,7 +921,7 @@ p.price-text.price-override {
 }
 
 .prod-items input[type="checkbox"] {
-  position: absolute;
+  //position: absolute;
 }
 /*---IMT-46 bundle builder select services tabs---*/
 .bundle_container ul.ui-tabs-nav li:after {
@@ -1201,3 +1139,127 @@ a#tv-tab:hover {
   font-family: 'ITC Avant Garde Gothic W01',Century Gothic,sans-serif;
   font-size: 14px;
 }
+
+//CWS-805 merge DAM css
+
+// required equipment wireless modem section
+.bundle_container #internet-tab-contents .prod-contents.prod-readonly.prod-autoadd.prod-highlight {
+    margin-top: 0px;
+}
+// required equipment wireless modem price
+.bundle_container #internet-tab-contents .prod-contents.prod-readonly.prod-autoadd.prod-highlight .price-text {
+    margin-bottom: 0px;
+}
+
+.bundle_container .sel-summary .summ-header-text {
+    float: left;
+}
+
+.bundle_container .btn-left > .gallery-btn, .btn-right
+ > .gallery-btn {
+    margin-top: 12px;
+}
+.bundle_container .prod-contents .price-text {
+    margin-bottom: 0;
+}
+
+.bundle_container .prod-subitems .prod-subitem input[type="radio"],
+.bundle_container .prod-subitems .prod-subitem label input[type="radio"] {
+    position: absolute;
+}
+
+.bundle_container .prod-subitem > .prod-contents > .prod-name {
+    line-height: 1.25;
+}
+.bundle_container .prod-section-wrap .prod-contents > .tds-select-btn > .btn {
+    border: solid 2px #d9d9d9;
+}.bundle_container .prod-section-wrap .prod-contents > .tds-select-btn > .btn {
+    border: solid 2px #19388a;
+}
+.bundle_container .prod-section-wrap .prod-contents > .tds-select-btn > .btn.disabled {
+    border-color: #999;
+    background-color: #ddd
+}
+.bundle_container .prod-section-wrap .prod-contents > .tds-select-btn > .btn .caret {
+    color: #0c8fd0;
+    margin-left: 10px
+}
+.bundle_container .prod-section-wrap .prod-contents > .tds-select-btn > .btn.disabled .caret {
+    color: #555;
+}
+.bundle_container .tds-select-btn .dropdown-menu {
+    border: none;
+    border-radius: 0px;
+    background-color: #353535;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+    color: white;
+    top: 36px;
+    margin-top: 0;
+    padding: 0;
+}
+.bundle_container .prod-items>.prod-contents {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.bundle_container .prod-section-wrap > .prod-items > label {
+    margin-top: 18px;
+}
+.bundle_container .prod-items>.prod-contents {
+    width: calc(100% - 40px);
+}
+@media (max-width: 584px) {
+    .bundle_container .prod-items>.prod-contents {
+        width: 100%;
+    }
+}
+.bundle_container .tds-page-banner.col-sm-12 {
+    padding: 0;
+}
+.bundle_container .prod-section-wrap .prod-contents > .tds-select-btn.open > .btn {
+    background: #0c8fd0;
+    color: white;
+    box-shadow: none;
+}
+
+.bundle_container .prod-section-wrap .prod-contents > .tds-select-btn.open > .btn > .caret {
+    color: white;
+}
+
+.bundle_container .tds-select-btn > .dropdown-menu > li > a {
+    color: white!important;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bundle_container .tds-select-btn > .dropdown-menu > li > a:hover {
+    background-color: #777777;
+}
+
+.bundle_container .prod-items input[type="checkbox"][readonly] + label > .check-radio-btn {
+    background: #888888;
+    border-color: #888888;
+}
+
+/* funky checkbox styling */
+.bundle_container .prod-items .prod-subitem input[type="checkbox"] {
+    float: left;
+}
+
+.bundle_container .prod-items>.prod-contents {
+    margin-bottom: 20px;
+}
+
+.bundle_container .prod-section-wrap > .prod-items:last-child >.prod-contents {
+    margin-bottom: 28px;
+}
+
+@media (max-width:583px) {
+    .bundle_container .prod-items>.prod-contents {
+        margin-bottom: 0px;
+    }
+}
+
+/* END tds-bundle-builder.scss */

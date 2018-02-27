@@ -1,15 +1,12 @@
-/* tds-layout
+/* tds-layout.scss
 ==========================================*/
-// max width for site
-.container,
-.tds-width-container {
-  //@extend .container;
-  @include container-fixed;
-  width: 100%;
-  max-width: $screen-lg;
-}
+// use this for generic site wide layout classes
+// (clearfix, containers, wraps, etc.)
+// to modify the page layout, page divider COMPONENT css,
+// use the tds-page-layout-division.scss file
 
-// use this to address layout issues fixes that are sitewide
+// CLEARFIX TO CLEAR FLOATS AND MISCELL LAYOUT ISSUES
+// ----------------------------------------
 .tds-clearfix, .clearfix {
   &:before, &:after {
     display: table;
@@ -31,6 +28,28 @@
 *:first-child+html .tds-clearfix {
     zoom: 1;
 }
+// layout and positioning
+.clearboth {
+    clear: both;
+}
+
+// CONTAINERS AND WRAPS
+// ----------------------------------------
+// max width for site
+.container,
+.tds-width-container {
+  //@extend .container;
+  @include container-fixed;
+  width: 100%;
+  max-width: $screen-lg;
+}
+
+.container-fluid > .row {
+    margin-bottom: 0 !important;
+}
+
+// TDSTELECOM PAGE CONTENT PARSYS
+// named via AEM template
 .page_content {
     min-height: 300px;
     float: left;
@@ -38,6 +57,7 @@
     margin-bottom: 40px;
     width: 100%;
 }
+
 .container-fluid > .row {
     margin-bottom: 0 !important;
 }
@@ -62,33 +82,69 @@
 .text.parbase.section p {
     clear: both;
 }
-.content.container .page_content .parbase.pagedivision.section {
-    padding-left: 15px;
-    padding-right: 15px;
+.top-margin-28 {
+  margin-top: -28px;
 }
-.content.container .page_content #page-banner > .container {
-    padding: 0;
+
+// remove left and right padding
+.no-lr-padding {
+    padding-left: 0!important;
+    padding-right: 0!important;
 }
+
+// remove top and bottom padding
+.no-tb-padding {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+// remove left and right margins
+.no-lr-margins {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+// remove top and bottom padding
+.no-tb-margins {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+
 //removes padding so that color blocks span full width of page
 .container-fluid.tds-body-content {
     padding-left: 0;
     padding-right: 0;
 }
+
+// PAGE LAYOUT COMPONENT
 .pagelayout.parbase.section {
     clear: both;
 }
 .pagelayout .parbase.richTextComponent.section {
     margin-bottom: 24px;
 }
+// add space if rich text component added to tdstelecom page
+.page_content > .richTextComponent.parbase.section {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .content.container .row .content .page_content .pagelayout > .container-fluid > .row {
     margin: 0;
+}
+
+// MISCELLANEOUS MODIFICATIONS
+.top-margin-28 {
+  margin-top: -28px;
 }
 
 //product user guides component
 .parbase.productUserGuides.section .col-sm-8 {
     margin-bottom: 36px;
 }
-// ===== Page Content Padding ==================================================
+
+// tdstelecom ONLY Page Content Padding
+// ----------------------------------------
 // page banner and content padding that changes based on screen size
 // found in content - container and content - rich text component
 .tds-richtext-padboth {
@@ -117,40 +173,10 @@
         padding-right: 0;
     }
 }
-// ===== Page Layout Padding ===================================================
-// adds top or bottom padding depending on whether content needs it or not
-.pagelayout .top-bottom-pad {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.pagelayout .top-pad {
-    padding-top: 32px;
-}
-.pagelayout .bottom-pad {
-    padding-bottom: 32px;
-}
-// increase page width site wide*/
-.container,
-.tds-width-container {
-    max-width: $screen-lg;
-}
-/*fix layout for terms page*/
-.page_content .tds-pagedivider-four-col,
-.page_content .tds-pagedivider-one-col,
-.page_content .tds-pagedivider-three-col,
-.page_content .tds-pagedivider-two-col {
-    padding-top: 0;
-    margin: 0;
-}
-@media (max-width:$screen-xxs-max) {
-    .tds-page-banner {
-        margin-bottom: 10px;
-    }
-}
-// add styling to home page title block
+
+// add styling to home page title block under the carousel
+// ----------------------------------------
 .container-fluid.tds-block-lt-blue.home-title {
-    margin-left: 15px;
-    margin-right: 15px;
     margin-top: 32px;
     padding: 0 48px;
 }
@@ -173,10 +199,65 @@
         line-height: 24px;
     }
 }
-.tds-plus-packs-section .prod-summary {
+
+// AEM OUT OF THE BOX TEXT COMPONENT
+// ----------------------------------------
+.text.parbase.section {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
+    p {
+        clear: both;
+    }
 }
-.top-margin-28 {
-  margin-top: -28px;
+// T.R. SET THEM UP THIS WAY FOR PRODUCT DETAIL PAGES
+// TODO REPLACE WITH THE CONTENT - RICH TEXT COMPONENT
+@media(min-width: $screen-sm-min) {
+    .text.parbase.section {
+        float: left;
+        width: 66.66666667%;
+    }
 }
+
+/* /shop/internet-services/high-speed-internet-plans.html */
+.content.container .tds-pagedivider-one-col .cardgallery.parbase.section {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* /about/company-information/executive-biographies/vicki-villacrez.html */
+.content.container .page_content .tds-richtext-padboth .parsys .parbase.pagedivision.section {
+    /*padding: 0 15px;*/
+}
+.content.container .pagedivision .tds-pagedivider-one-col {
+    margin: 0 15px;
+}
+
+/* /about/company-information/employee-resource-group.html */
+.content.container .page_content > .cardgallery.parbase.section {
+    padding: 0 15px;
+}
+
+/* /about/company-information/community-involvement.html */
+.content.container .parsys-sidebar .cardgallery .tds-card-gallery-1 {
+    padding: 0;
+}
+
+.carouselcontainer.no-content {
+    padding: 0;
+}
+
+.content.container .tds-pagedivider-one-col .tds-pagedivider-one-col .cardgallery.parbase.section {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+//tweaks for data usage page when a page layout is within a content container
+.contentcontainer.parbase.section .pagedivision.parbase.section {
+    padding: 0 15px;
+    margin: 0 15px;
+}
+/* END tds-layout.scss */

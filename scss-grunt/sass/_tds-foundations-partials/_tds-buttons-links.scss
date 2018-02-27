@@ -1,10 +1,9 @@
 /* tds-buttons
 ==========================================*/
-// if multi buttons placed in parsys, will display next to each other
-.navbutton.parbase.section {
-    display: initial;
+.btn { box-shadow: $box-shadow; }
+.btn.btn-link {
+    box-shadow: none;
 }
-
 // Main TDS button
 // ------------------
 .gallery-btn, .tds-btn {
@@ -18,6 +17,7 @@
   line-height: 21px;
   text-align: left;
   border: solid 1px transparent;
+  border-radius: 0!important;
   box-shadow: $box-shadow;
   text-decoration: none !important;
   a:link, a:visited, &:hover, &:active, &:focus {
@@ -109,8 +109,9 @@ button#addtocart {
 // gray button, blue text
 // =============================================================================
 .tds-btn-gray {
-  color: $tds-lt-blue;
-  background: $tds-ltr-gray;
+  // gray buttons contrast doesn't meet AIM standards
+  color: $tds-white;
+  background: $tds-dk-blue;
   &:hover, &:focus, &:active {
     background: $tds-lt-blue ;
     color: $tds-white ;
@@ -438,4 +439,68 @@ button.read-more {
     background: url(/content/dam/tdstelecom/images/ui/icon_minus-tdsblue.svg) right 5px no-repeat;
     background-size: 7px 10px;
     padding-right: 12px;
+}
+
+// NAV BUTTON COMPONENT
+// ------------------
+// if multi buttons placed in parsys, will display next to each other
+.navbutton.parbase.section {
+    display: initial;
+}
+
+.nav-button-wrap.align-center {
+    text-align: center;
+}
+
+.navbutton .gallery-btn {
+    border-radius: 0;
+    margin-top: 0;
+}
+
+// nav button arrows
+.navbutton .gallery-btn.btn-next-arrow:after {
+    float: none;
+    margin-left: 6px;
+}
+
+.navbutton .gallery-btn.btn-next-arrow.btn-block:after {
+    float: right;
+}
+
+.navbutton .gallery-btn.btn-next-arrow {
+    padding-right: 30px;
+}
+
+@media (max-width: 400px) {
+    .navbutton .gallery-btn.btn-next-arrow:after {
+        float: right;
+    }
+}
+
+// Social buttons on news page
+// https://tdstelecom.com/about/news.html
+.card-social .navbutton .gallery-btn>img {
+    width: 20px;
+    height: 20px;
+    background: #0c8fd0;
+    border-radius: 50%;
+}
+
+.card-social .navbutton .gallery-btn:hover>img,
+.card-social .navbutton .gallery-btn:focus>img {
+    background: #19388a;
+}
+
+
+// when nav button component is placed right after a rich text component
+.parbase.contentcontainer.section .parbase.richTextComponent.section+.navbutton.parbase.section {
+    display: block;
+    margin-top: 20px!important;
+}
+
+//fix contact form arrow
+.nonRepairButton .gallery-btn.btn-next-arrow:after {
+    float: none;
+    display: inline-block;
+    margin-left: 8px;
 }

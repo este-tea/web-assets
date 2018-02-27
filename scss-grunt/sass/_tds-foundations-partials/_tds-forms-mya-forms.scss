@@ -1,5 +1,11 @@
 /* tds-forms-mya-content-addresses.scss
 ==========================================*/
+
+.parbase.manageusers.section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 // MYA Account information text and label set up
 .mya-content-addresses .form-horizontal .form-group {
   margin-left: 0;
@@ -64,20 +70,9 @@ p.form-control-static {
   background-repeat: no-repeat;
   background-size: 15px;
 }
-// ticket status for lable font change. Not enough room
-form#searchTicketForm .control-label {
-  font-size: 10px;
-}
-// This fixes the fact that someone keeps rolling back the input form markup.
-form#searchTicketForm .tds-form-group input {
-  width: 100%;
-  height: 40px;
-}
-// help-block text
-#users-search.tds-card p.help-block {
-  margin-bottom: 0;
-}
 
+// MYA ADD or EDIT USERS
+// ----------------------------------------
 // https://tdstelecom.com/my-account/manage-users/edit-users.html
 // make row bg transparent instead of white when in colored block
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
@@ -100,6 +95,7 @@ button#changeSecQuestions {
 }
 
 // MYA Add User
+// ----------------------------------------
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     background-color: transparent;
 }
@@ -109,4 +105,26 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 }
 #nameRecommendation > .radio:last-child {
     margin-bottom: 0;
+}
+
+// MYA MY PRODUCTS/SERVICES SECTION
+.tds-card .myprodsservices ul.list-unstyled+h3+ul>li:before {
+    margin-left: -20px;
+    margin-right: 14px;
+}
+
+//HYDRA-2185 fix checkmark hover//
+.parbase.myaadduser.section label:hover input:checked + .tds-radio-btn:before {
+    //top: inherit;
+    left: inherit;
+}
+
+.myaadduser label:hover .tds-radio-btn:before {
+    top: unset!important;
+    left: unset!important;
+}
+
+.myaadduser label:hover input:checked + .tds-radio-btn:before {
+    top: unset!important;
+    left: unset!important;
 }

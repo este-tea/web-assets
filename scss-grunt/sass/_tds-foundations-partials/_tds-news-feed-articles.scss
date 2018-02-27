@@ -41,11 +41,8 @@
     background-size: 75px;
 }
 // oneneck
-.news-feed-logo-oneneck,
-.tds-article-logo-oneneck {
-    background: url("/content/dam/tdstelecom/images/logos/oneneck-logo.svg") center center no-repeat;
-    background-size: 75px;
-}
+// remove oneneck logo image from news articles
+
 .tds-news-feed-disclaimer .tds-article-logos {
     padding: 20px;
 }
@@ -255,8 +252,15 @@ section.share a {
 .articleSummaries.parbase.section {
     overflow: hidden;
 }
+.tds-pagedivider-one-col .rssFeedReader.parbase.section {
+    margin: 0 15px;
+}
 .rssFeedReader.parbase.section {
     overflow: hidden;
+}
+.rssFeedReader + .parbase.section.newsSearchBar {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .tds-pagedivider-one-col > .parsys-content > .rssFeedReader > .tds-news-feed-group {
     margin-top: 0;
@@ -280,7 +284,17 @@ section.share a {
 .tds-news-feed-parsys {
  margin:0 0 42px 42px;
  }
+ @media (max-width: 750px) {
+     .tds-news-feed-parsys {
+         margin: 0 0 42px 30px;
+     }
+ }
 
+ @media (max-width: 584px) {
+     .tds-news-feed-parsys {
+         margin: 0 0 42px 0px;
+     }
+ }
  .feed-image {
     display: table-cell;
 }

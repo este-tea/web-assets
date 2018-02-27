@@ -3,14 +3,16 @@
 .tds-pull-quote {
   //@extend blockquote;
   letter-spacing: -1px;
+
   > :last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
   border-left: 3px solid $tds-blue-100;
   font-size: 24px;
   color: $tds-lt-blue-100;
   padding: 20px 24px;
   margin-top: 12px;
+
   p {
     font-size: 24px;
     line-height: 1.5em;
@@ -18,29 +20,30 @@
     color: #0c8fd0;
     font-weight: 300;
   }
+
   i {
     font-style: normal;
     font-weight: 500;
     color: $tds-blue-100;
   }
+
   b {
     font-weight: 500;
   }
 }
 @media (max-width: 400px) {
-    .tds-pull-quote p {
-        font-size: 20px;
-    }
-
+  .tds-pull-quote p {
+    font-size: 20px;
+  }
 }
 @media (max-width: $screen-sm-min) {
   .tds-pull-quote {
     margin-top: 40px;
   }
 }
-
 // pull quote in about section
 // -----
+
 .pagelayout.parbase.section .pull-quote {
   padding: 0;
 }
@@ -64,8 +67,16 @@
 }
 
 .pagelayout .pull-quote .img-responsive {
-  max-width: 250px;
+  max-width: 175px;
   width: 100%;
+}
+
+.container-fluid.tds-block-lt-gray.pull-quote .tds-pagedivider-two-col {
+  padding-top: 28px;
+}
+
+.pull-quote .tds-pagedivider-two-col .col-sm-8 {
+  margin-bottom: 28px;
 }
 @media (max-width: 751px) {
   .pagelayout .pull-quote .parsys.parsys-sidebar {
@@ -81,4 +92,8 @@
   .pagelayout > .pull-quote .tds-pagedivider-two-col .col-sm-8 {
     padding: 0;
   }
+}
+
+.pagelayout > .pull-quote .tds-pull-quote p {
+  line-height: 1.75em;
 }

@@ -62,8 +62,30 @@ div.copyright-logo {
 .img-rounded {
     border-radius: 50%;
 }
-
+// about company profile page
+.img-rounded.lt-blue-border {
+    border: solid 3px #0c8fd0;
+    max-width: 200px;
+    margin-bottom: 28px;
+}
+.img-responsive.lt-blue-border-left {
+    border-left: solid 6px #0c8fd0;
+}
 // make sure images aren't cropped in product galleries
 .gallery-img.product_picture {
     background-size: contain;
+}
+
+.img-padleft {
+    margin-left: 40px;
+}
+@media (max-width: 751px) {
+    .img-padleft {
+        margin-left: 28px;
+    }
+}
+@media (max-width: 582px) {
+    .img-padleft {
+        margin-left: 0px;
+    }
 }

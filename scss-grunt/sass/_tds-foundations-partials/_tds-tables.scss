@@ -157,6 +157,19 @@ table.table tbody>tr:last-child>td {
     #usersTable.table.dataTable.no-footer {
         border-bottom: none;
     }
+    #usersTable>tbody>tr>td:first-child:before {
+        font-size: 16px;
+    }
+
+    #usersTable.table tbody>tr>td:first-child {
+        border-top: none!important;
+    }
+    #usersTable.table tbody>tr:first-child>td {
+        border-top: 2px solid #ddd!important;
+    }
+    #usersTable.table tbody>tr:first-child>td:first-child {
+        border-top: none!important;
+    }
 }
 
 // Ridiculous overrides for generated tables that add their own styles.

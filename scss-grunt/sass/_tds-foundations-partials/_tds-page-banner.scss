@@ -3,8 +3,16 @@
 .tds-page-banner {
   margin-bottom: 30px;
 }
+@media (max-width:$screen-xxs-max) {
+    .tds-page-banner {
+        margin-bottom: 10px;
+    }
+}
 .tds-page-banner .container {
     padding: 0;
+}
+.tds-page-banner.col-sm-12.noDisplay {
+  display: none;
 }
 //Banner Typography
 //-----------------
@@ -97,7 +105,9 @@ ul.banner-ul li li {
   z-index: 0;
   background-color: white;
 }
-
+.content.container .page_content #page-banner > .container {
+    padding: 0;
+}
 // make padding change based on screen size
 .banner-content {
     padding: $tds-padding-lg;
