@@ -1,0 +1,41 @@
+/* _tds-collapsible-content-container.scss
+==========================================*/
+.pagelayout .collapsibleContentContainer .visible-parsys > div:last-child {
+    margin-bottom: 18px;
+}
+// BUTTON
+.collapsibleContentContainer button.btn.btn-info {
+    background: #0c8fd0;
+    border-color: transparent;
+    font-family: "ITC Avant Garde Gothic W01","Century Gothic",Arial;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 8px 12px;
+    box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.5);
+}
+
+.collapsibleContentContainer button.btn.btn-info:after {
+    display: inline-block;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 12px;
+    line-height: 21px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 8px;
+    position: relative;
+    top: -1px;
+}
+.collapsibleContentContainer button.btn.btn-info.collapsed:after {
+    content: "\e808";
+}
+
+.collapsibleContentContainer button.btn.btn-info:hover, .collapsibleContentContainer button.btn.btn-info:focus {
+    background: #19388a;
+    box-shadow: none;
+}
+
+/* _tds-collapsible-content-container.scss */
