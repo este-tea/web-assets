@@ -1,0 +1,86 @@
+/* bend-support.scss
+==========================================*/
+
+.bendbroadband-content .subcategoryId p.lead {
+  margin-bottom: 0;
+}
+
+.bendbroadband-content .helpsupportcategory .tds-menu-group ul {
+  margin: 16px 0 16px 36px;
+}
+
+.bendbroadband-content .helpsupportcategory .tds-menu-group ul li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.bendbroadband-content .helpsupportcategory .tds-menu-group ul li:before {
+  background: #000000;
+}
+
+.bendsupport-needhelp > h2 {
+  display: inline;
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+}
+
+.bendsupport-needhelp {
+  background: #585858;
+  padding: 12px;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.bendsupport-needhelp button .link-display-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bendsupport-needhelp b a {
+  color: #f70;
+  text-decoration: underline;
+}
+
+.bendsupport-needhelp b a span {
+  color: white;
+}
+
+.bendsupport-needhelp b a:hover {
+  text-decoration: none;
+}
+
+/* support category page */
+/*========================*/
+.helpsupportcategory .btn.btn-link {
+  border: solid 1px #999;
+  border-radius: 3px;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.helpsupportcategory .btn.btn-link:focus,
+.helpsupportcategory .btn.btn-link:hover {
+  border: solid 1px #999;
+  border-radius: 3px;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.helpsupportcategory .btn-link:focus,
+.helpsupportcategory .btn-link:hover {
+  color: white;
+  background-color: #585858;
+}
+
+.helpsupportcategory.parbase.section {
+  margin-bottom: 40px;
+}
+/* END bend-support.scss */
