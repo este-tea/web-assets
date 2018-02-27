@@ -102,19 +102,6 @@ input:checked+.tds-radio-btn {
   border: 3px solid $tds-green-80;
 }
 
-input:checked+.tds-radio-btn:before {
-  content: "";
-  position: absolute;
-  margin: 5px 3px;
-  height: 0.7rem;
-  width: 1.2rem;
-  background: transparent;
-  border: 3px solid #fff;
-  border-top-style: none!important;
-  border-right-style: none!important;
-  border-radius: 0;
-  transform: rotate(-45deg);
-}
 //grays out disabled fields
 
 input:disabled + .tds-radio-btn {

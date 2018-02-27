@@ -178,3 +178,12 @@
     }
   }
 }
+
+label:hover input:checked+.tds-radio-btn {
+    background: #25acf0;
+    border-color: #25acf0;
+}
+.checkbox input[type=checkbox]:checked+.tds-radio-btn+.label-text,
+.radio input[type=radio]:checked+.tds-radio-btn+.label-text {
+    font-weight: 700;
+}

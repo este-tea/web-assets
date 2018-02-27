@@ -15,8 +15,8 @@
 
 // forms
 @import "_tds-foundations-partials/_tds-forms";
-@import "_tds-foundations-partials/_tds-radio-buttons";
-@import "_tds-foundations-partials/_tds-checkboxes";
+@import "_tds-foundations-partials/_tds-forms-radio-buttons";
+@import "_tds-foundations-partials/_tds-forms-checkboxes";
 
 // tables
 @import "_tds-foundations-partials/_tds-tables";
@@ -90,6 +90,7 @@
 @import "_tds-foundations-partials/_tds-styled-bullet-headings";
 @import "_tds-foundations-partials/_tds-collapsible-list-component";
 @import "_tds-foundations-partials/_tds-collapsible-archive-component";
+@import "_tds-foundations-partials/_tds-collapsible-content-container";
 @import "_tds-foundations-partials/_tds-dropdown-menus";
 @import "_tds-foundations-partials/_tds-testimonial";
 @import "_tds-foundations-partials/_tds-channel-lineup";
