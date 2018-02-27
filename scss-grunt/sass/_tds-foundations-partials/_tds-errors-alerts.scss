@@ -157,7 +157,7 @@
 
 // Green = success
 .tds-error-success,
-.tds-alert-success
+.tds-alert-success,
 .bundle-success {
   background-color: #dff0d8;
   color: black;
@@ -220,7 +220,8 @@
 }
 
 //red alert critical icon
-.tds-alert.tds-alert-critical {
+.tds-alert.tds-alert-critical,
+.tds-error-msg.tds-error-critical {
   background-image: url('/content/dam/tdstelecom/images/ui/alerts/icon_alert-error.svg');
   background-size: 20px;
   background-position: 16px 14px;
@@ -262,12 +263,13 @@
     padding-left: 52px;
 }
 
-#recommendationMessage.tds-alert-loading {
-  line-height: 24px;
-  font-family: $tds-font-family;
-  padding: 12px 16px;
+.myaadduser #recommendationMessage.tds-alert-loading {
+    line-height: 24px;
+    font-family: $tds-font-family;
+    padding: 12px 16px;
+    margin: 20px 0 0;
+    padding-left: 52px;
 }
-
 // ===== Images/Icons ============================
 // when the alert box has an indicator image/font
 // or decorative icon not built into bootstrap
@@ -287,9 +289,11 @@
 
 // When errorBlock shows up in the clientlibs stylesheet.
 // TODO || need to go throught and delete all of these in the components
-.myaadduser #errorBlock {
-  width: 100%;
-  margin-bottom: 20px;
+.myaadduser {
+  #errorBlock, #successBlock {
+    width: 100%;
+    margin: 0 15px 20px 15px;
+  }
 }
 .myaadduser #emailNotifications {
     width: 100%;
