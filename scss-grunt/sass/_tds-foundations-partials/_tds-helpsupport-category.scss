@@ -1,4 +1,4 @@
-/* tds-helpsupport-category
+/* _tds-helpsupport-category.scss
 ==========================================*/
 // Menu list in the help and support pages
 .tds-menu-group {
@@ -58,3 +58,24 @@
 .tds-menu-group a.btn .read-more-container {
     margin-bottom: 12px;
 }
+
+.read-more.plus+.read-more-text:before, .read-more.minus+.read-more-text:before {
+    font-size: 8px;
+    top: -1px;
+}
+
+.parbase.helpsupportcategory .tds-menu-group .btn-link:hover,
+.parbase.helpsupportcategory .tds-menu-group .btn-link:focus {
+    background: #0c8fd0;
+    color: white;
+}
+
+.tds-menu-group a.btn .read-more-container {
+    margin-bottom: 0;
+}
+
+.parbase.helpsupportcategory .tds-menu-group .btn-link .read-more-text {
+    line-height: 1.1;
+}
+
+/* _tds-helpsupport-category.scss */
