@@ -73,18 +73,15 @@
 .tds-searchbar-button:hover {
   background-color: $tds-lt-blue-80;
 }
-@media all and (max-width: $screen-sm-min) {
-  /*#tds-searchbar {
-	display: none;
-	}*/
-}
 // ==================================================
 // #SEARCH BAR IN MOBILE FORMAT
 // ==================================================
 #mobile-searchbar {
-  display: none;
-  margin-top: 18px;
+    display: none;
+    margin-top: 0;
+    padding-bottom: 16px;
 }
+
 #mobile-searchbar .tds-searchbar-button {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -123,11 +120,7 @@
 // A simpiler way to do the search form moving forward.
 // Utilizes the existing html for design more than creating specific
 // search set up.
-// -----------------------------------------------------------------------------
-// * `.input-group.tds-search-input`
-// * `.gallery-btn.btn-plain`
-// 		- `span.fa.fa-search`
-// =============================================================================
+
 // make bg field gray
 .input-group.tds-search-input input {
   background: $tds-ltr-gray;
@@ -152,8 +145,8 @@
 .input-group.tds-search-input .tds-btn-search-text {
   display: none !important;
 }
-// search bars in support section */
 
+// SEARCH BAR IN SUPPORT SECTION
 .searchsitesectionbar h2,
 .searchSiteSectionBar.section h2 {
   margin-top: 0;
@@ -225,6 +218,8 @@ div#users-search.tds-card {
 // It was requested that an h2 be a different size here than the rest of the
 // site RE: HYDRA-1689
 // Link https://jira.tds.net/browse/HYDRA-1689?focusedCommentId=167033
+
+// NEWS SECTION SEARCH BAR
 .newsSearchBar h2 {
   font-size: 24px;
 }
@@ -249,15 +244,30 @@ div#users-search.tds-card {
 .tds-form-group-search-filters:nth-child(4) {
   margin-bottom: 0;
 }
+// remove search filter options in news section because one neck is no longer necessary | https://tdstelecom.com/about/news.html
 
-//add bottom margin to search field in mobile menu*/
-.topSearch.mobile-search {
-    margin-bottom: 16px;
-}
-#mobile-searchbar {
-    margin-top: 0;
+.newsSearchBar .input-group.tds-search-input button.gallery-btn {
+     padding: 10px;
 }
 
+.newsSearchBar .input-group.tds-search-input .tds-btn-search-text {
+    display: inline-block!important;
+    text-indent: -9999px;
+}
+
+.newsSearchBar .fa-search:before {
+    font-size: 18px;
+    top: 2px;
+    margin-left: 2px;
+}
+
+.parbase.newsSearchBar form .tds-newsroom-search {
+    display: none;
+}
+
+.parbase.newsSearchBar form > .form-group.tds-form-group {
+    margin-bottom: 0;
+}
 //news results page*/
 .parbase.section.newsSearchBar {
     padding: 0 15px;
