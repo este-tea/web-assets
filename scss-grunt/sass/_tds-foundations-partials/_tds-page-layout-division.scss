@@ -5,6 +5,26 @@
 // for generic site wide layout changes (clearfix,
 // container, wraps, etc) see _tds-layout.scss
 
+// add margin when page layout/division components are on tdstelecom
+.content.container .page_content.parsys > .pagelayout.parbase.section,
+.content.container .page_content.parsys > .pagedivision.parbase.section {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.content.container .page_content > .pagedivision .tds-pagedivider-one-col,
+.content.container .page_content > .pagedivision .tds-pagedivider-two-col,
+.content.container .page_content > .pagedivision .tds-pagedivider-three-col,
+.content.container .page_content > .pagedivision .tds-pagedivider-four-col {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+// tds support pages
+.content.container .pagedivision .tds-pagedivider-one-col .pagedivision {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 // CUSTOM TOP OR BOTTOM PADDING
 // ----------------------------------------
 // adds top or bottom padding depending on whether content needs it or not
@@ -31,7 +51,7 @@
 .tds-pagedivider-one-col {
     margin-left: 0;
     margin-right: 0;
-    padding: 0 16px;
+    padding: 0 15px;
 }
 .pagelayout .tds-pagedivider-one-col {
     padding: 0;
@@ -133,4 +153,30 @@ remove 32px padding gap from one col page layout*/
   .pagelayout .telecom-content .tds-pagedivider-two-col .col-sm-8 {
     padding-right: 0;
   }
+}
+
+// channel status
+.content.container .pagelayout .tds-pagedivider-four-col,
+.content.container .pagelayout .tds-pagedivider-one-col,
+.content.container .pagelayout .tds-pagedivider-three-col,
+.content.container .pagelayout .tds-pagedivider-two-col {
+    padding-top: 8px;
+}
+
+.content.container .pagelayout .container {
+    padding: 0;
+}
+
+.content.container .pagelayout .tds-pagedivider-four-col {
+    margin-right: -15px;
+}
+
+.content.container .row .content .page_content .pagelayout > .container-fluid.two-cards > .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.content.container .pagelayout .container-fluid.two-cards .container .col-xs-6 {
+    padding-left: 15px;
+    padding-right: 15px;
 }

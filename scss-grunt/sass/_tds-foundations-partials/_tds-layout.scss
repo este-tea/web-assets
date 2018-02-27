@@ -57,6 +57,7 @@
     margin-bottom: 40px;
     width: 100%;
 }
+
 .container-fluid > .row {
     margin-bottom: 0 !important;
 }
@@ -85,6 +86,30 @@
   margin-top: -28px;
 }
 
+// remove left and right padding
+.no-lr-padding {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+// remove top and bottom padding
+.no-tb-padding {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+// remove left and right margins
+.no-lr-margins {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+// remove top and bottom padding
+.no-tb-margins {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+
 //removes padding so that color blocks span full width of page
 .container-fluid.tds-body-content {
     padding-left: 0;
@@ -98,6 +123,12 @@
 .pagelayout .parbase.richTextComponent.section {
     margin-bottom: 24px;
 }
+// add space if rich text component added to tdstelecom page
+.page_content > .richTextComponent.parbase.section {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .content.container .row .content .page_content .pagelayout > .container-fluid > .row {
     margin: 0;
 }
@@ -143,13 +174,9 @@
     }
 }
 
-
-
-// add styling to home page title block
+// add styling to home page title block under the carousel
 // ----------------------------------------
 .container-fluid.tds-block-lt-blue.home-title {
-    margin-left: 15px;
-    margin-right: 15px;
     margin-top: 32px;
     padding: 0 48px;
 }
@@ -195,9 +222,42 @@
     }
 }
 
-// removes padding so that color blocks span full width of page
-// NOTE not sure where this is from?!?
-//.container-fluid.tds-body-content {
-    //padding-left: 0;
-    //padding-right: 0;
-//}
+/* /shop/internet-services/high-speed-internet-plans.html */
+.content.container .tds-pagedivider-one-col .cardgallery.parbase.section {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* /about/company-information/executive-biographies/vicki-villacrez.html */
+.content.container .page_content .tds-richtext-padboth .parsys .parbase.pagedivision.section {
+    /*padding: 0 15px;*/
+}
+.content.container .pagedivision .tds-pagedivider-one-col {
+    margin: 0 15px;
+}
+
+/* /about/company-information/employee-resource-group.html */
+.content.container .page_content > .cardgallery.parbase.section {
+    padding: 0 15px;
+}
+
+/* /about/company-information/community-involvement.html */
+.content.container .parsys-sidebar .cardgallery .tds-card-gallery-1 {
+    padding: 0;
+}
+
+.carouselcontainer.no-content {
+    padding: 0;
+}
+
+.content.container .tds-pagedivider-one-col .tds-pagedivider-one-col .cardgallery.parbase.section {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+//tweaks for data usage page when a page layout is within a content container
+.contentcontainer.parbase.section .pagedivision.parbase.section {
+    padding: 0 15px;
+    margin: 0 15px;
+}
+/* END tds-layout.scss */
