@@ -1,13 +1,11 @@
-//TOC
+// TOC
 // ====================================
 // BRAND COLOR PALETTE
 // OTHER UI COLORS
 // ALERT/STATUS MESSAGES
-// IMAGES
 // TYPOGRAPHY
-// INPUT STYLES
 // MOBILE BREAKPOINTS GLOBAL OVERRIDES
-// LAYOUT
+
 
 // BRAND COLOR PALETTE
 // ====================================
@@ -20,9 +18,7 @@ $bend-dk-blue: #1c76b4;
 $bend-red: #FF4D50;
 $bend-gray: #585852;
 
-
 $bend-orange-80: lighten($bend-orange, 10); //aka #ff9233
-
 $bend-ltr-gray: lighten($bend-gray, 60);
 $bend-lt-gray: lighten($bend-gray, 15); //aka #808077
 $bend-dk-gray: darken($bend-gray, 15); //aka #30302d
@@ -102,3 +98,28 @@ $bend-font-headings: "Museo W01", Museo, Georgia, "Times New Roman", Times, seri
 $bend-font-body: "Museo Sans W01", Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 $tds-font-family: $bend-font-headings;
 $tds-font-body: $bend-font-body;
+
+
+// MOBILE BREAKPOINTS GLOBAL OVERRIDES
+// ====================================
+
+// Replaces variable references in the bootstrap scss
+$screen-xxxs: 320px;
+$screen-xxxs-min: $screen-xxxs;
+$screen-xxs: 400px;
+$screen-xxs-min: $screen-xxs;
+$screen-xs: 584px;
+$screen-xs-min: $screen-xs;
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+$screen-md: 992px;
+$screen-md-min: $screen-md;
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xxxs-max: ($screen-xxs-min - 1);
+$screen-xxs-max:  ($screen-xs-min - 1);
+$screen-xs-max:   ($screen-sm-min - 1);
+$screen-sm-max:   ($screen-md-min - 1);
+$screen-md-max:   ($screen-lg-min - 1);
