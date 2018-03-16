@@ -533,17 +533,12 @@ div#resetPwdHelpBlock .tds-alert {
 
 .modal-footer .gallery-btn.primary-cta {
   margin-right: 16px;
+  margin-bottom: 16px;
   padding-right: 16px;
 }
 
 .modal-footer .gallery-btn.primary-cta:after {
   content: none;
-}
-
-@media only screen and (max-width:400px) {
-  .modal-footer .gallery-btn.primary-cta {
-    margin-bottom: 24px;
-  }
 }
 
 .modal.confirmationModal .gallery-btn.primary-cta {

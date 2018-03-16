@@ -525,3 +525,22 @@ button.read-more {
   color: black;
   text-decoration: none;
 }
+td a.text-link.infoIcon-btn {
+    float: right;
+    display:none;
+}
+@media (max-width: 767px) {
+  td a.text-link.infoIcon-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  td a.text-link.infoIcon-btn + .account,
+  td a.text-link.infoIcon-btn + .billing,
+  td a.text-link.infoIcon-btn + .data-usage,
+  td a.text-link.infoIcon-btn + .actions {
+    margin-top: 16px;
+  }
+}

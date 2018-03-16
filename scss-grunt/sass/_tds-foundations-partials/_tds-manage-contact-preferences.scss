@@ -52,8 +52,10 @@
 
 @media only screen and (max-width: 400px) {
   .customer-contact-hub .gallery-btn.edit {
-    margin-bottom: 24px;
     margin-right: 0;
+  }
+  .customer-contact-hub .gallery-btn + .gallery-btn {
+    margin-top: 24px;
   }
 }
 
@@ -250,7 +252,7 @@
   }
   .customer-contact-hub .table>thead>tr>th,
   .customer-contact-hub .table tbody td {
-    padding: 14px 18px!IMPORTANT;
+    padding: 14px 18px !important;
   }
   .customer-contact-hub .table.dataTable {
     border-bottom: none;
@@ -275,5 +277,7 @@ td>.data-usage {
   font-weight: 700;
   padding-top: 3px;
 }
-
+.epay-enroll > img {
+    margin-right: 6px;
+}
 /* END tds-manage-contact-preferences.scss */
