@@ -1,5 +1,32 @@
 /* tds-navs2.scss
 ==========================================*/
+
+// bootstrap overrides
+.nav>li>a {
+  transition: all 0.2s ease-in-out;
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: #0c8fd0;
+    color: white;
+  }
+  &.active {
+    text-decoration: none;
+    background-color: #19388a;
+    color: white;
+  }
+}
+
+.navbar-nav>li>a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #19388a;
+  text-decoration: none;
+}
+
+.nav a sup {
+    font-size: 60%;
+}
+
 // NOTE from Liz: not sure where these are getting applied, I don't
 // think these classes are getting used anymore but will keep them
 // in anyways

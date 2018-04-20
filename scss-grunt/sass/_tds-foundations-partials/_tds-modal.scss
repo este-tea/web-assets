@@ -415,3 +415,153 @@ div#resetPwdHelpBlock .tds-alert {
     margin-top: 22px;
     margin-bottom: 20px;
 }
+
+
+/* styling for full page modals*/
+
+.modal.full {
+  padding-right: 0!important;
+  background-color: white;
+}
+
+.modal.full .modal-dialog.tds-modal {
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+.modal.full .modal-content {
+  height: 100%;
+  box-shadow: none;
+  padding: 0 15px;
+}
+
+.modal.full .modal-body {
+  padding: 0;
+}
+
+.modal.full .modal-body>.tds-alert {
+  margin-top: 24px;
+}
+
+.modal.full .tds-width-container {
+  max-width: 720px;
+  padding: 0;
+}
+
+// CUSTOMER CONTACT HUB AKA MANAGE CONTACT PREFERENCES MODALS
+
+.customer-contact-hub .modal-header {
+  border-radius: 0;
+  border-bottom: 0;
+}
+
+.customer-contact-hub .modal.full .modal-header {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.customer-contact-hub .modal-header .close {
+  margin-top: -8px;
+}
+
+.customer-contact-hub .modal-title {
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .customer-contact-hub .modal-title {
+    font-size: 28px;
+  }
+}
+
+.customer-contact-hub .modal-content {
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.customer-contact-hub .modal-footer {
+  text-align: left;
+  padding: 24px 0 36px 0;
+}
+
+@media only screen and (max-width:400px) {
+  .customer-contact-hub .modal-footer {
+    padding-bottom: 16px;
+  }
+}
+
+.customer-contact-hub .modal-footer .btn.btn-link {
+  text-decoration: underline;
+  padding: 12px 16px;
+  border: solid 1px transparent;
+  height: 47px;
+  margin-top: -4px;
+}
+// styling for smaller confirmation modals
+
+.modal.confirmationModal {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 17px;
+}
+
+.modal.confirmationModal .modal-dialog {
+  border-top: solid 5px #0c8fd0;
+}
+
+.modal.confirmationModal .modal-title {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.modal.confirmationModal .modal-body {
+  border-top: none;
+  padding: 15px 28px;
+}
+
+.modal.confirmationModal .modal-footer {
+  text-align: center;
+  padding: 0 15px 28px 15px;
+}
+
+#deleteContactModal .modal-body {
+  text-align: center;
+}
+// modal buttons and links
+
+.modal-footer .gallery-btn.primary-cta {
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding-right: 16px;
+}
+
+.modal-footer .gallery-btn.primary-cta:after {
+  content: none;
+}
+
+.modal.confirmationModal .gallery-btn.primary-cta {
+  text-align: center;
+}
+
+// modal cancel link button
+
+.modal-footer .btn.btn-link {
+  text-decoration: underline;
+  padding: 12px 16px;
+  border: solid 1px transparent;
+  height: 47px;
+  margin-top: -4px;
+}
+
+.modal-footer .btn.btn-link:hover {
+  background-color: #19388a;
+  color: white;
+}
+
+@media only screen and (max-width:400px) {
+  .modal-footer .btn.btn-link {
+    margin-top: 20px;
+  }
+}

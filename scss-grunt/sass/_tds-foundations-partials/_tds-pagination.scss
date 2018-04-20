@@ -1,10 +1,9 @@
 /* tds-pagination.scss
 ==========================================*/
-
 .search-results-pagination {
   @include make-xs-column(12);
   display: inline-block;
-  margin: 24px 0px 40px 0px;
+  margin: 24px 0 40px;
   padding-top: 20px;
   padding-bottom: 24px;
   padding-left: 0;
@@ -13,8 +12,8 @@
   border-bottom: 1px solid $tds-lt-gray;
 }
 
-.search-results-pagination span,
-.search-results-pagination a {
+.search-results-pagination a,
+.search-results-pagination span {
   position: relative;
   float: left;
   margin-right: 12px;
@@ -24,54 +23,66 @@
   text-decoration: none;
 }
 // Current & hover
+
 .current-page,
 .search-results-pagination a:hover {
   background-color: $tds-lt-bluegray;
 }
-
-
-// ===== pagination for data tabels ============================================
+// ===== pagination for data tables ============================================
 // =============================================================================
+
 div#usersTable_paginate {
   float: left;
   margin-top: 16px;
   font-family: $tds-font-family;
   font-weight: 400;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
-.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
-.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-  cursor: default;
-  color: #999 !important;
-  border: 1px solid transparent;
-  background: none;
-  box-shadow: none;
+
+.paginate_button {
+    margin-right: 8px;
 }
-// hover? Migrated from refinement.scss
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    color: #19388a !important;
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border-radius: 0;
+  &:hover, &:focus {
+    color: white!important;
+    border: solid 1px $tds-lt-blue;
+    background-color: $tds-lt-blue;
+    background: $tds-lt-blue;
+  }
+  &.previous, &.next {
+      padding: .5em;
+  }
+  &.current, &.current:hover, &.current:focus {
+    color: $tds-dk-blue !important;
     font-weight: 500;
     border: none;
     background-color: #e9f3fa;
     background: #e9f3fa;
+  }
+  &.disabled, &.disabled:focus, &.disabled:hover {
+    cursor: default;
+    color: #999 !important;
+    border: 1px solid transparent;
+    background: none;
+    box-shadow: none;
+  }
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-    color: white!important;
-    border: none;
-    background-color: #0c8fd0;
-    background: #0c8fd0;
-}
+
 
 // more pagination from refinemnt.scss
 .pagination {
   border-radius: 0 !important;
 }
+
 .search-results-pagination {
   border-top: 2px solid $tds-lt-blue-80;
   border-bottom: 1px solid $tds-lt-gray;
 }
 
-.current-page, .search-results-pagination a:hover {
+.current-page,
+.search-results-pagination a:hover,
+.search-results-pagination a:focus {
   background-color: #e9f7fe;
 }
 

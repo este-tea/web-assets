@@ -86,14 +86,51 @@ div#newEmailMessage {
 #userNameDiv form#userNameForm {
     margin-bottom: 20px;
 }
-button#changePassword {
-    margin-top: 4px;
+button#changePassword,
+button#changeSecQuestions,
+button#changeRecoveryContacts,
+button#changePin {
     width: 100%;
 }
-button#changeSecQuestions {
-    width: 100%;
+button#changePassword {
+    margin-top: 0;
+}
+button#deleteAccount {
+    margin-top: 0;
 }
 
+button#resetPassword {
+    margin-top: 20px;
+}
+button#resetRecoveryContacts {
+    margin-top: 20px;
+}
+button#changeSecQuestions .tds-icon-circle-question:before {
+    content:none;
+}
+button#changeSecQuestions .tds-icon-circle-question {
+    content:none;
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+    background-image: url("/content/dam/tdstelecom/images/ui/icon-question-white.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+.recoveryContact {
+    color: #353535;
+    font-weight: 500;
+    background-color: #E8EBF3;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+}
+
+.recoveryContact > .contact {
+    font-weight: 600;
+    color: black;
+    font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+}
 // MYA Add User
 // ----------------------------------------
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
