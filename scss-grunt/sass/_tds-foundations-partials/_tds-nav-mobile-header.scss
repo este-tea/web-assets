@@ -1,4 +1,4 @@
-/* tds-mobile-header.scss
+/* tds-nav-mobile-header.scss
 ==========================================*/
 #mobile-header-container {
   position: fixed;
@@ -94,9 +94,8 @@
   border-bottom: solid 2px $tds-lt-blue-80;
 }
 
-#mobile-menu > ul > li:first-child > a {
-  //border-bottom: solid 2px #7bb227;
-  //removing green border, not consistent throughout
+#mobile-menu > ul > li:last-child a {
+    border-bottom: none;
 }
 
 #mobile-menu ul li li a {
