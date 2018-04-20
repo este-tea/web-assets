@@ -280,4 +280,28 @@ td>.data-usage {
 .epay-enroll > img {
     margin-right: 6px;
 }
+
+// banner
+.review-cch-banner .banner-content {
+    width: 100%;
+    max-width: 720px;
+}
+.review-cch-banner .content.parsys > .navbutton,
+.review-cch-banner .content.parsys > .htmlScriptIntegration {
+    display: inline-block;
+    margin-top: 20px;
+}
+.review-cch-banner .content.parsys > .navbutton {
+    margin-right: 24px;
+}
+.review-cch-banner .btn.btn-link {
+    height: 47px;
+    line-height: 40px;
+    padding: 0;
+    text-decoration: underline;
+}
+.review-cch-banner .btn.btn-link:hover {
+    text-decoration: none;
+}
+
 /* END tds-manage-contact-preferences.scss */
