@@ -228,3 +228,16 @@ button.gallery-btn.btn-back:after {
     width: 20px;
     margin: -4px 4px 0px -3px;
 }
+.tds-icon-rewind {
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+    background-image: url("/content/dam/tdstelecom/images/ui/icon_recovery-arrow-white.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+.tds-icon-lock:before {
+    padding-right: 10px;
+    content: "\e801";
+}
