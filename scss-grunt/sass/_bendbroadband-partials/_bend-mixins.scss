@@ -1,0 +1,23 @@
+// bend-mixins
+//==========================================
+
+@mixin ssstandard-font {
+  font-family: SSStandard;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+}
