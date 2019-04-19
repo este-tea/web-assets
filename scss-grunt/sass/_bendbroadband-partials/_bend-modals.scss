@@ -107,3 +107,19 @@
   max-width: 500px;
   margin: auto;
 }
+//--- FULL SCREEN MODAL ---//
+.modal.full {
+  padding-right: 0 !important;
+  background-color: white;
+  .modal-dialog.tds-modal {
+    margin: 0;
+    max-width: 100%;
+    height: 100%;
+  }
+  .modal-content {
+    box-shadow: none;
+  }
+  .modal-body {
+    padding: 0;
+  }
+}

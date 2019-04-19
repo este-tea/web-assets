@@ -215,9 +215,16 @@ table.table tr.tds-form-group th {
   .controls {
     display: inline-block;
   }
+  .controls {
+    display: inline-block;
+  }
 }
 span.tds-label {
     font-family: $tds-font-family;
     font-weight: 500;
     font-size: 14px;
+}
+
+.form-control.zipcode {
+  width: 80px;
 }
