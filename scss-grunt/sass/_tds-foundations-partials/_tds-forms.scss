@@ -207,8 +207,6 @@ table.table tr.tds-form-group th {
   cursor: pointer;
 }
 
-//to handle content that goes below form submit button.tds-below-form {	margin-top: 24px;}
-
 //forms with read-only fields
 .form-group.read-only {
   margin-bottom: 6px;
@@ -220,4 +218,8 @@ span.tds-label {
     font-family: $tds-font-family;
     font-weight: 500;
     font-size: 14px;
+}
+
+.form-control.zipcode {
+  width: 80px;
 }
