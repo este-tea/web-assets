@@ -167,8 +167,10 @@
   background-color: #5a5a4d;
   border-radius: 2px;
 }
-
-.contactUsCard .bend-search-card .tds-card-heading {
+.bendbroadband-content.business .tds-card.bend-search-card {
+  background-color: black;
+}
+.contactUsCard  .tds-card.bend-search-card .tds-card-heading {
   color: white;
   text-align: left;
   font-weight: 500;
@@ -238,4 +240,51 @@
     }
 
   }
+}
+
+
+.bendbroadband-content .searchSiteSectionBar .tds-card {
+  border: none;
+  padding: 20px 0;
+  border-top: solid 1px silver;
+  border-radius: 0;
+}
+
+.bendbroadband-content .searchSiteSectionBar .col-sm-12 {
+  padding: 0;
+}
+
+.searchSiteSectionBar form .input-group input.form-control {
+  border: solid 1px silver!important;
+  border-radius: 2px!important;
+}
+
+.searchSiteSectionBar form .input-group-btn button.gallery-btn {
+  height: 44px;
+  font-size: 16px;
+  margin-left: 10px;
+  /* line-height: 17px; */
+}
+
+.searchSiteSectionBar form {
+  /* padding: 24px 0; */
+  /* border-top: solid 1px #585858; */
+}
+
+.searchSiteSectionBar h2 {
+  color: #ff7700;
+}
+
+.searchSiteSectionBar.parbase.section:before {
+  display: table;
+  content: " ";
+}
+
+.searchSiteSectionBar.parbase.section:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }

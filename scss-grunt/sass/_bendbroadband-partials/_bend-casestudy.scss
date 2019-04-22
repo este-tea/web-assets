@@ -1,0 +1,41 @@
+/* bend-story-panes
+==========================================*/
+
+@media (max-width:480px) {
+    .casestudy .btn {
+        display: block;
+        max-width: 200px
+    }
+    .casestudy .btn+.btn {
+        margin-top: 5px
+    }
+}
+@media (max-width:991px) {
+    .casestudy .megacontainer {
+        background: #47473d!important
+    }
+}
+
+.content.content-casestudy {
+    border: 0;
+    background-color: #0f0f0f;
+    color: #fff
+}
+.content.content-casestudy h1, .content.content-casestudy .h1, .content.content-casestudy h2, .content.content-casestudy .h2, .content.content-casestudy h3, .content.content-casestudy .h3, .content.content-casestudy h4, .content.content-casestudy .h4, .content.content-casestudy h5, .content.content-casestudy .h5, .content.content-casestudy h6, .content.content-casestudy .h6, .content.content-casestudy a {
+    color: #64bfd3
+}
+
+.content-casestudy .megacontainer p {
+  color: white;
+}
+
+.content-casestudy .megacontainer {
+  padding: 28px 0;
+}
+
+.content.content-casestudy a.gallery-btn {
+  color: white;
+}
+
+
+/* END bend-story-panes */

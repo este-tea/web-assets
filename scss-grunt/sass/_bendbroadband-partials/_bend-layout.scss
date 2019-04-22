@@ -16,11 +16,16 @@
 *:first-child+html .clearfix {
     zoom: 1;
 }
-@media (min-width: $screen-md) {
+@media only screen and (min-width: $screen-md) {
   .container,
   .tds-width-container {
     width: 100%;
     max-width: $screen-lg;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 100%;
   }
 }
 .page_content.parsys {
@@ -29,6 +34,9 @@
 .page_content > .dividerline.parbase.section {
     margin-left: 0;
     margin-right: 0;
+}
+.page_content > .pagelayout:first-child + .pagelayout .tds-pagedivider-two-col {
+    padding-top: 0;
 }
 /* #VISIBILITY
 --------------------------------- */
@@ -46,3 +54,71 @@
         display: block;
     }
 }
+
+@media (max-width:$screen-xs-max) {
+  .tds-pagedivider-four-col div.shift-up,
+  .tds-pagedivider-three-col div.shift-up,
+  .tds-pagedivider-two-col div.shift-up {
+    margin-top: 0;
+  }
+}
+
+// page layout components configured with "category-content" css class
+.pagelayout .container-fluid.category-content {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.category-content .img-responsive {
+  max-height: 240px;
+}
+
+.pagelayout .category-content .parbase.richTextComponent.section {
+  margin-bottom: 0;
+}
+
+.category-content .tds-pagedivider-two-col .col-sm-8 {
+  min-height: 240px;
+  display: table;
+  margin-bottom: 0;
+}
+@media(max-width:$screen-xs-max) {
+  .category-content .tds-pagedivider-two-col .col-sm-8 {
+    min-height: 0;
+  }
+}
+
+.category-content .tds-pagedivider-two-col .col-sm-8 .parsys.parsys-content {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.category-content .tds-pagedivider-two-col > div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-fluid.top-content .tds-pagedivider-two-col {
+  padding-top: 32px;
+}
+
+// when nested within another
+.pagelayout .pagelayout .container {
+    padding: 0;
+}
+.pagelayout .pagelayout .container > div:first-child {
+    padding-top: 0;
+}
+
+.userGreeting + .pagelayout + .pagelayout .container > div:first-child {
+    padding-top: 0;
+}
+
+.pagelayout .tds-pagedivider-four-col,
+.pagelayout .tds-pagedivider-one-col,
+.pagelayout .tds-pagedivider-three-col,
+.pagelayout .tds-pagedivider-two-col {
+    padding-top: 0;
+}
+/* END bend-layout */

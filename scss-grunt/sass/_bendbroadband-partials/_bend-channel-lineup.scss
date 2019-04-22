@@ -1,0 +1,104 @@
+/* bend-channel-lineup.scss
+==========================================*/
+
+.channel-lineup {
+  font-weight: 300 !important;
+}
+
+#channel-lineup-table .label {
+  font-weight: 300;
+}
+// channel lineup labels
+.label-ch-2go {
+  background-color: #309CF4;
+  color: black;
+  text-decoration: none;
+}
+
+a:focus .label-ch-2go,
+a:hover .label-ch-2go {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.label-ch-essentials,
+.label-ch-freedom,
+.label-ch-limited,
+.label-ch-preferred,
+.label-ch-starter {
+  background-color: #ff7700;
+  color: black;
+}
+
+.label-ch-family {
+  background-color: #FFB600;
+}
+
+.label-ch-bronze {
+  background-color: #00A4C6;
+  color: black;
+}
+
+.label-ch-hdplus {
+  background-color: #EF9400;
+  color: black;
+}
+
+.label-ch-premiums {
+  background-color: #000;
+  color: white;
+}
+/*tve column*/
+#channel-lineup-table tr td:nth-child(3) a {
+  color: #000;
+}
+/*channel column*/
+#channel-lineup-table tr td:nth-child(4) a {
+  color: #000;
+}
+
+#channel-lineup-table tr td:nth-child(4) a:hover {
+  color: #ff7700;
+}
+
+.channel-lineup-key div {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+.channel-lineup-key div .label {
+  font-size: 12px;
+}
+
+.channel-lineup-key {
+  border: solid 1px #999999;
+  padding: 18px 24px 12px;
+  margin: 32px 0;
+  border-radius: 3px;
+}
+
+.channel-lineup-key h3 {
+  margin-bottom: 16px;
+  color: black;
+}
+
+table#channel-lineup-table tr > th {
+  border-top-color: transparent !important;
+  border-bottom: 3px solid #ddd !important;
+}
+
+table#channel-lineup-table {
+  border-bottom: 1px solid #111!important;
+}
+
+table#channel-lineup-table tbody > tr:last-child > td {
+  border-bottom: none !important;
+}
+.table-responsive.channel-lineup {
+  overflow-x: initial;
+}
+#channel-lineup-table_wrapper {
+  overflow: initial;
+}
+/* END bend-channel-lineup.scss */

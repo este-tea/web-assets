@@ -1,0 +1,36 @@
+/* bend-header-nav-sticky.scss
+==========================================*/
+.bendheader .sticky-nav {
+  background: url("/content/dam/bendbroadband/images/ui/checkers-light.gif") left top repeat;
+  height: 60px;
+  z-index: 1500;
+  margin-bottom: 0;
+  transition: none;
+}
+.business .bendheader .sticky-nav {
+  background: url("/content/dam/bendbroadband/images/ui/checkers-dark.gif") left top repeat;
+}
+.stuck {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+@media (min-width: 960px) {
+  .stuck {
+    position: relative;
+  }
+}
+
+.stuck-header {
+  height: 50px;
+  padding-top: 50px;
+  margin-bottom: -50px;
+}
+
+.stuck-footer {
+  height: 50px;
+  margin-top: -50px;
+}
+
+
+/* END bend-header-nav-sticky */
