@@ -94,6 +94,10 @@ footer.residential .superfoot .list-unstyled li {
 }
 // end BBB Styles ======
 
+footer.bend-footer {
+  padding-top: 0;
+}
+
 .bend-footer.residential a:focus {
   background-color: rgba(0,0,0,.35);
   outline: none;
@@ -119,75 +123,7 @@ footer.residential .superfoot .list-unstyled li {
     margin-top: 28px;
   }
 }
-//extended footer aka homepage footer
 
-.bend-extended-footer > .extended-footer {
-  padding: 0;
-}
-
-.homepageFooter {
-  margin-left: -15px;
-  margin-right: -15px;
-
-  .footer-column {
-    @media (max-width: 991px) {
-      margin-bottom: 20px;
-    }
-
-    &:last-child {
-      @media (max-width: 767px) {
-        width: 100%;
-      }
-    }
-
-    .sectionLinks li {
-      margin: 12px 0;
-      line-height: 16px;
-      font-size: 12px;
-
-      a:focus,
-      a:hover {
-        .link-display-text {
-          text-decoration: underline;
-        }
-      }
-
-      &.is-button a {
-        background-color: #f70;
-        border-color: #f70;
-        text-transform: uppercase;
-        padding: 6px 8px;
-        border-radius: 2px;
-        color: white;
-        display: inline-block;
-        line-height: 16px;
-
-        &:focus,
-        &:hover {
-          text-decoration: none;
-          background-color: #d66400;
-          border-color: #c25a00;
-        }
-      }
-    }
-
-    .sectionTitle,
-    .sectionTitle a {
-      color: #FFF;
-      text-transform: uppercase;
-      font-family: $bend-font-headings;
-    }
-  }
-}
-
-.footer-column li.has-icon a {
-  display: table;
-
-  span {
-    display: table-cell;
-    padding-right: 5px;
-  }
-}
 //legal and social links
 .bend-footer-legal {
   margin-top: 28px;
@@ -236,5 +172,15 @@ footer.residential .superfoot .list-unstyled li {
         text-decoration: underline;
       }
     }
+  }
+}
+
+
+/* BUSINESS FOOTER */
+/* ---------------------------------- */
+@media (min-width: 768px) {
+  footer.bend-footer.business {
+    background-size: cover;
+    background-image: url("/content/dam/bendbroadband/images/ui/bg-footer-business.jpg");
   }
 }

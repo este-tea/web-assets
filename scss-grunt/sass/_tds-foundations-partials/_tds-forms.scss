@@ -78,6 +78,9 @@ select.form-control, input.form-control {
 .form-control.phone {
     max-width: 220px;
 }
+.form-control.zipcode {
+  width: 80px;
+}
 // Error form-group
 .form-group.tds-form-group.has-error {
   color: $tds-red;
@@ -223,8 +226,4 @@ span.tds-label {
     font-family: $tds-font-family;
     font-weight: 500;
     font-size: 14px;
-}
-
-.form-control.zipcode {
-  width: 80px;
 }

@@ -31,6 +31,7 @@
 .jump-links a:hover,
 .jump-links a:focus {
 	background-color: rgb(50, 50, 44);
+  color: white;
 }
 
 @media (min-width: 1010px) {
@@ -39,7 +40,7 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: $screen-xs-max) {
 	.jump-links {
 		display: none;
 	}

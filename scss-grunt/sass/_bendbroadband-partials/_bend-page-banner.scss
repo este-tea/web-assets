@@ -1,100 +1,224 @@
 /* bend-page-banner
 ==========================================*/
-
 .tds-page-banner {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 div.tds-page-banner.col-sm-12 {
-	padding-right: 0;
-	padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 #page-banner {
-	border-top: 0;
-	border-bottom: 0;
-	width:100%;
+  border-top: 0;
+  border-bottom: 0;
+  width: 100%;
 }
 
-#page-banner  #banner-overlay {
-	background: none;
-	border-right: 0;
-	border-left: 0;
+#page-banner #banner-overlay {
+  background: none;
+  border-right: 0;
+  border-left: 0;
 }
 
 #page-banner .container {
-	background: -moz-linear-gradient(top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0.4) 100%);
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0.4) 100%);
-	background: -o-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0.4) 100%);
-	background: -ms-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0.4) 100%);
-	background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0.4) 100%);
-	margin-top:245px;
-	margin-bottom:60px;
-	padding:0;
+  background: rgba(0, 0, 0, .6);
+  margin-top: 245px;
+  margin-bottom: 60px;
+  padding: 0;
 }
 
 #page-banner .banner-image {
-	background-position-y: center;
+  background-position-y: center;
 }
 
 #page-banner .banner-content {
-	padding: 26px;
-	width: 100%;
+  padding: 26px;
+  width: 100%;
+  max-width: 900px;
 }
 
 #page-banner .banner-content > .container {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #page-banner .content {
-	background: none;
-	border-top: none;
+  background: none;
+  border-top: none;
 }
 
 .banner-content p {
-	color: white;
-	font-size: 26px;
-	font-weight: 300;
-	font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
-	line-height: 34px;
-	text-align: center;
-	font-weight: lighter;
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+  font-family: $bend-font-body;
+  line-height: 34px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 #page-banner h1.banner-title {
-	color: rgb(255, 119, 0);
-	font-size: 56px;
-	font-weight: normal;
-	font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
-	line-height: 58px;
-	text-align: center;
+  color: rgb(255, 119, 0);
+  font-size: 56px;
+  font-weight: normal;
+  font-family: $bend-font-headings;
+  line-height: 58px;
+  text-align: center;
+  border: none;
 }
-
 @media (max-width: 584px) {
-	#page-banner .banner-image {
-		display: block !important;
-	}
+  #page-banner .banner-image {
+    display: block !important;
+  }
 }
-
 @media (max-width:991px) {
-	#page-banner .container,
-	#page-banner #banner-overlay,
-	#page-banner .banner-image {
-		min-height: 300px;
-	}
-	#page-banner .container {
-		margin-top: 20px;
-	}
-}
+  #page-banner #banner-overlay,
+  #page-banner .banner-image,
+  #page-banner .container {
+    min-height: 300px;
+  }
 
+  #page-banner .container {
+    margin-top: 20px;
+  }
+}
 @media (min-width: 992px) {
-	#page-banner .banner-content {
-		width:60%;
-		margin: 0 auto;
-	}
+  #page-banner .banner-content {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1134px) {
+  #page-banner .container {
+    min-width: 100% !important;
+  }
+}
+@media (max-width: $screen-sm-max) {
+  #page-banner .container {
+    margin-top: 60px;
+    min-height: auto;
+  }
+}
+@media (max-width:$screen-xs-max) {
+  #page-banner .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #page-banner h1.banner-title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .banner-content p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width:500px) {
+  #page-banner h1.banner-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+// PAGE BANNERS WITH BUTTONS
+#page-banner .container-fluid.banner-btn-wrap .container {
+  margin: 0;
+  background: transparent;
 }
 
-@media (min-width: 1134px) {
-	#page-banner .container {min-width:100% !important;}
+.pagelayout .banner-btn-wrap .tds-pagedivider-one-col .parsys.parsys-content {
+  text-align: center;
 }
+
+.pagelayout .banner-btn-wrap .tds-pagedivider-one-col .parsys.parsys-content .navbutton {
+  display: inline-block;
+}
+
+.banner-content .tds-content-rich.tds-note p {
+  font-size: 15px;
+}
+@media only screen and (max-width: 500px) {
+  .pagelayout .banner-btn-wrap .tds-pagedivider-one-col .parsys.parsys-content .navbutton:first-child {
+    margin-right: 0;
+  }
+
+  .pagelayout .banner-btn-wrap .tds-pagedivider-one-col .parsys.parsys-content .navbutton {
+    display: block;
+  }
+}
+
+// image banners
+// typically found on landing pages
+// ----------------------------------
+.pagelayout .image-banner .tds-pagedivider-one-col {
+  padding: 0;
+}
+
+.image-banner .responsiveImage img.center-block.img-responsive {
+  width: 1125px;
+}
+.container-fluid.image-banner > .row > .container {
+  padding: 0;
+}
+.pagelayout > .container-fluid.image-banner {
+  padding-right: 0;
+  padding-left: 0;
+}
+.container-fluid.image-banner > .row > .container > div:first-child {
+  padding-top: 0;
+}
+
+.container-fluid.image-banner > .row {
+  margin-right: 0;
+}
+
+/*bend biz banner */
+/*========================*/
+.container-fluid.bendBiz-banner .tds-pagedivider-one-col {
+  padding-top: 0;
+}
+
+.container-fluid.bendBiz-banner #page-banner .container {
+  background: transparent;
+  margin-top: 90px;
+  padding-left: 50%;
+}
+
+.container-fluid.bendBiz-banner #page-banner h1.banner-title,
+.container-fluid.bendBiz-banner #page-banner p {
+  text-align: left;
+}
+
+.container-fluid.bendBiz-banner #page-banner h1.banner-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.container-fluid.bendBiz-banner #page-banner p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  margin: 0 0 20px;
+}
+
+.container-fluid.bendBiz-banner #page-banner .banner-content {
+  padding: 0 24px;
+}
+
+.container-fluid.bendBiz-banner #page-banner .banner-image {
+  background-position: left top;
+}
+
+.bendBiz-banner > .row > .container {
+  padding: 0;
+}
+
+/* END bend-page-banner */

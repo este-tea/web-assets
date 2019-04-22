@@ -25,9 +25,12 @@ h2, .h2 {
 h3, .h3 {
     color: $bend-lt-blue;
 }
-
+h4, .h4 {
+  color: #ff7700;
+}
 h6, .h6 {
     font-size: 14px;
+    color: #64bfd3;
 }
 h5, h6, .h5, .h6 {
     line-height: 1.1;
@@ -39,6 +42,23 @@ h5, .h5 {
 h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+@media (max-width:768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
 }
 sup {
     top: -0.4em;
@@ -57,29 +77,16 @@ p {
     font-size: 16px;
     line-height: 24px;
 }
-a {
-    color: #f70;
-    text-decoration: underline;
+p + h3 {
+  margin-top: 20px;
 }
-a:hover {
-    text-decoration: none;
-}
-ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-li {
-    font-size: 14px;
-    line-height: 24px;
-}
-
 .btn strong {
-    font-weight: 900
+    font-weight: 800
 }
 strong b {
-    font-weight: 900
+    font-weight: 800
 }
+
 .thin {
     font-weight: 100
 }
@@ -99,12 +106,32 @@ strong b {
     color: #518eaa;
     font-weight: 700;
 }
+
+// PAGE INTRO
 .page-intro {
     font-size: 20px;
     line-height: 26px;
     font-weight: 500;
+    margin-top: 20px;
 }
 
+.page-intro h2 {
+  color: #64bfd3;
+  text-align: center;
+  font-size: 34px;
+}
+
+.page-intro p {
+  font-size: 21px;
+  text-align: center;
+  color: #777;
+  margin-top: 12px;
+  line-height: 28px;
+}
+.has-emphasis {
+  font-weight: 600;
+  color: #ff7700;
+}
 /* #SUB-HEADINGS/TITLES
 --------------------------------- */
 .page-header {
@@ -165,4 +192,24 @@ strong b {
 .ui-widget {
     font-family: $bend-font-body;
     font-size: 1em;
+}
+
+.bendproducts-moreservices h2 {
+  color: #ff7700;
+}
+
+.bendproducts-moreservices h3 {
+  color: #585858;
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+  display: inline-block;
+  margin-top: 24px;
+}
+
+.bendproducts-moreservices h3+p {
+  margin-top: 10px;
+}
+
+.bendbroadband-content .disclaimers {
+  padding-bottom: 32px;
 }
