@@ -72,7 +72,12 @@ select.form-control, input.form-control {
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05), 0 0 3px #25acf2;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.05), 0 0 3px #25acf2;
 }
-
+.form-control.email {
+    max-width: 400px;
+}
+.form-control.phone {
+    max-width: 220px;
+}
 // Error form-group
 .form-group.tds-form-group.has-error {
   color: $tds-red;
@@ -210,9 +215,16 @@ table.table tr.tds-form-group th {
   .controls {
     display: inline-block;
   }
+  .controls {
+    display: inline-block;
+  }
 }
 span.tds-label {
     font-family: $tds-font-family;
     font-weight: 500;
     font-size: 14px;
+}
+
+.form-control.zipcode {
+  width: 80px;
 }

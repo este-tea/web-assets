@@ -1,0 +1,43 @@
+/* tds-popovers.scss
+==========================================*/
+
+// overwrite BOOTSTRAP POPOVER STYLING
+
+.popover {
+  background: #e3e3e3;
+  border-radius: 0;
+  border: none;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.35);
+  border-top: solid 4px $tds-lt-blue;
+  margin: 0;
+  width: 100%;
+}
+
+.popover-title {
+  color: $tds-dk-blue;
+  border-radius: 0;
+  background: none;
+  border: none;
+  border-bottom: none;
+  padding: 8px 10px 8px 10px;
+  font-size: 16px;
+}
+
+.popover.bottom>.arrow {
+  border-bottom-color: none!important;
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.popover.bottom>.arrow:after {
+  border-bottom-color: $tds-lt-blue;
+}
+
+.popover-content {
+  padding: 8px 10px;
+  font-family: $tds-font-family;
+  font-size: 14px;
+  border: none;
+  color: black;
+}
+
+/* END tds-popovers.scss */

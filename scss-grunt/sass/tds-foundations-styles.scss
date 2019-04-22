@@ -11,7 +11,7 @@
 
 // typography
 @import "_tds-foundations-partials/_tds-fonts";
-@import "_tds-foundations-partials/_tds-type";
+@import "_tds-foundations-partials/_tds-typography";
 
 // forms
 @import "_tds-foundations-partials/_tds-forms";
@@ -87,6 +87,7 @@
 @import "_tds-foundations-partials/_tds-iframe";
 @import "_tds-foundations-partials/_tds-video";
 @import "_tds-foundations-partials/_tds-modal";
+@import "_tds-foundations-partials/_tds-popovers";
 @import "_tds-foundations-partials/_tds-styled-bullet-headings";
 @import "_tds-foundations-partials/_tds-collapsible-list-component";
 @import "_tds-foundations-partials/_tds-collapsible-archive-component";
@@ -101,6 +102,10 @@
 @import "_tds-foundations-partials/_tds-package-builder-subtotal";
 @import "_tds-foundations-partials/_tds-package-comparison";
 @import "_tds-foundations-partials/_tds-channel-status-updates";
+@import "_tds-foundations-partials/_tds-manage-contact-preferences";
+@import "_tds-foundations-partials/_tds-account-internet-security-dashboard";
+@import "_tds-foundations-partials/_tds-account-balance-payment";
+@import "_tds-foundations-partials/_tds-zip-code-redirect";
 
 //FOOTER
 @import "_tds-foundations-partials/_tds-footer";

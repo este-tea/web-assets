@@ -104,12 +104,21 @@ input:checked+.tds-radio-btn {
 
 //grays out disabled fields
 
-input:disabled + .tds-radio-btn {
-  opacity: 0.25;
+input:checked:disabled + .tds-radio-btn {
+    opacity: 1;
+    background: #999;
+    border-color: #999;
 }
 
-input:disabled + .tds-radio-btn + .label-text {
-  opacity: 0.25;
+label:hover input:checked:disabled + .tds-radio-btn {
+    background: #999;
+    border-color: #999;
+}
+
+label:hover input:disabled,
+label:hover input:disabled + .tds-radio-btn + .label-text,
+label:hover input:disabled + .tds-radio-btn:before {
+    cursor:  not-allowed;
 }
 
 .checkbox-inline:hover label span.check-radio-btn {

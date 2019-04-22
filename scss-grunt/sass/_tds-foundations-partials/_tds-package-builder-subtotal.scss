@@ -230,11 +230,11 @@ table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
         padding-left: 18px;
     }
 }
-@media (max-width:420px) {
-    .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
-        display: block!important;
-    }
-}
+// @media (max-width:420px) {
+//     .table.pkg-subtotal-table > tbody > tr > td.subtotal-column {
+//         display: block!important;
+//     }
+// }
 @media (max-width:320px) {
     .pkg-summary-wrap table.pkg-summary-table tbody > tr > td {
         display: block;

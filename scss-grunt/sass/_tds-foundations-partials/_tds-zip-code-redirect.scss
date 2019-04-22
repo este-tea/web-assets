@@ -1,0 +1,32 @@
+/* tds-zip-code-redirect
+==========================================*/
+#zipCodeRedirectModal {
+  .tds-modal {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+  }
+  .modal-content {
+    border: none;
+    border-radius: 0;
+    padding: 24px;
+  }
+  .modal-header {
+    padding: 0 0 12px;
+    border-bottom: none;
+    .modal-title.h2 {
+      margin-bottom: 0;
+    }
+  }
+  .modal-body .parsys-wrap {
+    margin-bottom: 20px;
+    margin-top: 16px;
+  }
+  .modal-footer {
+    padding: 8px 0 0;
+    text-align: left;
+    .gallery-btn.primary-cta {
+      margin: 0;
+    }
+  }
+}
