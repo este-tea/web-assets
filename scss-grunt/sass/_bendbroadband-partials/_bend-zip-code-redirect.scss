@@ -1,40 +1,19 @@
 /* bend-zip-code-redirect
 ==========================================*/
-#zipCodeRedirectModal {
-  .tds-modal {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-  }
-
-  .modal-content {
-    border: none;
-    border-radius: 0;
-    padding: 24px;
-  }
-
-  .modal-header {
-    padding: 0 0 12px;
-    border-bottom: none;
-
-    .modal-title.h2 {
-      margin-bottom: 0;
-      font-size: 32px;
-      color: $bend-orange;
-    }
-  }
-
-  .modal-body .parsys-wrap {
-    margin-bottom: 20px;
-    margin-top: 16px;
-  }
-
-  .modal-footer {
-    padding: 8px 0 0;
-    text-align: left;
-
-    .gallery-btn.primary-cta {
-      margin: 0;
-    }
-  }
+#zipCodeRedirectModal .modal-header {
+  padding: 0;
 }
+
+#zipCodeRedirectModal .modal-title.h2 {
+  font-size: 32px;
+  color: #ff7700;
+  border-bottom: solid 1px silver;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+#zipCodeRedirectModal .modal-footer {
+  border-top: none;
+}
+
+/* END bend-zip-code-redirect.scss */
