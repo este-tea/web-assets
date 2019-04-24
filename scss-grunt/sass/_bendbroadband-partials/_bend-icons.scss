@@ -5,7 +5,7 @@
     font-size: 12px;
 }
 /* bend-biggie-pix
-==========================================*/
+-------------------*/
 .biggie-pix {
     font-size: 56px;
     float: left;
@@ -53,3 +53,70 @@
 .icon-location:before, {
   content:"\E6D0"
 }
+
+.tds-icon-pencil {
+  background: #64bfd3;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  &:hover {
+    background: #318CA0;
+    color: white;
+  }
+  &:before {
+    content: "\270E";
+    @include ssstandard-font;
+  }
+}
+
+#emptyCartButton:before, #emptyCartButton:after, .tds-icon-trash:before {
+  @include ssstandard-font;
+}
+
+.tds-icon-trash:before, #emptyCartButton:before {
+  content: "\2421";
+}
+
+#emptyCartButton:after {
+  content: "\e500";
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.tds-icon-trash, #emptyCartButton {
+  background: #518eaa;
+  color: white;
+  float: right;
+  padding: 8px 12px!important;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.tds-icon-trash:hover, #emptyCartButton:hover {
+  background: #387591;
+  color: white;
+}
+span.tds-icon.tds-icon-search:before {
+  @include ssstandard-font;
+  font-family: "SSStandard";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  content: 'ðŸ”Ž';
+  font-size: 16px;
+  line-height:inherit;
+  display: inherit;
+  margin-right:0;
+}
+/* END bend-icons */

@@ -1,0 +1,46 @@
+/* bend-icon-links.scss
+==========================================*/
+
+/* bend footer contact links */
+/* ---------------------------------- */
+.bend-footer .nav.nav-bar.bend-contact-links {
+  float: none;
+  text-align: center;
+  padding: 12px;
+  background-color: rgba(1, 1, 1, .15);
+}
+
+.bend-footer-icon-links .nav-bar > li {
+  float: none;
+  display: inline-block;
+}
+.bend-footer .bend-footer-icon-links {
+  margin-bottom: 8px;
+}
+@media (min-width:768px) {
+  .bend-footer-icon-links.iconLinks.parbase {
+    display: none;
+  }
+}
+
+.bend-footer-icon-links .nav > li > a,
+.bend-footer-icon-links .nav > li > button {
+  padding: 6px 8px;
+  border-radius: 3px;
+  border: solid 1px transparent;
+  background-color: transparent;
+  color: white;
+}
+
+.bend-footer-icon-links .nav > li > a > .link-item-cssIcon,
+.bend-footer-icon-links .nav > li > button > .link-item-cssIcon {
+  color: #ff7700;
+}
+
+.bend-footer-icon-links .nav > li > a:focus,
+.bend-footer-icon-links .nav > li > a:hover,
+.bend-footer-icon-links .nav > li > button:focus,
+.bend-footer-icon-links .nav > li > button:hover {
+  background-color: rgba(0,0,0,.25);
+}
+/* END bend-icon-links.scss */

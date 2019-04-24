@@ -1,5 +1,8 @@
 /* bend-accordion
 ==========================================*/
+.container.tds-accordion {
+	padding: 0;
+}
 
 .tds-accordion .panel {
 	border: none;
@@ -7,7 +10,7 @@
 }
 
 .tds-accordion .panel-title {
-	font-family: "Museo W01", Museo, Georgia, "Times New Roman", Times, serif;
+	font-family: $bend-font-headings;
 	font-weight: 700;
 	line-height: 1.1;
 	font-size: 18px;

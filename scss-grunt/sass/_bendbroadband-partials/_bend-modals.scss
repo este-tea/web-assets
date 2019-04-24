@@ -1,8 +1,15 @@
-/* bend-modals
+/* bend-modals.scss
 ==========================================*/
 .modal-title {
   font-size: 24px;
   font-weight: 500;
+}
+
+h2.modal-title {
+  color: #f70;
+  margin-top: 16px;
+  border-bottom: solid 1px silver;
+  text-align: center;
 }
 
 .modal-header {
@@ -85,27 +92,19 @@
     margin: 30px auto;
   }
 }
-//--- BEND OLARK CHAT MODAL ---//
-#BendChatModal .modal-header {
-  border-bottom: none;
+
+// CAREERS PAGE MODALS
+
+.careersModals .modal-title {
+  color: #ff7700;
 }
 
-#olark-box-container > p.title {
-  margin-top: 0;
-  display: block;
-  background-color: #8cc73f;
-  padding: 12px 16px;
-  font-weight: 700;
-  font-size: 18px;
-  color: $bend-dk-gray;
-  text-align: center;
+.careersModals .modal-body .panel.panel-default {
+  margin-top: 20px;
 }
 
-#olark-box-container > p.message {
-  text-align: center;
-  padding: 20px;
-  max-width: 500px;
-  margin: auto;
+.bendbroadband-content .pagelayout .careersModals ul {
+  margin: 0 0 0 20px;
 }
 //--- FULL SCREEN MODAL ---//
 .modal.full {
@@ -123,3 +122,13 @@
     padding: 0;
   }
 }
+
+.careersModals .modal {
+  top: 62px;
+  padding-right: 0 !important;
+}
+
+.careersModals .modal-footer a.gallery-btn {
+  float: left;
+}
+/* END bend-modals.scss */
