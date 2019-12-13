@@ -1,0 +1,192 @@
+/* tds-cookie-banner-settings.scss
+==========================================*/
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #19388A;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    z-index: 10;
+    font-size: 16px;
+}
+
+.cookie-banner .tds-width-container {
+    padding: 0;
+    text-align: left;
+}
+
+.cookie-banner p,
+.cookie-banner a {
+    color: white;
+}
+.tds-btn-white {
+    color: #0C8FD0;
+    background: #FFFFFF;
+}
+
+.tds-panel-group .panel-default>.panel-heading {
+    padding: 0;
+    border-color: transparent;
+    background: none;
+}
+
+.tds-panel-group .panel-title>a,
+.tds-panel-group .panel-title>a.collapsed:hover {
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 26px;
+    background-color: #0c8fd0;
+    color: white;
+}
+.tds-panel-group .panel-title > a > span {
+    margin-right: 28px;
+}
+.tds-panel-group .panel-title>a.collapsed {
+    color: #0c8fd0;
+    background: #d9d9d9;
+    text-decoration: none;
+}
+
+.tds-panel-group .panel.panel-default {
+    margin-bottom: 20px;
+}
+
+.tds-panel-group .btn-block .fa:before {
+    content: "\e812";
+    color: white;
+
+}
+.tds-panel-group .btn-block.collapsed .fa:before {
+    content: "\e808";
+    color: white;
+    background: #0c8fd0;
+}
+.tds-panel-group .btn-block .fa:before {
+    display: inline-block;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 13px;
+    background: #19388a;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -3px;
+    line-height: 1;
+}
+
+.tds-modal-dialog .modal-content {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin-left: 17px;
+}
+
+.modal.cookie .panel-collapse {
+    background: #d9d9d9;
+}
+
+.modal.cookie .panel-collapse p {
+    color: #000000;
+}
+
+.modal.cookie .modal-body h2 {
+    margin-top: 0;
+}
+
+.modal.cookie .panel-group {
+    margin-top: 20px;
+}
+
+.modal.cookie .form-group,
+.modal.cookie .radio {
+    margin-bottom: 0px;
+}
+
+.modal.cookie .radio label,
+.modal.cookie .checkbox label {
+    padding-left: 0;
+    padding-right: 20px;
+
+}
+
+.cookie-category p {
+    margin-bottom: 0;
+}
+
+.cookie-category.targeting {
+    margin-bottom: 28px;
+}
+
+.cookie-category.performance {
+    margin-bottom: 8px;
+}
+.modal.cookie .tds-radio-btn {
+    position: relative;
+}
+.modal.cookie label:hover input:checked+.tds-radio-btn:before {
+    top: 0px;
+    left: 0px;
+}
+
+.modal.cookie h4 {
+    margin-bottom: 12px;
+}
+.cookie-category label + label {
+    margin-top: 16px;
+}
+.modal.cookie button.gallery-btn.tds-btn-plain:hover,
+.modal.cookie button.gallery-btn.tds-btn-plain:focus {
+    background-color: #7bb227;
+}
+.cookie-banner .banner-buttons .gallery-btn:hover,
+.cookie-banner .banner-buttons .gallery-btn:focus {
+    background: #10255B;
+}
+.modal.cookie .modal-buttons .gallery-btn {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.tds-panel-group .panel-title>a {
+    position: relative;
+}
+
+.tds-panel-group .panel-title>a .fa {
+    position: absolute;
+    right: 14px;
+}
+.cookie-category .tds-alert.tds-alert-warning {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 600px) {
+    .modal-buttons .gallery-btn.secondary {
+        float: right;
+    }
+.tds-modal-dialog .modal-body {
+    padding: 25px;
+}
+}
+
+@media only screen and (max-width: 599px) {
+    .modal-buttons .gallery-btn.secondary {
+        display:block;
+    }
+}
+
+.tds-panel-group .panel-title > a > span {
+    margin-right: 28px;
+}
+
+/* END tds-cookie-banner-settings.scss */
