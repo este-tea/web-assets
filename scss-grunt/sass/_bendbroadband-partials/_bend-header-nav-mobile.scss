@@ -178,21 +178,21 @@ ul#mobile-menu-dropdown {
 .search-normal {
   width: 30px;
   height: 28px;
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search-gray-lgr.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search-gray-lgr.svg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 32px 32px;
   background-size: 32px 32px;
 }
 .search-normal:hover {
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
   background-color: $bend-orange;
 }
 .search-active {
   width: 30px;
   height: 28px;
   background-color: $bend-orange;
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 32px 32px;
@@ -209,14 +209,14 @@ ul#mobile-menu-dropdown {
 .icon_cart-empty {
   width: 30px;
   height: 28px;
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-cart-gray-lgr.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-gray-lgr.svg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 32px 32px;
   background-size: 32px 32px;
 }
 .icon_cart-empty:hover {
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
   background-color: $bend-orange;
 }
 
