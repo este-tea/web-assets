@@ -148,8 +148,8 @@ $fa-font-path: "/etc/designs/tds-foundation/tds-styles/bower_components/font-awe
 // ====================================
 
 // font families
-$tds-font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
-$tds-font-body: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial;
+$tds-font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial, serif;
+$tds-font-body: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Font sizes
 $tds-font-xlight: 100; //works for avant garde only

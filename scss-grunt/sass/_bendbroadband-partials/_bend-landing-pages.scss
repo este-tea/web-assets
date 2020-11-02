@@ -1,0 +1,31 @@
+/* bend-landing-pages.scss
+==========================================*/
+
+// logo
+.bend-header.landing-pg .bend-logo-wrap a.navbar-brand {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+// header
+.bend-header.landing-pg .bend-logo-wrap a.navbar-brand {
+  float: none;
+  display: block;
+  text-align: center;
+}
+
+.bend-header.landing-pg .bend-logo-wrap > .container {
+  text-align: center;
+}
+
+@media (max-width:$screen-xs-max) {
+  .business .landing-pg .navbar-brand .bbb-logo {
+    margin: 0 auto;
+  }
+
+  .bend-header.landing-pg .bend-logo-wrap a.navbar-brand {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+/* END bend-landing-pages.scss */

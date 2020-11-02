@@ -448,6 +448,7 @@ button.read-more {
     display: initial;
 }
 
+// center aligned configuration
 .nav-button-wrap.align-center {
     text-align: center;
 }
@@ -503,4 +504,44 @@ button.read-more {
     float: none;
     display: inline-block;
     margin-left: 8px;
+}
+
+// INFORMATION ICON BUTTONS TO REVEAL POPOVERS
+// FOUND IN CUSTOMER CONTACT HUB AKA MANAGE CONTACT PREFERENCES
+.text-link.infoIcon-btn {
+  text-decoration: none;
+}
+
+.text-link.infoIcon-btn>img {
+  margin-bottom: 4px;
+}
+
+.data-usage .text-link.infoIcon-btn>span {
+  color: #19388a;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.data-usage .text-link.infoIcon-btn:hover>span {
+  color: black;
+  text-decoration: none;
+}
+td a.text-link.infoIcon-btn {
+    float: right;
+    display:none;
+}
+@media (max-width: 767px) {
+  td a.text-link.infoIcon-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  td a.text-link.infoIcon-btn + .account,
+  td a.text-link.infoIcon-btn + .billing,
+  td a.text-link.infoIcon-btn + .data-usage,
+  td a.text-link.infoIcon-btn + .actions {
+    margin-top: 16px;
+  }
 }

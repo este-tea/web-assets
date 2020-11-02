@@ -50,6 +50,10 @@
     color: #f70;
 }
 
+.pkg-comp-card a:hover {
+  transform: scale(1.03);
+}
+
 // --- PRICING COLUMN --- //
 
 //starting at copy above pkg price
@@ -127,4 +131,13 @@
 .packageOfferings .tds-container-productDescription ul {
     margin-bottom: 0;
     margin-left: 12px;
+}
+.packageOfferings .tds-container-productDescription ul li {
+    line-height: 21px;
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.packageOfferings .tds-container-productDescription ul li:before {
+    margin-left: -15px;
 }

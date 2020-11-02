@@ -5,7 +5,7 @@
   border: 1px solid silver;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  padding: 0;
+  padding: 16px;
   h4 {
       margin: 0;
   }
@@ -52,3 +52,54 @@
     }
   }
 }
+
+.tds-card-cta {
+  text-align: center;
+}
+
+.tds-card .tds-btn {
+  margin-top: 20px;
+  width: auto;
+}
+.contactUsCard .tds-card .tds-card-heading {
+  color: #ff7700;
+}
+.tds-card-content .h3,
+.tds-card-content h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+// CARD GALLERY
+.cardgallery {
+  .tds-card-heading {
+    margin: 0 auto;
+    .glyphicon {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 8px;
+      + span {
+        display: block;
+      }
+    }
+  }
+  .tds-card-content {
+    p {
+      font-weight: 300;
+    }
+  }
+  // IF HAS "PLAIN" CLASS CONFIGURED ON IT
+  .plain {
+    .tds-card {
+      border: none;
+    }
+  }
+  a:hover, a:focus {
+    .tds-card {
+      background: #585858;
+      .tds-btn {
+        background: #518eaa;
+      }
+    }
+  }
+}
+/* END bend-cards.scss */

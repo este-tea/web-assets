@@ -44,3 +44,26 @@
     border: 1px solid #fff;
     background: 0
 }
+
+// COMMUNITY PAGE SIDEBAR LOGOS CAROUSEL
+
+.htmlScriptIntegration .left.carousel-control,
+.htmlScriptIntegration .right.carousel-control {
+  text-shadow: none;
+}
+
+.htmlScriptIntegration .left.carousel-control .glyphicon-chevron-left:before,
+.htmlScriptIntegration .right.carousel-control .glyphicon-chevron-right:before {
+  color: #999999;
+}
+
+.htmlScriptIntegration .carousel-control.left,
+.htmlScriptIntegration .carousel-control.right {
+  background-image: none;
+}
+
+.htmlScriptIntegration .carousel a.thumbnail.active,
+.htmlScriptIntegration .carousel a.thumbnail:focus,
+.htmlScriptIntegration .carousel a.thumbnail:hover {
+  border-color: #ff7700;
+}

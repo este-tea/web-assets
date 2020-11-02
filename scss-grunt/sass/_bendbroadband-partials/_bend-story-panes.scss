@@ -1,4 +1,4 @@
-/* bend-product-panes
+/* bend-story-panes
 ==========================================*/
 
 .story-panes .tab-content h1 {
@@ -23,25 +23,12 @@
     }
 }
 @media (max-width:480px) {
-    .story-panes .tab-content .btn, .casestudy .btn {
+    .story-panes .tab-content .btn {
         display: block;
         max-width: 200px
     }
-    .story-panes .tab-content .btn+.btn, .casestudy .btn+.btn {
+    .story-panes .tab-content .btn+.btn {
         margin-top: 5px
     }
 }
-@media (max-width:991px) {
-    .casestudy .megacontainer {
-        background: #47473d!important
-    }
-}
-
-.content.content-casestudy {
-    border: 0;
-    background-color: #0f0f0f;
-    color: #fff
-}
-.content.content-casestudy h1, .content.content-casestudy .h1, .content.content-casestudy h2, .content.content-casestudy .h2, .content.content-casestudy h3, .content.content-casestudy .h3, .content.content-casestudy h4, .content.content-casestudy .h4, .content.content-casestudy h5, .content.content-casestudy .h5, .content.content-casestudy h6, .content.content-casestudy .h6, .content.content-casestudy a {
-    color: #64bfd3
-}
+/* END bend-story-panes */

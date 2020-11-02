@@ -54,6 +54,19 @@
 #mobile-menu ul li:hover {
   background-color: $bend-orange;
 }
+#mobile-menu ul li:hover > a:after {
+  content: "\e252";
+  float: right;
+  position: relative;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 80%;
+  top: 6px;
+}
 #mobile-menu ul ul li:hover {
   background-color: darken($bend-orange,15%);
 }
@@ -65,6 +78,19 @@
   padding: 10px 0;
   color: white;
 }
+#mobile-menu ul li a:hover:after {
+  content: "\e250";
+  float: right;
+  position: relative;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 80%;
+  top: 6px;
+}
 #mobile-menu ul li li a {
   padding-left: 1.2em;
 }
@@ -74,22 +100,8 @@
 #mobile-menu ul li a:hover,
 #mobile-menu ul li:hover > a {
   color: white;
+  background-image: none;
 }
-#mobile-menu ul li:hover > a {
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.png);
-  background-image: linear-gradient(transparent, transparent), url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.svg);
-  background-size: 16px 11px;
-  background-position: center right;
-  background-repeat: no-repeat;
-}
-#mobile-menu ul li a:hover {
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.png);
-  background-image: linear-gradient(transparent, transparent), url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/arrows/right-arrow-green.svg);
-  background-size: 11px 16px;
-  background-position: center right;
-  background-repeat: no-repeat;
-}
-
 ul.mobile-header-nav {
   margin: 0;
   list-style-type: none;
@@ -101,6 +113,9 @@ ul.mobile-header-nav li {
   margin: 0 0 0 14px;
 }
 
+ul#mobile-menu-dropdown {
+  border-bottom: solid 3px #444;
+}
 // #BUTTONS
 // -------------------------------
 #btn-menu {
@@ -163,21 +178,21 @@ ul.mobile-header-nav li {
 .search-normal {
   width: 30px;
   height: 28px;
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search-gray-lgr.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search-gray-lgr.svg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 32px 32px;
   background-size: 32px 32px;
 }
 .search-normal:hover {
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
   background-color: $bend-orange;
 }
 .search-active {
   width: 30px;
   height: 28px;
   background-color: $bend-orange;
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-search.svg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 32px 32px;
@@ -194,14 +209,14 @@ ul.mobile-header-nav li {
 .icon_cart-empty {
   width: 30px;
   height: 28px;
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-cart-gray-lgr.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-gray-lgr.svg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 32px 32px;
   background-size: 32px 32px;
 }
 .icon_cart-empty:hover {
-  background-image: url(https://www.tdstelecom.com/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
+  background-image: url(/content/dam/tdstelecom/images/ui/icon_ui-cart-empty.svg);
   background-color: $bend-orange;
 }
 
@@ -262,5 +277,57 @@ div.hr-mobile-tdsblue {
 @media (max-width:768px) {
   .bend-header {
     border-bottom: none;
+  }
+}
+
+// BEND BIZ small nav
+// ---------------------------------
+.business .navbar-brand .bbb-logo {
+  width: 199px;
+  height: 35px;
+}
+
+.business .bend-nav-mobile img.small-nav-logo {
+  width: 135px;
+  height: 26px;
+}
+@media (min-width: 380px) {
+  .business .bend-nav-mobile img.small-nav-logo {
+    width: 165px;
+    height: 30px;
+  }
+}
+
+.business .menu-normal {
+  border: solid 1px #ffffff;
+  color: #ffffff;
+}
+
+.business #btn-menu.menu-active {
+  border-color: #f70;
+}
+
+.business #mobile-menu ul {
+  background: #47473d url("/content/dam/bendbroadband/images/ui/checkers-light.gif") left top repeat;
+}
+
+.business #mobile-menu ul li a {
+  color: #585858;
+  font-weight: 600;
+  border-bottom: solid 1px #fff;
+}
+.business #mobile-menu ul li:hover > a {
+    color: white;
+}
+@media (min-width: 768px) {
+  .business .bendheader .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li.active > a.business:hover,
+  .business .bendheader .navbar-inverse.bbb-navbar-utility .navbar-nav > li.active > a.business:hover {
+    background: #ff7700;
+  }
+
+  .business .bendheader .navbar-inverse.bbb-navbar-utility .bend-nav-lg > ul > li > a.residential:hover,
+  .business .bendheader .navbar-inverse.bbb-navbar-utility .navbar-nav > li > a.residential:hover {
+    background: #ff7700;
+    color: white;
   }
 }

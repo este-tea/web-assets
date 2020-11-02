@@ -86,14 +86,51 @@ div#newEmailMessage {
 #userNameDiv form#userNameForm {
     margin-bottom: 20px;
 }
-button#changePassword {
-    margin-top: 4px;
+button#changePassword,
+button#changeSecQuestions,
+button#changeRecoveryContacts,
+button#changePin {
     width: 100%;
 }
-button#changeSecQuestions {
-    width: 100%;
+button#changePassword {
+    margin-top: 0;
+}
+button#deleteAccount {
+    margin-top: 0;
 }
 
+button#resetPassword {
+    margin-top: 20px;
+}
+button#resetRecoveryContacts {
+    margin-top: 20px;
+}
+button#changeSecQuestions .tds-icon-circle-question:before {
+    content:none;
+}
+button#changeSecQuestions .tds-icon-circle-question {
+    content:none;
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+    background-image: url("/content/dam/tdstelecom/images/ui/icon-question-white.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+.recoveryContact {
+    color: #353535;
+    font-weight: 500;
+    background-color: #E8EBF3;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+}
+
+.recoveryContact > .contact {
+    font-weight: 600;
+    color: black;
+    font-family: $tds-font-family;
+}
 // MYA Add User
 // ----------------------------------------
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
@@ -127,4 +164,110 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 .myaadduser label:hover input:checked + .tds-radio-btn:before {
     top: unset!important;
     left: unset!important;
+}
+
+#addNewUser + .tds-divider-line.dotted-gray {
+    margin-top: 28px;
+}
+
+#addNewUser + .tds-divider-line.dotted-gray + h3 {
+    margin-bottom: 4px;
+    margin-top: 24px;
+}
+
+.myaadduser .tds-card.account-settings .text-link.infoIcon-btn img {
+    margin-left: 5px;
+}
+
+.myaadduser .tds-card.account-settings .text-link.infoIcon-btn {
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
+
+.myaadduser #errorBlock, .myaadduser #successBlock {
+    margin-left: 0;
+}
+
+.content.container .myaadduser.parbase.section {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.tds-card.account-settings .table tbody > tr:last-child > td {
+    border-bottom: solid 2px #19388a !important;
+}
+
+.myaadduser .tds-card.account-settings .form-group > table.table {
+    border-top: solid 2px #19388a;
+    margin-bottom: 0;
+}
+
+.myaadduser .tds-card.account-settings .form-group.tds-form-group {
+    margin-bottom: 8px;
+}
+
+.myaadduser .tds-card.account-settings #newEmailMessage {
+    margin-top: 24px;
+}
+
+.myaadduser .tds-card.account-settings label {
+    margin-bottom: 12px;
+}
+
+.myaadduser .tds-card.account-settings .tds-form-group td {
+    padding-top: 16px !important;
+    padding-bottom: 4px;
+}
+
+#fixedDomain {
+    font-weight: 600;
+    color: #19388a;
+}
+
+.myaadduser button#createUser {
+    margin-top: 0;
+}
+
+#userDomainList > button#dropdownSel.dropdown-toggle {
+    color: #19388a;
+    border: solid 2px #CCCCCC;
+    height: 44px;
+    padding: 0 44px 0 16px;
+    background: white;
+    background-position: calc(100% - 16px) 50%;
+    background-repeat: no-repeat;
+    background-image: url(/content/dam/tdstelecom/images/ui/arrows/down-arrow-ltblue.svg);
+    background-size: 14px 12px;
+    box-shadow: none;
+}
+
+.tds-form-group #userDomainList #domainList {
+    box-shadow: none;
+    background: #555555;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    /* color: white; */
+}
+
+#domainList.dropdown-menu > li > a {
+    padding: 12px 18px;
+    color: white;
+    text-decoration: none;
+}
+
+#domainList.dropdown-menu > li > a:hover,
+#domainList.dropdown-menu > li > a:focus {background: #0c8fd0;}
+
+.tds-card #dropdownSel.dropdown-toggle .caret {
+    display: none!important;
+}
+
+.tds-card.account-actions-admin .tds-divider-line {
+    margin: 24px 0;
+}
+
+.tds-card.account-actions-admin .tds-divider-line + .tds-note.well {
+    margin-bottom: 0;
 }

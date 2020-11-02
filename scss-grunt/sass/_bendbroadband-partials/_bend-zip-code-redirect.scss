@@ -1,0 +1,19 @@
+/* bend-zip-code-redirect
+==========================================*/
+#zipCodeRedirectModal .modal-header {
+  padding: 0;
+}
+
+#zipCodeRedirectModal .modal-title.h2 {
+  font-size: 32px;
+  color: #ff7700;
+  border-bottom: solid 1px silver;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+#zipCodeRedirectModal .modal-footer {
+  border-top: none;
+}
+
+/* END bend-zip-code-redirect.scss */

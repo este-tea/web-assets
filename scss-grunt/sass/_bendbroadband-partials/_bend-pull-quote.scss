@@ -1,0 +1,38 @@
+/* bend-pull-quote.scss
+==========================================*/
+.tds-pull-quote {
+  font-size: 28px;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 20px;
+  padding: 0.5em 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.tds-pull-quote p {
+  font-family: $bend-font-headings;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #585852;
+  margin-top: 8px;
+}
+
+.tds-pull-quote > p:first-child:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 75px;
+  line-height: 0.1em;
+  margin-right: 6px;
+  vertical-align: -0.4em;
+}
+
+.tds-pull-quote > p:first-child:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 75px;
+  line-height: 0.1em;
+  margin-left: 6px;
+  vertical-align: -0.4em;
+}
+
+/* END bend-pull-quote.scss */

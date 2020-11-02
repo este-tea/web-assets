@@ -48,7 +48,12 @@ input.form-control {
   color: black;
   font-weight: 700;
 }
-
+.tds-form-group input,
+.tds-form-group select,
+input.form-control {
+  border: solid 2px silver;
+  border-radius: 2px!important;
+}
 label {
   font-weight: 700;
   font-family: $bend-font-headings;
@@ -73,4 +78,63 @@ input[type="checkbox"] + .tds-radio-btn {
 input:checked + .tds-radio-btn {
   background: #8dc73f;
   border: 3px solid #8dc73f;
+}
+span.tds-radio-btn {
+  position: relative;
+}
+
+.label-text > span > p {
+  margin-top: 0;
+}
+
+.tds-form-group .help-block {
+  font-size: 14px;
+}
+
+label:hover > .label-text {
+  color: #f70;
+}
+label:hover input:checked + .tds-radio-btn {
+    background: #f70;
+    border-color: #f70;
+}
+.form-group.tds-form-group.has-error input,
+.form-group.tds-form-group.has-error select,
+.form-group.tds-form-group.has-error textarea {
+  background: #FFE6E9;
+  border-color: #FF4D50!important;
+}
+
+.form-group.has-error > label {
+  color: #FF4D50;
+}
+
+.form-group.tds-form-group.has-error span.help-block {
+  margin-top: 10px;
+  color: #FF4D50;
+}
+
+.form-group.has-error input,
+.form-group.has-error select,
+.form-group.has-error textarea {
+  background: #FFE6E9;
+  border-color: #FF4D50!important;
+}
+@media (max-width:400px) {
+  .checkbox label,
+  .radio label {
+    padding-left: 0;
+  }
+}
+
+.checkbox+.checkbox,
+.radio+.radio {
+  margin-top: 0;
+}
+
+select.form-control {
+  border-radius: 2px!important;
+  background-image: none;
+  background-image: url("/content/dam/tdstelecom/images/ui/arrows/down-caret-gray.svg");
+  border-color: silver;
 }

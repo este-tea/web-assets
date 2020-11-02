@@ -1,0 +1,119 @@
+/* bend-forms-datepicker.scss
+==========================================*/
+i.tds-icon-calendar:after {
+  background-image: url(/content/dam/bendbroadband/images/ui/icon-ui_calendar-bend-orange.svg);
+}
+
+.datepicker tbody {
+  border-bottom: none;
+}
+
+.datepicker {
+  border-radius: 2px!important;
+  border: solid 1px #d9d9d9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+#installDatePicker {
+  max-width: 180px;
+}
+
+#installDatePicker .input-group-addon {
+  border-radius: 2px!important;
+  border: 2px solid #ccc;
+  border-left: none;
+  background-color: #e3e3e3;
+}
+
+.datepicker-switch {
+  color: #ff7700;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.datepicker .next, .datepicker .prev {
+  text-indent: -9999px;
+}
+
+.datepicker tr>th {
+  border-bottom: 1px solid silver!important;
+}
+
+.datepicker .prev:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  float: left;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/left-caret-dk-gray.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px 16px;
+}
+
+.datepicker .next:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  float: right;
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-caret-gray.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px 16px;
+}
+
+.datepicker .datepicker-switch:hover, .datepicker .prev:hover, .datepicker .next:hover, .datepicker tfoot tr th:hover {
+  background: #f70;
+}
+
+.datepicker .datepicker-switch:hover {
+  color: white;
+}
+
+.datepicker .next:hover:after {
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/right-caret-white.svg);
+}
+
+.datepicker .prev:hover:after {
+  background-image: url(/content/dam/tdstelecom/images/ui/arrows/left-caret-white.svg);
+}
+
+.datepicker table tr td, .datepicker table tr th {
+  border-radius: 2px!important;
+  min-width: 44px;
+  height: 44px;
+}
+
+.datepicker table tr td.old, .datepicker table tr td.new {
+  color: #999;
+  font-weight: 500;
+}
+
+.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+  background: #555;
+  cursor: pointer;
+  color: white;
+}
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+  background: none;
+  color: #d9d9d9;
+  cursor: default;
+}
+
+.datepicker table tr td.active:active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active {
+  color: #fff;
+  background-color: #ff7700;
+  border-color: #ff7700;
+}
+
+.datepicker table tr td.active:active:hover, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active:active:focus, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active:active.focus, .datepicker table tr td.active.highlighted:active.focus, .datepicker table tr td.active.active.focus, .datepicker table tr td.active.highlighted.active.focus {
+  color: #fff;
+  background-color: #ff7700;
+  border-color: #ff7700;
+}
+
+.datepicker table tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+
+/* END bend-forms-datepicker.scss */
