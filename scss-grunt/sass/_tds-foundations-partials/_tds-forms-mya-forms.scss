@@ -167,7 +167,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 }
 
 #addNewUser + .tds-divider-line.dotted-gray {
-    margin-top: 28px;
+    margin-top: 14px;
 }
 
 #addNewUser + .tds-divider-line.dotted-gray + h3 {
@@ -270,4 +270,52 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 
 .tds-card.account-actions-admin .tds-divider-line + .tds-note.well {
     margin-bottom: 0;
+}
+
+.form-section.username p.username-intro {
+    margin-bottom: 28px;
+}
+
+.myaadduser .form-section .tds-divider-line.dotted-gray {
+    margin-top: 28px;
+}
+
+.form-section.account-settings .tds-divider-line.dotted-gray {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.form-section .table {
+    border-top: solid 2px #d9d9d9;
+}
+
+.myaadduser .form-section table.table tbody > tr:last-child > td,
+.myaadduser .form-section table.table tbody td {
+    border-bottom: solid 2px #d9d9d9!important;
+}
+
+.form-section.account-settings .form-group td form {
+    margin-top: -2px;
+    margin-bottom: 4px;
+}
+
+.form-section.account-settings .form-group td form input[type="radio"] {
+    height: 14px;
+}
+
+.form-section.account-settings .text-link.infoIcon-btn > img {
+    margin-left: 4px;
+}
+
+p.h3.current-username {
+    color: black;
+    font-size: 21px;
+}
+
+p.h3.current-username > span {
+    color: #0c8fd0;
+}
+
+.form-section.account-actions-admin .gallery-btn {
+    display: block;
 }
