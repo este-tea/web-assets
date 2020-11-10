@@ -263,6 +263,15 @@
     padding-left: 52px;
 }
 
+.tds-alert.tds-alert-welcome {
+  background-color: #e8ebf3;
+  border-color: #d1dae7;
+}
+
+.tds-alert.tds-alert-welcome .container {
+  padding: 0;
+}
+
 .myaadduser #recommendationMessage.tds-alert-loading {
     line-height: 24px;
     font-family: $tds-font-family;
